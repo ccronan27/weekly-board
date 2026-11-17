@@ -22,6 +22,7 @@ on:
     paths:
       - "data/espn/**"
       - ".github/workflows/refresh.yml"   # exercises workflow edits
+      - "site/**"                         # redeploys the page when the site code changes
 
 permissions:
   contents: write
