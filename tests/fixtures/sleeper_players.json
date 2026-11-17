@@ -1,0 +1,339 @@
+{
+ "11522": {
+  "active": true,
+  "age": 24,
+  "fantasy_positions": [
+   "WR"
+  ],
+  "first_name": "Jerome",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Kapp",
+  "news_updated": 1693334405078,
+  "position": "WR",
+  "status": "Active",
+  "team": null,
+  "years_exp": 1
+ },
+ "11533": {
+  "active": true,
+  "age": 31,
+  "fantasy_positions": [
+   "K"
+  ],
+  "first_name": "Brandon",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Aubrey",
+  "news_updated": 1794884140783,
+  "position": "K",
+  "status": "Active",
+  "team": "DAL",
+  "years_exp": 3
+ },
+ "12180": {
+  "active": true,
+  "age": null,
+  "fantasy_positions": [
+   "K"
+  ],
+  "first_name": "Alex",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "McNulty",
+  "news_updated": null,
+  "position": "K",
+  "status": "Active",
+  "team": null,
+  "years_exp": 1
+ },
+ "13175": {
+  "active": true,
+  "age": 25,
+  "fantasy_positions": [
+   "QB"
+  ],
+  "first_name": "Kinkead",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Dent",
+  "news_updated": null,
+  "position": "QB",
+  "status": "Inactive",
+  "team": null,
+  "years_exp": 0
+ },
+ "13221": {
+  "active": true,
+  "age": 25,
+  "fantasy_positions": [
+   "QB"
+  ],
+  "first_name": "Brett",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Gabbert",
+  "news_updated": 1754250907948,
+  "position": "QB",
+  "status": "Active",
+  "team": null,
+  "years_exp": 0
+ },
+ "13295": {
+  "active": true,
+  "age": 24,
+  "fantasy_positions": [
+   "QB"
+  ],
+  "first_name": "Behren",
+  "injury_notes": null,
+  "injury_status": "Out",
+  "last_name": "Morton",
+  "news_updated": 1794857737992,
+  "position": "QB",
+  "status": "Active",
+  "team": "NE",
+  "years_exp": 0
+ },
+ "1408": {
+  "active": true,
+  "age": 29,
+  "fantasy_positions": [
+   "RB"
+  ],
+  "first_name": "Le'Veon",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Bell",
+  "news_updated": 1784559344501,
+  "position": "RB",
+  "status": "Active",
+  "team": null,
+  "years_exp": 9
+ },
+ "1875": {
+  "active": true,
+  "age": 32,
+  "fantasy_positions": [
+   "LB"
+  ],
+  "first_name": "C.J.",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Mosley",
+  "news_updated": 1750349738286,
+  "position": "LB",
+  "status": "Active",
+  "team": null,
+  "years_exp": 11
+ },
+ "2801": {
+  "active": true,
+  "age": 30,
+  "fantasy_positions": [
+   "WR"
+  ],
+  "first_name": "DeAndrew",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "White",
+  "news_updated": 1598920530064,
+  "position": "WR",
+  "status": "Inactive",
+  "team": null,
+  "years_exp": 7
+ },
+ "5428": {
+  "active": true,
+  "age": 28,
+  "fantasy_positions": [
+   "WR"
+  ],
+  "first_name": "Ricky",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Jeune",
+  "news_updated": 1535476203701,
+  "position": "WR",
+  "status": "Active",
+  "team": null,
+  "years_exp": 4
+ },
+ "5838": {
+  "active": true,
+  "age": 30,
+  "fantasy_positions": [
+   "K"
+  ],
+  "first_name": "Phillip",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Andersen",
+  "news_updated": 1556575558059,
+  "position": "K",
+  "status": "Active",
+  "team": null,
+  "years_exp": 3
+ },
+ "6462": {
+  "active": true,
+  "age": 26,
+  "fantasy_positions": [
+   "TE"
+  ],
+  "first_name": "Ellis",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Richardson",
+  "news_updated": null,
+  "position": "TE",
+  "status": "Active",
+  "team": null,
+  "years_exp": 3
+ },
+ "7311": {
+  "active": true,
+  "age": 27,
+  "fantasy_positions": [
+   "DB",
+   "LB"
+  ],
+  "first_name": "Javin",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "White",
+  "news_updated": 1721609703351,
+  "position": "LB",
+  "status": "Active",
+  "team": null,
+  "years_exp": 4
+ },
+ "7918": {
+  "active": true,
+  "age": 24,
+  "fantasy_positions": [
+   "RB"
+  ],
+  "first_name": "A.J.",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Rose",
+  "news_updated": 1661021115529,
+  "position": "RB",
+  "status": "Active",
+  "team": null,
+  "years_exp": 1
+ },
+ "7926": {
+  "active": true,
+  "age": 24,
+  "fantasy_positions": [
+   "TE"
+  ],
+  "first_name": "Carl",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Tucker",
+  "news_updated": 1631568053348,
+  "position": "TE",
+  "status": "Active",
+  "team": null,
+  "years_exp": 1
+ },
+ "8074": {
+  "active": true,
+  "age": 24,
+  "fantasy_positions": [
+   "TE"
+  ],
+  "first_name": "Matt",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Seybert",
+  "news_updated": 1629836727949,
+  "position": "TE",
+  "status": "Active",
+  "team": null,
+  "years_exp": 1
+ },
+ "8733": {
+  "active": true,
+  "age": 27,
+  "fantasy_positions": [
+   "LB"
+  ],
+  "first_name": "Jake",
+  "injury_notes": null,
+  "injury_status": "Questionable",
+  "last_name": "Hummel",
+  "news_updated": 1794764129421,
+  "position": "LB",
+  "status": "Active",
+  "team": "HOU",
+  "years_exp": 4
+ },
+ "8809": {
+  "active": true,
+  "age": 25,
+  "fantasy_positions": [
+   "RB"
+  ],
+  "first_name": "Aaron",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Shampklin",
+  "news_updated": 1756225808845,
+  "position": "RB",
+  "status": "Active",
+  "team": null,
+  "years_exp": 3
+ },
+ "BAL": {
+  "active": true,
+  "age": null,
+  "fantasy_positions": [
+   "DEF"
+  ],
+  "first_name": "Baltimore",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Ravens",
+  "news_updated": null,
+  "position": "DEF",
+  "status": null,
+  "team": "BAL",
+  "years_exp": null
+ },
+ "HOU": {
+  "active": true,
+  "age": null,
+  "fantasy_positions": [
+   "DEF"
+  ],
+  "first_name": "Houston",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Texans",
+  "news_updated": null,
+  "position": "DEF",
+  "status": null,
+  "team": "HOU",
+  "years_exp": null
+ },
+ "NE": {
+  "active": true,
+  "age": null,
+  "fantasy_positions": [
+   "DEF"
+  ],
+  "first_name": "New England",
+  "injury_notes": null,
+  "injury_status": null,
+  "last_name": "Patriots",
+  "news_updated": null,
+  "position": "DEF",
+  "status": null,
+  "team": "NE",
+  "years_exp": null
+ }
+}

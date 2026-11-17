@@ -1,0 +1,84 @@
+# Fetch, build, commit data, deploy Pages. Needs no secrets and never logs in to ESPN.
+# ESPN league rosters arrive only through data/espn/rosters.json (written by the Claude
+# espn-roster-sync skill), and a push to that path triggers this workflow.
+name: refresh
+on:
+  schedule:
+    # Times are America/Chicago and sit off the top of the hour
+    - cron: "7 21 * * 2"    # Tue 9:07pm  post-MNF baseline
+      timezone: "America/Chicago"
+    - cron: "7 14 * * 4"    # Thu 2:07pm  TNF injury reports
+      timezone: "America/Chicago"
+    - cron: "7 17 * * 5"    # Fri 5:07pm  final injury designations
+      timezone: "America/Chicago"
+    - cron: "7 9 * * 0"     # Sun 9:07am  morning news
+      timezone: "America/Chicago"
+    - cron: "47 10 * * 0"   # Sun 10:47am inactives for noon games
+      timezone: "America/Chicago"
+    - cron: "7 13 * * 0"    # Sun 1:07pm  inactives for late games
+      timezone: "America/Chicago"
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/espn/**"
+      - ".github/workflows/refresh.yml"   # exercises workflow edits
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Tests
+        run: python -m pytest -q
+      - name: Fetch sources
+        run: python -m pipeline.ingest
+      - name: Build board
+        # Exits non-zero on an empty board, so nothing below runs and the last good site stays live
+        run: python -m pipeline.build
+      - name: Run summary
+        run: python scripts/step_summary.py >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw data/build data/idmap.json
+          if git diff --cached --quiet; then echo "No data changes"; exit 0; fi
+          git commit -m "Refresh data"
+          for i in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 5))
+          done
+          echo "Could not push data" >&2
+          exit 1
+      - name: Assemble site
+        run: python scripts/make_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    # Pages deploys only from the default branch
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

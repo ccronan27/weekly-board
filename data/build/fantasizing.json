@@ -1,0 +1,872 @@
+{
+ "generatedAt": "2026-11-17T21:08:47Z",
+ "league": {
+  "key": "fantasizing",
+  "name": "Fantasizing 2026",
+  "platform": "espn",
+  "teamName": "Slimelord’s Nickolodean"
+ },
+ "lineup": {
+  "alerts": [],
+  "currentPoints": 100.1,
+  "gain": 0.0,
+  "moves": [],
+  "recommendedPoints": 100.1,
+  "slots": [
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 23.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 7.2,
+     "game": {
+      "home": true,
+      "implied": 26.0,
+      "kickoff": "2026-11-22T18:00Z",
+      "opp": "TB",
+      "oppImplied": 19.5,
+      "spread": -6.5,
+      "total": 45.5
+     },
+     "id": "3163",
+     "name": "Jared Goff",
+     "points": 15.2,
+     "pos": "QB",
+     "team": "DET"
+    },
+    "recommended": {
+     "ceiling": 23.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 7.2,
+     "game": {
+      "home": true,
+      "implied": 26.0,
+      "kickoff": "2026-11-22T18:00Z",
+      "opp": "TB",
+      "oppImplied": 19.5,
+      "spread": -6.5,
+      "total": 45.5
+     },
+     "id": "3163",
+     "name": "Jared Goff",
+     "points": 15.2,
+     "pos": "QB",
+     "team": "DET"
+    },
+    "slot": "QB"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 29.6,
+     "eligible": true,
+     "flags": [],
+     "floor": 10.0,
+     "game": {
+      "home": true,
+      "implied": 24.2,
+      "kickoff": "2026-11-23T01:20Z",
+      "opp": "MIN",
+      "oppImplied": 21.2,
+      "spread": -3.0,
+      "total": 45.5
+     },
+     "id": "4034",
+     "name": "Christian McCaffrey",
+     "points": 19.8,
+     "pos": "RB",
+     "team": "SF"
+    },
+    "recommended": {
+     "ceiling": 29.6,
+     "eligible": true,
+     "flags": [],
+     "floor": 10.0,
+     "game": {
+      "home": true,
+      "implied": 24.2,
+      "kickoff": "2026-11-23T01:20Z",
+      "opp": "MIN",
+      "oppImplied": 21.2,
+      "spread": -3.0,
+      "total": 45.5
+     },
+     "id": "4034",
+     "name": "Christian McCaffrey",
+     "points": 19.8,
+     "pos": "RB",
+     "team": "SF"
+    },
+    "slot": "RB"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 17.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 10.6,
+     "game": {
+      "home": true,
+      "implied": 29.0,
+      "kickoff": "2026-11-22T18:00Z",
+      "opp": "ARI",
+      "oppImplied": 12.5,
+      "spread": -16.5,
+      "total": 41.5
+     },
+     "id": "10229",
+     "name": "Rashee Rice",
+     "points": 13.9,
+     "pos": "WR",
+     "team": "KC"
+    },
+    "recommended": {
+     "ceiling": 17.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 10.6,
+     "game": {
+      "home": true,
+      "implied": 29.0,
+      "kickoff": "2026-11-22T18:00Z",
+      "opp": "ARI",
+      "oppImplied": 12.5,
+      "spread": -16.5,
+      "total": 41.5
+     },
+     "id": "10229",
+     "name": "Rashee Rice",
+     "points": 13.9,
+     "pos": "WR",
+     "team": "KC"
+    },
+    "slot": "WR"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 17.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 0.0,
+     "game": {
+      "home": false,
+      "implied": 15.2,
+      "kickoff": "2026-11-22T21:25Z",
+      "opp": "DEN",
+      "oppImplied": 25.2,
+      "spread": 10.0,
+      "total": 40.5
+     },
+     "id": "10213",
+     "name": "Tre Tucker",
+     "points": 8.3,
+     "pos": "WR",
+     "team": "LV"
+    },
+    "recommended": {
+     "ceiling": 17.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 0.0,
+     "game": {
+      "home": false,
+      "implied": 15.2,
+      "kickoff": "2026-11-22T21:25Z",
+      "opp": "DEN",
+      "oppImplied": 25.2,
+      "spread": 10.0,
+      "total": 40.5
+     },
+     "id": "10213",
+     "name": "Tre Tucker",
+     "points": 8.3,
+     "pos": "WR",
+     "team": "LV"
+    },
+    "slot": "WR"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 14.4,
+     "eligible": true,
+     "flags": [],
+     "floor": 1.8,
+     "game": {
+      "home": false,
+      "implied": 29.5,
+      "kickoff": "2026-11-24T01:15Z",
+      "opp": "WAS",
+      "oppImplied": 23.0,
+      "spread": -6.5,
+      "total": 52.5
+     },
+     "id": "4993",
+     "name": "Mike Gesicki",
+     "points": 8.1,
+     "pos": "TE",
+     "team": "CIN"
+    },
+    "recommended": {
+     "ceiling": 14.4,
+     "eligible": true,
+     "flags": [],
+     "floor": 1.8,
+     "game": {
+      "home": false,
+      "implied": 29.5,
+      "kickoff": "2026-11-24T01:15Z",
+      "opp": "WAS",
+      "oppImplied": 23.0,
+      "spread": -6.5,
+      "total": 52.5
+     },
+     "id": "4993",
+     "name": "Mike Gesicki",
+     "points": 8.1,
+     "pos": "TE",
+     "team": "CIN"
+    },
+    "slot": "TE"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 21.7,
+     "eligible": true,
+     "flags": [],
+     "floor": 6.8,
+     "game": {
+      "home": false,
+      "implied": 19.0,
+      "kickoff": "2026-11-22T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 22.5,
+      "spread": 3.5,
+      "total": 41.5
+     },
+     "id": "8146",
+     "name": "Garrett Wilson",
+     "points": 14.2,
+     "pos": "WR",
+     "team": "NYJ"
+    },
+    "recommended": {
+     "ceiling": 21.7,
+     "eligible": true,
+     "flags": [],
+     "floor": 6.8,
+     "game": {
+      "home": false,
+      "implied": 19.0,
+      "kickoff": "2026-11-22T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 22.5,
+      "spread": 3.5,
+      "total": 41.5
+     },
+     "id": "8146",
+     "name": "Garrett Wilson",
+     "points": 14.2,
+     "pos": "WR",
+     "team": "NYJ"
+    },
+    "slot": "FLEX"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 14.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 3.1,
+     "game": {
+      "home": false,
+      "implied": 21.2,
+      "kickoff": "2026-11-23T01:20Z",
+      "opp": "SF",
+      "oppImplied": 24.2,
+      "spread": 3.0,
+      "total": 45.5
+     },
+     "id": "4199",
+     "name": "Aaron Jones Sr.",
+     "points": 8.6,
+     "pos": "RB",
+     "team": "MIN"
+    },
+    "recommended": {
+     "ceiling": 14.2,
+     "eligible": true,
+     "flags": [],
+     "floor": 3.1,
+     "game": {
+      "home": false,
+      "implied": 21.2,
+      "kickoff": "2026-11-23T01:20Z",
+      "opp": "SF",
+      "oppImplied": 24.2,
+      "spread": 3.0,
+      "total": 45.5
+     },
+     "id": "4199",
+     "name": "Aaron Jones Sr.",
+     "points": 8.6,
+     "pos": "RB",
+     "team": "MIN"
+    },
+    "slot": "FLEX"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 10.7,
+     "eligible": true,
+     "flags": [],
+     "floor": 4.5,
+     "game": {
+      "home": false,
+      "implied": 15.2,
+      "kickoff": "2026-11-22T21:25Z",
+      "opp": "DEN",
+      "oppImplied": 25.2,
+      "spread": 10.0,
+      "total": 40.5
+     },
+     "id": "6083",
+     "name": "Matt Gay",
+     "points": 7.6,
+     "pos": "K",
+     "team": "LV"
+    },
+    "recommended": {
+     "ceiling": 10.7,
+     "eligible": true,
+     "flags": [],
+     "floor": 4.5,
+     "game": {
+      "home": false,
+      "implied": 15.2,
+      "kickoff": "2026-11-22T21:25Z",
+      "opp": "DEN",
+      "oppImplied": 25.2,
+      "spread": 10.0,
+      "total": 40.5
+     },
+     "id": "6083",
+     "name": "Matt Gay",
+     "points": 7.6,
+     "pos": "K",
+     "team": "LV"
+    },
+    "slot": "K"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 9.3,
+     "eligible": true,
+     "flags": [],
+     "floor": 0.0,
+     "game": {
+      "home": false,
+      "implied": 21.2,
+      "kickoff": "2026-11-23T01:20Z",
+      "opp": "SF",
+      "oppImplied": 24.2,
+      "spread": 3.0,
+      "total": 45.5
+     },
+     "id": "MIN",
+     "name": "Minnesota Vikings",
+     "points": 4.4,
+     "pos": "DEF",
+     "team": "MIN"
+    },
+    "recommended": {
+     "ceiling": 9.3,
+     "eligible": true,
+     "flags": [],
+     "floor": 0.0,
+     "game": {
+      "home": false,
+      "implied": 21.2,
+      "kickoff": "2026-11-23T01:20Z",
+      "opp": "SF",
+      "oppImplied": 24.2,
+      "spread": 3.0,
+      "total": 45.5
+     },
+     "id": "MIN",
+     "name": "Minnesota Vikings",
+     "points": 4.4,
+     "pos": "DEF",
+     "team": "MIN"
+    },
+    "slot": "DEF"
+   }
+  ]
+ },
+ "roster": [
+  {
+   "ceiling": 29.6,
+   "eligible": true,
+   "espn": 19.8,
+   "flags": [],
+   "floor": 10.0,
+   "game": {
+    "home": true,
+    "implied": 24.2,
+    "kickoff": "2026-11-23T01:20Z",
+    "opp": "MIN",
+    "oppImplied": 21.2,
+    "spread": -3.0,
+    "total": 45.5
+   },
+   "games": 9,
+   "id": "4034",
+   "name": "Christian McCaffrey",
+   "points": 19.8,
+   "pos": "RB",
+   "rotowire": 19.8,
+   "sd": 9.79,
+   "slot": "RB",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "SF"
+  },
+  {
+   "ceiling": 23.2,
+   "eligible": true,
+   "espn": 14.8,
+   "flags": [],
+   "floor": 7.2,
+   "game": {
+    "home": true,
+    "implied": 26.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "TB",
+    "oppImplied": 19.5,
+    "spread": -6.5,
+    "total": 45.5
+   },
+   "games": 9,
+   "id": "3163",
+   "name": "Jared Goff",
+   "points": 15.2,
+   "pos": "QB",
+   "rotowire": 15.7,
+   "sd": 8.0,
+   "slot": "QB",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "DET"
+  },
+  {
+   "ceiling": 21.7,
+   "eligible": true,
+   "espn": 13.9,
+   "flags": [],
+   "floor": 6.8,
+   "game": {
+    "home": false,
+    "implied": 19.0,
+    "kickoff": "2026-11-22T21:05Z",
+    "opp": "LAC",
+    "oppImplied": 22.5,
+    "spread": 3.5,
+    "total": 41.5
+   },
+   "games": 9,
+   "id": "8146",
+   "name": "Garrett Wilson",
+   "points": 14.2,
+   "pos": "WR",
+   "rotowire": 14.5,
+   "sd": 7.47,
+   "slot": "FLEX",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NYJ"
+  },
+  {
+   "ceiling": 17.2,
+   "eligible": true,
+   "espn": 12.8,
+   "flags": [],
+   "floor": 10.6,
+   "game": {
+    "home": true,
+    "implied": 29.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "ARI",
+    "oppImplied": 12.5,
+    "spread": -16.5,
+    "total": 41.5
+   },
+   "games": 6,
+   "id": "10229",
+   "name": "Rashee Rice",
+   "points": 13.9,
+   "pos": "WR",
+   "rotowire": 15.0,
+   "sd": 3.33,
+   "slot": "WR",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "KC"
+  },
+  {
+   "ceiling": 14.2,
+   "eligible": true,
+   "espn": 8.4,
+   "flags": [],
+   "floor": 3.1,
+   "game": {
+    "home": false,
+    "implied": 21.2,
+    "kickoff": "2026-11-23T01:20Z",
+    "opp": "SF",
+    "oppImplied": 24.2,
+    "spread": 3.0,
+    "total": 45.5
+   },
+   "games": 9,
+   "id": "4199",
+   "name": "Aaron Jones Sr.",
+   "points": 8.6,
+   "pos": "RB",
+   "rotowire": 8.8,
+   "sd": 5.56,
+   "slot": "FLEX",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "MIN"
+  },
+  {
+   "ceiling": 17.2,
+   "eligible": true,
+   "espn": 8.2,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 15.2,
+    "kickoff": "2026-11-22T21:25Z",
+    "opp": "DEN",
+    "oppImplied": 25.2,
+    "spread": 10.0,
+    "total": 40.5
+   },
+   "games": 9,
+   "id": "10213",
+   "name": "Tre Tucker",
+   "points": 8.3,
+   "pos": "WR",
+   "rotowire": 8.5,
+   "sd": 8.86,
+   "slot": "WR",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "LV"
+  },
+  {
+   "ceiling": 14.4,
+   "eligible": true,
+   "espn": 7.4,
+   "flags": [],
+   "floor": 1.8,
+   "game": {
+    "home": false,
+    "implied": 29.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 23.0,
+    "spread": -6.5,
+    "total": 52.5
+   },
+   "games": 8,
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "points": 8.1,
+   "pos": "TE",
+   "rotowire": 8.9,
+   "sd": 6.29,
+   "slot": "TE",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN"
+  },
+  {
+   "ceiling": 10.7,
+   "eligible": true,
+   "espn": 8.0,
+   "flags": [],
+   "floor": 4.5,
+   "game": {
+    "home": false,
+    "implied": 15.2,
+    "kickoff": "2026-11-22T21:25Z",
+    "opp": "DEN",
+    "oppImplied": 25.2,
+    "spread": 10.0,
+    "total": 40.5
+   },
+   "games": 10,
+   "id": "6083",
+   "name": "Matt Gay",
+   "points": 7.6,
+   "pos": "K",
+   "rotowire": 7.2,
+   "sd": 3.13,
+   "slot": "K",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "LV"
+  },
+  {
+   "ceiling": 17.6,
+   "eligible": true,
+   "espn": 7.1,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 12.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "KC",
+    "oppImplied": 29.0,
+    "spread": 16.5,
+    "total": 41.5
+   },
+   "games": 10,
+   "id": "8132",
+   "name": "Tyler Allgeier",
+   "points": 7.6,
+   "pos": "RB",
+   "rotowire": 8.2,
+   "sd": 9.98,
+   "slot": "BN",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "ARI"
+  },
+  {
+   "ceiling": 8.0,
+   "eligible": false,
+   "espn": 5.9,
+   "flags": [
+    "IR"
+   ],
+   "floor": 1.9,
+   "game": {
+    "home": false,
+    "implied": 21.5,
+    "kickoff": "2026-11-22T21:25Z",
+    "opp": "PHI",
+    "oppImplied": 17.0,
+    "spread": -4.5,
+    "total": 38.5
+   },
+   "games": 3,
+   "id": "6819",
+   "name": "Michael Pittman Jr.",
+   "points": 5.0,
+   "pos": "WR",
+   "rotowire": 4.1,
+   "sd": 3.03,
+   "slot": "IR",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": "IR",
+   "team": "PIT"
+  },
+  {
+   "ceiling": 9.3,
+   "eligible": true,
+   "espn": 4.5,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 21.2,
+    "kickoff": "2026-11-23T01:20Z",
+    "opp": "SF",
+    "oppImplied": 24.2,
+    "spread": 3.0,
+    "total": 45.5
+   },
+   "games": 9,
+   "id": "MIN",
+   "name": "Minnesota Vikings",
+   "points": 4.4,
+   "pos": "DEF",
+   "rotowire": 4.4,
+   "sd": 4.87,
+   "slot": "DEF",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "MIN"
+  },
+  {
+   "ceiling": null,
+   "eligible": false,
+   "espn": null,
+   "flags": [
+    "BYE"
+   ],
+   "floor": null,
+   "game": null,
+   "games": 10,
+   "id": "8167",
+   "name": "Christian Watson",
+   "points": null,
+   "pos": "WR",
+   "rotowire": null,
+   "sd": null,
+   "slot": "BN",
+   "sources": [],
+   "status": null,
+   "team": "GB"
+  },
+  {
+   "ceiling": null,
+   "eligible": false,
+   "espn": null,
+   "flags": [
+    "BYE"
+   ],
+   "floor": null,
+   "game": null,
+   "games": 10,
+   "id": "12506",
+   "name": "Harold Fannin Jr.",
+   "points": null,
+   "pos": "TE",
+   "rotowire": null,
+   "sd": null,
+   "slot": "BN",
+   "sources": [],
+   "status": null,
+   "team": "CLE"
+  },
+  {
+   "ceiling": null,
+   "eligible": false,
+   "espn": null,
+   "flags": [
+    "IR"
+   ],
+   "floor": null,
+   "game": {
+    "home": true,
+    "implied": 25.2,
+    "kickoff": "2026-11-22T21:25Z",
+    "opp": "LV",
+    "oppImplied": 15.2,
+    "spread": -10.0,
+    "total": 40.5
+   },
+   "games": 6,
+   "id": "12489",
+   "name": "RJ Harvey",
+   "points": null,
+   "pos": "RB",
+   "rotowire": null,
+   "sd": null,
+   "slot": "BN",
+   "sources": [],
+   "status": "IR",
+   "team": "DEN"
+  },
+  {
+   "ceiling": null,
+   "eligible": false,
+   "espn": null,
+   "flags": [
+    "BYE",
+    "IR"
+   ],
+   "floor": null,
+   "game": null,
+   "games": 5,
+   "id": "8121",
+   "name": "Romeo Doubs",
+   "points": null,
+   "pos": "WR",
+   "rotowire": null,
+   "sd": null,
+   "slot": "IR",
+   "sources": [],
+   "status": "IR",
+   "team": "NE"
+  }
+ ],
+ "scoringNotes": [
+  "ESPN scoring ids with points but no Rotowire equivalent, ignored for Rotowire: [63, 201, 206, 209]"
+ ],
+ "season": 2026,
+ "sources": {
+  "espn_defaults": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "espn_rosters": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:21:06.342Z",
+   "ok": true,
+   "stale": false
+  },
+  "nflverse_lines": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_projections": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:45Z",
+   "ok": true,
+   "stale": false
+  }
+ },
+ "week": 11
+}

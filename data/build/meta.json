@@ -1,0 +1,81 @@
+{
+ "espnRosters": {
+  "ageDays": 0.16,
+  "stale": false,
+  "syncedAt": "2026-11-17T17:21:06.342Z",
+  "week": 11
+ },
+ "gapFills": 26,
+ "generatedAt": "2026-11-17T21:08:47Z",
+ "idmap": {
+  "matched": 1040,
+  "unmatchedEspnPlayers": 21
+ },
+ "leagues": [
+  {
+   "file": "fantasizing.json",
+   "gain": 0.0,
+   "key": "fantasizing",
+   "name": "Fantasizing 2026"
+  },
+  {
+   "file": "hwh.json",
+   "gain": 8.3,
+   "key": "hwh",
+   "name": "HWH: The League"
+  },
+  {
+   "file": "chicago-dynasty.json",
+   "gain": 6.0,
+   "key": "chicago-dynasty",
+   "name": "Chicago Dynasty"
+  }
+ ],
+ "model": "Equal average of ESPN and Rotowire projections, each re-scored with the league's scoring. Floor and ceiling are one weekly SD below and above.",
+ "season": 2026,
+ "sources": {
+  "espn_defaults": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "espn_rosters": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:21:06.342Z",
+   "ok": true,
+   "stale": false
+  },
+  "nflverse_lines": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_leagues": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:45Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_players": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:45Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_projections": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:45Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w10": {
+   "error": null,
+   "lastUpdated": "2026-11-17T21:08:45Z",
+   "ok": true,
+   "stale": false
+  }
+ },
+ "week": 11
+}

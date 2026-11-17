@@ -1,0 +1,34 @@
+# Overrides applied on top of settings pulled from the platform.
+#   espnScoringByStatId: { <ESPN stat id>: <points> }   merged over data/espn/rosters.json
+#   scoring: { <stat key>: <points> }                    Sleeper leagues only
+#   starters: [QB, RB, ...]                              replaces the lineup slot list
+#
+# D/ST scoring. The espn-roster-sync file keeps only the base points per stat, and ESPN stores
+# D/ST scoring as per-slot overrides, so every D/ST stat shows up there as 0. These are ESPN's
+# standard default D/ST values. They reproduce ESPN's own appliedTotal for D/ST projections
+# exactly (26 of 26 teams, max error 0.0000, week 11 2026), but nobody has confirmed that this
+# league uses the defaults. Fix at the source by having the sync skill also save pointsOverrides.
+espnScoringByStatId:
+  89: 5      # 0 points allowed
+  90: 4      # 1-6
+  91: 3      # 7-13
+  92: 1      # 14-17
+  121: 0     # 18-21
+  122: 0     # 22-27
+  123: -1    # 28-34
+  124: -3    # 35-45
+  125: -5    # 46+
+  95: 2      # interception
+  96: 2      # fumble recovery
+  97: 2      # blocked kick
+  98: 2      # safety
+  99: 1      # sack
+  128: 5     # yards allowed under 100
+  129: 3     # 100-199
+  130: 2     # 200-299
+  131: 0     # 300-349
+  132: -1    # 350-399
+  133: -3    # 400-449
+  134: -5    # 450-499
+  135: -6    # 500-549
+  136: -7    # 550+
