@@ -1,11 +1,12 @@
 """Build tests. Invariants on a fresh build from the committed raw cache, plus helper unit tests."""
 import json
 import shutil
+from datetime import datetime, timezone
 
 import pytest
 
 from pipeline import build as bd
-from pipeline.common import RAW, read_json
+from pipeline.common import DATA, RAW, read_json
 
 SEASON, WEEK = 2026, 11
 HAVE_RAW = (RAW / str(SEASON) / str(WEEK) / "status.json").exists()
@@ -129,3 +130,112 @@ def test_sleeper_current_handles_empty_slots():
 def test_espn_current_fills_matching_slots_in_order():
     recs = [{"id": "a", "slot": "FLEX"}, {"id": "b", "slot": "FLEX"}, {"id": "c", "slot": "QB"}, {"id": "d", "slot": "BN"}, {"id": "e", "slot": "IR"}]
     assert bd._espn_current(["QB", "FLEX", "FLEX", "K"], recs) == ["c", "a", "b", None]
+
+
+# ---- locks, taxi, watch, week mismatch. Fixtures that need changed raw data copy the cache first ----
+
+LOCK_NOW = datetime(2026, 11, 20, 12, 0, tzinfo=timezone.utc)   # after the Thu IND/HOU game, before Sunday
+
+
+def _raw_copy(tmp_path):
+    shutil.copytree(RAW / str(SEASON), tmp_path / "raw" / str(SEASON))
+    return tmp_path / "raw"
+
+
+def _edit(raw_root, name, fn):
+    f = raw_root / str(SEASON) / str(WEEK) / f"{name}.json"
+    d = read_json(f)
+    fn(d["data"])
+    f.write_text(json.dumps(d))
+
+
+@pytest.fixture(scope="module")
+def locked(tmp_path_factory):
+    out = tmp_path_factory.mktemp("locked")
+    return bd.build(SEASON, WEEK, out_dir=out, save_idmap=False, now=LOCK_NOW)
+
+
+@needs_raw
+def test_kicked_off_players_are_locked_and_fields_present(locked):
+    hwh = locked["leagues"]["hwh"]["lineup"]
+    for s in hwh["slots"]:
+        for side in ("current", "recommended"):
+            p = s[side]
+            if p:
+                assert "locked" in p and "injuryNotes" in p and "espn" in p and "rotowire" in p, side
+    roster = locked["leagues"]["hwh"]["roster"]
+    for p in roster:
+        assert p["locked"] == (p["team"] in ("IND", "HOU")), p["name"]
+    assert any(p["locked"] for p in roster) and any(not p["locked"] for p in roster)
+
+
+@needs_raw
+def test_no_move_or_slot_change_involves_a_locked_player(locked):
+    for k, o in locked["leagues"].items():
+        for m in o["lineup"]["moves"]:
+            assert not (m["in"] and m["in"]["locked"]), (k, m["in"]["name"])
+            assert not (m["out"] and m["out"]["locked"]), (k, m["out"]["name"])
+        for s in o["lineup"]["slots"]:
+            cur = s["current"]
+            if cur and cur["locked"]:
+                assert s["recommended"]["id"] == cur["id"], (k, cur["name"])
+        assert o["lineup"]["gain"] >= 0, k
+
+
+@needs_raw
+def test_locked_starter_out_scores_zero_and_keeps_slot(tmp_path):
+    raw = _raw_copy(tmp_path)
+    base = bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "a", save_idmap=False, now=LOCK_NOW)["leagues"]["hwh"]
+    taylor = next(s["current"] for s in base["lineup"]["slots"] if s["current"] and s["current"]["name"] == "Jonathan Taylor")
+    _edit(raw, "sleeper_players", lambda d: d[taylor["id"]].update(injuryStatus="Out"))
+    o = bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "b", save_idmap=False, now=LOCK_NOW)["leagues"]["hwh"]
+    rb_slot = next(s for s in o["lineup"]["slots"] if s["current"] and s["current"]["id"] == taylor["id"])
+    assert rb_slot["current"]["locked"] and not rb_slot["current"]["eligible"] and rb_slot["recommended"]["id"] == taylor["id"]
+    counted = sum(s["current"]["points"] for s in o["lineup"]["slots"] if s["current"] and s["current"]["eligible"])
+    assert o["lineup"]["currentPoints"] == round(counted, 1)
+    assert not any(m["out"] and m["out"]["id"] == taylor["id"] for m in o["lineup"]["moves"])
+
+
+@needs_raw
+def test_taxi_players_get_taxi_slot_and_reserve_gets_ir(tmp_path):
+    raw = _raw_copy(tmp_path)
+
+    moved = []
+
+    def move(d):
+        mine = next(t for t in d["hwh"]["teams"] if t["isMine"])
+        bench = [p for p in mine["players"] if p not in mine["starters"] and p not in mine["reserve"] and p not in mine["taxi"]]
+        mine["taxi"] = mine["taxi"] + [bench[0]]
+        mine["reserve"] = mine["reserve"] + [bench[1]]
+        moved.extend(bench[:2])
+    _edit(raw, "sleeper_leagues", move)
+    res = bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "out", save_idmap=False, now=LOCK_NOW)
+    by = {p["id"]: p for p in res["leagues"]["hwh"]["roster"]}
+    taxi, ir = by[moved[0]], by[moved[1]]
+    assert taxi["slot"] == "TAXI" and not taxi["eligible"] and "IR" not in taxi["flags"]
+    assert ir["slot"] == "IR" and not ir["eligible"] and "IR" in ir["flags"]
+
+
+@needs_raw
+def test_watch_lists_questionable_starter(tmp_path):
+    base = bd.build(SEASON, WEEK, out_dir=tmp_path / "a", save_idmap=False, now=LOCK_NOW)["leagues"]["hwh"]
+    starter = next(s["current"] for s in base["lineup"]["slots"] if s["current"] and not s["current"]["locked"]
+                   and not s["current"]["flags"])
+    raw = _raw_copy(tmp_path)
+    _edit(raw, "sleeper_players", lambda d: d[starter["id"]].update(injuryStatus="Questionable", injuryNotes="Knee"))
+    o = bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "b", save_idmap=False, now=LOCK_NOW)["leagues"]["hwh"]
+    w = next(x for x in o["lineup"]["watch"] if x["player"] == starter["name"])
+    assert w["flags"] == ["QUESTIONABLE"] and w["injuryNotes"] == "Knee"
+    assert set(w) == {"player", "slot", "flags", "kickoff", "injuryNotes"}
+
+
+@needs_raw
+def test_week_mismatch_flag(tmp_path):
+    ok = bd.build(SEASON, WEEK, out_dir=tmp_path / "ok", save_idmap=False, now=LOCK_NOW)
+    assert ok["meta"]["espnRosters"]["weekMismatch"] is False
+    rosters = read_json(DATA / "espn" / "rosters.json")
+    rosters["week"] = WEEK - 1
+    f = tmp_path / "rosters.json"
+    f.write_text(json.dumps(rosters))
+    bad = bd.build(SEASON, WEEK, out_dir=tmp_path / "bad", save_idmap=False, now=LOCK_NOW, rosters_path=f)
+    assert bad["meta"]["espnRosters"]["weekMismatch"] is True

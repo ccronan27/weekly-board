@@ -83,3 +83,57 @@ def test_moves_pair_in_and_out_with_gain():
 def test_moves_for_starter_with_no_replacement():
     mv = lu.moves(["QB", "K"], ["q1", "k1"], ["q1", None], {"k1": 8.0, "q1": 20.0}, {"q1": "QB", "k1": "K"})
     assert mv == [{"in": None, "out": "k1", "slot": "K", "gain": -8.0}]
+
+
+# ---- locks: fixed slots (starters that have kicked off) ----
+
+def test_locked_starter_is_never_moved_out_even_with_better_bench():
+    slots = ["RB", "RB"]
+    rs = [P("r1", "RB", 5), P("r2", "RB", 4), P("r3", "RB", 9), P("r4", "RB", 8)]
+    pos = {p["id"]: p["pos"] for p in rs}
+    cur = ["r1", "r2"]
+    assert "r1" not in lu.recommend(slots, rs), "without a lock the 5 point starter is benched"
+    fixed = {0: "r1"}
+    chosen = lu.recommend(slots, rs, fixed=fixed)
+    placed = lu.arrange(slots, chosen, cur, pos, fixed=fixed)
+    assert placed == ["r1", "r3"], "r1 stays in slot 0, r2 is replaced by the best free player"
+
+
+def test_locked_starter_in_flex_keeps_its_slot():
+    slots = ["RB", "WR", "FLEX"]
+    rs = [P("r1", "RB", 12), P("w1", "WR", 6), P("w2", "WR", 14), P("r2", "RB", 11)]
+    pos = {p["id"]: p["pos"] for p in rs}
+    cur = ["r1", "w2", "w1"]
+    fixed = {2: "w1"}
+    chosen = lu.recommend(slots, rs, fixed=fixed)
+    placed = lu.arrange(slots, chosen, cur, pos, fixed=fixed)
+    assert placed[2] == "w1" and placed[0] == "r1" and placed[1] == "w2"
+
+
+def test_ineligible_locked_starter_still_holds_slot():
+    slots = ["QB", "K"]
+    rs = [P("q1", "QB", 20, False), P("q2", "QB", 15), P("k1", "K", 8)]
+    fixed = {0: "q1"}
+    chosen = lu.recommend(slots, rs, fixed=fixed)
+    assert chosen == ["q1", "k1"], "a kicked off player who is now OUT still occupies the slot"
+
+
+def test_locked_bench_player_is_never_recommended():
+    slots = ["RB", "RB"]
+    # build marks locked bench players ineligible. r3 is the best, but its game has started
+    rs = [P("r1", "RB", 5), P("r2", "RB", 4), P("r3", "RB", 9, False), P("r4", "RB", 8)]
+    pos = {p["id"]: p["pos"] for p in rs}
+    fixed = {0: "r1"}
+    chosen = lu.recommend(slots, rs, fixed=fixed)
+    assert "r3" not in chosen and chosen == ["r1", "r4"]
+    placed = lu.arrange(slots, chosen, ["r1", "r2"], pos, fixed=fixed)
+    assert "r3" not in placed
+
+
+def test_no_locks_gives_the_same_answer():
+    rs = roster()
+    pos = {p["id"]: p["pos"] for p in rs}
+    cur = ["q1", "r1", "r2", "w1", "w2", "t1", "w3", "r4", "k1", "d1"]
+    assert lu.recommend(SLOTS, rs, fixed={}) == lu.recommend(SLOTS, rs)
+    chosen = lu.recommend(SLOTS, rs)
+    assert lu.arrange(SLOTS, chosen, cur, pos, fixed={}) == lu.arrange(SLOTS, chosen, cur, pos)

@@ -87,17 +87,26 @@ def game_context(lines: list[dict]) -> dict:
     return ctx
 
 
+def parse_kickoff(s: str | None) -> datetime | None:
+    """game_context kickoff format, e.g. 2026-11-22T18:00Z (UTC, minutes precision)."""
+    return None if not s else datetime.strptime(s, "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc)
+
+
 def _r(x, n=1):
     return None if x is None else round(x, n)
 
 
 # ------------------------------------------------------------------ main build
 
-def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None, save_idmap: bool = True) -> dict:
+def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None, save_idmap: bool = True,
+          now: datetime | None = None) -> dict:
     cfg = load_config()
     raw = load_raw(season, week, raw_root)
     if not raw["players"]:
         raise BuildError("no Sleeper player data cached, cannot identify anyone")
+    now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
     generated = now_iso()
     sources = raw["status"]["sources"]
     sleeper_players = raw["players"]
@@ -164,11 +173,14 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         bye = bool(team) and bool(games) and game is None
         flags = [f for f in (("BYE" if bye else None), status) if f]
         eligible = pos is not None and not bye and status not in OUT_STATUSES
+        kickoff = parse_kickoff(game["kickoff"]) if game else None
+        locked = kickoff is not None and kickoff <= now    # kicked off, the player can no longer be moved
         return {
             "id": pid or f"espn:{espn_id}", "name": name, "pos": pos, "team": team,
             "points": _r(proj["points"]), "espn": _r(proj["espn"]), "rotowire": _r(proj["rotowire"]),
             "sources": proj["sources"], "floor": fc["floor"], "ceiling": fc["ceiling"], "sd": fc["sd"], "games": fc["games"],
-            "status": status, "flags": flags, "eligible": eligible, "game": game,
+            "status": status, "flags": flags, "eligible": eligible, "game": game, "locked": locked,
+            "injuryNotes": sp.get("injuryNotes") if sp else None,
             "_filled": proj["filled"],
         }
 
@@ -200,39 +212,48 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 raise BuildError(f"could not find your team in {lc['key']}")
             team_name = mine["teamName"]
             for t in norm["teams"]:
-                bench_ir = set(t["reserve"]) | set(t["taxi"])
                 for pid in t["players"]:
                     rostered[pid] = (t["teamName"], None)
                 if t is mine:
                     start_ids = t["starters"]
                     for pid in t["players"]:
                         rec = player_record(pid, espn_of.get(pid), lg)
-                        rec["slot"] = "IR" if pid in bench_ir else ("START" if pid in start_ids else "BN")
+                        rec["slot"] = "IR" if pid in t["reserve"] else "TAXI" if pid in t["taxi"] else \
+                            "START" if pid in start_ids else "BN"
                         my_players.append(rec)
             order = [p for p in norm["rosterPositions"] if p not in scoring.NOT_STARTERS]
             slots = order
             cur = _sleeper_current(order, mine["starters"])
 
-        for p in my_players:   # a player parked in an IR slot cannot be started without a roster move
-            if p["slot"] == "IR":
+        for p in my_players:   # IR and taxi players cannot start without a roster move. Only real IR gets the flag
+            if p["slot"] in ("IR", "TAXI"):
                 p["eligible"] = False
-                if "IR" not in p["flags"]:
+                if p["slot"] == "IR" and "IR" not in p["flags"]:
                     p["flags"].append("IR")
         by_id = {p["id"]: p for p in my_players}
         pos_of = {p["id"]: p["pos"] for p in my_players}
-        pts = {p["id"]: (p["points"] or 0.0) if p["eligible"] else 0.0 for p in my_players}
-        chosen = lineup.recommend(slots, [{"id": p["id"], "pos": p["pos"], "points": p["points"] or 0.0, "eligible": p["eligible"]} for p in my_players])
-        rec_slots = lineup.arrange(slots, chosen, cur, pos_of)
+        # locked starters stay where they are, bench players that are locked cannot be moved in
+        fixed = {i: c for i, c in enumerate(cur) if c is not None and by_id[c]["locked"]}
+        for p in my_players:
+            if p["locked"] and p["id"] not in fixed.values():
+                p["eligible"] = False
+        pts = {p["id"]: (p["points"] or 0.0) if p["eligible"] else 0.0 for p in my_players}   # a locked OUT starter scores 0 but keeps the slot
+        chosen = lineup.recommend(slots, [{"id": p["id"], "pos": p["pos"], "points": p["points"] or 0.0, "eligible": p["eligible"]} for p in my_players],
+                                  fixed=fixed)
+        rec_slots = lineup.arrange(slots, chosen, cur, pos_of, fixed=fixed)
         mv = lineup.moves(slots, cur, rec_slots, pts, pos_of)
 
         def brief(pid):
             if pid is None:
                 return None
             p = by_id[pid]
-            return {k: p[k] for k in ("id", "name", "pos", "team", "points", "floor", "ceiling", "flags", "eligible", "game")}
+            return {k: p[k] for k in ("id", "name", "pos", "team", "points", "espn", "rotowire", "floor", "ceiling", "flags",
+                                      "eligible", "game", "injuryNotes", "locked")}
 
         cur_total = round(sum(pts.get(c, 0.0) for c in cur if c), 1)
         rec_total = round(sum(pts.get(r, 0.0) for r in rec_slots if r), 1)
+        if rec_total < cur_total:
+            raise BuildError(f"{lc['key']}: recommended {rec_total} below current {cur_total}, optimizer bug")
         for p in my_players:
             n_filled += len(p["_filled"])
             p.pop("_filled")
@@ -248,6 +269,9 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 "moves": [{"in": brief(m["in"]), "out": brief(m["out"]), "slot": m["slot"], "gain": m["gain"]} for m in mv],
                 "alerts": [{"player": p["name"], "slot": s, "flags": p["flags"]} for s, pid in zip(slots, cur) if pid
                            for p in [by_id[pid]] if any(f in ("BYE", *OUT_STATUSES) for f in p["flags"])],
+                "watch": [{"player": p["name"], "slot": s, "flags": p["flags"], "kickoff": (p["game"] or {}).get("kickoff"),
+                           "injuryNotes": p["injuryNotes"]} for s, pid in zip(slots, cur) if pid
+                          for p in [by_id[pid]] if p["status"] in ("QUESTIONABLE", "DOUBTFUL")],
             },
             "roster": sorted(my_players, key=lambda p: (-(p["points"] or 0), p["name"])),
             "scoringNotes": lg.notes,
@@ -281,7 +305,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         "generatedAt": generated, "season": season, "week": week,
         "sources": sources,
         "espnRosters": {"syncedAt": rosters["syncedAt"], "ageDays": round(sync_age, 2), "stale": espn_rosters.is_stale(rosters),
-                        "week": rosters["week"]},
+                        "week": rosters["week"], "weekMismatch": rosters["week"] != week},
         "model": "Equal average of ESPN and Rotowire projections, each re-scored with the league's scoring. Floor and ceiling are one weekly SD below and above.",
         "idmap": {"matched": len(idmap), "unmatchedEspnPlayers": len(unmatched)},
         "gapFills": n_filled,
@@ -291,7 +315,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
 
     # Never publish an empty board
     for k, o in outputs.items():
-        if not any(s["recommended"] for s in o["lineup"]["slots"]) or o["lineup"]["recommendedPoints"] <= 0:
+        if not any(s["recommended"] for s in o["lineup"]["slots"]) or o["lineup"]["recommendedPoints"] <= 0 or o["lineup"]["gain"] < 0:
             raise BuildError(f"{k}: recommended lineup is empty, refusing to publish")
     return {"meta": meta, "leagues": outputs}
 
