@@ -56,7 +56,7 @@ Scheduled workflows are disabled automatically after 60 days without repo activi
 1. Re-enable workflows in August: Actions tab, select `refresh`, Enable workflow.
 2. Update the league IDs and season in `config/leagues.yaml`. Scoring and lineups are pulled from the platforms. Check `config/leagues/*.overrides.yaml` still apply.
 3. Ask Claude to sync ESPN so `data/espn/rosters.json` is for the new league. Confirm the ESPN D/ST scoring in `config/leagues/fantasizing.overrides.yaml` still matches the league.
-4. Re-run the backtest from `docs/BACKTEST.md` before any model change ships. The script is not built yet (`scripts/backtest.py` is still to do), so the method notes in that document are the reference for now.
+4. Re-run the backtest before any model change ships: `python scripts/backtest.py` (this season to date, fit on last season weeks 1-17). It prints the Part 1 and Part 3 tables in `docs/BACKTEST.md` format, so paste them in to refresh the doc. Use `--part 1` for the weekly source check and `--season 2026 --weeks 1-10` to pin the range. Raw pulls are cached in `data/raw/{season}/{week}/` and `--offline` reruns from the cache. Keep the equal average unless a model's week-bootstrap range vs M0 is above zero.
 5. Run `python -m pytest -m live`. A contract failure means a source changed shape.
 6. Trigger `refresh` by hand and check that all three leagues show on the page with current stamps.
 

@@ -1,0 +1,162 @@
+{
+ "data": [
+  {
+   "away": "MIN",
+   "gameId": "2025_08_MIN_LAC",
+   "gameday": "2025-10-23",
+   "gametime": "20:15",
+   "home": "LAC",
+   "homeSpread": 3.0,
+   "impliedAway": 21.25,
+   "impliedHome": 24.25,
+   "total": 45.5,
+   "week": 8
+  },
+  {
+   "away": "MIA",
+   "gameId": "2025_08_MIA_ATL",
+   "gameday": "2025-10-26",
+   "gametime": "13:00",
+   "home": "ATL",
+   "homeSpread": 7.0,
+   "impliedAway": 18.75,
+   "impliedHome": 25.75,
+   "total": 44.5,
+   "week": 8
+  },
+  {
+   "away": "CHI",
+   "gameId": "2025_08_CHI_BAL",
+   "gameday": "2025-10-26",
+   "gametime": "13:00",
+   "home": "BAL",
+   "homeSpread": 2.5,
+   "impliedAway": 21.5,
+   "impliedHome": 24.0,
+   "total": 45.5,
+   "week": 8
+  },
+  {
+   "away": "BUF",
+   "gameId": "2025_08_BUF_CAR",
+   "gameday": "2025-10-26",
+   "gametime": "13:00",
+   "home": "CAR",
+   "homeSpread": -7.0,
+   "impliedAway": 27.25,
+   "impliedHome": 20.25,
+   "total": 47.5,
+   "week": 8
+  },
+  {
+   "away": "NYJ",
+   "gameId": "2025_08_NYJ_CIN",
+   "gameday": "2025-10-26",
+   "gametime": "13:00",
+   "home": "CIN",
+   "homeSpread": 5.5,
+   "impliedAway": 19.0,
+   "impliedHome": 24.5,
+   "total": 43.5,
+   "week": 8
+  },
+  {
+   "away": "SF",
+   "gameId": "2025_08_SF_HOU",
+   "gameday": "2025-10-26",
+   "gametime": "13:00",
+   "home": "HOU",
+   "homeSpread": 2.5,
+   "impliedAway": 19.5,
+   "impliedHome": 22.0,
+   "total": 41.5,
+   "week": 8
+  },
+  {
+   "away": "CLE",
+   "gameId": "2025_08_CLE_NE",
+   "gameday": "2025-10-26",
+   "gametime": "13:00",
+   "home": "NE",
+   "homeSpread": 7.0,
+   "impliedAway": 16.75,
+   "impliedHome": 23.75,
+   "total": 40.5,
+   "week": 8
+  },
+  {
+   "away": "NYG",
+   "gameId": "2025_08_NYG_PHI",
+   "gameday": "2025-10-26",
+   "gametime": "13:00",
+   "home": "PHI",
+   "homeSpread": 7.0,
+   "impliedAway": 18.25,
+   "impliedHome": 25.25,
+   "total": 43.5,
+   "week": 8
+  },
+  {
+   "away": "TB",
+   "gameId": "2025_08_TB_NO",
+   "gameday": "2025-10-26",
+   "gametime": "16:05",
+   "home": "NO",
+   "homeSpread": -4.5,
+   "impliedAway": 25.5,
+   "impliedHome": 21.0,
+   "total": 46.5,
+   "week": 8
+  },
+  {
+   "away": "DAL",
+   "gameId": "2025_08_DAL_DEN",
+   "gameday": "2025-10-26",
+   "gametime": "16:25",
+   "home": "DEN",
+   "homeSpread": 3.5,
+   "impliedAway": 24.0,
+   "impliedHome": 27.5,
+   "total": 51.5,
+   "week": 8
+  },
+  {
+   "away": "TEN",
+   "gameId": "2025_08_TEN_IND",
+   "gameday": "2025-10-26",
+   "gametime": "16:25",
+   "home": "IND",
+   "homeSpread": 15.5,
+   "impliedAway": 16.0,
+   "impliedHome": 31.5,
+   "total": 47.5,
+   "week": 8
+  },
+  {
+   "away": "GB",
+   "gameId": "2025_08_GB_PIT",
+   "gameday": "2025-10-26",
+   "gametime": "20:20",
+   "home": "PIT",
+   "homeSpread": -3.0,
+   "impliedAway": 24.75,
+   "impliedHome": 21.75,
+   "total": 46.5,
+   "week": 8
+  },
+  {
+   "away": "WAS",
+   "gameId": "2025_08_WAS_KC",
+   "gameday": "2025-10-27",
+   "gametime": "20:15",
+   "home": "KC",
+   "homeSpread": 10.5,
+   "impliedAway": 19.0,
+   "impliedHome": 29.5,
+   "total": 48.5,
+   "week": 8
+  }
+ ],
+ "fetchedAt": "2026-11-17T22:21:57Z",
+ "source": "nflverse_lines"
+}

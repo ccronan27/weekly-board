@@ -55,7 +55,7 @@ Source disagreement does NOT predict boom/bust (low vs high spread quartiles: ou
 2. Extra tuning (M3) overfits worst, especially for FLEX decisions
 3. Plain equal average is the most robust choice
 
-## Method notes (to rebuild as `scripts/backtest.py`)
+## Method notes (implemented in `scripts/backtest.py`)
 - Player match: normalized name + position (see SPEC.md)
 - ESPN weekly projection: `statSourceId == 1`, `statSplitTypeId == 1`, `scoringPeriodId == week`. Actual: `statSourceId == 0`
 - Rotowire: Sleeper projections `stats.pts_ppr`
