@@ -50,3 +50,24 @@ def test_make_site_refuses_empty_build(tmp_path, monkeypatch):
     (tmp_path / "data" / "build").mkdir(parents=True)
     monkeypatch.setattr(mod, "ROOT", tmp_path)
     assert mod.main() == 1 and not (tmp_path / "_site").exists()
+
+
+def test_app_reads_optional_fields():
+    js = (SITE / "app.js").read_text(encoding="utf-8")
+    for name in ["watch", "locked", "injuryNotes", "weekMismatch"]:
+        assert name in js, name
+
+
+def test_position_colors_for_every_slot_in_light_and_dark():
+    css = (SITE / "style.css").read_text(encoding="utf-8")
+    light, dark = css.split("prefers-color-scheme", 1)
+    for pos in ["qb", "rb", "wr", "te", "flex", "k", "def"]:
+        assert f"--pos-{pos}-bg:" in light, pos
+        assert f"--pos-{pos}-bg:" in dark, pos
+        assert f".chip.pos-{pos}{{" in css, pos
+
+
+def test_tabs_point_at_the_panel():
+    js = (SITE / "app.js").read_text(encoding="utf-8")
+    assert 'setAttribute("aria-controls", "panel")' in js
+    assert 'id="panel"' in (SITE / "index.html").read_text(encoding="utf-8")
