@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T21:08:47Z",
+ "generatedAt": "2026-11-17T21:56:23Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -16,7 +16,7 @@
     "slot": "FLEX"
    }
   ],
-  "currentPoints": 109.3,
+  "currentPoints": 109.4,
   "gain": 8.3,
   "moves": [
    {
@@ -66,7 +66,7 @@
     "slot": "FLEX"
    }
   ],
-  "recommendedPoints": 117.6,
+  "recommendedPoints": 117.7,
   "slots": [
    {
     "changed": false,
@@ -472,7 +472,7 @@
      "ceiling": 8.9,
      "eligible": true,
      "flags": [],
-     "floor": 0.4,
+     "floor": 0.5,
      "game": {
       "home": false,
       "implied": 16.0,
@@ -484,7 +484,7 @@
      },
      "id": "IND",
      "name": "Indianapolis Colts",
-     "points": 4.6,
+     "points": 4.7,
      "pos": "DEF",
      "team": "IND"
     },
@@ -492,7 +492,7 @@
      "ceiling": 8.9,
      "eligible": true,
      "flags": [],
-     "floor": 0.4,
+     "floor": 0.5,
      "game": {
       "home": false,
       "implied": 16.0,
@@ -504,7 +504,7 @@
      },
      "id": "IND",
      "name": "Indianapolis Colts",
-     "points": 4.6,
+     "points": 4.7,
      "pos": "DEF",
      "team": "IND"
     },
@@ -910,9 +910,9 @@
   {
    "ceiling": 8.9,
    "eligible": true,
-   "espn": 5.4,
+   "espn": 5.5,
    "flags": [],
-   "floor": 0.4,
+   "floor": 0.5,
    "game": {
     "home": false,
     "implied": 16.0,
@@ -925,7 +925,7 @@
    "games": 10,
    "id": "IND",
    "name": "Indianapolis Colts",
-   "points": 4.6,
+   "points": 4.7,
    "pos": "DEF",
    "rotowire": 3.8,
    "sd": 4.21,
@@ -985,31 +985,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:08:47Z",
+   "lastUpdated": "2026-11-17T21:56:22Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:08:47Z",
+   "lastUpdated": "2026-11-17T21:56:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:08:45Z",
+   "lastUpdated": "2026-11-17T21:56:20Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:08:45Z",
+   "lastUpdated": "2026-11-17T21:56:21Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:08:45Z",
+   "lastUpdated": "2026-11-17T21:56:21Z",
    "ok": true,
    "stale": false
   }

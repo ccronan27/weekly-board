@@ -31,9 +31,9 @@
    "gametime": "13:00",
    "home": "CAR",
    "homeSpread": 2.5,
-   "impliedAway": 20.5,
-   "impliedHome": 23.0,
-   "total": 43.5,
+   "impliedAway": 21.0,
+   "impliedHome": 23.5,
+   "total": 44.5,
    "week": 11
   },
   {
@@ -157,6 +157,6 @@
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-17T21:08:47Z",
+ "fetchedAt": "2026-11-17T21:56:23Z",
  "source": "nflverse_lines"
 }
