@@ -12774,7 +12774,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Jalon Daniels",
-   "newsUpdated": 1793064627072,
+   "newsUpdated": 1794936945273,
    "pos": "QB",
    "status": "Active",
    "team": "TB",
@@ -35706,7 +35706,7 @@
    "injuryNotes": null,
    "injuryStatus": "Out",
    "name": "David Montgomery",
-   "newsUpdated": 1794934544987,
+   "newsUpdated": 1794937245434,
    "pos": "RB",
    "status": "Active",
    "team": "HOU",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-17T17:38:47Z",
+ "fetchedAt": "2026-11-17T17:50:03Z",
  "source": "sleeper_players"
 }
