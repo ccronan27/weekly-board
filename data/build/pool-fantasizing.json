@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T22:19:20Z",
+ "generatedAt": "2026-11-17T22:20:43Z",
  "league": "fantasizing",
  "players": [
   {
@@ -441,12 +441,12 @@
    "floor": 9.3,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 6,
    "id": "11560",
@@ -606,12 +606,12 @@
    "floor": 8.6,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "6790",
@@ -1169,12 +1169,12 @@
    "floor": 9.1,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "12519",
@@ -1202,12 +1202,12 @@
    "floor": 6.7,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "12545",
@@ -1435,12 +1435,12 @@
    "floor": 7.8,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "8144",
@@ -2206,12 +2206,12 @@
    "floor": 5.4,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 8,
    "id": "12517",
@@ -2408,12 +2408,12 @@
    "floor": 7.5,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "11620",
@@ -2441,12 +2441,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 2,
    "id": "13281",
@@ -2942,12 +2942,12 @@
    "floor": 6.2,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 4,
    "id": "7543",
@@ -3538,12 +3538,12 @@
    "floor": 5.9,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 8,
    "id": "2020",
@@ -3705,12 +3705,12 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 4,
    "id": "12534",
@@ -5227,12 +5227,12 @@
    "floor": 0.7,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 8,
    "id": "7002",
@@ -5358,12 +5358,12 @@
    "floor": 0.4,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 8,
    "id": "4035",
@@ -5391,12 +5391,12 @@
    "floor": 0.4,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 8,
    "id": "3634",
@@ -5624,12 +5624,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 2,
    "id": "11653",
@@ -6151,12 +6151,12 @@
    "floor": 0.8,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "CHI",
@@ -6415,12 +6415,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "11834",
@@ -7283,12 +7283,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 3,
    "id": "11579",
@@ -8083,12 +8083,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 5,
    "id": "5857",
@@ -8478,12 +8478,12 @@
    "floor": 1.2,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 5,
    "id": "13411",
@@ -9136,12 +9136,12 @@
    "floor": 0.7,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 4,
    "id": "13322",
@@ -9330,12 +9330,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 9,
    "id": "NO",
@@ -9365,12 +9365,12 @@
    "floor": 0.1,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 6,
    "id": "13277",
@@ -9790,12 +9790,12 @@
    "floor": 0.4,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 3,
    "id": "13319",
@@ -11010,12 +11010,12 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 5,
    "id": "10235",
@@ -11408,12 +11408,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 5,
    "id": "13533",
@@ -11929,12 +11929,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 5,
    "id": "13420",
@@ -12585,12 +12585,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 1,
    "id": "13079",
@@ -12651,12 +12651,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 0,
    "id": "6451",
@@ -13729,7 +13729,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:32Z",
+   "lastUpdated": "2026-11-17T22:20:43Z",
    "ok": true,
    "stale": false
   },
@@ -13741,13 +13741,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:32Z",
+   "lastUpdated": "2026-11-17T22:20:43Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:31Z",
+   "lastUpdated": "2026-11-17T22:20:41Z",
    "ok": true,
    "stale": false
   }

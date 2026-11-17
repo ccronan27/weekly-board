@@ -13271,9 +13271,9 @@
    "injuryStatus": "ACTIVE",
    "name": "Jaydon Blue",
    "pos": "RB",
-   "proTeamId": 0,
+   "proTeamId": 21,
    "projection": null,
-   "team": null
+   "team": "PHI"
   },
   {
    "actuals": {
@@ -15258,9 +15258,9 @@
    "injuryStatus": "ACTIVE",
    "name": "Charlie Jones",
    "pos": "WR",
-   "proTeamId": 19,
+   "proTeamId": 0,
    "projection": null,
-   "team": "NYG"
+   "team": null
   },
   {
    "actuals": {
@@ -18899,9 +18899,9 @@
    "injuryStatus": "ACTIVE",
    "name": "Brennan Presley",
    "pos": "WR",
-   "proTeamId": 14,
+   "proTeamId": 0,
    "projection": null,
-   "team": "LAR"
+   "team": null
   },
   {
    "actuals": {
@@ -27570,6 +27570,6 @@
    "team": null
   }
  ],
- "fetchedAt": "2026-11-17T22:07:32Z",
+ "fetchedAt": "2026-11-17T22:20:43Z",
  "source": "espn_defaults"
 }
