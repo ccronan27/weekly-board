@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T22:06:32Z",
+ "generatedAt": "2026-11-17T22:07:32Z",
  "league": "fantasizing",
  "players": [
   {
@@ -5532,7 +5532,15 @@
    "espn": null,
    "flags": [],
    "floor": 1.7,
-   "game": null,
+   "game": {
+    "home": false,
+    "implied": 14.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "BUF",
+    "oppImplied": 31.0,
+    "spread": 16.5,
+    "total": 45.5
+   },
    "games": 6,
    "id": "5095",
    "name": "Daniel Carlson",
@@ -5545,7 +5553,7 @@
     "rotowire"
    ],
    "status": null,
-   "team": null,
+   "team": "MIA",
    "teamName": null
   },
   {
@@ -12891,7 +12899,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:06:31Z",
+   "lastUpdated": "2026-11-17T22:07:32Z",
    "ok": true,
    "stale": false
   },
@@ -12903,13 +12911,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:06:31Z",
+   "lastUpdated": "2026-11-17T22:07:32Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:06:30Z",
+   "lastUpdated": "2026-11-17T22:07:31Z",
    "ok": true,
    "stale": false
   }

@@ -7614,7 +7614,7 @@
    "injuryNotes": null,
    "injuryStatus": "Out",
    "name": "Woody Marks",
-   "newsUpdated": 1794939645474,
+   "newsUpdated": 1794952846664,
    "pos": "RB",
    "status": "Active",
    "team": "HOU",
@@ -8166,7 +8166,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Xavier Restrepo",
-   "newsUpdated": 1794950447809,
+   "newsUpdated": 1794952546555,
    "pos": "WR",
    "status": "Active",
    "team": "TEN",
@@ -9297,7 +9297,7 @@
    "newsUpdated": 1794696613298,
    "pos": "WR",
    "status": "Active",
-   "team": null,
+   "team": "GB",
    "yearsExp": 1
   },
   "12831": {
@@ -13437,7 +13437,7 @@
    "newsUpdated": 1790702404630,
    "pos": "WR",
    "status": "Active",
-   "team": null,
+   "team": "MIA",
    "yearsExp": 0
   },
   "13661": {
@@ -31965,7 +31965,7 @@
    "newsUpdated": 1794952246612,
    "pos": "K",
    "status": "Active",
-   "team": null,
+   "team": "MIA",
    "yearsExp": 8
   },
   "5096": {
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-17T22:06:30Z",
+ "fetchedAt": "2026-11-17T22:07:31Z",
  "source": "sleeper_players"
 }
