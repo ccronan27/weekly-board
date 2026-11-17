@@ -1,0 +1,19 @@
+# League IDs. Season rollover = update these IDs only (see README preseason checklist).
+# Scoring and roster settings are pulled from each platform on every run.
+# Anything the APIs miss goes in config/leagues/<key>.overrides.yaml.
+season: 2026
+sleeperUserId: "865460014343634944"   # marks which Sleeper team is yours
+espnTeamId: 14                         # your team in the ESPN league
+leagues:
+  - key: fantasizing
+    platform: espn
+    id: 125685129
+    name: Fantasizing 2026
+  - key: hwh
+    platform: sleeper
+    id: "1389389185361653760"
+    name: "HWH: The League"
+  - key: chicago-dynasty
+    platform: sleeper
+    id: "1335703355086893056"
+    name: Chicago Dynasty

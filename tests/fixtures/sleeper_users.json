@@ -1,0 +1,38 @@
+[
+ {
+  "avatar": null,
+  "display_name": "user1",
+  "is_bot": false,
+  "is_owner": false,
+  "league_id": "1389389185361653760",
+  "metadata": {
+   "team_name": "Kirkboi Charlies"
+  },
+  "settings": null,
+  "user_id": "u1"
+ },
+ {
+  "avatar": null,
+  "display_name": "user2",
+  "is_bot": false,
+  "is_owner": false,
+  "league_id": "1389389185361653760",
+  "metadata": {
+   "team_name": "Cigarettes& Alcohol AK26"
+  },
+  "settings": null,
+  "user_id": "u2"
+ },
+ {
+  "avatar": null,
+  "display_name": "user3",
+  "is_bot": false,
+  "is_owner": false,
+  "league_id": "1389389185361653760",
+  "metadata": {
+   "team_name": null
+  },
+  "settings": null,
+  "user_id": "u3"
+ }
+]

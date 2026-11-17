@@ -1,0 +1,4 @@
+# Overrides applied on top of settings pulled from the platform API.
+# Empty means the API values are used as is. Supported keys:
+#   scoring: { <stat key>: <points> }   replaces single scoring values
+#   starters: [QB, RB, ...]             replaces the lineup slot list

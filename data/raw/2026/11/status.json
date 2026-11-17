@@ -1,0 +1,103 @@
+{
+ "generatedAt": "2026-11-17T17:38:50Z",
+ "season": 2026,
+ "sources": {
+  "espn_defaults": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:50Z",
+   "ok": true,
+   "stale": false
+  },
+  "espn_rosters": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:21:06.342Z",
+   "ok": true,
+   "stale": false
+  },
+  "nflverse_lines": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:50Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_leagues": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:46Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_players": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_projections": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w1": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w10": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:48Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w2": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w3": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w4": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w5": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w6": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w7": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:47Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w8": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:48Z",
+   "ok": true,
+   "stale": false
+  },
+  "sleeper_stats_w9": {
+   "error": null,
+   "lastUpdated": "2026-11-17T17:38:48Z",
+   "ok": true,
+   "stale": false
+  }
+ },
+ "week": 11
+}

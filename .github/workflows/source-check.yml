@@ -1,0 +1,32 @@
+# Checks every data source from a GitHub-hosted runner. Needs no secrets and no ESPN login.
+# Runs on demand and whenever this file changes. The full refresh.yml comes in step 5.
+name: source-check
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/source-check.yml"
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: ESPN leaguedefaults status from this runner
+        run: |
+          code=$(curl -sS -o /tmp/espn.json -w "%{http_code}" \
+            -H 'X-Fantasy-Filter: {"players":{"limit":50,"filterSlotIds":{"value":[0,2,4,6]},"sortPercOwned":{"sortAsc":false,"sortPriority":1}}}' \
+            "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2026/segments/0/leaguedefaults/3?view=kona_player_info&scoringPeriodId=11")
+          echo "leaguedefaults HTTP $code, $(wc -c < /tmp/espn.json) bytes"
+          test "$code" = "200"
+      - name: Offline contract tests
+        run: python -m pytest -q
+      - name: Live contract tests
+        run: python -m pytest -m live -v
