@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T21:56:23Z",
+ "generatedAt": "2026-11-17T21:58:26Z",
  "league": "chicago-dynasty",
  "players": [
   {
@@ -563,11 +563,11 @@
    "teamName": "All Gas No Brakes"
   },
   {
-   "ceiling": 24.5,
+   "ceiling": 24.8,
    "eligible": true,
    "espn": 17.8,
    "flags": [],
-   "floor": 10.3,
+   "floor": 10.6,
    "game": {
     "home": false,
     "implied": 23.0,
@@ -580,10 +580,10 @@
    "games": 9,
    "id": "12522",
    "name": "Cam Ward",
-   "points": 17.4,
+   "points": 17.7,
    "pos": "QB",
    "rostered": true,
-   "rotowire": 17.0,
+   "rotowire": 17.6,
    "sd": 7.11,
    "sources": [
     "espn",
@@ -904,11 +904,11 @@
    "teamName": "Team 12"
   },
   {
-   "ceiling": 26.1,
+   "ceiling": 26.3,
    "eligible": true,
    "espn": 17.0,
    "flags": [],
-   "floor": 4.5,
+   "floor": 4.7,
    "game": {
     "home": false,
     "implied": 23.0,
@@ -921,10 +921,10 @@
    "games": 9,
    "id": "5967",
    "name": "Tony Pollard",
-   "points": 15.3,
+   "points": 15.5,
    "pos": "RB",
    "rostered": true,
-   "rotowire": 13.6,
+   "rotowire": 14.0,
    "sd": 10.77,
    "sources": [
     "espn",
@@ -2315,6 +2315,39 @@
    "teamName": "When in Rome"
   },
   {
+   "ceiling": 16.3,
+   "eligible": false,
+   "espn": 10.6,
+   "flags": [
+    "OUT"
+   ],
+   "floor": 4.5,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 7,
+   "id": "13279",
+   "name": "Carnell Tate",
+   "points": 10.4,
+   "pos": "WR",
+   "rostered": true,
+   "rotowire": 10.2,
+   "sd": 5.92,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": "OUT",
+   "team": "TEN",
+   "teamName": "Team 12"
+  },
+  {
    "ceiling": 17.6,
    "eligible": false,
    "espn": 10.3,
@@ -2376,39 +2409,6 @@
    ],
    "status": null,
    "team": "HOU",
-   "teamName": "Team 12"
-  },
-  {
-   "ceiling": 16.2,
-   "eligible": false,
-   "espn": 10.6,
-   "flags": [
-    "OUT"
-   ],
-   "floor": 4.4,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 7,
-   "id": "13279",
-   "name": "Carnell Tate",
-   "points": 10.3,
-   "pos": "WR",
-   "rostered": true,
-   "rotowire": 10.1,
-   "sd": 5.92,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": "OUT",
-   "team": "TEN",
    "teamName": "Team 12"
   },
   {
@@ -3970,6 +3970,37 @@
    "teamName": null
   },
   {
+   "ceiling": 11.1,
+   "eligible": true,
+   "espn": 8.2,
+   "flags": [],
+   "floor": 4.5,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "12499",
+   "name": "Elic Ayomanor",
+   "points": 7.8,
+   "pos": "WR",
+   "rostered": false,
+   "rotowire": 7.5,
+   "sd": 3.3,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": null
+  },
+  {
    "ceiling": 13.0,
    "eligible": true,
    "espn": 7.0,
@@ -4029,37 +4060,6 @@
    ],
    "status": null,
    "team": "CAR",
-   "teamName": null
-  },
-  {
-   "ceiling": 11.0,
-   "eligible": true,
-   "espn": 8.2,
-   "flags": [],
-   "floor": 4.4,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "12499",
-   "name": "Elic Ayomanor",
-   "points": 7.7,
-   "pos": "WR",
-   "rostered": false,
-   "rotowire": 7.3,
-   "sd": 3.3,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
    "teamName": null
   },
   {
@@ -5185,6 +5185,37 @@
    "teamName": null
   },
   {
+   "ceiling": 9.4,
+   "eligible": true,
+   "espn": 6.9,
+   "flags": [],
+   "floor": 4.0,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 7,
+   "id": "9508",
+   "name": "Tyjae Spears",
+   "points": 6.7,
+   "pos": "RB",
+   "rostered": true,
+   "rotowire": 6.5,
+   "sd": 2.67,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": "The Texans RB Room"
+  },
+  {
    "ceiling": 9.8,
    "eligible": true,
    "espn": 6.2,
@@ -5251,7 +5282,7 @@
    "eligible": true,
    "espn": 7.1,
    "flags": [],
-   "floor": 2.6,
+   "floor": 2.7,
    "game": {
     "home": false,
     "implied": 23.0,
@@ -5276,37 +5307,6 @@
    "status": null,
    "team": "TEN",
    "teamName": null
-  },
-  {
-   "ceiling": 9.3,
-   "eligible": true,
-   "espn": 6.9,
-   "flags": [],
-   "floor": 3.9,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 7,
-   "id": "9508",
-   "name": "Tyjae Spears",
-   "points": 6.6,
-   "pos": "RB",
-   "rostered": true,
-   "rotowire": 6.4,
-   "sd": 2.67,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
-   "teamName": "The Texans RB Room"
   },
   {
    "ceiling": 9.8,
@@ -5584,6 +5584,28 @@
    ],
    "status": null,
    "team": "PHI",
+   "teamName": null
+  },
+  {
+   "ceiling": 12.6,
+   "eligible": true,
+   "espn": null,
+   "flags": [],
+   "floor": 0.3,
+   "game": null,
+   "games": 6,
+   "id": "5095",
+   "name": "Daniel Carlson",
+   "points": 6.4,
+   "pos": "K",
+   "rostered": false,
+   "rotowire": 6.4,
+   "sd": 6.12,
+   "sources": [
+    "rotowire"
+   ],
+   "status": null,
+   "team": null,
    "teamName": null
   },
   {
@@ -6364,7 +6386,7 @@
    "teamName": "Brandon Aubrey Supremacy"
   },
   {
-   "ceiling": 11.0,
+   "ceiling": 11.1,
    "eligible": true,
    "espn": 5.7,
    "flags": [],
@@ -6384,7 +6406,7 @@
    "points": 4.9,
    "pos": "WR",
    "rostered": true,
-   "rotowire": 4.1,
+   "rotowire": 4.2,
    "sd": 6.15,
    "sources": [
     "espn",
@@ -12869,31 +12891,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:22Z",
+   "lastUpdated": "2026-11-17T21:58:25Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:23Z",
+   "lastUpdated": "2026-11-17T21:58:25Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:20Z",
+   "lastUpdated": "2026-11-17T21:58:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:21Z",
+   "lastUpdated": "2026-11-17T21:58:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:21Z",
+   "lastUpdated": "2026-11-17T21:58:23Z",
    "ok": true,
    "stale": false
   }

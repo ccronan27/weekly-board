@@ -31962,7 +31962,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Daniel Carlson",
-   "newsUpdated": 1793742028409,
+   "newsUpdated": 1794952246612,
    "pos": "K",
    "status": "Active",
    "team": null,
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-17T21:56:21Z",
+ "fetchedAt": "2026-11-17T21:58:23Z",
  "source": "sleeper_players"
 }

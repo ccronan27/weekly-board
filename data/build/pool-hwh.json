@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T21:56:23Z",
+ "generatedAt": "2026-11-17T21:58:26Z",
  "league": "hwh",
  "players": [
   {
@@ -718,6 +718,37 @@
    "teamName": "Scatt Pack"
   },
   {
+   "ceiling": 24.6,
+   "eligible": true,
+   "espn": 17.6,
+   "flags": [],
+   "floor": 10.4,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "12522",
+   "name": "Cam Ward",
+   "points": 17.5,
+   "pos": "QB",
+   "rostered": false,
+   "rotowire": 17.4,
+   "sd": 7.11,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": null
+  },
+  {
    "ceiling": 27.9,
    "eligible": true,
    "espn": 16.8,
@@ -749,37 +780,6 @@
    "teamName": "Green room special "
   },
   {
-   "ceiling": 24.3,
-   "eligible": true,
-   "espn": 17.6,
-   "flags": [],
-   "floor": 10.1,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "12522",
-   "name": "Cam Ward",
-   "points": 17.2,
-   "pos": "QB",
-   "rostered": false,
-   "rotowire": 16.9,
-   "sd": 7.11,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
-   "teamName": null
-  },
-  {
    "ceiling": 26.7,
    "eligible": true,
    "espn": 17.1,
@@ -809,6 +809,37 @@
    "status": null,
    "team": "TB",
    "teamName": "Scatt Pack"
+  },
+  {
+   "ceiling": 28.2,
+   "eligible": true,
+   "espn": 18.4,
+   "flags": [],
+   "floor": 5.3,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "5967",
+   "name": "Tony Pollard",
+   "points": 16.7,
+   "pos": "RB",
+   "rostered": true,
+   "rotowire": 15.0,
+   "sd": 11.46,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": "Adam4Arbutus"
   },
   {
    "ceiling": 21.0,
@@ -871,37 +902,6 @@
    "status": null,
    "team": "PIT",
    "teamName": "Scatt Pack"
-  },
-  {
-   "ceiling": 28.0,
-   "eligible": true,
-   "espn": 18.4,
-   "flags": [],
-   "floor": 5.1,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "5967",
-   "name": "Tony Pollard",
-   "points": 16.5,
-   "pos": "RB",
-   "rostered": true,
-   "rotowire": 14.6,
-   "sd": 11.46,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
-   "teamName": "Adam4Arbutus"
   },
   {
    "ceiling": 26.3,
@@ -1844,7 +1844,7 @@
    "teamName": "Adam4Arbutus"
   },
   {
-   "ceiling": 19.9,
+   "ceiling": 20.0,
    "eligible": false,
    "espn": 13.2,
    "flags": [
@@ -1866,7 +1866,7 @@
    "points": 12.8,
    "pos": "WR",
    "rostered": true,
-   "rotowire": 12.4,
+   "rotowire": 12.5,
    "sd": 7.1,
    "sources": [
     "espn",
@@ -3226,6 +3226,37 @@
    "teamName": "Scatt Pack"
   },
   {
+   "ceiling": 13.0,
+   "eligible": true,
+   "espn": 9.6,
+   "flags": [],
+   "floor": 5.3,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "12499",
+   "name": "Elic Ayomanor",
+   "points": 9.2,
+   "pos": "WR",
+   "rostered": true,
+   "rotowire": 8.7,
+   "sd": 3.85,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": "Adam4Arbutus"
+  },
+  {
    "ceiling": 13.4,
    "eligible": true,
    "espn": 10.3,
@@ -3255,37 +3286,6 @@
    "status": null,
    "team": "DEN",
    "teamName": null
-  },
-  {
-   "ceiling": 12.9,
-   "eligible": true,
-   "espn": 9.6,
-   "flags": [],
-   "floor": 5.2,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "12499",
-   "name": "Elic Ayomanor",
-   "points": 9.1,
-   "pos": "WR",
-   "rostered": true,
-   "rotowire": 8.6,
-   "sd": 3.85,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
-   "teamName": "Adam4Arbutus"
   },
   {
    "ceiling": 14.8,
@@ -4563,6 +4563,37 @@
    "teamName": null
   },
   {
+   "ceiling": 11.4,
+   "eligible": true,
+   "espn": 7.9,
+   "flags": [],
+   "floor": 4.1,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 7,
+   "id": "9508",
+   "name": "Tyjae Spears",
+   "points": 7.8,
+   "pos": "RB",
+   "rostered": false,
+   "rotowire": 7.7,
+   "sd": 3.66,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": null
+  },
+  {
    "ceiling": 9.3,
    "eligible": true,
    "espn": 7.0,
@@ -4622,37 +4653,6 @@
    ],
    "status": null,
    "team": "CAR",
-   "teamName": null
-  },
-  {
-   "ceiling": 11.3,
-   "eligible": true,
-   "espn": 7.9,
-   "flags": [],
-   "floor": 4.0,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 7,
-   "id": "9508",
-   "name": "Tyjae Spears",
-   "points": 7.7,
-   "pos": "RB",
-   "rostered": false,
-   "rotowire": 7.5,
-   "sd": 3.66,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
    "teamName": null
   },
   {
@@ -5992,6 +5992,28 @@
    "teamName": null
   },
   {
+   "ceiling": 11.3,
+   "eligible": true,
+   "espn": null,
+   "flags": [],
+   "floor": 1.5,
+   "game": null,
+   "games": 6,
+   "id": "5095",
+   "name": "Daniel Carlson",
+   "points": 6.4,
+   "pos": "K",
+   "rostered": false,
+   "rotowire": 6.4,
+   "sd": 4.92,
+   "sources": [
+    "rotowire"
+   ],
+   "status": null,
+   "team": null,
+   "teamName": null
+  },
+  {
    "ceiling": 11.1,
    "eligible": true,
    "espn": 6.5,
@@ -6085,6 +6107,37 @@
    "teamName": null
   },
   {
+   "ceiling": 13.0,
+   "eligible": true,
+   "espn": 7.0,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 6,
+   "id": "12540",
+   "name": "Chimere Dike",
+   "points": 6.1,
+   "pos": "WR",
+   "rostered": true,
+   "rotowire": 5.1,
+   "sd": 6.93,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": "Green room special "
+  },
+  {
    "ceiling": 10.1,
    "eligible": true,
    "espn": 7.0,
@@ -6114,37 +6167,6 @@
    "status": null,
    "team": "LAC",
    "teamName": null
-  },
-  {
-   "ceiling": 12.9,
-   "eligible": true,
-   "espn": 7.0,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 6,
-   "id": "12540",
-   "name": "Chimere Dike",
-   "points": 6.0,
-   "pos": "WR",
-   "rostered": true,
-   "rotowire": 5.0,
-   "sd": 6.93,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
-   "teamName": "Green room special "
   },
   {
    "ceiling": 9.4,
@@ -8735,6 +8757,36 @@
    "teamName": null
   },
   {
+   "ceiling": null,
+   "eligible": true,
+   "espn": null,
+   "flags": [],
+   "floor": null,
+   "game": {
+    "home": false,
+    "implied": 23.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DAL",
+    "oppImplied": 31.5,
+    "spread": 8.5,
+    "total": 54.5
+   },
+   "games": 1,
+   "id": "12520",
+   "name": "Xavier Restrepo",
+   "points": 1.9,
+   "pos": "WR",
+   "rostered": false,
+   "rotowire": 1.9,
+   "sd": null,
+   "sources": [
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TEN",
+   "teamName": null
+  },
+  {
    "ceiling": 6.1,
    "eligible": true,
    "espn": null,
@@ -8822,36 +8874,6 @@
    ],
    "status": null,
    "team": "ARI",
-   "teamName": null
-  },
-  {
-   "ceiling": null,
-   "eligible": true,
-   "espn": null,
-   "flags": [],
-   "floor": null,
-   "game": {
-    "home": false,
-    "implied": 23.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DAL",
-    "oppImplied": 31.5,
-    "spread": 8.5,
-    "total": 54.5
-   },
-   "games": 1,
-   "id": "12520",
-   "name": "Xavier Restrepo",
-   "points": 1.8,
-   "pos": "WR",
-   "rostered": false,
-   "rotowire": 1.8,
-   "sd": null,
-   "sources": [
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TEN",
    "teamName": null
   },
   {
@@ -12869,31 +12891,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:22Z",
+   "lastUpdated": "2026-11-17T21:58:25Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:23Z",
+   "lastUpdated": "2026-11-17T21:58:25Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:20Z",
+   "lastUpdated": "2026-11-17T21:58:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:21Z",
+   "lastUpdated": "2026-11-17T21:58:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:56:21Z",
+   "lastUpdated": "2026-11-17T21:58:23Z",
    "ok": true,
    "stale": false
   }
