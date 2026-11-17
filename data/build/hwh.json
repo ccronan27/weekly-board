@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T17:50:06Z",
+ "generatedAt": "2026-11-17T21:07:32Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -16,7 +16,7 @@
     "slot": "FLEX"
    }
   ],
-  "currentPoints": 109.5,
+  "currentPoints": 109.3,
   "gain": 8.3,
   "moves": [
    {
@@ -50,12 +50,12 @@
      "floor": 5.1,
      "game": {
       "home": true,
-      "implied": 22.0,
+      "implied": 22.5,
       "kickoff": "2026-11-22T21:05Z",
       "opp": "NYJ",
-      "oppImplied": 18.5,
+      "oppImplied": 19.0,
       "spread": -3.5,
-      "total": 40.5
+      "total": 41.5
      },
      "id": "11635",
      "name": "Ladd McConkey",
@@ -66,7 +66,7 @@
     "slot": "FLEX"
    }
   ],
-  "recommendedPoints": 117.8,
+  "recommendedPoints": 117.6,
   "slots": [
    {
     "changed": false,
@@ -165,12 +165,12 @@
      "floor": 8.3,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 19.0,
       "kickoff": "2026-11-22T21:05Z",
       "opp": "LAC",
-      "oppImplied": 22.0,
+      "oppImplied": 22.5,
       "spread": 3.5,
-      "total": 40.5
+      "total": 41.5
      },
      "id": "8155",
      "name": "Breece Hall",
@@ -185,12 +185,12 @@
      "floor": 8.3,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 19.0,
       "kickoff": "2026-11-22T21:05Z",
       "opp": "LAC",
-      "oppImplied": 22.0,
+      "oppImplied": 22.5,
       "spread": 3.5,
-      "total": 40.5
+      "total": 41.5
      },
      "id": "8155",
      "name": "Breece Hall",
@@ -218,7 +218,7 @@
      },
      "id": "13281",
      "name": "Jordyn Tyson",
-     "points": 11.6,
+     "points": 11.4,
      "pos": "WR",
      "team": "NO"
     },
@@ -238,7 +238,7 @@
      },
      "id": "13281",
      "name": "Jordyn Tyson",
-     "points": 11.6,
+     "points": 11.4,
      "pos": "WR",
      "team": "NO"
     },
@@ -343,12 +343,12 @@
      "floor": 5.1,
      "game": {
       "home": true,
-      "implied": 22.0,
+      "implied": 22.5,
       "kickoff": "2026-11-22T21:05Z",
       "opp": "NYJ",
-      "oppImplied": 18.5,
+      "oppImplied": 19.0,
       "spread": -3.5,
-      "total": 40.5
+      "total": 41.5
      },
      "id": "11635",
      "name": "Ladd McConkey",
@@ -641,19 +641,19 @@
    "floor": 8.3,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T21:05Z",
     "opp": "LAC",
-    "oppImplied": 22.0,
+    "oppImplied": 22.5,
     "spread": 3.5,
-    "total": 40.5
+    "total": 41.5
    },
    "games": 5,
    "id": "8155",
    "name": "Breece Hall",
    "points": 12.5,
    "pos": "RB",
-   "rotowire": 12.1,
+   "rotowire": 12.2,
    "sd": 4.17,
    "slot": "START",
    "sources": [
@@ -681,9 +681,9 @@
    "games": 2,
    "id": "13281",
    "name": "Jordyn Tyson",
-   "points": 11.6,
+   "points": 11.4,
    "pos": "WR",
-   "rotowire": 11.4,
+   "rotowire": 11.0,
    "sd": null,
    "slot": "START",
    "sources": [
@@ -703,12 +703,12 @@
    "floor": 5.1,
    "game": {
     "home": true,
-    "implied": 22.0,
+    "implied": 22.5,
     "kickoff": "2026-11-22T21:05Z",
     "opp": "NYJ",
-    "oppImplied": 18.5,
+    "oppImplied": 19.0,
     "spread": -3.5,
-    "total": 40.5
+    "total": 41.5
    },
    "games": 5,
    "id": "11635",
@@ -853,19 +853,19 @@
    "floor": 1.1,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T21:05Z",
     "opp": "LAC",
-    "oppImplied": 22.0,
+    "oppImplied": 22.5,
     "spread": 3.5,
-    "total": 40.5
+    "total": 41.5
    },
    "games": 10,
    "id": "11576",
    "name": "Braelon Allen",
    "points": 8.1,
    "pos": "RB",
-   "rotowire": 8.7,
+   "rotowire": 8.8,
    "sd": 7.01,
    "slot": "BN",
    "sources": [
@@ -876,13 +876,13 @@
    "team": "NYJ"
   },
   {
-   "ceiling": 9.1,
+   "ceiling": 8.0,
    "eligible": false,
    "espn": 5.9,
    "flags": [
     "IR"
    ],
-   "floor": 3.1,
+   "floor": 1.9,
    "game": {
     "home": false,
     "implied": 21.5,
@@ -895,9 +895,9 @@
    "games": 3,
    "id": "6819",
    "name": "Michael Pittman Jr.",
-   "points": 6.1,
+   "points": 5.0,
    "pos": "WR",
-   "rotowire": 6.3,
+   "rotowire": 4.1,
    "sd": 3.03,
    "slot": "IR",
    "sources": [
@@ -985,31 +985,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:05Z",
+   "lastUpdated": "2026-11-17T21:07:30Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:05Z",
+   "lastUpdated": "2026-11-17T21:07:31Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:02Z",
+   "lastUpdated": "2026-11-17T21:07:28Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:03Z",
+   "lastUpdated": "2026-11-17T21:07:28Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:03Z",
+   "lastUpdated": "2026-11-17T21:07:28Z",
    "ok": true,
    "stale": false
   }

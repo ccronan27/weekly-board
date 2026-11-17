@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T17:50:06Z",
+ "generatedAt": "2026-11-17T21:07:32Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -8,10 +8,10 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 101.0,
+  "currentPoints": 100.1,
   "gain": 0.0,
   "moves": [],
-  "recommendedPoints": 101.0,
+  "recommendedPoints": 100.1,
   "slots": [
    {
     "changed": false,
@@ -66,12 +66,12 @@
      "floor": 10.0,
      "game": {
       "home": true,
-      "implied": 24.8,
+      "implied": 24.2,
       "kickoff": "2026-11-23T01:20Z",
       "opp": "MIN",
-      "oppImplied": 21.8,
+      "oppImplied": 21.2,
       "spread": -3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "id": "4034",
      "name": "Christian McCaffrey",
@@ -86,12 +86,12 @@
      "floor": 10.0,
      "game": {
       "home": true,
-      "implied": 24.8,
+      "implied": 24.2,
       "kickoff": "2026-11-23T01:20Z",
       "opp": "MIN",
-      "oppImplied": 21.8,
+      "oppImplied": 21.2,
       "spread": -3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "id": "4034",
      "name": "Christian McCaffrey",
@@ -192,10 +192,10 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 15.3,
+     "ceiling": 14.4,
      "eligible": true,
      "flags": [],
-     "floor": 2.7,
+     "floor": 1.8,
      "game": {
       "home": false,
       "implied": 29.5,
@@ -207,15 +207,15 @@
      },
      "id": "4993",
      "name": "Mike Gesicki",
-     "points": 9.0,
+     "points": 8.1,
      "pos": "TE",
      "team": "CIN"
     },
     "recommended": {
-     "ceiling": 15.3,
+     "ceiling": 14.4,
      "eligible": true,
      "flags": [],
-     "floor": 2.7,
+     "floor": 1.8,
      "game": {
       "home": false,
       "implied": 29.5,
@@ -227,7 +227,7 @@
      },
      "id": "4993",
      "name": "Mike Gesicki",
-     "points": 9.0,
+     "points": 8.1,
      "pos": "TE",
      "team": "CIN"
     },
@@ -236,18 +236,18 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 21.6,
+     "ceiling": 21.7,
      "eligible": true,
      "flags": [],
-     "floor": 6.7,
+     "floor": 6.8,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 19.0,
       "kickoff": "2026-11-22T21:05Z",
       "opp": "LAC",
-      "oppImplied": 22.0,
+      "oppImplied": 22.5,
       "spread": 3.5,
-      "total": 40.5
+      "total": 41.5
      },
      "id": "8146",
      "name": "Garrett Wilson",
@@ -256,18 +256,18 @@
      "team": "NYJ"
     },
     "recommended": {
-     "ceiling": 21.6,
+     "ceiling": 21.7,
      "eligible": true,
      "flags": [],
-     "floor": 6.7,
+     "floor": 6.8,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 19.0,
       "kickoff": "2026-11-22T21:05Z",
       "opp": "LAC",
-      "oppImplied": 22.0,
+      "oppImplied": 22.5,
       "spread": 3.5,
-      "total": 40.5
+      "total": 41.5
      },
      "id": "8146",
      "name": "Garrett Wilson",
@@ -286,12 +286,12 @@
      "floor": 3.1,
      "game": {
       "home": false,
-      "implied": 21.8,
+      "implied": 21.2,
       "kickoff": "2026-11-23T01:20Z",
       "opp": "SF",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "id": "4199",
      "name": "Aaron Jones Sr.",
@@ -306,12 +306,12 @@
      "floor": 3.1,
      "game": {
       "home": false,
-      "implied": 21.8,
+      "implied": 21.2,
       "kickoff": "2026-11-23T01:20Z",
       "opp": "SF",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "id": "4199",
      "name": "Aaron Jones Sr.",
@@ -374,12 +374,12 @@
      "floor": 0.0,
      "game": {
       "home": false,
-      "implied": 21.8,
+      "implied": 21.2,
       "kickoff": "2026-11-23T01:20Z",
       "opp": "SF",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "id": "MIN",
      "name": "Minnesota Vikings",
@@ -394,12 +394,12 @@
      "floor": 0.0,
      "game": {
       "home": false,
-      "implied": 21.8,
+      "implied": 21.2,
       "kickoff": "2026-11-23T01:20Z",
       "opp": "SF",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "id": "MIN",
      "name": "Minnesota Vikings",
@@ -420,19 +420,19 @@
    "floor": 10.0,
    "game": {
     "home": true,
-    "implied": 24.8,
+    "implied": 24.2,
     "kickoff": "2026-11-23T01:20Z",
     "opp": "MIN",
-    "oppImplied": 21.8,
+    "oppImplied": 21.2,
     "spread": -3.0,
-    "total": 46.5
+    "total": 45.5
    },
    "games": 9,
    "id": "4034",
    "name": "Christian McCaffrey",
    "points": 19.8,
    "pos": "RB",
-   "rotowire": 19.9,
+   "rotowire": 19.8,
    "sd": 9.79,
    "slot": "RB",
    "sources": [
@@ -473,26 +473,26 @@
    "team": "DET"
   },
   {
-   "ceiling": 21.6,
+   "ceiling": 21.7,
    "eligible": true,
    "espn": 13.9,
    "flags": [],
-   "floor": 6.7,
+   "floor": 6.8,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T21:05Z",
     "opp": "LAC",
-    "oppImplied": 22.0,
+    "oppImplied": 22.5,
     "spread": 3.5,
-    "total": 40.5
+    "total": 41.5
    },
    "games": 9,
    "id": "8146",
    "name": "Garrett Wilson",
    "points": 14.2,
    "pos": "WR",
-   "rotowire": 14.4,
+   "rotowire": 14.5,
    "sd": 7.47,
    "slot": "FLEX",
    "sources": [
@@ -533,36 +533,6 @@
    "team": "KC"
   },
   {
-   "ceiling": 15.3,
-   "eligible": true,
-   "espn": 7.4,
-   "flags": [],
-   "floor": 2.7,
-   "game": {
-    "home": false,
-    "implied": 29.5,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 23.0,
-    "spread": -6.5,
-    "total": 52.5
-   },
-   "games": 8,
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "points": 9.0,
-   "pos": "TE",
-   "rotowire": 10.7,
-   "sd": 6.29,
-   "slot": "TE",
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CIN"
-  },
-  {
    "ceiling": 14.2,
    "eligible": true,
    "espn": 8.4,
@@ -570,12 +540,12 @@
    "floor": 3.1,
    "game": {
     "home": false,
-    "implied": 21.8,
+    "implied": 21.2,
     "kickoff": "2026-11-23T01:20Z",
     "opp": "SF",
-    "oppImplied": 24.8,
+    "oppImplied": 24.2,
     "spread": 3.0,
-    "total": 46.5
+    "total": 45.5
    },
    "games": 9,
    "id": "4199",
@@ -621,6 +591,36 @@
    ],
    "status": null,
    "team": "LV"
+  },
+  {
+   "ceiling": 14.4,
+   "eligible": true,
+   "espn": 7.4,
+   "flags": [],
+   "floor": 1.8,
+   "game": {
+    "home": false,
+    "implied": 29.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 23.0,
+    "spread": -6.5,
+    "total": 52.5
+   },
+   "games": 8,
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "points": 8.1,
+   "pos": "TE",
+   "rotowire": 8.9,
+   "sd": 6.29,
+   "slot": "TE",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN"
   },
   {
    "ceiling": 10.7,
@@ -683,13 +683,13 @@
    "team": "ARI"
   },
   {
-   "ceiling": 9.1,
+   "ceiling": 8.0,
    "eligible": false,
    "espn": 5.9,
    "flags": [
     "IR"
    ],
-   "floor": 3.1,
+   "floor": 1.9,
    "game": {
     "home": false,
     "implied": 21.5,
@@ -702,9 +702,9 @@
    "games": 3,
    "id": "6819",
    "name": "Michael Pittman Jr.",
-   "points": 6.1,
+   "points": 5.0,
    "pos": "WR",
-   "rotowire": 6.3,
+   "rotowire": 4.1,
    "sd": 3.03,
    "slot": "IR",
    "sources": [
@@ -722,12 +722,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 21.8,
+    "implied": 21.2,
     "kickoff": "2026-11-23T01:20Z",
     "opp": "SF",
-    "oppImplied": 24.8,
+    "oppImplied": 24.2,
     "spread": 3.0,
-    "total": 46.5
+    "total": 45.5
    },
    "games": 9,
    "id": "MIN",
@@ -845,7 +845,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:05Z",
+   "lastUpdated": "2026-11-17T21:07:30Z",
    "ok": true,
    "stale": false
   },
@@ -857,13 +857,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:05Z",
+   "lastUpdated": "2026-11-17T21:07:31Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:50:03Z",
+   "lastUpdated": "2026-11-17T21:07:28Z",
    "ok": true,
    "stale": false
   }

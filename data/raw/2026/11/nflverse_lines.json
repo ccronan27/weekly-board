@@ -103,9 +103,9 @@
    "gametime": "16:05",
    "home": "LAC",
    "homeSpread": 3.5,
-   "impliedAway": 18.5,
-   "impliedHome": 22.0,
-   "total": 40.5,
+   "impliedAway": 19.0,
+   "impliedHome": 22.5,
+   "total": 41.5,
    "week": 11
   },
   {
@@ -139,9 +139,9 @@
    "gametime": "20:20",
    "home": "SF",
    "homeSpread": 3.0,
-   "impliedAway": 21.75,
-   "impliedHome": 24.75,
-   "total": 46.5,
+   "impliedAway": 21.25,
+   "impliedHome": 24.25,
+   "total": 45.5,
    "week": 11
   },
   {
@@ -157,6 +157,6 @@
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-17T17:50:05Z",
+ "fetchedAt": "2026-11-17T21:07:31Z",
  "source": "nflverse_lines"
 }
