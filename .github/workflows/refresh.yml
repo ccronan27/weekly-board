@@ -21,6 +21,7 @@ on:
   push:
     paths:
       - "data/espn/**"
+      - ".github/workflows/refresh.yml"   # exercises workflow edits
 
 permissions:
   contents: write
