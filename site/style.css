@@ -41,3 +41,20 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .stale{color:var(--bad);font-weight:700}
 .picks{min-width:0}
 @media (min-width:640px){.picks{display:grid;grid-template-columns:1fr 1fr;gap:8px}.picks .pick{margin:0}.picks .keep{align-self:center}}
+
+/* Layout: phones get one column. Wide screens get a sticky sidebar and a wider main column */
+.cols{display:flex;flex-direction:column}
+.colA,.colB{display:contents}
+.s-sum{order:1}.s-moves{order:2}.s-lineup{order:3}.s-bench{order:4}.s-src{order:5}
+@media (min-width:1000px){
+  .top,main,.foot,.tabs{max-width:1180px}
+  body{font-size:17px}
+  .cols{display:grid;grid-template-columns:340px minmax(0,1fr);gap:0 28px;align-items:start}
+  .colA{display:block;position:sticky;top:12px}
+  .colB{display:block}
+  .colB h2:first-child,.colA .s-sum+.s-moves h2{margin-top:0}
+  .s-lineup h2{margin-top:0}
+  .s-moves h2{margin-top:16px}
+  .s-bench h2,.s-src h2{margin-top:24px}
+  .summary{justify-content:space-between}
+}

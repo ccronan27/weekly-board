@@ -20342,9 +20342,9 @@
    "injuryStatus": "ACTIVE",
    "name": "Carsen Ryan",
    "pos": "TE",
-   "proTeamId": 5,
+   "proTeamId": 0,
    "projection": null,
-   "team": "CLE"
+   "team": null
   },
   {
    "actuals": {},
@@ -27570,6 +27570,6 @@
    "team": null
   }
  ],
- "fetchedAt": "2026-11-17T21:58:25Z",
+ "fetchedAt": "2026-11-17T22:04:30Z",
  "source": "espn_defaults"
 }

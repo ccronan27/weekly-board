@@ -87,8 +87,12 @@ function sourcesTable(league, meta) {
 }
 
 function renderLeague(league, meta) {
-  const root = document.createDocumentFragment();
   const lu = league.lineup;
+  const secSum = el("section", "s-sum");
+  const secMoves = el("section", "s-moves");
+  const secLineup = el("section", "s-lineup");
+  const secBench = el("section", "s-bench");
+  const secSrc = el("section", "s-src");
 
   const head = el("div", "card");
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
@@ -100,19 +104,19 @@ function renderLeague(league, meta) {
     sum.appendChild(d);
   });
   head.appendChild(sum);
-  root.appendChild(head);
+  secSum.appendChild(head);
 
   const rosterStale = league.league.platform === "espn" && meta.espnRosters && meta.espnRosters.stale;
-  if (rosterStale) root.appendChild(el("div", "warn", "The ESPN roster sync is more than 4 days old. Lineups may be out of date. Ask Claude to sync ESPN."));
+  if (rosterStale) secSum.appendChild(el("div", "warn", "The ESPN roster sync is more than 4 days old. Lineups may be out of date. Ask Claude to sync ESPN."));
   const staleSrc = Object.keys(league.sources).filter(function (k) { return k !== "espn_rosters" && stale(meta, league.sources[k]); });
-  if (staleSrc.length) root.appendChild(el("div", "warn", "Stale data: " + staleSrc.map(function (k) { return SOURCE_TEXT[k] || k; }).join(", ") + ". Using the last good pull."));
+  if (staleSrc.length) secSum.appendChild(el("div", "warn", "Stale data: " + staleSrc.map(function (k) { return SOURCE_TEXT[k] || k; }).join(", ") + ". Using the last good pull."));
 
   lu.alerts.forEach(function (a) {
     const flags = a.flags.map(function (f) { return FLAG_TEXT[f] || f; }).join(", ");
-    root.appendChild(el("div", "alert", a.player + " is starting at " + a.slot + " and is " + flags.toLowerCase() + "."));
+    secSum.appendChild(el("div", "alert", a.player + " is starting at " + a.slot + " and is " + flags.toLowerCase() + "."));
   });
 
-  root.appendChild(el("h2", null, "Moves"));
+  secMoves.appendChild(el("h2", null, "Moves"));
   const moves = el("div", "card");
   if (!lu.moves.length) moves.appendChild(el("div", null, "No changes. Your lineup is already the best one."));
   lu.moves.forEach(function (m) {
@@ -122,9 +126,9 @@ function renderLeague(league, meta) {
     else t = "Start " + m.in.name + " at " + m.slot + ". " + signed(m.gain);
     moves.appendChild(el("div", "move", t));
   });
-  root.appendChild(moves);
+  secMoves.appendChild(moves);
 
-  root.appendChild(el("h2", null, "Lineup by slot"));
+  secLineup.appendChild(el("h2", null, "Lineup by slot"));
   const slots = el("div", "card");
   lu.slots.forEach(function (s) {
     const row = el("div", "slot");
@@ -136,23 +140,31 @@ function renderLeague(league, meta) {
     row.appendChild(picks);
     slots.appendChild(row);
   });
-  root.appendChild(slots);
+  secLineup.appendChild(slots);
 
   const inRec = new Set(lu.slots.filter(function (s) { return s.recommended; }).map(function (s) { return s.recommended.id; }));
   const bench = league.roster.filter(function (p) { return !inRec.has(p.id); });
-  root.appendChild(el("h2", null, "Bench"));
+  secBench.appendChild(el("h2", null, "Bench"));
   const bc = el("div", "card bench");
   bench.forEach(function (p) {
     const card = pickCard(p, "", p.slot === "IR" ? "Injured reserve" : "Bench");
     bc.appendChild(card);
   });
-  root.appendChild(bc);
+  secBench.appendChild(bc);
 
-  root.appendChild(el("h2", null, "Data sources"));
+  secSrc.appendChild(el("h2", null, "Data sources"));
   const sc = el("div", "card");
   sc.appendChild(sourcesTable(league, meta));
-  root.appendChild(sc);
-  return root;
+  secSrc.appendChild(sc);
+
+  // Phone: one column in DOM-independent order. Desktop: sidebar plus main column (see style.css)
+  const cols = el("div", "cols");
+  const side = el("div", "colA");
+  side.append(secSum, secMoves, secSrc);
+  const main = el("div", "colB");
+  main.append(secLineup, secBench);
+  cols.append(side, main);
+  return cols;
 }
 
 function fail(msg) {
