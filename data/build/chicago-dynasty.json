@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T21:07:32Z",
+ "generatedAt": "2026-11-17T21:08:47Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -16,7 +16,7 @@
     "slot": "WR"
    }
   ],
-  "currentPoints": 92.0,
+  "currentPoints": 91.8,
   "gain": 6.0,
   "moves": [
    {
@@ -66,7 +66,7 @@
     "slot": "WR"
    }
   ],
-  "recommendedPoints": 98.0,
+  "recommendedPoints": 97.8,
   "slots": [
    {
     "changed": false,
@@ -381,10 +381,10 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 9.9,
+     "ceiling": 9.7,
      "eligible": true,
      "flags": [],
-     "floor": 4.9,
+     "floor": 4.7,
      "game": {
       "home": false,
       "implied": 19.5,
@@ -396,15 +396,15 @@
      },
      "id": "8111",
      "name": "Cade Otton",
-     "points": 7.4,
+     "points": 7.2,
      "pos": "TE",
      "team": "TB"
     },
     "recommended": {
-     "ceiling": 9.9,
+     "ceiling": 9.7,
      "eligible": true,
      "flags": [],
-     "floor": 4.9,
+     "floor": 4.7,
      "game": {
       "home": false,
       "implied": 19.5,
@@ -416,7 +416,7 @@
      },
      "id": "8111",
      "name": "Cade Otton",
-     "points": 7.4,
+     "points": 7.2,
      "pos": "TE",
      "team": "TB"
     },
@@ -756,36 +756,6 @@
    "team": "CIN"
   },
   {
-   "ceiling": 9.9,
-   "eligible": true,
-   "espn": 7.5,
-   "flags": [],
-   "floor": 4.9,
-   "game": {
-    "home": false,
-    "implied": 19.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DET",
-    "oppImplied": 26.0,
-    "spread": 6.5,
-    "total": 45.5
-   },
-   "games": 7,
-   "id": "8111",
-   "name": "Cade Otton",
-   "points": 7.4,
-   "pos": "TE",
-   "rotowire": 7.3,
-   "sd": 2.54,
-   "slot": "START",
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TB"
-  },
-  {
    "ceiling": 11.1,
    "eligible": true,
    "espn": 7.7,
@@ -844,6 +814,36 @@
    ],
    "status": null,
    "team": "NYJ"
+  },
+  {
+   "ceiling": 9.7,
+   "eligible": true,
+   "espn": 7.5,
+   "flags": [],
+   "floor": 4.7,
+   "game": {
+    "home": false,
+    "implied": 19.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DET",
+    "oppImplied": 26.0,
+    "spread": 6.5,
+    "total": 45.5
+   },
+   "games": 7,
+   "id": "8111",
+   "name": "Cade Otton",
+   "points": 7.2,
+   "pos": "TE",
+   "rotowire": 6.9,
+   "sd": 2.54,
+   "slot": "START",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TB"
   },
   {
    "ceiling": 9.9,
@@ -1144,31 +1144,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:30Z",
+   "lastUpdated": "2026-11-17T21:08:47Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:31Z",
+   "lastUpdated": "2026-11-17T21:08:47Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:28Z",
+   "lastUpdated": "2026-11-17T21:08:45Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:28Z",
+   "lastUpdated": "2026-11-17T21:08:45Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:28Z",
+   "lastUpdated": "2026-11-17T21:08:45Z",
    "ok": true,
    "stale": false
   }

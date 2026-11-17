@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T21:07:32Z",
+ "generatedAt": "2026-11-17T21:08:47Z",
  "league": "fantasizing",
  "players": [
   {
@@ -718,7 +718,7 @@
    "teamName": "Fantasy Virgin"
   },
   {
-   "ceiling": 24.0,
+   "ceiling": 24.1,
    "eligible": true,
    "espn": 17.6,
    "flags": [],
@@ -738,7 +738,7 @@
    "points": 17.1,
    "pos": "QB",
    "rostered": true,
-   "rotowire": 16.5,
+   "rotowire": 16.7,
    "sd": 6.99,
    "sources": [
     "espn",
@@ -749,7 +749,7 @@
    "teamName": "I Aint Brown"
   },
   {
-   "ceiling": 26.6,
+   "ceiling": 26.7,
    "eligible": true,
    "espn": 17.1,
    "flags": [],
@@ -769,7 +769,7 @@
    "points": 17.1,
    "pos": "RB",
    "rostered": true,
-   "rotowire": 17.0,
+   "rotowire": 17.1,
    "sd": 9.59,
    "sources": [
     "espn",
@@ -780,11 +780,11 @@
    "teamName": "C0K3 H3AD"
   },
   {
-   "ceiling": 24.2,
+   "ceiling": 24.1,
    "eligible": true,
    "espn": 17.0,
    "flags": [],
-   "floor": 9.4,
+   "floor": 9.3,
    "game": {
     "home": false,
     "implied": 23.0,
@@ -797,10 +797,10 @@
    "games": 9,
    "id": "12522",
    "name": "Cam Ward",
-   "points": 16.8,
+   "points": 16.7,
    "pos": "QB",
    "rostered": false,
-   "rotowire": 16.6,
+   "rotowire": 16.4,
    "sd": 7.4,
    "sources": [
     "espn",
@@ -1656,39 +1656,6 @@
    "teamName": "MikeyBen"
   },
   {
-   "ceiling": 17.6,
-   "eligible": true,
-   "espn": 12.5,
-   "flags": [
-    "QUESTIONABLE"
-   ],
-   "floor": 9.3,
-   "game": {
-    "home": false,
-    "implied": 19.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DET",
-    "oppImplied": 26.0,
-    "spread": 6.5,
-    "total": 45.5
-   },
-   "games": 6,
-   "id": "4892",
-   "name": "Baker Mayfield",
-   "points": 13.5,
-   "pos": "QB",
-   "rostered": true,
-   "rotowire": 14.5,
-   "sd": 4.14,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": "QUESTIONABLE",
-   "team": "TB",
-   "teamName": "I Aint Brown"
-  },
-  {
    "ceiling": 21.7,
    "eligible": true,
    "espn": 13.6,
@@ -1749,6 +1716,39 @@
    "status": null,
    "team": "ARI",
    "teamName": "Honorary Brown"
+  },
+  {
+   "ceiling": 17.3,
+   "eligible": true,
+   "espn": 12.5,
+   "flags": [
+    "QUESTIONABLE"
+   ],
+   "floor": 9.0,
+   "game": {
+    "home": false,
+    "implied": 19.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DET",
+    "oppImplied": 26.0,
+    "spread": 6.5,
+    "total": 45.5
+   },
+   "games": 6,
+   "id": "4892",
+   "name": "Baker Mayfield",
+   "points": 13.2,
+   "pos": "QB",
+   "rostered": true,
+   "rotowire": 13.9,
+   "sd": 4.14,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": "QUESTIONABLE",
+   "team": "TB",
+   "teamName": "I Aint Brown"
   },
   {
    "ceiling": null,
@@ -2445,37 +2445,6 @@
    "teamName": "Emeka Me Bust"
   },
   {
-   "ceiling": 15.9,
-   "eligible": true,
-   "espn": 11.1,
-   "flags": [],
-   "floor": 5.5,
-   "game": {
-    "home": false,
-    "implied": 19.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DET",
-    "oppImplied": 26.0,
-    "spread": 6.5,
-    "total": 45.5
-   },
-   "games": 7,
-   "id": "12514",
-   "name": "Emeka Egbuka",
-   "points": 10.7,
-   "pos": "WR",
-   "rostered": true,
-   "rotowire": 10.3,
-   "sd": 5.18,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TB",
-   "teamName": "Emeka Me Bust"
-  },
-  {
    "ceiling": 16.6,
    "eligible": true,
    "espn": 11.1,
@@ -2569,6 +2538,37 @@
    "status": null,
    "team": "DAL",
    "teamName": "Exempt List"
+  },
+  {
+   "ceiling": 15.6,
+   "eligible": true,
+   "espn": 11.1,
+   "flags": [],
+   "floor": 5.2,
+   "game": {
+    "home": false,
+    "implied": 19.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DET",
+    "oppImplied": 26.0,
+    "spread": 6.5,
+    "total": 45.5
+   },
+   "games": 7,
+   "id": "12514",
+   "name": "Emeka Egbuka",
+   "points": 10.4,
+   "pos": "WR",
+   "rostered": true,
+   "rotowire": 9.6,
+   "sd": 5.18,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TB",
+   "teamName": "Emeka Me Bust"
   },
   {
    "ceiling": 13.4,
@@ -4348,37 +4348,6 @@
    "teamName": "Slimelord’s Nickolodean"
   },
   {
-   "ceiling": 9.5,
-   "eligible": true,
-   "espn": 7.0,
-   "flags": [],
-   "floor": 6.5,
-   "game": {
-    "home": false,
-    "implied": 19.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DET",
-    "oppImplied": 26.0,
-    "spread": 6.5,
-    "total": 45.5
-   },
-   "games": 8,
-   "id": "4037",
-   "name": "Chris Godwin Jr.",
-   "points": 8.0,
-   "pos": "WR",
-   "rostered": true,
-   "rotowire": 9.0,
-   "sd": 1.54,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TB",
-   "teamName": "Drake it 2 the limit"
-  },
-  {
    "ceiling": 16.0,
    "eligible": true,
    "espn": 8.5,
@@ -4565,11 +4534,11 @@
    "teamName": null
   },
   {
-   "ceiling": 11.8,
+   "ceiling": 9.3,
    "eligible": true,
-   "espn": 8.8,
+   "espn": 7.0,
    "flags": [],
-   "floor": 3.6,
+   "floor": 6.2,
    "game": {
     "home": false,
     "implied": 19.5,
@@ -4579,21 +4548,21 @@
     "spread": 6.5,
     "total": 45.5
    },
-   "games": 9,
-   "id": "7567",
-   "name": "Kenny Gainwell",
+   "games": 8,
+   "id": "4037",
+   "name": "Chris Godwin Jr.",
    "points": 7.7,
-   "pos": "RB",
+   "pos": "WR",
    "rostered": true,
-   "rotowire": 6.6,
-   "sd": 4.08,
+   "rotowire": 8.4,
+   "sd": 1.54,
    "sources": [
     "espn",
     "rotowire"
    ],
    "status": null,
    "team": "TB",
-   "teamName": "Riders of Rohan"
+   "teamName": "Drake it 2 the limit"
   },
   {
    "ceiling": 11.3,
@@ -4687,6 +4656,37 @@
    "status": null,
    "team": "LAC",
    "teamName": null
+  },
+  {
+   "ceiling": 11.7,
+   "eligible": true,
+   "espn": 8.8,
+   "flags": [],
+   "floor": 3.6,
+   "game": {
+    "home": false,
+    "implied": 19.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DET",
+    "oppImplied": 26.0,
+    "spread": 6.5,
+    "total": 45.5
+   },
+   "games": 9,
+   "id": "7567",
+   "name": "Kenny Gainwell",
+   "points": 7.6,
+   "pos": "RB",
+   "rostered": true,
+   "rotowire": 6.5,
+   "sd": 4.08,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TB",
+   "teamName": "Riders of Rohan"
   },
   {
    "ceiling": 10.7,
@@ -4938,37 +4938,6 @@
    "teamName": null
   },
   {
-   "ceiling": 9.9,
-   "eligible": true,
-   "espn": 7.5,
-   "flags": [],
-   "floor": 4.9,
-   "game": {
-    "home": false,
-    "implied": 19.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DET",
-    "oppImplied": 26.0,
-    "spread": 6.5,
-    "total": 45.5
-   },
-   "games": 7,
-   "id": "8111",
-   "name": "Cade Otton",
-   "points": 7.4,
-   "pos": "TE",
-   "rostered": false,
-   "rotowire": 7.3,
-   "sd": 2.54,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TB",
-   "teamName": null
-  },
-  {
    "ceiling": 14.2,
    "eligible": true,
    "espn": 6.1,
@@ -4998,6 +4967,37 @@
    "status": null,
    "team": "NO",
    "teamName": "Drake it 2 the limit"
+  },
+  {
+   "ceiling": 9.7,
+   "eligible": true,
+   "espn": 7.5,
+   "flags": [],
+   "floor": 4.7,
+   "game": {
+    "home": false,
+    "implied": 19.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DET",
+    "oppImplied": 26.0,
+    "spread": 6.5,
+    "total": 45.5
+   },
+   "games": 7,
+   "id": "8111",
+   "name": "Cade Otton",
+   "points": 7.2,
+   "pos": "TE",
+   "rostered": false,
+   "rotowire": 6.9,
+   "sd": 2.54,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TB",
+   "teamName": null
   },
   {
    "ceiling": 12.0,
@@ -5342,37 +5342,6 @@
    "teamName": null
   },
   {
-   "ceiling": 11.1,
-   "eligible": true,
-   "espn": 6.8,
-   "flags": [],
-   "floor": 2.5,
-   "game": {
-    "home": false,
-    "implied": 19.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "DET",
-    "oppImplied": 26.0,
-    "spread": 6.5,
-    "total": 45.5
-   },
-   "games": 8,
-   "id": "12485",
-   "name": "Tez Johnson",
-   "points": 6.8,
-   "pos": "WR",
-   "rostered": true,
-   "rotowire": 6.7,
-   "sd": 4.3,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "TB",
-   "teamName": "QWOP"
-  },
-  {
    "ceiling": 11.6,
    "eligible": true,
    "espn": 6.9,
@@ -5466,6 +5435,37 @@
    "teamName": null
   },
   {
+   "ceiling": 10.9,
+   "eligible": true,
+   "espn": 6.8,
+   "flags": [],
+   "floor": 2.3,
+   "game": {
+    "home": false,
+    "implied": 19.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "DET",
+    "oppImplied": 26.0,
+    "spread": 6.5,
+    "total": 45.5
+   },
+   "games": 8,
+   "id": "12485",
+   "name": "Tez Johnson",
+   "points": 6.6,
+   "pos": "WR",
+   "rostered": true,
+   "rotowire": 6.4,
+   "sd": 4.3,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "TB",
+   "teamName": "QWOP"
+  },
+  {
    "ceiling": 12.5,
    "eligible": true,
    "espn": 7.1,
@@ -5495,37 +5495,6 @@
    "status": null,
    "team": "ARI",
    "teamName": null
-  },
-  {
-   "ceiling": 11.7,
-   "eligible": true,
-   "espn": 7.1,
-   "flags": [],
-   "floor": 1.2,
-   "game": {
-    "home": true,
-    "implied": 24.2,
-    "kickoff": "2026-11-23T01:20Z",
-    "opp": "MIN",
-    "oppImplied": 21.2,
-    "spread": -3.0,
-    "total": 45.5
-   },
-   "games": 9,
-   "id": "1479",
-   "name": "Keenan Allen",
-   "points": 6.5,
-   "pos": "WR",
-   "rostered": true,
-   "rotowire": 5.8,
-   "sd": 5.26,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "SF",
-   "teamName": "2024 Purdue Football"
   },
   {
    "ceiling": 14.5,
@@ -5619,6 +5588,37 @@
    "status": null,
    "team": "BAL",
    "teamName": null
+  },
+  {
+   "ceiling": 11.7,
+   "eligible": true,
+   "espn": 7.1,
+   "flags": [],
+   "floor": 1.2,
+   "game": {
+    "home": true,
+    "implied": 24.2,
+    "kickoff": "2026-11-23T01:20Z",
+    "opp": "MIN",
+    "oppImplied": 21.2,
+    "spread": -3.0,
+    "total": 45.5
+   },
+   "games": 9,
+   "id": "1479",
+   "name": "Keenan Allen",
+   "points": 6.4,
+   "pos": "WR",
+   "rostered": true,
+   "rotowire": 5.7,
+   "sd": 5.26,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "SF",
+   "teamName": "2024 Purdue Football"
   },
   {
    "ceiling": 8.9,
@@ -8289,10 +8289,10 @@
    "games": 5,
    "id": "13317",
    "name": "Ted Hurst III",
-   "points": 2.4,
+   "points": 2.3,
    "pos": "WR",
    "rostered": false,
-   "rotowire": 1.8,
+   "rotowire": 1.7,
    "sd": 2.62,
    "sources": [
     "espn",
@@ -12901,7 +12901,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:30Z",
+   "lastUpdated": "2026-11-17T21:08:47Z",
    "ok": true,
    "stale": false
   },
@@ -12913,13 +12913,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:31Z",
+   "lastUpdated": "2026-11-17T21:08:47Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T21:07:28Z",
+   "lastUpdated": "2026-11-17T21:08:45Z",
    "ok": true,
    "stale": false
   }
