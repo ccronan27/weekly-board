@@ -16,4 +16,7 @@ for k, v in sorted(meta["sources"].items()):
 r = meta["espnRosters"]
 print(f"\nESPN roster sync: {r['syncedAt']} ({r['ageDays']} days old{', STALE' if r['stale'] else ''})\n")
 for l in meta["leagues"]:
-    print(f"- {l['name']}: lineup change {l['gain']:+.1f}")
+    lg = read_json(BUILD / l["file"])
+    best = (lg.get("waivers") or {}).get("targets") or []
+    add = f", best add {best[0]['player']['name']} {best[0]['gain']:+.1f}" if best else ""
+    print(f"- {l['name']}: lineup change {l['gain']:+.1f}{add}")

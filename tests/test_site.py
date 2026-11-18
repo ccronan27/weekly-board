@@ -71,3 +71,9 @@ def test_tabs_point_at_the_panel():
     js = (SITE / "app.js").read_text(encoding="utf-8")
     assert 'setAttribute("aria-controls", "panel")' in js
     assert 'id="panel"' in (SITE / "index.html").read_text(encoding="utf-8")
+
+
+def test_waivers_view_is_wired():
+    js = (SITE / "app.js").read_text(encoding="utf-8")
+    for needle in ("renderWaivers", "league.waivers", "byPosition", "w.targets", "w.drop", "/waivers"):
+        assert needle in js, needle

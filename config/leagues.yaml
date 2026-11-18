@@ -17,3 +17,4 @@ leagues:
     platform: sleeper
     id: "1335703355086893056"
     name: Chicago Dynasty
+    dynasty: true   # waivers page skips the drop idea. Weekly points ignore dynasty value

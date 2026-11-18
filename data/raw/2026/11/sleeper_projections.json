@@ -25,7 +25,7 @@
     "rec_yd": 1.21
    },
    "team": "IND",
-   "updatedAt": 1794967250284,
+   "updatedAt": 1794967850364,
    "week": 11
   },
   {
@@ -63,7 +63,7 @@
     "rush_yd": 0.57
    },
    "team": "IND",
-   "updatedAt": 1794967250248,
+   "updatedAt": 1794967850327,
    "week": 11
   },
   {
@@ -102,7 +102,7 @@
     "rush_yd": 24.81
    },
    "team": "IND",
-   "updatedAt": 1794967250245,
+   "updatedAt": 1794967850324,
    "week": 11
   },
   {
@@ -140,7 +140,7 @@
     "rush_yd": 11.13
    },
    "team": "HOU",
-   "updatedAt": 1794967250144,
+   "updatedAt": 1794967850211,
    "week": 11
   },
   {
@@ -172,7 +172,7 @@
     "rec_yd": 8.64
    },
    "team": "HOU",
-   "updatedAt": 1794967250176,
+   "updatedAt": 1794967850252,
    "week": 11
   },
   {
@@ -204,7 +204,7 @@
     "rec_yd": 2.69
    },
    "team": "IND",
-   "updatedAt": 1794967250279,
+   "updatedAt": 1794967850369,
    "week": 11
   },
   {
@@ -236,7 +236,7 @@
     "rec_yd": 40.0
    },
    "team": "HOU",
-   "updatedAt": 1794967250174,
+   "updatedAt": 1794967850258,
    "week": 11
   },
   {
@@ -274,7 +274,7 @@
     "rush_yd": 52.42
    },
    "team": "HOU",
-   "updatedAt": 1794967250142,
+   "updatedAt": 1794967850209,
    "week": 11
   },
   {
@@ -311,7 +311,7 @@
     "rush_40p": 0.0
    },
    "team": "HOU",
-   "updatedAt": 1794967250172,
+   "updatedAt": 1794967850243,
    "week": 11
   },
   {
@@ -348,7 +348,7 @@
     "rush_40p": 0.01
    },
    "team": "IND",
-   "updatedAt": 1794967250249,
+   "updatedAt": 1794967850339,
    "week": 11
   },
   {
@@ -380,7 +380,7 @@
     "rec_yd": 4.15
    },
    "team": "HOU",
-   "updatedAt": 1794967250180,
+   "updatedAt": 1794967850248,
    "week": 11
   },
   {
@@ -418,7 +418,7 @@
     "rush_yd": 12.14
    },
    "team": "IND",
-   "updatedAt": 1794967250241,
+   "updatedAt": 1794967850320,
    "week": 11
   },
   {
@@ -457,7 +457,7 @@
     "rush_yd": 0.39
    },
    "team": "IND",
-   "updatedAt": 1794967250251,
+   "updatedAt": 1794967850342,
    "week": 11
   },
   {
@@ -489,7 +489,7 @@
     "rec_yd": 2.29
    },
    "team": "IND",
-   "updatedAt": 1794967250286,
+   "updatedAt": 1794967850367,
    "week": 11
   },
   {
@@ -521,7 +521,7 @@
     "rec_yd": 34.98
    },
    "team": "HOU",
-   "updatedAt": 1794967250155,
+   "updatedAt": 1794967850225,
    "week": 11
   },
   {
@@ -557,7 +557,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "HOU",
-   "updatedAt": 1794967250135,
+   "updatedAt": 1794967850202,
    "week": 11
   },
   {
@@ -586,7 +586,7 @@
     "xpmiss": 0.07
    },
    "team": "HOU",
-   "updatedAt": 1794967250188,
+   "updatedAt": 1794967850260,
    "week": 11
   },
   {
@@ -614,7 +614,7 @@
     "rec_yd": 1.02
    },
    "team": "IND",
-   "updatedAt": 1794967250256,
+   "updatedAt": 1794967850334,
    "week": 11
   },
   {
@@ -652,7 +652,7 @@
     "rush_yd": 15.76
    },
    "team": "HOU",
-   "updatedAt": 1794967250138,
+   "updatedAt": 1794967850205,
    "week": 11
   },
   {
@@ -684,7 +684,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "IND",
-   "updatedAt": 1794967250238,
+   "updatedAt": 1794967850318,
    "week": 11
   },
   {
@@ -722,7 +722,7 @@
     "rush_yd": 37.64
    },
    "team": "HOU",
-   "updatedAt": 1794967250146,
+   "updatedAt": 1794967850213,
    "week": 11
   },
   {
@@ -760,7 +760,7 @@
     "rush_yd": 0.93
    },
    "team": "IND",
-   "updatedAt": 1794967250281,
+   "updatedAt": 1794967850372,
    "week": 11
   },
   {
@@ -792,7 +792,7 @@
     "rec_yd": 0.97
    },
    "team": "HOU",
-   "updatedAt": 1794967250179,
+   "updatedAt": 1794967850246,
    "week": 11
   },
   {
@@ -830,7 +830,7 @@
     "rush_yd": 0.39
    },
    "team": "HOU",
-   "updatedAt": 1794967250153,
+   "updatedAt": 1794967850223,
    "week": 11
   },
   {
@@ -868,7 +868,7 @@
     "rush_yd": 0.5
    },
    "team": "HOU",
-   "updatedAt": 1794967250186,
+   "updatedAt": 1794967850254,
    "week": 11
   },
   {
@@ -897,7 +897,7 @@
     "xpmiss": 0.07
    },
    "team": "IND",
-   "updatedAt": 1794967250289,
+   "updatedAt": 1794967850375,
    "week": 11
   },
   {
@@ -929,7 +929,7 @@
     "rec_yd": 18.86
    },
    "team": "IND",
-   "updatedAt": 1794967250259,
+   "updatedAt": 1794967850362,
    "week": 11
   },
   {
@@ -957,7 +957,7 @@
     "rec_yd": 33.3
    },
    "team": "IND",
-   "updatedAt": 1794967250254,
+   "updatedAt": 1794967850332,
    "week": 11
   },
   {
@@ -995,7 +995,7 @@
     "rush_yd": 63.95
    },
    "team": "IND",
-   "updatedAt": 1794967250243,
+   "updatedAt": 1794967850330,
    "week": 11
   },
   {
@@ -1027,7 +1027,7 @@
     "rec_yd": 2.94
    },
    "team": "IND",
-   "updatedAt": 1794967250258,
+   "updatedAt": 1794967850336,
    "week": 11
   },
   {
@@ -1065,7 +1065,7 @@
     "rush_yd": 1.26
    },
    "team": "HOU",
-   "updatedAt": 1794967250149,
+   "updatedAt": 1794967850217,
    "week": 11
   },
   {
@@ -1103,7 +1103,7 @@
     "rush_yd": 0.28
    },
    "team": "HOU",
-   "updatedAt": 1794967250151,
+   "updatedAt": 1794967850220,
    "week": 11
   },
   {
@@ -1141,7 +1141,7 @@
     "rush_yd": 1.69
    },
    "team": "CHI",
-   "updatedAt": 1794967250143,
+   "updatedAt": 1794967850212,
    "week": 11
   },
   {
@@ -1179,7 +1179,7 @@
     "rush_yd": 23.61
    },
    "team": "DEN",
-   "updatedAt": 1794967250519,
+   "updatedAt": 1794967850653,
    "week": 11
   },
   {
@@ -1218,7 +1218,7 @@
     "rush_yd": 10.02
    },
    "team": "PHI",
-   "updatedAt": 1794967250346,
+   "updatedAt": 1794967850450,
    "week": 11
   },
   {
@@ -1257,7 +1257,7 @@
     "rush_yd": 15.24
    },
    "team": "CAR",
-   "updatedAt": 1794967250218,
+   "updatedAt": 1794967850330,
    "week": 11
   },
   {
@@ -1289,7 +1289,7 @@
     "rec_yd": 1.21
    },
    "team": "CAR",
-   "updatedAt": 1794967250256,
+   "updatedAt": 1794967850367,
    "week": 11
   },
   {
@@ -1330,7 +1330,7 @@
     "rush_yd": 4.83
    },
    "team": "MIA",
-   "updatedAt": 1794967250247,
+   "updatedAt": 1794967850344,
    "week": 11
   },
   {
@@ -1371,7 +1371,7 @@
     "rush_yd": 0.48
    },
    "team": "LAC",
-   "updatedAt": 1794967250523,
+   "updatedAt": 1794967850662,
    "week": 11
   },
   {
@@ -1409,7 +1409,7 @@
     "rush_yd": 0.24
    },
    "team": "CAR",
-   "updatedAt": 1794967250226,
+   "updatedAt": 1794967850341,
    "week": 11
   },
   {
@@ -1438,7 +1438,7 @@
     "xpmiss": 0.07
    },
    "team": "MIN",
-   "updatedAt": 1794967250555,
+   "updatedAt": 1794967850694,
    "week": 11
   },
   {
@@ -1477,7 +1477,7 @@
     "rush_yd": 2.42
    },
    "team": "SF",
-   "updatedAt": 1794967250607,
+   "updatedAt": 1794967850761,
    "week": 11
   },
   {
@@ -1517,7 +1517,7 @@
     "rush_yd": 0.23
    },
    "team": "LV",
-   "updatedAt": 1794967250628,
+   "updatedAt": 1794967850774,
    "week": 11
   },
   {
@@ -1553,7 +1553,7 @@
     "rush_yd": 0.11
    },
    "team": "TEN",
-   "updatedAt": 1794967250427,
+   "updatedAt": 1794967850553,
    "week": 11
   },
   {
@@ -1591,7 +1591,7 @@
     "rush_yd": 38.93
    },
    "team": "CHI",
-   "updatedAt": 1794967250146,
+   "updatedAt": 1794967850214,
    "week": 11
   },
   {
@@ -1630,7 +1630,7 @@
     "rush_yd": 4.08
    },
    "team": "JAX",
-   "updatedAt": 1794967250516,
+   "updatedAt": 1794967850653,
    "week": 11
   },
   {
@@ -1668,7 +1668,7 @@
     "rush_yd": 19.36
    },
    "team": "NO",
-   "updatedAt": 1794967250231,
+   "updatedAt": 1794967850324,
    "week": 11
   },
   {
@@ -1703,7 +1703,7 @@
     "rush_40p": 0.0
    },
    "team": "LAC",
-   "updatedAt": 1794967250520,
+   "updatedAt": 1794967850667,
    "week": 11
   },
   {
@@ -1735,7 +1735,7 @@
     "rec_yd": 0.99
    },
    "team": "NYG",
-   "updatedAt": 1794967250639,
+   "updatedAt": 1794967850783,
    "week": 11
   },
   {
@@ -1763,7 +1763,7 @@
     "rec_yd": 3.25
    },
    "team": "BUF",
-   "updatedAt": 1794967250181,
+   "updatedAt": 1794967850257,
    "week": 11
   },
   {
@@ -1797,7 +1797,7 @@
     "rush_40p": 0.0
    },
    "team": "KC",
-   "updatedAt": 1794967250441,
+   "updatedAt": 1794967850557,
    "week": 11
   },
   {
@@ -1829,7 +1829,7 @@
     "rec_yd": 23.18
    },
    "team": "MIN",
-   "updatedAt": 1794967250546,
+   "updatedAt": 1794967850684,
    "week": 11
   },
   {
@@ -1862,7 +1862,7 @@
     "rec_yd": 6.81
    },
    "team": "PHI",
-   "updatedAt": 1794967250352,
+   "updatedAt": 1794967850453,
    "week": 11
   },
   {
@@ -1900,7 +1900,7 @@
     "rush_yd": 7.52
    },
    "team": "ARI",
-   "updatedAt": 1794967250335,
+   "updatedAt": 1794967850442,
    "week": 11
   },
   {
@@ -1932,7 +1932,7 @@
     "rush_yd": 5.52
    },
    "team": "NO",
-   "updatedAt": 1794967250233,
+   "updatedAt": 1794967850327,
    "week": 11
   },
   {
@@ -1973,7 +1973,7 @@
     "rush_yd": 0.11
    },
    "team": "TEN",
-   "updatedAt": 1794967250429,
+   "updatedAt": 1794967850563,
    "week": 11
   },
   {
@@ -2011,7 +2011,7 @@
     "rush_yd": 0.12
    },
    "team": "BAL",
-   "updatedAt": 1794967250153,
+   "updatedAt": 1794967850231,
    "week": 11
   },
   {
@@ -2043,7 +2043,7 @@
     "rec_yd": 11.02
    },
    "team": "JAX",
-   "updatedAt": 1794967250557,
+   "updatedAt": 1794967850681,
    "week": 11
   },
   {
@@ -2082,7 +2082,7 @@
     "rush_yd": 1.17
    },
    "team": "BAL",
-   "updatedAt": 1794967250140,
+   "updatedAt": 1794967850208,
    "week": 11
   },
   {
@@ -2114,7 +2114,7 @@
     "rec_yd": 8.71
    },
    "team": "BAL",
-   "updatedAt": 1794967250167,
+   "updatedAt": 1794967850256,
    "week": 11
   },
   {
@@ -2152,7 +2152,7 @@
     "rush_yd": 0.39
    },
    "team": "NYJ",
-   "updatedAt": 1794967250631,
+   "updatedAt": 1794967850779,
    "week": 11
   },
   {
@@ -2184,7 +2184,7 @@
     "rec_yd": 3.91
    },
    "team": "LAC",
-   "updatedAt": 1794967250525,
+   "updatedAt": 1794967850652,
    "week": 11
   },
   {
@@ -2216,7 +2216,7 @@
     "rec_yd": 4.99
    },
    "team": "JAX",
-   "updatedAt": 1794967250554,
+   "updatedAt": 1794967850674,
    "week": 11
   },
   {
@@ -2254,7 +2254,7 @@
     "rush_yd": 0.29
    },
    "team": "PIT",
-   "updatedAt": 1794967250428,
+   "updatedAt": 1794967850560,
    "week": 11
   },
   {
@@ -2282,7 +2282,7 @@
     "rec_yd": 0.46
    },
    "team": "JAX",
-   "updatedAt": 1794967250529,
+   "updatedAt": 1794967850666,
    "week": 11
   },
   {
@@ -2314,7 +2314,7 @@
     "rec_yd": 28.03
    },
    "team": "SF",
-   "updatedAt": 1794967250622,
+   "updatedAt": 1794967850780,
    "week": 11
   },
   {
@@ -2346,7 +2346,7 @@
     "rec_yd": 71.84
    },
    "team": "SF",
-   "updatedAt": 1794967250619,
+   "updatedAt": 1794967850777,
    "week": 11
   },
   {
@@ -2384,7 +2384,7 @@
     "rush_yd": 75.3
    },
    "team": "BAL",
-   "updatedAt": 1794967250143,
+   "updatedAt": 1794967850212,
    "week": 11
   },
   {
@@ -2422,7 +2422,7 @@
     "rush_yd": 0.47
    },
    "team": "TB",
-   "updatedAt": 1794967250434,
+   "updatedAt": 1794967850561,
    "week": 11
   },
   {
@@ -2460,7 +2460,7 @@
     "rush_yd": 20.78
    },
    "team": "KC",
-   "updatedAt": 1794967250417,
+   "updatedAt": 1794967850543,
    "week": 11
   },
   {
@@ -2492,7 +2492,7 @@
     "rec_yd": 24.57
    },
    "team": "DEN",
-   "updatedAt": 1794967250559,
+   "updatedAt": 1794967850679,
    "week": 11
   },
   {
@@ -2530,7 +2530,7 @@
     "rush_yd": 36.65
    },
    "team": "MIN",
-   "updatedAt": 1794967250530,
+   "updatedAt": 1794967850669,
    "week": 11
   },
   {
@@ -2568,7 +2568,7 @@
     "rush_yd": 0.85
    },
    "team": "BAL",
-   "updatedAt": 1794967250169,
+   "updatedAt": 1794967850261,
    "week": 11
   },
   {
@@ -2604,7 +2604,7 @@
     "rush_yd": 0.09
    },
    "team": "NYJ",
-   "updatedAt": 1794967250626,
+   "updatedAt": 1794967850774,
    "week": 11
   },
   {
@@ -2642,7 +2642,7 @@
     "rush_yd": 0.93
    },
    "team": "DAL",
-   "updatedAt": 1794967250339,
+   "updatedAt": 1794967850457,
    "week": 11
   },
   {
@@ -2680,7 +2680,7 @@
     "rush_yd": 32.48
    },
    "team": "DEN",
-   "updatedAt": 1794967250525,
+   "updatedAt": 1794967850656,
    "week": 11
   },
   {
@@ -2714,7 +2714,7 @@
     "rush_40p": 0.0
    },
    "team": "PIT",
-   "updatedAt": 1794967250449,
+   "updatedAt": 1794967850581,
    "week": 11
   },
   {
@@ -2756,7 +2756,7 @@
     "rush_yd": 0.14
    },
    "team": "ARI",
-   "updatedAt": 1794967250348,
+   "updatedAt": 1794967850459,
    "week": 11
   },
   {
@@ -2785,7 +2785,7 @@
     "xpmiss": 0.13
    },
    "team": "BUF",
-   "updatedAt": 1794967250182,
+   "updatedAt": 1794967850260,
    "week": 11
   },
   {
@@ -2817,7 +2817,7 @@
     "rush_yd": 11.09
    },
    "team": "PHI",
-   "updatedAt": 1794967250343,
+   "updatedAt": 1794967850448,
    "week": 11
   },
   {
@@ -2855,7 +2855,7 @@
     "rush_yd": 72.74
    },
    "team": "DAL",
-   "updatedAt": 1794967250327,
+   "updatedAt": 1794967850442,
    "week": 11
   },
   {
@@ -2887,7 +2887,7 @@
     "rec_yd": 26.04
    },
    "team": "PIT",
-   "updatedAt": 1794967250457,
+   "updatedAt": 1794967850592,
    "week": 11
   },
   {
@@ -2915,7 +2915,7 @@
     "rec_yd": 0.94
    },
    "team": "PIT",
-   "updatedAt": 1794967250447,
+   "updatedAt": 1794967850578,
    "week": 11
   },
   {
@@ -2943,7 +2943,7 @@
     "rec_yd": 17.44
    },
    "team": "ARI",
-   "updatedAt": 1794967250350,
+   "updatedAt": 1794967850461,
    "week": 11
   },
   {
@@ -2975,7 +2975,7 @@
     "rec_yd": 3.88
    },
    "team": "MIA",
-   "updatedAt": 1794967250251,
+   "updatedAt": 1794967850366,
    "week": 11
   },
   {
@@ -3007,7 +3007,7 @@
     "rec_yd": 58.98
    },
    "team": "NYG",
-   "updatedAt": 1794967250640,
+   "updatedAt": 1794967850778,
    "week": 11
   },
   {
@@ -3039,7 +3039,7 @@
     "rec_yd": 2.28
    },
    "team": "NYJ",
-   "updatedAt": 1794967250629,
+   "updatedAt": 1794967850776,
    "week": 11
   },
   {
@@ -3080,7 +3080,7 @@
     "rush_yd": 0.02
    },
    "team": "CAR",
-   "updatedAt": 1794967250233,
+   "updatedAt": 1794967850362,
    "week": 11
   },
   {
@@ -3119,7 +3119,7 @@
     "rush_yd": 81.33
    },
    "team": "PIT",
-   "updatedAt": 1794967250426,
+   "updatedAt": 1794967850571,
    "week": 11
   },
   {
@@ -3157,7 +3157,7 @@
     "rush_yd": 86.94
    },
    "team": "DET",
-   "updatedAt": 1794967250333,
+   "updatedAt": 1794967850441,
    "week": 11
   },
   {
@@ -3189,7 +3189,7 @@
     "rec_yd": 40.38
    },
    "team": "JAX",
-   "updatedAt": 1794967250536,
+   "updatedAt": 1794967850678,
    "week": 11
   },
   {
@@ -3221,7 +3221,7 @@
     "rec_yd": 38.48
    },
    "team": "LV",
-   "updatedAt": 1794967250648,
+   "updatedAt": 1794967850782,
    "week": 11
   },
   {
@@ -3253,7 +3253,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "BUF",
-   "updatedAt": 1794967250135,
+   "updatedAt": 1794967850203,
    "week": 11
   },
   {
@@ -3287,7 +3287,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "DAL",
-   "updatedAt": 1794967250319,
+   "updatedAt": 1794967850434,
    "week": 11
   },
   {
@@ -3318,7 +3318,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "LV",
-   "updatedAt": 1794967250616,
+   "updatedAt": 1794967850748,
    "week": 11
   },
   {
@@ -3350,7 +3350,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "SF",
-   "updatedAt": 1794967250602,
+   "updatedAt": 1794967850757,
    "week": 11
   },
   {
@@ -3392,7 +3392,7 @@
     "rush_yd": 0.64
    },
    "team": "LAC",
-   "updatedAt": 1794967250517,
+   "updatedAt": 1794967850660,
    "week": 11
   },
   {
@@ -3424,7 +3424,7 @@
     "rec_yd": 50.68
    },
    "team": "BUF",
-   "updatedAt": 1794967250176,
+   "updatedAt": 1794967850251,
    "week": 11
   },
   {
@@ -3456,7 +3456,7 @@
     "rec_yd": 16.07
    },
    "team": "DAL",
-   "updatedAt": 1794967250346,
+   "updatedAt": 1794967850465,
    "week": 11
   },
   {
@@ -3488,7 +3488,7 @@
     "rec_yd": 36.6
    },
    "team": "DAL",
-   "updatedAt": 1794967250349,
+   "updatedAt": 1794967850468,
    "week": 11
   },
   {
@@ -3530,7 +3530,7 @@
     "rush_yd": 0.43
    },
    "team": "NYJ",
-   "updatedAt": 1794967250620,
+   "updatedAt": 1794967850759,
    "week": 11
   },
   {
@@ -3569,7 +3569,7 @@
     "rush_yd": 0.17
    },
    "team": "NYJ",
-   "updatedAt": 1794967250614,
+   "updatedAt": 1794967850771,
    "week": 11
   },
   {
@@ -3608,7 +3608,7 @@
     "rush_yd": 22.75
    },
    "team": "LAC",
-   "updatedAt": 1794967250506,
+   "updatedAt": 1794967850644,
    "week": 11
   },
   {
@@ -3649,7 +3649,7 @@
     "rush_yd": 0.25
    },
    "team": "TB",
-   "updatedAt": 1794967250430,
+   "updatedAt": 1794967850555,
    "week": 11
   },
   {
@@ -3677,7 +3677,7 @@
     "rec_yd": 0.48
    },
    "team": "TEN",
-   "updatedAt": 1794967250436,
+   "updatedAt": 1794967850567,
    "week": 11
   },
   {
@@ -3715,7 +3715,7 @@
     "rush_yd": 60.73
    },
    "team": "MIA",
-   "updatedAt": 1794967250243,
+   "updatedAt": 1794967850331,
    "week": 11
   },
   {
@@ -3756,7 +3756,7 @@
     "rush_yd": 0.03
    },
    "team": "KC",
-   "updatedAt": 1794967250428,
+   "updatedAt": 1794967850562,
    "week": 11
   },
   {
@@ -3794,7 +3794,7 @@
     "rush_yd": 0.6
    },
    "team": "LAC",
-   "updatedAt": 1794967250513,
+   "updatedAt": 1794967850657,
    "week": 11
   },
   {
@@ -3832,7 +3832,7 @@
     "rush_yd": 15.53
    },
    "team": "TEN",
-   "updatedAt": 1794967250410,
+   "updatedAt": 1794967850538,
    "week": 11
   },
   {
@@ -3870,7 +3870,7 @@
     "rush_yd": 38.78
    },
    "team": "LV",
-   "updatedAt": 1794967250623,
+   "updatedAt": 1794967850760,
    "week": 11
   },
   {
@@ -3911,7 +3911,7 @@
     "rush_yd": 1.25
    },
    "team": "CAR",
-   "updatedAt": 1794967250224,
+   "updatedAt": 1794967850335,
    "week": 11
   },
   {
@@ -3943,7 +3943,7 @@
     "rec_yd": 4.18
    },
    "team": "BUF",
-   "updatedAt": 1794967250174,
+   "updatedAt": 1794967850249,
    "week": 11
   },
   {
@@ -3976,7 +3976,7 @@
     "rec_yd": 1.32
    },
    "team": "LAC",
-   "updatedAt": 1794967250531,
+   "updatedAt": 1794967850655,
    "week": 11
   },
   {
@@ -4008,7 +4008,7 @@
     "rec_yd": 4.36
    },
    "team": "MIN",
-   "updatedAt": 1794967250548,
+   "updatedAt": 1794967850686,
    "week": 11
   },
   {
@@ -4040,7 +4040,7 @@
     "rec_yd": 10.72
    },
    "team": "BAL",
-   "updatedAt": 1794967250166,
+   "updatedAt": 1794967850258,
    "week": 11
   },
   {
@@ -4081,7 +4081,7 @@
     "rush_yd": 0.29
    },
    "team": "PHI",
-   "updatedAt": 1794967250358,
+   "updatedAt": 1794967850466,
    "week": 11
   },
   {
@@ -4117,7 +4117,7 @@
     "rush_yd": 0.2
    },
    "team": "MIA",
-   "updatedAt": 1794967250259,
+   "updatedAt": 1794967850342,
    "week": 11
   },
   {
@@ -4149,7 +4149,7 @@
     "rec_yd": 12.5
    },
    "team": "CHI",
-   "updatedAt": 1794967250174,
+   "updatedAt": 1794967850247,
    "week": 11
   },
   {
@@ -4184,7 +4184,7 @@
     "rush_yd": 0.06
    },
    "team": "PIT",
-   "updatedAt": 1794967250513,
+   "updatedAt": 1794967850661,
    "week": 11
   },
   {
@@ -4220,7 +4220,7 @@
     "rec_yd": 3.53
    },
    "team": "NO",
-   "updatedAt": 1794967250245,
+   "updatedAt": 1794967850340,
    "week": 11
   },
   {
@@ -4248,7 +4248,7 @@
     "rec_yd": 0.03
    },
    "team": "NYJ",
-   "updatedAt": 1794967250615,
+   "updatedAt": 1794967850769,
    "week": 11
   },
   {
@@ -4280,7 +4280,7 @@
     "rec_yd": 0.24
    },
    "team": "SF",
-   "updatedAt": 1794967250616,
+   "updatedAt": 1794967850772,
    "week": 11
   },
   {
@@ -4319,7 +4319,7 @@
     "rush_yd": 4.07
    },
    "team": "JAX",
-   "updatedAt": 1794967250514,
+   "updatedAt": 1794967850651,
    "week": 11
   },
   {
@@ -4357,7 +4357,7 @@
     "rush_yd": 12.16
    },
    "team": "BAL",
-   "updatedAt": 1794967250137,
+   "updatedAt": 1794967850206,
    "week": 11
   },
   {
@@ -4395,7 +4395,7 @@
     "rush_yd": 0.74
    },
    "team": "PIT",
-   "updatedAt": 1794967250441,
+   "updatedAt": 1794967850589,
    "week": 11
   },
   {
@@ -4433,7 +4433,7 @@
     "rush_yd": 0.45
    },
    "team": "JAX",
-   "updatedAt": 1794967250531,
+   "updatedAt": 1794967850668,
    "week": 11
   },
   {
@@ -4466,7 +4466,7 @@
     "rec_yd": 6.52
    },
    "team": "LV",
-   "updatedAt": 1794967250632,
+   "updatedAt": 1794967850764,
    "week": 11
   },
   {
@@ -4498,7 +4498,7 @@
     "rec_yd": 13.84
    },
    "team": "MIN",
-   "updatedAt": 1794967250541,
+   "updatedAt": 1794967850679,
    "week": 11
   },
   {
@@ -4536,7 +4536,7 @@
     "rush_yd": 0.06
    },
    "team": "NYG",
-   "updatedAt": 1794967250629,
+   "updatedAt": 1794967850770,
    "week": 11
   },
   {
@@ -4568,7 +4568,7 @@
     "rec_yd": 1.79
    },
    "team": "JAX",
-   "updatedAt": 1794967250534,
+   "updatedAt": 1794967850676,
    "week": 11
   },
   {
@@ -4607,7 +4607,7 @@
     "rush_yd": 21.05
    },
    "team": "TB",
-   "updatedAt": 1794967250423,
+   "updatedAt": 1794967850549,
    "week": 11
   },
   {
@@ -4639,7 +4639,7 @@
     "rec_yd": 0.81
    },
    "team": "TEN",
-   "updatedAt": 1794967250440,
+   "updatedAt": 1794967850569,
    "week": 11
   },
   {
@@ -4671,7 +4671,7 @@
     "rec_yd": 6.37
    },
    "team": "DET",
-   "updatedAt": 1794967250356,
+   "updatedAt": 1794967850471,
    "week": 11
   },
   {
@@ -4703,7 +4703,7 @@
     "rec_yd": 29.48
    },
    "team": "TB",
-   "updatedAt": 1794967250445,
+   "updatedAt": 1794967850575,
    "week": 11
   },
   {
@@ -4740,7 +4740,7 @@
     "rush_yd": 28.92
    },
    "team": "ARI",
-   "updatedAt": 1794967250340,
+   "updatedAt": 1794967850445,
    "week": 11
   },
   {
@@ -4778,7 +4778,7 @@
     "rush_yd": 105.9
    },
    "team": "BUF",
-   "updatedAt": 1794967250140,
+   "updatedAt": 1794967850211,
    "week": 11
   },
   {
@@ -4810,7 +4810,7 @@
     "rec_yd": 8.97
    },
    "team": "TEN",
-   "updatedAt": 1794967250438,
+   "updatedAt": 1794967850575,
    "week": 11
   },
   {
@@ -4844,7 +4844,7 @@
     "rush_40p": 0.0
    },
    "team": "DET",
-   "updatedAt": 1794967250347,
+   "updatedAt": 1794967850461,
    "week": 11
   },
   {
@@ -4886,7 +4886,7 @@
     "rush_yd": 3.35
    },
    "team": "DAL",
-   "updatedAt": 1794967250330,
+   "updatedAt": 1794967850444,
    "week": 11
   },
   {
@@ -4918,7 +4918,7 @@
     "rush_yd": 2.04
    },
    "team": "ARI",
-   "updatedAt": 1794967250342,
+   "updatedAt": 1794967850450,
    "week": 11
   },
   {
@@ -4951,7 +4951,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "PHI",
-   "updatedAt": 1794967250338,
+   "updatedAt": 1794967850440,
    "week": 11
   },
   {
@@ -4983,7 +4983,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "PIT",
-   "updatedAt": 1794967250421,
+   "updatedAt": 1794967850553,
    "week": 11
   },
   {
@@ -5011,7 +5011,7 @@
     "rec_yd": 0.43
    },
    "team": "SF",
-   "updatedAt": 1794967250632,
+   "updatedAt": 1794967850794,
    "week": 11
   },
   {
@@ -5043,7 +5043,7 @@
     "rec_yd": 11.94
    },
    "team": "BUF",
-   "updatedAt": 1794967250158,
+   "updatedAt": 1794967850221,
    "week": 11
   },
   {
@@ -5075,7 +5075,7 @@
     "rec_yd": 4.95
    },
    "team": "DEN",
-   "updatedAt": 1794967250556,
+   "updatedAt": 1794967850684,
    "week": 11
   },
   {
@@ -5113,7 +5113,7 @@
     "rush_yd": 13.45
    },
    "team": "PHI",
-   "updatedAt": 1794967250340,
+   "updatedAt": 1794967850442,
    "week": 11
   },
   {
@@ -5152,7 +5152,7 @@
     "rush_yd": 0.42
    },
    "team": "BAL",
-   "updatedAt": 1794967250145,
+   "updatedAt": 1794967850221,
    "week": 11
   },
   {
@@ -5191,7 +5191,7 @@
     "rush_yd": 40.09
    },
    "team": "NYJ",
-   "updatedAt": 1794967250609,
+   "updatedAt": 1794967850754,
    "week": 11
   },
   {
@@ -5229,7 +5229,7 @@
     "rush_yd": 0.25
    },
    "team": "BAL",
-   "updatedAt": 1794967250161,
+   "updatedAt": 1794967850250,
    "week": 11
   },
   {
@@ -5266,7 +5266,7 @@
     "rush_yd": 0.11
    },
    "team": "PIT",
-   "updatedAt": 1794967250452,
+   "updatedAt": 1794967850584,
    "week": 11
   },
   {
@@ -5295,7 +5295,7 @@
     "xpmiss": 0.06
    },
    "team": "NO",
-   "updatedAt": 1794967250275,
+   "updatedAt": 1794967850376,
    "week": 11
   },
   {
@@ -5334,7 +5334,7 @@
     "rush_yd": 0.42
    },
    "team": "TB",
-   "updatedAt": 1794967250432,
+   "updatedAt": 1794967850559,
    "week": 11
   },
   {
@@ -5366,7 +5366,7 @@
     "rec_yd": 25.37
    },
    "team": "NYJ",
-   "updatedAt": 1794967250635,
+   "updatedAt": 1794967850784,
    "week": 11
   },
   {
@@ -5404,7 +5404,7 @@
     "rush_yd": 0.25
    },
    "team": "CHI",
-   "updatedAt": 1794967250177,
+   "updatedAt": 1794967850250,
    "week": 11
   },
   {
@@ -5443,7 +5443,7 @@
     "rush_yd": 4.06
    },
    "team": "CHI",
-   "updatedAt": 1794967250149,
+   "updatedAt": 1794967850218,
    "week": 11
   },
   {
@@ -5481,7 +5481,7 @@
     "rush_yd": 0.3
    },
    "team": "CAR",
-   "updatedAt": 1794967250230,
+   "updatedAt": 1794967850346,
    "week": 11
   },
   {
@@ -5510,7 +5510,7 @@
     "xpmiss": 0.06
    },
    "team": "CAR",
-   "updatedAt": 1794967250262,
+   "updatedAt": 1794967850380,
    "week": 11
   },
   {
@@ -5548,7 +5548,7 @@
     "rush_yd": 12.81
    },
    "team": "LV",
-   "updatedAt": 1794967250619,
+   "updatedAt": 1794967850752,
    "week": 11
   },
   {
@@ -5586,7 +5586,7 @@
     "rush_yd": 0.39
    },
    "team": "TB",
-   "updatedAt": 1794967250436,
+   "updatedAt": 1794967850563,
    "week": 11
   },
   {
@@ -5624,7 +5624,7 @@
     "rush_yd": 27.4
    },
    "team": "SF",
-   "updatedAt": 1794967250614,
+   "updatedAt": 1794967850768,
    "week": 11
   },
   {
@@ -5662,7 +5662,7 @@
     "rush_yd": 24.35
    },
    "team": "TB",
-   "updatedAt": 1794967250420,
+   "updatedAt": 1794967850544,
    "week": 11
   },
   {
@@ -5690,7 +5690,7 @@
     "rec_yd": 7.2
    },
    "team": "ARI",
-   "updatedAt": 1794967250346,
+   "updatedAt": 1794967850456,
    "week": 11
   },
   {
@@ -5718,7 +5718,7 @@
     "rec_yd": 1.29
    },
    "team": "DAL",
-   "updatedAt": 1794967250334,
+   "updatedAt": 1794967850450,
    "week": 11
   },
   {
@@ -5747,7 +5747,7 @@
     "xpmiss": 0.07
    },
    "team": "NYG",
-   "updatedAt": 1794967250644,
+   "updatedAt": 1794967850785,
    "week": 11
   },
   {
@@ -5779,7 +5779,7 @@
     "rec_yd": 60.01
    },
    "team": "KC",
-   "updatedAt": 1794967250447,
+   "updatedAt": 1794967850574,
    "week": 11
   },
   {
@@ -5811,7 +5811,7 @@
     "rush_yd": 0.35
    },
    "team": "DET",
-   "updatedAt": 1794967250350,
+   "updatedAt": 1794967850464,
    "week": 11
   },
   {
@@ -5843,7 +5843,7 @@
     "rec_yd": 0.47
    },
    "team": "NYG",
-   "updatedAt": 1794967250643,
+   "updatedAt": 1794967850781,
    "week": 11
   },
   {
@@ -5882,7 +5882,7 @@
     "rush_yd": 1.39
    },
    "team": "CHI",
-   "updatedAt": 1794967250153,
+   "updatedAt": 1794967850223,
    "week": 11
   },
   {
@@ -5911,7 +5911,7 @@
     "xpmiss": 0.12
    },
    "team": "DEN",
-   "updatedAt": 1794967250563,
+   "updatedAt": 1794967850686,
    "week": 11
   },
   {
@@ -5949,7 +5949,7 @@
     "rush_yd": 1.69
    },
    "team": "BUF",
-   "updatedAt": 1794967250147,
+   "updatedAt": 1794967850216,
    "week": 11
   },
   {
@@ -5981,7 +5981,7 @@
     "rec_yd": 2.24
    },
    "team": "LV",
-   "updatedAt": 1794967250644,
+   "updatedAt": 1794967850788,
    "week": 11
   },
   {
@@ -6010,7 +6010,7 @@
     "xpmiss": 0.12
    },
    "team": "SF",
-   "updatedAt": 1794967250638,
+   "updatedAt": 1794967850799,
    "week": 11
   },
   {
@@ -6049,7 +6049,7 @@
     "rush_yd": 8.0
    },
    "team": "SF",
-   "updatedAt": 1794967250624,
+   "updatedAt": 1794967850783,
    "week": 11
   },
   {
@@ -6081,7 +6081,7 @@
     "rec_yd": 14.33
    },
    "team": "BUF",
-   "updatedAt": 1794967250178,
+   "updatedAt": 1794967850254,
    "week": 11
   },
   {
@@ -6108,7 +6108,7 @@
     "xpmiss": 0.12
    },
    "team": "LV",
-   "updatedAt": 1794967250650,
+   "updatedAt": 1794967850791,
    "week": 11
   },
   {
@@ -6147,7 +6147,7 @@
     "rush_yd": 13.38
    },
    "team": "NYG",
-   "updatedAt": 1794967250622,
+   "updatedAt": 1794967850756,
    "week": 11
   },
   {
@@ -6185,7 +6185,7 @@
     "rush_yd": 69.35
    },
    "team": "CHI",
-   "updatedAt": 1794967250141,
+   "updatedAt": 1794967850209,
    "week": 11
   },
   {
@@ -6217,7 +6217,7 @@
     "rec_yd": 12.71
    },
    "team": "DEN",
-   "updatedAt": 1794967250561,
+   "updatedAt": 1794967850676,
    "week": 11
   },
   {
@@ -6256,7 +6256,7 @@
     "rush_yd": 65.38
    },
    "team": "CAR",
-   "updatedAt": 1794967250215,
+   "updatedAt": 1794967850328,
    "week": 11
   },
   {
@@ -6292,7 +6292,7 @@
     "rush_yd": 0.38
    },
    "team": "ARI",
-   "updatedAt": 1794967250358,
+   "updatedAt": 1794967850470,
    "week": 11
   },
   {
@@ -6330,7 +6330,7 @@
     "rush_yd": 0.7
    },
    "team": "NYJ",
-   "updatedAt": 1794967250622,
+   "updatedAt": 1794967850761,
    "week": 11
   },
   {
@@ -6362,7 +6362,7 @@
     "rec_yd": 30.06
    },
    "team": "MIA",
-   "updatedAt": 1794967250286,
+   "updatedAt": 1794967850371,
    "week": 11
   },
   {
@@ -6394,7 +6394,7 @@
     "rec_yd": 4.07
    },
    "team": "PHI",
-   "updatedAt": 1794967250364,
+   "updatedAt": 1794967850471,
    "week": 11
   },
   {
@@ -6432,7 +6432,7 @@
     "rush_yd": 22.65
    },
    "team": "SF",
-   "updatedAt": 1794967250605,
+   "updatedAt": 1794967850759,
    "week": 11
   },
   {
@@ -6464,7 +6464,7 @@
     "rec_yd": 0.17
    },
    "team": "TB",
-   "updatedAt": 1794967250443,
+   "updatedAt": 1794967850573,
    "week": 11
   },
   {
@@ -6502,7 +6502,7 @@
     "rush_yd": 0.17
    },
    "team": "PHI",
-   "updatedAt": 1794967250350,
+   "updatedAt": 1794967850462,
    "week": 11
   },
   {
@@ -6544,7 +6544,7 @@
     "rush_yd": 2.44
    },
    "team": "DEN",
-   "updatedAt": 1794967250530,
+   "updatedAt": 1794967850666,
    "week": 11
   },
   {
@@ -6582,7 +6582,7 @@
     "rush_yd": 6.52
    },
    "team": "PIT",
-   "updatedAt": 1794967250424,
+   "updatedAt": 1794967850557,
    "week": 11
   },
   {
@@ -6614,7 +6614,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "JAX",
-   "updatedAt": 1794967250503,
+   "updatedAt": 1794967850640,
    "week": 11
   },
   {
@@ -6646,7 +6646,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "NYG",
-   "updatedAt": 1794967250615,
+   "updatedAt": 1794967850746,
    "week": 11
   },
   {
@@ -6684,7 +6684,7 @@
     "rush_yd": 1.54
    },
    "team": "KC",
-   "updatedAt": 1794967250432,
+   "updatedAt": 1794967850566,
    "week": 11
   },
   {
@@ -6713,7 +6713,7 @@
     "xpmiss": 0.11
    },
    "team": "ARI",
-   "updatedAt": 1794967250362,
+   "updatedAt": 1794967850480,
    "week": 11
   },
   {
@@ -6745,7 +6745,7 @@
     "rush_yd": 0.11
    },
    "team": "NYG",
-   "updatedAt": 1794967250627,
+   "updatedAt": 1794967850764,
    "week": 11
   },
   {
@@ -6774,7 +6774,7 @@
     "xpmiss": 0.14
    },
    "team": "DAL",
-   "updatedAt": 1794967250351,
+   "updatedAt": 1794967850470,
    "week": 11
   },
   {
@@ -6803,7 +6803,7 @@
     "xpmiss": 0.13
    },
    "team": "DET",
-   "updatedAt": 1794967250359,
+   "updatedAt": 1794967850473,
    "week": 11
   },
   {
@@ -6841,7 +6841,7 @@
     "rush_yd": 32.23
    },
    "team": "CHI",
-   "updatedAt": 1794967250138,
+   "updatedAt": 1794967850206,
    "week": 11
   },
   {
@@ -6880,7 +6880,7 @@
     "rush_yd": 18.86
    },
    "team": "NO",
-   "updatedAt": 1794967250235,
+   "updatedAt": 1794967850330,
    "week": 11
   },
   {
@@ -6918,7 +6918,7 @@
     "rush_yd": 0.17
    },
    "team": "JAX",
-   "updatedAt": 1794967250525,
+   "updatedAt": 1794967850660,
    "week": 11
   },
   {
@@ -6956,7 +6956,7 @@
     "rush_yd": 8.95
    },
    "team": "MIA",
-   "updatedAt": 1794967250241,
+   "updatedAt": 1794967850334,
    "week": 11
   },
   {
@@ -6994,7 +6994,7 @@
     "rush_yd": 5.59
    },
    "team": "MIN",
-   "updatedAt": 1794967250526,
+   "updatedAt": 1794967850667,
    "week": 11
   },
   {
@@ -7032,7 +7032,7 @@
     "rush_yd": 0.26
    },
    "team": "DAL",
-   "updatedAt": 1794967250336,
+   "updatedAt": 1794967850454,
    "week": 11
   },
   {
@@ -7064,7 +7064,7 @@
     "rec_yd": 15.78
    },
    "team": "CAR",
-   "updatedAt": 1794967250261,
+   "updatedAt": 1794967850370,
    "week": 11
   },
   {
@@ -7102,7 +7102,7 @@
     "rush_yd": 71.51
    },
    "team": "NYG",
-   "updatedAt": 1794967250625,
+   "updatedAt": 1794967850758,
    "week": 11
   },
   {
@@ -7131,7 +7131,7 @@
     "rush_yd": 8.26
    },
    "team": "MIA",
-   "updatedAt": 1794967250239,
+   "updatedAt": 1794967850326,
    "week": 11
   },
   {
@@ -7173,7 +7173,7 @@
     "rush_yd": 0.78
    },
    "team": "TEN",
-   "updatedAt": 1794967250425,
+   "updatedAt": 1794967850555,
    "week": 11
   },
   {
@@ -7205,7 +7205,7 @@
     "rec_yd": 3.49
    },
    "team": "KC",
-   "updatedAt": 1794967250443,
+   "updatedAt": 1794967850571,
    "week": 11
   },
   {
@@ -7237,7 +7237,7 @@
     "rec_yd": 1.01
    },
    "team": "CHI",
-   "updatedAt": 1794967250157,
+   "updatedAt": 1794967850244,
    "week": 11
   },
   {
@@ -7269,7 +7269,7 @@
     "rec_yd": 18.01
    },
    "team": "ARI",
-   "updatedAt": 1794967250344,
+   "updatedAt": 1794967850452,
    "week": 11
   },
   {
@@ -7308,7 +7308,7 @@
     "rush_yd": 27.45
    },
    "team": "LV",
-   "updatedAt": 1794967250621,
+   "updatedAt": 1794967850762,
    "week": 11
   },
   {
@@ -7336,7 +7336,7 @@
     "rec_yd": 0.46
    },
    "team": "TB",
-   "updatedAt": 1794967250447,
+   "updatedAt": 1794967850578,
    "week": 11
   },
   {
@@ -7375,7 +7375,7 @@
     "rush_yd": 70.38
    },
    "team": "DEN",
-   "updatedAt": 1794967250522,
+   "updatedAt": 1794967850659,
    "week": 11
   },
   {
@@ -7407,7 +7407,7 @@
     "rec_yd": 1.8
    },
    "team": "MIA",
-   "updatedAt": 1794967250279,
+   "updatedAt": 1794967850374,
    "week": 11
   },
   {
@@ -7446,7 +7446,7 @@
     "rush_yd": 10.8
    },
    "team": "MIA",
-   "updatedAt": 1794967250245,
+   "updatedAt": 1794967850329,
    "week": 11
   },
   {
@@ -7478,7 +7478,7 @@
     "rec_yd": 0.77
    },
    "team": "NO",
-   "updatedAt": 1794967250243,
+   "updatedAt": 1794967850338,
    "week": 11
   },
   {
@@ -7510,7 +7510,7 @@
     "rush_yd": 0.23
    },
    "team": "PIT",
-   "updatedAt": 1794967250443,
+   "updatedAt": 1794967850574,
    "week": 11
   },
   {
@@ -7547,7 +7547,7 @@
     "rush_yd": 0.04
    },
    "team": "MIN",
-   "updatedAt": 1794967250601,
+   "updatedAt": 1794967850754,
    "week": 11
   },
   {
@@ -7576,7 +7576,7 @@
     "xpmiss": 0.06
    },
    "team": "PIT",
-   "updatedAt": 1794967250459,
+   "updatedAt": 1794967850599,
    "week": 11
   },
   {
@@ -7614,7 +7614,7 @@
     "rush_yd": 14.97
    },
    "team": "DAL",
-   "updatedAt": 1794967250321,
+   "updatedAt": 1794967850436,
    "week": 11
   },
   {
@@ -7646,7 +7646,7 @@
     "rec_yd": 17.75
    },
    "team": "LAC",
-   "updatedAt": 1794967250533,
+   "updatedAt": 1794967850671,
    "week": 11
   },
   {
@@ -7684,7 +7684,7 @@
     "rush_yd": 67.58
    },
    "team": "SF",
-   "updatedAt": 1794967250611,
+   "updatedAt": 1794967850766,
    "week": 11
   },
   {
@@ -7716,7 +7716,7 @@
     "rec_yd": 57.48
    },
    "team": "SF",
-   "updatedAt": 1794967250634,
+   "updatedAt": 1794967850791,
    "week": 11
   },
   {
@@ -7748,7 +7748,7 @@
     "rec_yd": 0.55
    },
    "team": "NYJ",
-   "updatedAt": 1794967250618,
+   "updatedAt": 1794967850764,
    "week": 11
   },
   {
@@ -7780,7 +7780,7 @@
     "rec_yd": 0.32
    },
    "team": "PIT",
-   "updatedAt": 1794967250454,
+   "updatedAt": 1794967850594,
    "week": 11
   },
   {
@@ -7818,7 +7818,7 @@
     "rush_yd": 0.02
    },
    "team": "TEN",
-   "updatedAt": 1794967250434,
+   "updatedAt": 1794967850560,
    "week": 11
   },
   {
@@ -7847,7 +7847,7 @@
     "xpmiss": 0.06
    },
    "team": "NYJ",
-   "updatedAt": 1794967250637,
+   "updatedAt": 1794967850786,
    "week": 11
   },
   {
@@ -7879,7 +7879,7 @@
     "rec_yd": 0.49
    },
    "team": "DET",
-   "updatedAt": 1794967250352,
+   "updatedAt": 1794967850466,
    "week": 11
   },
   {
@@ -7911,7 +7911,7 @@
     "rec_yd": 35.66
    },
    "team": "MIN",
-   "updatedAt": 1794967250550,
+   "updatedAt": 1794967850689,
    "week": 11
   },
   {
@@ -7943,7 +7943,7 @@
     "rec_yd": 15.62
    },
    "team": "NO",
-   "updatedAt": 1794967250273,
+   "updatedAt": 1794967850374,
    "week": 11
   },
   {
@@ -7975,7 +7975,7 @@
     "rec_yd": 4.93
    },
    "team": "DEN",
-   "updatedAt": 1794967250528,
+   "updatedAt": 1794967850664,
    "week": 11
   },
   {
@@ -8014,7 +8014,7 @@
     "rush_yd": 68.58
    },
    "team": "TEN",
-   "updatedAt": 1794967250412,
+   "updatedAt": 1794967850541,
    "week": 11
   },
   {
@@ -8046,7 +8046,7 @@
     "rush_yd": 0.11
    },
    "team": "PIT",
-   "updatedAt": 1794967250431,
+   "updatedAt": 1794967850563,
    "week": 11
   },
   {
@@ -8075,7 +8075,7 @@
     "xpmiss": 0.07
    },
    "team": "TEN",
-   "updatedAt": 1794967250445,
+   "updatedAt": 1794967850577,
    "week": 11
   },
   {
@@ -8107,7 +8107,7 @@
     "rush_yd": 0.9
    },
    "team": "CAR",
-   "updatedAt": 1794967250221,
+   "updatedAt": 1794967850333,
    "week": 11
   },
   {
@@ -8145,7 +8145,7 @@
     "rush_yd": 0.27
    },
    "team": "BAL",
-   "updatedAt": 1794967250150,
+   "updatedAt": 1794967850224,
    "week": 11
   },
   {
@@ -8177,7 +8177,7 @@
     "rush_yd": 0.22
    },
    "team": "PHI",
-   "updatedAt": 1794967250359,
+   "updatedAt": 1794967850469,
    "week": 11
   },
   {
@@ -8209,7 +8209,7 @@
     "rec_yd": 21.9
    },
    "team": "CAR",
-   "updatedAt": 1794967250251,
+   "updatedAt": 1794967850378,
    "week": 11
   },
   {
@@ -8247,7 +8247,7 @@
     "rush_yd": 0.26
    },
    "team": "DAL",
-   "updatedAt": 1794967250332,
+   "updatedAt": 1794967850448,
    "week": 11
   },
   {
@@ -8285,7 +8285,7 @@
     "rush_yd": 0.18
    },
    "team": "NO",
-   "updatedAt": 1794967250247,
+   "updatedAt": 1794967850359,
    "week": 11
   },
   {
@@ -8323,7 +8323,7 @@
     "rush_yd": 85.06
    },
    "team": "KC",
-   "updatedAt": 1794967250424,
+   "updatedAt": 1794967850549,
    "week": 11
   },
   {
@@ -8351,7 +8351,7 @@
     "rec_yd": 7.0
    },
    "team": "ARI",
-   "updatedAt": 1794967250360,
+   "updatedAt": 1794967850474,
    "week": 11
   },
   {
@@ -8390,7 +8390,7 @@
     "rush_yd": 48.01
    },
    "team": "MIN",
-   "updatedAt": 1794967250533,
+   "updatedAt": 1794967850672,
    "week": 11
   },
   {
@@ -8432,7 +8432,7 @@
     "rush_yd": 1.3
    },
    "team": "JAX",
-   "updatedAt": 1794967250527,
+   "updatedAt": 1794967850663,
    "week": 11
   },
   {
@@ -8460,7 +8460,7 @@
     "rec_yd": 2.32
    },
    "team": "NYG",
-   "updatedAt": 1794967250635,
+   "updatedAt": 1794967850767,
    "week": 11
   },
   {
@@ -8498,7 +8498,7 @@
     "rush_yd": 0.71
    },
    "team": "LAC",
-   "updatedAt": 1794967250515,
+   "updatedAt": 1794967850665,
    "week": 11
   },
   {
@@ -8536,7 +8536,7 @@
     "rush_yd": 1.22
    },
    "team": "BAL",
-   "updatedAt": 1794967250148,
+   "updatedAt": 1794967850228,
    "week": 11
   },
   {
@@ -8568,7 +8568,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "BAL",
-   "updatedAt": 1794967250136,
+   "updatedAt": 1794967850203,
    "week": 11
   },
   {
@@ -8600,7 +8600,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "CHI",
-   "updatedAt": 1794967250136,
+   "updatedAt": 1794967850204,
    "week": 11
   },
   {
@@ -8632,7 +8632,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "LAC",
-   "updatedAt": 1794967250501,
+   "updatedAt": 1794967850639,
    "week": 11
   },
   {
@@ -8663,7 +8663,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "NYJ",
-   "updatedAt": 1794967250598,
+   "updatedAt": 1794967850744,
    "week": 11
   },
   {
@@ -8694,7 +8694,7 @@
     "yds_allow_400_449": 1.0
    },
    "team": "TEN",
-   "updatedAt": 1794967250407,
+   "updatedAt": 1794967850535,
    "week": 11
   },
   {
@@ -8735,7 +8735,7 @@
     "rush_yd": 1.01
    },
    "team": "LV",
-   "updatedAt": 1794967250639,
+   "updatedAt": 1794967850771,
    "week": 11
   },
   {
@@ -8774,7 +8774,7 @@
     "rush_yd": 29.75
    },
    "team": "JAX",
-   "updatedAt": 1794967250509,
+   "updatedAt": 1794967850648,
    "week": 11
   },
   {
@@ -8802,7 +8802,7 @@
     "rec_yd": 4.95
    },
    "team": "DAL",
-   "updatedAt": 1794967250341,
+   "updatedAt": 1794967850460,
    "week": 11
   },
   {
@@ -8834,7 +8834,7 @@
     "rec_yd": 0.76
    },
    "team": "TB",
-   "updatedAt": 1794967250440,
+   "updatedAt": 1794967850570,
    "week": 11
   },
   {
@@ -8866,7 +8866,7 @@
     "rec_yd": 23.86
    },
    "team": "ARI",
-   "updatedAt": 1794967250356,
+   "updatedAt": 1794967850467,
    "week": 11
   },
   {
@@ -8904,7 +8904,7 @@
     "rush_yd": 1.08
    },
    "team": "DET",
-   "updatedAt": 1794967250335,
+   "updatedAt": 1794967850444,
    "week": 11
   },
   {
@@ -8943,7 +8943,7 @@
     "rush_yd": 8.8
    },
    "team": "BUF",
-   "updatedAt": 1794967250143,
+   "updatedAt": 1794967850208,
    "week": 11
   },
   {
@@ -8981,7 +8981,7 @@
     "rush_yd": 0.85
    },
    "team": "LV",
-   "updatedAt": 1794967250646,
+   "updatedAt": 1794967850785,
    "week": 11
   },
   {
@@ -9019,7 +9019,7 @@
     "rush_yd": 0.06
    },
    "team": "CHI",
-   "updatedAt": 1794967250151,
+   "updatedAt": 1794967850220,
    "week": 11
   },
   {
@@ -9057,7 +9057,7 @@
     "rush_yd": 0.84
    },
    "team": "NYG",
-   "updatedAt": 1794967250631,
+   "updatedAt": 1794967850773,
    "week": 11
   },
   {
@@ -9095,7 +9095,7 @@
     "rush_yd": 0.2
    },
    "team": "BUF",
-   "updatedAt": 1794967250151,
+   "updatedAt": 1794967850224,
    "week": 11
   },
   {
@@ -9133,7 +9133,7 @@
     "rush_yd": 15.43
    },
    "team": "DET",
-   "updatedAt": 1794967250337,
+   "updatedAt": 1794967850447,
    "week": 11
   },
   {
@@ -9162,7 +9162,7 @@
     "xpmiss": 0.13
    },
    "team": "JAX",
-   "updatedAt": 1794967250559,
+   "updatedAt": 1794967850683,
    "week": 11
   },
   {
@@ -9201,7 +9201,7 @@
     "rush_yd": 74.28
    },
    "team": "JAX",
-   "updatedAt": 1794967250512,
+   "updatedAt": 1794967850646,
    "week": 11
   },
   {
@@ -9233,7 +9233,7 @@
     "rec_yd": 19.09
    },
    "team": "LAC",
-   "updatedAt": 1794967250537,
+   "updatedAt": 1794967850677,
    "week": 11
   },
   {
@@ -9268,7 +9268,7 @@
     "rush_40p": 0.0
    },
    "team": "MIN",
-   "updatedAt": 1794967250543,
+   "updatedAt": 1794967850682,
    "week": 11
   },
   {
@@ -9300,7 +9300,7 @@
     "rec_yd": 25.25
    },
    "team": "TEN",
-   "updatedAt": 1794967250443,
+   "updatedAt": 1794967850572,
    "week": 11
   },
   {
@@ -9338,7 +9338,7 @@
     "rush_yd": 1.08
    },
    "team": "TB",
-   "updatedAt": 1794967250438,
+   "updatedAt": 1794967850567,
    "week": 11
   },
   {
@@ -9370,7 +9370,7 @@
     "rec_yd": 8.84
    },
    "team": "MIN",
-   "updatedAt": 1794967250552,
+   "updatedAt": 1794967850691,
    "week": 11
   },
   {
@@ -9402,7 +9402,7 @@
     "rush_yd": 0.59
    },
    "team": "CAR",
-   "updatedAt": 1794967250213,
+   "updatedAt": 1794967850338,
    "week": 11
   },
   {
@@ -9440,7 +9440,7 @@
     "rush_yd": 0.85
    },
    "team": "NYJ",
-   "updatedAt": 1794967250624,
+   "updatedAt": 1794967850766,
    "week": 11
   },
   {
@@ -9479,7 +9479,7 @@
     "rush_yd": 0.12
    },
    "team": "NYG",
-   "updatedAt": 1794967250633,
+   "updatedAt": 1794967850762,
    "week": 11
   },
   {
@@ -9511,7 +9511,7 @@
     "rec_yd": 9.15
    },
    "team": "PHI",
-   "updatedAt": 1794967250365,
+   "updatedAt": 1794967850474,
    "week": 11
   },
   {
@@ -9549,7 +9549,7 @@
     "rush_yd": 3.64
    },
    "team": "CHI",
-   "updatedAt": 1794967250155,
+   "updatedAt": 1794967850225,
    "week": 11
   },
   {
@@ -9581,7 +9581,7 @@
     "rec_yd": 0.33
    },
    "team": "MIA",
-   "updatedAt": 1794967250276,
+   "updatedAt": 1794967850369,
    "week": 11
   },
   {
@@ -9613,7 +9613,7 @@
     "rec_yd": 4.09
    },
    "team": "MIA",
-   "updatedAt": 1794967250284,
+   "updatedAt": 1794967850376,
    "week": 11
   },
   {
@@ -9641,7 +9641,7 @@
     "rec_yd": 0.97
    },
    "team": "DEN",
-   "updatedAt": 1794967250555,
+   "updatedAt": 1794967850681,
    "week": 11
   },
   {
@@ -9670,7 +9670,7 @@
     "xpmiss": 0.13
    },
    "team": "CHI",
-   "updatedAt": 1794967250181,
+   "updatedAt": 1794967850255,
    "week": 11
   },
   {
@@ -9708,7 +9708,7 @@
     "rush_yd": 15.81
    },
    "team": "NO",
-   "updatedAt": 1794967250239,
+   "updatedAt": 1794967850335,
    "week": 11
   },
   {
@@ -9746,7 +9746,7 @@
     "rush_yd": 33.82
    },
    "team": "BUF",
-   "updatedAt": 1794967250138,
+   "updatedAt": 1794967850206,
    "week": 11
   },
   {
@@ -9785,7 +9785,7 @@
     "rush_yd": 10.33
    },
    "team": "BUF",
-   "updatedAt": 1794967250145,
+   "updatedAt": 1794967850213,
    "week": 11
   },
   {
@@ -9813,7 +9813,7 @@
     "rec_yd": 0.76
    },
    "team": "CHI",
-   "updatedAt": 1794967250179,
+   "updatedAt": 1794967850252,
    "week": 11
   },
   {
@@ -9851,7 +9851,7 @@
     "rush_yd": 1.95
    },
    "team": "MIN",
-   "updatedAt": 1794967250536,
+   "updatedAt": 1794967850674,
    "week": 11
   },
   {
@@ -9883,7 +9883,7 @@
     "rec_yd": 37.38
    },
    "team": "NO",
-   "updatedAt": 1794967250270,
+   "updatedAt": 1794967850371,
    "week": 11
   },
   {
@@ -9922,7 +9922,7 @@
     "rush_yd": 35.7
    },
    "team": "PIT",
-   "updatedAt": 1794967250435,
+   "updatedAt": 1794967850568,
    "week": 11
   },
   {
@@ -9960,7 +9960,7 @@
     "rush_yd": 0.18
    },
    "team": "PHI",
-   "updatedAt": 1794967250348,
+   "updatedAt": 1794967850459,
    "week": 11
   },
   {
@@ -9998,7 +9998,7 @@
     "rush_yd": 1.46
    },
    "team": "DEN",
-   "updatedAt": 1794967250550,
+   "updatedAt": 1794967850672,
    "week": 11
   },
   {
@@ -10030,7 +10030,7 @@
     "rec_yd": 17.86
    },
    "team": "KC",
-   "updatedAt": 1794967250445,
+   "updatedAt": 1794967850578,
    "week": 11
   },
   {
@@ -10070,7 +10070,7 @@
     "rush_yd": 0.55
    },
    "team": "BUF",
-   "updatedAt": 1794967250156,
+   "updatedAt": 1794967850219,
    "week": 11
   },
   {
@@ -10108,7 +10108,7 @@
     "rush_yd": 47.21
    },
    "team": "NYJ",
-   "updatedAt": 1794967250606,
+   "updatedAt": 1794967850751,
    "week": 11
   },
   {
@@ -10147,7 +10147,7 @@
     "rush_yd": 0.99
    },
    "team": "TEN",
-   "updatedAt": 1794967250421,
+   "updatedAt": 1794967850550,
    "week": 11
   },
   {
@@ -10186,7 +10186,7 @@
     "rush_yd": 21.23
    },
    "team": "DAL",
-   "updatedAt": 1794967250323,
+   "updatedAt": 1794967850439,
    "week": 11
   },
   {
@@ -10224,7 +10224,7 @@
     "rush_yd": 15.8
    },
    "team": "CAR",
-   "updatedAt": 1794967250211,
+   "updatedAt": 1794967850325,
    "week": 11
   },
   {
@@ -10263,7 +10263,7 @@
     "rush_yd": 5.46
    },
    "team": "TB",
-   "updatedAt": 1794967250427,
+   "updatedAt": 1794967850547,
    "week": 11
   },
   {
@@ -10302,7 +10302,7 @@
     "rush_yd": 21.66
    },
    "team": "LAC",
-   "updatedAt": 1794967250509,
+   "updatedAt": 1794967850647,
    "week": 11
   },
   {
@@ -10333,7 +10333,7 @@
     "yds_allow_400_449": 1.0
    },
    "team": "ARI",
-   "updatedAt": 1794967250333,
+   "updatedAt": 1794967850439,
    "week": 11
   },
   {
@@ -10367,7 +10367,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "CAR",
-   "updatedAt": 1794967250209,
+   "updatedAt": 1794967850322,
    "week": 11
   },
   {
@@ -10402,7 +10402,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "DET",
-   "updatedAt": 1794967250329,
+   "updatedAt": 1794967850436,
    "week": 11
   },
   {
@@ -10434,7 +10434,7 @@
     "yds_allow_400_449": 1.0
    },
    "team": "NO",
-   "updatedAt": 1794967250228,
+   "updatedAt": 1794967850322,
    "week": 11
   },
   {
@@ -10472,7 +10472,7 @@
     "rush_yd": 0.23
    },
    "team": "DET",
-   "updatedAt": 1794967250353,
+   "updatedAt": 1794967850468,
    "week": 11
   },
   {
@@ -10500,7 +10500,7 @@
     "rec_yd": 4.22
    },
    "team": "MIA",
-   "updatedAt": 1794967250249,
+   "updatedAt": 1794967850364,
    "week": 11
   },
   {
@@ -10532,7 +10532,7 @@
     "rush_yd": 0.15
    },
    "team": "CAR",
-   "updatedAt": 1794967250236,
+   "updatedAt": 1794967850365,
    "week": 11
   },
   {
@@ -10563,7 +10563,7 @@
     "rush_yd": 0.13
    },
    "team": "KC",
-   "updatedAt": 1794967250501,
+   "updatedAt": 1794967850647,
    "week": 11
   },
   {
@@ -10601,7 +10601,7 @@
     "rush_yd": 16.59
    },
    "team": "NYG",
-   "updatedAt": 1794967250618,
+   "updatedAt": 1794967850750,
    "week": 11
   },
   {
@@ -10640,7 +10640,7 @@
     "rush_yd": 1.26
    },
    "team": "NYJ",
-   "updatedAt": 1794967250604,
+   "updatedAt": 1794967850749,
    "week": 11
   },
   {
@@ -10679,7 +10679,7 @@
     "rush_yd": 1.02
    },
    "team": "LV",
-   "updatedAt": 1794967250625,
+   "updatedAt": 1794967850757,
    "week": 11
   },
   {
@@ -10717,7 +10717,7 @@
     "rush_yd": 84.69
    },
    "team": "TB",
-   "updatedAt": 1794967250425,
+   "updatedAt": 1794967850552,
    "week": 11
   },
   {
@@ -10749,7 +10749,7 @@
     "rec_yd": 14.64
    },
    "team": "NYG",
-   "updatedAt": 1794967250637,
+   "updatedAt": 1794967850775,
    "week": 11
   },
   {
@@ -10784,7 +10784,7 @@
     "rec_yd": 0.1
    },
    "team": "SF",
-   "updatedAt": 1794967250617,
+   "updatedAt": 1794967850774,
    "week": 11
   },
   {
@@ -10825,7 +10825,7 @@
     "rush_yd": 0.78
    },
    "team": "KC",
-   "updatedAt": 1794967250426,
+   "updatedAt": 1794967850569,
    "week": 11
   },
   {
@@ -10863,7 +10863,7 @@
     "rush_yd": 0.17
    },
    "team": "CAR",
-   "updatedAt": 1794967250229,
+   "updatedAt": 1794967850343,
    "week": 11
   },
   {
@@ -10901,7 +10901,7 @@
     "rush_yd": 0.52
    },
    "team": "DEN",
-   "updatedAt": 1794967250531,
+   "updatedAt": 1794967850661,
    "week": 11
   },
   {
@@ -10940,7 +10940,7 @@
     "rush_yd": 0.21
    },
    "team": "NO",
-   "updatedAt": 1794967250266,
+   "updatedAt": 1794967850365,
    "week": 11
   },
   {
@@ -10978,7 +10978,7 @@
     "rush_yd": 0.58
    },
    "team": "DEN",
-   "updatedAt": 1794967250546,
+   "updatedAt": 1794967850674,
    "week": 11
   },
   {
@@ -11016,7 +11016,7 @@
     "rush_yd": 47.92
    },
    "team": "LAC",
-   "updatedAt": 1794967250510,
+   "updatedAt": 1794967850649,
    "week": 11
   },
   {
@@ -11051,7 +11051,7 @@
     "rush_40p": 0.0
    },
    "team": "TEN",
-   "updatedAt": 1794967250431,
+   "updatedAt": 1794967850557,
    "week": 11
   },
   {
@@ -11090,7 +11090,7 @@
     "rush_yd": 0.21
    },
    "team": "DET",
-   "updatedAt": 1794967250342,
+   "updatedAt": 1794967850452,
    "week": 11
   },
   {
@@ -11122,7 +11122,7 @@
     "rec_yd": 3.87
    },
    "team": "LV",
-   "updatedAt": 1794967250636,
+   "updatedAt": 1794967850769,
    "week": 11
   },
   {
@@ -11151,7 +11151,7 @@
     "rec_yd": 10.28
    },
    "team": "SF",
-   "updatedAt": 1794967250630,
+   "updatedAt": 1794967850789,
    "week": 11
   },
   {
@@ -11192,7 +11192,7 @@
     "rush_yd": 0.21
    },
    "team": "BAL",
-   "updatedAt": 1794967250163,
+   "updatedAt": 1794967850253,
    "week": 11
   },
   {
@@ -11231,7 +11231,7 @@
     "rush_yd": 0.7
    },
    "team": "PIT",
-   "updatedAt": 1794967250439,
+   "updatedAt": 1794967850586,
    "week": 11
   },
   {
@@ -11272,7 +11272,7 @@
     "rush_yd": 0.41
    },
    "team": "NO",
-   "updatedAt": 1794967250264,
+   "updatedAt": 1794967850362,
    "week": 11
   },
   {
@@ -11311,7 +11311,7 @@
     "rush_yd": 0.63
    },
    "team": "TEN",
-   "updatedAt": 1794967250417,
+   "updatedAt": 1794967850543,
    "week": 11
   },
   {
@@ -11349,7 +11349,7 @@
     "rush_yd": 0.21
    },
    "team": "MIA",
-   "updatedAt": 1794967250252,
+   "updatedAt": 1794967850337,
    "week": 11
   },
   {
@@ -11381,7 +11381,7 @@
     "rec_yd": 8.39
    },
    "team": "NO",
-   "updatedAt": 1794967250268,
+   "updatedAt": 1794967850368,
    "week": 11
   },
   {
@@ -11415,7 +11415,7 @@
     "rush_40p": 0.0
    },
    "team": "LV",
-   "updatedAt": 1794967250630,
+   "updatedAt": 1794967850776,
    "week": 11
   },
   {
@@ -11454,7 +11454,7 @@
     "rush_yd": 34.3
    },
    "team": "KC",
-   "updatedAt": 1794967250422,
+   "updatedAt": 1794967850551,
    "week": 11
   },
   {
@@ -11486,7 +11486,7 @@
     "rec_yd": 7.67
    },
    "team": "MIA",
-   "updatedAt": 1794967250256,
+   "updatedAt": 1794967850339,
    "week": 11
   },
   {
@@ -11524,7 +11524,7 @@
     "rush_yd": 0.09
    },
    "team": "PHI",
-   "updatedAt": 1794967250370,
+   "updatedAt": 1794967850486,
    "week": 11
   },
   {
@@ -11563,7 +11563,7 @@
     "rush_yd": 0.65
    },
    "team": "JAX",
-   "updatedAt": 1794967250520,
+   "updatedAt": 1794967850658,
    "week": 11
   },
   {
@@ -11601,7 +11601,7 @@
     "rush_yd": 0.17
    },
    "team": "BUF",
-   "updatedAt": 1794967250155,
+   "updatedAt": 1794967850246,
    "week": 11
   },
   {
@@ -11637,7 +11637,7 @@
     "rush_yd": 0.06
    },
    "team": "KC",
-   "updatedAt": 1794967250437,
+   "updatedAt": 1794967850555,
    "week": 11
   },
   {
@@ -11676,7 +11676,7 @@
     "rush_yd": 4.34
    },
    "team": "KC",
-   "updatedAt": 1794967250420,
+   "updatedAt": 1794967850547,
    "week": 11
   },
   {
@@ -11714,7 +11714,7 @@
     "rush_yd": 1.09
    },
    "team": "NYG",
-   "updatedAt": 1794967250620,
+   "updatedAt": 1794967850753,
    "week": 11
   },
   {
@@ -11752,7 +11752,7 @@
     "rush_yd": 9.15
    },
    "team": "NYJ",
-   "updatedAt": 1794967250601,
+   "updatedAt": 1794967850746,
    "week": 11
   },
   {
@@ -11783,7 +11783,7 @@
     "rush_yd": 0.21
    },
    "team": "MIA",
-   "updatedAt": 1794967250336,
+   "updatedAt": 1794967850433,
    "week": 11
   },
   {
@@ -11815,7 +11815,7 @@
     "rec_yd": 36.91
    },
    "team": "CAR",
-   "updatedAt": 1794967250254,
+   "updatedAt": 1794967850375,
    "week": 11
   },
   {
@@ -11853,7 +11853,7 @@
     "rush_yd": 4.17
    },
    "team": "DET",
-   "updatedAt": 1794967250330,
+   "updatedAt": 1794967850439,
    "week": 11
   },
   {
@@ -11885,7 +11885,7 @@
     "rec_yd": 9.34
    },
    "team": "SF",
-   "updatedAt": 1794967250627,
+   "updatedAt": 1794967850785,
    "week": 11
   },
   {
@@ -11914,7 +11914,7 @@
     "xpmiss": 0.12
    },
    "team": "PHI",
-   "updatedAt": 1794967250373,
+   "updatedAt": 1794967850488,
    "week": 11
   },
   {
@@ -11943,7 +11943,7 @@
     "xpmiss": 0.12
    },
    "team": "KC",
-   "updatedAt": 1794967250449,
+   "updatedAt": 1794967850581,
    "week": 11
   },
   {
@@ -11971,7 +11971,7 @@
     "rec_yd": 3.27
    },
    "team": "PHI",
-   "updatedAt": 1794967250362,
+   "updatedAt": 1794967850482,
    "week": 11
   },
   {
@@ -12009,7 +12009,7 @@
     "rush_yd": 64.29
    },
    "team": "PHI",
-   "updatedAt": 1794967250344,
+   "updatedAt": 1794967850446,
    "week": 11
   },
   {
@@ -12041,7 +12041,7 @@
     "rec_yd": 40.34
    },
    "team": "PHI",
-   "updatedAt": 1794967250367,
+   "updatedAt": 1794967850476,
    "week": 11
   },
   {
@@ -12073,7 +12073,7 @@
     "rec_yd": 38.49
    },
    "team": "DEN",
-   "updatedAt": 1794967250548,
+   "updatedAt": 1794967850669,
    "week": 11
   },
   {
@@ -12102,7 +12102,7 @@
     "xpmiss": 0.06
    },
    "team": "MIA",
-   "updatedAt": 1794967250288,
+   "updatedAt": 1794967850379,
    "week": 11
   },
   {
@@ -12143,7 +12143,7 @@
     "rush_yd": 0.59
    },
    "team": "BUF",
-   "updatedAt": 1794967250153,
+   "updatedAt": 1794967850227,
    "week": 11
   },
   {
@@ -12181,7 +12181,7 @@
     "rush_yd": 28.52
    },
    "team": "BAL",
-   "updatedAt": 1794967250142,
+   "updatedAt": 1794967850215,
    "week": 11
   },
   {
@@ -12210,7 +12210,7 @@
     "xpmiss": 0.12
    },
    "team": "TB",
-   "updatedAt": 1794967250449,
+   "updatedAt": 1794967850580,
    "week": 11
   },
   {
@@ -12248,7 +12248,7 @@
     "rush_yd": 0.18
    },
    "team": "MIN",
-   "updatedAt": 1794967250538,
+   "updatedAt": 1794967850676,
    "week": 11
   },
   {
@@ -12286,7 +12286,7 @@
     "rush_yd": 23.44
    },
    "team": "LAC",
-   "updatedAt": 1794967250504,
+   "updatedAt": 1794967850641,
    "week": 11
   },
   {
@@ -12324,7 +12324,7 @@
     "rush_yd": 25.72
    },
    "team": "JAX",
-   "updatedAt": 1794967250506,
+   "updatedAt": 1794967850643,
    "week": 11
   },
   {
@@ -12362,7 +12362,7 @@
     "rush_yd": 0.16
    },
    "team": "CAR",
-   "updatedAt": 1794967250259,
+   "updatedAt": 1794967850373,
    "week": 11
   },
   {
@@ -12390,7 +12390,7 @@
     "rec_yd": 0.84
    },
    "team": "ARI",
-   "updatedAt": 1794967250352,
+   "updatedAt": 1794967850464,
    "week": 11
   },
   {
@@ -12428,7 +12428,7 @@
     "rush_yd": 37.46
    },
    "team": "NO",
-   "updatedAt": 1794967250238,
+   "updatedAt": 1794967850332,
    "week": 11
   },
   {
@@ -12466,7 +12466,7 @@
     "rush_yd": 1.38
    },
    "team": "DET",
-   "updatedAt": 1794967250339,
+   "updatedAt": 1794967850450,
    "week": 11
   },
   {
@@ -12505,7 +12505,7 @@
     "rush_yd": 0.6
    },
    "team": "NYJ",
-   "updatedAt": 1794967250611,
+   "updatedAt": 1794967850756,
    "week": 11
   },
   {
@@ -12537,7 +12537,7 @@
     "rec_yd": 7.08
    },
    "team": "SF",
-   "updatedAt": 1794967250636,
+   "updatedAt": 1794967850796,
    "week": 11
   },
   {
@@ -12565,7 +12565,7 @@
     "rec_yd": 6.21
    },
    "team": "PIT",
-   "updatedAt": 1794967250445,
+   "updatedAt": 1794967850576,
    "week": 11
   },
   {
@@ -12594,7 +12594,7 @@
     "xpmiss": 0.07
    },
    "team": "BAL",
-   "updatedAt": 1794967250171,
+   "updatedAt": 1794967850264,
    "week": 11
   },
   {
@@ -12628,7 +12628,7 @@
     "rush_40p": 0.0
    },
    "team": "LAC",
-   "updatedAt": 1794967250535,
+   "updatedAt": 1794967850674,
    "week": 11
   },
   {
@@ -12666,7 +12666,7 @@
     "rush_yd": 30.21
    },
    "team": "ARI",
-   "updatedAt": 1794967250337,
+   "updatedAt": 1794967850448,
    "week": 11
   },
   {
@@ -12704,7 +12704,7 @@
     "rush_yd": 2.92
    },
    "team": "DET",
-   "updatedAt": 1794967250345,
+   "updatedAt": 1794967850456,
    "week": 11
   },
   {
@@ -12732,7 +12732,7 @@
     "rec_yd": 1.58
    },
    "team": "DAL",
-   "updatedAt": 1794967250344,
+   "updatedAt": 1794967850462,
    "week": 11
   },
   {
@@ -12770,7 +12770,7 @@
     "rush_yd": 0.88
    },
    "team": "LV",
-   "updatedAt": 1794967250641,
+   "updatedAt": 1794967850779,
    "week": 11
   },
   {
@@ -12807,7 +12807,7 @@
     "rush_yd": 1.28
    },
    "team": "LV",
-   "updatedAt": 1794967250693,
+   "updatedAt": 1794967850853,
    "week": 11
   },
   {
@@ -12835,7 +12835,7 @@
     "rec_yd": 2.52
    },
    "team": "NYJ",
-   "updatedAt": 1794967250633,
+   "updatedAt": 1794967850781,
    "week": 11
   },
   {
@@ -12864,7 +12864,7 @@
     "xpmiss": 0.06
    },
    "team": "LAC",
-   "updatedAt": 1794967250539,
+   "updatedAt": 1794967850679,
    "week": 11
   },
   {
@@ -12899,7 +12899,7 @@
     "rec_yd": 0.59
    },
    "team": "PHI",
-   "updatedAt": 1794967250354,
+   "updatedAt": 1794967850457,
    "week": 11
   },
   {
@@ -12932,7 +12932,7 @@
     "rec_yd": 2.32
    },
    "team": "LV",
-   "updatedAt": 1794967250635,
+   "updatedAt": 1794967850766,
    "week": 11
   },
   {
@@ -12964,7 +12964,7 @@
     "rec_yd": 29.69
    },
    "team": "PIT",
-   "updatedAt": 1794967250456,
+   "updatedAt": 1794967850597,
    "week": 11
   },
   {
@@ -13000,7 +13000,7 @@
     "rush_40p": 0.0
    },
    "team": "KC",
-   "updatedAt": 1794967250435,
+   "updatedAt": 1794967850560,
    "week": 11
   },
   {
@@ -13039,7 +13039,7 @@
     "rush_yd": 20.81
    },
    "team": "TEN",
-   "updatedAt": 1794967250419,
+   "updatedAt": 1794967850546,
    "week": 11
   },
   {
@@ -13071,7 +13071,7 @@
     "rush_yd": 0.45
    },
    "team": "PIT",
-   "updatedAt": 1794967250433,
+   "updatedAt": 1794967850566,
    "week": 11
   },
   {
@@ -13103,7 +13103,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "DEN",
-   "updatedAt": 1794967250517,
+   "updatedAt": 1794967850649,
    "week": 11
   },
   {
@@ -13135,7 +13135,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "KC",
-   "updatedAt": 1794967250414,
+   "updatedAt": 1794967850540,
    "week": 11
   },
   {
@@ -13166,7 +13166,7 @@
     "yds_allow_400_449": 1.0
    },
    "team": "MIA",
-   "updatedAt": 1794967250237,
+   "updatedAt": 1794967850324,
    "week": 11
   },
   {
@@ -13201,7 +13201,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "MIN",
-   "updatedAt": 1794967250524,
+   "updatedAt": 1794967850664,
    "week": 11
   },
   {
@@ -13233,7 +13233,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "TB",
-   "updatedAt": 1794967250418,
+   "updatedAt": 1794967850542,
    "week": 11
   },
   {
@@ -13265,7 +13265,7 @@
     "rec_yd": 4.93
    },
    "team": "WAS",
-   "updatedAt": 1794967250803,
+   "updatedAt": 1794967850993,
    "week": 11
   },
   {
@@ -13293,7 +13293,7 @@
     "rec_yd": 3.35
    },
    "team": "WAS",
-   "updatedAt": 1794967250799,
+   "updatedAt": 1794967850996,
    "week": 11
   },
   {
@@ -13325,7 +13325,7 @@
     "rush_yd": 0.25
    },
    "team": "CIN",
-   "updatedAt": 1794967250696,
+   "updatedAt": 1794967850857,
    "week": 11
   },
   {
@@ -13357,7 +13357,7 @@
     "rec_yd": 16.41
    },
    "team": "CIN",
-   "updatedAt": 1794967250716,
+   "updatedAt": 1794967850881,
    "week": 11
   },
   {
@@ -13395,7 +13395,7 @@
     "rush_yd": 0.29
    },
    "team": "CIN",
-   "updatedAt": 1794967250703,
+   "updatedAt": 1794967850865,
    "week": 11
   },
   {
@@ -13424,7 +13424,7 @@
     "xpmiss": 0.14
    },
    "team": "CIN",
-   "updatedAt": 1794967250719,
+   "updatedAt": 1794967850884,
    "week": 11
   },
   {
@@ -13463,7 +13463,7 @@
     "rush_yd": 27.73
    },
    "team": "WAS",
-   "updatedAt": 1794967250781,
+   "updatedAt": 1794967850966,
    "week": 11
   },
   {
@@ -13502,7 +13502,7 @@
     "rush_yd": 16.21
    },
    "team": "WAS",
-   "updatedAt": 1794967250774,
+   "updatedAt": 1794967850968,
    "week": 11
   },
   {
@@ -13540,7 +13540,7 @@
     "rush_yd": 1.16
    },
    "team": "CIN",
-   "updatedAt": 1794967250701,
+   "updatedAt": 1794967850862,
    "week": 11
   },
   {
@@ -13572,7 +13572,7 @@
     "rec_yd": 8.64
    },
    "team": "WAS",
-   "updatedAt": 1794967250797,
+   "updatedAt": 1794967850999,
    "week": 11
   },
   {
@@ -13610,7 +13610,7 @@
     "rush_yd": 43.79
    },
    "team": "WAS",
-   "updatedAt": 1794967250772,
+   "updatedAt": 1794967850963,
    "week": 11
   },
   {
@@ -13649,7 +13649,7 @@
     "rush_yd": 38.13
    },
    "team": "WAS",
-   "updatedAt": 1794967250778,
+   "updatedAt": 1794967850974,
    "week": 11
   },
   {
@@ -13688,7 +13688,7 @@
     "rush_yd": 2.96
    },
    "team": "CIN",
-   "updatedAt": 1794967250689,
+   "updatedAt": 1794967850849,
    "week": 11
   },
   {
@@ -13720,7 +13720,7 @@
     "rush_yd": 3.37
    },
    "team": "WAS",
-   "updatedAt": 1794967250776,
+   "updatedAt": 1794967850971,
    "week": 11
   },
   {
@@ -13747,7 +13747,7 @@
     "xpmiss": 0.13
    },
    "team": "WAS",
-   "updatedAt": 1794967250805,
+   "updatedAt": 1794967851001,
    "week": 11
   },
   {
@@ -13779,7 +13779,7 @@
     "rec_yd": 0.53
    },
    "team": "CIN",
-   "updatedAt": 1794967250714,
+   "updatedAt": 1794967850878,
    "week": 11
   },
   {
@@ -13813,7 +13813,7 @@
     "rush_40p": 0.0
    },
    "team": "CIN",
-   "updatedAt": 1794967250705,
+   "updatedAt": 1794967850867,
    "week": 11
   },
   {
@@ -13845,7 +13845,7 @@
     "rec_yd": 35.25
    },
    "team": "CIN",
-   "updatedAt": 1794967250712,
+   "updatedAt": 1794967850876,
    "week": 11
   },
   {
@@ -13883,7 +13883,7 @@
     "rush_yd": 14.26
    },
    "team": "CIN",
-   "updatedAt": 1794967250687,
+   "updatedAt": 1794967850847,
    "week": 11
   },
   {
@@ -13916,7 +13916,7 @@
     "rec_yd": 12.44
    },
    "team": "WAS",
-   "updatedAt": 1794967250785,
+   "updatedAt": 1794967850979,
    "week": 11
   },
   {
@@ -13955,7 +13955,7 @@
     "rush_yd": 1.08
    },
    "team": "WAS",
-   "updatedAt": 1794967250783,
+   "updatedAt": 1794967850982,
    "week": 11
   },
   {
@@ -13993,7 +13993,7 @@
     "rush_yd": 61.74
    },
    "team": "CIN",
-   "updatedAt": 1794967250692,
+   "updatedAt": 1794967850852,
    "week": 11
   },
   {
@@ -14024,7 +14024,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "CIN",
-   "updatedAt": 1794967250686,
+   "updatedAt": 1794967850843,
    "week": 11
   },
   {
@@ -14055,7 +14055,7 @@
     "yds_allow_400_449": 1.0
    },
    "team": "WAS",
-   "updatedAt": 1794967250769,
+   "updatedAt": 1794967850960,
    "week": 11
   },
   {
@@ -14087,7 +14087,7 @@
     "rec_yd": 1.28
    },
    "team": "CIN",
-   "updatedAt": 1794967250707,
+   "updatedAt": 1794967850871,
    "week": 11
   },
   {
@@ -14119,7 +14119,7 @@
     "rec_yd": 2.82
    },
    "team": "CIN",
-   "updatedAt": 1794967250709,
+   "updatedAt": 1794967850873,
    "week": 11
   },
   {
@@ -14157,7 +14157,7 @@
     "rush_yd": 0.39
    },
    "team": "WAS",
-   "updatedAt": 1794967250788,
+   "updatedAt": 1794967850977,
    "week": 11
   },
   {
@@ -14196,7 +14196,7 @@
     "rush_yd": 24.33
    },
    "team": "CIN",
-   "updatedAt": 1794967250694,
+   "updatedAt": 1794967850854,
    "week": 11
   },
   {
@@ -14234,7 +14234,7 @@
     "rush_yd": 0.95
    },
    "team": "CIN",
-   "updatedAt": 1794967250699,
+   "updatedAt": 1794967850859,
    "week": 11
   },
   {
@@ -14269,7 +14269,7 @@
     "rec_yd": 2.2
    },
    "team": "WAS",
-   "updatedAt": 1794967250791,
+   "updatedAt": 1794967850988,
    "week": 11
   },
   {
@@ -14307,7 +14307,7 @@
     "rush_yd": 0.66
    },
    "team": "WAS",
-   "updatedAt": 1794967250796,
+   "updatedAt": 1794967850985,
    "week": 11
   },
   {
@@ -14339,10 +14339,10 @@
     "rec_yd": 43.55
    },
    "team": "WAS",
-   "updatedAt": 1794967250801,
+   "updatedAt": 1794967850991,
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-18T02:14:35Z",
+ "fetchedAt": "2026-11-18T02:26:24Z",
  "source": "sleeper_projections"
 }
