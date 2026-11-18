@@ -17,6 +17,33 @@ class ContractError(Exception):
     """A source changed shape. Raised by adapter validators so tests fail loudly."""
 
 
+# ------------------------------------------------------------------ source freshness
+# One vocabulary for every reader of a source status (ingest log, run summary, build, site).
+# See docs/STATES.md.
+#   fresh    pulled this run and current
+#   stale    usable but old: the pull failed and the last good copy is in use,
+#            or (ESPN rosters) the sync is older than STALE_AFTER_DAYS
+#   missing  nothing usable: the pull failed and there is no cached copy
+FRESH, STALE, MISSING = "fresh", "stale", "missing"
+
+
+def source_status(ok: bool, last_updated: str | None, error: str | None = None, stale: bool | None = None) -> dict:
+    """A source status entry. The ok/stale booleans stay for older readers. state is the one to read."""
+    stale = (not ok) if stale is None else stale
+    entry = {"ok": ok, "stale": stale, "lastUpdated": last_updated, "error": error}
+    entry["state"] = source_state(entry)
+    return entry
+
+
+def source_state(s: dict) -> str:
+    """fresh, stale or missing. Derived from the booleans for entries written before state existed."""
+    if not s.get("lastUpdated"):
+        return MISSING
+    if not s.get("ok") or s.get("stale"):
+        return STALE
+    return FRESH
+
+
 def require(cond: bool, msg: str) -> None:
     if not cond:
         raise ContractError(msg)

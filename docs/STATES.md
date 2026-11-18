@@ -1,0 +1,113 @@
+# State machines
+
+Every place the board moves between named states, what the states are, what moves them, and where the code lives. Read this before changing source status, the ESPN roster file, routing or the Trade view. Each machine has one place that decides its state. Everything else reads that decision.
+
+Tests: `tests/test_states.py` covers machines 1 to 5 (Python for the pipeline, node for the pure functions in `site/app.js`).
+
+## 1. Source freshness
+
+Every data source ends each run in one of three states. The decision lives in `pipeline/common.py` (`source_status`, `source_state`). Status entries also keep the older `ok` and `stale` booleans so older readers still work, but `state` is the field to read.
+
+| State | Meaning | Reached when |
+|---|---|---|
+| `fresh` | Pulled this run and current | The fetch succeeded (`_run_source` in `pipeline/ingest.py`) |
+| `stale` | Usable but old | The fetch failed and the last good cache is in use, or the ESPN roster sync is older than 4 days, or the ESPN roster file was unusable and the last good copy is in use |
+| `missing` | Nothing usable | The fetch failed and no cache exists |
+
+Transitions happen once per run, in ingest. Any state can go to any other on the next run.
+
+Readers, all of which go through `state`:
+- `python -m pipeline.ingest` log lines (`ok`, `STALE`, `MISSING`)
+- `scripts/step_summary.py` (Actions run summary)
+- `pipeline/build.py` fills `state` on entries from older `status.json` files
+- `site/app.js` `sourceState()`, the sources table and `freshnessMessages()`
+
+The essential sources (`sleeper_leagues`, `sleeper_players`, `sleeper_projections`) must not all be `missing`, or ingest exits non-zero.
+
+## 2. ESPN roster file
+
+`data/espn/rosters.json` is written by the Claude `espn-roster-sync` skill. The decision lives in `pipeline/ingest.py` (`load_rosters`, `rosters_status`). Build calls the same two functions, so the board and the status always describe the same file.
+
+| State | Meaning | Board behavior |
+|---|---|---|
+| good, current | File validates, synced within 4 days, same week | `fresh` |
+| good, old | Synced more than 4 days ago | `stale`, warning on the ESPN league |
+| good, wrong week | File is for another week | `fresh`, separate week warning (`weekMismatch`) |
+| unusable, cached | File fails validation (for example the sync wrote `"ok": false`), and an earlier run cached a good copy | `stale`, `meta.espnRosters.fromCache` is true, warning names the sync time in use. All three leagues still publish |
+| unusable, no cache | Nothing usable anywhere this season | Build refuses to publish. The last good site stays live |
+
+Every run that reads a good file caches it to `data/raw/{season}/{week}/espn_rosters.json`. The fallback takes the newest valid cached copy at or before the current week.
+
+## 3. Board freshness in the browser
+
+The build stamps `generatedAt` and `espnRosters.syncedAt`, but a page can be open for days after its build, and scheduled runs can stop (dropped crons, the 60 day auto-disable). So the site checks the clock again on every render (`site/app.js`: `espnSync`, `rowState`, `freshnessMessages`):
+
+- Board older than 72 hours (`BOARD_STALE_HOURS`): warns that the refresh may have stopped. The longest planned gap is Sun 1:07pm to Tue 9:07pm, 56 hours.
+- ESPN sync older than `meta.espnRosters.staleAfterDays` (4): the ESPN row and warning go stale even when the build said fresh.
+
+## 4. Season phase
+
+Each league file carries `seasonPhase`, decided by `season_phase()` in `pipeline/build.py` from the current week and the league's playoff weeks.
+
+| State | When | What changes on the page |
+|---|---|---|
+| `regular` | Before the first playoff week | Everything shows. An empty future list here means the schedule source is missing, so the Waivers summary says `n/a`, not `Over` |
+| `playoffs` | During the playoff weeks | Stretch run is empty. In the last playoff week the Waivers summary says `Final week` |
+| `over` | After the last playoff week | Waivers summary says `Over`. Trades and standings explain that no weeks are left |
+
+`noFutureWeeks()` in `site/app.js` maps phase to copy. Builds without `seasonPhase` fall back to the old `Over` text.
+
+## 5. Site route
+
+What is on screen is `route = { league, view }` inside `main()` in `site/app.js`. Only `show()` changes it.
+
+- Views come from one registry, `VIEWS`. Each entry says whether a league's build carries it: Lineup always, Waivers when `waivers` is set, Trade when `trade` is set, Standings whenever the key exists (null shows an explanation, used by the ESPN league until the sync file carries standings).
+- `resolveView()` sends any view a league does not carry to Lineup. `viewSwitch()` shows exactly the registry's views, and only when there is more than one.
+- The URL hash mirrors the route: `#league` for Lineup, `#league/view` otherwise (`hashFor`, `routeFromHash`). An unknown league opens the first one. An unknown view opens Lineup. `show()` writes the hash with `replaceState`, so the back button leaves the page instead of stepping through views.
+- Switching league keeps the current view when the new league has it.
+
+## 6. Trade file loading
+
+Trade files are large, so each league's loads the first time its Trade view opens (`loadTrade` in `site/app.js`).
+
+```
+(none) --open Trade--> loading --> ready
+                              \--> error --Try again--> loading
+```
+
+Only the Try again button leaves `error`, so a failing file never refetches in a loop. A load that finishes while you are on another view does not redraw anything. The data is used next time you open Trade.
+
+## 7. Trade builder
+
+Per league, kept while you switch views (`tradeState` in `main()`): partner team, players to give, players to get, and a one shot `scroll` flag.
+
+- First open: partner is the best idea's team, or the first other team. Picks empty.
+- Pick a partner: picks reset.
+- Tap an idea: partner and picks set from the idea, `scroll` set, so the next draw scrolls to the builder and clears the flag.
+- Tick a box: only the result card redraws, so focus and scroll stay put.
+
+The result card has five outcomes from `renderTrade`: nothing picked, both better, you better, they better, neither better.
+
+## 8. Player availability
+
+Decided per player in `player_record()` in `pipeline/build.py`, read by the optimizer and the site.
+
+- `flags`: `BYE` plus one injury status from `normalize_status()` (`OUT`, `IR`, `DOUBTFUL`, `QUESTIONABLE`, `SUSPENDED`, `INACTIVE`).
+- `eligible`: false on bye, any out status, in an IR or taxi slot, or locked on the bench.
+- `locked`: the player's game has kicked off. A locked starter keeps the slot (`fixed` in the optimizer). A locked bench player cannot move in.
+
+Starters with an out flag go to `lineup.alerts`, starters who are questionable or doubtful go to `lineup.watch`.
+
+## 9. Lineup changes
+
+Per slot, `changed` is true when the recommended player differs from the current one. Each move from `lineup.moves()` is one of three kinds, told apart by which keys are set: `in` and `out` (swap), `out` only (no eligible replacement), `in` only (fill an empty slot).
+
+## 10. Publish gate
+
+`refresh.yml` runs tests, ingest, build, summary, commit, assemble, deploy. The gates that stop a bad board from going live:
+
+- Tests fail: nothing runs.
+- Ingest exits non-zero when every essential source is `missing`.
+- Build raises `BuildError` on an empty or worse-than-current lineup, a missing Sleeper league, or no usable ESPN roster file (machine 2). Nothing is committed or deployed, and the last good site stays live.
+- `scripts/make_site.py` refuses an empty `data/build`.
+- Deploy runs only on the default branch.

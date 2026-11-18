@@ -17,8 +17,8 @@ from zoneinfo import ZoneInfo
 
 from pipeline import lineup, odds, players as pm, scoring, trades, waivers
 from pipeline.adapters import espn_rosters
-from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, write_json
-from pipeline.ingest import load_config
+from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, source_state, write_json
+from pipeline.ingest import load_config, load_rosters, rosters_status
 
 EASTERN = ZoneInfo("America/New_York")
 OUT_STATUSES = {"OUT", "IR", "SUSPENDED", "INACTIVE"}
@@ -146,6 +146,13 @@ def long_term_rate(p: dict) -> tuple[float, str | None]:
 DEFAULT_PLAYOFF_WEEKS = [15, 16, 17]
 
 
+def season_phase(week: int, playoff_weeks: list[int]) -> str:
+    """regular before the fantasy playoffs, playoffs during them, over after the last playoff week."""
+    if week < playoff_weeks[0]:
+        return "regular"
+    return "playoffs" if week <= playoff_weeks[-1] else "over"
+
+
 def _league_games(lc, norm, rosters, week, last_week):
     """(records, division, n_divisions, history, schedule, playoff teams) from Sleeper, or from the
     ESPN sync file when it carries standings and schedule. None when the platform gives neither."""
@@ -225,12 +232,18 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
     if now.tzinfo is None:
         now = now.replace(tzinfo=timezone.utc)
     generated = now_iso()
-    sources = raw["status"]["sources"]
+    # every entry carries state (fresh, stale or missing), also when status.json predates it
+    sources = {k: {**v, "state": source_state(v)} for k, v in raw["status"]["sources"].items()}
     sleeper_players = raw["players"]
     games = game_context(raw["lines"])
     matchups = week_matchups(raw["schedule"])
 
-    rosters = espn_rosters.load(rosters_path) if rosters_path else espn_rosters.load()
+    # The committed roster file, or the last good copy ingest cached when the file is unusable.
+    # The build decides which one is used, so it also writes the espn_rosters status the site shows.
+    rosters, roster_error = load_rosters(raw_root, season, week, rosters_path)
+    if rosters is None:
+        raise BuildError(f"no usable ESPN roster file and no cached copy ({roster_error})")
+    sources["espn_rosters"] = rosters_status(rosters, roster_error, week, now)
 
     # ---- identity: ESPN id <-> Sleeper id
     espn_rows = {p["espnId"]: p for p in raw["espn"]}
@@ -453,6 +466,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         pw = waivers.playoff_weeks(norm.get("playoffWeekStart"), norm.get("playoffTeams"), norm.get("playoffRoundType")) \
             or lc.get("playoffWeeks") or DEFAULT_PLAYOFF_WEEKS
         lt_weeks = [w for w in pw if w > week]
+        out["seasonPhase"] = season_phase(week, pw)
         stretch_weeks = [w for w in range(week + 1, pw[0])]   # regular season weeks left after this one
         out["waivers"]["stretch"] = None
         if matchups:
@@ -523,12 +537,15 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         write_json(out_dir / f"{lc['key']}.json", out)
 
     # ---- meta
-    sync_age = espn_rosters.age_days(rosters)
+    sync_age = espn_rosters.age_days(rosters, now)
     meta = {
         "generatedAt": generated, "season": season, "week": week,
         "sources": sources,
-        "espnRosters": {"syncedAt": rosters["syncedAt"], "ageDays": round(sync_age, 2), "stale": espn_rosters.is_stale(rosters),
-                        "week": rosters["week"], "weekMismatch": rosters["week"] != week},
+        # stale here is the age rule only. The site checks it again against its own clock.
+        # fromCache: the committed file was unusable and the last good sync is in use.
+        "espnRosters": {"syncedAt": rosters["syncedAt"], "ageDays": round(sync_age, 2), "stale": espn_rosters.is_stale(rosters, now),
+                        "staleAfterDays": espn_rosters.STALE_AFTER_DAYS, "fromCache": roster_error is not None,
+                        "state": sources["espn_rosters"]["state"], "week": rosters["week"], "weekMismatch": rosters["week"] != week},
         "model": "Equal average of ESPN and Rotowire projections, each re-scored with the league's scoring. Floor and ceiling are one weekly SD below and above.",
         "idmap": {"matched": len(idmap), "unmatchedEspnPlayers": len(unmatched)},
         "gapFills": n_filled,

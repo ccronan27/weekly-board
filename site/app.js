@@ -170,9 +170,37 @@ function slotGroup(s) {
   return wrap;
 }
 
-function stale(meta, s) { return !s.ok || s.stale; }
+// ---------------------------------------------------------------- source freshness (docs/STATES.md)
+// Each source is fresh, stale or missing. The pipeline writes state. Older builds only carry the booleans.
+function sourceState(s) {
+  if (s.state) return s.state;
+  return !s.lastUpdated ? "missing" : (!s.ok || s.stale) ? "stale" : "fresh";
+}
+// Rules that depend on the clock are checked again here, because a page can outlive its build by days.
+const BOARD_STALE_HOURS = 72;   // the longest planned gap between refreshes is Sun 1:07pm to Tue 9:07pm, 56 hours
+function hoursSince(iso, now) {
+  const t = iso ? Date.parse(iso) : NaN;
+  return isNaN(t) ? Infinity : (now - t) / 3600000;
+}
+function espnSync(meta, now) {
+  const r = meta.espnRosters;
+  if (!r) return null;
+  const limit = isNum(r.staleAfterDays) ? r.staleAfterDays : 4;
+  return {
+    syncedAt: r.syncedAt, week: r.week, limit: limit, fromCache: r.fromCache === true, weekMismatch: r.weekMismatch === true,
+    old: r.stale === true || hoursSince(r.syncedAt, now) > limit * 24,
+  };
+}
+// State of one row in the sources table. ESPN rosters also go stale with age.
+function rowState(k, s, meta, now) {
+  const st = sourceState(s);
+  const sync = k === "espn_rosters" ? espnSync(meta, now) : null;
+  return st === "fresh" && sync && (sync.old || sync.fromCache) ? "stale" : st;
+}
+const STATE_TEXT = { stale: "Stale", missing: "Missing" };
 
 function sourcesTable(league, meta) {
+  const now = Date.now();
   const t = el("table", "sources");
   Object.keys(league.sources).forEach(function (k) {
     const s = league.sources[k];
@@ -182,23 +210,37 @@ function sourcesTable(league, meta) {
     let txt = "Updated " + stamp(s.lastUpdated);
     if (k === "espn_rosters" && meta.espnRosters) txt = "Synced " + stamp(meta.espnRosters.syncedAt);
     td.appendChild(document.createTextNode(txt));
-    const isStale = k === "espn_rosters" && meta.espnRosters ? meta.espnRosters.stale : stale(meta, s);
-    if (isStale) td.appendChild(el("span", "stale", s.lastUpdated ? "  Stale" : "  Missing"));
+    const st = rowState(k, s, meta, now);
+    if (STATE_TEXT[st]) td.appendChild(el("span", "stale", "  " + STATE_TEXT[st]));
+    if (s.error && st !== "fresh") td.title = s.error;
     tr.appendChild(td);
     t.appendChild(tr);
   });
   return t;
 }
 
-// Roster freshness and stale source warnings, shown on both views
-function freshnessWarnings(league, meta, box) {
-  const isEspn = league.league.platform === "espn";
-  if (isEspn && meta.espnRosters && meta.espnRosters.stale) box.appendChild(el("div", "warn", "The ESPN roster sync is more than 4 days old. Lineups may be out of date. Ask Claude to sync ESPN."));
-  if (isEspn && meta.espnRosters && meta.espnRosters.weekMismatch === true) {
-    box.appendChild(el("div", "warn", "The ESPN roster file is from week " + meta.espnRosters.week + ". Ask Claude to sync ESPN."));
+// Warnings for the open league, worst first. Pure, so a test can run it without a page.
+function freshnessMessages(league, meta, now) {
+  const out = [];
+  const age = hoursSince(meta.generatedAt, now);
+  if (age > BOARD_STALE_HOURS && age !== Infinity) {
+    out.push("This board was built " + Math.floor(age / 24) + " days ago, so the scheduled refresh may have stopped. Run the refresh workflow on GitHub.");
   }
-  const staleSrc = Object.keys(league.sources).filter(function (k) { return k !== "espn_rosters" && stale(meta, league.sources[k]); });
-  if (staleSrc.length) box.appendChild(el("div", "warn", "Stale data: " + staleSrc.map(function (k) { return SOURCE_TEXT[k] || k; }).join(", ") + ". Using the last good pull."));
+  const sync = league.league.platform === "espn" ? espnSync(meta, now) : null;
+  if (sync && sync.fromCache) out.push("The last ESPN sync did not save a usable roster file. Showing the sync from " + stamp(sync.syncedAt) + ". Ask Claude to sync ESPN.");
+  else if (sync && sync.old) out.push("The ESPN roster sync is more than " + sync.limit + " days old. Lineups may be out of date. Ask Claude to sync ESPN.");
+  if (sync && sync.weekMismatch) out.push("The ESPN roster file is from week " + sync.week + ". Ask Claude to sync ESPN.");
+  const bad = Object.keys(league.sources).filter(function (k) { return k !== "espn_rosters" && sourceState(league.sources[k]) !== "fresh"; });
+  const missing = bad.filter(function (k) { return sourceState(league.sources[k]) === "missing"; });
+  const stale = bad.filter(function (k) { return missing.indexOf(k) < 0; });
+  const names = function (ks) { return ks.map(function (k) { return SOURCE_TEXT[k] || k; }).join(", "); };
+  if (missing.length) out.push("Missing data: " + names(missing) + ". Nothing has loaded from it yet.");
+  if (stale.length) out.push("Stale data: " + names(stale) + ". Using the last good pull.");
+  return out;
+}
+// Shown on every view
+function freshnessWarnings(league, meta, box) {
+  freshnessMessages(league, meta, Date.now()).forEach(function (m) { box.appendChild(el("div", "warn", m)); });
 }
 
 function sourcesSection(league, meta) {
@@ -307,7 +349,7 @@ function renderWaivers(league, meta) {
   const sum = el("div", "summary");
   const rows = [["This week", best ? best.player.name + " " + signed(best.gain) : "None"]];
   if (st) rows.push(["Stretch run", bestSt ? bestSt.player.name + " " + signed(bestSt.gain) : "None"]);
-  rows.push(["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : "Over"]);
+  rows.push(["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : noFutureWeeks(league.seasonPhase)]);
   rows.forEach(function (x) {
     const d = el("div");
     d.appendChild(el("span", "label", x[0]));
@@ -375,6 +417,14 @@ function matchupText(x, teams) {
   if (isNum(x.rank) && x.rank <= 8) t += " (soft)";
   else if (isNum(x.rank) && x.rank > teams - 8) t += " (tough)";
   return t;
+}
+
+// What to say when a future-weeks list is empty. seasonPhase is regular, playoffs or over (older builds leave it out).
+// Regular with no list means the schedule source is missing, not that the season ended.
+function noFutureWeeks(phase) {
+  if (phase === "playoffs") return "Final week";
+  if (phase === "regular") return "n/a";
+  return "Over";
 }
 
 function weekSpan(weeks) {
@@ -489,8 +539,9 @@ function renderTrade(league, meta, td, state, rerender) {
   head.appendChild(sm);
   secSum.appendChild(head);
   freshnessWarnings(league, meta, secSum);
-  secSum.appendChild(el("p", "muted aside", "Trades are scored by how much each team's best lineup changes over the rest of the season, " + weekSpan(td.weeks) +
-    ", with every week counted the same. That is the stretch run" + (stW.length ? " (" + weekSpan(stW) + ")" : "") + " and the playoffs (" + weekSpan(poW) + "). A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now."));
+  secSum.appendChild(el("p", "muted aside", !td.weeks.length ? "No weeks are left after this one, so trades show no change over the rest of the season. The this week number still counts." :
+    "Trades are scored by how much each team's best lineup changes over the rest of the season, " + weekSpan(td.weeks) +
+    ", with every week counted the same. That is the stretch run" + (stW.length ? " (" + weekSpan(stW) + ")" : "") + (poW.length ? " and the playoffs (" + weekSpan(poW) + ")" : "") + ". A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now."));
   if (td.dynasty) secSum.appendChild(el("div", "warn", "Dynasty league. Scores only cover the rest of this season. Ages are shown, and trades that send away a player 4 or more years younger are flagged."));
 
   // Ideas
@@ -643,9 +694,12 @@ function renderStandings(league, meta) {
   if (me) head.appendChild(el("div", "psub", "Seed " + me.seed + " now. Projected " + me.projWins.toFixed(1) + " wins, average finish seed " + me.avgSeed.toFixed(1) + "."));
   secSum.appendChild(head);
   freshnessWarnings(league, meta, secSum);
-  secSum.appendChild(el("p", "muted aside", "Odds come from playing out the rest of the regular season (" + weekSpan(st.weeksLeft) + ") " + st.sims.toLocaleString("en-US") +
-    " times. Each team's expected score is its own best lineup under the board's projections, with a spread of " + st.sd.toFixed(1) +
-    " points, the typical week to week swing in this league. Top " + st.playoffTeams + " make the playoffs and top " + st.byes + " get a bye." +
+  secSum.appendChild(el("p", "muted aside", (st.weeksLeft.length
+    ? "Odds come from playing out the rest of the regular season (" + weekSpan(st.weeksLeft) + ") " + st.sims.toLocaleString("en-US") +
+      " times. Each team's expected score is its own best lineup under the board's projections, with a spread of " + st.sd.toFixed(1) +
+      " points, the typical week to week swing in this league. "
+    : "The regular season is over, so the odds are the final standings. ") +
+    "Top " + st.playoffTeams + " make the playoffs and top " + st.byes + " get a bye." +
     (st.divisions ? " Assumes division winners take the top seeds." : "")));
 
   secGames.appendChild(el("h2", null, "Your games"));
@@ -698,15 +752,37 @@ function renderStandings(league, meta) {
   return columns([secSum, secGames, sourcesSection(league, meta)], [secTable]);
 }
 
-// Lineup or Waivers for the open league. Waivers only when the build has them
+// ---------------------------------------------------------------- views and routing (docs/STATES.md)
+// Every view a league can open, in button order. The test says whether this build carries it.
+// Standings is listed whenever the key exists, even when null, so the ESPN league can say why it is empty.
+const VIEWS = [
+  ["lineup", "Lineup", function () { return true; }],
+  ["waivers", "Waivers", function (league) { return !!league.waivers; }],
+  ["trade", "Trade", function (league) { return !!league.trade; }],
+  ["standings", "Standings", function (league) { return "standings" in league; }],
+];
+function viewsFor(league) {
+  return VIEWS.filter(function (v) { return v[2](league); });
+}
+// A view this league can open, or lineup
+function resolveView(league, view) {
+  return viewsFor(league).some(function (v) { return v[0] === view; }) ? view : "lineup";
+}
+// URL hash is #league or #league/view. Unknown leagues open the first one, unknown views open lineup.
+function routeFromHash(hash, leagues) {
+  const parts = String(hash || "").replace(/^#/, "").split("/");
+  const i = Math.max(0, leagues.findIndex(function (l) { return l.league.key === parts[0]; }));
+  return { league: i, view: resolveView(leagues[i], parts[1]) };
+}
+function hashFor(league, view) {
+  return "#" + league.league.key + (view === "lineup" ? "" : "/" + view);
+}
+
 function viewSwitch(league, view, go) {
   const box = el("div", "views");
   box.setAttribute("role", "group");
   box.setAttribute("aria-label", "View");
-  const views = [["lineup", "Lineup"], ["waivers", "Waivers"]];
-  if (league.trade) views.push(["trade", "Trade"]);
-  if ("standings" in league) views.push(["standings", "Standings"]);
-  views.forEach(function (v) {
+  viewsFor(league).forEach(function (v) {
     const b = el("button", "view", v[1]);
     b.type = "button";
     b.setAttribute("aria-pressed", String(view === v[0]));
@@ -728,6 +804,16 @@ async function getJSON(path) {
   return r.json();
 }
 
+// Trade files load the first time the Trade view opens. Per league: loading, then ready or error.
+// Only Try again moves error back to loading, so a failed file never refetches in a loop.
+function loadTrade(store, league, settled) {
+  const t = { status: "loading", data: null };
+  store[league.league.key] = t;
+  getJSON("data/build/" + league.trade.file).then(function (td) { t.status = "ready"; t.data = td; }, function () { t.status = "error"; })
+    .then(function () { if (store[league.league.key] === t) settled(); });
+  return t;
+}
+
 async function main() {
   let meta, leagues;
   try {
@@ -742,43 +828,48 @@ async function main() {
 
   const tabs = document.getElementById("tabs");
   const panel = document.getElementById("panel");
-  let view = "lineup";
-  let current = 0;
-  const tradeData = {};    // league key -> trade file, loaded the first time the Trade view opens
+  const route = { league: 0, view: "lineup" };   // what is on screen. Only show() changes it
+  const tradeLoads = {};   // league key -> { status, data }, see loadTrade
   const tradeState = {};   // league key -> builder picks, kept while you switch views
+
+  function tradeBody(i, lg) {
+    const key = lg.league.key;
+    const load = tradeLoads[key] || loadTrade(tradeLoads, lg, function () {
+      if (route.league === i && route.view === "trade") show(i, "trade");
+    });
+    if (load.status === "loading") return el("div", "card", "Loading trades");
+    if (load.status === "error") {
+      const box = el("div", "error", "The trade data could not be loaded. ");
+      const retry = el("button", "retry", "Try again");
+      retry.type = "button";
+      retry.addEventListener("click", function () { delete tradeLoads[key]; show(i, "trade"); });
+      box.appendChild(retry);
+      return box;
+    }
+    const st = tradeState[key] || (tradeState[key] = { give: new Set(), get: new Set() });
+    return renderTrade(lg, meta, load.data, st, function () { show(i, "trade"); });
+  }
+
   function show(i, v) {
     const lg = leagues[i];
-    current = i;
-    view = (v === "waivers" && lg.waivers) ? "waivers" : (v === "trade" && lg.trade) ? "trade" : (v === "standings" && "standings" in lg) ? "standings" : "lineup";
+    const view = resolveView(lg, v);
+    route.league = i;
+    route.view = view;
     Array.prototype.forEach.call(tabs.children, function (b, j) { b.setAttribute("aria-selected", String(i === j)); });
     panel.setAttribute("aria-labelledby", tabs.children[i].id);
-    let body;
-    if (view === "waivers") body = renderWaivers(lg, meta);
-    else if (view === "standings") body = renderStandings(lg, meta);
-    else if (view === "trade") {
-      const key = lg.league.key;
-      const st = tradeState[key] || (tradeState[key] = { give: new Set(), get: new Set() });
-      if (tradeData[key]) {
-        body = renderTrade(lg, meta, tradeData[key], st, function () { show(i, "trade"); });
-      } else {
-        body = el("div", "card", "Loading trades");
-        getJSON("data/build/" + lg.trade.file).then(function (td) {
-          tradeData[key] = td;
-          if (current === i && view === "trade") show(i, "trade");
-        }).catch(function () {
-          if (current === i && view === "trade") panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), el("div", "error", "The trade data could not be loaded. Try again in a few minutes."));
-        });
-      }
-    } else body = renderLeague(lg, meta);
+    const body = view === "waivers" ? renderWaivers(lg, meta)
+      : view === "standings" ? renderStandings(lg, meta)
+      : view === "trade" ? tradeBody(i, lg)
+      : renderLeague(lg, meta);
     const keepY = view === "trade" ? window.scrollY : 0;
-    if (lg.waivers || lg.trade) panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), body);
+    if (viewsFor(lg).length > 1) panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), body);
     else panel.replaceChildren(body);
     if (view === "trade") {
       const st = tradeState[lg.league.key];
       if (st && st.scroll) { st.scroll = false; const bld = document.getElementById("builder"); if (bld) bld.scrollIntoView(); }
       else window.scrollTo(0, keepY);
     }
-    history.replaceState(null, "", "#" + lg.league.key + (view === "lineup" ? "" : "/" + view));
+    history.replaceState(null, "", hashFor(lg, view));
   }
   leagues.forEach(function (l) {
     const b = el("button", "tab");
@@ -788,13 +879,12 @@ async function main() {
     b.setAttribute("aria-controls", "panel");
     b.appendChild(el("span", "tname", l.league.name));
     b.appendChild(el("span", "gain" + (l.lineup.gain === 0 ? " zero" : ""), signed(l.lineup.gain)));
-    b.addEventListener("click", function () { show(leagues.indexOf(l), view); });
+    b.addEventListener("click", function () { show(leagues.indexOf(l), route.view); });
     tabs.appendChild(b);
   });
   function fromHash() {
-    const parts = location.hash.replace(/^#/, "").split("/");
-    const want = leagues.findIndex(function (l) { return l.league.key === parts[0]; });
-    show(want >= 0 ? want : 0, parts[1]);
+    const r = routeFromHash(location.hash, leagues);
+    show(r.league, r.view);
   }
   window.addEventListener("hashchange", fromHash);
   fromHash();
