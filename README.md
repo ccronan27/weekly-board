@@ -43,6 +43,7 @@ Then open http://localhost:8000. Live checks against the real endpoints: `python
 Useful scripts:
 
 - `scripts/check_scoring.py` checks the scoring engine against ESPN's own totals and Rotowire's totals.
+- `scripts/backtest.py` rebuilds the projection backtest in `docs/BACKTEST.md`.
 - `scripts/record_fixtures.py` re-records the test fixtures when a source changes shape. Run it, read the diff, then fix the adapter.
 
 ## Schedule
@@ -62,7 +63,7 @@ Scheduled workflows are disabled automatically after 60 days without repo activi
 1. Re-enable workflows in August: Actions tab, select `refresh`, Enable workflow.
 2. Update the league IDs and season in `config/leagues.yaml`, and the ESPN league's `playoffWeeks` (Sleeper playoff weeks come from the API). Scoring and lineups are pulled from the platforms. Check `config/leagues/*.overrides.yaml` still apply.
 3. Ask Claude to sync ESPN so `data/espn/rosters.json` is for the new league. Confirm the ESPN D/ST scoring in `config/leagues/fantasizing.overrides.yaml` still matches the league.
-4. Re-run the backtest from `docs/BACKTEST.md` before any model change ships. The script is not built yet (`scripts/backtest.py` is still to do), so the method notes in that document are the reference for now.
+4. Re-run the backtest before any model change ships: `python scripts/backtest.py`. Part 1 scores this season so far, Part 3 fits on last season and scores this one. It prints a verdict line, and a model change ships only when it beats the equal average with the whole bootstrap range above zero. Pulls are cached under `data/raw/{season}/{week}/backtest_*.json` (gitignored, about 11 MB). Add `--refresh` to re-pull.
 5. Run `python -m pytest -m live`. A contract failure means a source changed shape.
 6. Trigger `refresh` by hand and check that all three leagues show on the page with current stamps.
 
