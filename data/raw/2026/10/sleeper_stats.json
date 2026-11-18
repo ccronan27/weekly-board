@@ -3050,7 +3050,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Isaiah Williams",
    "opponent": "BUF",
    "playerId": "11608",
@@ -3724,7 +3724,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Darren Waller",
    "opponent": "NO",
    "playerId": "2505",
@@ -5142,7 +5142,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Doubtful",
+   "injuryStatus": "Out",
    "name": "Woody Marks",
    "opponent": "CLE",
    "playerId": "12474",
@@ -6072,7 +6072,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Tommy Tremble",
    "opponent": "NO",
    "playerId": "7694",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-18T15:39:10Z",
+ "fetchedAt": "2026-11-18T21:00:13Z",
  "source": "sleeper_stats"
 }
