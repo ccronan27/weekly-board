@@ -34,7 +34,7 @@ The essential sources (`sleeper_leagues`, `sleeper_players`, `sleeper_projection
 | good, old | Synced more than 4 days ago | `stale`, warning on the ESPN league |
 | good, wrong week | File is for another week | `fresh`, separate week warning (`weekMismatch`) |
 | unusable, cached | File fails validation (for example the sync wrote `"ok": false`), and an earlier run cached a good copy | `stale`, `meta.espnRosters.fromCache` is true, warning names the sync time in use. All three leagues still publish |
-| unusable, no cache | Nothing usable anywhere this season | Build refuses to publish. The last good site stays live |
+| unusable, no cache | Nothing usable anywhere this season | The ESPN league is skipped and listed in `meta.skippedLeagues`. The Sleeper leagues still publish, and the page shows a warning. `meta.espnRosters.state` is `missing` |
 
 Every run that reads a good file caches it to `data/raw/{season}/{week}/espn_rosters.json`. The fallback takes the newest valid cached copy at or before the current week.
 
@@ -108,6 +108,6 @@ Per slot, `changed` is true when the recommended player differs from the current
 
 - Tests fail: nothing runs.
 - Ingest exits non-zero when every essential source is `missing`.
-- Build raises `BuildError` on an empty or worse-than-current lineup, a missing Sleeper league, or no usable ESPN roster file (machine 2). Nothing is committed or deployed, and the last good site stays live.
+- Build raises `BuildError` on an empty or worse-than-current lineup, or a missing Sleeper league. It refuses only when no league at all can be built. With no usable ESPN roster file the ESPN league is skipped (machine 2) and the other leagues still publish. When build refuses, nothing is committed or deployed, and the last good site stays live.
 - `scripts/make_site.py` refuses an empty `data/build`.
 - Deploy runs only on the default branch.

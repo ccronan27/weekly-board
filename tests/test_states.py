@@ -129,14 +129,18 @@ def test_build_publishes_with_last_good_rosters_when_the_sync_fails(tmp_path):
 
 
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
-def test_build_refuses_with_no_usable_rosters(tmp_path):
+def test_build_publishes_sleeper_leagues_with_no_usable_rosters(tmp_path):
     raw = tmp_path / "raw"
     shutil.copytree(RAW / str(SEASON), raw / str(SEASON))
     for p in raw.rglob("espn_rosters.json"):
         p.unlink()
-    with pytest.raises(bd.BuildError, match="no usable ESPN roster file"):
-        bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "out", save_idmap=False, now=LOCK_NOW,
-                 rosters_path=_bad_rosters(tmp_path))
+    out = tmp_path / "out"
+    res = bd.build(SEASON, WEEK, raw_root=raw, out_dir=out, save_idmap=False, now=LOCK_NOW,
+                   rosters_path=_bad_rosters(tmp_path))
+    assert set(res["leagues"]) == {"hwh", "chicago-dynasty"}
+    assert res["meta"]["skippedLeagues"][0]["key"] == "fantasizing"
+    assert res["meta"]["espnRosters"]["state"] == "missing"
+    assert not (out / "fantasizing.json").exists()
 
 
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
@@ -144,6 +148,7 @@ def test_build_sources_all_carry_state(tmp_path):
     res = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, now=LOCK_NOW)
     assert all(s["state"] in ("fresh", "stale", "missing") for s in res["meta"]["sources"].values())
     assert res["meta"]["espnRosters"]["fromCache"] is False and res["meta"]["espnRosters"]["staleAfterDays"] == 4
+    assert res["meta"]["skippedLeagues"] == []
     assert {o["seasonPhase"] for o in res["leagues"].values()} == {"regular"}
 
 
@@ -223,10 +228,13 @@ const espn = {league: {platform: "espn"}, sources: {
   espn_defaults: {ok: false, stale: true, lastUpdated: null}}};
 const day = 86400000;
 const cached = JSON.parse(JSON.stringify(meta)); cached.espnRosters.fromCache = true;
+const skipped = JSON.parse(JSON.stringify(meta)); skipped.skippedLeagues = [{key: "fantasizing", name: "Fantasizing 2026", reason: "x"}];
+const sleeper = {league: {platform: "sleeper"}, sources: {}};
 console.log(JSON.stringify({
   now: freshnessMessages(espn, meta, built + day),
   later: freshnessMessages(espn, meta, built + 5 * day),
   cached: freshnessMessages(espn, cached, built + day),
+  skipped: freshnessMessages(sleeper, skipped, built + day),
   rowNow: rowState("espn_rosters", espn.sources.espn_rosters, meta, built + day),
   rowLater: rowState("espn_rosters", espn.sources.espn_rosters, meta, built + 5 * day),
   legacy: [sourceState(espn.sources.nflverse_lines), sourceState(espn.sources.espn_defaults)],
@@ -237,6 +245,7 @@ console.log(JSON.stringify({
     assert got["later"][0].startswith("This board was built 5 days ago")
     assert any("more than 4 days old" in m for m in got["later"]), "ESPN sync ages in the browser too"
     assert any("did not save a usable roster file" in m for m in got["cached"])
+    assert got["skipped"][0].startswith("Fantasizing 2026 is not shown")
     assert (got["rowNow"], got["rowLater"]) == ("fresh", "stale")
     assert got["legacy"] == ["stale", "missing"]
     assert got["phases"] == ["Final week", "Over", "n/a", "Over"]

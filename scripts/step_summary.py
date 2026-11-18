@@ -14,8 +14,11 @@ for k, v in sorted(meta["sources"].items()):
     status = {"fresh": "ok", "stale": "STALE", "missing": "MISSING"}[source_state(v)]
     print(f"| {k} | {status}{' ' + v['error'] if v['error'] else ''} | {v['lastUpdated'] or '-'} |")
 r = meta["espnRosters"]
-cached = ", the roster file was unusable so the last good sync is in use" if r.get("fromCache") else ""
-print(f"\nESPN roster sync: {r['syncedAt']} ({r['ageDays']} days old{', STALE' if r['stale'] else ''}{cached})\n")
+if r["syncedAt"] is None or r["ageDays"] is None:
+    print("\nESPN roster sync: none usable\n")
+else:
+    cached = ", the roster file was unusable so the last good sync is in use" if r.get("fromCache") else ""
+    print(f"\nESPN roster sync: {r['syncedAt']} ({r['ageDays']} days old{', STALE' if r['stale'] else ''}{cached})\n")
 for l in meta["leagues"]:
     lg = read_json(BUILD / l["file"])
     best = (lg.get("waivers") or {}).get("targets") or []
@@ -24,3 +27,5 @@ for l in meta["leagues"]:
     ideas = read_json(tf)["ideas"] if tf.exists() else []
     idea = f", {len(ideas)} trade idea{"s" if len(ideas) != 1 else ""} (best {ideas[0]['myGain']:+.1f} for you)" if ideas else ""
     print(f"- {l['name']}: lineup change {l['gain']:+.1f}{add}{idea}")
+for s in meta.get("skippedLeagues", []):
+    print(f"- {s['name']}: skipped, {s['reason']}")

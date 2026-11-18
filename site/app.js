@@ -226,6 +226,7 @@ function freshnessMessages(league, meta, now) {
   if (age > BOARD_STALE_HOURS && age !== Infinity) {
     out.push("This board was built " + Math.floor(age / 24) + " days ago, so the scheduled refresh may have stopped. Run the refresh workflow on GitHub.");
   }
+  (meta.skippedLeagues || []).forEach(function (s) { out.push(s.name + " is not shown because there is no usable ESPN roster file. Ask Claude to sync ESPN."); });
   const sync = league.league.platform === "espn" ? espnSync(meta, now) : null;
   if (sync && sync.fromCache) out.push("The last ESPN sync did not save a usable roster file. Showing the sync from " + stamp(sync.syncedAt) + ". Ask Claude to sync ESPN.");
   else if (sync && sync.old) out.push("The ESPN roster sync is more than " + sync.limit + " days old. Lineups may be out of date. Ask Claude to sync ESPN.");
