@@ -60,8 +60,12 @@ jobs:
           git add data/raw data/build data/idmap.json
           if git diff --cached --quiet; then echo "No data changes"; exit 0; fi
           git commit -m "Refresh data"
+          # Two runs can overlap (a merge starts one, the button starts another). Data files are
+          # rebuilt from scratch every run, so on a conflict this run's copy wins. In a rebase,
+          # "theirs" is the commit being replayed, which only touches data. Code is never changed.
           for i in 1 2 3 4; do
-            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            git rebase --abort 2>/dev/null || true   # never leave a half-done rebase for the next try
             sleep $((i * 5))
           done
           echo "Could not push data" >&2

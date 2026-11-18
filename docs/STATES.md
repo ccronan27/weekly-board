@@ -110,4 +110,5 @@ Per slot, `changed` is true when the recommended player differs from the current
 - Ingest exits non-zero when every essential source is `missing`.
 - Build raises `BuildError` on an empty or worse-than-current lineup, or a missing Sleeper league. It refuses only when no league at all can be built. With no usable ESPN roster file the ESPN league is skipped (machine 2) and the other leagues still publish. When build refuses, nothing is committed or deployed, and the last good site stays live.
 - `scripts/make_site.py` refuses an empty `data/build`.
+- Two runs can overlap, for example a merge that starts one and the Run workflow button that starts another. When both save data, the later run's data wins (`git pull --rebase -X theirs` in the Commit data step). That commit only touches data, so code is never changed.
 - Deploy runs only on the default branch.
