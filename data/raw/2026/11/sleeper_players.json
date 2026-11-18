@@ -8394,7 +8394,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Efton Chism III",
-   "newsUpdated": 1794797133903,
+   "newsUpdated": 1794967548166,
    "pos": "WR",
    "status": "Active",
    "team": "NE",
@@ -8454,7 +8454,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Kyle Williams",
-   "newsUpdated": 1794797133891,
+   "newsUpdated": 1794967848204,
    "pos": "WR",
    "status": "Active",
    "team": "NE",
@@ -9954,7 +9954,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Lan Larison",
-   "newsUpdated": 1794796233764,
+   "newsUpdated": 1794967848202,
    "pos": "RB",
    "status": "Active",
    "team": "NE",
@@ -36162,7 +36162,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Drew Sample",
-   "newsUpdated": 1794845438000,
+   "newsUpdated": 1794967548167,
    "pos": "TE",
    "status": "Active",
    "team": "CIN",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-18T02:14:35Z",
+ "fetchedAt": "2026-11-18T02:26:24Z",
  "source": "sleeper_players"
 }
