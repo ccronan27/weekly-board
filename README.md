@@ -2,6 +2,8 @@
 
 A start/sit dashboard across three fantasy football leagues: Fantasizing 2026 (ESPN), HWH: The League (Sleeper) and Chicago Dynasty (Sleeper). It runs on GitHub Actions and publishes a static page on GitHub Pages. The page shows, for each league, your current lineup next to the best lineup, with the point difference, injury and bye flags, floor and ceiling, Vegas context and when each data source was last updated.
 
+Each league also has a Waivers view (v2). It ranks free agents by how many points they add to your best possible lineup this week, so weak slots, byes and injuries are all covered by one number. It caps the list at two per position, shows the best three free agents at each position, and suggests a drop from your bench in redraft leagues. Dynasty leagues (`dynasty: true` in `config/leagues.yaml`) get no drop suggestion, because weekly points ignore long term value. Players whose game has started are never suggested.
+
 The only piece that needs Claude is the ESPN roster sync. Everything else runs on its own.
 
 ## How it works
@@ -64,7 +66,7 @@ Scheduled workflows are disabled automatically after 60 days without repo activi
 
 ```
 pipeline/adapters/   one adapter per source, each with a contract test
-pipeline/            ingest, scoring, lineup optimizer, build
+pipeline/            ingest, scoring, lineup optimizer, waiver targets, build
 config/              league IDs and per league overrides
 data/espn/           roster file written by the Claude skill
 data/raw/            cached raw pulls by season and week

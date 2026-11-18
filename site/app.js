@@ -118,13 +118,16 @@ function playerRow(p, opts) {
   badgeNodes(p).forEach(function (n) { top.appendChild(n); });
   body.appendChild(top);
 
-  const sub = el("div", "psub", (p.pos || "") + " " + (p.team || "FA") + " · " + gameText(p));
+  let subText = (p.pos || "") + " " + (p.team || "FA") + " · " + gameText(p);
+  if (opts.ppg && isNum(p.ppg)) subText += " · " + p.ppg.toFixed(1) + " a game";
+  const sub = el("div", "psub", subText);
   const ctx = contextText(p);
   if (ctx) sub.appendChild(el("span", "ctx", " · " + ctx));
   body.appendChild(sub);
   if (p.injuryNotes && NOTE_FLAGS.some(function (f) { return hasFlag(p, f); })) {
     body.appendChild(el("div", "note", p.injuryNotes));
   }
+  if (opts.extra) body.appendChild(el("div", "extra" + (opts.extraMuted ? " muted-extra" : ""), opts.extra));
 
   const nums = el("div", "pnums");
   const src = sourceText(p);
@@ -187,13 +190,43 @@ function sourcesTable(league, meta) {
   return t;
 }
 
+// Roster freshness and stale source warnings, shown on both views
+function freshnessWarnings(league, meta, box) {
+  const isEspn = league.league.platform === "espn";
+  if (isEspn && meta.espnRosters && meta.espnRosters.stale) box.appendChild(el("div", "warn", "The ESPN roster sync is more than 4 days old. Lineups may be out of date. Ask Claude to sync ESPN."));
+  if (isEspn && meta.espnRosters && meta.espnRosters.weekMismatch === true) {
+    box.appendChild(el("div", "warn", "The ESPN roster file is from week " + meta.espnRosters.week + ". Ask Claude to sync ESPN."));
+  }
+  const staleSrc = Object.keys(league.sources).filter(function (k) { return k !== "espn_rosters" && stale(meta, league.sources[k]); });
+  if (staleSrc.length) box.appendChild(el("div", "warn", "Stale data: " + staleSrc.map(function (k) { return SOURCE_TEXT[k] || k; }).join(", ") + ". Using the last good pull."));
+}
+
+function sourcesSection(league, meta) {
+  const sec = el("section", "s-src");
+  sec.appendChild(el("h2", null, "Data sources"));
+  const sc = el("div", "card");
+  sc.appendChild(sourcesTable(league, meta));
+  sec.appendChild(sc);
+  return sec;
+}
+
+// Phone: one column in DOM order. Desktop: sidebar plus main column (see style.css)
+function columns(sideSecs, mainSecs) {
+  const cols = el("div", "cols");
+  const side = el("div", "colA");
+  side.append.apply(side, sideSecs);
+  const main = el("div", "colB");
+  main.append.apply(main, mainSecs);
+  cols.append(side, main);
+  return cols;
+}
+
 function renderLeague(league, meta) {
   const lu = league.lineup;
   const secSum = el("section", "s-sum");
   const secMoves = el("section", "s-moves");
   const secLineup = el("section", "s-lineup");
   const secBench = el("section", "s-bench");
-  const secSrc = el("section", "s-src");
 
   const head = el("div", "card");
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
@@ -207,14 +240,7 @@ function renderLeague(league, meta) {
   head.appendChild(sum);
   secSum.appendChild(head);
 
-  const isEspn = league.league.platform === "espn";
-  const rosterStale = isEspn && meta.espnRosters && meta.espnRosters.stale;
-  if (rosterStale) secSum.appendChild(el("div", "warn", "The ESPN roster sync is more than 4 days old. Lineups may be out of date. Ask Claude to sync ESPN."));
-  if (isEspn && meta.espnRosters && meta.espnRosters.weekMismatch === true) {
-    secSum.appendChild(el("div", "warn", "The ESPN roster file is from week " + meta.espnRosters.week + ". Ask Claude to sync ESPN."));
-  }
-  const staleSrc = Object.keys(league.sources).filter(function (k) { return k !== "espn_rosters" && stale(meta, league.sources[k]); });
-  if (staleSrc.length) secSum.appendChild(el("div", "warn", "Stale data: " + staleSrc.map(function (k) { return SOURCE_TEXT[k] || k; }).join(", ") + ". Using the last good pull."));
+  freshnessWarnings(league, meta, secSum);
 
   (lu.alerts || []).forEach(function (a) {
     const flags = a.flags.map(function (f) { return FLAG_TEXT[f] || f; }).join(", ");
@@ -260,19 +286,87 @@ function renderLeague(league, meta) {
   });
   secBench.appendChild(bc);
 
-  secSrc.appendChild(el("h2", null, "Data sources"));
-  const sc = el("div", "card");
-  sc.appendChild(sourcesTable(league, meta));
-  secSrc.appendChild(sc);
+  return columns([secSum, secMoves, sourcesSection(league, meta)], [secLineup, secBench]);
+}
 
-  // Phone: one column in DOM order. Desktop: sidebar plus main column (see style.css)
-  const cols = el("div", "cols");
-  const side = el("div", "colA");
-  side.append(secSum, secMoves, secSrc);
-  const main = el("div", "colB");
-  main.append(secLineup, secBench);
-  cols.append(side, main);
-  return cols;
+// v2 waivers: free agents ranked by how much they raise your best lineup this week
+function renderWaivers(league, meta) {
+  const w = league.waivers;
+  const secSum = el("section", "s-sum");
+  const secDrop = el("section", "s-moves");
+  const secTargets = el("section", "s-lineup");
+  const secPos = el("section", "s-bench");
+
+  const head = el("div", "card");
+  head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
+  const best = w.targets.length ? w.targets[0] : null;
+  const sum = el("div", "summary");
+  [["Best add", best ? best.player.name : "None"], ["Gain", best ? signed(best.gain) : "0.0"], ["Free agents", String(w.freeAgents)]].forEach(function (x) {
+    const d = el("div");
+    d.appendChild(el("span", "label", x[0]));
+    d.appendChild(el("b", null, x[1]));
+    sum.appendChild(d);
+  });
+  head.appendChild(sum);
+  secSum.appendChild(head);
+  freshnessWarnings(league, meta, secSum);
+  if (league.league.platform === "espn") secSum.appendChild(el("p", "muted aside", "ESPN does not say who is on waivers, so some of these may need a claim."));
+
+  secDrop.appendChild(el("h2", null, "Drop idea"));
+  const dc = el("div", "card list");
+  if (w.dynasty) {
+    dc.appendChild(el("div", "slot", "Dynasty league. Weekly points ignore long term value, so pick your own drop."));
+  } else if (w.drop) {
+    const wrap = el("div", "slot");
+    wrap.appendChild(playerRow(w.drop, { chip: "BN", ppg: true, extraMuted: true, extra: "Lowest of this week's projection and season average on your bench." }));
+    dc.appendChild(wrap);
+  } else {
+    dc.appendChild(el("div", "slot", "No bench player to drop."));
+  }
+  secDrop.appendChild(dc);
+
+  secTargets.appendChild(el("h2", null, "Waiver targets"));
+  secTargets.appendChild(el("div", "muted", "Ranked by how much each player raises your best lineup this week. Two per position at most."));
+  const tc = el("div", "card list");
+  if (!w.targets.length) tc.appendChild(el("div", "slot", "No free agent beats your starters this week."));
+  w.targets.forEach(function (t) {
+    const wrap = el("div", "slot");
+    const extra = "Starts at " + t.slot + (t.replaces ? " and sends " + t.replaces.name + " to the bench." : ".");
+    wrap.appendChild(playerRow(t.player, { chip: t.player.pos, gain: t.gain, ppg: true, extra: extra }));
+    tc.appendChild(wrap);
+  });
+  secTargets.appendChild(tc);
+
+  secPos.appendChild(el("h2", null, "Best available by position"));
+  const pc = el("div", "card list");
+  // Lineup order, not the sorted order the JSON keys arrive in
+  POSITIONS.filter(function (pos) { return w.byPosition[pos]; }).forEach(function (pos) {
+    const list = w.byPosition[pos];
+    if (!list.length) return;
+    list.forEach(function (p) {
+      const wrap = el("div", "slot");
+      wrap.appendChild(playerRow(p, { chip: pos, ppg: true }));
+      pc.appendChild(wrap);
+    });
+  });
+  secPos.appendChild(pc);
+
+  return columns([secSum, secDrop, sourcesSection(league, meta)], [secTargets, secPos]);
+}
+
+// Lineup or Waivers for the open league. Waivers only when the build has them
+function viewSwitch(league, view, go) {
+  const box = el("div", "views");
+  box.setAttribute("role", "group");
+  box.setAttribute("aria-label", "View");
+  [["lineup", "Lineup"], ["waivers", "Waivers"]].forEach(function (v) {
+    const b = el("button", "view", v[1]);
+    b.type = "button";
+    b.setAttribute("aria-pressed", String(view === v[0]));
+    b.addEventListener("click", function () { go(v[0]); });
+    box.appendChild(b);
+  });
+  return box;
 }
 
 function fail(msg) {
@@ -301,11 +395,16 @@ async function main() {
 
   const tabs = document.getElementById("tabs");
   const panel = document.getElementById("panel");
-  function show(i) {
+  let view = "lineup";
+  function show(i, v) {
+    const lg = leagues[i];
+    view = v === "waivers" && lg.waivers ? "waivers" : "lineup";
     Array.prototype.forEach.call(tabs.children, function (b, j) { b.setAttribute("aria-selected", String(i === j)); });
     panel.setAttribute("aria-labelledby", tabs.children[i].id);
-    panel.replaceChildren(renderLeague(leagues[i], meta));
-    history.replaceState(null, "", "#" + leagues[i].league.key);
+    const body = view === "waivers" ? renderWaivers(lg, meta) : renderLeague(lg, meta);
+    if (lg.waivers) panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), body);
+    else panel.replaceChildren(body);
+    history.replaceState(null, "", "#" + lg.league.key + (view === "waivers" ? "/waivers" : ""));
   }
   leagues.forEach(function (l) {
     const b = el("button", "tab");
@@ -315,12 +414,13 @@ async function main() {
     b.setAttribute("aria-controls", "panel");
     b.appendChild(el("span", "tname", l.league.name));
     b.appendChild(el("span", "gain" + (l.lineup.gain === 0 ? " zero" : ""), signed(l.lineup.gain)));
-    b.addEventListener("click", function () { show(leagues.indexOf(l)); });
+    b.addEventListener("click", function () { show(leagues.indexOf(l), view); });
     tabs.appendChild(b);
   });
   function fromHash() {
-    const want = leagues.findIndex(function (l) { return "#" + l.league.key === location.hash; });
-    show(want >= 0 ? want : 0);
+    const parts = location.hash.replace(/^#/, "").split("/");
+    const want = leagues.findIndex(function (l) { return l.league.key === parts[0]; });
+    show(want >= 0 ? want : 0, parts[1]);
   }
   window.addEventListener("hashchange", fromHash);
   fromHash();

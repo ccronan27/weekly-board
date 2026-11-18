@@ -10,13 +10,14 @@ Outputs (all carry generatedAt and per-source lastUpdated):
 from __future__ import annotations
 
 import argparse
+import statistics
 import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from pipeline import lineup, players as pm, scoring
+from pipeline import lineup, players as pm, scoring, waivers
 from pipeline.adapters import espn_rosters
-from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, now_iso, read_json, write_json
+from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, write_json
 from pipeline.ingest import load_config
 
 EASTERN = ZoneInfo("America/New_York")
@@ -162,7 +163,8 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         proj = scoring.project_player(lg, pos, rw["stats"] if rw else None,
                                       er["projection"]["stats"] if er and er["projection"] else None, support) if pos else \
             {"points": None, "espn": None, "rotowire": None, "sources": [], "filled": []}
-        fc = scoring.floor_ceiling(proj["points"], scoring.weekly_points(lg, pos, actuals.get(pid, {})) if pos and pid else [])
+        weekly = scoring.weekly_points(lg, pos, actuals.get(pid, {})) if pos and pid else []
+        fc = scoring.floor_ceiling(proj["points"], weekly)
         # Sleeper injury data is refreshed every run, the ESPN roster file can be days old.
         # Use Sleeper when the player is matched, otherwise fall back to the roster file.
         if sp is not None:
@@ -179,6 +181,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             "id": pid or f"espn:{espn_id}", "name": name, "pos": pos, "team": team,
             "points": _r(proj["points"]), "espn": _r(proj["espn"]), "rotowire": _r(proj["rotowire"]),
             "sources": proj["sources"], "floor": fc["floor"], "ceiling": fc["ceiling"], "sd": fc["sd"], "games": fc["games"],
+            "ppg": round(statistics.fmean(weekly), 1) if weekly else None,   # season points per game, this league's scoring
             "status": status, "flags": flags, "eligible": eligible, "game": game, "locked": locked,
             "injuryNotes": sp.get("injuryNotes") if sp else None,
             "_filled": proj["filled"],
@@ -190,6 +193,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         lc, lg = entry[0], entry[1]
         slots = lg.starters
         rostered: dict = {}   # player id -> (team name, slot)
+        rostered_names: set = set()   # (normalized name, pos). Guards the free agent list against unmatched ESPN ids
         my_players: list = []
 
         if lc["platform"] == "espn":
@@ -201,6 +205,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                                                      "team": ESPN_TEAMS.get(p["proTeamId"])})
                     rec["slot"] = {"D/ST": "DEF"}.get(p["slot"], p["slot"])
                     rostered[rec["id"]] = (t["name"], rec["slot"])
+                    rostered_names.add((normalize_name(rec["name"]), rec["pos"]))
                     if t["teamId"] == cfg["espnTeamId"]:
                         my_players.append(rec)
             team_name = next(t["name"] for t in rosters["teams"] if t["teamId"] == cfg["espnTeamId"])
@@ -248,7 +253,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 return None
             p = by_id[pid]
             return {k: p[k] for k in ("id", "name", "pos", "team", "points", "espn", "rotowire", "floor", "ceiling", "flags",
-                                      "eligible", "game", "injuryNotes", "locked")}
+                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games")}
 
         cur_total = round(sum(pts.get(c, 0.0) for c in cur if c), 1)
         rec_total = round(sum(pts.get(r, 0.0) for r in rec_slots if r), 1)
@@ -276,9 +281,6 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             "roster": sorted(my_players, key=lambda p: (-(p["points"] or 0), p["name"])),
             "scoringNotes": lg.notes,
         }
-        outputs[lc["key"]] = out
-        write_json(out_dir / f"{lc['key']}.json", out)
-
         # ---- full pool for v2: every player either source projects, under this league's scoring
         pool = []
         seen = set()
@@ -298,6 +300,33 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         pool.sort(key=lambda p: -(p["points"] or 0))
         write_json(out_dir / f"pool-{lc['key']}.json", {"generatedAt": generated, "season": season, "week": week,
                                                          "league": lc["key"], "sources": out["sources"], "players": pool})
+
+        # ---- v2 waiver targets: free agents scored by how much they raise your best lineup this week
+        fas = [p for p in pool if not p["rostered"] and (normalize_name(p["name"]), p["pos"]) not in rostered_names]
+        fa_by = {p["id"]: p for p in fas}
+
+        def fa_brief(pid):
+            p = fa_by[pid]
+            return {k: p[k] for k in ("id", "name", "pos", "team", "points", "espn", "rotowire", "floor", "ceiling", "flags",
+                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games")}
+
+        mine_in = [{"id": p["id"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"]} for p in my_players]
+        fa_in = [{"id": p["id"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"], "locked": p["locked"]} for p in fas]
+        rec_set = {r for r in rec_slots if r}
+        positions = list(dict.fromkeys(s for s in slots if s not in scoring.FLEX_ELIGIBLE))
+        dynasty = bool(lc.get("dynasty"))
+        drop = None if dynasty else waivers.drop_candidate(
+            [p for p in my_players if p["id"] not in rec_set and p["slot"] not in ("IR", "TAXI")])
+        out["waivers"] = {
+            "freeAgents": len(fas), "dynasty": dynasty,
+            "targets": [{"player": fa_brief(t["id"]), "gain": t["gain"], "slot": t["slot"],
+                         "replaces": brief(t["replaces"])}
+                        for t in waivers.diversify(waivers.targets(slots, mine_in, fa_in, fixed), {p["id"]: p["pos"] for p in fas})],
+            "byPosition": {pos: [fa_brief(i) for i in ids] for pos, ids in waivers.best_by_position(positions, fa_in).items()},
+            "drop": brief(drop),
+        }
+        outputs[lc["key"]] = out
+        write_json(out_dir / f"{lc['key']}.json", out)
 
     # ---- meta
     sync_age = espn_rosters.age_days(rosters)

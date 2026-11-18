@@ -239,3 +239,45 @@ def test_week_mismatch_flag(tmp_path):
     f.write_text(json.dumps(rosters))
     bad = bd.build(SEASON, WEEK, out_dir=tmp_path / "bad", save_idmap=False, now=LOCK_NOW, rosters_path=f)
     assert bad["meta"]["espnRosters"]["weekMismatch"] is True
+
+
+@needs_raw
+def test_waivers_targets_are_free_agents_with_real_gains(built):
+    out, res = built
+    for k, o in res["leagues"].items():
+        w = o["waivers"]
+        pool = {p["id"]: p for p in read_json(out / f"pool-{k}.json")["players"]}
+        mine = {p["id"] for p in o["roster"]}
+        gains = [t["gain"] for t in w["targets"]]
+        assert gains == sorted(gains, reverse=True) and all(g > 0 for g in gains), k
+        for t in w["targets"]:
+            p = t["player"]
+            assert not pool[p["id"]]["rostered"] and p["id"] not in mine, (k, p["name"])
+            assert p["eligible"] and not p["locked"], (k, p["name"])
+            assert t["replaces"] is None or t["replaces"]["id"] in mine
+        positions = [t["player"]["pos"] for t in w["targets"]]
+        assert all(positions.count(x) <= 2 for x in positions) and len(positions) <= 8
+        for pos, lst in w["byPosition"].items():
+            assert all(p["pos"] == pos and not pool[p["id"]]["rostered"] for p in lst)
+        assert w["freeAgents"] > 0
+
+
+@needs_raw
+def test_dynasty_gets_no_drop_idea_and_redraft_drop_is_a_bench_player(built):
+    lg = built[1]["leagues"]
+    assert lg["chicago-dynasty"]["waivers"]["dynasty"] is True and lg["chicago-dynasty"]["waivers"]["drop"] is None
+    assert "DEF" not in lg["chicago-dynasty"]["waivers"]["byPosition"]     # league starts no DEF
+    for k in ("hwh", "fantasizing"):
+        o = lg[k]
+        drop = o["waivers"]["drop"]
+        starters = {s["recommended"]["id"] for s in o["lineup"]["slots"] if s["recommended"]}
+        slot = next(p["slot"] for p in o["roster"] if p["id"] == drop["id"])
+        assert drop["id"] not in starters and slot not in ("IR", "TAXI"), k
+
+
+@needs_raw
+def test_locked_free_agents_never_targeted(tmp_path):
+    o = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, now=LOCK_NOW)["leagues"]
+    for k, lg in o.items():
+        for t in lg["waivers"]["targets"]:
+            assert t["player"]["team"] not in ("IND", "HOU"), (k, t["player"]["name"])   # played Thursday

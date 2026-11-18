@@ -1,13 +1,13 @@
 {
  "espnRosters": {
-  "ageDays": 0.37,
+  "ageDays": 0.38,
   "stale": false,
   "syncedAt": "2026-11-17T17:21:06.342Z",
   "week": 11,
   "weekMismatch": false
  },
  "gapFills": 26,
- "generatedAt": "2026-11-18T02:14:37Z",
+ "generatedAt": "2026-11-18T02:23:07Z",
  "idmap": {
   "matched": 1040,
   "unmatchedEspnPlayers": 21
