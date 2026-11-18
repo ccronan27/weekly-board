@@ -1,32 +1,32 @@
 {
- "generatedAt": "2026-11-18T11:27:59Z",
+ "generatedAt": "2026-11-18T13:20:52Z",
  "league": "fantasizing",
  "players": [
   {
-   "ceiling": 32.1,
+   "ceiling": 32.4,
    "eligible": true,
    "espn": 22.9,
    "flags": [],
-   "floor": 16.2,
+   "floor": 16.5,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 9,
    "id": "6770",
    "injuryNotes": null,
    "locked": false,
    "name": "Joe Burrow",
-   "points": 24.1,
+   "points": 24.5,
    "pos": "QB",
    "ppg": 25.8,
    "rostered": true,
-   "rotowire": 25.4,
+   "rotowire": 26.1,
    "sd": 7.98,
    "sources": [
     "espn",
@@ -71,30 +71,30 @@
    "teamName": "QWOP"
   },
   {
-   "ceiling": 34.6,
+   "ceiling": 34.8,
    "eligible": true,
    "espn": 25.4,
    "flags": [],
-   "floor": 12.3,
+   "floor": 12.5,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 9,
    "id": "7564",
    "injuryNotes": null,
    "locked": false,
    "name": "Ja'Marr Chase",
-   "points": 23.5,
+   "points": 23.7,
    "pos": "WR",
    "ppg": 21.5,
    "rostered": true,
-   "rotowire": 21.5,
+   "rotowire": 21.9,
    "sd": 11.14,
    "sources": [
     "espn",
@@ -311,30 +311,30 @@
    "teamName": "Emeka Me Bust"
   },
   {
-   "ceiling": 26.6,
+   "ceiling": 26.7,
    "eligible": true,
    "espn": 19.6,
    "flags": [],
-   "floor": 14.0,
+   "floor": 14.1,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 7,
    "id": "11566",
    "injuryNotes": null,
    "locked": false,
    "name": "Jayden Daniels",
-   "points": 20.3,
+   "points": 20.4,
    "pos": "QB",
    "ppg": 19.4,
    "rostered": true,
-   "rotowire": 21.0,
+   "rotowire": 21.2,
    "sd": 6.29,
    "sources": [
     "espn",
@@ -447,6 +447,40 @@
    "teamName": "Drake it 2 the limit"
   },
   {
+   "ceiling": 26.9,
+   "eligible": true,
+   "espn": 19.5,
+   "flags": [],
+   "floor": 12.5,
+   "game": {
+    "home": false,
+    "implied": 26.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "NYG",
+    "oppImplied": 20.2,
+    "spread": -6.0,
+    "total": 46.5
+   },
+   "games": 9,
+   "id": "7523",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Trevor Lawrence",
+   "points": 19.7,
+   "pos": "QB",
+   "ppg": 19.3,
+   "rostered": true,
+   "rotowire": 19.9,
+   "sd": 7.22,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "JAX",
+   "teamName": "C0K3 H3AD"
+  },
+  {
    "ceiling": 30.0,
    "eligible": true,
    "espn": 19.0,
@@ -479,40 +513,6 @@
    "status": null,
    "team": "CHI",
    "teamName": "Riders of Rohan"
-  },
-  {
-   "ceiling": 26.8,
-   "eligible": true,
-   "espn": 19.5,
-   "flags": [],
-   "floor": 12.4,
-   "game": {
-    "home": false,
-    "implied": 26.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "NYG",
-    "oppImplied": 20.2,
-    "spread": -6.0,
-    "total": 46.5
-   },
-   "games": 9,
-   "id": "7523",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Trevor Lawrence",
-   "points": 19.6,
-   "pos": "QB",
-   "ppg": 19.3,
-   "rostered": true,
-   "rotowire": 19.8,
-   "sd": 7.22,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "JAX",
-   "teamName": "C0K3 H3AD"
   },
   {
    "ceiling": 27.6,
@@ -719,6 +719,40 @@
    "teamName": "Emeka Me Bust"
   },
   {
+   "ceiling": 28.2,
+   "eligible": true,
+   "espn": 16.8,
+   "flags": [],
+   "floor": 7.4,
+   "game": {
+    "home": false,
+    "implied": 30.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.0,
+    "spread": -6.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "6801",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Tee Higgins",
+   "points": 17.8,
+   "pos": "WR",
+   "ppg": 19.0,
+   "rostered": true,
+   "rotowire": 18.9,
+   "sd": 10.39,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN",
+   "teamName": "Fantasy Virgin"
+  },
+  {
    "ceiling": 26.1,
    "eligible": true,
    "espn": 17.4,
@@ -751,40 +785,6 @@
    "status": null,
    "team": "CAR",
    "teamName": "C0K3 H3AD"
-  },
-  {
-   "ceiling": 28.0,
-   "eligible": true,
-   "espn": 16.8,
-   "flags": [],
-   "floor": 7.2,
-   "game": {
-    "home": false,
-    "implied": 30.0,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 23.5,
-    "spread": -6.5,
-    "total": 53.5
-   },
-   "games": 9,
-   "id": "6801",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Tee Higgins",
-   "points": 17.6,
-   "pos": "WR",
-   "ppg": 19.0,
-   "rostered": true,
-   "rotowire": 18.5,
-   "sd": 10.39,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CIN",
-   "teamName": "Fantasy Virgin"
   },
   {
    "ceiling": 24.1,
@@ -911,7 +911,7 @@
    "points": 16.7,
    "pos": "QB",
    "ppg": 13.3,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 16.5,
    "sd": 7.4,
    "sources": [
@@ -920,7 +920,7 @@
    ],
    "status": null,
    "team": "TEN",
-   "teamName": null
+   "teamName": "Exempt List"
   },
   {
    "ceiling": 26.3,
@@ -1047,7 +1047,7 @@
    "points": 16.0,
    "pos": "QB",
    "ppg": 14.8,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 16.9,
    "sd": 6.99,
    "sources": [
@@ -1056,7 +1056,7 @@
    ],
    "status": null,
    "team": "PIT",
-   "teamName": null
+   "teamName": "Drake it 2 the limit"
   },
   {
    "ceiling": 27.8,
@@ -1093,40 +1093,6 @@
    "teamName": "C0K3 H3AD"
   },
   {
-   "ceiling": 22.8,
-   "eligible": true,
-   "espn": 14.5,
-   "flags": [],
-   "floor": 8.4,
-   "game": {
-    "home": true,
-    "implied": 20.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "JAX",
-    "oppImplied": 26.2,
-    "spread": 6.0,
-    "total": 46.5
-   },
-   "games": 7,
-   "id": "12481",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Cam Skattebo",
-   "points": 15.6,
-   "pos": "RB",
-   "ppg": 13.9,
-   "rostered": true,
-   "rotowire": 16.7,
-   "sd": 7.19,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NYG",
-   "teamName": "Exempt List"
-  },
-  {
    "ceiling": 20.5,
    "eligible": true,
    "espn": 14.7,
@@ -1158,6 +1124,40 @@
    ],
    "status": null,
    "team": "MIN",
+   "teamName": "Exempt List"
+  },
+  {
+   "ceiling": 22.7,
+   "eligible": true,
+   "espn": 14.5,
+   "flags": [],
+   "floor": 8.3,
+   "game": {
+    "home": true,
+    "implied": 20.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "JAX",
+    "oppImplied": 26.2,
+    "spread": 6.0,
+    "total": 46.5
+   },
+   "games": 7,
+   "id": "12481",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Cam Skattebo",
+   "points": 15.5,
+   "pos": "RB",
+   "ppg": 13.9,
+   "rostered": true,
+   "rotowire": 16.6,
+   "sd": 7.19,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NYG",
    "teamName": "Exempt List"
   },
   {
@@ -1193,6 +1193,40 @@
    "status": null,
    "team": "IND",
    "teamName": "I Aint Brown"
+  },
+  {
+   "ceiling": 22.2,
+   "eligible": true,
+   "espn": 15.6,
+   "flags": [],
+   "floor": 8.6,
+   "game": {
+    "home": false,
+    "implied": 30.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.0,
+    "spread": -6.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "9224",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Chase Brown",
+   "points": 15.4,
+   "pos": "RB",
+   "ppg": 14.4,
+   "rostered": true,
+   "rotowire": 15.2,
+   "sd": 6.79,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN",
+   "teamName": "Honorary Brown"
   },
   {
    "ceiling": 21.5,
@@ -1363,40 +1397,6 @@
    "status": null,
    "team": "DET",
    "teamName": "Slimelord’s Nickolodean"
-  },
-  {
-   "ceiling": 22.0,
-   "eligible": true,
-   "espn": 15.6,
-   "flags": [],
-   "floor": 8.4,
-   "game": {
-    "home": false,
-    "implied": 30.0,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 23.5,
-    "spread": -6.5,
-    "total": 53.5
-   },
-   "games": 9,
-   "id": "9224",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Chase Brown",
-   "points": 15.2,
-   "pos": "RB",
-   "ppg": 14.4,
-   "rostered": true,
-   "rotowire": 14.8,
-   "sd": 6.79,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CIN",
-   "teamName": "Honorary Brown"
   },
   {
    "ceiling": 23.7,
@@ -1641,40 +1641,6 @@
    "teamName": "I Aint Brown"
   },
   {
-   "ceiling": 25.2,
-   "eligible": true,
-   "espn": 13.1,
-   "flags": [],
-   "floor": 3.1,
-   "game": {
-    "home": true,
-    "implied": 20.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "JAX",
-    "oppImplied": 26.2,
-    "spread": 6.0,
-    "total": 46.5
-   },
-   "games": 9,
-   "id": "8131",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Isaiah Likely",
-   "points": 14.2,
-   "pos": "TE",
-   "ppg": 17.4,
-   "rostered": true,
-   "rotowire": 15.2,
-   "sd": 11.07,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NYG",
-   "teamName": "3rd and Likely"
-  },
-  {
    "ceiling": 21.7,
    "eligible": true,
    "espn": 13.9,
@@ -1707,6 +1673,40 @@
    "status": null,
    "team": "NYJ",
    "teamName": "Slimelord’s Nickolodean"
+  },
+  {
+   "ceiling": 25.2,
+   "eligible": true,
+   "espn": 13.1,
+   "flags": [],
+   "floor": 3.0,
+   "game": {
+    "home": true,
+    "implied": 20.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "JAX",
+    "oppImplied": 26.2,
+    "spread": 6.0,
+    "total": 46.5
+   },
+   "games": 9,
+   "id": "8131",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Isaiah Likely",
+   "points": 14.1,
+   "pos": "TE",
+   "ppg": 17.4,
+   "rostered": true,
+   "rotowire": 15.1,
+   "sd": 11.07,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NYG",
+   "teamName": "3rd and Likely"
   },
   {
    "ceiling": 25.1,
@@ -1777,11 +1777,11 @@
    "teamName": "Slimelord’s Nickolodean"
   },
   {
-   "ceiling": 20.5,
+   "ceiling": 20.4,
    "eligible": true,
    "espn": 13.4,
    "flags": [],
-   "floor": 6.6,
+   "floor": 6.5,
    "game": {
     "home": true,
     "implied": 20.2,
@@ -1800,7 +1800,7 @@
    "pos": "QB",
    "ppg": 10.2,
    "rostered": true,
-   "rotowire": 13.7,
+   "rotowire": 13.6,
    "sd": 6.96,
    "sources": [
     "espn",
@@ -1915,6 +1915,40 @@
    "teamName": "I Aint Brown"
   },
   {
+   "ceiling": 18.7,
+   "eligible": true,
+   "espn": 12.9,
+   "flags": [],
+   "floor": 7.5,
+   "game": {
+    "home": true,
+    "implied": 24.0,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "CIN",
+    "oppImplied": 30.5,
+    "spread": 6.5,
+    "total": 54.5
+   },
+   "games": 8,
+   "id": "2449",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Stefon Diggs",
+   "points": 13.1,
+   "pos": "WR",
+   "ppg": 13.8,
+   "rostered": true,
+   "rotowire": 13.3,
+   "sd": 5.58,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "WAS",
+   "teamName": "MikeyBen"
+  },
+  {
    "ceiling": null,
    "eligible": true,
    "espn": 14.4,
@@ -1947,40 +1981,6 @@
    "status": null,
    "team": "LV",
    "teamName": null
-  },
-  {
-   "ceiling": 18.6,
-   "eligible": true,
-   "espn": 12.9,
-   "flags": [],
-   "floor": 7.4,
-   "game": {
-    "home": true,
-    "implied": 23.5,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "CIN",
-    "oppImplied": 30.0,
-    "spread": 6.5,
-    "total": 53.5
-   },
-   "games": 8,
-   "id": "2449",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Stefon Diggs",
-   "points": 13.0,
-   "pos": "WR",
-   "ppg": 13.8,
-   "rostered": true,
-   "rotowire": 13.1,
-   "sd": 5.58,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "WAS",
-   "teamName": "MikeyBen"
   },
   {
    "ceiling": 20.5,
@@ -2952,12 +2952,12 @@
    "floor": 5.6,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 7,
    "id": "8210",
@@ -3138,7 +3138,7 @@
    "pos": "WR",
    "ppg": 9.1,
    "rostered": true,
-   "rotowire": 9.0,
+   "rotowire": 8.9,
    "sd": 5.15,
    "sources": [
     "espn",
@@ -3785,7 +3785,7 @@
    "points": 8.9,
    "pos": "K",
    "ppg": 7.9,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 7.6,
    "sd": 4.37,
    "sources": [
@@ -3794,7 +3794,7 @@
    ],
    "status": null,
    "team": "LAC",
-   "teamName": null
+   "teamName": "Honorary Brown"
   },
   {
    "ceiling": 13.1,
@@ -4071,7 +4071,7 @@
    "teamName": "Slimelord’s Nickolodean"
   },
   {
-   "ceiling": 12.9,
+   "ceiling": 12.8,
    "eligible": true,
    "espn": 8.0,
    "flags": [],
@@ -4094,7 +4094,7 @@
    "pos": "TE",
    "ppg": 8.9,
    "rostered": true,
-   "rotowire": 9.3,
+   "rotowire": 9.2,
    "sd": 4.22,
    "sources": [
     "espn",
@@ -4207,6 +4207,40 @@
    "teamName": null
   },
   {
+   "ceiling": 12.8,
+   "eligible": true,
+   "espn": 9.0,
+   "flags": [],
+   "floor": 4.4,
+   "game": {
+    "home": true,
+    "implied": 24.0,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "CIN",
+    "oppImplied": 30.5,
+    "spread": 6.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "13301",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Antonio Williams",
+   "points": 8.6,
+   "pos": "WR",
+   "ppg": 8.1,
+   "rostered": true,
+   "rotowire": 8.2,
+   "sd": 4.17,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "WAS",
+   "teamName": "Exempt List"
+  },
+  {
    "ceiling": 15.0,
    "eligible": true,
    "espn": 6.9,
@@ -4248,12 +4282,12 @@
    "floor": 3.7,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 9,
    "id": "7839",
@@ -4264,7 +4298,7 @@
    "pos": "K",
    "ppg": 9.3,
    "rostered": true,
-   "rotowire": 8.7,
+   "rotowire": 8.8,
    "sd": 4.8,
    "sources": [
     "espn",
@@ -4273,40 +4307,6 @@
    "status": null,
    "team": "CIN",
    "teamName": "Chud LLC"
-  },
-  {
-   "ceiling": 12.7,
-   "eligible": true,
-   "espn": 9.0,
-   "flags": [],
-   "floor": 4.4,
-   "game": {
-    "home": true,
-    "implied": 23.5,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "CIN",
-    "oppImplied": 30.0,
-    "spread": 6.5,
-    "total": 53.5
-   },
-   "games": 9,
-   "id": "13301",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Antonio Williams",
-   "points": 8.5,
-   "pos": "WR",
-   "ppg": 8.1,
-   "rostered": true,
-   "rotowire": 8.1,
-   "sd": 4.17,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "WAS",
-   "teamName": "Exempt List"
   },
   {
    "ceiling": 15.1,
@@ -4347,7 +4347,7 @@
    "eligible": true,
    "espn": 9.0,
    "flags": [],
-   "floor": 3.0,
+   "floor": 2.9,
    "game": {
     "home": true,
     "implied": 20.2,
@@ -4513,6 +4513,74 @@
    "teamName": "I Aint Brown"
   },
   {
+   "ceiling": 11.2,
+   "eligible": true,
+   "espn": 8.6,
+   "flags": [],
+   "floor": 5.4,
+   "game": {
+    "home": true,
+    "implied": 24.0,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "CIN",
+    "oppImplied": 30.5,
+    "spread": 6.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "13968",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Drew Stevens",
+   "points": 8.3,
+   "pos": "K",
+   "ppg": 8.4,
+   "rostered": false,
+   "rotowire": 7.9,
+   "sd": 2.92,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "WAS",
+   "teamName": null
+  },
+  {
+   "ceiling": 14.6,
+   "eligible": true,
+   "espn": 7.4,
+   "flags": [],
+   "floor": 2.0,
+   "game": {
+    "home": false,
+    "implied": 30.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.0,
+    "spread": -6.5,
+    "total": 54.5
+   },
+   "games": 8,
+   "id": "4993",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Mike Gesicki",
+   "points": 8.3,
+   "pos": "TE",
+   "ppg": 10.3,
+   "rostered": true,
+   "rotowire": 9.2,
+   "sd": 6.29,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN",
+   "teamName": "Slimelord’s Nickolodean"
+  },
+  {
    "ceiling": 13.1,
    "eligible": true,
    "espn": 9.5,
@@ -4615,19 +4683,19 @@
    "teamName": "MikeyBen"
   },
   {
-   "ceiling": 13.0,
+   "ceiling": 13.1,
    "eligible": true,
    "espn": 7.7,
    "flags": [],
    "floor": 3.3,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 8,
    "id": "8136",
@@ -4638,7 +4706,7 @@
    "pos": "RB",
    "ppg": 9.5,
    "rostered": true,
-   "rotowire": 8.6,
+   "rotowire": 8.7,
    "sd": 4.89,
    "sources": [
     "espn",
@@ -4647,74 +4715,6 @@
    "status": null,
    "team": "WAS",
    "teamName": "Honorary Brown"
-  },
-  {
-   "ceiling": 11.2,
-   "eligible": true,
-   "espn": 8.6,
-   "flags": [],
-   "floor": 5.3,
-   "game": {
-    "home": true,
-    "implied": 23.5,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "CIN",
-    "oppImplied": 30.0,
-    "spread": 6.5,
-    "total": 53.5
-   },
-   "games": 9,
-   "id": "13968",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Drew Stevens",
-   "points": 8.2,
-   "pos": "K",
-   "ppg": 8.4,
-   "rostered": false,
-   "rotowire": 7.8,
-   "sd": 2.92,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "WAS",
-   "teamName": null
-  },
-  {
-   "ceiling": 14.5,
-   "eligible": true,
-   "espn": 7.4,
-   "flags": [],
-   "floor": 1.9,
-   "game": {
-    "home": false,
-    "implied": 30.0,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 23.5,
-    "spread": -6.5,
-    "total": 53.5
-   },
-   "games": 8,
-   "id": "4993",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Mike Gesicki",
-   "points": 8.2,
-   "pos": "TE",
-   "ppg": 10.3,
-   "rostered": true,
-   "rotowire": 9.0,
-   "sd": 6.29,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CIN",
-   "teamName": "Slimelord’s Nickolodean"
   },
   {
    "ceiling": 15.1,
@@ -4977,7 +4977,7 @@
    "points": 7.8,
    "pos": "RB",
    "ppg": 7.0,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 7.2,
    "sd": 4.56,
    "sources": [
@@ -4986,7 +4986,7 @@
    ],
    "status": null,
    "team": "BAL",
-   "teamName": null
+   "teamName": "2024 Purdue Football"
   },
   {
    "ceiling": 9.2,
@@ -5011,7 +5011,7 @@
    "points": 7.7,
    "pos": "WR",
    "ppg": 7.2,
-   "rostered": true,
+   "rostered": false,
    "rotowire": 8.4,
    "sd": 1.54,
    "sources": [
@@ -5020,7 +5020,7 @@
    ],
    "status": null,
    "team": "TB",
-   "teamName": "Drake it 2 the limit"
+   "teamName": null
   },
   {
    "ceiling": 17.6,
@@ -5045,7 +5045,7 @@
    "points": 7.7,
    "pos": "RB",
    "ppg": 9.2,
-   "rostered": true,
+   "rostered": false,
    "rotowire": 8.2,
    "sd": 9.98,
    "sources": [
@@ -5054,7 +5054,7 @@
    ],
    "status": null,
    "team": "ARI",
-   "teamName": "Slimelord’s Nickolodean"
+   "teamName": null
   },
   {
    "ceiling": 11.3,
@@ -5098,12 +5098,12 @@
    "floor": 4.5,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 6,
    "id": "8135",
@@ -5114,7 +5114,7 @@
    "pos": "WR",
    "ppg": 8.7,
    "rostered": false,
-   "rotowire": 6.8,
+   "rotowire": 6.9,
    "sd": 3.21,
    "sources": [
     "espn",
@@ -5122,6 +5122,40 @@
    ],
    "status": null,
    "team": "WAS",
+   "teamName": null
+  },
+  {
+   "ceiling": 13.0,
+   "eligible": true,
+   "espn": 7.7,
+   "flags": [],
+   "floor": 2.4,
+   "game": {
+    "home": false,
+    "implied": 30.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.0,
+    "spread": -6.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "4147",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Samaje Perine",
+   "points": 7.7,
+   "pos": "RB",
+   "ppg": 6.5,
+   "rostered": false,
+   "rotowire": 7.6,
+   "sd": 5.29,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN",
    "teamName": null
   },
   {
@@ -5193,37 +5227,39 @@
    "teamName": "Slimelord’s Nickolodean"
   },
   {
-   "ceiling": 12.9,
-   "eligible": true,
-   "espn": 7.7,
-   "flags": [],
-   "floor": 2.3,
+   "ceiling": 11.7,
+   "eligible": false,
+   "espn": 7.5,
+   "flags": [
+    "IR"
+   ],
+   "floor": 3.4,
    "game": {
-    "home": false,
-    "implied": 30.0,
+    "home": true,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 23.5,
-    "spread": -6.5,
-    "total": 53.5
+    "opp": "CIN",
+    "oppImplied": 30.5,
+    "spread": 6.5,
+    "total": 54.5
    },
-   "games": 9,
-   "id": "4147",
+   "games": 5,
+   "id": "12533",
    "injuryNotes": null,
    "locked": false,
-   "name": "Samaje Perine",
+   "name": "Jacory Croskey-Merritt",
    "points": 7.6,
    "pos": "RB",
-   "ppg": 6.5,
+   "ppg": 9.0,
    "rostered": false,
-   "rotowire": 7.5,
-   "sd": 5.29,
+   "rotowire": 7.6,
+   "sd": 4.12,
    "sources": [
     "espn",
     "rotowire"
    ],
-   "status": null,
-   "team": "CIN",
+   "status": "IR",
+   "team": "WAS",
    "teamName": null
   },
   {
@@ -5394,42 +5430,6 @@
    ],
    "status": null,
    "team": "BAL",
-   "teamName": null
-  },
-  {
-   "ceiling": 11.7,
-   "eligible": false,
-   "espn": 7.5,
-   "flags": [
-    "IR"
-   ],
-   "floor": 3.4,
-   "game": {
-    "home": true,
-    "implied": 23.5,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "CIN",
-    "oppImplied": 30.0,
-    "spread": 6.5,
-    "total": 53.5
-   },
-   "games": 5,
-   "id": "12533",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Jacory Croskey-Merritt",
-   "points": 7.5,
-   "pos": "RB",
-   "ppg": 9.0,
-   "rostered": false,
-   "rotowire": 7.6,
-   "sd": 4.12,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": "IR",
-   "team": "WAS",
    "teamName": null
   },
   {
@@ -5694,7 +5694,7 @@
    "points": 7.0,
    "pos": "WR",
    "ppg": 8.9,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 5.5,
    "sd": 4.68,
    "sources": [
@@ -5703,7 +5703,7 @@
    ],
    "status": "QUESTIONABLE",
    "team": "PHI",
-   "teamName": null
+   "teamName": "Slimelord’s Nickolodean"
   },
   {
    "ceiling": 10.2,
@@ -6373,7 +6373,7 @@
    "points": 6.2,
    "pos": "DEF",
    "ppg": 7.0,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 6.5,
    "sd": 5.43,
    "sources": [
@@ -6382,7 +6382,7 @@
    ],
    "status": null,
    "team": "CHI",
-   "teamName": null
+   "teamName": "Emeka Me Bust"
   },
   {
    "ceiling": 10.1,
@@ -6578,7 +6578,7 @@
    "pos": "RB",
    "ppg": 6.1,
    "rostered": false,
-   "rotowire": 5.7,
+   "rotowire": 5.8,
    "sd": 4.75,
    "sources": [
     "espn",
@@ -6781,7 +6781,7 @@
    "points": 5.6,
    "pos": "WR",
    "ppg": 8.2,
-   "rostered": true,
+   "rostered": false,
    "rotowire": 5.5,
    "sd": 5.65,
    "sources": [
@@ -6790,7 +6790,7 @@
    ],
    "status": null,
    "team": "PHI",
-   "teamName": "Emeka Me Bust"
+   "teamName": null
   },
   {
    "ceiling": 10.7,
@@ -7243,6 +7243,40 @@
    "teamName": "Slimelord’s Nickolodean"
   },
   {
+   "ceiling": 10.8,
+   "eligible": true,
+   "espn": 5.0,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 30.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.0,
+    "spread": -6.5,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "CIN",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Cincinnati Bengals",
+   "points": 5.0,
+   "pos": "DEF",
+   "ppg": 6.4,
+   "rostered": true,
+   "rotowire": 4.9,
+   "sd": 5.85,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN",
+   "teamName": "C0K3 H3AD"
+  },
+  {
    "ceiling": 7.1,
    "eligible": true,
    "espn": 5.8,
@@ -7311,40 +7345,6 @@
    "teamName": "Honorary Brown"
   },
   {
-   "ceiling": 10.8,
-   "eligible": true,
-   "espn": 5.0,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": false,
-    "implied": 30.0,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 23.5,
-    "spread": -6.5,
-    "total": 53.5
-   },
-   "games": 9,
-   "id": "CIN",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Cincinnati Bengals",
-   "points": 4.9,
-   "pos": "DEF",
-   "ppg": 6.4,
-   "rostered": true,
-   "rotowire": 4.8,
-   "sd": 5.85,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CIN",
-   "teamName": "C0K3 H3AD"
-  },
-  {
    "ceiling": 12.3,
    "eligible": true,
    "espn": 4.0,
@@ -7410,6 +7410,42 @@
    ],
    "status": null,
    "team": "JAX",
+   "teamName": null
+  },
+  {
+   "ceiling": null,
+   "eligible": false,
+   "espn": 4.1,
+   "flags": [
+    "IR"
+   ],
+   "floor": null,
+   "game": {
+    "home": false,
+    "implied": 30.5,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.0,
+    "spread": -6.5,
+    "total": 54.5
+   },
+   "games": 2,
+   "id": "10226",
+   "injuryNotes": "Surgery",
+   "locked": false,
+   "name": "Andrei Iosivas",
+   "points": 4.8,
+   "pos": "WR",
+   "ppg": 2.5,
+   "rostered": false,
+   "rotowire": 5.4,
+   "sd": null,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": "IR",
+   "team": "CIN",
    "teamName": null
   },
   {
@@ -7512,42 +7548,6 @@
    ],
    "status": null,
    "team": "LV",
-   "teamName": null
-  },
-  {
-   "ceiling": null,
-   "eligible": false,
-   "espn": 4.1,
-   "flags": [
-    "IR"
-   ],
-   "floor": null,
-   "game": {
-    "home": false,
-    "implied": 30.0,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 23.5,
-    "spread": -6.5,
-    "total": 53.5
-   },
-   "games": 2,
-   "id": "10226",
-   "injuryNotes": "Surgery",
-   "locked": false,
-   "name": "Andrei Iosivas",
-   "points": 4.7,
-   "pos": "WR",
-   "ppg": 2.5,
-   "rostered": false,
-   "rotowire": 5.3,
-   "sd": null,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": "IR",
-   "team": "CIN",
    "teamName": null
   },
   {
@@ -7798,12 +7798,12 @@
    "floor": 2.0,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 6,
    "id": "4663",
@@ -7814,7 +7814,7 @@
    "pos": "RB",
    "ppg": 5.0,
    "rostered": false,
-   "rotowire": 4.6,
+   "rotowire": 4.7,
    "sd": 2.46,
    "sources": [
     "espn",
@@ -8101,19 +8101,19 @@
    "teamName": null
   },
   {
-   "ceiling": 8.6,
+   "ceiling": 8.7,
    "eligible": true,
    "espn": 3.4,
    "flags": [],
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 5,
    "id": "6001",
@@ -8203,7 +8203,7 @@
    "teamName": null
   },
   {
-   "ceiling": 9.5,
+   "ceiling": 9.4,
    "eligible": true,
    "espn": 3.7,
    "flags": [],
@@ -8719,12 +8719,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 1,
    "id": "6853",
@@ -8922,12 +8922,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 7,
    "id": "13264",
@@ -9125,12 +9125,12 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 9,
    "id": "WAS",
@@ -10204,15 +10204,15 @@
    "eligible": true,
    "espn": 0.5,
    "flags": [],
-   "floor": 0.3,
+   "floor": 0.4,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 4,
    "id": "7716",
@@ -10343,12 +10343,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 2,
    "id": "11596",
@@ -10377,12 +10377,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 3,
    "id": "13282",
@@ -10784,12 +10784,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 1,
    "id": "13418",
@@ -11024,12 +11024,12 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 4,
    "id": "11942",
@@ -11227,12 +11227,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 0,
    "id": "12062",
@@ -11595,12 +11595,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 23.5,
+    "implied": 24.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 1,
    "id": "11650",
@@ -12569,12 +12569,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 2,
    "id": "12543",
@@ -12585,7 +12585,7 @@
    "pos": "RB",
    "ppg": 0.9,
    "rostered": false,
-   "rotowire": 0.6,
+   "rotowire": 0.7,
    "sd": null,
    "sources": [
     "espn",
@@ -12603,12 +12603,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 3,
    "id": "11068",
@@ -13908,12 +13908,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 2,
    "id": "13477",
@@ -14070,25 +14070,25 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:21:06.342Z",
+   "lastUpdated": "2026-11-18T13:18:41.319Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   }

@@ -1,52 +1,52 @@
 {
- "generatedAt": "2026-11-18T11:27:59Z",
+ "generatedAt": "2026-11-18T13:20:52Z",
  "season": 2026,
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-17T17:21:06.342Z",
+   "lastUpdated": "2026-11-18T13:18:41.319Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "nflverse_schedule": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:59Z",
+   "lastUpdated": "2026-11-18T13:20:52Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:56Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   },
   "sleeper_stats_w10": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   }

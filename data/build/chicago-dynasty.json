@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T11:27:59Z",
+ "generatedAt": "2026-11-18T13:20:52Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -8,7 +8,7 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 90.5,
+  "currentPoints": 90.6,
   "gain": 10.7,
   "moves": [
    {
@@ -45,7 +45,7 @@
     "slot": "FLEX"
    }
   ],
-  "recommendedPoints": 101.2,
+  "recommendedPoints": 101.3,
   "slots": [
    {
     "changed": false,
@@ -330,55 +330,55 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 14.5,
+     "ceiling": 14.6,
      "eligible": true,
      "espn": 7.4,
      "flags": [],
-     "floor": 1.9,
+     "floor": 2.0,
      "game": {
       "home": false,
-      "implied": 30.0,
+      "implied": 30.5,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "WAS",
-      "oppImplied": 23.5,
+      "oppImplied": 24.0,
       "spread": -6.5,
-      "total": 53.5
+      "total": 54.5
      },
      "games": 8,
      "id": "4993",
      "injuryNotes": null,
      "locked": false,
      "name": "Mike Gesicki",
-     "points": 8.2,
+     "points": 8.3,
      "pos": "TE",
      "ppg": 10.3,
-     "rotowire": 9.0,
+     "rotowire": 9.2,
      "team": "CIN"
     },
     "recommended": {
-     "ceiling": 14.5,
+     "ceiling": 14.6,
      "eligible": true,
      "espn": 7.4,
      "flags": [],
-     "floor": 1.9,
+     "floor": 2.0,
      "game": {
       "home": false,
-      "implied": 30.0,
+      "implied": 30.5,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "WAS",
-      "oppImplied": 23.5,
+      "oppImplied": 24.0,
       "spread": -6.5,
-      "total": 53.5
+      "total": 54.5
      },
      "games": 8,
      "id": "4993",
      "injuryNotes": null,
      "locked": false,
      "name": "Mike Gesicki",
-     "points": 8.2,
+     "points": 8.3,
      "pos": "TE",
      "ppg": 10.3,
-     "rotowire": 9.0,
+     "rotowire": 9.2,
      "team": "CIN"
     },
     "slot": "TE"
@@ -822,29 +822,29 @@
    "team": "CAR"
   },
   {
-   "ceiling": 14.5,
+   "ceiling": 14.6,
    "eligible": true,
    "espn": 7.4,
    "flags": [],
-   "floor": 1.9,
+   "floor": 2.0,
    "game": {
     "home": false,
-    "implied": 30.0,
+    "implied": 30.5,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.5,
+    "oppImplied": 24.0,
     "spread": -6.5,
-    "total": 53.5
+    "total": 54.5
    },
    "games": 8,
    "id": "4993",
    "injuryNotes": null,
    "locked": false,
    "name": "Mike Gesicki",
-   "points": 8.2,
+   "points": 8.3,
    "pos": "TE",
    "ppg": 10.3,
-   "rotowire": 9.0,
+   "rotowire": 9.2,
    "sd": 6.29,
    "slot": "START",
    "sources": [
@@ -1008,7 +1008,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Josh Cameron",
-   "points": 3.2,
+   "points": 3.1,
    "pos": "WR",
    "ppg": 7.2,
    "rotowire": 3.3,
@@ -1276,31 +1276,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:56Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   }
@@ -1310,32 +1310,32 @@
   "divisions": 0,
   "myGames": [
    {
-    "myMean": 101.2,
+    "myMean": 101.3,
     "opp": "All Gas No Brakes",
-    "oppMean": 127.6,
+    "oppMean": 127.7,
     "week": 11,
     "winPct": 22.5
    },
    {
-    "myMean": 115.9,
+    "myMean": 116.0,
     "opp": "Brandon Aubrey Supremacy",
     "oppMean": 141.1,
     "week": 12,
-    "winPct": 23.5
+    "winPct": 23.6
    },
    {
-    "myMean": 98.5,
+    "myMean": 98.6,
     "opp": "Dak FC",
-    "oppMean": 109.5,
+    "oppMean": 109.7,
     "week": 13,
-    "winPct": 37.6
+    "winPct": 37.5
    },
    {
-    "myMean": 115.9,
+    "myMean": 116.0,
     "opp": "Ladd’s McConcubines",
     "oppMean": 129.7,
     "week": 14,
-    "winPct": 34.6
+    "winPct": 34.7
    }
   ],
   "playoffTeams": 6,
@@ -1359,12 +1359,12 @@
    },
    {
     "avgSeed": 2.7,
-    "byePct": 52.8,
+    "byePct": 52.7,
     "division": null,
     "isMine": false,
     "losses": 3,
     "name": "Brandon Aubrey Supremacy",
-    "playoffPct": 99.7,
+    "playoffPct": 99.6,
     "pointsAgainst": 1126.48,
     "pointsFor": 1297.94,
     "projWins": 9.5,
@@ -1379,7 +1379,7 @@
     "isMine": false,
     "losses": 3,
     "name": "Team 5",
-    "playoffPct": 91.6,
+    "playoffPct": 91.5,
     "pointsAgainst": 1076.4,
     "pointsFor": 1166.9,
     "projWins": 8.8,
@@ -1389,7 +1389,7 @@
    },
    {
     "avgSeed": 3.6,
-    "byePct": 28.1,
+    "byePct": 28.3,
     "division": null,
     "isMine": false,
     "losses": 4,
@@ -1433,13 +1433,13 @@
     "wins": 5
    },
    {
-    "avgSeed": 5.4,
+    "avgSeed": 5.5,
     "byePct": 0.5,
     "division": null,
     "isMine": false,
     "losses": 5,
     "name": "Ladd’s McConcubines",
-    "playoffPct": 77.8,
+    "playoffPct": 77.7,
     "pointsAgainst": 1211.12,
     "pointsFor": 1168.62,
     "projWins": 7.8,

@@ -151,12 +151,12 @@
    "gametime": "20:15",
    "home": "WAS",
    "homeSpread": -6.5,
-   "impliedAway": 30.0,
-   "impliedHome": 23.5,
-   "total": 53.5,
+   "impliedAway": 30.5,
+   "impliedHome": 24.0,
+   "total": 54.5,
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-18T11:27:58Z",
+ "fetchedAt": "2026-11-18T13:20:51Z",
  "source": "nflverse_lines"
 }

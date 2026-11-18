@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T11:27:59Z",
+ "generatedAt": "2026-11-18T13:20:52Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -8,7 +8,7 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 113.0,
+  "currentPoints": 112.9,
   "gain": 12.1,
   "moves": [
    {
@@ -101,7 +101,7 @@
     "slot": "DEF"
    }
   ],
-  "recommendedPoints": 125.1,
+  "recommendedPoints": 125.0,
   "slots": [
    {
     "changed": false,
@@ -390,7 +390,7 @@
      "eligible": true,
      "espn": 13.1,
      "flags": [],
-     "floor": 3.1,
+     "floor": 3.0,
      "game": {
       "home": true,
       "implied": 20.2,
@@ -405,10 +405,10 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Isaiah Likely",
-     "points": 14.2,
+     "points": 14.1,
      "pos": "TE",
      "ppg": 17.4,
-     "rotowire": 15.2,
+     "rotowire": 15.1,
      "team": "NYG"
     },
     "recommended": {
@@ -416,7 +416,7 @@
      "eligible": true,
      "espn": 13.1,
      "flags": [],
-     "floor": 3.1,
+     "floor": 3.0,
      "game": {
       "home": true,
       "implied": 20.2,
@@ -431,10 +431,10 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Isaiah Likely",
-     "points": 14.2,
+     "points": 14.1,
      "pos": "TE",
      "ppg": 17.4,
-     "rotowire": 15.2,
+     "rotowire": 15.1,
      "team": "NYG"
     },
     "slot": "TE"
@@ -748,7 +748,7 @@
    "eligible": true,
    "espn": 13.1,
    "flags": [],
-   "floor": 3.1,
+   "floor": 3.0,
    "game": {
     "home": true,
     "implied": 20.2,
@@ -763,10 +763,10 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Isaiah Likely",
-   "points": 14.2,
+   "points": 14.1,
    "pos": "TE",
    "ppg": 17.4,
-   "rotowire": 15.2,
+   "rotowire": 15.1,
    "sd": 11.07,
    "slot": "START",
    "sources": [
@@ -1164,31 +1164,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:58Z",
+   "lastUpdated": "2026-11-18T13:20:51Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:56Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T11:27:57Z",
+   "lastUpdated": "2026-11-18T13:20:50Z",
    "ok": true,
    "stale": false
   }
@@ -1198,32 +1198,32 @@
   "divisions": 2,
   "myGames": [
    {
-    "myMean": 125.1,
+    "myMean": 125.0,
     "opp": "Olav é Trois",
-    "oppMean": 146.5,
+    "oppMean": 146.9,
     "week": 11,
-    "winPct": 27.5
+    "winPct": 27.0
    },
    {
-    "myMean": 134.2,
+    "myMean": 134.1,
     "opp": "Adam4Arbutus",
     "oppMean": 112.6,
     "week": 12,
-    "winPct": 72.7
+    "winPct": 72.6
    },
    {
-    "myMean": 95.2,
+    "myMean": 95.1,
     "opp": "Scatt Pack",
-    "oppMean": 155.3,
+    "oppMean": 155.2,
     "week": 13,
     "winPct": 4.6
    },
    {
-    "myMean": 129.8,
+    "myMean": 129.7,
     "opp": "Green room special ",
-    "oppMean": 131.0,
+    "oppMean": 131.2,
     "week": 14,
-    "winPct": 48.7
+    "winPct": 48.3
    }
   ],
   "playoffTeams": 6,
@@ -1232,7 +1232,7 @@
   "teams": [
    {
     "avgSeed": 2.6,
-    "byePct": 33.1,
+    "byePct": 32.6,
     "division": 1,
     "isMine": false,
     "losses": 1,
@@ -1247,12 +1247,12 @@
    },
    {
     "avgSeed": 2.4,
-    "byePct": 89.0,
+    "byePct": 88.9,
     "division": 2,
     "isMine": false,
     "losses": 4,
     "name": "Scatt Pack",
-    "playoffPct": 98.2,
+    "playoffPct": 98.1,
     "pointsAgainst": 1263.52,
     "pointsFor": 1436.74,
     "projWins": 8.8,
@@ -1262,7 +1262,7 @@
    },
    {
     "avgSeed": 1.9,
-    "byePct": 59.5,
+    "byePct": 60.0,
     "division": 1,
     "isMine": false,
     "losses": 2,
@@ -1292,12 +1292,12 @@
    },
    {
     "avgSeed": 6.2,
-    "byePct": 5.9,
+    "byePct": 6.0,
     "division": 2,
     "isMine": true,
     "losses": 4,
     "name": "Likely Suckin",
-    "playoffPct": 56.8,
+    "playoffPct": 56.4,
     "pointsAgainst": 1148.86,
     "pointsFor": 1293.68,
     "projWins": 7.5,
@@ -1312,7 +1312,7 @@
     "isMine": false,
     "losses": 4,
     "name": "Kirkboi Charlies",
-    "playoffPct": 59.5,
+    "playoffPct": 59.7,
     "pointsAgainst": 1174.02,
     "pointsFor": 1166.02,
     "projWins": 7.9,
@@ -1327,25 +1327,25 @@
     "isMine": false,
     "losses": 5,
     "name": "The Zoo",
-    "playoffPct": 38.0,
+    "playoffPct": 37.7,
     "pointsAgainst": 1244.26,
     "pointsFor": 1317.7,
-    "projWins": 6.9,
+    "projWins": 6.8,
     "seed": 7,
     "ties": 0,
     "wins": 5
    },
    {
     "avgSeed": 6.5,
-    "byePct": 4.9,
+    "byePct": 5.0,
     "division": 2,
     "isMine": false,
     "losses": 5,
     "name": "Green room special ",
-    "playoffPct": 46.0,
+    "playoffPct": 46.6,
     "pointsAgainst": 1130.18,
     "pointsFor": 1247.18,
-    "projWins": 7.4,
+    "projWins": 7.5,
     "seed": 8,
     "ties": 0,
     "wins": 5
@@ -1718,30 +1718,30 @@
      "team": "BAL"
     },
     {
-     "ceiling": 11.3,
+     "ceiling": 13.0,
      "eligible": true,
-     "espn": 7.9,
+     "espn": 7.7,
      "flags": [],
-     "floor": 4.0,
+     "floor": 2.4,
      "game": {
       "home": false,
-      "implied": 23.0,
-      "kickoff": "2026-11-22T18:00Z",
-      "opp": "DAL",
-      "oppImplied": 31.5,
-      "spread": 8.5,
+      "implied": 30.5,
+      "kickoff": "2026-11-24T01:15Z",
+      "opp": "WAS",
+      "oppImplied": 24.0,
+      "spread": -6.5,
       "total": 54.5
      },
-     "games": 7,
-     "id": "9508",
+     "games": 9,
+     "id": "4147",
      "injuryNotes": null,
      "locked": false,
-     "name": "Tyjae Spears",
+     "name": "Samaje Perine",
      "points": 7.7,
      "pos": "RB",
-     "ppg": 4.4,
-     "rotowire": 7.5,
-     "team": "TEN"
+     "ppg": 6.5,
+     "rotowire": 7.6,
+     "team": "CIN"
     }
    ],
    "TE": [
@@ -1753,12 +1753,12 @@
      "floor": 5.6,
      "game": {
       "home": true,
-      "implied": 23.5,
+      "implied": 24.0,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "CIN",
-      "oppImplied": 30.0,
+      "oppImplied": 30.5,
       "spread": 6.5,
-      "total": 53.5
+      "total": 54.5
      },
      "games": 7,
      "id": "8210",
@@ -2331,53 +2331,53 @@
     {
      "gain": 7.7,
      "player": {
-      "ceiling": 11.3,
+      "ceiling": 13.0,
       "eligible": true,
-      "espn": 7.9,
+      "espn": 7.7,
       "flags": [],
-      "floor": 4.0,
+      "floor": 2.4,
       "game": {
        "home": false,
-       "implied": 23.0,
-       "kickoff": "2026-11-22T18:00Z",
-       "opp": "DAL",
-       "oppImplied": 31.5,
-       "spread": 8.5,
+       "implied": 30.5,
+       "kickoff": "2026-11-24T01:15Z",
+       "opp": "WAS",
+       "oppImplied": 24.0,
+       "spread": -6.5,
        "total": 54.5
       },
-      "games": 7,
-      "id": "9508",
+      "games": 9,
+      "id": "4147",
       "injuryNotes": null,
       "locked": false,
-      "name": "Tyjae Spears",
+      "name": "Samaje Perine",
       "points": 7.7,
       "pos": "RB",
-      "ppg": 4.4,
-      "rotowire": 7.5,
-      "team": "TEN"
+      "ppg": 6.5,
+      "rotowire": 7.6,
+      "team": "CIN"
      },
      "rate": 7.7,
      "rateFrom": "projection",
      "weeks": [
       {
        "gain": 0.0,
-       "home": false,
-       "opp": "JAX",
-       "rank": 27,
+       "home": true,
+       "opp": "NO",
+       "rank": 2,
        "week": 12
       },
       {
        "gain": 7.7,
-       "home": true,
-       "opp": "WAS",
-       "rank": 19,
+       "home": false,
+       "opp": "CLE",
+       "rank": 20,
        "week": 13
       },
       {
        "gain": 0.0,
-       "home": false,
-       "opp": "DET",
-       "rank": 31,
+       "home": true,
+       "opp": "KC",
+       "rank": 26,
        "week": 14
       }
      ]
@@ -2785,12 +2785,12 @@
      "floor": 5.6,
      "game": {
       "home": true,
-      "implied": 23.5,
+      "implied": 24.0,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "CIN",
-      "oppImplied": 30.0,
+      "oppImplied": 30.5,
       "spread": 6.5,
-      "total": 53.5
+      "total": 54.5
      },
      "games": 7,
      "id": "8210",
