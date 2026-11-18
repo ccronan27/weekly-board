@@ -7,7 +7,7 @@
   "weekMismatch": false
  },
  "gapFills": 26,
- "generatedAt": "2026-11-18T02:26:26Z",
+ "generatedAt": "2026-11-18T02:29:25Z",
  "idmap": {
   "matched": 1040,
   "unmatchedEspnPlayers": 21
@@ -37,7 +37,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:26:25Z",
+   "lastUpdated": "2026-11-18T02:29:25Z",
    "ok": true,
    "stale": false
   },
@@ -49,31 +49,31 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:26:26Z",
+   "lastUpdated": "2026-11-18T02:29:25Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:26:24Z",
+   "lastUpdated": "2026-11-18T02:29:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:26:24Z",
+   "lastUpdated": "2026-11-18T02:29:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:26:24Z",
+   "lastUpdated": "2026-11-18T02:29:23Z",
    "ok": true,
    "stale": false
   },
   "sleeper_stats_w10": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:26:24Z",
+   "lastUpdated": "2026-11-18T02:29:23Z",
    "ok": true,
    "stale": false
   }
