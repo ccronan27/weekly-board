@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T02:29:25Z",
+ "generatedAt": "2026-11-18T02:33:35Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -48,7 +48,7 @@
      "team": "LAC"
     },
     "out": {
-     "ceiling": 16.2,
+     "ceiling": 16.1,
      "eligible": false,
      "espn": 10.0,
      "flags": [
@@ -72,7 +72,7 @@
      "points": 10.7,
      "pos": "WR",
      "ppg": 12.6,
-     "rotowire": 11.5,
+     "rotowire": 11.3,
      "team": "SF"
     },
     "slot": "WR"
@@ -307,7 +307,7 @@
    {
     "changed": true,
     "current": {
-     "ceiling": 16.2,
+     "ceiling": 16.1,
      "eligible": false,
      "espn": 10.0,
      "flags": [
@@ -331,7 +331,7 @@
      "points": 10.7,
      "pos": "WR",
      "ppg": 12.6,
-     "rotowire": 11.5,
+     "rotowire": 11.3,
      "team": "SF"
     },
     "recommended": {
@@ -779,7 +779,7 @@
    "team": "BAL"
   },
   {
-   "ceiling": 16.2,
+   "ceiling": 16.1,
    "eligible": false,
    "espn": 10.0,
    "flags": [
@@ -803,7 +803,7 @@
    "points": 10.7,
    "pos": "WR",
    "ppg": 12.6,
-   "rotowire": 11.5,
+   "rotowire": 11.3,
    "sd": 5.48,
    "slot": "START",
    "sources": [
@@ -1343,31 +1343,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:25Z",
+   "lastUpdated": "2026-11-18T02:33:35Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:25Z",
+   "lastUpdated": "2026-11-18T02:33:35Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:23Z",
+   "lastUpdated": "2026-11-18T02:33:33Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:23Z",
+   "lastUpdated": "2026-11-18T02:33:34Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:23Z",
+   "lastUpdated": "2026-11-18T02:33:34Z",
    "ok": true,
    "stale": false
   }

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T02:29:25Z",
+ "generatedAt": "2026-11-18T02:33:35Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -132,7 +132,7 @@
      "eligible": true,
      "espn": 12.8,
      "flags": [],
-     "floor": 10.6,
+     "floor": 10.5,
      "game": {
       "home": true,
       "implied": 29.0,
@@ -158,7 +158,7 @@
      "eligible": true,
      "espn": 12.8,
      "flags": [],
-     "floor": 10.6,
+     "floor": 10.5,
      "game": {
       "home": true,
       "implied": 29.0,
@@ -625,7 +625,7 @@
    "eligible": true,
    "espn": 12.8,
    "flags": [],
-   "floor": 10.6,
+   "floor": 10.5,
    "game": {
     "home": true,
     "implied": 29.0,
@@ -999,7 +999,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:25Z",
+   "lastUpdated": "2026-11-18T02:33:35Z",
    "ok": true,
    "stale": false
   },
@@ -1011,13 +1011,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:25Z",
+   "lastUpdated": "2026-11-18T02:33:35Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:29:23Z",
+   "lastUpdated": "2026-11-18T02:33:34Z",
    "ok": true,
    "stale": false
   }
@@ -1314,7 +1314,7 @@
      "points": 7.8,
      "pos": "RB",
      "ppg": 7.0,
-     "rotowire": 7.3,
+     "rotowire": 7.2,
      "team": "BAL"
     },
     {
@@ -1372,7 +1372,7 @@
      "team": "HOU"
     },
     {
-     "ceiling": 12.3,
+     "ceiling": 12.2,
      "eligible": true,
      "espn": 7.7,
      "flags": [],
