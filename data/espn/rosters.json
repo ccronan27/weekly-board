@@ -4,7 +4,7 @@
   "leagueId": 125685129,
   "season": 2026,
   "week": 11,
-  "syncedAt": "2026-11-17T17:21:06.342Z",
+  "syncedAt": "2026-11-18T13:18:41.319Z",
   "settings": {
     "name": "Fantasizing 2026",
     "teams": 14,
@@ -159,7 +159,7 @@
           "pos": "WR",
           "proTeamId": 10,
           "slot": "FLEX",
-          "injuryStatus": "QUESTIONABLE"
+          "injuryStatus": "INJURY_RESERVE"
         },
         {
           "espnId": 5081432,
@@ -194,10 +194,10 @@
           "injuryStatus": "ACTIVE"
         },
         {
-          "espnId": 3924327,
-          "name": "Drew Lock",
+          "espnId": 4688380,
+          "name": "Cam Ward",
           "pos": "QB",
-          "proTeamId": 26,
+          "proTeamId": 10,
           "slot": "BN",
           "injuryStatus": "ACTIVE"
         }
@@ -237,7 +237,7 @@
           "pos": "WR",
           "proTeamId": 3,
           "slot": "BN",
-          "injuryStatus": "QUESTIONABLE"
+          "injuryStatus": "ACTIVE"
         },
         {
           "espnId": 4431611,
@@ -330,7 +330,7 @@
           "name": "Saquon Barkley",
           "pos": "RB",
           "proTeamId": 21,
-          "slot": "BN",
+          "slot": "RB",
           "injuryStatus": "ACTIVE"
         },
         {
@@ -338,7 +338,7 @@
           "name": "Kyren Williams",
           "pos": "RB",
           "proTeamId": 14,
-          "slot": "RB",
+          "slot": "BN",
           "injuryStatus": "ACTIVE"
         },
         {
@@ -1172,7 +1172,7 @@
           "name": "Drake Maye",
           "pos": "QB",
           "proTeamId": 17,
-          "slot": "QB",
+          "slot": "BN",
           "injuryStatus": "DOUBTFUL"
         },
         {
@@ -1196,14 +1196,6 @@
           "name": "Juwan Johnson",
           "pos": "TE",
           "proTeamId": 18,
-          "slot": "BN",
-          "injuryStatus": "ACTIVE"
-        },
-        {
-          "espnId": 3116165,
-          "name": "Chris Godwin Jr.",
-          "pos": "WR",
-          "proTeamId": 27,
           "slot": "BN",
           "injuryStatus": "ACTIVE"
         },
@@ -1245,6 +1237,14 @@
           "pos": "QB",
           "proTeamId": 9,
           "slot": "BN",
+          "injuryStatus": "ACTIVE"
+        },
+        {
+          "espnId": 8439,
+          "name": "Aaron Rodgers",
+          "pos": "QB",
+          "proTeamId": 23,
+          "slot": "QB",
           "injuryStatus": "ACTIVE"
         }
       ]
@@ -1364,6 +1364,14 @@
           "proTeamId": 17,
           "slot": "BN",
           "injuryStatus": "ACTIVE"
+        },
+        {
+          "espnId": 4038441,
+          "name": "Justice Hill",
+          "pos": "RB",
+          "proTeamId": 33,
+          "slot": "BN",
+          "injuryStatus": "ACTIVE"
         }
       ]
     },
@@ -1428,14 +1436,6 @@
           "injuryStatus": "ACTIVE"
         },
         {
-          "espnId": 2473037,
-          "name": "Jason Myers",
-          "pos": "K",
-          "proTeamId": 26,
-          "slot": "K",
-          "injuryStatus": "ACTIVE"
-        },
-        {
           "espnId": 4569559,
           "name": "Devaughn Vele",
           "pos": "WR",
@@ -1481,6 +1481,14 @@
           "pos": "WR",
           "proTeamId": 14,
           "slot": "BN",
+          "injuryStatus": "ACTIVE"
+        },
+        {
+          "espnId": 4362081,
+          "name": "Cameron Dicker",
+          "pos": "K",
+          "proTeamId": 24,
+          "slot": "K",
           "injuryStatus": "ACTIVE"
         }
       ]
@@ -1570,14 +1578,6 @@
           "injuryStatus": "ACTIVE"
         },
         {
-          "espnId": 4870795,
-          "name": "Makai Lemon",
-          "pos": "WR",
-          "proTeamId": 21,
-          "slot": "BN",
-          "injuryStatus": "ACTIVE"
-        },
-        {
           "espnId": 4360078,
           "name": "Alec Pierce",
           "pos": "WR",
@@ -1598,6 +1598,14 @@
           "name": "Adonai Mitchell",
           "pos": "WR",
           "proTeamId": 20,
+          "slot": "BN",
+          "injuryStatus": "ACTIVE"
+        },
+        {
+          "espnId": -16003,
+          "name": "Bears D/ST",
+          "pos": "D/ST",
+          "proTeamId": 3,
           "slot": "BN",
           "injuryStatus": "ACTIVE"
         }
@@ -1712,20 +1720,20 @@
           "injuryStatus": "ACTIVE"
         },
         {
-          "espnId": 4373626,
-          "name": "Tyler Allgeier",
-          "pos": "RB",
-          "proTeamId": 22,
-          "slot": "BN",
-          "injuryStatus": "ACTIVE"
-        },
-        {
           "espnId": 4568490,
           "name": "RJ Harvey",
           "pos": "RB",
           "proTeamId": 7,
           "slot": "BN",
           "injuryStatus": "INJURY_RESERVE"
+        },
+        {
+          "espnId": 4428850,
+          "name": "Dontayvion Wicks",
+          "pos": "WR",
+          "proTeamId": 21,
+          "slot": "BN",
+          "injuryStatus": "QUESTIONABLE"
         }
       ]
     }
