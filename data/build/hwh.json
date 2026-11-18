@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T15:02:11Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -1112,35 +1112,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1185,7 +1185,7 @@
   "teams": [
    {
     "avgSeed": 2.0,
-    "byePct": 56.4,
+    "byePct": 56.6,
     "division": 1,
     "isMine": false,
     "losses": 1,
@@ -1205,7 +1205,7 @@
     "isMine": false,
     "losses": 4,
     "name": "Scatt Pack",
-    "playoffPct": 98.2,
+    "playoffPct": 98.3,
     "pointsAgainst": 1263.52,
     "pointsFor": 1436.74,
     "projWins": 8.8,
@@ -1215,7 +1215,7 @@
    },
    {
     "avgSeed": 2.4,
-    "byePct": 39.7,
+    "byePct": 39.6,
     "division": 1,
     "isMine": false,
     "losses": 2,
@@ -1230,7 +1230,7 @@
    },
    {
     "avgSeed": 3.7,
-    "byePct": 3.9,
+    "byePct": 3.8,
     "division": 1,
     "isMine": false,
     "losses": 3,
@@ -1245,7 +1245,7 @@
    },
    {
     "avgSeed": 6.1,
-    "byePct": 6.0,
+    "byePct": 5.9,
     "division": 2,
     "isMine": true,
     "losses": 4,
@@ -1265,7 +1265,7 @@
     "isMine": false,
     "losses": 4,
     "name": "Kirkboi Charlies",
-    "playoffPct": 61.3,
+    "playoffPct": 61.4,
     "pointsAgainst": 1174.02,
     "pointsFor": 1166.02,
     "projWins": 7.9,
@@ -1280,7 +1280,7 @@
     "isMine": false,
     "losses": 5,
     "name": "The Zoo",
-    "playoffPct": 32.6,
+    "playoffPct": 32.5,
     "pointsAgainst": 1244.26,
     "pointsFor": 1317.7,
     "projWins": 6.7,
@@ -1295,7 +1295,7 @@
     "isMine": false,
     "losses": 5,
     "name": "Green room special ",
-    "playoffPct": 48.3,
+    "playoffPct": 48.4,
     "pointsAgainst": 1130.18,
     "pointsFor": 1247.18,
     "projWins": 7.5,
@@ -2068,18 +2068,18 @@
     {
      "gain": 9.6,
      "player": {
-      "ceiling": 12.6,
+      "ceiling": 12.7,
       "eligible": true,
       "espn": 7.1,
       "flags": [],
       "floor": 0.4,
       "game": {
        "home": false,
-       "implied": 12.5,
+       "implied": 13.0,
        "kickoff": "2026-11-22T18:00Z",
        "opp": "KC",
-       "oppImplied": 29.0,
-       "spread": 16.5,
+       "oppImplied": 28.5,
+       "spread": 15.5,
        "total": 41.5
       },
       "games": 10,
@@ -2087,10 +2087,10 @@
       "injuryNotes": null,
       "locked": false,
       "name": "Chad Ryland",
-      "points": 6.5,
+      "points": 6.6,
       "pos": "K",
       "ppg": 9.6,
-      "rotowire": 5.9,
+      "rotowire": 6.0,
       "team": "ARI"
      },
      "rate": 9.6,

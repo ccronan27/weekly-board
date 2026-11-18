@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T15:02:11Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -135,11 +135,11 @@
      "floor": 10.5,
      "game": {
       "home": true,
-      "implied": 29.0,
+      "implied": 28.5,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "ARI",
-      "oppImplied": 12.5,
-      "spread": -16.5,
+      "oppImplied": 13.0,
+      "spread": -15.5,
       "total": 41.5
      },
      "games": 6,
@@ -150,7 +150,7 @@
      "points": 13.9,
      "pos": "WR",
      "ppg": 13.2,
-     "rotowire": 15.0,
+     "rotowire": 14.9,
      "team": "KC"
     },
     "recommended": {
@@ -161,11 +161,11 @@
      "floor": 10.5,
      "game": {
       "home": true,
-      "implied": 29.0,
+      "implied": 28.5,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "ARI",
-      "oppImplied": 12.5,
-      "spread": -16.5,
+      "oppImplied": 13.0,
+      "spread": -15.5,
       "total": 41.5
      },
      "games": 6,
@@ -176,7 +176,7 @@
      "points": 13.9,
      "pos": "WR",
      "ppg": 13.2,
-     "rotowire": 15.0,
+     "rotowire": 14.9,
      "team": "KC"
     },
     "slot": "WR"
@@ -628,11 +628,11 @@
    "floor": 10.5,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 6,
@@ -643,7 +643,7 @@
    "points": 13.9,
    "pos": "WR",
    "ppg": 13.2,
-   "rotowire": 15.0,
+   "rotowire": 14.9,
    "sd": 3.33,
    "slot": "WR",
    "sources": [
@@ -1003,7 +1003,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1017,14 +1017,14 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1333,30 +1333,30 @@
      "team": "CIN"
     },
     {
-     "ceiling": 11.3,
+     "ceiling": 17.7,
      "eligible": true,
-     "espn": 7.9,
+     "espn": 7.1,
      "flags": [],
-     "floor": 4.0,
+     "floor": 0.0,
      "game": {
       "home": false,
-      "implied": 23.0,
+      "implied": 13.0,
       "kickoff": "2026-11-22T18:00Z",
-      "opp": "DAL",
-      "oppImplied": 31.5,
-      "spread": 8.5,
-      "total": 54.5
+      "opp": "KC",
+      "oppImplied": 28.5,
+      "spread": 15.5,
+      "total": 41.5
      },
-     "games": 7,
-     "id": "9508",
+     "games": 10,
+     "id": "8132",
      "injuryNotes": null,
      "locked": false,
-     "name": "Tyjae Spears",
+     "name": "Tyler Allgeier",
      "points": 7.7,
      "pos": "RB",
-     "ppg": 4.4,
-     "rotowire": 7.5,
-     "team": "TEN"
+     "ppg": 9.2,
+     "rotowire": 8.3,
+     "team": "ARI"
     }
    ],
    "TE": [

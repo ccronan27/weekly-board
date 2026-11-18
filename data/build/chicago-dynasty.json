@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T15:02:11Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -359,11 +359,11 @@
      "floor": 3.7,
      "game": {
       "home": true,
-      "implied": 29.0,
+      "implied": 28.5,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "ARI",
-      "oppImplied": 12.5,
-      "spread": -16.5,
+      "oppImplied": 13.0,
+      "spread": -15.5,
       "total": 41.5
      },
      "games": 10,
@@ -385,11 +385,11 @@
      "floor": 3.7,
      "game": {
       "home": true,
-      "implied": 29.0,
+      "implied": 28.5,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "ARI",
-      "oppImplied": 12.5,
-      "spread": -16.5,
+      "oppImplied": 13.0,
+      "spread": -15.5,
       "total": 41.5
      },
      "games": 10,
@@ -865,11 +865,11 @@
    "floor": 3.7,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 10,
@@ -1280,35 +1280,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1418,7 +1418,7 @@
     "isMine": false,
     "losses": 4,
     "name": "Tinman0506",
-    "playoffPct": 64.2,
+    "playoffPct": 64.3,
     "pointsAgainst": 1153.82,
     "pointsFor": 1113.22,
     "projWins": 7.9,
@@ -1442,13 +1442,13 @@
     "wins": 5
    },
    {
-    "avgSeed": 5.4,
+    "avgSeed": 5.5,
     "byePct": 0.5,
     "division": null,
     "isMine": false,
     "losses": 5,
     "name": "Ladd’s McConcubines",
-    "playoffPct": 77.8,
+    "playoffPct": 77.7,
     "pointsAgainst": 1211.12,
     "pointsFor": 1168.62,
     "projWins": 7.8,
@@ -2031,11 +2031,11 @@
       "floor": 0.3,
       "game": {
        "home": false,
-       "implied": 12.5,
+       "implied": 13.0,
        "kickoff": "2026-11-22T18:00Z",
        "opp": "KC",
-       "oppImplied": 29.0,
-       "spread": 16.5,
+       "oppImplied": 28.5,
+       "spread": 15.5,
        "total": 41.5
       },
       "games": 10,
@@ -2043,10 +2043,10 @@
       "injuryNotes": null,
       "locked": false,
       "name": "Chad Ryland",
-      "points": 6.7,
+      "points": 6.8,
       "pos": "K",
       "ppg": 9.9,
-      "rotowire": 5.9,
+      "rotowire": 6.0,
       "team": "ARI"
      },
      "rate": 9.9,

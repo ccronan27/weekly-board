@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T15:02:11Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "league": "chicago-dynasty",
  "players": [
   {
@@ -105,18 +105,18 @@
    "teamName": "Dak FC"
   },
   {
-   "ceiling": 31.4,
+   "ceiling": 31.3,
    "eligible": true,
    "espn": 22.2,
    "flags": [],
    "floor": 13.5,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 9,
@@ -128,7 +128,7 @@
    "pos": "QB",
    "ppg": 20.3,
    "rostered": true,
-   "rotowire": 22.7,
+   "rotowire": 22.6,
    "sd": 8.93,
    "sources": [
     "espn",
@@ -216,11 +216,11 @@
    "floor": 10.6,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 8,
@@ -232,7 +232,7 @@
    "pos": "RB",
    "ppg": 23.1,
    "rostered": true,
-   "rotowire": 17.3,
+   "rotowire": 17.2,
    "sd": 10.11,
    "sources": [
     "espn",
@@ -1471,18 +1471,18 @@
    "teamName": "Team 5"
   },
   {
-   "ceiling": 19.5,
+   "ceiling": 19.6,
    "eligible": true,
    "espn": 12.9,
    "flags": [],
    "floor": 7.1,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 10,
@@ -1490,11 +1490,11 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Trey McBride",
-   "points": 13.3,
+   "points": 13.4,
    "pos": "TE",
    "ppg": 17.1,
    "rostered": true,
-   "rotowire": 13.7,
+   "rotowire": 13.9,
    "sd": 6.24,
    "sources": [
     "espn",
@@ -1951,14 +1951,14 @@
    "eligible": true,
    "espn": 11.3,
    "flags": [],
-   "floor": 5.3,
+   "floor": 5.4,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 9,
@@ -2155,14 +2155,14 @@
    "eligible": true,
    "espn": 10.5,
    "flags": [],
-   "floor": 9.0,
+   "floor": 8.9,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 6,
@@ -2174,7 +2174,7 @@
    "pos": "WR",
    "ppg": 10.7,
    "rostered": true,
-   "rotowire": 12.6,
+   "rotowire": 12.5,
    "sd": 2.59,
    "sources": [
     "espn",
@@ -2257,14 +2257,14 @@
    "eligible": true,
    "espn": 9.5,
    "flags": [],
-   "floor": 5.5,
+   "floor": 5.4,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 9,
@@ -3292,11 +3292,11 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 9,
@@ -3308,7 +3308,7 @@
    "pos": "RB",
    "ppg": 9.7,
    "rostered": true,
-   "rotowire": 9.7,
+   "rotowire": 9.6,
    "sd": 10.9,
    "sources": [
     "espn",
@@ -3384,6 +3384,40 @@
    ],
    "status": null,
    "team": "HOU",
+   "teamName": null
+  },
+  {
+   "ceiling": null,
+   "eligible": true,
+   "espn": 8.3,
+   "flags": [],
+   "floor": null,
+   "game": {
+    "home": false,
+    "implied": 13.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "KC",
+    "oppImplied": 28.5,
+    "spread": 15.5,
+    "total": 41.5
+   },
+   "games": 1,
+   "id": "13272",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Carson Beck",
+   "points": 8.8,
+   "pos": "QB",
+   "ppg": 2.4,
+   "rostered": false,
+   "rotowire": 9.2,
+   "sd": null,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "ARI",
    "teamName": null
   },
   {
@@ -3555,40 +3589,6 @@
    "status": null,
    "team": "NO",
    "teamName": "All Gas No Brakes"
-  },
-  {
-   "ceiling": null,
-   "eligible": true,
-   "espn": 8.3,
-   "flags": [],
-   "floor": null,
-   "game": {
-    "home": false,
-    "implied": 12.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
-    "total": 41.5
-   },
-   "games": 1,
-   "id": "13272",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Carson Beck",
-   "points": 8.7,
-   "pos": "QB",
-   "ppg": 2.4,
-   "rostered": false,
-   "rotowire": 9.0,
-   "sd": null,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "ARI",
-   "teamName": null
   },
   {
    "ceiling": 12.8,
@@ -4409,18 +4409,18 @@
    "teamName": "Team 12"
   },
   {
-   "ceiling": 11.8,
+   "ceiling": 11.9,
    "eligible": true,
    "espn": 8.8,
    "flags": [],
    "floor": 3.9,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 9,
@@ -4432,7 +4432,7 @@
    "pos": "K",
    "ppg": 7.7,
    "rostered": false,
-   "rotowire": 6.9,
+   "rotowire": 7.0,
    "sd": 3.97,
    "sources": [
     "espn",
@@ -5030,11 +5030,11 @@
    "floor": 3.7,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 10,
@@ -5602,6 +5602,40 @@
    "teamName": "Team 5"
   },
   {
+   "ceiling": 13.2,
+   "eligible": true,
+   "espn": 7.6,
+   "flags": [],
+   "floor": 0.3,
+   "game": {
+    "home": false,
+    "implied": 13.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "KC",
+    "oppImplied": 28.5,
+    "spread": 15.5,
+    "total": 41.5
+   },
+   "games": 10,
+   "id": "10955",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Chad Ryland",
+   "points": 6.8,
+   "pos": "K",
+   "ppg": 9.9,
+   "rostered": false,
+   "rotowire": 6.0,
+   "sd": 6.45,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "ARI",
+   "teamName": null
+  },
+  {
    "ceiling": 12.0,
    "eligible": true,
    "espn": 6.6,
@@ -5670,40 +5704,6 @@
    "teamName": null
   },
   {
-   "ceiling": 13.2,
-   "eligible": true,
-   "espn": 7.6,
-   "flags": [],
-   "floor": 0.3,
-   "game": {
-    "home": false,
-    "implied": 12.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
-    "total": 41.5
-   },
-   "games": 10,
-   "id": "10955",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Chad Ryland",
-   "points": 6.7,
-   "pos": "K",
-   "ppg": 9.9,
-   "rostered": false,
-   "rotowire": 5.9,
-   "sd": 6.45,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "ARI",
-   "teamName": null
-  },
-  {
    "ceiling": 9.8,
    "eligible": true,
    "espn": 6.2,
@@ -5736,6 +5736,39 @@
    "status": null,
    "team": "DAL",
    "teamName": null
+  },
+  {
+   "ceiling": 10.9,
+   "eligible": true,
+   "espn": null,
+   "flags": [],
+   "floor": 2.3,
+   "game": {
+    "home": false,
+    "implied": 13.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "KC",
+    "oppImplied": 28.5,
+    "spread": 15.5,
+    "total": 41.5
+   },
+   "games": 6,
+   "id": "8122",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Zonovan Knight",
+   "points": 6.6,
+   "pos": "RB",
+   "ppg": 4.0,
+   "rostered": true,
+   "rotowire": 6.6,
+   "sd": 4.28,
+   "sources": [
+    "rotowire"
+   ],
+   "status": null,
+   "team": "ARI",
+   "teamName": "Team 5"
   },
   {
    "ceiling": 9.9,
@@ -5838,6 +5871,40 @@
    "status": null,
    "team": "BAL",
    "teamName": "Team 5"
+  },
+  {
+   "ceiling": 16.4,
+   "eligible": true,
+   "espn": 6.1,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 13.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "KC",
+    "oppImplied": 28.5,
+    "spread": 15.5,
+    "total": 41.5
+   },
+   "games": 10,
+   "id": "8132",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Tyler Allgeier",
+   "points": 6.6,
+   "pos": "RB",
+   "ppg": 8.2,
+   "rostered": true,
+   "rotowire": 7.1,
+   "sd": 9.79,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "ARI",
+   "teamName": "Brandon Aubrey Supremacy"
   },
   {
    "ceiling": 9.3,
@@ -6010,40 +6077,6 @@
    "teamName": "Ladd’s McConcubines"
   },
   {
-   "ceiling": 16.3,
-   "eligible": true,
-   "espn": 6.1,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": false,
-    "implied": 12.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
-    "total": 41.5
-   },
-   "games": 10,
-   "id": "8132",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Tyler Allgeier",
-   "points": 6.5,
-   "pos": "RB",
-   "ppg": 8.2,
-   "rostered": true,
-   "rotowire": 7.0,
-   "sd": 9.79,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "ARI",
-   "teamName": "Brandon Aubrey Supremacy"
-  },
-  {
    "ceiling": 11.2,
    "eligible": true,
    "espn": 6.1,
@@ -6178,39 +6211,6 @@
    "status": null,
    "team": "LAC",
    "teamName": "The Texans RB Room"
-  },
-  {
-   "ceiling": 10.7,
-   "eligible": true,
-   "espn": null,
-   "flags": [],
-   "floor": 2.1,
-   "game": {
-    "home": false,
-    "implied": 12.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
-    "total": 41.5
-   },
-   "games": 6,
-   "id": "8122",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Zonovan Knight",
-   "points": 6.4,
-   "pos": "RB",
-   "ppg": 4.0,
-   "rostered": true,
-   "rotowire": 6.4,
-   "sd": 4.28,
-   "sources": [
-    "rotowire"
-   ],
-   "status": null,
-   "team": "ARI",
-   "teamName": "Team 5"
   },
   {
    "ceiling": 10.3,
@@ -6562,11 +6562,11 @@
    "floor": 1.9,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 8,
@@ -7309,14 +7309,14 @@
    "eligible": true,
    "espn": 3.1,
    "flags": [],
-   "floor": 1.4,
+   "floor": 1.5,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 8,
@@ -7324,11 +7324,11 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Elijah Higgins",
-   "points": 4.4,
+   "points": 4.5,
    "pos": "TE",
    "ppg": 5.2,
    "rostered": false,
-   "rotowire": 5.8,
+   "rotowire": 5.9,
    "sd": 2.97,
    "sources": [
     "espn",
@@ -8138,11 +8138,11 @@
    "floor": 0.6,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 8,
@@ -8206,11 +8206,11 @@
    "floor": 2.8,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 4,
@@ -8414,11 +8414,11 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 9,
@@ -8430,7 +8430,7 @@
    "pos": "DEF",
    "ppg": 4.3,
    "rostered": false,
-   "rotowire": 1.9,
+   "rotowire": 2.0,
    "sd": 4.42,
    "sources": [
     "espn",
@@ -8550,11 +8550,11 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 2,
@@ -8566,7 +8566,7 @@
    "pos": "WR",
    "ppg": 3.5,
    "rostered": false,
-   "rotowire": 3.2,
+   "rotowire": 3.3,
    "sd": null,
    "sources": [
     "espn",
@@ -8923,11 +8923,11 @@
    "floor": 1.3,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 3,
@@ -9566,11 +9566,11 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 2,
@@ -9633,11 +9633,11 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 4,
@@ -10040,11 +10040,11 @@
    "floor": 1.1,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 3,
@@ -10310,11 +10310,11 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 0,
@@ -10411,11 +10411,11 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 1,
@@ -10512,11 +10512,11 @@
    "floor": 0.3,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 4,
@@ -10988,11 +10988,11 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 12.5,
+    "implied": 13.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
+    "oppImplied": 28.5,
+    "spread": 15.5,
     "total": 41.5
    },
    "games": 0,
@@ -11093,11 +11093,11 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 1,
@@ -11630,11 +11630,11 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 3,
@@ -12000,11 +12000,11 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 5,
@@ -12803,11 +12803,11 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 0,
@@ -14070,35 +14070,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

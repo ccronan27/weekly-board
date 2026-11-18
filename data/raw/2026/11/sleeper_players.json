@@ -774,7 +774,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Sam LaPorta",
-   "newsUpdated": 1794783932809,
+   "newsUpdated": 1795014052193,
    "pos": "TE",
    "status": "Active",
    "team": "DET",
@@ -13494,7 +13494,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Harrison Wallace III",
-   "newsUpdated": 1793746528861,
+   "newsUpdated": 1795013752250,
    "pos": "WR",
    "status": "Active",
    "team": "ARI",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-18T15:02:09Z",
+ "fetchedAt": "2026-11-18T15:25:31Z",
  "source": "sleeper_players"
 }

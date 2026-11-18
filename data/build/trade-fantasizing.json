@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T15:02:11Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "ideas": [
   {
    "get": [
@@ -105,12 +105,12 @@
    "give": [
     "12506"
    ],
-   "myGain": 4.0,
-   "playoffGain": 4.5,
-   "stretchGain": -0.5,
+   "myGain": 4.5,
+   "playoffGain": 4.8,
+   "stretchGain": -0.3,
    "team": "Honorary Brown",
-   "theirGain": 4.3,
-   "thisWeek": 5.0,
+   "theirGain": 3.8,
+   "thisWeek": 5.1,
    "youthFlag": false
   },
   {
@@ -3052,10 +3052,10 @@
      "games": 10,
      "id": "8130",
      "name": "Trey McBride",
-     "points": 13.3,
+     "points": 13.4,
      "pos": "TE",
      "ppg": 17.1,
-     "rate": 13.3,
+     "rate": 13.4,
      "rateFrom": "projection",
      "slot": "TE",
      "team": "ARI",
@@ -3708,7 +3708,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -3722,14 +3722,14 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

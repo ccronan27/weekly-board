@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T15:02:11Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "ideas": [
   {
    "get": [
@@ -30,12 +30,12 @@
    "give": [
     "8131"
    ],
-   "myGain": 18.0,
-   "playoffGain": 10.5,
-   "stretchGain": 7.5,
+   "myGain": 17.4,
+   "playoffGain": 10.2,
+   "stretchGain": 7.2,
    "team": "Olav é Trois",
    "theirGain": 26.3,
-   "thisWeek": -7.8,
+   "thisWeek": -7.9,
    "youthFlag": false
   },
   {
@@ -75,12 +75,12 @@
    "give": [
     "8137"
    ],
-   "myGain": 15.8,
-   "playoffGain": 5.7,
-   "stretchGain": 10.1,
+   "myGain": 15.2,
+   "playoffGain": 5.4,
+   "stretchGain": 9.8,
    "team": "Olav é Trois",
    "theirGain": 29.0,
-   "thisWeek": -1.1,
+   "thisWeek": -1.2,
    "youthFlag": false
   },
   {
@@ -579,10 +579,10 @@
      "games": 10,
      "id": "8132",
      "name": "Tyler Allgeier",
-     "points": 7.6,
+     "points": 7.7,
      "pos": "RB",
      "ppg": 9.2,
-     "rate": 7.6,
+     "rate": 7.7,
      "rateFrom": "projection",
      "slot": "START",
      "team": "ARI",
@@ -1518,10 +1518,10 @@
      "games": 10,
      "id": "8130",
      "name": "Trey McBride",
-     "points": 13.3,
+     "points": 13.4,
      "pos": "TE",
      "ppg": 17.1,
-     "rate": 13.3,
+     "rate": 13.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "ARI",
@@ -1993,10 +1993,10 @@
      "games": 9,
      "id": "4046",
      "name": "Patrick Mahomes",
-     "points": 22.3,
+     "points": 22.2,
      "pos": "QB",
      "ppg": 20.2,
-     "rate": 22.3,
+     "rate": 22.2,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "KC",
@@ -2405,10 +2405,10 @@
      "games": 6,
      "id": "8122",
      "name": "Zonovan Knight",
-     "points": 7.2,
+     "points": 7.4,
      "pos": "RB",
      "ppg": 4.5,
-     "rate": 7.2,
+     "rate": 7.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "ARI",
@@ -2805,10 +2805,10 @@
      "games": 6,
      "id": "10229",
      "name": "Rashee Rice",
-     "points": 13.9,
+     "points": 13.8,
      "pos": "WR",
      "ppg": 13.2,
-     "rate": 13.9,
+     "rate": 13.8,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "KC",
@@ -3551,35 +3551,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:11Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T15:02:09Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
