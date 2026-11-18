@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T03:25:36Z",
+ "generatedAt": "2026-11-18T03:29:21Z",
  "ideas": [
   {
    "get": [
@@ -4760,31 +4760,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:23Z",
+   "lastUpdated": "2026-11-18T03:28:47Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:24Z",
+   "lastUpdated": "2026-11-18T03:28:47Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:21Z",
+   "lastUpdated": "2026-11-18T03:28:44Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:21Z",
+   "lastUpdated": "2026-11-18T03:28:45Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:21Z",
+   "lastUpdated": "2026-11-18T03:28:45Z",
    "ok": true,
    "stale": false
   }

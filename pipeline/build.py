@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from pipeline import lineup, players as pm, scoring, trades, waivers
+from pipeline import lineup, odds, players as pm, scoring, trades, waivers
 from pipeline.adapters import espn_rosters
 from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, write_json
 from pipeline.ingest import load_config
@@ -144,6 +144,69 @@ def long_term_rate(p: dict) -> tuple[float, str | None]:
 
 
 DEFAULT_PLAYOFF_WEEKS = [15, 16, 17]
+
+
+def _league_games(lc, norm, rosters, week, last_week):
+    """(records, division, n_divisions, history, schedule, playoff teams) from Sleeper, or from the
+    ESPN sync file when it carries standings and schedule. None when the platform gives neither."""
+    if lc["platform"] == "sleeper":
+        if not norm.get("matchups"):
+            return None
+        name = {t["rosterId"]: t["teamName"] for t in norm["teams"]}
+        records = {t["teamName"]: t["record"] for t in norm["teams"]}
+        division = {t["teamName"]: t["record"].get("division") for t in norm["teams"]}
+        history: dict = {}
+        schedule = []
+        for w_s, rows in norm["matchups"].items():
+            w = int(w_s)
+            if w < week:
+                for r in rows:
+                    if r["points"] > 0:
+                        history.setdefault(name[r["rosterId"]], []).append(r["points"])
+            elif w <= last_week:
+                pairs: dict = {}
+                for r in rows:
+                    if r["matchupId"] is not None:
+                        pairs.setdefault(r["matchupId"], []).append(name[r["rosterId"]])
+                schedule += [(w, p[0], p[1]) for p in pairs.values() if len(p) == 2]
+        return records, division, norm.get("divisions") or 0, history, schedule, norm.get("playoffTeams") or 6
+    if not rosters.get("standings") or not rosters.get("schedule"):
+        return None
+    name = {t["teamId"]: t["name"] for t in rosters["teams"]}
+    records = {name[r["teamId"]]: {"wins": r["wins"], "losses": r["losses"], "ties": r["ties"], "pointsFor": r["pointsFor"],
+                                   "pointsAgainst": r.get("pointsAgainst")} for r in rosters["standings"] if r["teamId"] in name}
+    schedule = [(g["week"], name[g["homeTeamId"]], name[g["awayTeamId"]]) for g in rosters["schedule"]
+                if week <= g["week"] <= last_week and g["homeTeamId"] in name and g["awayTeamId"] in name]
+    return records, {}, 0, {}, schedule, rosters["settings"].get("playoffTeams") or 6
+
+
+def standings_block(lc, norm, rosters, week, pw, slots, rosters_t, team_name, plays, this_week):
+    """Standings with simulated playoff and bye odds for one league, or None when there is no data."""
+    games = _league_games(lc, norm, rosters, week, pw[0] - 1)
+    if games is None:
+        return None
+    records, division, n_div, history, schedule, n_playoff = games
+    players = {r["name"]: r["players"] for r in rosters_t}
+    teams = [n for n in records if n in players]
+    schedule = [g for g in schedule if g[1] in players and g[2] in players]
+    means = {}
+    for w in sorted({g[0] for g in schedule}):
+        for n in teams:   # this week from projections, later weeks from the long term rates
+            means[(w, n)] = this_week(players[n]) if w == week else trades.playoff_total(slots, [w], players[n], plays)[0]
+    sd = odds.weekly_sd(history)
+    byes = odds.playoff_byes(n_playoff)
+    sim = odds.simulate(teams, records, schedule, means, sd, n_playoff, division, n_div, byes)
+    now = odds.seed_order(teams, {n: records[n]["wins"] + 0.5 * records[n]["ties"] for n in teams},
+                          {n: records[n]["pointsFor"] for n in teams}, division, n_div)
+    rows = [{"name": n, "isMine": n == team_name, "seed": i + 1, "division": division.get(n),
+             **{k: records[n].get(k) for k in ("wins", "losses", "ties", "pointsFor", "pointsAgainst")}, **sim[n]}
+            for i, n in enumerate(now)]
+    mine = [{"week": w, "opp": b if a == team_name else a,
+             "myMean": round(means[(w, team_name)], 1), "oppMean": round(means[(w, b if a == team_name else a)], 1),
+             "winPct": round(100 * odds.head_to_head(means[(w, team_name)], means[(w, b if a == team_name else a)], sd), 1)}
+            for w, a, b in sorted(schedule) if team_name in (a, b)]
+    return {"teams": rows, "myGames": mine, "weeksLeft": sorted({g[0] for g in schedule}), "sd": sd, "sims": odds.SIMS,
+            "playoffTeams": n_playoff, "byes": byes, "divisions": n_div}
 
 
 def _r(x, n=1):
@@ -414,6 +477,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             out["waivers"]["stretch"] = {"weeks": stretch_weeks, "teams": n_teams, "targets": horizon(stretch_weeks)}
         # ---- v3 trades: every roster with playoff rates, plus 1 for 1 ideas that help both teams
         out["trade"] = None
+        out["standings"] = None
         if matchups:
             def trade_player(p):
                 sp = sleeper_players.get(p["id"]) or {}
@@ -452,6 +516,9 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 "plays": {str(w): sorted(matchups.get(w, {})) for w in all_weeks}, "rosters": rosters_t, "ideas": ideas,
                 "sources": out["sources"]})
             out["trade"] = {"file": f"trade-{lc['key']}.json", "ideas": len(ideas)}
+
+            # ---- v4 standings and playoff odds
+            out["standings"] = standings_block(lc, norm, rosters, week, pw, slots, rosters_t, team_name, plays, this_week)
         outputs[lc["key"]] = out
         write_json(out_dir / f"{lc['key']}.json", out)
 

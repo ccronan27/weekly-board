@@ -4,7 +4,9 @@ A start/sit dashboard across three fantasy football leagues: Fantasizing 2026 (E
 
 Each league also has a Waivers view (v2) with three lists. Short term ranks free agents by the projected points they add to your best possible lineup this week, so weak slots, byes and injuries are all covered by one number. Stretch run ranks them over the regular season weeks left after this one, where bye coverage shows up. Long term ranks them by the points they add across the fantasy playoff weeks still ahead (weeks 15 to 17 by default). A playoff week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now. Teams off that week count 0. Playoff opponents are tagged soft or tough from points allowed to the position this season, as context only. Both lists cap at two per position. The view also shows the best three free agents at each position and suggests a drop from your bench in redraft leagues.
 
-A Trade view (v3) does two things. Trade ideas lists 1 for 1 trades with each other team that make both teams' lineups better over the rest of the season (stretch run plus playoffs, every week counted the same), scored the same way as the waiver lists, so the offer is one the other side has a reason to accept. Build a trade lets you pick any partner and any players on both sides and shows the change for you and for them over the playoffs and this week. The builder runs the same lineup optimizer in the browser, and a test checks it against the Python one. In dynasty leagues it shows ages and flags trades that send away a player 4 or more years younger. It does not score dynasty value, because no free source publishes one. Dynasty leagues (`dynasty: true` in `config/leagues.yaml`) get no drop suggestion, because weekly points ignore long term value. Players whose game has started are never suggested.
+A Trade view (v3) does two things. Trade ideas lists 1 for 1 trades with each other team that make both teams' lineups better over the rest of the season (stretch run plus playoffs, every week counted the same), scored the same way as the waiver lists, so the offer is one the other side has a reason to accept. Build a trade lets you pick any partner and any players on both sides and shows the change for you and for them over the playoffs and this week. The builder runs the same lineup optimizer in the browser, and a test checks it against the Python one. In dynasty leagues it shows ages and flags trades that send away a player 4 or more years younger. It does not score dynasty value, because no free source publishes one.
+
+A Standings view (v4) shows each league's table with playoff and bye odds and your remaining games with a win chance for each. Odds come from playing out the rest of the regular season 10,000 times with a fixed seed. Each team's expected score is its own best lineup under the board's projections, with the league's typical week to week swing as the spread. With divisions, division winners are assumed to take the top seeds. Sleeper leagues work now. The ESPN league shows odds once the sync skill saves standings and schedule (see `docs/SPEC.md`). Dynasty leagues (`dynasty: true` in `config/leagues.yaml`) get no drop suggestion, because weekly points ignore long term value. Players whose game has started are never suggested.
 
 The only piece that needs Claude is the ESPN roster sync. Everything else runs on its own.
 
@@ -68,7 +70,7 @@ Scheduled workflows are disabled automatically after 60 days without repo activi
 
 ```
 pipeline/adapters/   one adapter per source, each with a contract test
-pipeline/            ingest, scoring, lineup optimizer, waiver targets, trades, build
+pipeline/            ingest, scoring, lineup optimizer, waiver targets, trades, playoff odds, build
 config/              league IDs and per league overrides
 data/espn/           roster file written by the Claude skill
 data/raw/            cached raw pulls by season and week

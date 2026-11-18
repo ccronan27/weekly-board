@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T03:25:36Z",
+ "generatedAt": "2026-11-18T03:29:21Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -1166,34 +1166,259 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:23Z",
+   "lastUpdated": "2026-11-18T03:28:47Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:24Z",
+   "lastUpdated": "2026-11-18T03:28:47Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:21Z",
+   "lastUpdated": "2026-11-18T03:28:44Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:21Z",
+   "lastUpdated": "2026-11-18T03:28:45Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:10:21Z",
+   "lastUpdated": "2026-11-18T03:28:45Z",
    "ok": true,
    "stale": false
   }
+ },
+ "standings": {
+  "byes": 2,
+  "divisions": 2,
+  "myGames": [
+   {
+    "myMean": 117.6,
+    "opp": "Olav é Trois",
+    "oppMean": 146.4,
+    "week": 11,
+    "winPct": 21.0
+   },
+   {
+    "myMean": 131.2,
+    "opp": "Adam4Arbutus",
+    "oppMean": 111.3,
+    "week": 12,
+    "winPct": 71.1
+   },
+   {
+    "myMean": 87.4,
+    "opp": "Scatt Pack",
+    "oppMean": 155.3,
+    "week": 13,
+    "winPct": 2.9
+   },
+   {
+    "myMean": 125.8,
+    "opp": "Green room special ",
+    "oppMean": 136.8,
+    "week": 14,
+    "winPct": 37.9
+   }
+  ],
+  "playoffTeams": 6,
+  "sd": 25.29,
+  "sims": 10000,
+  "teams": [
+   {
+    "avgSeed": 2.7,
+    "byePct": 29.4,
+    "division": 1,
+    "isMine": false,
+    "losses": 1,
+    "name": "sign STEELERS",
+    "playoffPct": 100.0,
+    "pointsAgainst": 1146.16,
+    "pointsFor": 1389.18,
+    "projWins": 11.1,
+    "seed": 1,
+    "ties": 0,
+    "wins": 9
+   },
+   {
+    "avgSeed": 2.2,
+    "byePct": 93.8,
+    "division": 2,
+    "isMine": false,
+    "losses": 4,
+    "name": "Scatt Pack",
+    "playoffPct": 99.1,
+    "pointsAgainst": 1263.52,
+    "pointsFor": 1436.74,
+    "projWins": 9.0,
+    "seed": 2,
+    "ties": 0,
+    "wins": 6
+   },
+   {
+    "avgSeed": 1.8,
+    "byePct": 65.1,
+    "division": 1,
+    "isMine": false,
+    "losses": 2,
+    "name": "Olav é Trois",
+    "playoffPct": 100.0,
+    "pointsAgainst": 1338.2,
+    "pointsFor": 1468.22,
+    "projWins": 11.1,
+    "seed": 3,
+    "ties": 0,
+    "wins": 8
+   },
+   {
+    "avgSeed": 3.6,
+    "byePct": 5.5,
+    "division": 1,
+    "isMine": false,
+    "losses": 3,
+    "name": "Gay tier ball knowledge",
+    "playoffPct": 99.8,
+    "pointsAgainst": 1321.16,
+    "pointsFor": 1379.06,
+    "projWins": 9.8,
+    "seed": 4,
+    "ties": 0,
+    "wins": 7
+   },
+   {
+    "avgSeed": 6.5,
+    "byePct": 2.6,
+    "division": 2,
+    "isMine": true,
+    "losses": 4,
+    "name": "Likely Suckin",
+    "playoffPct": 47.1,
+    "pointsAgainst": 1148.86,
+    "pointsFor": 1293.68,
+    "projWins": 7.3,
+    "seed": 5,
+    "ties": 0,
+    "wins": 6
+   },
+   {
+    "avgSeed": 6.6,
+    "byePct": 0.0,
+    "division": 1,
+    "isMine": false,
+    "losses": 4,
+    "name": "Kirkboi Charlies",
+    "playoffPct": 48.7,
+    "pointsAgainst": 1174.02,
+    "pointsFor": 1166.02,
+    "projWins": 7.7,
+    "seed": 6,
+    "ties": 0,
+    "wins": 6
+   },
+   {
+    "avgSeed": 6.5,
+    "byePct": 0.0,
+    "division": 1,
+    "isMine": false,
+    "losses": 5,
+    "name": "The Zoo",
+    "playoffPct": 51.3,
+    "pointsAgainst": 1244.26,
+    "pointsFor": 1317.7,
+    "projWins": 7.1,
+    "seed": 7,
+    "ties": 0,
+    "wins": 5
+   },
+   {
+    "avgSeed": 6.4,
+    "byePct": 3.6,
+    "division": 2,
+    "isMine": false,
+    "losses": 5,
+    "name": "Green room special ",
+    "playoffPct": 52.5,
+    "pointsAgainst": 1130.18,
+    "pointsFor": 1247.18,
+    "projWins": 7.5,
+    "seed": 8,
+    "ties": 0,
+    "wins": 5
+   },
+   {
+    "avgSeed": 9.0,
+    "byePct": 0.0,
+    "division": 2,
+    "isMine": false,
+    "losses": 6,
+    "name": "Cigarettes& Alcohol AK26",
+    "playoffPct": 1.5,
+    "pointsAgainst": 1287.48,
+    "pointsFor": 1100.46,
+    "projWins": 5.7,
+    "seed": 9,
+    "ties": 0,
+    "wins": 4
+   },
+   {
+    "avgSeed": 9.8,
+    "byePct": 0.0,
+    "division": 2,
+    "isMine": false,
+    "losses": 7,
+    "name": "Adam4Arbutus",
+    "playoffPct": 0.1,
+    "pointsAgainst": 1265.54,
+    "pointsFor": 1175.22,
+    "projWins": 4.3,
+    "seed": 10,
+    "ties": 0,
+    "wins": 3
+   },
+   {
+    "avgSeed": 11.1,
+    "byePct": 0.0,
+    "division": 2,
+    "isMine": false,
+    "losses": 9,
+    "name": "Jamflowmen",
+    "playoffPct": 0.0,
+    "pointsAgainst": 1272.92,
+    "pointsFor": 978.24,
+    "projWins": 2.4,
+    "seed": 11,
+    "ties": 0,
+    "wins": 1
+   },
+   {
+    "avgSeed": 11.8,
+    "byePct": 0.0,
+    "division": 1,
+    "isMine": false,
+    "losses": 10,
+    "name": "Team 3",
+    "playoffPct": 0.0,
+    "pointsAgainst": 1381.82,
+    "pointsFor": 1022.42,
+    "projWins": 1.0,
+    "seed": 12,
+    "ties": 0,
+    "wins": 0
+   }
+  ],
+  "weeksLeft": [
+   11,
+   12,
+   13,
+   14
+  ]
  },
  "trade": {
   "file": "trade-hwh.json",

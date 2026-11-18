@@ -84,3 +84,9 @@ def test_trade_view_is_wired():
     js = (SITE / "app.js").read_text(encoding="utf-8")
     for needle in ("renderTrade", "league.trade", "bestTotal", "tradeResult", "td.ideas", "youthFlag", '"trade", "Trade"'):
         assert needle in js, needle
+
+
+def test_standings_view_is_wired():
+    js = (SITE / "app.js").read_text(encoding="utf-8")
+    for needle in ("renderStandings", "league.standings", "playoffPct", "byePct", "myGames", '"standings", "Standings"'):
+        assert needle in js, needle

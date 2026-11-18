@@ -351,3 +351,19 @@ def test_stretch_run_covers_weeks_before_the_playoffs(built):
         assert td["weeks"] == [12, 13, 14, 15, 16, 17] and td["stretchWeeks"] == [12, 13, 14] and td["playoffWeeks"] == [15, 16, 17]
         for i in td["ideas"]:
             assert abs(i["stretchGain"] + i["playoffGain"] - i["myGain"]) < 0.15
+
+
+@needs_raw
+def test_standings_for_sleeper_leagues(built):
+    lg = built[1]["leagues"]
+    assert lg["fantasizing"]["standings"] is None          # the ESPN sync file has no standings yet
+    for k in ("hwh", "chicago-dynasty"):
+        st = lg[k]["standings"]
+        assert st["weeksLeft"] == [11, 12, 13, 14] and st["playoffTeams"] == 6 and st["byes"] == 2
+        assert len(st["teams"]) == 12 and sum(t["isMine"] for t in st["teams"]) == 1
+        assert sum(t["playoffPct"] for t in st["teams"]) == pytest.approx(600.0, abs=1.0)
+        assert sum(t["byePct"] for t in st["teams"]) == pytest.approx(200.0, abs=1.0)
+        assert [t["seed"] for t in st["teams"]] == list(range(1, 13))
+        assert [g["week"] for g in st["myGames"]] == [11, 12, 13, 14]
+        assert all(0 <= g["winPct"] <= 100 for g in st["myGames"])
+        assert 10 < st["sd"] < 60

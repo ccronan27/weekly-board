@@ -612,6 +612,92 @@ function renderTrade(league, meta, td, state, rerender) {
   return columns([secSum, sourcesSection(league, meta)], [secIdeas, secBuild]);
 }
 
+// ---------------------------------------------------------------- v4 standings and playoff odds
+function pct(x) { return isNum(x) ? (x >= 99.95 ? "100%" : x > 0 && x < 0.5 ? "under 1%" : Math.round(x) + "%") : "n/a"; }
+function record(t) { return t.wins + "-" + t.losses + (t.ties ? "-" + t.ties : ""); }
+
+function renderStandings(league, meta) {
+  const st = league.standings;
+  const secSum = el("section", "s-sum");
+  const secGames = el("section", "s-moves");
+  const secTable = el("section", "s-lineup");
+  if (!st) {
+    const c = el("div", "card");
+    c.appendChild(el("div", null, league.league.platform === "espn"
+      ? "ESPN standings are not in the roster file yet. Once the espn-roster-sync skill saves standings and schedule (see docs/SPEC.md), odds show up here on the next run."
+      : "Standings are not available for this league right now."));
+    secSum.appendChild(c);
+    return columns([secSum, sourcesSection(league, meta)], []);
+  }
+  const me = st.teams.filter(function (t) { return t.isMine; })[0];
+  const head = el("div", "card");
+  head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
+  const sm = el("div", "summary");
+  [["Record", me ? record(me) : "n/a"], ["Playoffs", me ? pct(me.playoffPct) : "n/a"], ["Bye", me ? pct(me.byePct) : "n/a"]].forEach(function (x) {
+    const d = el("div");
+    d.appendChild(el("span", "label", x[0]));
+    d.appendChild(el("b", null, x[1]));
+    sm.appendChild(d);
+  });
+  head.appendChild(sm);
+  if (me) head.appendChild(el("div", "psub", "Seed " + me.seed + " now. Projected " + me.projWins.toFixed(1) + " wins, average finish seed " + me.avgSeed.toFixed(1) + "."));
+  secSum.appendChild(head);
+  freshnessWarnings(league, meta, secSum);
+  secSum.appendChild(el("p", "muted aside", "Odds come from playing out the rest of the regular season (" + weekSpan(st.weeksLeft) + ") " + st.sims.toLocaleString("en-US") +
+    " times. Each team's expected score is its own best lineup under the board's projections, with a spread of " + st.sd.toFixed(1) +
+    " points, the typical week to week swing in this league. Top " + st.playoffTeams + " make the playoffs and top " + st.byes + " get a bye." +
+    (st.divisions ? " Assumes division winners take the top seeds." : "")));
+
+  secGames.appendChild(el("h2", null, "Your games"));
+  const gc = el("div", "card list");
+  st.myGames.forEach(function (g) {
+    const row = el("div", "slot");
+    const pr = el("div", "prow");
+    pr.appendChild(el("span", "chip neutral", "W" + g.week));
+    const body = el("div", "pbody");
+    body.appendChild(el("div", "pname", "vs " + g.opp));
+    body.appendChild(el("div", "psub", "You " + g.myMean.toFixed(1) + " · them " + g.oppMean.toFixed(1) + " expected"));
+    pr.appendChild(body);
+    const nums = el("div", "pnums");
+    nums.appendChild(el("div", "pts " + (g.winPct >= 60 ? "good" : g.winPct <= 40 ? "bad" : ""), pct(g.winPct)));
+    nums.appendChild(el("div", "range", "to win"));
+    pr.appendChild(nums);
+    row.appendChild(pr);
+    gc.appendChild(row);
+  });
+  if (!st.myGames.length) gc.appendChild(el("div", "slot", "No regular season games left."));
+  secGames.appendChild(gc);
+
+  secTable.appendChild(el("h2", null, "Standings"));
+  const card = el("div", "card tablecard");
+  const t = el("table", "standings");
+  const hr = el("tr");
+  ["", "Team", "Record", "Points", "Playoffs", "Bye"].forEach(function (h, i) { hr.appendChild(el("th", (i > 1 ? "num" : "") + (i === 3 ? " pf" : ""), h)); });
+  const thead = el("thead");
+  thead.appendChild(hr);
+  t.appendChild(thead);
+  const tb = el("tbody");
+  st.teams.forEach(function (r) {
+    const tr = el("tr", (r.isMine ? "mine" : "") + (r.seed === st.playoffTeams ? " cutline" : ""));
+    tr.appendChild(el("td", "seed", String(r.seed)));
+    const name = el("td", "tname");
+    name.appendChild(document.createTextNode(r.name));
+    if (st.divisions && isNum(r.division)) name.appendChild(el("span", "div", " D" + r.division));
+    tr.appendChild(name);
+    tr.appendChild(el("td", "num", record(r)));
+    tr.appendChild(el("td", "num pf", r.pointsFor.toFixed(1)));
+    tr.appendChild(el("td", "num strong", pct(r.playoffPct)));
+    tr.appendChild(el("td", "num", pct(r.byePct)));
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+  card.appendChild(t);
+  secTable.appendChild(card);
+  secTable.appendChild(el("div", "muted", "The line marks the last playoff spot today. Seeds use record, then points for."));
+
+  return columns([secSum, secGames, sourcesSection(league, meta)], [secTable]);
+}
+
 // Lineup or Waivers for the open league. Waivers only when the build has them
 function viewSwitch(league, view, go) {
   const box = el("div", "views");
@@ -619,6 +705,7 @@ function viewSwitch(league, view, go) {
   box.setAttribute("aria-label", "View");
   const views = [["lineup", "Lineup"], ["waivers", "Waivers"]];
   if (league.trade) views.push(["trade", "Trade"]);
+  if ("standings" in league) views.push(["standings", "Standings"]);
   views.forEach(function (v) {
     const b = el("button", "view", v[1]);
     b.type = "button";
@@ -662,11 +749,12 @@ async function main() {
   function show(i, v) {
     const lg = leagues[i];
     current = i;
-    view = (v === "waivers" && lg.waivers) ? "waivers" : (v === "trade" && lg.trade) ? "trade" : "lineup";
+    view = (v === "waivers" && lg.waivers) ? "waivers" : (v === "trade" && lg.trade) ? "trade" : (v === "standings" && "standings" in lg) ? "standings" : "lineup";
     Array.prototype.forEach.call(tabs.children, function (b, j) { b.setAttribute("aria-selected", String(i === j)); });
     panel.setAttribute("aria-labelledby", tabs.children[i].id);
     let body;
     if (view === "waivers") body = renderWaivers(lg, meta);
+    else if (view === "standings") body = renderStandings(lg, meta);
     else if (view === "trade") {
       const key = lg.league.key;
       const st = tradeState[key] || (tradeState[key] = { give: new Set(), get: new Set() });

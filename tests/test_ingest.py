@@ -34,7 +34,7 @@ def test_run_survives_every_network_source_failing(tmp_path, monkeypatch):
 
     def fail(*a, **k):
         raise ConnectionError("offline")
-    for mod, names in ((sleeper, ["fetch_league", "fetch_rosters", "fetch_users", "fetch_players", "fetch_projections", "fetch_stats"]),
+    for mod, names in ((sleeper, ["fetch_league", "fetch_rosters", "fetch_users", "fetch_matchups", "fetch_players", "fetch_projections", "fetch_stats"]),
                        (espn_defaults, ["fetch"]), (nflverse_lines, ["fetch"])):
         for n in names:
             monkeypatch.setattr(mod, n, fail)

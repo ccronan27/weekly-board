@@ -1,7 +1,878 @@
 {
  "data": {
   "chicago-dynasty": {
+   "divisions": 0,
    "leagueId": "1335703355086893056",
+   "matchups": {
+    "1": [
+     {
+      "matchupId": 6,
+      "points": 75.16,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 127.82,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 170.66,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 138.9,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 116.92,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 106.36,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 3,
+      "points": 130.86,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 125.06,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 5,
+      "points": 152.8,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 86.84,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 4,
+      "points": 132.56,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 1,
+      "points": 112.06,
+      "rosterId": 12
+     }
+    ],
+    "10": [
+     {
+      "matchupId": 5,
+      "points": 110.36,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 3,
+      "points": 86.52,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 125.32,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 127.52,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 126.12,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 155.96,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 5,
+      "points": 185.28,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 91.54,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 127.34,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 1,
+      "points": 138.6,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 98.24,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 42.1,
+      "rosterId": 12
+     }
+    ],
+    "11": [
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "12": [
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "13": [
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "14": [
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "2": [
+     {
+      "matchupId": 5,
+      "points": 91.24,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 94.96,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 128.72,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 118.76,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 105.92,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 1,
+      "points": 90.68,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 2,
+      "points": 156.7,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 100.62,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 4,
+      "points": 164.28,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 114.78,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 102.18,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 104.18,
+      "rosterId": 12
+     }
+    ],
+    "3": [
+     {
+      "matchupId": 4,
+      "points": 121.38,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 126.72,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 4,
+      "points": 134.98,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 80.04,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 79.26,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 96.98,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 183.74,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 77.96,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 136.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 98.78,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 6,
+      "points": 137.34,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 84.54,
+      "rosterId": 12
+     }
+    ],
+    "4": [
+     {
+      "matchupId": 3,
+      "points": 81.82,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 130.86,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 5,
+      "points": 119.48,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 105.9,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 111.86,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 3,
+      "points": 134.32,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 2,
+      "points": 103.68,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 1,
+      "points": 109.62,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 156.04,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 6,
+      "points": 158.32,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 6,
+      "points": 135.16,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 139.9,
+      "rosterId": 12
+     }
+    ],
+    "5": [
+     {
+      "matchupId": 2,
+      "points": 75.96,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 123.42,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 6,
+      "points": 141.16,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 3,
+      "points": 59.54,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 144.86,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 96.68,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 3,
+      "points": 175.64,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 126.1,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 1,
+      "points": 102.74,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 6,
+      "points": 89.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 143.04,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 144.1,
+      "rosterId": 12
+     }
+    ],
+    "6": [
+     {
+      "matchupId": 1,
+      "points": 78.76,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 3,
+      "points": 75.78,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 6,
+      "points": 172.7,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 2,
+      "points": 102.02,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 125.2,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 72.92,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 4,
+      "points": 94.98,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 80.3,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 98.06,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 117.02,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 4,
+      "points": 99.58,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 6,
+      "points": 102.34,
+      "rosterId": 12
+     }
+    ],
+    "7": [
+     {
+      "matchupId": 2,
+      "points": 76.32,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 2,
+      "points": 126.48,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 5,
+      "points": 125.62,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 1,
+      "points": 97.78,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 93.74,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 119.78,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 5,
+      "points": 91.1,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 104.42,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 135.52,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 117.46,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 121.02,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 6,
+      "points": 133.86,
+      "rosterId": 12
+     }
+    ],
+    "8": [
+     {
+      "matchupId": 3,
+      "points": 102.08,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 1,
+      "points": 80.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 4,
+      "points": 136.38,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 2,
+      "points": 78.2,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 131.36,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 129.88,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 6,
+      "points": 87.9,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 91.26,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 4,
+      "points": 92.86,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 94.5,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 117.08,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 196.12,
+      "rosterId": 12
+     }
+    ],
+    "9": [
+     {
+      "matchupId": 4,
+      "points": 99.46,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 2,
+      "points": 96.78,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 160.16,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 3,
+      "points": 93.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 131.66,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 99.84,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 6,
+      "points": 118.38,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 78.46,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 5,
+      "points": 132.3,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 2,
+      "points": 97.92,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 1,
+      "points": 82.42,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 172.78,
+      "rosterId": 12
+     }
+    ]
+   },
    "name": "Chicago Dynasty",
    "playoffRoundType": 0,
    "playoffTeams": 6,
@@ -115,6 +986,14 @@
       "9501",
       "9508"
      ],
+     "record": {
+      "division": null,
+      "losses": 9,
+      "pointsAgainst": 1340.72,
+      "pointsFor": 912.54,
+      "ties": 0,
+      "wins": 1
+     },
      "reserve": [],
      "rosterId": 1,
      "starters": [
@@ -158,6 +1037,14 @@
       "9754",
       "9997"
      ],
+     "record": {
+      "division": null,
+      "losses": 6,
+      "pointsAgainst": 1053.06,
+      "pointsFor": 1069.34,
+      "ties": 0,
+      "wins": 4
+     },
      "reserve": [],
      "rosterId": 2,
      "starters": [
@@ -200,6 +1087,14 @@
       "9486",
       "9488"
      ],
+     "record": {
+      "division": null,
+      "losses": 1,
+      "pointsAgainst": 1025.76,
+      "pointsFor": 1415.18,
+      "ties": 0,
+      "wins": 9
+     },
      "reserve": [],
      "rosterId": 3,
      "starters": [
@@ -243,6 +1138,14 @@
       "9224",
       "9504"
      ],
+     "record": {
+      "division": null,
+      "losses": 6,
+      "pointsAgainst": 1209.44,
+      "pointsFor": 1001.66,
+      "ties": 0,
+      "wins": 4
+     },
      "reserve": [],
      "rosterId": 4,
      "starters": [
@@ -286,6 +1189,14 @@
       "9226",
       "9484"
      ],
+     "record": {
+      "division": null,
+      "losses": 3,
+      "pointsAgainst": 1076.4,
+      "pointsFor": 1166.9,
+      "ties": 0,
+      "wins": 7
+     },
      "reserve": [],
      "rosterId": 5,
      "starters": [
@@ -329,6 +1240,14 @@
       "8205",
       "9479"
      ],
+     "record": {
+      "division": null,
+      "losses": 6,
+      "pointsAgainst": 1158.38,
+      "pointsFor": 1103.4,
+      "ties": 0,
+      "wins": 4
+     },
      "reserve": [],
      "rosterId": 6,
      "starters": [
@@ -372,6 +1291,14 @@
       "9487",
       "9756"
      ],
+     "record": {
+      "division": null,
+      "losses": 4,
+      "pointsAgainst": 1029.76,
+      "pointsFor": 1328.26,
+      "ties": 0,
+      "wins": 6
+     },
      "reserve": [],
      "rosterId": 7,
      "starters": [
@@ -415,6 +1342,14 @@
       "8137",
       "8148"
      ],
+     "record": {
+      "division": null,
+      "losses": 8,
+      "pointsAgainst": 1181.16,
+      "pointsFor": 985.34,
+      "ties": 0,
+      "wins": 2
+     },
      "reserve": [],
      "rosterId": 8,
      "starters": [
@@ -458,6 +1393,14 @@
       "8132",
       "9228"
      ],
+     "record": {
+      "division": null,
+      "losses": 3,
+      "pointsAgainst": 1126.48,
+      "pointsFor": 1297.94,
+      "ties": 0,
+      "wins": 7
+     },
      "reserve": [],
      "rosterId": 9,
      "starters": [
@@ -501,6 +1444,14 @@
       "8130",
       "8208"
      ],
+     "record": {
+      "division": null,
+      "losses": 4,
+      "pointsAgainst": 1153.82,
+      "pointsFor": 1113.22,
+      "ties": 0,
+      "wins": 6
+     },
      "reserve": [],
      "rosterId": 10,
      "starters": [
@@ -544,6 +1495,14 @@
       "9502",
       "9758"
      ],
+     "record": {
+      "division": null,
+      "losses": 5,
+      "pointsAgainst": 1211.12,
+      "pointsFor": 1168.62,
+      "ties": 0,
+      "wins": 5
+     },
      "reserve": [],
      "rosterId": 11,
      "starters": [
@@ -587,6 +1546,14 @@
       "9493",
       "9753"
      ],
+     "record": {
+      "division": null,
+      "losses": 5,
+      "pointsAgainst": 1228.28,
+      "pointsFor": 1231.98,
+      "ties": 0,
+      "wins": 5
+     },
      "reserve": [],
      "rosterId": 12,
      "starters": [
@@ -607,7 +1574,878 @@
    ]
   },
   "hwh": {
+   "divisions": 2,
    "leagueId": "1389389185361653760",
+   "matchups": {
+    "1": [
+     {
+      "matchupId": 1,
+      "points": 126.62,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 106.9,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 112.7,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 150.7,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 2,
+      "points": 178.46,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 167.9,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 113.96,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 137.56,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 147.76,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 85.76,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 173.92,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 119.26,
+      "rosterId": 12
+     }
+    ],
+    "10": [
+     {
+      "matchupId": 2,
+      "points": 94.62,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 150.82,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 102.86,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 164.42,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 131.58,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 164.52,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 140.46,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 1,
+      "points": 98.72,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 122.84,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 111.06,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 178.08,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 112.16,
+      "rosterId": 12
+     }
+    ],
+    "11": [
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "12": [
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "13": [
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "14": [
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "2": [
+     {
+      "matchupId": 2,
+      "points": 100.22,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 127.06,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 1,
+      "points": 147.88,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 121.5,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 3,
+      "points": 108.22,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 108.46,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 169.78,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 82.5,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 104.62,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 125.74,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 150.98,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 104.08,
+      "rosterId": 12
+     }
+    ],
+    "3": [
+     {
+      "matchupId": 2,
+      "points": 74.36,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 120.74,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 153.68,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 151.38,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 129.82,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 124.46,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 131.74,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 104.44,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 103.36,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 101.12,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 160.1,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 161.7,
+      "rosterId": 12
+     }
+    ],
+    "4": [
+     {
+      "matchupId": 2,
+      "points": 134.88,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 125.5,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 92.52,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 138.12,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 2,
+      "points": 161.58,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 82.38,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 157.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 123.98,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 176.92,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 106.4,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 1,
+      "points": 134.04,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 149.98,
+      "rosterId": 12
+     }
+    ],
+    "5": [
+     {
+      "matchupId": 2,
+      "points": 146.26,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 73.34,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 120.16,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 152.48,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 3,
+      "points": 145.76,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 187.94,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 152.3,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 137.5,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 1,
+      "points": 166.68,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 77.52,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 119.34,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 165.12,
+      "rosterId": 12
+     }
+    ],
+    "6": [
+     {
+      "matchupId": 2,
+      "points": 84.4,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 3,
+      "points": 86.54,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 62.66,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 101.72,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 138.7,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 133.66,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 144.48,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 133.9,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 123.4,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 1,
+      "points": 144.2,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 135.14,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 75.38,
+      "rosterId": 12
+     }
+    ],
+    "7": [
+     {
+      "matchupId": 2,
+      "points": 115.94,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 114.46,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 71.92,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 3,
+      "points": 146.9,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 140.72,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 112.62,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 143.48,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 148.02,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 137.6,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 2,
+      "points": 50.2,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 95.42,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 1,
+      "points": 119.5,
+      "rosterId": 12
+     }
+    ],
+    "8": [
+     {
+      "matchupId": 2,
+      "points": 169.86,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 1,
+      "points": 115.4,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 78.38,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 2,
+      "points": 154.18,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 131.98,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 109.14,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 158.78,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 103.2,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 130.86,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 84.48,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 96.36,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 6,
+      "points": 105.08,
+      "rosterId": 12
+     }
+    ],
+    "9": [
+     {
+      "matchupId": 2,
+      "points": 118.86,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 2,
+      "points": 79.7,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 79.66,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 1,
+      "points": 155.34,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 122.36,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 3,
+      "points": 102.6,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 156.24,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 105.4,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 103.66,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 6,
+      "points": 91.76,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 135.68,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 134.92,
+      "rosterId": 12
+     }
+    ]
+   },
    "name": "HWH: The League",
    "playoffRoundType": 0,
    "playoffTeams": 6,
@@ -787,6 +2625,14 @@
       "9758",
       "GB"
      ],
+     "record": {
+      "division": 1,
+      "losses": 4,
+      "pointsAgainst": 1174.02,
+      "pointsFor": 1166.02,
+      "ties": 0,
+      "wins": 6
+     },
      "reserve": [
       "12533"
      ],
@@ -826,6 +2672,14 @@
       "9480",
       "LAR"
      ],
+     "record": {
+      "division": 2,
+      "losses": 6,
+      "pointsAgainst": 1287.48,
+      "pointsFor": 1100.46,
+      "ties": 0,
+      "wins": 4
+     },
      "reserve": [
       "9226"
      ],
@@ -864,6 +2718,14 @@
       "8183",
       "WAS"
      ],
+     "record": {
+      "division": 1,
+      "losses": 10,
+      "pointsAgainst": 1381.82,
+      "pointsFor": 1022.42,
+      "ties": 0,
+      "wins": 0
+     },
      "reserve": [
       "7525"
      ],
@@ -902,6 +2764,14 @@
       "96",
       "SEA"
      ],
+     "record": {
+      "division": 2,
+      "losses": 4,
+      "pointsAgainst": 1263.52,
+      "pointsFor": 1436.74,
+      "ties": 0,
+      "wins": 6
+     },
      "reserve": [],
      "rosterId": 4,
      "starters": [
@@ -936,6 +2806,14 @@
       "9501",
       "9756"
      ],
+     "record": {
+      "division": 1,
+      "losses": 1,
+      "pointsAgainst": 1146.16,
+      "pointsFor": 1389.18,
+      "ties": 0,
+      "wins": 9
+     },
      "reserve": [
       "8121"
      ],
@@ -975,6 +2853,14 @@
       "8167",
       "IND"
      ],
+     "record": {
+      "division": 2,
+      "losses": 4,
+      "pointsAgainst": 1148.86,
+      "pointsFor": 1293.68,
+      "ties": 0,
+      "wins": 6
+     },
      "reserve": [
       "6819"
      ],
@@ -1013,6 +2899,14 @@
       "9753",
       "JAX"
      ],
+     "record": {
+      "division": 1,
+      "losses": 2,
+      "pointsAgainst": 1338.2,
+      "pointsFor": 1468.22,
+      "ties": 0,
+      "wins": 8
+     },
      "reserve": [],
      "rosterId": 7,
      "starters": [
@@ -1049,6 +2943,14 @@
       "9493",
       "HOU"
      ],
+     "record": {
+      "division": 2,
+      "losses": 7,
+      "pointsAgainst": 1265.54,
+      "pointsFor": 1175.22,
+      "ties": 0,
+      "wins": 3
+     },
      "reserve": [
       "9493"
      ],
@@ -1087,6 +2989,14 @@
       "MIN",
       "NE"
      ],
+     "record": {
+      "division": 1,
+      "losses": 5,
+      "pointsAgainst": 1244.26,
+      "pointsFor": 1317.7,
+      "ties": 0,
+      "wins": 5
+     },
      "reserve": [],
      "rosterId": 9,
      "starters": [
@@ -1123,6 +3033,14 @@
       "9500",
       "BAL"
      ],
+     "record": {
+      "division": 2,
+      "losses": 9,
+      "pointsAgainst": 1272.92,
+      "pointsFor": 978.24,
+      "ties": 0,
+      "wins": 1
+     },
      "reserve": [
       "8142"
      ],
@@ -1162,6 +3080,14 @@
       "9228",
       "KC"
      ],
+     "record": {
+      "division": 1,
+      "losses": 3,
+      "pointsAgainst": 1321.16,
+      "pointsFor": 1379.06,
+      "ties": 0,
+      "wins": 7
+     },
      "reserve": [
       "5859"
      ],
@@ -1201,6 +3127,14 @@
       "9509",
       "NYG"
      ],
+     "record": {
+      "division": 2,
+      "losses": 5,
+      "pointsAgainst": 1130.18,
+      "pointsFor": 1247.18,
+      "ties": 0,
+      "wins": 5
+     },
      "reserve": [
       "8110"
      ],
@@ -1223,6 +3157,6 @@
    ]
   }
  },
- "fetchedAt": "2026-11-18T03:10:21Z",
+ "fetchedAt": "2026-11-18T03:28:44Z",
  "source": "sleeper_leagues"
 }

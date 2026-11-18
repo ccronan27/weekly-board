@@ -84,12 +84,27 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .pick:first-child{border-top:0}
 .pick input{width:18px;height:18px;margin:0;accent-color:var(--accent)}
 @media (min-width:1000px){.plists{grid-template-columns:1fr 1fr}}
+/* Standings */
+.tablecard{padding:4px 12px;overflow-x:auto}
+.standings{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
+.standings th{font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600;text-align:left;padding:8px 6px 6px}
+.standings td{padding:8px 6px;border-top:1px solid var(--line)}
+.standings .num{text-align:right;white-space:nowrap}
+.standings .seed{color:var(--muted);width:1.5rem}
+.standings .tname{overflow-wrap:break-word;word-break:normal;min-width:7rem}
+.standings .div{color:var(--muted);font-size:.72rem}
+.standings .strong{font-weight:700}
+.standings tr.mine td{background:var(--goodbg);font-weight:600}
+.standings tr.cutline+tr td{border-top:2px solid var(--accent)}
+@media (max-width:639px){.standings .pf{display:none}.standings{font-size:.82rem}.standings td,.standings th{padding-left:4px;padding-right:4px}}
+.pts.good{color:var(--good)}
+.pts.bad{color:var(--bad)}
 .fold>summary{font-size:1.1rem;font-weight:700;margin:20px 0 8px;cursor:pointer}
 .fold>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* Lineup or Waivers switch inside a league */
 .views{display:flex;gap:4px;margin:10px 0 0;padding:3px;border:1px solid var(--line);border-radius:10px;background:var(--bg);width:max-content}
-.view{border:1px solid transparent;background:transparent;color:var(--muted);border-radius:7px;padding:5px 16px;font:inherit;font-size:.85rem;cursor:pointer}
+.view{border:1px solid transparent;background:transparent;color:var(--muted);border-radius:7px;padding:5px 12px;font:inherit;font-size:.85rem;cursor:pointer}
 .view[aria-pressed=true]{background:var(--card);border-color:var(--line);color:var(--text);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .view:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 
