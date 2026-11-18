@@ -73,9 +73,13 @@ def run(season: int | None = None, week: int | None = None, root: Path = RAW) ->
             if lg["platform"] != "sleeper":
                 continue
             lid = str(lg["id"])
-            out[lg["key"]] = sleeper.normalize_league(
+            norm = sleeper.normalize_league(
                 sleeper.fetch_league(lid), sleeper.fetch_rosters(lid), sleeper.fetch_users(lid),
                 cfg.get("sleeperUserId"))
+            # every regular season week: past scores for the spread, future pairings for the odds
+            last = (norm.get("playoffWeekStart") or 15) - 1
+            norm["matchups"] = {str(w): sleeper.normalize_matchups(sleeper.fetch_matchups(lid, w)) for w in range(1, last + 1)}
+            out[lg["key"]] = norm
         return out
 
     _run_source(status, root, season, week, "sleeper_leagues", leagues)

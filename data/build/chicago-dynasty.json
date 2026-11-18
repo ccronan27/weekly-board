@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T02:57:18Z",
+ "generatedAt": "2026-11-18T03:37:31Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -1343,34 +1343,263 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:57:17Z",
+   "lastUpdated": "2026-11-18T03:37:31Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:57:17Z",
+   "lastUpdated": "2026-11-18T03:37:31Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:57:15Z",
+   "lastUpdated": "2026-11-18T03:37:29Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:57:15Z",
+   "lastUpdated": "2026-11-18T03:37:29Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:57:15Z",
+   "lastUpdated": "2026-11-18T03:37:29Z",
    "ok": true,
    "stale": false
   }
+ },
+ "standings": {
+  "byes": 2,
+  "divisions": 0,
+  "myGames": [
+   {
+    "myMean": 97.9,
+    "opp": "All Gas No Brakes",
+    "oppMean": 127.2,
+    "week": 11,
+    "winPct": 20.1
+   },
+   {
+    "myMean": 117.5,
+    "opp": "Brandon Aubrey Supremacy",
+    "oppMean": 141.3,
+    "week": 12,
+    "winPct": 24.8
+   },
+   {
+    "myMean": 99.9,
+    "opp": "Dak FC",
+    "oppMean": 109.6,
+    "week": 13,
+    "winPct": 39.0
+   },
+   {
+    "myMean": 117.5,
+    "opp": "Ladd’s McConcubines",
+    "oppMean": 137.0,
+    "week": 14,
+    "winPct": 28.8
+   }
+  ],
+  "playoffTeams": 6,
+  "sd": 24.67,
+  "sims": 10000,
+  "teams": [
+   {
+    "avgSeed": 1.0,
+    "byePct": 100.0,
+    "division": null,
+    "isMine": false,
+    "losses": 1,
+    "name": "God, Country, Caleb 💅",
+    "playoffPct": 100.0,
+    "pointsAgainst": 1025.76,
+    "pointsFor": 1415.18,
+    "projWins": 12.4,
+    "seed": 1,
+    "ties": 0,
+    "wins": 9
+   },
+   {
+    "avgSeed": 2.8,
+    "byePct": 46.4,
+    "division": null,
+    "isMine": false,
+    "losses": 3,
+    "name": "Brandon Aubrey Supremacy",
+    "playoffPct": 99.8,
+    "pointsAgainst": 1126.48,
+    "pointsFor": 1297.94,
+    "projWins": 9.5,
+    "seed": 2,
+    "ties": 0,
+    "wins": 7
+   },
+   {
+    "avgSeed": 4.4,
+    "byePct": 11.8,
+    "division": null,
+    "isMine": false,
+    "losses": 3,
+    "name": "Team 5",
+    "playoffPct": 90.5,
+    "pointsAgainst": 1076.4,
+    "pointsFor": 1166.9,
+    "projWins": 8.7,
+    "seed": 3,
+    "ties": 0,
+    "wins": 7
+   },
+   {
+    "avgSeed": 3.3,
+    "byePct": 35.2,
+    "division": null,
+    "isMine": false,
+    "losses": 4,
+    "name": "All Gas No Brakes",
+    "playoffPct": 97.2,
+    "pointsAgainst": 1029.76,
+    "pointsFor": 1328.26,
+    "projWins": 8.8,
+    "seed": 4,
+    "ties": 0,
+    "wins": 6
+   },
+   {
+    "avgSeed": 5.3,
+    "byePct": 5.6,
+    "division": null,
+    "isMine": false,
+    "losses": 4,
+    "name": "Tinman0506",
+    "playoffPct": 79.0,
+    "pointsAgainst": 1153.82,
+    "pointsFor": 1113.22,
+    "projWins": 8.2,
+    "seed": 5,
+    "ties": 0,
+    "wins": 6
+   },
+   {
+    "avgSeed": 6.5,
+    "byePct": 0.5,
+    "division": null,
+    "isMine": false,
+    "losses": 5,
+    "name": "Team 12",
+    "playoffPct": 40.1,
+    "pointsAgainst": 1228.28,
+    "pointsFor": 1231.98,
+    "projWins": 6.8,
+    "seed": 6,
+    "ties": 0,
+    "wins": 5
+   },
+   {
+    "avgSeed": 5.2,
+    "byePct": 0.5,
+    "division": null,
+    "isMine": false,
+    "losses": 5,
+    "name": "Ladd’s McConcubines",
+    "playoffPct": 85.4,
+    "pointsAgainst": 1211.12,
+    "pointsFor": 1168.62,
+    "projWins": 8.0,
+    "seed": 7,
+    "ties": 0,
+    "wins": 5
+   },
+   {
+    "avgSeed": 8.5,
+    "byePct": 0.0,
+    "division": null,
+    "isMine": false,
+    "losses": 6,
+    "name": "When in Rome",
+    "playoffPct": 4.0,
+    "pointsAgainst": 1158.38,
+    "pointsFor": 1103.4,
+    "projWins": 5.7,
+    "seed": 8,
+    "ties": 0,
+    "wins": 4
+   },
+   {
+    "avgSeed": 9.3,
+    "byePct": 0.0,
+    "division": null,
+    "isMine": true,
+    "losses": 6,
+    "name": "Zay My Name",
+    "playoffPct": 0.9,
+    "pointsAgainst": 1053.06,
+    "pointsFor": 1069.34,
+    "projWins": 5.1,
+    "seed": 9,
+    "ties": 0,
+    "wins": 4
+   },
+   {
+    "avgSeed": 8.8,
+    "byePct": 0.0,
+    "division": null,
+    "isMine": false,
+    "losses": 6,
+    "name": "Dak FC",
+    "playoffPct": 3.1,
+    "pointsAgainst": 1209.44,
+    "pointsFor": 1001.66,
+    "projWins": 6.0,
+    "seed": 10,
+    "ties": 0,
+    "wins": 4
+   },
+   {
+    "avgSeed": 10.9,
+    "byePct": 0.0,
+    "division": null,
+    "isMine": false,
+    "losses": 8,
+    "name": "Jared Goff Glazer",
+    "playoffPct": 0.0,
+    "pointsAgainst": 1181.16,
+    "pointsFor": 985.34,
+    "projWins": 3.1,
+    "seed": 11,
+    "ties": 0,
+    "wins": 2
+   },
+   {
+    "avgSeed": 12.0,
+    "byePct": 0.0,
+    "division": null,
+    "isMine": false,
+    "losses": 9,
+    "name": "The Texans RB Room",
+    "playoffPct": 0.0,
+    "pointsAgainst": 1340.72,
+    "pointsFor": 912.54,
+    "projWins": 1.6,
+    "seed": 12,
+    "ties": 0,
+    "wins": 1
+   }
+  ],
+  "weeksLeft": [
+   11,
+   12,
+   13,
+   14
+  ]
+ },
+ "trade": {
+  "file": "trade-chicago-dynasty.json",
+  "ideas": 2
  },
  "waivers": {
   "byPosition": {
@@ -1903,6 +2132,396 @@
     15,
     16,
     17
+   ]
+  },
+  "stretch": {
+   "targets": [
+    {
+     "gain": 11.4,
+     "player": {
+      "ceiling": 13.6,
+      "eligible": true,
+      "espn": 9.9,
+      "flags": [],
+      "floor": 3.9,
+      "game": {
+       "home": false,
+       "implied": 18.2,
+       "kickoff": "2026-11-22T18:00Z",
+       "opp": "DET",
+       "oppImplied": 25.2,
+       "spread": 7.0,
+       "total": 43.5
+      },
+      "games": 9,
+      "id": "6650",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Chase McLaughlin",
+      "points": 8.8,
+      "pos": "K",
+      "ppg": 11.4,
+      "rotowire": 7.6,
+      "team": "TB"
+     },
+     "rate": 11.4,
+     "rateFrom": "season",
+     "weeks": [
+      {
+       "gain": 0.0,
+       "home": true,
+       "opp": "CAR",
+       "rank": 19,
+       "week": 12
+      },
+      {
+       "gain": 11.4,
+       "home": true,
+       "opp": "LAC",
+       "rank": 12,
+       "week": 13
+      },
+      {
+       "gain": 0.0,
+       "home": false,
+       "opp": "BAL",
+       "rank": 7,
+       "week": 14
+      }
+     ]
+    },
+    {
+     "gain": 10.2,
+     "player": {
+      "ceiling": 12.4,
+      "eligible": true,
+      "espn": 9.8,
+      "flags": [],
+      "floor": 5.2,
+      "game": {
+       "home": true,
+       "implied": 30.5,
+       "kickoff": "2026-11-22T18:00Z",
+       "opp": "NO",
+       "oppImplied": 19.0,
+       "spread": -11.5,
+       "total": 49.5
+      },
+      "games": 8,
+      "id": "2020",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Cairo Santos",
+      "points": 8.8,
+      "pos": "K",
+      "ppg": 10.2,
+      "rotowire": 7.8,
+      "team": "CHI"
+     },
+     "rate": 10.2,
+     "rateFrom": "season",
+     "weeks": [
+      {
+       "gain": 0.0,
+       "home": false,
+       "opp": "DET",
+       "rank": 31,
+       "week": 12
+      },
+      {
+       "gain": 10.2,
+       "home": true,
+       "opp": "JAX",
+       "rank": 25,
+       "week": 13
+      },
+      {
+       "gain": 0.0,
+       "home": false,
+       "opp": "MIA",
+       "rank": 17,
+       "week": 14
+      }
+     ]
+    },
+    {
+     "gain": 4.4,
+     "player": {
+      "ceiling": 11.7,
+      "eligible": true,
+      "espn": 8.2,
+      "flags": [],
+      "floor": 5.1,
+      "game": {
+       "home": false,
+       "implied": 23.0,
+       "kickoff": "2026-11-22T18:00Z",
+       "opp": "DAL",
+       "oppImplied": 31.5,
+       "spread": 8.5,
+       "total": 54.5
+      },
+      "games": 9,
+      "id": "12499",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Elic Ayomanor",
+      "points": 8.4,
+      "pos": "WR",
+      "ppg": 4.9,
+      "rotowire": 8.6,
+      "team": "TEN"
+     },
+     "rate": 8.4,
+     "rateFrom": "projection",
+     "weeks": [
+      {
+       "gain": 1.1,
+       "home": false,
+       "opp": "JAX",
+       "rank": 16,
+       "week": 12
+      },
+      {
+       "gain": 2.2,
+       "home": true,
+       "opp": "WAS",
+       "rank": 14,
+       "week": 13
+      },
+      {
+       "gain": 1.1,
+       "home": false,
+       "opp": "DET",
+       "rank": 13,
+       "week": 14
+      }
+     ]
+    },
+    {
+     "gain": 2.9,
+     "player": {
+      "ceiling": 11.5,
+      "eligible": true,
+      "espn": 9.4,
+      "flags": [
+       "QUESTIONABLE"
+      ],
+      "floor": 4.3,
+      "game": {
+       "home": true,
+       "implied": 28.5,
+       "kickoff": "2026-11-20T01:15Z",
+       "opp": "IND",
+       "oppImplied": 16.0,
+       "spread": -12.5,
+       "total": 44.5
+      },
+      "games": 9,
+      "id": "10218",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Xavier Hutchinson",
+      "points": 7.9,
+      "pos": "WR",
+      "ppg": 7.6,
+      "rotowire": 6.4,
+      "team": "HOU"
+     },
+     "rate": 7.9,
+     "rateFrom": "projection",
+     "weeks": [
+      {
+       "gain": 0.6,
+       "home": true,
+       "opp": "BAL",
+       "rank": 15,
+       "week": 12
+      },
+      {
+       "gain": 1.7,
+       "home": false,
+       "opp": "PIT",
+       "rank": 17,
+       "week": 13
+      },
+      {
+       "gain": 0.6,
+       "home": false,
+       "opp": "WAS",
+       "rank": 14,
+       "week": 14
+      }
+     ]
+    },
+    {
+     "gain": 1.1,
+     "player": {
+      "ceiling": 8.4,
+      "eligible": true,
+      "espn": 7.6,
+      "flags": [],
+      "floor": 6.3,
+      "game": {
+       "home": true,
+       "implied": 28.5,
+       "kickoff": "2026-11-20T01:15Z",
+       "opp": "IND",
+       "oppImplied": 16.0,
+       "spread": -12.5,
+       "total": 44.5
+      },
+      "games": 4,
+      "id": "11199",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Emari Demercado",
+      "points": 7.3,
+      "pos": "RB",
+      "ppg": 1.6,
+      "rotowire": 7.0,
+      "team": "HOU"
+     },
+     "rate": 7.3,
+     "rateFrom": "projection",
+     "weeks": [
+      {
+       "gain": 0.0,
+       "home": true,
+       "opp": "BAL",
+       "rank": 23,
+       "week": 12
+      },
+      {
+       "gain": 1.1,
+       "home": false,
+       "opp": "PIT",
+       "rank": 16,
+       "week": 13
+      },
+      {
+       "gain": 0.0,
+       "home": false,
+       "opp": "WAS",
+       "rank": 20,
+       "week": 14
+      }
+     ]
+    },
+    {
+     "gain": 0.7,
+     "player": {
+      "ceiling": 8.8,
+      "eligible": true,
+      "espn": 5.6,
+      "flags": [],
+      "floor": 5.0,
+      "game": {
+       "home": true,
+       "implied": 31.5,
+       "kickoff": "2026-11-22T18:00Z",
+       "opp": "TEN",
+       "oppImplied": 23.0,
+       "spread": -8.5,
+       "total": 54.5
+      },
+      "games": 7,
+      "id": "11593",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Brevyn Spann-Ford",
+      "points": 6.9,
+      "pos": "TE",
+      "ppg": 4.5,
+      "rotowire": 8.2,
+      "team": "DAL"
+     },
+     "rate": 6.9,
+     "rateFrom": "projection",
+     "weeks": [
+      {
+       "gain": 0.0,
+       "home": true,
+       "opp": "PHI",
+       "rank": 29,
+       "week": 12
+      },
+      {
+       "gain": 0.7,
+       "home": false,
+       "opp": "SEA",
+       "rank": 25,
+       "week": 13
+      },
+      {
+       "gain": 0.0,
+       "home": null,
+       "opp": null,
+       "rank": null,
+       "week": 14
+      }
+     ]
+    },
+    {
+     "gain": 0.5,
+     "player": {
+      "ceiling": 10.7,
+      "eligible": true,
+      "espn": 7.0,
+      "flags": [],
+      "floor": 2.7,
+      "game": {
+       "home": false,
+       "implied": 14.5,
+       "kickoff": "2026-11-22T18:00Z",
+       "opp": "BUF",
+       "oppImplied": 31.0,
+       "spread": 16.5,
+       "total": 45.5
+      },
+      "games": 7,
+      "id": "8172",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Greg Dulcich",
+      "points": 6.7,
+      "pos": "TE",
+      "ppg": 7.6,
+      "rotowire": 6.4,
+      "team": "MIA"
+     },
+     "rate": 6.7,
+     "rateFrom": "projection",
+     "weeks": [
+      {
+       "gain": 0.0,
+       "home": true,
+       "opp": "NYJ",
+       "rank": 13,
+       "week": 12
+      },
+      {
+       "gain": 0.5,
+       "home": false,
+       "opp": "DEN",
+       "rank": 3,
+       "week": 13
+      },
+      {
+       "gain": 0.0,
+       "home": true,
+       "opp": "CHI",
+       "rank": 23,
+       "week": 14
+      }
+     ]
+    }
+   ],
+   "teams": 32,
+   "weeks": [
+    12,
+    13,
+    14
    ]
   },
   "targets": [

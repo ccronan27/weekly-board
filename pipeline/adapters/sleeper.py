@@ -33,6 +33,10 @@ def fetch_users(league_id: str) -> list:
     return http.get_json(f"{V1}/league/{league_id}/users")
 
 
+def fetch_matchups(league_id: str, week: int) -> list:
+    return http.get_json(f"{V1}/league/{league_id}/matchups/{week}")
+
+
 def fetch_players() -> dict:
     return http.get_json(f"{V1}/players/nfl")
 
@@ -81,6 +85,19 @@ def validate_users(d) -> None:
     require(isinstance(d, list) and d, "sleeper users: expected non-empty list")
     for u in d:
         require_keys(u, ["user_id", "metadata"], "sleeper user")
+
+
+def validate_matchups(d) -> None:
+    require(isinstance(d, list), "sleeper matchups: expected list")
+    for m in d:
+        require_keys(m, ["roster_id", "matchup_id", "points"], "sleeper matchup")
+        require(m["points"] is None or isinstance(m["points"], (int, float)), "sleeper matchups: points not numeric")
+
+
+def normalize_matchups(d) -> list:
+    """One row per roster: rosterId, matchupId (None when unpaired), points (0 before the game)."""
+    validate_matchups(d)
+    return [{"rosterId": m["roster_id"], "matchupId": m["matchup_id"], "points": float(m["points"] or 0.0)} for m in d]
 
 
 def validate_players(d, min_players: int = 1) -> None:
@@ -132,7 +149,12 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
     teams = []
     for r in rosters:
         rid = r["roster_id"]
+        st = r.get("settings") or {}
         teams.append({
+            "record": {"wins": st.get("wins", 0), "losses": st.get("losses", 0), "ties": st.get("ties", 0),
+                       "pointsFor": st.get("fpts", 0) + st.get("fpts_decimal", 0) / 100,
+                       "pointsAgainst": st.get("fpts_against", 0) + st.get("fpts_against_decimal", 0) / 100,
+                       "division": st.get("division")},
             "rosterId": rid,
             "teamName": names.get(r["owner_id"]) or f"Team {rid}",
             "isMine": r["owner_id"] in mine,
@@ -150,7 +172,8 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
         "rosterPositions": league["roster_positions"],
         "playoffWeekStart": (league.get("settings") or {}).get("playoff_week_start"),
         "playoffTeams": (league.get("settings") or {}).get("playoff_teams"),
-        "playoffRoundType": (league.get("settings") or {}).get("playoff_round_type"),   # 0 one week a round, 1 two week final, 2 two weeks a round
+        "playoffRoundType": (league.get("settings") or {}).get("playoff_round_type"),
+        "divisions": (league.get("settings") or {}).get("divisions") or 0,   # 0 one week a round, 1 two week final, 2 two weeks a round
         "scoring": league["scoring_settings"],
         "teams": teams,
     }

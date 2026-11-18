@@ -72,7 +72,13 @@ def league_from_espn(key: str, rosters: dict, overrides: dict | None = None) -> 
     """rosters is data/espn/rosters.json. Overrides can add stat ids the sync file drops."""
     ov = overrides if overrides is not None else load_overrides(key)
     base = {int(k): float(v) for k, v in rosters["settings"]["scoringByStatId"].items()}
-    extra = {int(k): float(v) for k, v in (ov.get("espnScoringByStatId") or {}).items()}
+    synced_dst = rosters["settings"].get("dstScoringByStatId")
+    if synced_dst:   # the league's real D/ST values, saved by the sync skill. Beats the config defaults
+        extra = {int(k): float(v) for k, v in synced_dst.items()}
+        dst_source = "sync"
+    else:
+        extra = {int(k): float(v) for k, v in (ov.get("espnScoringByStatId") or {}).items()}
+        dst_source = "config" if extra else None
     pts = {**base, **extra}   # used to build canonical scoring. Offense ids never appear in the extras
     counts = {int(k): v for k, v in rosters["settings"]["lineupSlotCounts"].items()}
     starters = ov.get("starters")
@@ -96,7 +102,9 @@ def league_from_espn(key: str, rosters: dict, overrides: dict | None = None) -> 
             scoring[k] = p          # several ids can feed one key with the same value. Never summed
     if unmapped:
         notes.append(f"ESPN scoring ids with points but no Rotowire equivalent, ignored for Rotowire: {sorted(unmapped)}")
-    if not extra:
+    if dst_source == "config":
+        notes.append("D/ST scored with ESPN's default values from config. The sync file does not carry this league's D/ST scoring yet")
+    elif dst_source is None:
         notes.append("no D/ST scoring overrides configured, D/ST scored with the default zeros in the sync file")
     return League(key=key, name=rosters["settings"]["name"], platform="espn", scoring=scoring,
                   starters=list(starters), espn_points=base, espn_dst_points=pts, notes=notes)

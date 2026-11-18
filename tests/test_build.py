@@ -320,3 +320,50 @@ def test_defense_ranks_rank_most_allowed_first():
     stats = {1: [{"opponent": "AAA", "pos": "WR", "stats": {"rec": 10}}, {"opponent": "BBB", "pos": "WR", "stats": {"rec": 4}}],
              2: [{"opponent": "AAA", "pos": "WR", "stats": {"rec": 6}}, {"opponent": "BBB", "pos": "WR", "stats": {"rec": 2, "gp": 0}}]}
     assert bd.defense_ranks(stats, lg) == {("AAA", "WR"): 1, ("BBB", "WR"): 2}
+
+
+@needs_raw
+def test_trade_files_cover_every_team(built):
+    out, res = built
+    for k, o in res["leagues"].items():
+        assert o["trade"]["file"] == f"trade-{k}.json"
+        td = read_json(out / o["trade"]["file"])
+        assert sum(r["isMine"] for r in td["rosters"]) == 1 and len(td["rosters"]) >= 10
+        names = {r["name"] for r in td["rosters"]}
+        mine = next(r for r in td["rosters"] if r["isMine"])
+        assert {p["id"] for p in mine["players"]} == {p["id"] for p in o["roster"]}
+        for i in td["ideas"]:
+            assert i["team"] in names and i["team"] != mine["name"]
+            assert i["myGain"] >= 0.5 and i["theirGain"] >= 0.5
+            assert i["youthFlag"] in (True, False) and (td["dynasty"] or not i["youthFlag"])
+        blob = json.dumps(td)
+        assert "owner" not in blob and "display_name" not in blob     # team names only
+
+
+@needs_raw
+def test_stretch_run_covers_weeks_before_the_playoffs(built):
+    for k, o in built[1]["leagues"].items():
+        st = o["waivers"]["stretch"]
+        assert st["weeks"] == [12, 13, 14], k
+        for t in st["targets"]:
+            assert [x["week"] for x in t["weeks"]] == [12, 13, 14] and t["gain"] > 0
+        td = read_json(built[0] / o["trade"]["file"])
+        assert td["weeks"] == [12, 13, 14, 15, 16, 17] and td["stretchWeeks"] == [12, 13, 14] and td["playoffWeeks"] == [15, 16, 17]
+        for i in td["ideas"]:
+            assert abs(i["stretchGain"] + i["playoffGain"] - i["myGain"]) < 0.15
+
+
+@needs_raw
+def test_standings_for_sleeper_leagues(built):
+    lg = built[1]["leagues"]
+    assert lg["fantasizing"]["standings"] is None          # the ESPN sync file has no standings yet
+    for k in ("hwh", "chicago-dynasty"):
+        st = lg[k]["standings"]
+        assert st["weeksLeft"] == [11, 12, 13, 14] and st["playoffTeams"] == 6 and st["byes"] == 2
+        assert len(st["teams"]) == 12 and sum(t["isMine"] for t in st["teams"]) == 1
+        assert sum(t["playoffPct"] for t in st["teams"]) == pytest.approx(600.0, abs=1.0)
+        assert sum(t["byePct"] for t in st["teams"]) == pytest.approx(200.0, abs=1.0)
+        assert [t["seed"] for t in st["teams"]] == list(range(1, 13))
+        assert [g["week"] for g in st["myGames"]] == [11, 12, 13, 14]
+        assert all(0 <= g["winPct"] <= 100 for g in st["myGames"])
+        assert 10 < st["sd"] < 60

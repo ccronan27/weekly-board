@@ -302,10 +302,13 @@ function renderWaivers(league, meta) {
   const best = w.targets.length ? w.targets[0] : null;
   const lt = w.longTerm && w.longTerm.weeks && w.longTerm.weeks.length ? w.longTerm : null;
   const bestLt = lt && lt.targets.length ? lt.targets[0] : null;
+  const st = w.stretch && w.stretch.weeks && w.stretch.weeks.length ? w.stretch : null;
+  const bestSt = st && st.targets.length ? st.targets[0] : null;
   const sum = el("div", "summary");
-  [["This week", best ? best.player.name + " " + signed(best.gain) : "None"],
-   ["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : "Over"],
-   ["Free agents", String(w.freeAgents)]].forEach(function (x) {
+  const rows = [["This week", best ? best.player.name + " " + signed(best.gain) : "None"]];
+  if (st) rows.push(["Stretch run", bestSt ? bestSt.player.name + " " + signed(bestSt.gain) : "None"]);
+  rows.push(["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : "Over"]);
+  rows.forEach(function (x) {
     const d = el("div");
     d.appendChild(el("span", "label", x[0]));
     d.appendChild(el("b", null, x[1]));
@@ -340,7 +343,10 @@ function renderWaivers(league, meta) {
     tc.appendChild(wrap);
   });
   secTargets.appendChild(tc);
-  if (lt) secTargets.appendChild(longTermSection(lt));
+  if (st) secTargets.appendChild(horizonSection(st, "Stretch run, " + weekSpan(st.weeks),
+    "Points each player adds to your best lineup over the regular season weeks left after this one. Byes count, so this is where bye coverage shows up."));
+  if (lt) secTargets.appendChild(horizonSection(lt, "Long term, playoffs " + weekSpan(lt.weeks),
+    "Points each player adds to your best lineup over the playoff weeks."));
 
   // Reference list, folded so the page stays short on phones
   const fold = el("details", "fold");
@@ -371,13 +377,18 @@ function matchupText(x, teams) {
   return t;
 }
 
-function longTermSection(lt) {
+function weekSpan(weeks) {
+  if (!weeks || !weeks.length) return "";
+  return weeks.length > 1 ? "weeks " + weeks[0] + " to " + weeks[weeks.length - 1] : "week " + weeks[0];
+}
+
+// A ranked list over future weeks (stretch run or playoffs)
+function horizonSection(lt, title, intro) {
   const sec = el("div", "lt");
-  const span = lt.weeks.length > 1 ? "weeks " + lt.weeks[0] + " to " + lt.weeks[lt.weeks.length - 1] : "week " + lt.weeks[0];
-  sec.appendChild(el("h2", null, "Long term, playoffs " + span));
-  sec.appendChild(el("div", "muted", "Points each player adds to your best lineup over the playoff weeks. A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now. Soft and tough show the 8 defenses that allow the most and the fewest points to the position. Context only, not in the score."));
+  sec.appendChild(el("h2", null, title));
+  sec.appendChild(el("div", "muted", intro + " A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now. Soft and tough show the 8 defenses that allow the most and the fewest points to the position. Context only, not in the score."));
   const c = el("div", "card list");
-  if (!lt.targets.length) c.appendChild(el("div", "slot", "No free agent beats your playoff lineup."));
+  if (!lt.targets.length) c.appendChild(el("div", "slot", "No free agent beats your lineup over these weeks."));
   lt.targets.forEach(function (t) {
     const wrap = el("div", "slot");
     const rate = isNum(t.rate) ? t.rate.toFixed(1) + " a week, " + (t.rateFrom === "season" ? "season average" : "this week's projection") + ". " : "";
@@ -389,12 +400,313 @@ function longTermSection(lt) {
   return sec;
 }
 
+// ---------------------------------------------------------------- v3 trades
+// Same greedy optimizer as pipeline/lineup.py: fill the narrowest slots first with the best player left.
+// Slot eligibility nests (position, then FLEX, then SUPER_FLEX), so this is the best lineup.
+function bestTotal(slots, flexE, players) {
+  const pool = players.filter(function (p) { return p.ok; }).sort(function (a, b) {
+    return b.pts - a.pts || (String(a.id) < String(b.id) ? -1 : String(a.id) > String(b.id) ? 1 : 0);
+  });
+  function width(s) { return flexE[s] ? flexE[s].length : 1; }
+  const order = slots.map(function (_, i) { return i; }).sort(function (a, b) { return width(slots[a]) - width(slots[b]) || a - b; });
+  const taken = new Set();
+  let total = 0;
+  order.forEach(function (i) {
+    const s = slots[i];
+    for (let k = 0; k < pool.length; k++) {
+      const p = pool[k];
+      if (!taken.has(p.id) && (p.pos === s || (flexE[s] || []).indexOf(p.pos) >= 0)) { taken.add(p.id); total += p.pts; break; }
+    }
+  });
+  return Math.round(total * 10) / 10;
+}
+// Best lineup summed over the playoff weeks. A player counts in a week his team plays.
+function playoffWeeks(td, players) {
+  return td.weeks.map(function (w) {
+    const playing = new Set(td.plays[String(w)] || []);
+    return bestTotal(td.slots, td.flexEligible, players.map(function (p) {
+      return { id: p.id, pos: p.pos, pts: p.rate || 0, ok: !!p.rate && playing.has(p.team) };
+    }));
+  });
+}
+function sum(xs) { return Math.round(xs.reduce(function (a, b) { return a + b; }, 0) * 10) / 10; }
+function thisWeekTotal(td, players) {
+  return bestTotal(td.slots, td.flexEligible, players.map(function (p) {
+    return { id: p.id, pos: p.pos, pts: p.points || 0, ok: p.eligible !== false && !!p.points };
+  }));
+}
+// Both sides of a trade. give and get are sets of player ids.
+function tradeResult(td, mine, theirs, give, get) {
+  const out = mine.filter(function (p) { return give.has(p.id); });
+  const inn = theirs.filter(function (p) { return get.has(p.id); });
+  const myAfter = mine.filter(function (p) { return !give.has(p.id); }).concat(inn);
+  const thAfter = theirs.filter(function (p) { return !get.has(p.id); }).concat(out);
+  const myB = playoffWeeks(td, mine), myA = playoffWeeks(td, myAfter);
+  return {
+    myGain: Math.round((sum(myA) - sum(myB)) * 10) / 10,
+    theirGain: Math.round((sum(playoffWeeks(td, thAfter)) - sum(playoffWeeks(td, theirs))) * 10) / 10,
+    thisWeek: Math.round((thisWeekTotal(td, myAfter) - thisWeekTotal(td, mine)) * 10) / 10,
+    weeks: td.weeks.map(function (w, i) { return { week: w, gain: Math.round((myA[i] - myB[i]) * 10) / 10 }; }),
+    out: out, inn: inn,
+  };
+}
+function youngest(ps) {
+  const ages = ps.map(function (p) { return p.age; }).filter(isNum);
+  return ages.length ? Math.min.apply(null, ages) : null;
+}
+function tradePlayerLine(p, dynasty) {
+  let t = (p.pos || "") + " " + (p.team || "FA");
+  if (isNum(p.rate) && p.rate > 0) t += " · " + p.rate.toFixed(1) + " a week";
+  else t += " · no playoff rate";
+  if (dynasty && isNum(p.age)) t += " · age " + p.age + (isNum(p.yearsExp) ? ", year " + (p.yearsExp + 1) : "");
+  return t;
+}
+
+function renderTrade(league, meta, td, state, rerender) {
+  const rosters = td.rosters;
+  const mine = rosters.filter(function (r) { return r.isMine; })[0].players;
+  const others = rosters.filter(function (r) { return !r.isMine; });
+  if (!state.team || !others.some(function (r) { return r.name === state.team; })) {
+    state.team = td.ideas.length ? td.ideas[0].team : others[0].name;
+    state.give = new Set(); state.get = new Set();
+  }
+  const partner = others.filter(function (r) { return r.name === state.team; })[0];
+  const stW = td.stretchWeeks || [], poW = td.playoffWeeks || td.weeks;
+  const byId = {};
+  rosters.forEach(function (r) { r.players.forEach(function (p) { byId[r.name + "|" + p.id] = p; }); });
+
+  const secSum = el("section", "s-sum");
+  const head = el("div", "card");
+  head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
+  const sm = el("div", "summary");
+  const best = td.ideas[0];
+  [["Best idea", best ? signed(best.myGain) + " for you" : "None"], ["Ideas", String(td.ideas.length)], ["Teams", String(others.length)]].forEach(function (x) {
+    const d = el("div");
+    d.appendChild(el("span", "label", x[0]));
+    d.appendChild(el("b", null, x[1]));
+    sm.appendChild(d);
+  });
+  head.appendChild(sm);
+  secSum.appendChild(head);
+  freshnessWarnings(league, meta, secSum);
+  secSum.appendChild(el("p", "muted aside", "Trades are scored by how much each team's best lineup changes over the rest of the season, " + weekSpan(td.weeks) +
+    ", with every week counted the same. That is the stretch run" + (stW.length ? " (" + weekSpan(stW) + ")" : "") + " and the playoffs (" + weekSpan(poW) + "). A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now."));
+  if (td.dynasty) secSum.appendChild(el("div", "warn", "Dynasty league. Scores only cover the rest of this season. Ages are shown, and trades that send away a player 4 or more years younger are flagged."));
+
+  // Ideas
+  const secIdeas = el("section", "s-lineup");
+  secIdeas.appendChild(el("h2", null, "Trade ideas"));
+  secIdeas.appendChild(el("div", "muted", "One for one trades that make both lineups better over the rest of the season. Tap one to open it below."));
+  const ic = el("div", "card list");
+  if (!td.ideas.length) ic.appendChild(el("div", "slot", "No one for one trade helps both teams right now. Try the builder below."));
+  td.ideas.forEach(function (i) {
+    const give = i.give.map(function (id) { return mine.filter(function (p) { return p.id === id; })[0]; });
+    const get = i.get.map(function (id) { return byId[i.team + "|" + id]; });
+    const b = el("button", "idea");
+    b.type = "button";
+    const top = el("div", "pname");
+    top.appendChild(el("span", "name", "Give " + give.map(function (p) { return p.name; }).join(", ") + " for " + get.map(function (p) { return p.name; }).join(", ")));
+    if (i.youthFlag) top.appendChild(el("span", "badge warn", "Younger out"));
+    b.appendChild(top);
+    b.appendChild(el("div", "psub", "With " + i.team + " · " + give.map(function (p) { return p.pos; }).join("/") + " for " + get.map(function (p) { return p.pos; }).join("/")));
+    const split = isNum(i.stretchGain) && stW.length ? " (stretch " + signed(i.stretchGain) + ", playoffs " + signed(i.playoffGain) + ")" : "";
+    const line = el("div", "extra muted-extra", "You " + signed(i.myGain) + split + ", they " + signed(i.theirGain) + " over the rest of the season. ");
+    line.appendChild(el("span", i.thisWeek < 0 ? "neg" : "", "This week " + signed(i.thisWeek) + " for you."));
+    b.appendChild(line);
+    b.addEventListener("click", function () {
+      state.team = i.team; state.give = new Set(i.give); state.get = new Set(i.get); state.scroll = true;
+      rerender();
+    });
+    const wrap = el("div", "slot");
+    wrap.appendChild(b);
+    ic.appendChild(wrap);
+  });
+  secIdeas.appendChild(ic);
+
+  // Builder
+  const secBuild = el("section", "s-bench");
+  secBuild.id = "builder";
+  secBuild.appendChild(el("h2", null, "Build a trade"));
+  const pick = el("select", "teampick");
+  pick.setAttribute("aria-label", "Trade partner");
+  others.forEach(function (r) {
+    const o = el("option", null, r.name);
+    o.value = r.name;
+    if (r.name === state.team) o.selected = true;
+    pick.appendChild(o);
+  });
+  pick.addEventListener("change", function () { state.team = pick.value; state.give = new Set(); state.get = new Set(); rerender(); });
+  secBuild.appendChild(pick);
+
+  // Ticking a box redraws only this card, so focus and scroll stay put
+  function resultCard() {
+  const res = tradeResult(td, mine, partner.players, state.give, state.get);
+  const rc = el("div", "card result");
+  rc.setAttribute("aria-live", "polite");
+  if (!state.give.size && !state.get.size) {
+    rc.appendChild(el("div", "muted", "Tick players to give and to get. The result updates as you go."));
+  } else {
+    const rs = el("div", "summary");
+    [["You, rest of season", signed(res.myGain)], ["They, rest of season", signed(res.theirGain)], ["You, this week", signed(res.thisWeek)]].forEach(function (x) {
+      const d = el("div");
+      d.appendChild(el("span", "label", x[0]));
+      d.appendChild(el("b", "num " + (x[1].charAt(0) === "-" ? "neg" : (x[1] === "0.0" ? "" : "pos")), x[1]));
+      rs.appendChild(d);
+    });
+    rc.appendChild(rs);
+    if (res.weeks.length) {
+      const part = function (ws) { return Math.round(res.weeks.filter(function (x) { return ws.indexOf(x.week) >= 0; }).reduce(function (a, x) { return a + x.gain; }, 0) * 10) / 10; };
+      if (stW.length) rc.appendChild(el("div", "psub", "You: stretch run " + signed(part(stW)) + " · playoffs " + signed(part(poW))));
+      rc.appendChild(el("div", "psub", res.weeks.map(function (x) { return "W" + x.week + " " + signed(x.gain); }).join(" · ")));
+    }
+    let verdict;
+    if (res.myGain > 0 && res.theirGain > 0) verdict = "Both teams get better. A fair offer.";
+    else if (res.myGain > 0) verdict = "You win this one. They lose " + Math.abs(res.theirGain).toFixed(1) + ", so expect a no.";
+    else if (res.theirGain > 0) verdict = "This helps them more than you.";
+    else verdict = "Neither lineup gets better.";
+    rc.appendChild(el("div", "extra" + (res.myGain > 0 && res.theirGain > 0 ? "" : " muted-extra"), verdict));
+    const diff = state.get.size - state.give.size;
+    if (diff > 0) rc.appendChild(el("div", "note", "You get " + diff + " more than you give. Make room on your roster."));
+    if (diff < 0) rc.appendChild(el("div", "note", "They get " + (-diff) + " more than they give. They need roster room."));
+    const yo = youngest(res.out), yi = youngest(res.inn);
+    if (td.dynasty && yo !== null && yi !== null && yi - yo >= 4) rc.appendChild(el("div", "note", "Dynasty: the youngest player you give is " + (yi - yo) + " years younger than anyone you get."));
+  }
+  return rc;
+  }
+  let rc = resultCard();
+  secBuild.appendChild(rc);
+
+  function pickList(title, players, chosen) {
+    const box = el("div", "plist");
+    box.appendChild(el("h3", null, title));
+    const card = el("div", "card list");
+    players.forEach(function (p) {
+      const row = el("label", "pick");
+      const cb = el("input");
+      cb.type = "checkbox";
+      cb.checked = chosen.has(p.id);
+      cb.addEventListener("change", function () {
+        if (cb.checked) chosen.add(p.id); else chosen.delete(p.id);
+        const next = resultCard();
+        rc.replaceWith(next);
+        rc = next;
+      });
+      row.appendChild(cb);
+      row.appendChild(chipNode(POSITIONS.indexOf(p.pos) >= 0 ? p.pos : "BN"));
+      const body = el("div", "pbody");
+      const nm = el("div", "pname");
+      nm.appendChild(el("span", "name", p.name));
+      badgeNodes(p).forEach(function (n) { nm.appendChild(n); });
+      body.appendChild(nm);
+      body.appendChild(el("div", "psub", tradePlayerLine(p, td.dynasty)));
+      row.appendChild(body);
+      card.appendChild(row);
+    });
+    box.appendChild(card);
+    return box;
+  }
+  const lists = el("div", "plists");
+  lists.append(pickList("You give", mine, state.give), pickList("You get from " + partner.name, partner.players, state.get));
+  secBuild.appendChild(lists);
+
+  return columns([secSum, sourcesSection(league, meta)], [secIdeas, secBuild]);
+}
+
+// ---------------------------------------------------------------- v4 standings and playoff odds
+function pct(x) { return isNum(x) ? (x >= 99.95 ? "100%" : x > 0 && x < 0.5 ? "under 1%" : Math.round(x) + "%") : "n/a"; }
+function record(t) { return t.wins + "-" + t.losses + (t.ties ? "-" + t.ties : ""); }
+
+function renderStandings(league, meta) {
+  const st = league.standings;
+  const secSum = el("section", "s-sum");
+  const secGames = el("section", "s-moves");
+  const secTable = el("section", "s-lineup");
+  if (!st) {
+    const c = el("div", "card");
+    c.appendChild(el("div", null, league.league.platform === "espn"
+      ? "ESPN standings are not in the roster file yet. Once the espn-roster-sync skill saves standings and schedule (see docs/SPEC.md), odds show up here on the next run."
+      : "Standings are not available for this league right now."));
+    secSum.appendChild(c);
+    return columns([secSum, sourcesSection(league, meta)], []);
+  }
+  const me = st.teams.filter(function (t) { return t.isMine; })[0];
+  const head = el("div", "card");
+  head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
+  const sm = el("div", "summary");
+  [["Record", me ? record(me) : "n/a"], ["Playoffs", me ? pct(me.playoffPct) : "n/a"], ["Bye", me ? pct(me.byePct) : "n/a"]].forEach(function (x) {
+    const d = el("div");
+    d.appendChild(el("span", "label", x[0]));
+    d.appendChild(el("b", null, x[1]));
+    sm.appendChild(d);
+  });
+  head.appendChild(sm);
+  if (me) head.appendChild(el("div", "psub", "Seed " + me.seed + " now. Projected " + me.projWins.toFixed(1) + " wins, average finish seed " + me.avgSeed.toFixed(1) + "."));
+  secSum.appendChild(head);
+  freshnessWarnings(league, meta, secSum);
+  secSum.appendChild(el("p", "muted aside", "Odds come from playing out the rest of the regular season (" + weekSpan(st.weeksLeft) + ") " + st.sims.toLocaleString("en-US") +
+    " times. Each team's expected score is its own best lineup under the board's projections, with a spread of " + st.sd.toFixed(1) +
+    " points, the typical week to week swing in this league. Top " + st.playoffTeams + " make the playoffs and top " + st.byes + " get a bye." +
+    (st.divisions ? " Assumes division winners take the top seeds." : "")));
+
+  secGames.appendChild(el("h2", null, "Your games"));
+  const gc = el("div", "card list");
+  st.myGames.forEach(function (g) {
+    const row = el("div", "slot");
+    const pr = el("div", "prow");
+    pr.appendChild(el("span", "chip neutral", "W" + g.week));
+    const body = el("div", "pbody");
+    body.appendChild(el("div", "pname", "vs " + g.opp));
+    body.appendChild(el("div", "psub", "You " + g.myMean.toFixed(1) + " · them " + g.oppMean.toFixed(1) + " expected"));
+    pr.appendChild(body);
+    const nums = el("div", "pnums");
+    nums.appendChild(el("div", "pts " + (g.winPct >= 60 ? "good" : g.winPct <= 40 ? "bad" : ""), pct(g.winPct)));
+    nums.appendChild(el("div", "range", "to win"));
+    pr.appendChild(nums);
+    row.appendChild(pr);
+    gc.appendChild(row);
+  });
+  if (!st.myGames.length) gc.appendChild(el("div", "slot", "No regular season games left."));
+  secGames.appendChild(gc);
+
+  secTable.appendChild(el("h2", null, "Standings"));
+  const card = el("div", "card tablecard");
+  const t = el("table", "standings");
+  const hr = el("tr");
+  ["", "Team", "Record", "Points", "Playoffs", "Bye"].forEach(function (h, i) { hr.appendChild(el("th", (i > 1 ? "num" : "") + (i === 3 ? " pf" : ""), h)); });
+  const thead = el("thead");
+  thead.appendChild(hr);
+  t.appendChild(thead);
+  const tb = el("tbody");
+  st.teams.forEach(function (r) {
+    const tr = el("tr", (r.isMine ? "mine" : "") + (r.seed === st.playoffTeams ? " cutline" : ""));
+    tr.appendChild(el("td", "seed", String(r.seed)));
+    const name = el("td", "tname");
+    name.appendChild(document.createTextNode(r.name));
+    if (st.divisions && isNum(r.division)) name.appendChild(el("span", "div", " D" + r.division));
+    tr.appendChild(name);
+    tr.appendChild(el("td", "num", record(r)));
+    tr.appendChild(el("td", "num pf", r.pointsFor.toFixed(1)));
+    tr.appendChild(el("td", "num strong", pct(r.playoffPct)));
+    tr.appendChild(el("td", "num", pct(r.byePct)));
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+  card.appendChild(t);
+  secTable.appendChild(card);
+  secTable.appendChild(el("div", "muted", "The line marks the last playoff spot today. Seeds use record, then points for."));
+
+  return columns([secSum, secGames, sourcesSection(league, meta)], [secTable]);
+}
+
 // Lineup or Waivers for the open league. Waivers only when the build has them
 function viewSwitch(league, view, go) {
   const box = el("div", "views");
   box.setAttribute("role", "group");
   box.setAttribute("aria-label", "View");
-  [["lineup", "Lineup"], ["waivers", "Waivers"]].forEach(function (v) {
+  const views = [["lineup", "Lineup"], ["waivers", "Waivers"]];
+  if (league.trade) views.push(["trade", "Trade"]);
+  if ("standings" in league) views.push(["standings", "Standings"]);
+  views.forEach(function (v) {
     const b = el("button", "view", v[1]);
     b.type = "button";
     b.setAttribute("aria-pressed", String(view === v[0]));
@@ -431,15 +743,42 @@ async function main() {
   const tabs = document.getElementById("tabs");
   const panel = document.getElementById("panel");
   let view = "lineup";
+  let current = 0;
+  const tradeData = {};    // league key -> trade file, loaded the first time the Trade view opens
+  const tradeState = {};   // league key -> builder picks, kept while you switch views
   function show(i, v) {
     const lg = leagues[i];
-    view = v === "waivers" && lg.waivers ? "waivers" : "lineup";
+    current = i;
+    view = (v === "waivers" && lg.waivers) ? "waivers" : (v === "trade" && lg.trade) ? "trade" : (v === "standings" && "standings" in lg) ? "standings" : "lineup";
     Array.prototype.forEach.call(tabs.children, function (b, j) { b.setAttribute("aria-selected", String(i === j)); });
     panel.setAttribute("aria-labelledby", tabs.children[i].id);
-    const body = view === "waivers" ? renderWaivers(lg, meta) : renderLeague(lg, meta);
-    if (lg.waivers) panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), body);
+    let body;
+    if (view === "waivers") body = renderWaivers(lg, meta);
+    else if (view === "standings") body = renderStandings(lg, meta);
+    else if (view === "trade") {
+      const key = lg.league.key;
+      const st = tradeState[key] || (tradeState[key] = { give: new Set(), get: new Set() });
+      if (tradeData[key]) {
+        body = renderTrade(lg, meta, tradeData[key], st, function () { show(i, "trade"); });
+      } else {
+        body = el("div", "card", "Loading trades");
+        getJSON("data/build/" + lg.trade.file).then(function (td) {
+          tradeData[key] = td;
+          if (current === i && view === "trade") show(i, "trade");
+        }).catch(function () {
+          if (current === i && view === "trade") panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), el("div", "error", "The trade data could not be loaded. Try again in a few minutes."));
+        });
+      }
+    } else body = renderLeague(lg, meta);
+    const keepY = view === "trade" ? window.scrollY : 0;
+    if (lg.waivers || lg.trade) panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), body);
     else panel.replaceChildren(body);
-    history.replaceState(null, "", "#" + lg.league.key + (view === "waivers" ? "/waivers" : ""));
+    if (view === "trade") {
+      const st = tradeState[lg.league.key];
+      if (st && st.scroll) { st.scroll = false; const bld = document.getElementById("builder"); if (bld) bld.scrollIntoView(); }
+      else window.scrollTo(0, keepY);
+    }
+    history.replaceState(null, "", "#" + lg.league.key + (view === "lineup" ? "" : "/" + view));
   }
   leagues.forEach(function (l) {
     const b = el("button", "tab");

@@ -19,4 +19,7 @@ for l in meta["leagues"]:
     lg = read_json(BUILD / l["file"])
     best = (lg.get("waivers") or {}).get("targets") or []
     add = f", best add {best[0]['player']['name']} {best[0]['gain']:+.1f}" if best else ""
-    print(f"- {l['name']}: lineup change {l['gain']:+.1f}{add}")
+    tf = BUILD / ((lg.get("trade") or {}).get("file") or "none")
+    ideas = read_json(tf)["ideas"] if tf.exists() else []
+    idea = f", {len(ideas)} trade idea{"s" if len(ideas) != 1 else ""} (best {ideas[0]['myGain']:+.1f} for you)" if ideas else ""
+    print(f"- {l['name']}: lineup change {l['gain']:+.1f}{add}{idea}")

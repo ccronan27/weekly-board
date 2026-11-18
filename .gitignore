@@ -3,3 +3,6 @@ __pycache__/
 .pytest_cache/
 .venv/
 _site/
+
+# Backtest pulls are large (about 11 MB a run). Cached locally, re-pulled when missing
+data/raw/*/*/backtest_*.json

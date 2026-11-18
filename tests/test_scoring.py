@@ -155,3 +155,17 @@ def test_weekly_points_skips_games_not_played():
     lg = L({"rec": 1.0})
     pts = scoring.weekly_points(lg, "WR", {"1": {"rec": 5, "gp": 1}, "2": {"rec": 9, "gp": 0}, "3": {"rec": 3, "gp": 1}})
     assert pts == [5.0, 3.0]
+
+
+def test_synced_dst_scoring_beats_config_defaults():
+    import copy
+    from pipeline.adapters import espn_rosters
+    r = copy.deepcopy(espn_rosters.load())
+    cfg = scoring.league_from_espn("fantasizing", r)
+    assert cfg.espn_dst_points[99] == 1.0 and any("default values from config" in n for n in cfg.notes)
+    r["settings"]["dstScoringByStatId"] = {"99": 2, "95": 3}
+    synced = scoring.league_from_espn("fantasizing", r)
+    assert synced.espn_dst_points[99] == 2.0 and synced.espn_dst_points[95] == 3.0
+    assert 89 not in synced.espn_dst_points or synced.espn_dst_points[89] == 0.0   # config values not mixed in
+    assert not any("config" in n for n in synced.notes)
+    assert synced.espn_points == cfg.espn_points                                    # offense untouched

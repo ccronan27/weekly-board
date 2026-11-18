@@ -44,6 +44,23 @@ Player matching across sources: normalize name (lowercase, strip `.'’-`, drop 
 ```
 Slot ids: 0 QB, 2 RB, 4 WR, 6 TE, 16 D/ST, 17 K, 20 BN, 21 IR, 23 FLEX.
 
+### Optional keys (added 11/18/26, for the espn-roster-sync skill to start writing)
+The board works without these and uses each one as soon as it appears. Each is validated when present, so a malformed value fails the contract test loudly.
+```json
+{
+  "settings": {
+    "dstScoringByStatId": { "89": 5, "90": 4, "95": 2, "99": 1 },
+    "playoffWeekStart": 15, "playoffTeams": 6
+  },
+  "standings": [ { "teamId": 14, "wins": 6, "losses": 4, "ties": 0, "pointsFor": 1234.5, "pointsAgainst": 1100.2 } ],
+  "schedule": [ { "week": 12, "homeTeamId": 14, "awayTeamId": 3 } ]
+}
+```
+- `dstScoringByStatId`: the league's D/ST points per ESPN stat id, from `settings.scoringSettings.scoringItems[].pointsOverrides["16"]` (fall back to `points` when there is no slot 16 override). Replaces the default values in `config/leagues/fantasizing.overrides.yaml`
+- `playoffWeekStart`, `playoffTeams`: from `settings.scheduleSettings` (`matchupPeriodCount` + 1 and `playoffTeamCount`). Replaces `playoffWeeks` in `config/leagues.yaml`
+- `standings`: from each team's `record.overall`. Team ids only, never owner fields
+- `schedule`: every regular season matchup from the `mMatchup` view, past and future (`matchupPeriodId`, `home.teamId`, `away.teamId`). Lets the board compute ESPN playoff odds
+
 ## Projection model (see docs/BACKTEST.md)
 - Re-score every source's raw stat projections with each league's exact scoring
 - Core = equal average of ESPN + Rotowire
@@ -80,5 +97,6 @@ Actions should also run when `data/espn/rosters.json` changes (push trigger on t
 ## Roadmap
 - v1: start/sit per league. Consensus projection, floor/ceiling from weekly SD, Vegas context, injury/inactive alerts, flag any starter who is OUT/IR/bye
 - v2 (shipped 11/18/26): waiver targets per league, scored against each team's weakest starting slots, byes and injuries. Short term: the gain in your best lineup this week. Long term: the gain summed over the fantasy playoff weeks, using this week's projection as the rate for healthy skill players and the season average for DEF, K and players hurt or on bye now. Playoff matchup strength is display context only. See `pipeline/waivers.py`
-- v3: trade analyzer (dynasty-aware for Chicago Dynasty)
+- v3 (shipped 11/18/26): trade analyzer (dynasty-aware for Chicago Dynasty). Ideas are 1 for 1 trades that raise both teams' playoff lineups. The site builder handles any trade. Dynasty awareness is ages plus a flag when you send away a player 4 or more years younger. See `pipeline/trades.py`
+- v4 (shipped 11/18/26): stretch run weeks (12 to 14) in waivers and trades, standings with simulated playoff and bye odds (`pipeline/odds.py`), the ESPN league's own D/ST scoring and playoff weeks when the sync file carries them, and `scripts/backtest.py`
 - v1 stores full league player pools so v2 needs no rework

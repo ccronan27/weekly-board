@@ -60,3 +60,28 @@ Source disagreement does NOT predict boom/bust (low vs high spread quartiles: ou
 - ESPN weekly projection: `statSourceId == 1`, `statSplitTypeId == 1`, `scoringPeriodId == week`. Actual: `statSourceId == 0`
 - Rotowire: Sleeper projections `stats.pts_ppr`
 - Re-run Part 1 weekly. Re-run Part 3 each offseason before any model change ships
+
+## Script rerun (11/18/26, `scripts/backtest.py`)
+
+### Part 1, 2026 Weeks 1-10 (ESPN league scoring)
+Reproduces the table above. 1,905 relevant player-weeks, 1,406 startable.
+
+| Source | MAE | r | Start/sit | Bias |
+|---|---|---|---|---|
+| ESPN | 5.65 | 0.545 | 63.5% | +0.41 |
+| Rotowire | 5.59 | 0.549 | 63.7% | +0.22 |
+| Average | **5.59** | **0.554** | **64.0%** | n/a |
+
+### Part 3, fit 2025, score 2026
+Does not reproduce the original numbers. The script's 2026 test set is 1,905 relevant and 1,407 startable player-weeks against 1,775 and 1,210 above, so the original study filtered something the method notes do not describe. Fits: b 0.25, b by position QB 0.65 RB 0.20 WR 0.25 TE 0.25, M3 ESPN weight 0.90.
+
+| Model | 2025 start/sit (in sample) | 2026 MAE | 2026 r | 2026 start/sit | 2026 FLEX pick |
+|---|---|---|---|---|---|
+| M0 Equal average | 62.5% | 5.599 | 0.553 | 64.0% | 64.6% |
+| M1 + Vegas, one b | 63.0% | 5.588 | 0.556 | 64.1% | 64.9% |
+| M2 + Vegas, b by position | 63.1% | 5.599 | 0.555 | 64.1% | 64.8% |
+| M3 + weights + calibration | 62.6% | 5.570 | 0.545 | 63.9% | 64.4% |
+
+- Week-bootstrap 95% range against M0, 2026 start/sit: M1 -0.39 to +0.57, M2 -0.33 to +0.60, M3 -0.60 to +0.45 points
+- No variant beats M0 with the whole range above zero, so the equal average stays. The original finding (Vegas hurts out of sample) softens to "no reliable gain either way"
+- Script choices where the notes were silent: b is fit by grid search (0 to 1, step 0.05) for best train start/sit, M3's ESPN weight the same way, M3 calibration is a least squares slope through zero per position, actuals are ESPN's own (statSourceId 0)

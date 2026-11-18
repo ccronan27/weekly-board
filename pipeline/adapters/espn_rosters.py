@@ -34,6 +34,22 @@ def validate(d) -> None:
     require(isinstance(s["scoringByStatId"], dict) and s["scoringByStatId"], "espn rosters.json: scoringByStatId empty")
     require(all(isinstance(v, (int, float)) for v in s["scoringByStatId"].values()), "espn rosters.json: non numeric scoring value")
     require(isinstance(s["lineupSlotCounts"], dict) and s["lineupSlotCounts"], "espn rosters.json: lineupSlotCounts empty")
+    # Optional keys the sync skill may add (see docs/SPEC.md). Checked only when present.
+    dst = s.get("dstScoringByStatId")
+    if dst is not None:
+        require(isinstance(dst, dict) and dst and all(isinstance(v, (int, float)) for v in dst.values()),
+                "espn rosters.json: dstScoringByStatId must be a non-empty map of numbers")
+    for k in ("playoffWeekStart", "playoffTeams"):
+        if s.get(k) is not None:
+            require(isinstance(s[k], int), f"espn rosters.json: settings.{k} not an int")
+    if d.get("standings") is not None:
+        require(isinstance(d["standings"], list), "espn rosters.json: standings not a list")
+        for r in d["standings"]:
+            require_keys(r, ["teamId", "wins", "losses", "ties", "pointsFor"], "espn rosters.json standings row")
+    if d.get("schedule") is not None:
+        require(isinstance(d["schedule"], list), "espn rosters.json: schedule not a list")
+        for g in d["schedule"]:
+            require_keys(g, ["week", "homeTeamId", "awayTeamId"], "espn rosters.json schedule row")
     teams = d["teams"]
     require(isinstance(teams, list) and len(teams) == s["teams"], f"espn rosters.json: expected {s['teams']} teams, got {len(teams) if isinstance(teams, list) else teams!r}")
     for t in teams:

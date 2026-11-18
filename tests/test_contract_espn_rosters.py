@@ -73,3 +73,23 @@ def test_bad_timestamp_fails(real):
     real["syncedAt"] = "yesterday"
     with pytest.raises(ContractError, match="syncedAt"):
         er.validate(real)
+
+
+def test_optional_keys_pass_when_well_formed(real):
+    real["settings"]["dstScoringByStatId"] = {"99": 1, "95": 2}
+    real["settings"]["playoffWeekStart"] = 15
+    real["standings"] = [{"teamId": t["teamId"], "wins": 5, "losses": 5, "ties": 0, "pointsFor": 1000.5} for t in real["teams"]]
+    real["schedule"] = [{"week": 12, "homeTeamId": 1, "awayTeamId": 2}]
+    er.validate(real)
+
+
+@pytest.mark.parametrize("mutate, match", [
+    (lambda d: d["settings"].__setitem__("dstScoringByStatId", {"99": "one"}), "dstScoringByStatId"),
+    (lambda d: d["settings"].__setitem__("playoffWeekStart", "15"), "playoffWeekStart"),
+    (lambda d: d.__setitem__("standings", [{"teamId": 1}]), "standings"),
+    (lambda d: d.__setitem__("schedule", [{"week": 12}]), "schedule"),
+])
+def test_optional_keys_fail_loudly_when_malformed(real, mutate, match):
+    mutate(real)
+    with pytest.raises(ContractError, match=match):
+        er.validate(real)
