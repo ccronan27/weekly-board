@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T22:20:43Z",
+ "generatedAt": "2026-11-18T02:09:30Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -16,7 +16,7 @@
     "slot": "FLEX"
    }
   ],
-  "currentPoints": 109.4,
+  "currentPoints": 109.3,
   "gain": 8.3,
   "moves": [
    {
@@ -74,56 +74,56 @@
     "slot": "FLEX"
    }
   ],
-  "recommendedPoints": 117.7,
+  "recommendedPoints": 117.6,
   "slots": [
    {
     "changed": false,
     "current": {
-     "ceiling": 23.8,
+     "ceiling": 23.7,
      "eligible": true,
      "espn": 15.4,
      "flags": [],
-     "floor": 8.4,
+     "floor": 8.3,
      "game": {
       "home": true,
-      "implied": 26.0,
+      "implied": 25.2,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "TB",
-      "oppImplied": 19.5,
-      "spread": -6.5,
-      "total": 45.5
+      "oppImplied": 18.2,
+      "spread": -7.0,
+      "total": 43.5
      },
      "id": "3163",
      "injuryNotes": null,
      "locked": false,
      "name": "Jared Goff",
-     "points": 16.1,
+     "points": 16.0,
      "pos": "QB",
-     "rotowire": 16.8,
+     "rotowire": 16.7,
      "team": "DET"
     },
     "recommended": {
-     "ceiling": 23.8,
+     "ceiling": 23.7,
      "eligible": true,
      "espn": 15.4,
      "flags": [],
-     "floor": 8.4,
+     "floor": 8.3,
      "game": {
       "home": true,
-      "implied": 26.0,
+      "implied": 25.2,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "TB",
-      "oppImplied": 19.5,
-      "spread": -6.5,
-      "total": 45.5
+      "oppImplied": 18.2,
+      "spread": -7.0,
+      "total": 43.5
      },
      "id": "3163",
      "injuryNotes": null,
      "locked": false,
      "name": "Jared Goff",
-     "points": 16.1,
+     "points": 16.0,
      "pos": "QB",
-     "rotowire": 16.8,
+     "rotowire": 16.7,
      "team": "DET"
     },
     "slot": "QB"
@@ -603,28 +603,28 @@
  },
  "roster": [
   {
-   "ceiling": 23.8,
+   "ceiling": 23.7,
    "eligible": true,
    "espn": 15.4,
    "flags": [],
-   "floor": 8.4,
+   "floor": 8.3,
    "game": {
     "home": true,
-    "implied": 26.0,
+    "implied": 25.2,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "TB",
-    "oppImplied": 19.5,
-    "spread": -6.5,
-    "total": 45.5
+    "oppImplied": 18.2,
+    "spread": -7.0,
+    "total": 43.5
    },
    "games": 9,
    "id": "3163",
    "injuryNotes": null,
    "locked": false,
    "name": "Jared Goff",
-   "points": 16.1,
+   "points": 16.0,
    "pos": "QB",
-   "rotowire": 16.8,
+   "rotowire": 16.7,
    "sd": 7.73,
    "slot": "START",
    "sources": [
@@ -1106,31 +1106,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:43Z",
+   "lastUpdated": "2026-11-18T02:09:29Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:43Z",
+   "lastUpdated": "2026-11-18T02:09:29Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:41Z",
+   "lastUpdated": "2026-11-18T02:09:27Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:41Z",
+   "lastUpdated": "2026-11-18T02:09:27Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:41Z",
+   "lastUpdated": "2026-11-18T02:09:27Z",
    "ok": true,
    "stale": false
   }

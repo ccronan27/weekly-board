@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T22:20:43Z",
+ "generatedAt": "2026-11-18T02:09:30Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -8,10 +8,10 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 100.1,
+  "currentPoints": 100.2,
   "gain": 0.0,
   "moves": [],
-  "recommendedPoints": 100.1,
+  "recommendedPoints": 100.2,
   "slots": [
    {
     "changed": false,
@@ -23,12 +23,12 @@
      "floor": 7.2,
      "game": {
       "home": true,
-      "implied": 26.0,
+      "implied": 25.2,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "TB",
-      "oppImplied": 19.5,
-      "spread": -6.5,
-      "total": 45.5
+      "oppImplied": 18.2,
+      "spread": -7.0,
+      "total": 43.5
      },
      "id": "3163",
      "injuryNotes": null,
@@ -36,7 +36,7 @@
      "name": "Jared Goff",
      "points": 15.2,
      "pos": "QB",
-     "rotowire": 15.7,
+     "rotowire": 15.6,
      "team": "DET"
     },
     "recommended": {
@@ -47,12 +47,12 @@
      "floor": 7.2,
      "game": {
       "home": true,
-      "implied": 26.0,
+      "implied": 25.2,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "TB",
-      "oppImplied": 19.5,
-      "spread": -6.5,
-      "total": 45.5
+      "oppImplied": 18.2,
+      "spread": -7.0,
+      "total": 43.5
      },
      "id": "3163",
      "injuryNotes": null,
@@ -60,7 +60,7 @@
      "name": "Jared Goff",
      "points": 15.2,
      "pos": "QB",
-     "rotowire": 15.7,
+     "rotowire": 15.6,
      "team": "DET"
     },
     "slot": "QB"
@@ -224,51 +224,51 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 14.4,
+     "ceiling": 14.5,
      "eligible": true,
      "espn": 7.4,
      "flags": [],
-     "floor": 1.8,
+     "floor": 1.9,
      "game": {
       "home": false,
-      "implied": 29.5,
+      "implied": 30.0,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "WAS",
-      "oppImplied": 23.0,
+      "oppImplied": 23.5,
       "spread": -6.5,
-      "total": 52.5
+      "total": 53.5
      },
      "id": "4993",
      "injuryNotes": null,
      "locked": false,
      "name": "Mike Gesicki",
-     "points": 8.1,
+     "points": 8.2,
      "pos": "TE",
-     "rotowire": 8.9,
+     "rotowire": 9.0,
      "team": "CIN"
     },
     "recommended": {
-     "ceiling": 14.4,
+     "ceiling": 14.5,
      "eligible": true,
      "espn": 7.4,
      "flags": [],
-     "floor": 1.8,
+     "floor": 1.9,
      "game": {
       "home": false,
-      "implied": 29.5,
+      "implied": 30.0,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "WAS",
-      "oppImplied": 23.0,
+      "oppImplied": 23.5,
       "spread": -6.5,
-      "total": 52.5
+      "total": 53.5
      },
      "id": "4993",
      "injuryNotes": null,
      "locked": false,
      "name": "Mike Gesicki",
-     "points": 8.1,
+     "points": 8.2,
      "pos": "TE",
-     "rotowire": 8.9,
+     "rotowire": 9.0,
      "team": "CIN"
     },
     "slot": "TE"
@@ -328,11 +328,11 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 14.2,
+     "ceiling": 14.1,
      "eligible": true,
      "espn": 8.4,
      "flags": [],
-     "floor": 3.1,
+     "floor": 3.0,
      "game": {
       "home": false,
       "implied": 21.2,
@@ -348,15 +348,15 @@
      "name": "Aaron Jones Sr.",
      "points": 8.6,
      "pos": "RB",
-     "rotowire": 8.8,
+     "rotowire": 8.7,
      "team": "MIN"
     },
     "recommended": {
-     "ceiling": 14.2,
+     "ceiling": 14.1,
      "eligible": true,
      "espn": 8.4,
      "flags": [],
-     "floor": 3.1,
+     "floor": 3.0,
      "game": {
       "home": false,
       "implied": 21.2,
@@ -372,7 +372,7 @@
      "name": "Aaron Jones Sr.",
      "points": 8.6,
      "pos": "RB",
-     "rotowire": 8.8,
+     "rotowire": 8.7,
      "team": "MIN"
     },
     "slot": "FLEX"
@@ -525,12 +525,12 @@
    "floor": 7.2,
    "game": {
     "home": true,
-    "implied": 26.0,
+    "implied": 25.2,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "TB",
-    "oppImplied": 19.5,
-    "spread": -6.5,
-    "total": 45.5
+    "oppImplied": 18.2,
+    "spread": -7.0,
+    "total": 43.5
    },
    "games": 9,
    "id": "3163",
@@ -539,7 +539,7 @@
    "name": "Jared Goff",
    "points": 15.2,
    "pos": "QB",
-   "rotowire": 15.7,
+   "rotowire": 15.6,
    "sd": 8.0,
    "slot": "QB",
    "sources": [
@@ -614,11 +614,11 @@
    "team": "KC"
   },
   {
-   "ceiling": 14.2,
+   "ceiling": 14.1,
    "eligible": true,
    "espn": 8.4,
    "flags": [],
-   "floor": 3.1,
+   "floor": 3.0,
    "game": {
     "home": false,
     "implied": 21.2,
@@ -635,7 +635,7 @@
    "name": "Aaron Jones Sr.",
    "points": 8.6,
    "pos": "RB",
-   "rotowire": 8.8,
+   "rotowire": 8.7,
    "sd": 5.56,
    "slot": "FLEX",
    "sources": [
@@ -678,28 +678,28 @@
    "team": "LV"
   },
   {
-   "ceiling": 14.4,
+   "ceiling": 14.5,
    "eligible": true,
    "espn": 7.4,
    "flags": [],
-   "floor": 1.8,
+   "floor": 1.9,
    "game": {
     "home": false,
-    "implied": 29.5,
+    "implied": 30.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.0,
+    "oppImplied": 23.5,
     "spread": -6.5,
-    "total": 52.5
+    "total": 53.5
    },
    "games": 8,
    "id": "4993",
    "injuryNotes": null,
    "locked": false,
    "name": "Mike Gesicki",
-   "points": 8.1,
+   "points": 8.2,
    "pos": "TE",
-   "rotowire": 8.9,
+   "rotowire": 9.0,
    "sd": 6.29,
    "slot": "TE",
    "sources": [
@@ -948,7 +948,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:43Z",
+   "lastUpdated": "2026-11-18T02:09:29Z",
    "ok": true,
    "stale": false
   },
@@ -960,13 +960,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:43Z",
+   "lastUpdated": "2026-11-18T02:09:29Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:41Z",
+   "lastUpdated": "2026-11-18T02:09:27Z",
    "ok": true,
    "stale": false
   }

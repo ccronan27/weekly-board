@@ -5365,6 +5365,7 @@
     "rec_20_29": 1.0,
     "rec_5_9": 1.0,
     "rec_air_yd": 11.0,
+    "rec_drop": 1.0,
     "rec_fd": 1.0,
     "rec_lng": 20.0,
     "rec_td": 1.0,
@@ -5380,7 +5381,7 @@
     "tm_st_snp": 26.0
    },
    "team": "MIN",
-   "updatedAt": 1794841726512,
+   "updatedAt": 1794956937045,
    "week": 10
   },
   {
@@ -7781,7 +7782,6 @@
     "rec": 1.0,
     "rec_5_9": 1.0,
     "rec_air_yd": 6.0,
-    "rec_drop": 1.0,
     "rec_lng": 7.0,
     "rec_tgt": 3.0,
     "rec_yar": 1.0,
@@ -7794,7 +7794,7 @@
     "tm_st_snp": 28.0
    },
    "team": "BUF",
-   "updatedAt": 1794870535218,
+   "updatedAt": 1794956940160,
    "week": 10
   },
   {
@@ -8761,7 +8761,7 @@
     "rec_10_19": 1.0,
     "rec_20_29": 2.0,
     "rec_air_yd": 39.0,
-    "rec_drop": 2.0,
+    "rec_drop": 1.0,
     "rec_fd": 3.0,
     "rec_lng": 25.0,
     "rec_tgt": 8.0,
@@ -8775,7 +8775,7 @@
     "tm_st_snp": 27.0
    },
    "team": "NYJ",
-   "updatedAt": 1794870535082,
+   "updatedAt": 1794956940042,
    "week": 10
   },
   {
@@ -10068,7 +10068,6 @@
     "rec_30_39": 2.0,
     "rec_40p": 1.0,
     "rec_air_yd": 99.0,
-    "rec_drop": 1.0,
     "rec_fd": 5.0,
     "rec_lng": 50.0,
     "rec_rz_tgt": 1.0,
@@ -10086,7 +10085,7 @@
     "tm_st_snp": 30.0
    },
    "team": "JAX",
-   "updatedAt": 1794942542433,
+   "updatedAt": 1794956943688,
    "week": 10
   },
   {
@@ -13163,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-17T22:20:41Z",
+ "fetchedAt": "2026-11-18T02:09:27Z",
  "source": "sleeper_stats"
 }

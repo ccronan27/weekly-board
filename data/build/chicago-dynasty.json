@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T22:20:43Z",
+ "generatedAt": "2026-11-18T02:09:30Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -16,7 +16,7 @@
     "slot": "WR"
    }
   ],
-  "currentPoints": 91.8,
+  "currentPoints": 91.9,
   "gain": 6.0,
   "moves": [
    {
@@ -52,7 +52,7 @@
      "flags": [
       "OUT"
      ],
-     "floor": 5.3,
+     "floor": 5.2,
      "game": {
       "home": true,
       "implied": 24.2,
@@ -74,7 +74,7 @@
     "slot": "WR"
    }
   ],
-  "recommendedPoints": 97.8,
+  "recommendedPoints": 97.9,
   "slots": [
    {
     "changed": false,
@@ -293,7 +293,7 @@
      "flags": [
       "OUT"
      ],
-     "floor": 5.3,
+     "floor": 5.2,
      "game": {
       "home": true,
       "implied": 24.2,
@@ -341,51 +341,51 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 14.4,
+     "ceiling": 14.5,
      "eligible": true,
      "espn": 7.4,
      "flags": [],
-     "floor": 1.8,
+     "floor": 1.9,
      "game": {
       "home": false,
-      "implied": 29.5,
+      "implied": 30.0,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "WAS",
-      "oppImplied": 23.0,
+      "oppImplied": 23.5,
       "spread": -6.5,
-      "total": 52.5
+      "total": 53.5
      },
      "id": "4993",
      "injuryNotes": null,
      "locked": false,
      "name": "Mike Gesicki",
-     "points": 8.1,
+     "points": 8.2,
      "pos": "TE",
-     "rotowire": 8.9,
+     "rotowire": 9.0,
      "team": "CIN"
     },
     "recommended": {
-     "ceiling": 14.4,
+     "ceiling": 14.5,
      "eligible": true,
      "espn": 7.4,
      "flags": [],
-     "floor": 1.8,
+     "floor": 1.9,
      "game": {
       "home": false,
-      "implied": 29.5,
+      "implied": 30.0,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "WAS",
-      "oppImplied": 23.0,
+      "oppImplied": 23.5,
       "spread": -6.5,
-      "total": 52.5
+      "total": 53.5
      },
      "id": "4993",
      "injuryNotes": null,
      "locked": false,
      "name": "Mike Gesicki",
-     "points": 8.1,
+     "points": 8.2,
      "pos": "TE",
-     "rotowire": 8.9,
+     "rotowire": 9.0,
      "team": "CIN"
     },
     "slot": "TE"
@@ -449,15 +449,15 @@
      "eligible": true,
      "espn": 7.5,
      "flags": [],
-     "floor": 4.7,
+     "floor": 4.6,
      "game": {
       "home": false,
-      "implied": 19.5,
+      "implied": 18.2,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "DET",
-      "oppImplied": 26.0,
-      "spread": 6.5,
-      "total": 45.5
+      "oppImplied": 25.2,
+      "spread": 7.0,
+      "total": 43.5
      },
      "id": "8111",
      "injuryNotes": null,
@@ -465,7 +465,7 @@
      "name": "Cade Otton",
      "points": 7.2,
      "pos": "TE",
-     "rotowire": 6.9,
+     "rotowire": 6.8,
      "team": "TB"
     },
     "recommended": {
@@ -473,15 +473,15 @@
      "eligible": true,
      "espn": 7.5,
      "flags": [],
-     "floor": 4.7,
+     "floor": 4.6,
      "game": {
       "home": false,
-      "implied": 19.5,
+      "implied": 18.2,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "DET",
-      "oppImplied": 26.0,
-      "spread": 6.5,
-      "total": 45.5
+      "oppImplied": 25.2,
+      "spread": 7.0,
+      "total": 43.5
      },
      "id": "8111",
      "injuryNotes": null,
@@ -489,7 +489,7 @@
      "name": "Cade Otton",
      "points": 7.2,
      "pos": "TE",
-     "rotowire": 6.9,
+     "rotowire": 6.8,
      "team": "TB"
     },
     "slot": "FLEX"
@@ -737,7 +737,7 @@
    "flags": [
     "OUT"
    ],
-   "floor": 5.3,
+   "floor": 5.2,
    "game": {
     "home": true,
     "implied": 24.2,
@@ -829,28 +829,28 @@
    "team": "CAR"
   },
   {
-   "ceiling": 14.4,
+   "ceiling": 14.5,
    "eligible": true,
    "espn": 7.4,
    "flags": [],
-   "floor": 1.8,
+   "floor": 1.9,
    "game": {
     "home": false,
-    "implied": 29.5,
+    "implied": 30.0,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 23.0,
+    "oppImplied": 23.5,
     "spread": -6.5,
-    "total": 52.5
+    "total": 53.5
    },
    "games": 8,
    "id": "4993",
    "injuryNotes": null,
    "locked": false,
    "name": "Mike Gesicki",
-   "points": 8.1,
+   "points": 8.2,
    "pos": "TE",
-   "rotowire": 8.9,
+   "rotowire": 9.0,
    "sd": 6.29,
    "slot": "START",
    "sources": [
@@ -929,15 +929,15 @@
    "eligible": true,
    "espn": 7.5,
    "flags": [],
-   "floor": 4.7,
+   "floor": 4.6,
    "game": {
     "home": false,
-    "implied": 19.5,
+    "implied": 18.2,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "DET",
-    "oppImplied": 26.0,
-    "spread": 6.5,
-    "total": 45.5
+    "oppImplied": 25.2,
+    "spread": 7.0,
+    "total": 43.5
    },
    "games": 7,
    "id": "8111",
@@ -946,7 +946,7 @@
    "name": "Cade Otton",
    "points": 7.2,
    "pos": "TE",
-   "rotowire": 6.9,
+   "rotowire": 6.8,
    "sd": 2.54,
    "slot": "START",
    "sources": [
@@ -1277,31 +1277,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:43Z",
+   "lastUpdated": "2026-11-18T02:09:29Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:43Z",
+   "lastUpdated": "2026-11-18T02:09:29Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:41Z",
+   "lastUpdated": "2026-11-18T02:09:27Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:41Z",
+   "lastUpdated": "2026-11-18T02:09:27Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:20:41Z",
+   "lastUpdated": "2026-11-18T02:09:27Z",
    "ok": true,
    "stale": false
   }
