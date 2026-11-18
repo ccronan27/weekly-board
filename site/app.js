@@ -867,7 +867,7 @@ async function main() {
     else panel.replaceChildren(body);
     if (view === "trade") {
       const st = tradeState[lg.league.key];
-      if (st && st.scroll) { st.scroll = false; const bld = document.getElementById("builder"); if (bld) bld.scrollIntoView(); }
+      if (st && st.scroll) { st.scroll = false; const bld = document.getElementById("builder"); if (bld) bld.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
       else window.scrollTo(0, keepY);
     }
     history.replaceState(null, "", hashFor(lg, view));
