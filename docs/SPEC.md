@@ -44,6 +44,23 @@ Player matching across sources: normalize name (lowercase, strip `.'’-`, drop 
 ```
 Slot ids: 0 QB, 2 RB, 4 WR, 6 TE, 16 D/ST, 17 K, 20 BN, 21 IR, 23 FLEX.
 
+### Optional keys (added 11/18/26, for the espn-roster-sync skill to start writing)
+The board works without these and uses each one as soon as it appears. Each is validated when present, so a malformed value fails the contract test loudly.
+```json
+{
+  "settings": {
+    "dstScoringByStatId": { "89": 5, "90": 4, "95": 2, "99": 1 },
+    "playoffWeekStart": 15, "playoffTeams": 6
+  },
+  "standings": [ { "teamId": 14, "wins": 6, "losses": 4, "ties": 0, "pointsFor": 1234.5, "pointsAgainst": 1100.2 } ],
+  "schedule": [ { "week": 12, "homeTeamId": 14, "awayTeamId": 3 } ]
+}
+```
+- `dstScoringByStatId`: the league's D/ST points per ESPN stat id, from `settings.scoringSettings.scoringItems[].pointsOverrides["16"]` (fall back to `points` when there is no slot 16 override). Replaces the default values in `config/leagues/fantasizing.overrides.yaml`
+- `playoffWeekStart`, `playoffTeams`: from `settings.scheduleSettings` (`matchupPeriodCount` + 1 and `playoffTeamCount`). Replaces `playoffWeeks` in `config/leagues.yaml`
+- `standings`: from each team's `record.overall`. Team ids only, never owner fields
+- `schedule`: every regular season matchup from the `mMatchup` view, past and future (`matchupPeriodId`, `home.teamId`, `away.teamId`). Lets the board compute ESPN playoff odds
+
 ## Projection model (see docs/BACKTEST.md)
 - Re-score every source's raw stat projections with each league's exact scoring
 - Core = equal average of ESPN + Rotowire

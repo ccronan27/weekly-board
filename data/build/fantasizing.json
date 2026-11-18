@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T03:10:24Z",
+ "generatedAt": "2026-11-18T03:24:59Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -993,7 +993,8 @@
   }
  ],
  "scoringNotes": [
-  "ESPN scoring ids with points but no Rotowire equivalent, ignored for Rotowire: [63, 201, 206, 209]"
+  "ESPN scoring ids with points but no Rotowire equivalent, ignored for Rotowire: [63, 201, 206, 209]",
+  "D/ST scored with ESPN's default values from config. The sync file does not carry this league's D/ST scoring yet"
  ],
  "season": 2026,
  "sources": {

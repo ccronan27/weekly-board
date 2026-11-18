@@ -384,9 +384,11 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         }
 
         # ---- long term: who raises your best lineup across the fantasy playoff weeks still ahead
-        norm = entry[2] if len(entry) > 2 else {}
-        pw = lc.get("playoffWeeks") or waivers.playoff_weeks(norm.get("playoffWeekStart"), norm.get("playoffTeams"),
-                                                             norm.get("playoffRoundType")) or DEFAULT_PLAYOFF_WEEKS
+        # playoff weeks: the platform first (Sleeper API, or the ESPN sync file when it carries them), then config
+        norm = entry[2] if len(entry) > 2 else {"playoffWeekStart": rosters["settings"].get("playoffWeekStart"),
+                                                 "playoffTeams": rosters["settings"].get("playoffTeams"), "playoffRoundType": 0}
+        pw = waivers.playoff_weeks(norm.get("playoffWeekStart"), norm.get("playoffTeams"), norm.get("playoffRoundType")) \
+            or lc.get("playoffWeeks") or DEFAULT_PLAYOFF_WEEKS
         lt_weeks = [w for w in pw if w > week]
         if matchups:
             rates = {p["id"]: long_term_rate(p) for p in my_players + fas}
