@@ -281,3 +281,42 @@ def test_locked_free_agents_never_targeted(tmp_path):
     for k, lg in o.items():
         for t in lg["waivers"]["targets"]:
             assert t["player"]["team"] not in ("IND", "HOU"), (k, t["player"]["name"])   # played Thursday
+
+
+def _rec(**kw):
+    base = {"slot": "BN", "status": None, "points": 10.0, "flags": [], "ppg": 7.0, "games": 8, "pos": "WR"}
+    return {**base, **kw}
+
+
+def test_long_term_rate_rule():
+    assert bd.long_term_rate(_rec()) == (10.0, "projection")                       # healthy: current role
+    assert bd.long_term_rate(_rec(flags=["BYE"], points=None)) == (7.0, "season")  # bye now: season average
+    assert bd.long_term_rate(_rec(status="OUT", flags=["OUT"])) == (7.0, "season")
+    assert bd.long_term_rate(_rec(pos="DEF")) == (7.0, "season")                   # DEF and K: matchup neutral
+    assert bd.long_term_rate(_rec(pos="K", games=2)) == (0.0, None)
+    assert bd.long_term_rate(_rec(status="IR", flags=["IR"])) == (0.0, None)
+    assert bd.long_term_rate(_rec(slot="TAXI")) == (0.0, None)
+    assert bd.long_term_rate(_rec(flags=["BYE"], points=None, games=2)) == (0.0, None)
+
+
+@needs_raw
+def test_long_term_targets_cover_playoff_weeks(built):
+    for k, o in built[1]["leagues"].items():
+        lt = o["waivers"]["longTerm"]
+        assert lt is not None and lt["playoffWeeks"] == [15, 16, 17] and lt["weeks"] == [15, 16, 17], k
+        mine = {p["id"] for p in o["roster"]}
+        gains = [t["gain"] for t in lt["targets"]]
+        assert gains == sorted(gains, reverse=True) and all(g > 0 for g in gains)
+        for t in lt["targets"]:
+            assert t["player"]["id"] not in mine and [x["week"] for x in t["weeks"]] == [15, 16, 17]
+            assert abs(sum(x["gain"] for x in t["weeks"]) - t["gain"]) < 0.15
+            assert all(x["rank"] is None or 1 <= x["rank"] <= 32 for x in t["weeks"])
+            assert t["rateFrom"] == "season" if t["player"]["pos"] in ("DEF", "K") else t["rateFrom"] in ("projection", "season")
+
+
+def test_defense_ranks_rank_most_allowed_first():
+    from pipeline.scoring import League
+    lg = League(key="x", name="x", platform="sleeper", scoring={"rec": 1.0}, starters=["WR"])
+    stats = {1: [{"opponent": "AAA", "pos": "WR", "stats": {"rec": 10}}, {"opponent": "BBB", "pos": "WR", "stats": {"rec": 4}}],
+             2: [{"opponent": "AAA", "pos": "WR", "stats": {"rec": 6}}, {"opponent": "BBB", "pos": "WR", "stats": {"rec": 2, "gp": 0}}]}
+    assert bd.defense_ranks(stats, lg) == {("AAA", "WR"): 1, ("BBB", "WR"): 2}

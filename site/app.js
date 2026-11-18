@@ -300,8 +300,12 @@ function renderWaivers(league, meta) {
   const head = el("div", "card");
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
   const best = w.targets.length ? w.targets[0] : null;
+  const lt = w.longTerm && w.longTerm.weeks && w.longTerm.weeks.length ? w.longTerm : null;
+  const bestLt = lt && lt.targets.length ? lt.targets[0] : null;
   const sum = el("div", "summary");
-  [["Best add", best ? best.player.name : "None"], ["Gain", best ? signed(best.gain) : "0.0"], ["Free agents", String(w.freeAgents)]].forEach(function (x) {
+  [["This week", best ? best.player.name + " " + signed(best.gain) : "None"],
+   ["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : "Over"],
+   ["Free agents", String(w.freeAgents)]].forEach(function (x) {
     const d = el("div");
     d.appendChild(el("span", "label", x[0]));
     d.appendChild(el("b", null, x[1]));
@@ -325,8 +329,8 @@ function renderWaivers(league, meta) {
   }
   secDrop.appendChild(dc);
 
-  secTargets.appendChild(el("h2", null, "Waiver targets"));
-  secTargets.appendChild(el("div", "muted", "Ranked by how much each player raises your best lineup this week. Two per position at most."));
+  secTargets.appendChild(el("h2", null, "Short term, week " + league.week));
+  secTargets.appendChild(el("div", "muted", "Projected points each player adds to your best lineup this week. Two per position at most."));
   const tc = el("div", "card list");
   if (!w.targets.length) tc.appendChild(el("div", "slot", "No free agent beats your starters this week."));
   w.targets.forEach(function (t) {
@@ -336,8 +340,12 @@ function renderWaivers(league, meta) {
     tc.appendChild(wrap);
   });
   secTargets.appendChild(tc);
+  if (lt) secTargets.appendChild(longTermSection(lt));
 
-  secPos.appendChild(el("h2", null, "Best available by position"));
+  // Reference list, folded so the page stays short on phones
+  const fold = el("details", "fold");
+  fold.appendChild(el("summary", null, "Best available by position"));
+  secPos.appendChild(fold);
   const pc = el("div", "card list");
   // Lineup order, not the sorted order the JSON keys arrive in
   POSITIONS.filter(function (pos) { return w.byPosition[pos]; }).forEach(function (pos) {
@@ -349,9 +357,36 @@ function renderWaivers(league, meta) {
       pc.appendChild(wrap);
     });
   });
-  secPos.appendChild(pc);
+  fold.appendChild(pc);
 
   return columns([secSum, secDrop, sourcesSection(league, meta)], [secTargets, secPos]);
+}
+
+// Soft and tough: the 8 defenses that allow the most and the fewest points to the position
+function matchupText(x, teams) {
+  if (!x.opp) return "W" + x.week + " bye";
+  let t = "W" + x.week + " " + (x.home ? "vs " : "at ") + x.opp;
+  if (isNum(x.rank) && x.rank <= 8) t += " (soft)";
+  else if (isNum(x.rank) && x.rank > teams - 8) t += " (tough)";
+  return t;
+}
+
+function longTermSection(lt) {
+  const sec = el("div", "lt");
+  const span = lt.weeks.length > 1 ? "weeks " + lt.weeks[0] + " to " + lt.weeks[lt.weeks.length - 1] : "week " + lt.weeks[0];
+  sec.appendChild(el("h2", null, "Long term, playoffs " + span));
+  sec.appendChild(el("div", "muted", "Points each player adds to your best lineup over the playoff weeks. A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now. Soft and tough show the 8 defenses that allow the most and the fewest points to the position. Context only, not in the score."));
+  const c = el("div", "card list");
+  if (!lt.targets.length) c.appendChild(el("div", "slot", "No free agent beats your playoff lineup."));
+  lt.targets.forEach(function (t) {
+    const wrap = el("div", "slot");
+    const rate = isNum(t.rate) ? t.rate.toFixed(1) + " a week, " + (t.rateFrom === "season" ? "season average" : "this week's projection") + ". " : "";
+    const sched = t.weeks.map(function (x) { return matchupText(x, lt.teams || 32); }).join(" · ");
+    wrap.appendChild(playerRow(t.player, { chip: t.player.pos, gain: t.gain, ppg: true, extra: rate + sched }));
+    c.appendChild(wrap);
+  });
+  sec.appendChild(c);
+  return sec;
 }
 
 // Lineup or Waivers for the open league. Waivers only when the build has them

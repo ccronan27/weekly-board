@@ -3,6 +3,9 @@
   "chicago-dynasty": {
    "leagueId": "1335703355086893056",
    "name": "Chicago Dynasty",
+   "playoffRoundType": 0,
+   "playoffTeams": 6,
+   "playoffWeekStart": 15,
    "rosterPositions": [
     "QB",
     "RB",
@@ -606,6 +609,9 @@
   "hwh": {
    "leagueId": "1389389185361653760",
    "name": "HWH: The League",
+   "playoffRoundType": 0,
+   "playoffTeams": 6,
+   "playoffWeekStart": 15,
    "rosterPositions": [
     "QB",
     "RB",
@@ -1217,6 +1223,6 @@
    ]
   }
  },
- "fetchedAt": "2026-11-18T02:14:35Z",
+ "fetchedAt": "2026-11-18T02:39:10Z",
  "source": "sleeper_leagues"
 }

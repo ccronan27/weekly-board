@@ -98,3 +98,10 @@ def test_stats(load):
         r["stats"] = {}
     with pytest.raises(ContractError, match="pts_ppr"):
         sleeper.validate_rows(rows, "stats")
+
+
+def test_league_keeps_playoff_settings(load):
+    raw = load("sleeper_league.json")
+    out = sleeper.normalize_league(raw, load("sleeper_rosters.json"), load("sleeper_users.json"), "u1")
+    st = raw["settings"]
+    assert out["playoffWeekStart"] == st.get("playoff_week_start") and out["playoffTeams"] == st.get("playoff_teams")

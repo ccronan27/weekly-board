@@ -7,6 +7,8 @@ lineup board (pipeline.lineup), same locks: a free agent whose game has started 
 """
 from __future__ import annotations
 
+import math
+
 from pipeline import lineup
 
 
@@ -76,4 +78,44 @@ def diversify(ranked: list[dict], pos_of: dict, per_pos: int = 2, limit: int = 8
             count[pos] = count.get(pos, 0) + 1
         if len(out) == limit:
             break
+    return out
+
+
+# ---------------------------------------------------------------- long term: the fantasy playoffs
+
+def playoff_weeks(start: int | None, teams: int | None, round_type: int | None = 0) -> list[int]:
+    """Fantasy playoff weeks from Sleeper settings. 6 teams is 3 rounds (top 2 get a bye).
+    round_type 0 is one week a round, 1 adds a second week to the final, 2 is two weeks a round."""
+    if not start or not teams or teams < 2:
+        return []
+    rounds = math.ceil(math.log2(teams))
+    n = rounds * 2 if round_type == 2 else rounds + (1 if round_type == 1 else 0)
+    return list(range(start, start + n))
+
+
+def long_term(slots: list[str], weeks: list[int], mine: list[dict], free_agents: list[dict], plays) -> list[dict]:
+    """Free agents who raise your best lineup across the playoff weeks, best total first.
+
+    mine, free_agents: dicts with id, pos, team and rate (expected points in a week he plays).
+    plays(week, team) says whether that team has a game that week. No locks: these weeks are ahead.
+    Each result: {"id", "gain", "weeks": [{"week", "gain"}]}.
+    """
+    totals: dict = {}
+    for w in weeks:
+        def avail(p):
+            return {"id": p["id"], "pos": p["pos"], "points": p["rate"], "eligible": bool(p["rate"]) and plays(w, p["team"])}
+        m = [avail(p) for p in mine]
+        base, _ = best_lineup(slots, m)
+        for fa in free_agents:
+            if not fa.get("rate"):
+                continue
+            f = avail(fa)
+            gain = 0.0
+            if f["eligible"]:
+                total, _ = best_lineup(slots, m + [f])
+                gain = max(0.0, round(total - base, 1))
+            totals.setdefault(fa["id"], []).append({"week": w, "gain": gain})
+    out = [{"id": pid, "gain": round(sum(x["gain"] for x in ws), 1), "weeks": ws} for pid, ws in totals.items()]
+    out = [r for r in out if r["gain"] > 0]
+    out.sort(key=lambda r: (-r["gain"], str(r["id"])))
     return out

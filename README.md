@@ -2,7 +2,7 @@
 
 A start/sit dashboard across three fantasy football leagues: Fantasizing 2026 (ESPN), HWH: The League (Sleeper) and Chicago Dynasty (Sleeper). It runs on GitHub Actions and publishes a static page on GitHub Pages. The page shows, for each league, your current lineup next to the best lineup, with the point difference, injury and bye flags, floor and ceiling, Vegas context and when each data source was last updated.
 
-Each league also has a Waivers view (v2). It ranks free agents by how many points they add to your best possible lineup this week, so weak slots, byes and injuries are all covered by one number. It caps the list at two per position, shows the best three free agents at each position, and suggests a drop from your bench in redraft leagues. Dynasty leagues (`dynasty: true` in `config/leagues.yaml`) get no drop suggestion, because weekly points ignore long term value. Players whose game has started are never suggested.
+Each league also has a Waivers view (v2) with two lists. Short term ranks free agents by the projected points they add to your best possible lineup this week, so weak slots, byes and injuries are all covered by one number. Long term ranks them by the points they add across the fantasy playoff weeks still ahead (weeks 15 to 17 by default). A playoff week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now. Teams off that week count 0. Playoff opponents are tagged soft or tough from points allowed to the position this season, as context only. Both lists cap at two per position. The view also shows the best three free agents at each position and suggests a drop from your bench in redraft leagues. Dynasty leagues (`dynasty: true` in `config/leagues.yaml`) get no drop suggestion, because weekly points ignore long term value. Players whose game has started are never suggested.
 
 The only piece that needs Claude is the ESPN roster sync. Everything else runs on its own.
 
@@ -56,7 +56,7 @@ Defined in `.github/workflows/refresh.yml`, all times America/Chicago: Tue 9:07p
 Scheduled workflows are disabled automatically after 60 days without repo activity, so the offseason turns them off.
 
 1. Re-enable workflows in August: Actions tab, select `refresh`, Enable workflow.
-2. Update the league IDs and season in `config/leagues.yaml`. Scoring and lineups are pulled from the platforms. Check `config/leagues/*.overrides.yaml` still apply.
+2. Update the league IDs and season in `config/leagues.yaml`, and the ESPN league's `playoffWeeks` (Sleeper playoff weeks come from the API). Scoring and lineups are pulled from the platforms. Check `config/leagues/*.overrides.yaml` still apply.
 3. Ask Claude to sync ESPN so `data/espn/rosters.json` is for the new league. Confirm the ESPN D/ST scoring in `config/leagues/fantasizing.overrides.yaml` still matches the league.
 4. Re-run the backtest from `docs/BACKTEST.md` before any model change ships. The script is not built yet (`scripts/backtest.py` is still to do), so the method notes in that document are the reference for now.
 5. Run `python -m pytest -m live`. A contract failure means a source changed shape.

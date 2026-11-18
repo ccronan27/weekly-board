@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T02:23:07Z",
+ "generatedAt": "2026-11-18T02:40:38Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -48,7 +48,7 @@
      "team": "LAC"
     },
     "out": {
-     "ceiling": 16.2,
+     "ceiling": 16.1,
      "eligible": false,
      "espn": 10.0,
      "flags": [
@@ -72,7 +72,7 @@
      "points": 10.7,
      "pos": "WR",
      "ppg": 12.6,
-     "rotowire": 11.5,
+     "rotowire": 11.3,
      "team": "SF"
     },
     "slot": "WR"
@@ -307,7 +307,7 @@
    {
     "changed": true,
     "current": {
-     "ceiling": 16.2,
+     "ceiling": 16.1,
      "eligible": false,
      "espn": 10.0,
      "flags": [
@@ -331,7 +331,7 @@
      "points": 10.7,
      "pos": "WR",
      "ppg": 12.6,
-     "rotowire": 11.5,
+     "rotowire": 11.3,
      "team": "SF"
     },
     "recommended": {
@@ -779,7 +779,7 @@
    "team": "BAL"
   },
   {
-   "ceiling": 16.2,
+   "ceiling": 16.1,
    "eligible": false,
    "espn": 10.0,
    "flags": [
@@ -803,7 +803,7 @@
    "points": 10.7,
    "pos": "WR",
    "ppg": 12.6,
-   "rotowire": 11.5,
+   "rotowire": 11.3,
    "sd": 5.48,
    "slot": "START",
    "sources": [
@@ -1343,31 +1343,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:14:37Z",
+   "lastUpdated": "2026-11-18T02:39:13Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:14:37Z",
+   "lastUpdated": "2026-11-18T02:39:13Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:14:35Z",
+   "lastUpdated": "2026-11-18T02:39:10Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:14:35Z",
+   "lastUpdated": "2026-11-18T02:39:11Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:14:35Z",
+   "lastUpdated": "2026-11-18T02:39:11Z",
    "ok": true,
    "stale": false
   }
@@ -1780,6 +1780,131 @@
   "drop": null,
   "dynasty": true,
   "freeAgents": 232,
+  "longTerm": {
+   "playoffWeeks": [
+    15,
+    16,
+    17
+   ],
+   "targets": [
+    {
+     "gain": 3.3,
+     "player": {
+      "ceiling": 11.7,
+      "eligible": true,
+      "espn": 8.2,
+      "flags": [],
+      "floor": 5.1,
+      "game": {
+       "home": false,
+       "implied": 23.0,
+       "kickoff": "2026-11-22T18:00Z",
+       "opp": "DAL",
+       "oppImplied": 31.5,
+       "spread": 8.5,
+       "total": 54.5
+      },
+      "games": 9,
+      "id": "12499",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Elic Ayomanor",
+      "points": 8.4,
+      "pos": "WR",
+      "ppg": 4.9,
+      "rotowire": 8.6,
+      "team": "TEN"
+     },
+     "rate": 8.4,
+     "rateFrom": "projection",
+     "weeks": [
+      {
+       "gain": 1.1,
+       "home": true,
+       "opp": "IND",
+       "rank": 19,
+       "week": 15
+      },
+      {
+       "gain": 1.1,
+       "home": false,
+       "opp": "LV",
+       "rank": 8,
+       "week": 16
+      },
+      {
+       "gain": 1.1,
+       "home": true,
+       "opp": "PIT",
+       "rank": 17,
+       "week": 17
+      }
+     ]
+    },
+    {
+     "gain": 1.8,
+     "player": {
+      "ceiling": 11.5,
+      "eligible": true,
+      "espn": 9.4,
+      "flags": [
+       "QUESTIONABLE"
+      ],
+      "floor": 4.3,
+      "game": {
+       "home": true,
+       "implied": 28.5,
+       "kickoff": "2026-11-20T01:15Z",
+       "opp": "IND",
+       "oppImplied": 16.0,
+       "spread": -12.5,
+       "total": 44.5
+      },
+      "games": 9,
+      "id": "10218",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Xavier Hutchinson",
+      "points": 7.9,
+      "pos": "WR",
+      "ppg": 7.6,
+      "rotowire": 6.4,
+      "team": "HOU"
+     },
+     "rate": 7.9,
+     "rateFrom": "projection",
+     "weeks": [
+      {
+       "gain": 0.6,
+       "home": true,
+       "opp": "JAX",
+       "rank": 16,
+       "week": 15
+      },
+      {
+       "gain": 0.6,
+       "home": false,
+       "opp": "PHI",
+       "rank": 4,
+       "week": 16
+      },
+      {
+       "gain": 0.6,
+       "home": false,
+       "opp": "GB",
+       "rank": 9,
+       "week": 17
+      }
+     ]
+    }
+   ],
+   "teams": 32,
+   "weeks": [
+    15,
+    16,
+    17
+   ]
+  },
   "targets": [
    {
     "gain": 2.4,

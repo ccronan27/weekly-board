@@ -52,6 +52,7 @@ def load_raw(season: int, week: int, raw_root=RAW) -> dict:
         "projections": (_load(d, "sleeper_projections") or {}).get("data") or [],
         "espn": (_load(d, "espn_defaults") or {}).get("data") or [],
         "lines": (_load(d, "nflverse_lines") or {}).get("data") or [],
+        "schedule": (_load(d, "nflverse_schedule") or {}).get("data") or [],
         "stats": stats,
     }
 
@@ -93,6 +94,58 @@ def parse_kickoff(s: str | None) -> datetime | None:
     return None if not s else datetime.strptime(s, "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc)
 
 
+def week_matchups(schedule: list[dict]) -> dict:
+    """week -> team -> (opponent, home). A team missing from a week is on a bye."""
+    out: dict = {}
+    for g in schedule:
+        out.setdefault(g["week"], {})[g["home"]] = (g["away"], True)
+        out[g["week"]][g["away"]] = (g["home"], False)
+    return out
+
+
+def defense_ranks(stats: dict, lg) -> dict:
+    """(team, pos) -> rank by fantasy points allowed to that position per game this season,
+    under this league's scoring. 1 allows the most. For DEF it ranks the offense DEFs faced.
+    Context for playoff matchups only. It never changes a score."""
+    week_pts: dict = {}
+    for w, rows in stats.items():
+        for r in rows:
+            if not r.get("opponent") or not r["stats"].get("gp", 1):
+                continue
+            k = (r["opponent"], r["pos"], w)
+            week_pts[k] = week_pts.get(k, 0.0) + scoring.score(scoring.actual_to_canon(r["stats"], r["pos"]), lg.scoring)
+    per: dict = {}
+    for (team, pos, _), v in week_pts.items():
+        per.setdefault((team, pos), []).append(v)
+    avg = {k: sum(v) / len(v) for k, v in per.items()}
+    ranks = {}
+    for pos in {k[1] for k in avg}:
+        for i, k in enumerate(sorted((k for k in avg if k[1] == pos), key=lambda k: (-avg[k], k[0]))):
+            ranks[k] = i + 1
+    return ranks
+
+
+def long_term_rate(p: dict) -> tuple[float, str | None]:
+    """Expected points in a playoff week the player's team plays. No tuned weights, just a rule:
+    - DEF and K: season average. Their weekly projection is mostly this week's opponent.
+    - Everyone else: this week's projection when healthy now, since it reflects the current role
+      (a season average still carries the weeks before a promotion). Hurt or on bye now: season average.
+    Season averages need 3 games. IR, taxi and IR status count 0, nobody knows if they return in time."""
+    if p.get("slot") in ("IR", "TAXI") or p["status"] == "IR":
+        return 0.0, None
+    enough = bool(p["ppg"]) and (p["games"] or 0) >= scoring.MIN_GAMES_FOR_SD
+    if p["pos"] in ("DEF", "K"):
+        return (p["ppg"], "season") if enough else (0.0, None)
+    if p["points"] and "BYE" not in p["flags"] and p["status"] not in OUT_STATUSES:
+        return p["points"], "projection"
+    if enough:
+        return p["ppg"], "season"
+    return 0.0, None
+
+
+DEFAULT_PLAYOFF_WEEKS = [15, 16, 17]
+
+
 def _r(x, n=1):
     return None if x is None else round(x, n)
 
@@ -112,6 +165,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
     sources = raw["status"]["sources"]
     sleeper_players = raw["players"]
     games = game_context(raw["lines"])
+    matchups = week_matchups(raw["schedule"])
 
     rosters = espn_rosters.load(rosters_path) if rosters_path else espn_rosters.load()
 
@@ -324,7 +378,31 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                         for t in waivers.diversify(waivers.targets(slots, mine_in, fa_in, fixed), {p["id"]: p["pos"] for p in fas})],
             "byPosition": {pos: [fa_brief(i) for i in ids] for pos, ids in waivers.best_by_position(positions, fa_in).items()},
             "drop": brief(drop),
+            "longTerm": None,
         }
+
+        # ---- long term: who raises your best lineup across the fantasy playoff weeks still ahead
+        norm = entry[2] if len(entry) > 2 else {}
+        pw = lc.get("playoffWeeks") or waivers.playoff_weeks(norm.get("playoffWeekStart"), norm.get("playoffTeams"),
+                                                             norm.get("playoffRoundType")) or DEFAULT_PLAYOFF_WEEKS
+        lt_weeks = [w for w in pw if w > week]
+        if matchups:
+            rates = {p["id"]: long_term_rate(p) for p in my_players + fas}
+            mine_lt = [{"id": p["id"], "pos": p["pos"], "team": p["team"], "rate": rates[p["id"]][0]} for p in my_players]
+            fa_lt = [{"id": p["id"], "pos": p["pos"], "team": p["team"], "rate": rates[p["id"]][0]} for p in fas]
+            ranks = defense_ranks(raw["stats"], lg) if lt_weeks else {}
+
+            def wk(p, x):
+                opp, home = matchups.get(x["week"], {}).get(p["team"], (None, None))
+                return {**x, "opp": opp, "home": home, "rank": ranks.get((opp, p["pos"]))}
+
+            lt = waivers.diversify(waivers.long_term(slots, lt_weeks, mine_lt, fa_lt, lambda w, t: t in matchups.get(w, {})),
+                                   {p["id"]: p["pos"] for p in fas})
+            out["waivers"]["longTerm"] = {
+                "weeks": lt_weeks, "playoffWeeks": pw, "teams": len(ranks and {k[0] for k in ranks}) or 32,
+                "targets": [{"player": fa_brief(t["id"]), "gain": t["gain"], "rate": round(rates[t["id"]][0], 1),
+                             "rateFrom": rates[t["id"]][1], "weeks": [wk(fa_by[t["id"]], x) for x in t["weeks"]]} for t in lt],
+            }
         outputs[lc["key"]] = out
         write_json(out_dir / f"{lc['key']}.json", out)
 

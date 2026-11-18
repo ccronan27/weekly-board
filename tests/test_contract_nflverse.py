@@ -38,3 +38,11 @@ def test_no_rows_for_season_fails(load):
 def test_empty_file_fails():
     with pytest.raises(ContractError):
         nv.validate([])
+
+
+def test_normalize_schedule_covers_the_season(load):
+    rows = nv.parse(load("nflverse_games.csv"))
+    sched = nv.normalize_schedule(rows, 2026)
+    assert sched and all(set(g) == {"week", "home", "away"} and isinstance(g["week"], int) for g in sched)
+    assert len({g["week"] for g in sched}) > 1, "schedule must span weeks, not only the current one"
+    assert "LA" not in {t for g in sched for t in (g["home"], g["away"])}

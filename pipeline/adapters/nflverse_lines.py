@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import functools
 import io
 
 from pipeline import http
@@ -12,6 +13,7 @@ REQUIRED_COLUMNS = ["game_id", "season", "game_type", "week", "gameday", "gameti
                     "away_team", "home_team", "spread_line", "total_line"]
 
 
+@functools.lru_cache(maxsize=1)   # lines and schedule share one download per run
 def fetch() -> str:
     return http.get(URL).text
 
@@ -59,3 +61,10 @@ def normalize(rows: list[dict], season: int, week: int) -> list[dict]:
             "impliedAway": implied_away,
         })
     return out
+
+
+def normalize_schedule(rows: list[dict], season: int) -> list[dict]:
+    """Every regular season game this season, for playoff week matchups and byes. No lines."""
+    validate(rows, season)
+    return [{"week": int(r["week"]), "away": norm_team(r["away_team"]), "home": norm_team(r["home_team"])}
+            for r in rows if r["season"] == str(season) and r["game_type"] == "REG"]
