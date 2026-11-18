@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T02:43:48Z",
+ "generatedAt": "2026-11-18T02:55:24Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -999,7 +999,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:43:31Z",
+   "lastUpdated": "2026-11-18T02:55:24Z",
    "ok": true,
    "stale": false
   },
@@ -1011,13 +1011,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:43:31Z",
+   "lastUpdated": "2026-11-18T02:55:24Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T02:43:29Z",
+   "lastUpdated": "2026-11-18T02:55:22Z",
    "ok": true,
    "stale": false
   }

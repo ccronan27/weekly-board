@@ -3534,7 +3534,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Audric Estime",
-   "newsUpdated": 1794799833242,
+   "newsUpdated": 1794969348146,
    "pos": "RB",
    "status": "Active",
    "team": "NO",
@@ -8274,7 +8274,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Trevor Etienne",
-   "newsUpdated": 1794365421553,
+   "newsUpdated": 1794969348208,
    "pos": "RB",
    "status": "Active",
    "team": "CAR",
@@ -11358,7 +11358,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Josh Cuevas",
-   "newsUpdated": 1794921645271,
+   "newsUpdated": 1794969648280,
    "pos": "TE",
    "status": "Active",
    "team": "BAL",
@@ -46182,7 +46182,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "John Metchie III",
-   "newsUpdated": 1794365721590,
+   "newsUpdated": 1794969648244,
    "pos": "WR",
    "status": "Active",
    "team": "CAR",
@@ -50646,7 +50646,7 @@
    "injuryNotes": null,
    "injuryStatus": "Out",
    "name": "Jordan Addison",
-   "newsUpdated": 1794856537987,
+   "newsUpdated": 1794969648041,
    "pos": "WR",
    "status": "Inactive",
    "team": "MIN",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-18T02:43:29Z",
+ "fetchedAt": "2026-11-18T02:55:22Z",
  "source": "sleeper_players"
 }
