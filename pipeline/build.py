@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from pipeline import lineup, players as pm, scoring, waivers
+from pipeline import lineup, players as pm, scoring, trades, waivers
 from pipeline.adapters import espn_rosters
 from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, write_json
 from pipeline.ingest import load_config
@@ -248,6 +248,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         slots = lg.starters
         rostered: dict = {}   # player id -> (team name, slot)
         rostered_names: set = set()   # (normalized name, pos). Guards the free agent list against unmatched ESPN ids
+        team_recs: dict = {}          # team name -> player records, every team, for the v3 trade analyzer
         my_players: list = []
 
         if lc["platform"] == "espn":
@@ -260,6 +261,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                     rec["slot"] = {"D/ST": "DEF"}.get(p["slot"], p["slot"])
                     rostered[rec["id"]] = (t["name"], rec["slot"])
                     rostered_names.add((normalize_name(rec["name"]), rec["pos"]))
+                    team_recs.setdefault(t["name"], []).append(rec)
                     if t["teamId"] == cfg["espnTeamId"]:
                         my_players.append(rec)
             team_name = next(t["name"] for t in rosters["teams"] if t["teamId"] == cfg["espnTeamId"])
@@ -273,12 +275,12 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             for t in norm["teams"]:
                 for pid in t["players"]:
                     rostered[pid] = (t["teamName"], None)
-                if t is mine:
-                    start_ids = t["starters"]
-                    for pid in t["players"]:
-                        rec = player_record(pid, espn_of.get(pid), lg)
-                        rec["slot"] = "IR" if pid in t["reserve"] else "TAXI" if pid in t["taxi"] else \
-                            "START" if pid in start_ids else "BN"
+                for pid in t["players"]:
+                    rec = player_record(pid, espn_of.get(pid), lg)
+                    rec["slot"] = "IR" if pid in t["reserve"] else "TAXI" if pid in t["taxi"] else \
+                        "START" if pid in t["starters"] else "BN"
+                    team_recs.setdefault(t["teamName"], []).append(rec)
+                    if t is mine:
                         my_players.append(rec)
             order = [p for p in norm["rosterPositions"] if p not in scoring.NOT_STARTERS]
             slots = order
@@ -403,6 +405,42 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 "targets": [{"player": fa_brief(t["id"]), "gain": t["gain"], "rate": round(rates[t["id"]][0], 1),
                              "rateFrom": rates[t["id"]][1], "weeks": [wk(fa_by[t["id"]], x) for x in t["weeks"]]} for t in lt],
             }
+        # ---- v3 trades: every roster with playoff rates, plus 1 for 1 ideas that help both teams
+        out["trade"] = None
+        if matchups:
+            def trade_player(p):
+                sp = sleeper_players.get(p["id"]) or {}
+                rate, src = long_term_rate(p)
+                return {"id": p["id"], "name": p["name"], "pos": p["pos"], "team": p["team"], "points": p["points"],
+                        "eligible": p["eligible"], "flags": p["flags"], "slot": p.get("slot"), "ppg": p["ppg"],
+                        "games": p["games"], "rate": round(rate, 1), "rateFrom": src, "age": sp.get("age"),
+                        "yearsExp": sp.get("yearsExp")}
+
+            plays = lambda w, t: t in matchups.get(w, {})
+            rosters_t = [{"name": n, "isMine": n == team_name,
+                          "players": sorted((trade_player(p) for p in recs), key=lambda p: (-(p["rate"] or 0), p["name"]))}
+                         for n, recs in team_recs.items()]
+            mine_t = next(r for r in rosters_t if r["isMine"])["players"]
+            others = [r for r in rosters_t if not r["isMine"]]
+            ideas = trades.suggest(slots, lt_weeks, mine_t, others, plays)
+            by_team = {r["name"]: {p["id"]: p for p in r["players"]} for r in rosters_t}
+            mine_by = by_team[team_name]
+
+            def this_week(players):
+                return waivers.best_lineup(slots, [{"id": p["id"], "pos": p["pos"], "points": p["points"],
+                                                    "eligible": p["eligible"]} for p in players])[0]
+            base_now = this_week(mine_t)
+            for i in ideas:
+                theirs = by_team[i["team"]]
+                after = [p for p in mine_t if p["id"] not in i["give"]] + [theirs[x] for x in i["get"]]
+                i["thisWeek"] = round(this_week(after) - base_now, 1)
+                i["youthFlag"] = dynasty and trades.youth_flag([mine_by[x] for x in i["give"]], [theirs[x] for x in i["get"]])
+            write_json(out_dir / f"trade-{lc['key']}.json", {
+                "generatedAt": generated, "season": season, "week": week, "league": lc["key"], "dynasty": dynasty,
+                "slots": slots, "weeks": lt_weeks, "flexEligible": {k: sorted(v) for k, v in scoring.FLEX_ELIGIBLE.items()},
+                "plays": {str(w): sorted(matchups.get(w, {})) for w in lt_weeks}, "rosters": rosters_t, "ideas": ideas,
+                "sources": out["sources"]})
+            out["trade"] = {"file": f"trade-{lc['key']}.json", "ideas": len(ideas)}
         outputs[lc["key"]] = out
         write_json(out_dir / f"{lc['key']}.json", out)
 

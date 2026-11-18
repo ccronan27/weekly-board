@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T02:57:18Z",
+ "generatedAt": "2026-11-18T03:04:04Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -1194,6 +1194,10 @@
    "ok": true,
    "stale": false
   }
+ },
+ "trade": {
+  "file": "trade-hwh.json",
+  "ideas": 8
  },
  "waivers": {
   "byPosition": {

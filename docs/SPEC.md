@@ -80,5 +80,5 @@ Actions should also run when `data/espn/rosters.json` changes (push trigger on t
 ## Roadmap
 - v1: start/sit per league. Consensus projection, floor/ceiling from weekly SD, Vegas context, injury/inactive alerts, flag any starter who is OUT/IR/bye
 - v2 (shipped 11/18/26): waiver targets per league, scored against each team's weakest starting slots, byes and injuries. Short term: the gain in your best lineup this week. Long term: the gain summed over the fantasy playoff weeks, using this week's projection as the rate for healthy skill players and the season average for DEF, K and players hurt or on bye now. Playoff matchup strength is display context only. See `pipeline/waivers.py`
-- v3: trade analyzer (dynasty-aware for Chicago Dynasty)
+- v3 (shipped 11/18/26): trade analyzer (dynasty-aware for Chicago Dynasty). Ideas are 1 for 1 trades that raise both teams' playoff lineups. The site builder handles any trade. Dynasty awareness is ages plus a flag when you send away a player 4 or more years younger. See `pipeline/trades.py`
 - v1 stores full league player pools so v2 needs no rework

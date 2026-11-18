@@ -75,6 +75,12 @@ def test_tabs_point_at_the_panel():
 
 def test_waivers_view_is_wired():
     js = (SITE / "app.js").read_text(encoding="utf-8")
-    for needle in ("renderWaivers", "league.waivers", "byPosition", "w.targets", "w.drop", "/waivers",
+    for needle in ("renderWaivers", "league.waivers", "byPosition", "w.targets", "w.drop", '"/" + view',
                    "longTerm", "longTermSection", "rateFrom"):
+        assert needle in js, needle
+
+
+def test_trade_view_is_wired():
+    js = (SITE / "app.js").read_text(encoding="utf-8")
+    for needle in ("renderTrade", "league.trade", "bestTotal", "tradeResult", "td.ideas", "youthFlag", '"trade", "Trade"'):
         assert needle in js, needle

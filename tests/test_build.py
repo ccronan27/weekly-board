@@ -320,3 +320,21 @@ def test_defense_ranks_rank_most_allowed_first():
     stats = {1: [{"opponent": "AAA", "pos": "WR", "stats": {"rec": 10}}, {"opponent": "BBB", "pos": "WR", "stats": {"rec": 4}}],
              2: [{"opponent": "AAA", "pos": "WR", "stats": {"rec": 6}}, {"opponent": "BBB", "pos": "WR", "stats": {"rec": 2, "gp": 0}}]}
     assert bd.defense_ranks(stats, lg) == {("AAA", "WR"): 1, ("BBB", "WR"): 2}
+
+
+@needs_raw
+def test_trade_files_cover_every_team(built):
+    out, res = built
+    for k, o in res["leagues"].items():
+        assert o["trade"]["file"] == f"trade-{k}.json"
+        td = read_json(out / o["trade"]["file"])
+        assert sum(r["isMine"] for r in td["rosters"]) == 1 and len(td["rosters"]) >= 10
+        names = {r["name"] for r in td["rosters"]}
+        mine = next(r for r in td["rosters"] if r["isMine"])
+        assert {p["id"] for p in mine["players"]} == {p["id"] for p in o["roster"]}
+        for i in td["ideas"]:
+            assert i["team"] in names and i["team"] != mine["name"]
+            assert i["myGain"] >= 0.5 and i["theirGain"] >= 0.5
+            assert i["youthFlag"] in (True, False) and (td["dynasty"] or not i["youthFlag"])
+        blob = json.dumps(td)
+        assert "owner" not in blob and "display_name" not in blob     # team names only
