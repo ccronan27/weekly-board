@@ -148,6 +148,9 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
         "status": league["status"],
         "teamCount": league["total_rosters"],
         "rosterPositions": league["roster_positions"],
+        "playoffWeekStart": (league.get("settings") or {}).get("playoff_week_start"),
+        "playoffTeams": (league.get("settings") or {}).get("playoff_teams"),
+        "playoffRoundType": (league.get("settings") or {}).get("playoff_round_type"),   # 0 one week a round, 1 two week final, 2 two weeks a round
         "scoring": league["scoring_settings"],
         "teams": teams,
     }

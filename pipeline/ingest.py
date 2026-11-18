@@ -100,6 +100,8 @@ def run(season: int | None = None, week: int | None = None, root: Path = RAW) ->
         return nflverse_lines.normalize(rows, season, week)
 
     _run_source(status, root, season, week, "nflverse_lines", lines)
+    _run_source(status, root, season, week, "nflverse_schedule",
+                lambda: nflverse_lines.normalize_schedule(nflverse_lines.parse(nflverse_lines.fetch()), season))
 
     # ESPN rosters come from the committed file only. Never the network.
     try:

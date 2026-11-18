@@ -75,5 +75,6 @@ def test_tabs_point_at_the_panel():
 
 def test_waivers_view_is_wired():
     js = (SITE / "app.js").read_text(encoding="utf-8")
-    for needle in ("renderWaivers", "league.waivers", "byPosition", "w.targets", "w.drop", "/waivers"):
+    for needle in ("renderWaivers", "league.waivers", "byPosition", "w.targets", "w.drop", "/waivers",
+                   "longTerm", "longTermSection", "rateFrom"):
         assert needle in js, needle
