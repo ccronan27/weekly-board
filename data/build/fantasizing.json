@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T03:40:50Z",
+ "generatedAt": "2026-11-18T11:27:59Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -753,6 +753,39 @@
    "team": "CIN"
   },
   {
+   "ceiling": 17.6,
+   "eligible": true,
+   "espn": 7.1,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 12.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "KC",
+    "oppImplied": 29.0,
+    "spread": 16.5,
+    "total": 41.5
+   },
+   "games": 10,
+   "id": "8132",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Tyler Allgeier",
+   "points": 7.7,
+   "pos": "RB",
+   "ppg": 9.2,
+   "rotowire": 8.2,
+   "sd": 9.98,
+   "slot": "BN",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "ARI"
+  },
+  {
    "ceiling": 10.7,
    "eligible": true,
    "espn": 8.0,
@@ -784,39 +817,6 @@
    ],
    "status": null,
    "team": "LV"
-  },
-  {
-   "ceiling": 17.6,
-   "eligible": true,
-   "espn": 7.1,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": false,
-    "implied": 12.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "KC",
-    "oppImplied": 29.0,
-    "spread": 16.5,
-    "total": 41.5
-   },
-   "games": 10,
-   "id": "8132",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Tyler Allgeier",
-   "points": 7.6,
-   "pos": "RB",
-   "ppg": 9.2,
-   "rotowire": 8.2,
-   "sd": 9.98,
-   "slot": "BN",
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "ARI"
   },
   {
    "ceiling": 8.0,
@@ -1000,7 +1000,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:50Z",
+   "lastUpdated": "2026-11-18T11:27:58Z",
    "ok": true,
    "stale": false
   },
@@ -1012,13 +1012,13 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:50Z",
+   "lastUpdated": "2026-11-18T11:27:58Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:48Z",
+   "lastUpdated": "2026-11-18T11:27:57Z",
    "ok": true,
    "stale": false
   }
@@ -1039,12 +1039,12 @@
      "floor": 0.8,
      "game": {
       "home": true,
-      "implied": 30.5,
+      "implied": 30.0,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "NO",
-      "oppImplied": 19.0,
+      "oppImplied": 18.5,
       "spread": -11.5,
-      "total": 49.5
+      "total": 48.5
      },
      "games": 9,
      "id": "CHI",
@@ -1119,12 +1119,12 @@
      "floor": 5.9,
      "game": {
       "home": true,
-      "implied": 30.5,
+      "implied": 30.0,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "NO",
-      "oppImplied": 19.0,
+      "oppImplied": 18.5,
       "spread": -11.5,
-      "total": 49.5
+      "total": 48.5
      },
      "games": 8,
      "id": "2020",
@@ -1531,7 +1531,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Tyler Allgeier",
-   "points": 7.6,
+   "points": 7.7,
    "pos": "RB",
    "ppg": 9.2,
    "rotowire": 8.2,
@@ -1772,12 +1772,12 @@
       "floor": 5.9,
       "game": {
        "home": true,
-       "implied": 30.5,
+       "implied": 30.0,
        "kickoff": "2026-11-22T18:00Z",
        "opp": "NO",
-       "oppImplied": 19.0,
+       "oppImplied": 18.5,
        "spread": -11.5,
-       "total": 49.5
+       "total": 48.5
       },
       "games": 8,
       "id": "2020",
@@ -1812,62 +1812,6 @@
        "home": true,
        "opp": "DET",
        "rank": 31,
-       "week": 17
-      }
-     ]
-    },
-    {
-     "gain": 0.9,
-     "player": {
-      "ceiling": 11.6,
-      "eligible": false,
-      "espn": 8.4,
-      "flags": [
-       "OUT"
-      ],
-      "floor": 2.3,
-      "game": {
-       "home": true,
-       "implied": 17.0,
-       "kickoff": "2026-11-22T21:25Z",
-       "opp": "PIT",
-       "oppImplied": 21.5,
-       "spread": 4.5,
-       "total": 38.5
-      },
-      "games": 6,
-      "id": "9486",
-      "injuryNotes": null,
-      "locked": false,
-      "name": "Dontayvion Wicks",
-      "points": 7.0,
-      "pos": "WR",
-      "ppg": 8.9,
-      "rotowire": 5.5,
-      "team": "PHI"
-     },
-     "rate": 8.9,
-     "rateFrom": "season",
-     "weeks": [
-      {
-       "gain": 0.3,
-       "home": true,
-       "opp": "SEA",
-       "rank": 32,
-       "week": 15
-      },
-      {
-       "gain": 0.3,
-       "home": true,
-       "opp": "HOU",
-       "rank": 5,
-       "week": 16
-      },
-      {
-       "gain": 0.3,
-       "home": false,
-       "opp": "SF",
-       "rank": 11,
        "week": 17
       }
      ]
@@ -1946,12 +1890,12 @@
       "floor": 5.9,
       "game": {
        "home": true,
-       "implied": 30.5,
+       "implied": 30.0,
        "kickoff": "2026-11-22T18:00Z",
        "opp": "NO",
-       "oppImplied": 19.0,
+       "oppImplied": 18.5,
        "spread": -11.5,
-       "total": 49.5
+       "total": 48.5
       },
       "games": 8,
       "id": "2020",
@@ -2153,57 +2097,55 @@
      ]
     },
     {
-     "gain": 1.3,
+     "gain": 0.4,
      "player": {
-      "ceiling": 11.6,
-      "eligible": false,
-      "espn": 8.4,
-      "flags": [
-       "OUT"
-      ],
-      "floor": 2.3,
+      "ceiling": 15.5,
+      "eligible": true,
+      "espn": 7.3,
+      "flags": [],
+      "floor": 1.7,
       "game": {
-       "home": true,
-       "implied": 17.0,
-       "kickoff": "2026-11-22T21:25Z",
-       "opp": "PIT",
-       "oppImplied": 21.5,
-       "spread": 4.5,
-       "total": 38.5
+       "home": false,
+       "implied": 23.0,
+       "kickoff": "2026-11-22T18:00Z",
+       "opp": "DAL",
+       "oppImplied": 31.5,
+       "spread": 8.5,
+       "total": 54.5
       },
       "games": 6,
-      "id": "9486",
+      "id": "12540",
       "injuryNotes": null,
       "locked": false,
-      "name": "Dontayvion Wicks",
-      "points": 7.0,
+      "name": "Chimere Dike",
+      "points": 8.6,
       "pos": "WR",
-      "ppg": 8.9,
-      "rotowire": 5.5,
-      "team": "PHI"
+      "ppg": 4.9,
+      "rotowire": 9.9,
+      "team": "TEN"
      },
-     "rate": 8.9,
-     "rateFrom": "season",
+     "rate": 8.6,
+     "rateFrom": "projection",
      "weeks": [
       {
-       "gain": 0.3,
+       "gain": 0.0,
        "home": false,
-       "opp": "DAL",
-       "rank": 7,
+       "opp": "JAX",
+       "rank": 14,
        "week": 12
       },
       {
-       "gain": 0.7,
-       "home": false,
-       "opp": "ARI",
-       "rank": 16,
+       "gain": 0.4,
+       "home": true,
+       "opp": "WAS",
+       "rank": 13,
        "week": 13
       },
       {
-       "gain": 0.3,
-       "home": true,
-       "opp": "IND",
-       "rank": 21,
+       "gain": 0.0,
+       "home": false,
+       "opp": "DET",
+       "rank": 12,
        "week": 14
       }
      ]
@@ -2281,12 +2223,12 @@
      "floor": 0.8,
      "game": {
       "home": true,
-      "implied": 30.5,
+      "implied": 30.0,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "NO",
-      "oppImplied": 19.0,
+      "oppImplied": 18.5,
       "spread": -11.5,
-      "total": 49.5
+      "total": 48.5
      },
      "games": 9,
      "id": "CHI",
@@ -2505,12 +2447,12 @@
      "floor": 5.9,
      "game": {
       "home": true,
-      "implied": 30.5,
+      "implied": 30.0,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "NO",
-      "oppImplied": 19.0,
+      "oppImplied": 18.5,
       "spread": -11.5,
-      "total": 49.5
+      "total": 48.5
      },
      "games": 8,
      "id": "2020",

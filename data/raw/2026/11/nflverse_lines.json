@@ -43,9 +43,9 @@
    "gametime": "13:00",
    "home": "CHI",
    "homeSpread": 11.5,
-   "impliedAway": 19.0,
-   "impliedHome": 30.5,
-   "total": 49.5,
+   "impliedAway": 18.5,
+   "impliedHome": 30.0,
+   "total": 48.5,
    "week": 11
   },
   {
@@ -157,6 +157,6 @@
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-18T03:40:50Z",
+ "fetchedAt": "2026-11-18T11:27:58Z",
  "source": "nflverse_lines"
 }

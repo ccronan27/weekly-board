@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T03:40:50Z",
+ "generatedAt": "2026-11-18T11:27:59Z",
  "league": "chicago-dynasty",
  "players": [
   {
@@ -71,40 +71,6 @@
    "teamName": "Jared Goff Glazer"
   },
   {
-   "ceiling": 31.4,
-   "eligible": true,
-   "espn": 22.2,
-   "flags": [],
-   "floor": 13.5,
-   "game": {
-    "home": true,
-    "implied": 29.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
-    "total": 41.5
-   },
-   "games": 9,
-   "id": "4046",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Patrick Mahomes",
-   "points": 22.5,
-   "pos": "QB",
-   "ppg": 20.3,
-   "rostered": true,
-   "rotowire": 22.7,
-   "sd": 8.93,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "KC",
-   "teamName": "Team 12"
-  },
-  {
    "ceiling": 29.5,
    "eligible": true,
    "espn": 22.7,
@@ -137,6 +103,40 @@
    "status": null,
    "team": "DAL",
    "teamName": "Dak FC"
+  },
+  {
+   "ceiling": 31.4,
+   "eligible": true,
+   "espn": 22.2,
+   "flags": [],
+   "floor": 13.5,
+   "game": {
+    "home": true,
+    "implied": 29.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "ARI",
+    "oppImplied": 12.5,
+    "spread": -16.5,
+    "total": 41.5
+   },
+   "games": 9,
+   "id": "4046",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Patrick Mahomes",
+   "points": 22.4,
+   "pos": "QB",
+   "ppg": 20.3,
+   "rostered": true,
+   "rotowire": 22.7,
+   "sd": 8.93,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "KC",
+   "teamName": "Team 12"
   },
   {
    "ceiling": 29.2,
@@ -208,10 +208,10 @@
   },
   {
    "ceiling": 30.8,
-   "eligible": false,
+   "eligible": true,
    "espn": 24.2,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 10.6,
    "game": {
@@ -238,12 +238,12 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "KC",
    "teamName": "God, Country, Caleb 💅"
   },
   {
-   "ceiling": 27.8,
+   "ceiling": 27.9,
    "eligible": true,
    "espn": 20.4,
    "flags": [],
@@ -266,7 +266,7 @@
    "pos": "QB",
    "ppg": 20.1,
    "rostered": true,
-   "rotowire": 20.7,
+   "rotowire": 20.8,
    "sd": 7.28,
    "sources": [
     "espn",
@@ -311,19 +311,19 @@
    "teamName": "All Gas No Brakes"
   },
   {
-   "ceiling": 30.2,
+   "ceiling": 30.1,
    "eligible": true,
    "espn": 19.8,
    "flags": [],
    "floor": 10.5,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 6,
    "id": "11560",
@@ -334,7 +334,7 @@
    "pos": "QB",
    "ppg": 19.4,
    "rostered": true,
-   "rotowire": 20.9,
+   "rotowire": 20.8,
    "sd": 9.81,
    "sources": [
     "espn",
@@ -546,7 +546,7 @@
    ],
    "status": null,
    "team": "CAR",
-   "teamName": "Brandon Aubrey Supremacy"
+   "teamName": "The Texans RB Room"
   },
   {
    "ceiling": 25.1,
@@ -568,7 +568,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Brock Purdy",
-   "points": 18.1,
+   "points": 18.2,
    "pos": "QB",
    "ppg": 23.6,
    "rostered": true,
@@ -580,7 +580,7 @@
    ],
    "status": null,
    "team": "SF",
-   "teamName": "The Texans RB Room"
+   "teamName": "Brandon Aubrey Supremacy"
   },
   {
    "ceiling": 28.0,
@@ -658,12 +658,12 @@
    "floor": 7.4,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 9,
    "id": "6790",
@@ -741,7 +741,7 @@
    "points": 16.6,
    "pos": "QB",
    "ppg": 15.5,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 17.4,
    "sd": 7.2,
    "sources": [
@@ -750,7 +750,7 @@
    ],
    "status": null,
    "team": "PIT",
-   "teamName": null
+   "teamName": "Team 5"
   },
   {
    "ceiling": 24.0,
@@ -787,7 +787,7 @@
    "teamName": "Dak FC"
   },
   {
-   "ceiling": 20.8,
+   "ceiling": 20.9,
    "eligible": true,
    "espn": 15.7,
    "flags": [],
@@ -806,7 +806,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Kirk Cousins",
-   "points": 16.4,
+   "points": 16.5,
    "pos": "QB",
    "ppg": 19.7,
    "rostered": true,
@@ -828,12 +828,12 @@
    "floor": 7.9,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 9,
    "id": "12545",
@@ -1026,10 +1026,10 @@
   },
   {
    "ceiling": 22.4,
-   "eligible": false,
+   "eligible": true,
    "espn": 14.9,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 8.3,
    "game": {
@@ -1056,16 +1056,16 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "NYJ",
    "teamName": null
   },
   {
    "ceiling": 23.7,
-   "eligible": false,
+   "eligible": true,
    "espn": 15.3,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 6.5,
    "game": {
@@ -1092,7 +1092,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "LV",
    "teamName": "Team 12"
   },
@@ -1131,7 +1131,7 @@
    "teamName": "Team 5"
   },
   {
-   "ceiling": 22.5,
+   "ceiling": 22.6,
    "eligible": true,
    "espn": 14.4,
    "flags": [],
@@ -1199,7 +1199,7 @@
    "teamName": "Brandon Aubrey Supremacy"
   },
   {
-   "ceiling": 24.0,
+   "ceiling": 23.9,
    "eligible": true,
    "espn": 13.8,
    "flags": [],
@@ -1231,40 +1231,6 @@
    "status": null,
    "team": "CIN",
    "teamName": "God, Country, Caleb 💅"
-  },
-  {
-   "ceiling": 21.4,
-   "eligible": true,
-   "espn": 13.1,
-   "flags": [],
-   "floor": 7.1,
-   "game": {
-    "home": true,
-    "implied": 20.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "JAX",
-    "oppImplied": 26.2,
-    "spread": 6.0,
-    "total": 46.5
-   },
-   "games": 7,
-   "id": "12481",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Cam Skattebo",
-   "points": 14.3,
-   "pos": "RB",
-   "ppg": 12.9,
-   "rostered": true,
-   "rotowire": 15.4,
-   "sd": 7.17,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NYG",
-   "teamName": "When in Rome"
   },
   {
    "ceiling": 23.4,
@@ -1301,6 +1267,74 @@
    "teamName": "Brandon Aubrey Supremacy"
   },
   {
+   "ceiling": 25.4,
+   "eligible": true,
+   "espn": 13.1,
+   "flags": [],
+   "floor": 3.0,
+   "game": {
+    "home": true,
+    "implied": 20.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "JAX",
+    "oppImplied": 26.2,
+    "spread": 6.0,
+    "total": 46.5
+   },
+   "games": 9,
+   "id": "8131",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Isaiah Likely",
+   "points": 14.2,
+   "pos": "TE",
+   "ppg": 17.5,
+   "rostered": true,
+   "rotowire": 15.2,
+   "sd": 11.19,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NYG",
+   "teamName": "Team 5"
+  },
+  {
+   "ceiling": 21.4,
+   "eligible": true,
+   "espn": 13.1,
+   "flags": [],
+   "floor": 7.0,
+   "game": {
+    "home": true,
+    "implied": 20.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "JAX",
+    "oppImplied": 26.2,
+    "spread": 6.0,
+    "total": 46.5
+   },
+   "games": 7,
+   "id": "12481",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Cam Skattebo",
+   "points": 14.2,
+   "pos": "RB",
+   "ppg": 12.9,
+   "rostered": true,
+   "rotowire": 15.3,
+   "sd": 7.17,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NYG",
+   "teamName": "When in Rome"
+  },
+  {
    "ceiling": 22.1,
    "eligible": true,
    "espn": 14.9,
@@ -1333,40 +1367,6 @@
    "status": null,
    "team": "IND",
    "teamName": "Brandon Aubrey Supremacy"
-  },
-  {
-   "ceiling": 25.3,
-   "eligible": true,
-   "espn": 13.1,
-   "flags": [],
-   "floor": 2.9,
-   "game": {
-    "home": true,
-    "implied": 20.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "JAX",
-    "oppImplied": 26.2,
-    "spread": 6.0,
-    "total": 46.5
-   },
-   "games": 9,
-   "id": "8131",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Isaiah Likely",
-   "points": 14.1,
-   "pos": "TE",
-   "ppg": 17.5,
-   "rostered": true,
-   "rotowire": 15.0,
-   "sd": 11.19,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NYG",
-   "teamName": "Team 5"
   },
   {
    "ceiling": 23.2,
@@ -1475,7 +1475,7 @@
    "eligible": true,
    "espn": 12.9,
    "flags": [],
-   "floor": 7.1,
+   "floor": 7.0,
    "game": {
     "home": false,
     "implied": 12.5,
@@ -1607,12 +1607,44 @@
    "teamName": "Jared Goff Glazer"
   },
   {
-   "ceiling": 23.8,
-   "eligible": false,
-   "espn": 12.8,
-   "flags": [
-    "OUT"
+   "ceiling": 21.6,
+   "eligible": true,
+   "espn": 12.7,
+   "flags": [],
+   "floor": 4.6,
+   "game": {
+    "home": true,
+    "implied": 20.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "JAX",
+    "oppImplied": 26.2,
+    "spread": 6.0,
+    "total": 46.5
+   },
+   "games": 9,
+   "id": "11632",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Malik Nabers",
+   "points": 13.1,
+   "pos": "WR",
+   "ppg": 12.0,
+   "rostered": true,
+   "rotowire": 13.5,
+   "sd": 8.5,
+   "sources": [
+    "espn",
+    "rotowire"
    ],
+   "status": null,
+   "team": "NYG",
+   "teamName": "God, Country, Caleb 💅"
+  },
+  {
+   "ceiling": 23.8,
+   "eligible": true,
+   "espn": 12.8,
+   "flags": [],
    "floor": 2.3,
    "game": {
     "home": true,
@@ -1638,43 +1670,9 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "HOU",
    "teamName": "Jared Goff Glazer"
-  },
-  {
-   "ceiling": 21.5,
-   "eligible": true,
-   "espn": 12.7,
-   "flags": [],
-   "floor": 4.5,
-   "game": {
-    "home": true,
-    "implied": 20.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "JAX",
-    "oppImplied": 26.2,
-    "spread": 6.0,
-    "total": 46.5
-   },
-   "games": 9,
-   "id": "11632",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Malik Nabers",
-   "points": 13.0,
-   "pos": "WR",
-   "ppg": 12.0,
-   "rostered": true,
-   "rotowire": 13.3,
-   "sd": 8.5,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NYG",
-   "teamName": "God, Country, Caleb 💅"
   },
   {
    "ceiling": 18.7,
@@ -1745,21 +1743,53 @@
    "teamName": "Tinman0506"
   },
   {
+   "ceiling": 21.8,
+   "eligible": true,
+   "espn": 13.1,
+   "flags": [],
+   "floor": 3.9,
+   "game": {
+    "home": false,
+    "implied": 26.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "NYG",
+    "oppImplied": 20.2,
+    "spread": -6.0,
+    "total": 46.5
+   },
+   "games": 9,
+   "id": "9487",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Parker Washington",
+   "points": 12.8,
+   "pos": "WR",
+   "ppg": 13.5,
+   "rostered": true,
+   "rotowire": 12.5,
+   "sd": 8.95,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "JAX",
+   "teamName": "All Gas No Brakes"
+  },
+  {
    "ceiling": 18.5,
    "eligible": true,
    "espn": 12.4,
-   "flags": [
-    "QUESTIONABLE"
-   ],
+   "flags": [],
    "floor": 6.9,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 9,
    "id": "12519",
@@ -1776,43 +1806,9 @@
     "espn",
     "rotowire"
    ],
-   "status": "QUESTIONABLE",
+   "status": null,
    "team": "CHI",
    "teamName": "Team 12"
-  },
-  {
-   "ceiling": 21.7,
-   "eligible": true,
-   "espn": 13.1,
-   "flags": [],
-   "floor": 3.8,
-   "game": {
-    "home": false,
-    "implied": 26.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "NYG",
-    "oppImplied": 20.2,
-    "spread": -6.0,
-    "total": 46.5
-   },
-   "games": 9,
-   "id": "9487",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Parker Washington",
-   "points": 12.7,
-   "pos": "WR",
-   "ppg": 13.5,
-   "rostered": true,
-   "rotowire": 12.3,
-   "sd": 8.95,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "JAX",
-   "teamName": "All Gas No Brakes"
   },
   {
    "ceiling": null,
@@ -1883,6 +1879,74 @@
    "teamName": "Dak FC"
   },
   {
+   "ceiling": 17.9,
+   "eligible": true,
+   "espn": 11.2,
+   "flags": [],
+   "floor": 6.1,
+   "game": {
+    "home": false,
+    "implied": 18.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "CHI",
+    "oppImplied": 30.0,
+    "spread": 11.5,
+    "total": 48.5
+   },
+   "games": 9,
+   "id": "8144",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Chris Olave",
+   "points": 12.0,
+   "pos": "WR",
+   "ppg": 13.1,
+   "rostered": true,
+   "rotowire": 12.7,
+   "sd": 5.92,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NO",
+   "teamName": "Team 5"
+  },
+  {
+   "ceiling": 18.4,
+   "eligible": true,
+   "espn": 12.7,
+   "flags": [],
+   "floor": 5.4,
+   "game": {
+    "home": true,
+    "implied": 30.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "NO",
+    "oppImplied": 18.5,
+    "spread": -11.5,
+    "total": 48.5
+   },
+   "games": 8,
+   "id": "12517",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Colston Loveland",
+   "points": 11.9,
+   "pos": "TE",
+   "ppg": 10.4,
+   "rostered": true,
+   "rotowire": 11.1,
+   "sd": 6.5,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CHI",
+   "teamName": "God, Country, Caleb 💅"
+  },
+  {
    "ceiling": 22.5,
    "eligible": true,
    "espn": 11.7,
@@ -1902,7 +1966,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Tetairoa McMillan",
-   "points": 12.0,
+   "points": 11.9,
    "pos": "WR",
    "ppg": 11.8,
    "rostered": true,
@@ -1917,80 +1981,10 @@
    "teamName": "Tinman0506"
   },
   {
-   "ceiling": 17.9,
-   "eligible": true,
-   "espn": 11.2,
-   "flags": [],
-   "floor": 6.1,
-   "game": {
-    "home": false,
-    "implied": 19.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "CHI",
-    "oppImplied": 30.5,
-    "spread": 11.5,
-    "total": 49.5
-   },
-   "games": 9,
-   "id": "8144",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Chris Olave",
-   "points": 12.0,
-   "pos": "WR",
-   "ppg": 13.1,
-   "rostered": true,
-   "rotowire": 12.8,
-   "sd": 5.92,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NO",
-   "teamName": "Team 5"
-  },
-  {
-   "ceiling": 18.4,
-   "eligible": true,
-   "espn": 12.7,
-   "flags": [],
-   "floor": 5.4,
-   "game": {
-    "home": true,
-    "implied": 30.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "NO",
-    "oppImplied": 19.0,
-    "spread": -11.5,
-    "total": 49.5
-   },
-   "games": 8,
-   "id": "12517",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Colston Loveland",
-   "points": 11.9,
-   "pos": "TE",
-   "ppg": 10.4,
-   "rostered": true,
-   "rotowire": 11.2,
-   "sd": 6.5,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CHI",
-   "teamName": "God, Country, Caleb 💅"
-  },
-  {
    "ceiling": 18.5,
    "eligible": true,
    "espn": 11.3,
-   "flags": [
-    "QUESTIONABLE"
-   ],
+   "flags": [],
    "floor": 5.3,
    "game": {
     "home": true,
@@ -2016,7 +2010,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "QUESTIONABLE",
+   "status": null,
    "team": "KC",
    "teamName": "Brandon Aubrey Supremacy"
   },
@@ -2040,7 +2034,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Ollie Gordon II",
-   "points": 11.8,
+   "points": 11.7,
    "pos": "RB",
    "ppg": 11.2,
    "rostered": true,
@@ -2074,7 +2068,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Zay Flowers",
-   "points": 11.8,
+   "points": 11.7,
    "pos": "WR",
    "ppg": 14.4,
    "rostered": true,
@@ -2123,11 +2117,11 @@
    "teamName": "The Texans RB Room"
   },
   {
-   "ceiling": 18.9,
+   "ceiling": 19.0,
    "eligible": true,
    "espn": 11.7,
    "flags": [],
-   "floor": 4.0,
+   "floor": 4.1,
    "game": {
     "home": true,
     "implied": 31.0,
@@ -2146,7 +2140,7 @@
    "pos": "WR",
    "ppg": 9.6,
    "rostered": true,
-   "rotowire": 11.2,
+   "rotowire": 11.3,
    "sd": 7.46,
    "sources": [
     "espn",
@@ -2383,7 +2377,7 @@
    "points": 10.8,
    "pos": "QB",
    "ppg": 12.8,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 10.8,
    "sd": null,
    "sources": [
@@ -2392,7 +2386,7 @@
    ],
    "status": null,
    "team": "MIA",
-   "teamName": null
+   "teamName": "Team 5"
   },
   {
    "ceiling": 16.0,
@@ -2429,11 +2423,11 @@
    "teamName": "Tinman0506"
   },
   {
-   "ceiling": 16.1,
-   "eligible": false,
+   "ceiling": 16.2,
+   "eligible": true,
    "espn": 10.0,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 5.2,
    "game": {
@@ -2454,13 +2448,13 @@
    "pos": "WR",
    "ppg": 12.6,
    "rostered": true,
-   "rotowire": 11.3,
+   "rotowire": 11.4,
    "sd": 5.48,
    "sources": [
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "SF",
    "teamName": "Zay My Name"
   },
@@ -2534,10 +2528,10 @@
   },
   {
    "ceiling": 16.5,
-   "eligible": false,
+   "eligible": true,
    "espn": 10.6,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 4.6,
    "game": {
@@ -2564,7 +2558,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "TEN",
    "teamName": "Team 12"
   },
@@ -2604,10 +2598,10 @@
   },
   {
    "ceiling": 18.1,
-   "eligible": false,
+   "eligible": true,
    "espn": 11.7,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 2.7,
    "game": {
@@ -2634,16 +2628,16 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "MIN",
    "teamName": "When in Rome"
   },
   {
    "ceiling": 17.6,
-   "eligible": false,
+   "eligible": true,
    "espn": 10.3,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 3.1,
    "game": {
@@ -2670,7 +2664,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "PHI",
    "teamName": "Ladd’s McConcubines"
   },
@@ -2712,9 +2706,7 @@
    "ceiling": 14.7,
    "eligible": true,
    "espn": 10.1,
-   "flags": [
-    "QUESTIONABLE"
-   ],
+   "flags": [],
    "floor": 5.6,
    "game": {
     "home": true,
@@ -2740,7 +2732,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "QUESTIONABLE",
+   "status": null,
    "team": "WAS",
    "teamName": "God, Country, Caleb 💅"
   },
@@ -2820,12 +2812,12 @@
    "floor": 6.2,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 9,
    "id": "11620",
@@ -2848,10 +2840,10 @@
   },
   {
    "ceiling": 15.5,
-   "eligible": false,
+   "eligible": true,
    "espn": 10.3,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 4.1,
    "game": {
@@ -2878,7 +2870,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "DEN",
    "teamName": "Team 12"
   },
@@ -3054,10 +3046,10 @@
   },
   {
    "ceiling": 15.1,
-   "eligible": false,
+   "eligible": true,
    "espn": 9.0,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 4.0,
    "game": {
@@ -3084,7 +3076,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "LAC",
    "teamName": "Ladd’s McConcubines"
   },
@@ -3157,40 +3149,6 @@
    "teamName": null
   },
   {
-   "ceiling": 18.9,
-   "eligible": true,
-   "espn": 7.4,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": true,
-    "implied": 23.5,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "BAL",
-    "oppImplied": 21.0,
-    "spread": -2.5,
-    "total": 44.5
-   },
-   "games": 8,
-   "id": "11646",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Jalen Coker",
-   "points": 9.1,
-   "pos": "WR",
-   "ppg": 9.0,
-   "rostered": true,
-   "rotowire": 10.7,
-   "sd": 9.88,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CAR",
-   "teamName": "Dak FC"
-  },
-  {
    "ceiling": 14.8,
    "eligible": true,
    "espn": 8.8,
@@ -3257,6 +3215,40 @@
    "status": null,
    "team": "LAC",
    "teamName": null
+  },
+  {
+   "ceiling": 18.9,
+   "eligible": true,
+   "espn": 7.4,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": true,
+    "implied": 23.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "BAL",
+    "oppImplied": 21.0,
+    "spread": -2.5,
+    "total": 44.5
+   },
+   "games": 8,
+   "id": "11646",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Jalen Coker",
+   "points": 9.0,
+   "pos": "WR",
+   "ppg": 9.0,
+   "rostered": true,
+   "rotowire": 10.7,
+   "sd": 9.88,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CAR",
+   "teamName": "Dak FC"
   },
   {
    "ceiling": 14.1,
@@ -3368,12 +3360,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 2,
    "id": "13281",
@@ -3470,12 +3462,12 @@
    "floor": 5.2,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 8,
    "id": "2020",
@@ -3519,7 +3511,7 @@
    "points": 8.8,
    "pos": "K",
    "ppg": 11.4,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 7.6,
    "sd": 4.85,
    "sources": [
@@ -3528,7 +3520,7 @@
    ],
    "status": null,
    "team": "TB",
-   "teamName": null
+   "teamName": "God, Country, Caleb 💅"
   },
   {
    "ceiling": 11.6,
@@ -3538,12 +3530,12 @@
    "floor": 6.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 4,
    "id": "7543",
@@ -3599,7 +3591,7 @@
    "teamName": null
   },
   {
-   "ceiling": 12.8,
+   "ceiling": 12.9,
    "eligible": true,
    "espn": 8.0,
    "flags": [],
@@ -3622,7 +3614,7 @@
    "pos": "TE",
    "ppg": 8.9,
    "rostered": true,
-   "rotowire": 9.2,
+   "rotowire": 9.3,
    "sd": 4.22,
    "sources": [
     "espn",
@@ -3893,7 +3885,7 @@
    "points": 8.4,
    "pos": "WR",
    "ppg": 4.9,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 8.6,
    "sd": 3.3,
    "sources": [
@@ -3902,7 +3894,7 @@
    ],
    "status": null,
    "team": "TEN",
-   "teamName": null
+   "teamName": "Brandon Aubrey Supremacy"
   },
   {
    "ceiling": 12.8,
@@ -3980,12 +3972,12 @@
    "floor": 4.1,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 9,
    "id": "CHI",
@@ -4041,11 +4033,11 @@
    "teamName": "Team 5"
   },
   {
-   "ceiling": 12.6,
+   "ceiling": 12.7,
    "eligible": true,
    "espn": 9.2,
    "flags": [],
-   "floor": 3.9,
+   "floor": 4.0,
    "game": {
     "home": false,
     "implied": 26.2,
@@ -4064,7 +4056,7 @@
    "pos": "WR",
    "ppg": 7.5,
    "rostered": true,
-   "rotowire": 7.3,
+   "rotowire": 7.4,
    "sd": 4.37,
    "sources": [
     "espn",
@@ -4075,21 +4067,21 @@
    "teamName": "God, Country, Caleb 💅"
   },
   {
-   "ceiling": 19.7,
-   "eligible": false,
+   "ceiling": 19.6,
+   "eligible": true,
    "espn": 8.4,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 4,
    "id": "12534",
@@ -4100,13 +4092,13 @@
    "pos": "RB",
    "ppg": 14.4,
    "rostered": true,
-   "rotowire": 8.1,
+   "rotowire": 8.0,
    "sd": 11.45,
    "sources": [
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "CHI",
    "teamName": "All Gas No Brakes"
   },
@@ -4318,9 +4310,7 @@
    "ceiling": 11.5,
    "eligible": true,
    "espn": 9.4,
-   "flags": [
-    "QUESTIONABLE"
-   ],
+   "flags": [],
    "floor": 4.3,
    "game": {
     "home": true,
@@ -4339,16 +4329,16 @@
    "points": 7.9,
    "pos": "WR",
    "ppg": 7.6,
-   "rostered": false,
+   "rostered": true,
    "rotowire": 6.4,
    "sd": 3.59,
    "sources": [
     "espn",
     "rotowire"
    ],
-   "status": "QUESTIONABLE",
+   "status": null,
    "team": "HOU",
-   "teamName": null
+   "teamName": "Brandon Aubrey Supremacy"
   },
   {
    "ceiling": 15.8,
@@ -4522,10 +4512,10 @@
   },
   {
    "ceiling": 15.6,
-   "eligible": false,
+   "eligible": true,
    "espn": 7.0,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 0.0,
    "game": {
@@ -4552,7 +4542,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "NYJ",
    "teamName": "Ladd’s McConcubines"
   },
@@ -4972,12 +4962,12 @@
    "floor": 0.7,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 8,
    "id": "7002",
@@ -5157,7 +5147,7 @@
    "points": 7.2,
    "pos": "TE",
    "ppg": 6.3,
-   "rostered": true,
+   "rostered": false,
    "rotowire": 6.8,
    "sd": 2.54,
    "sources": [
@@ -5166,7 +5156,7 @@
    ],
    "status": null,
    "team": "TB",
-   "teamName": "Zay My Name"
+   "teamName": null
   },
   {
    "ceiling": 11.0,
@@ -5307,7 +5297,7 @@
    "teamName": null
   },
   {
-   "ceiling": 13.7,
+   "ceiling": 13.8,
    "eligible": true,
    "espn": 6.5,
    "flags": [],
@@ -5330,7 +5320,7 @@
    "pos": "WR",
    "ppg": 6.8,
    "rostered": true,
-   "rotowire": 7.4,
+   "rotowire": 7.5,
    "sd": 6.78,
    "sources": [
     "espn",
@@ -5416,12 +5406,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 2,
    "id": "11653",
@@ -5915,7 +5905,7 @@
    ],
    "status": null,
    "team": "MIA",
-   "teamName": "Brandon Aubrey Supremacy"
+   "teamName": "The Texans RB Room"
   },
   {
    "ceiling": 10.8,
@@ -6468,12 +6458,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 8,
    "id": "4035",
@@ -6496,10 +6486,10 @@
   },
   {
    "ceiling": 10.2,
-   "eligible": false,
+   "eligible": true,
    "espn": 6.8,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 1.3,
    "game": {
@@ -6526,7 +6516,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "PHI",
    "teamName": "God, Country, Caleb 💅"
   },
@@ -6667,40 +6657,6 @@
    "teamName": null
   },
   {
-   "ceiling": 10.2,
-   "eligible": true,
-   "espn": 5.6,
-   "flags": [],
-   "floor": 1.0,
-   "game": {
-    "home": false,
-    "implied": 26.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "NYG",
-    "oppImplied": 20.2,
-    "spread": -6.0,
-    "total": 46.5
-   },
-   "games": 9,
-   "id": "10219",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Chris Rodriguez Jr.",
-   "points": 5.6,
-   "pos": "RB",
-   "ppg": 5.9,
-   "rostered": true,
-   "rotowire": 5.5,
-   "sd": 4.59,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "JAX",
-   "teamName": "Team 5"
-  },
-  {
    "ceiling": 9.6,
    "eligible": true,
    "espn": 6.1,
@@ -6776,12 +6732,12 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 8,
    "id": "3634",
@@ -6792,7 +6748,7 @@
    "pos": "WR",
    "ppg": 6.8,
    "rostered": true,
-   "rotowire": 5.9,
+   "rotowire": 5.8,
    "sd": 5.69,
    "sources": [
     "espn",
@@ -6835,6 +6791,40 @@
    "status": null,
    "team": "LV",
    "teamName": "Jared Goff Glazer"
+  },
+  {
+   "ceiling": 10.1,
+   "eligible": true,
+   "espn": 5.6,
+   "flags": [],
+   "floor": 1.0,
+   "game": {
+    "home": false,
+    "implied": 26.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "NYG",
+    "oppImplied": 20.2,
+    "spread": -6.0,
+    "total": 46.5
+   },
+   "games": 9,
+   "id": "10219",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Chris Rodriguez Jr.",
+   "points": 5.5,
+   "pos": "RB",
+   "ppg": 5.9,
+   "rostered": true,
+   "rotowire": 5.5,
+   "sd": 4.59,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "JAX",
+   "teamName": "Team 5"
   },
   {
    "ceiling": 10.3,
@@ -7143,40 +7133,6 @@
    "teamName": null
   },
   {
-   "ceiling": 10.0,
-   "eligible": true,
-   "espn": 4.8,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": false,
-    "implied": 19.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "CHI",
-    "oppImplied": 30.5,
-    "spread": 11.5,
-    "total": 49.5
-   },
-   "games": 9,
-   "id": "11834",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Devaughn Vele",
-   "points": 4.7,
-   "pos": "WR",
-   "ppg": 8.3,
-   "rostered": true,
-   "rotowire": 4.5,
-   "sd": 5.36,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NO",
-   "teamName": "God, Country, Caleb 💅"
-  },
-  {
    "ceiling": 7.4,
    "eligible": true,
    "espn": 4.0,
@@ -7218,12 +7174,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 9,
    "id": "NO",
@@ -7243,6 +7199,40 @@
    "status": null,
    "team": "NO",
    "teamName": null
+  },
+  {
+   "ceiling": 10.0,
+   "eligible": true,
+   "espn": 4.8,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 18.5,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "CHI",
+    "oppImplied": 30.0,
+    "spread": 11.5,
+    "total": 48.5
+   },
+   "games": 9,
+   "id": "11834",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Devaughn Vele",
+   "points": 4.6,
+   "pos": "WR",
+   "ppg": 8.3,
+   "rostered": true,
+   "rotowire": 4.5,
+   "sd": 5.36,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NO",
+   "teamName": "God, Country, Caleb 💅"
   },
   {
    "ceiling": 10.1,
@@ -7352,9 +7342,7 @@
    "ceiling": 7.6,
    "eligible": true,
    "espn": 3.5,
-   "flags": [
-    "QUESTIONABLE"
-   ],
+   "flags": [],
    "floor": 1.0,
    "game": {
     "home": true,
@@ -7380,7 +7368,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "QUESTIONABLE",
+   "status": null,
    "team": "LAC",
    "teamName": "Team 12"
   },
@@ -7488,10 +7476,10 @@
   },
   {
    "ceiling": 5.9,
-   "eligible": false,
+   "eligible": true,
    "espn": 5.7,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 2.6,
    "game": {
@@ -7518,7 +7506,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "MIN",
    "teamName": "Team 12"
   },
@@ -7564,12 +7552,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 3,
    "id": "11579",
@@ -8268,7 +8256,7 @@
    "pos": "WR",
    "ppg": 3.4,
    "rostered": false,
-   "rotowire": 2.4,
+   "rotowire": 2.5,
    "sd": 1.93,
    "sources": [
     "espn",
@@ -8302,7 +8290,7 @@
    "pos": "RB",
    "ppg": 5.8,
    "rostered": true,
-   "rotowire": 4.1,
+   "rotowire": 4.0,
    "sd": 5.42,
    "sources": [
     "espn",
@@ -8314,10 +8302,10 @@
   },
   {
    "ceiling": 6.1,
-   "eligible": false,
+   "eligible": true,
    "espn": 4.1,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 1.2,
    "game": {
@@ -8344,7 +8332,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "MIA",
    "teamName": "Tinman0506"
   },
@@ -8392,12 +8380,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 5,
    "id": "5857",
@@ -8408,7 +8396,7 @@
    "pos": "TE",
    "ppg": 7.9,
    "rostered": false,
-   "rotowire": 4.1,
+   "rotowire": 4.0,
    "sd": 7.95,
    "sources": [
     "espn",
@@ -8577,7 +8565,7 @@
    "points": 3.3,
    "pos": "WR",
    "ppg": 3.5,
-   "rostered": true,
+   "rostered": false,
    "rotowire": 3.2,
    "sd": null,
    "sources": [
@@ -8586,7 +8574,41 @@
    ],
    "status": null,
    "team": "ARI",
-   "teamName": "Team 5"
+   "teamName": null
+  },
+  {
+   "ceiling": 7.5,
+   "eligible": true,
+   "espn": 3.0,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": false,
+    "implied": 26.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "NYG",
+    "oppImplied": 20.2,
+    "spread": -6.0,
+    "total": 46.5
+   },
+   "games": 6,
+   "id": "13394",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Josh Cameron",
+   "points": 3.2,
+   "pos": "WR",
+   "ppg": 7.2,
+   "rostered": true,
+   "rotowire": 3.3,
+   "sd": 4.37,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "JAX",
+   "teamName": "Zay My Name"
   },
   {
    "ceiling": 6.6,
@@ -8691,40 +8713,6 @@
    "teamName": null
   },
   {
-   "ceiling": 7.5,
-   "eligible": true,
-   "espn": 3.0,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": false,
-    "implied": 26.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "NYG",
-    "oppImplied": 20.2,
-    "spread": -6.0,
-    "total": 46.5
-   },
-   "games": 6,
-   "id": "13394",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Josh Cameron",
-   "points": 3.1,
-   "pos": "WR",
-   "ppg": 7.2,
-   "rostered": true,
-   "rotowire": 3.2,
-   "sd": 4.37,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "JAX",
-   "teamName": "Zay My Name"
-  },
-  {
    "ceiling": 6.0,
    "eligible": true,
    "espn": 3.8,
@@ -8815,7 +8803,7 @@
    "pos": "TE",
    "ppg": 4.3,
    "rostered": true,
-   "rotowire": 3.2,
+   "rotowire": 3.3,
    "sd": 3.05,
    "sources": [
     "espn",
@@ -9053,7 +9041,7 @@
    "pos": "WR",
    "ppg": 7.4,
    "rostered": false,
-   "rotowire": 2.1,
+   "rotowire": 2.0,
    "sd": null,
    "sources": [
     "espn",
@@ -9139,12 +9127,12 @@
    "floor": 1.0,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 5,
    "id": "13411",
@@ -9506,15 +9494,15 @@
    "eligible": true,
    "espn": 1.1,
    "flags": [],
-   "floor": 0.8,
+   "floor": 0.7,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 4,
    "id": "13322",
@@ -9740,20 +9728,20 @@
   },
   {
    "ceiling": 2.7,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 0.2,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 6,
    "id": "13277",
@@ -9769,7 +9757,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "NO",
    "teamName": null
   },
@@ -9966,7 +9954,7 @@
    "pos": "RB",
    "ppg": 1.8,
    "rostered": true,
-   "rotowire": 2.1,
+   "rotowire": 2.0,
    "sd": 2.03,
    "sources": [
     "espn",
@@ -10018,12 +10006,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 3,
    "id": "13319",
@@ -10586,10 +10574,10 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": 1.4,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": null,
    "game": {
@@ -10616,7 +10604,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "IND",
    "teamName": null
   },
@@ -10723,11 +10711,9 @@
   },
   {
    "ceiling": 1.1,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": 0.6,
    "game": {
     "home": true,
@@ -10752,7 +10738,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "DEN",
    "teamName": null
   },
@@ -10792,10 +10778,10 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": null,
    "game": {
@@ -10821,7 +10807,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "LAC",
    "teamName": null
   },
@@ -10861,10 +10847,10 @@
   },
   {
    "ceiling": 1.4,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 0.1,
    "game": {
@@ -10890,7 +10876,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "WAS",
    "teamName": null
   },
@@ -11029,10 +11015,10 @@
   },
   {
    "ceiling": 2.1,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 0.0,
    "game": {
@@ -11058,16 +11044,16 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "MIA",
    "teamName": null
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": null,
    "game": {
@@ -11093,16 +11079,16 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "LV",
    "teamName": null
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": null,
    "game": {
@@ -11128,7 +11114,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "KC",
    "teamName": null
   },
@@ -11367,11 +11353,9 @@
   },
   {
    "ceiling": 1.4,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": 0.0,
    "game": {
     "home": false,
@@ -11396,7 +11380,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "NYJ",
    "teamName": null
   },
@@ -11408,12 +11392,12 @@
    "floor": 0.0,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 5,
    "id": "10235",
@@ -11423,7 +11407,7 @@
    "points": 0.5,
    "pos": "RB",
    "ppg": 5.5,
-   "rostered": true,
+   "rostered": false,
    "rotowire": 0.5,
    "sd": 4.87,
    "sources": [
@@ -11431,7 +11415,40 @@
    ],
    "status": null,
    "team": "CHI",
-   "teamName": "Team 5"
+   "teamName": null
+  },
+  {
+   "ceiling": null,
+   "eligible": true,
+   "espn": null,
+   "flags": [],
+   "floor": null,
+   "game": {
+    "home": false,
+    "implied": 26.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "NYG",
+    "oppImplied": 20.2,
+    "spread": -6.0,
+    "total": 46.5
+   },
+   "games": 1,
+   "id": "7536",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Quintin Morris",
+   "points": 0.5,
+   "pos": "TE",
+   "ppg": 1.7,
+   "rostered": false,
+   "rotowire": 0.5,
+   "sd": null,
+   "sources": [
+    "rotowire"
+   ],
+   "status": null,
+   "team": "JAX",
+   "teamName": null
   },
   {
    "ceiling": 5.3,
@@ -11571,10 +11588,10 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": 0.6,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": null,
    "game": {
@@ -11601,7 +11618,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "HOU",
    "teamName": null
   },
@@ -11715,41 +11732,6 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 26.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "NYG",
-    "oppImplied": 20.2,
-    "spread": -6.0,
-    "total": 46.5
-   },
-   "games": 1,
-   "id": "7536",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Quintin Morris",
-   "points": 0.4,
-   "pos": "TE",
-   "ppg": 1.7,
-   "rostered": false,
-   "rotowire": 0.4,
-   "sd": null,
-   "sources": [
-    "rotowire"
-   ],
-   "status": null,
-   "team": "JAX",
-   "teamName": null
-  },
-  {
-   "ceiling": null,
-   "eligible": false,
-   "espn": null,
-   "flags": [
-    "OUT"
-   ],
-   "floor": null,
-   "game": {
-    "home": false,
     "implied": 14.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "BUF",
@@ -11771,7 +11753,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "MIA",
    "teamName": null
   },
@@ -11810,10 +11792,10 @@
   },
   {
    "ceiling": 1.2,
-   "eligible": false,
+   "eligible": true,
    "espn": 0.0,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": 0.0,
    "game": {
@@ -11840,7 +11822,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "DAL",
    "teamName": null
   },
@@ -11946,11 +11928,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": true,
@@ -11975,7 +11955,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "CAR",
    "teamName": null
   },
@@ -12054,12 +12034,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 5,
    "id": "13533",
@@ -12088,12 +12068,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 19.0,
+    "implied": 18.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.5,
+    "oppImplied": 30.0,
     "spread": 11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 5,
    "id": "13420",
@@ -12216,11 +12196,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": false,
@@ -12245,7 +12223,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "LV",
    "teamName": null
   },
@@ -12352,11 +12330,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": true,
@@ -12381,7 +12357,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "NYG",
    "teamName": null
   },
@@ -12661,12 +12637,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 1,
    "id": "13079",
@@ -12722,11 +12698,9 @@
   },
   {
    "ceiling": 1.5,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": 0.0,
    "game": {
     "home": true,
@@ -12751,7 +12725,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "CAR",
    "teamName": null
   },
@@ -12790,11 +12764,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": true,
@@ -12819,7 +12791,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "DEN",
    "teamName": null
   },
@@ -12831,12 +12803,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 30.5,
+    "implied": 30.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "NO",
-    "oppImplied": 19.0,
+    "oppImplied": 18.5,
     "spread": -11.5,
-    "total": 49.5
+    "total": 48.5
    },
    "games": 0,
    "id": "6451",
@@ -12858,11 +12830,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": true,
@@ -12887,7 +12857,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "KC",
    "teamName": null
   },
@@ -12961,11 +12931,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": false,
@@ -12990,7 +12958,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "TEN",
    "teamName": "Team 12"
   },
@@ -13196,11 +13164,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": false,
@@ -13225,17 +13191,15 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "PIT",
    "teamName": null
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": false,
@@ -13260,7 +13224,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "JAX",
    "teamName": null
   },
@@ -13533,11 +13497,9 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": null,
    "game": {
     "home": false,
@@ -13562,7 +13524,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "NYJ",
    "teamName": null
   },
@@ -13868,11 +13830,9 @@
   },
   {
    "ceiling": 2.6,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
-   "flags": [
-    "OUT"
-   ],
+   "flags": [],
    "floor": 0.0,
    "game": {
     "home": true,
@@ -13897,7 +13857,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "OUT",
+   "status": null,
    "team": "SF",
    "teamName": null
   },
@@ -14071,10 +14031,10 @@
   },
   {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": 0.0,
    "flags": [
-    "OUT"
+    "QUESTIONABLE"
    ],
    "floor": null,
    "game": {
@@ -14101,7 +14061,7 @@
     "espn",
     "rotowire"
    ],
-   "status": "OUT",
+   "status": "QUESTIONABLE",
    "team": "PHI",
    "teamName": null
   }
@@ -14110,31 +14070,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:50Z",
+   "lastUpdated": "2026-11-18T11:27:58Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:50Z",
+   "lastUpdated": "2026-11-18T11:27:58Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:48Z",
+   "lastUpdated": "2026-11-18T11:27:56Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:48Z",
+   "lastUpdated": "2026-11-18T11:27:57Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T03:40:48Z",
+   "lastUpdated": "2026-11-18T11:27:57Z",
    "ok": true,
    "stale": false
   }

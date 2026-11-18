@@ -823,7 +823,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Chig Okonkwo",
    "opponent": "NYG",
    "playerId": "8210",
@@ -3646,7 +3646,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Out",
+   "injuryStatus": "Questionable",
    "name": "Geno Smith",
    "opponent": "BUF",
    "playerId": "1373",
@@ -4736,7 +4736,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Xavier Hutchinson",
    "opponent": "CLE",
    "playerId": "10218",
@@ -5142,7 +5142,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Out",
+   "injuryStatus": "Doubtful",
    "name": "Woody Marks",
    "opponent": "CLE",
    "playerId": "12474",
@@ -7495,7 +7495,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Travis Kelce",
    "opponent": "ATL",
    "playerId": "1466",
@@ -10532,7 +10532,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Out",
+   "injuryStatus": "Questionable",
    "name": "Brock Bowers",
    "opponent": "SEA",
    "playerId": "11604",
@@ -12876,7 +12876,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Oronde Gadsden",
    "opponent": "BAL",
    "playerId": "12493",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-18T03:40:48Z",
+ "fetchedAt": "2026-11-18T11:27:57Z",
  "source": "sleeper_stats"
 }
