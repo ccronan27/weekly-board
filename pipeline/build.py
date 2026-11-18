@@ -390,23 +390,28 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         pw = waivers.playoff_weeks(norm.get("playoffWeekStart"), norm.get("playoffTeams"), norm.get("playoffRoundType")) \
             or lc.get("playoffWeeks") or DEFAULT_PLAYOFF_WEEKS
         lt_weeks = [w for w in pw if w > week]
+        stretch_weeks = [w for w in range(week + 1, pw[0])]   # regular season weeks left after this one
+        out["waivers"]["stretch"] = None
         if matchups:
             rates = {p["id"]: long_term_rate(p) for p in my_players + fas}
             mine_lt = [{"id": p["id"], "pos": p["pos"], "team": p["team"], "rate": rates[p["id"]][0]} for p in my_players]
             fa_lt = [{"id": p["id"], "pos": p["pos"], "team": p["team"], "rate": rates[p["id"]][0]} for p in fas]
-            ranks = defense_ranks(raw["stats"], lg) if lt_weeks else {}
+            ranks = defense_ranks(raw["stats"], lg) if (lt_weeks or stretch_weeks) else {}
+            n_teams = len(ranks and {k[0] for k in ranks}) or 32
 
             def wk(p, x):
                 opp, home = matchups.get(x["week"], {}).get(p["team"], (None, None))
                 return {**x, "opp": opp, "home": home, "rank": ranks.get((opp, p["pos"]))}
 
-            lt = waivers.diversify(waivers.long_term(slots, lt_weeks, mine_lt, fa_lt, lambda w, t: t in matchups.get(w, {})),
-                                   {p["id"]: p["pos"] for p in fas})
-            out["waivers"]["longTerm"] = {
-                "weeks": lt_weeks, "playoffWeeks": pw, "teams": len(ranks and {k[0] for k in ranks}) or 32,
-                "targets": [{"player": fa_brief(t["id"]), "gain": t["gain"], "rate": round(rates[t["id"]][0], 1),
-                             "rateFrom": rates[t["id"]][1], "weeks": [wk(fa_by[t["id"]], x) for x in t["weeks"]]} for t in lt],
-            }
+            def horizon(weeks):
+                """Free agents ranked by points added to your best lineup over these weeks."""
+                ranked = waivers.diversify(waivers.long_term(slots, weeks, mine_lt, fa_lt, lambda w, t: t in matchups.get(w, {})),
+                                           {p["id"]: p["pos"] for p in fas})
+                return [{"player": fa_brief(t["id"]), "gain": t["gain"], "rate": round(rates[t["id"]][0], 1),
+                         "rateFrom": rates[t["id"]][1], "weeks": [wk(fa_by[t["id"]], x) for x in t["weeks"]]} for t in ranked]
+
+            out["waivers"]["longTerm"] = {"weeks": lt_weeks, "playoffWeeks": pw, "teams": n_teams, "targets": horizon(lt_weeks)}
+            out["waivers"]["stretch"] = {"weeks": stretch_weeks, "teams": n_teams, "targets": horizon(stretch_weeks)}
         # ---- v3 trades: every roster with playoff rates, plus 1 for 1 ideas that help both teams
         out["trade"] = None
         if matchups:
@@ -424,7 +429,8 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                          for n, recs in team_recs.items()]
             mine_t = next(r for r in rosters_t if r["isMine"])["players"]
             others = [r for r in rosters_t if not r["isMine"]]
-            ideas = trades.suggest(slots, lt_weeks, mine_t, others, plays)
+            all_weeks = stretch_weeks + lt_weeks    # rest of season, every week counts the same
+            ideas = trades.suggest(slots, all_weeks, mine_t, others, plays)
             by_team = {r["name"]: {p["id"]: p for p in r["players"]} for r in rosters_t}
             mine_by = by_team[team_name]
 
@@ -436,11 +442,14 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 theirs = by_team[i["team"]]
                 after = [p for p in mine_t if p["id"] not in i["give"]] + [theirs[x] for x in i["get"]]
                 i["thisWeek"] = round(this_week(after) - base_now, 1)
+                ev = trades.evaluate(slots, all_weeks, mine_t, list(theirs.values()), i["give"], i["get"], plays)
+                i["stretchGain"] = round(sum(x["gain"] for x in ev["weeks"] if x["week"] in stretch_weeks), 1)
+                i["playoffGain"] = round(sum(x["gain"] for x in ev["weeks"] if x["week"] in lt_weeks), 1)
                 i["youthFlag"] = dynasty and trades.youth_flag([mine_by[x] for x in i["give"]], [theirs[x] for x in i["get"]])
             write_json(out_dir / f"trade-{lc['key']}.json", {
                 "generatedAt": generated, "season": season, "week": week, "league": lc["key"], "dynasty": dynasty,
-                "slots": slots, "weeks": lt_weeks, "flexEligible": {k: sorted(v) for k, v in scoring.FLEX_ELIGIBLE.items()},
-                "plays": {str(w): sorted(matchups.get(w, {})) for w in lt_weeks}, "rosters": rosters_t, "ideas": ideas,
+                "slots": slots, "weeks": all_weeks, "stretchWeeks": stretch_weeks, "playoffWeeks": lt_weeks, "flexEligible": {k: sorted(v) for k, v in scoring.FLEX_ELIGIBLE.items()},
+                "plays": {str(w): sorted(matchups.get(w, {})) for w in all_weeks}, "rosters": rosters_t, "ideas": ideas,
                 "sources": out["sources"]})
             out["trade"] = {"file": f"trade-{lc['key']}.json", "ideas": len(ideas)}
         outputs[lc["key"]] = out

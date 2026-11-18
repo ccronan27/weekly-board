@@ -338,3 +338,16 @@ def test_trade_files_cover_every_team(built):
             assert i["youthFlag"] in (True, False) and (td["dynasty"] or not i["youthFlag"])
         blob = json.dumps(td)
         assert "owner" not in blob and "display_name" not in blob     # team names only
+
+
+@needs_raw
+def test_stretch_run_covers_weeks_before_the_playoffs(built):
+    for k, o in built[1]["leagues"].items():
+        st = o["waivers"]["stretch"]
+        assert st["weeks"] == [12, 13, 14], k
+        for t in st["targets"]:
+            assert [x["week"] for x in t["weeks"]] == [12, 13, 14] and t["gain"] > 0
+        td = read_json(built[0] / o["trade"]["file"])
+        assert td["weeks"] == [12, 13, 14, 15, 16, 17] and td["stretchWeeks"] == [12, 13, 14] and td["playoffWeeks"] == [15, 16, 17]
+        for i in td["ideas"]:
+            assert abs(i["stretchGain"] + i["playoffGain"] - i["myGain"]) < 0.15

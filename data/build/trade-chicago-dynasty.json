@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T03:24:59Z",
+ "generatedAt": "2026-11-18T03:25:36Z",
  "ideas": [
   {
    "get": [
@@ -30,15 +30,133 @@
    "give": [
     "4993"
    ],
-   "myGain": 1.2,
+   "myGain": 2.4,
+   "playoffGain": 1.2,
+   "stretchGain": 1.2,
    "team": "Ladd’s McConcubines",
-   "theirGain": 1.2,
+   "theirGain": 1.6,
    "thisWeek": -5.1,
    "youthFlag": false
+  },
+  {
+   "get": [
+    "3271"
+   ],
+   "give": [
+    "9500"
+   ],
+   "myGain": 1.6,
+   "playoffGain": 0.9,
+   "stretchGain": 0.7,
+   "team": "Brandon Aubrey Supremacy",
+   "theirGain": 0.5,
+   "thisWeek": -4.3,
+   "youthFlag": true
   }
  ],
  "league": "chicago-dynasty",
+ "playoffWeeks": [
+  15,
+  16,
+  17
+ ],
  "plays": {
+  "12": [
+   "ARI",
+   "ATL",
+   "BAL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DAL",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "IND",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "LV",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "NYJ",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
+  "13": [
+   "ARI",
+   "ATL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DAL",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
+  "14": [
+   "ATL",
+   "BAL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "IND",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "LV",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "NYJ",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
   "15": [
    "ARI",
    "ATL",
@@ -4671,8 +4789,16 @@
    "stale": false
   }
  },
+ "stretchWeeks": [
+  12,
+  13,
+  14
+ ],
  "week": 11,
  "weeks": [
+  12,
+  13,
+  14,
   15,
   16,
   17

@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T03:24:59Z",
+ "generatedAt": "2026-11-18T03:25:36Z",
  "ideas": [
   {
    "get": [
@@ -30,23 +30,42 @@
    "give": [
     "8137"
    ],
-   "myGain": 9.6,
+   "myGain": 24.6,
+   "playoffGain": 9.6,
+   "stretchGain": 15.0,
    "team": "Olav é Trois",
-   "theirGain": 10.8,
+   "theirGain": 15.7,
    "thisWeek": 1.2,
    "youthFlag": false
   },
   {
    "get": [
-    "4046"
+    "6770"
    ],
    "give": [
-    "8131"
+    "6813"
    ],
-   "myGain": 7.5,
+   "myGain": 15.1,
+   "playoffGain": 3.9,
+   "stretchGain": 11.2,
    "team": "Olav é Trois",
-   "theirGain": 12.9,
-   "thisWeek": -7.8,
+   "theirGain": 15.2,
+   "thisWeek": 1.3,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "4866"
+   ],
+   "give": [
+    "12506"
+   ],
+   "myGain": 13.3,
+   "playoffGain": 1.5,
+   "stretchGain": 11.8,
+   "team": "Gay tier ball knowledge",
+   "theirGain": 16.3,
+   "thisWeek": 4.0,
    "youthFlag": false
   },
   {
@@ -56,80 +75,178 @@
    "give": [
     "13281"
    ],
-   "myGain": 7.5,
+   "myGain": 13.0,
+   "playoffGain": 7.5,
+   "stretchGain": 5.5,
    "team": "Team 3",
-   "theirGain": 9.0,
+   "theirGain": 18.0,
    "thisWeek": 0.5,
    "youthFlag": false
   },
   {
    "get": [
+    "9224"
+   ],
+   "give": [
+    "8131"
+   ],
+   "myGain": 16.9,
+   "playoffGain": 3.3,
+   "stretchGain": 13.6,
+   "team": "Gay tier ball knowledge",
+   "theirGain": 12.7,
+   "thisWeek": -7.2,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "8183"
+   ],
+   "give": [
+    "11783"
+   ],
+   "myGain": 12.0,
+   "playoffGain": 6.0,
+   "stretchGain": 6.0,
+   "team": "Team 3",
+   "theirGain": 16.5,
+   "thisWeek": 0.2,
+   "youthFlag": false
+  },
+  {
+   "get": [
     "11564"
    ],
    "give": [
     "13281"
    ],
-   "myGain": 6.6,
+   "myGain": 11.2,
+   "playoffGain": 6.6,
+   "stretchGain": 4.6,
    "team": "Kirkboi Charlies",
-   "theirGain": 7.2,
+   "theirGain": 14.4,
    "thisWeek": -3.1,
    "youthFlag": false
   },
   {
    "get": [
-    "11563"
-   ],
-   "give": [
-    "12506"
-   ],
-   "myGain": 6.3,
-   "team": "Team 3",
-   "theirGain": 10.2,
-   "thisWeek": 3.6,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "11564"
-   ],
-   "give": [
-    "12506"
-   ],
-   "myGain": 5.4,
-   "team": "Kirkboi Charlies",
-   "theirGain": 8.4,
-   "thisWeek": 0.0,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "7569"
+    "12481"
    ],
    "give": [
     "8131"
    ],
-   "myGain": 5.7,
-   "team": "Gay tier ball knowledge",
-   "theirGain": 5.1,
-   "thisWeek": -6.4,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "13276"
-   ],
-   "give": [
-    "8131"
-   ],
-   "myGain": 4.8,
-   "team": "Gay tier ball knowledge",
-   "theirGain": 6.0,
-   "thisWeek": -14.1,
+   "myGain": 19.3,
+   "playoffGain": 4.5,
+   "stretchGain": 14.8,
+   "team": "Scatt Pack",
+   "theirGain": 9.6,
+   "thisWeek": -6.8,
    "youthFlag": false
   }
  ],
  "league": "hwh",
+ "playoffWeeks": [
+  15,
+  16,
+  17
+ ],
  "plays": {
+  "12": [
+   "ARI",
+   "ATL",
+   "BAL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DAL",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "IND",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "LV",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "NYJ",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
+  "13": [
+   "ARI",
+   "ATL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DAL",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
+  "14": [
+   "ATL",
+   "BAL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "IND",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "LV",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "NYJ",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
   "15": [
    "ARI",
    "ATL",
@@ -3409,8 +3526,16 @@
    "stale": false
   }
  },
+ "stretchWeeks": [
+  12,
+  13,
+  14
+ ],
  "week": 11,
  "weeks": [
+  12,
+  13,
+  14,
   15,
   16,
   17

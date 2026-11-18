@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T03:24:59Z",
+ "generatedAt": "2026-11-18T03:25:36Z",
  "ideas": [
   {
    "get": [
@@ -30,9 +30,11 @@
    "give": [
     "10213"
    ],
-   "myGain": 3.3,
+   "myGain": 6.6,
+   "playoffGain": 3.3,
+   "stretchGain": 3.3,
    "team": "QWOP",
-   "theirGain": 3.3,
+   "theirGain": 6.1,
    "thisWeek": -0.7,
    "youthFlag": false
   },
@@ -43,10 +45,27 @@
    "give": [
     "4993"
    ],
-   "myGain": 3.3,
+   "myGain": 6.0,
+   "playoffGain": 3.3,
+   "stretchGain": 2.7,
    "team": "QWOP",
-   "theirGain": 3.0,
+   "theirGain": 13.2,
    "thisWeek": -8.2,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "5872"
+   ],
+   "give": [
+    "4993"
+   ],
+   "myGain": 5.8,
+   "playoffGain": 2.7,
+   "stretchGain": 3.1,
+   "team": "Chud LLC",
+   "theirGain": 7.6,
+   "thisWeek": -7.0,
    "youthFlag": false
   },
   {
@@ -56,10 +75,42 @@
    "give": [
     "12506"
    ],
-   "myGain": 2.4,
+   "myGain": 4.2,
+   "playoffGain": 2.4,
+   "stretchGain": 1.8,
    "team": "Drake it 2 the limit",
-   "theirGain": 4.8,
+   "theirGain": 9.6,
    "thisWeek": 0.0,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "8130"
+   ],
+   "give": [
+    "12506"
+   ],
+   "myGain": 3.9,
+   "playoffGain": 4.5,
+   "stretchGain": -0.6,
+   "team": "Honorary Brown",
+   "theirGain": 4.3,
+   "thisWeek": 5.1,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "13296"
+   ],
+   "give": [
+    "4993"
+   ],
+   "myGain": 4.6,
+   "playoffGain": 2.1,
+   "stretchGain": 2.5,
+   "team": "Exempt List",
+   "theirGain": 3.4,
+   "thisWeek": -7.2,
    "youthFlag": false
   },
   {
@@ -67,30 +118,135 @@
     "5892"
    ],
    "give": [
-    "10213"
+    "4993"
    ],
-   "myGain": 1.5,
+   "myGain": 3.4,
+   "playoffGain": 1.5,
+   "stretchGain": 1.9,
    "team": "Honorary Brown",
-   "theirGain": 1.5,
-   "thisWeek": -0.7,
+   "theirGain": 2.8,
+   "thisWeek": -8.2,
    "youthFlag": false
   },
   {
    "get": [
-    "9224"
+    "12495"
    ],
    "give": [
-    "8146"
+    "12506"
    ],
-   "myGain": 3.0,
-   "team": "Honorary Brown",
-   "theirGain": 0.9,
-   "thisWeek": 1.0,
+   "myGain": 2.8,
+   "playoffGain": 1.2,
+   "stretchGain": 1.6,
+   "team": "Exempt List",
+   "theirGain": 3.7,
+   "thisWeek": 4.3,
    "youthFlag": false
   }
  ],
  "league": "fantasizing",
+ "playoffWeeks": [
+  15,
+  16,
+  17
+ ],
  "plays": {
+  "12": [
+   "ARI",
+   "ATL",
+   "BAL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DAL",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "IND",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "LV",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "NYJ",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
+  "13": [
+   "ARI",
+   "ATL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DAL",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
+  "14": [
+   "ATL",
+   "BAL",
+   "BUF",
+   "CAR",
+   "CHI",
+   "CIN",
+   "CLE",
+   "DEN",
+   "DET",
+   "GB",
+   "HOU",
+   "IND",
+   "JAX",
+   "KC",
+   "LAC",
+   "LAR",
+   "LV",
+   "MIA",
+   "MIN",
+   "NE",
+   "NO",
+   "NYG",
+   "NYJ",
+   "PHI",
+   "PIT",
+   "SEA",
+   "SF",
+   "TB",
+   "TEN",
+   "WAS"
+  ],
   "15": [
    "ARI",
    "ATL",
@@ -3571,8 +3727,16 @@
    "stale": false
   }
  },
+ "stretchWeeks": [
+  12,
+  13,
+  14
+ ],
  "week": 11,
  "weeks": [
+  12,
+  13,
+  14,
   15,
   16,
   17

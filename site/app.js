@@ -302,10 +302,13 @@ function renderWaivers(league, meta) {
   const best = w.targets.length ? w.targets[0] : null;
   const lt = w.longTerm && w.longTerm.weeks && w.longTerm.weeks.length ? w.longTerm : null;
   const bestLt = lt && lt.targets.length ? lt.targets[0] : null;
+  const st = w.stretch && w.stretch.weeks && w.stretch.weeks.length ? w.stretch : null;
+  const bestSt = st && st.targets.length ? st.targets[0] : null;
   const sum = el("div", "summary");
-  [["This week", best ? best.player.name + " " + signed(best.gain) : "None"],
-   ["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : "Over"],
-   ["Free agents", String(w.freeAgents)]].forEach(function (x) {
+  const rows = [["This week", best ? best.player.name + " " + signed(best.gain) : "None"]];
+  if (st) rows.push(["Stretch run", bestSt ? bestSt.player.name + " " + signed(bestSt.gain) : "None"]);
+  rows.push(["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : "Over"]);
+  rows.forEach(function (x) {
     const d = el("div");
     d.appendChild(el("span", "label", x[0]));
     d.appendChild(el("b", null, x[1]));
@@ -340,7 +343,10 @@ function renderWaivers(league, meta) {
     tc.appendChild(wrap);
   });
   secTargets.appendChild(tc);
-  if (lt) secTargets.appendChild(longTermSection(lt));
+  if (st) secTargets.appendChild(horizonSection(st, "Stretch run, " + weekSpan(st.weeks),
+    "Points each player adds to your best lineup over the regular season weeks left after this one. Byes count, so this is where bye coverage shows up."));
+  if (lt) secTargets.appendChild(horizonSection(lt, "Long term, playoffs " + weekSpan(lt.weeks),
+    "Points each player adds to your best lineup over the playoff weeks."));
 
   // Reference list, folded so the page stays short on phones
   const fold = el("details", "fold");
@@ -371,13 +377,18 @@ function matchupText(x, teams) {
   return t;
 }
 
-function longTermSection(lt) {
+function weekSpan(weeks) {
+  if (!weeks || !weeks.length) return "";
+  return weeks.length > 1 ? "weeks " + weeks[0] + " to " + weeks[weeks.length - 1] : "week " + weeks[0];
+}
+
+// A ranked list over future weeks (stretch run or playoffs)
+function horizonSection(lt, title, intro) {
   const sec = el("div", "lt");
-  const span = lt.weeks.length > 1 ? "weeks " + lt.weeks[0] + " to " + lt.weeks[lt.weeks.length - 1] : "week " + lt.weeks[0];
-  sec.appendChild(el("h2", null, "Long term, playoffs " + span));
-  sec.appendChild(el("div", "muted", "Points each player adds to your best lineup over the playoff weeks. A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now. Soft and tough show the 8 defenses that allow the most and the fewest points to the position. Context only, not in the score."));
+  sec.appendChild(el("h2", null, title));
+  sec.appendChild(el("div", "muted", intro + " A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now. Soft and tough show the 8 defenses that allow the most and the fewest points to the position. Context only, not in the score."));
   const c = el("div", "card list");
-  if (!lt.targets.length) c.appendChild(el("div", "slot", "No free agent beats your playoff lineup."));
+  if (!lt.targets.length) c.appendChild(el("div", "slot", "No free agent beats your lineup over these weeks."));
   lt.targets.forEach(function (t) {
     const wrap = el("div", "slot");
     const rate = isNum(t.rate) ? t.rate.toFixed(1) + " a week, " + (t.rateFrom === "season" ? "season average" : "this week's projection") + ". " : "";
@@ -460,7 +471,7 @@ function renderTrade(league, meta, td, state, rerender) {
     state.give = new Set(); state.get = new Set();
   }
   const partner = others.filter(function (r) { return r.name === state.team; })[0];
-  const span = td.weeks.length > 1 ? "weeks " + td.weeks[0] + " to " + td.weeks[td.weeks.length - 1] : (td.weeks.length ? "week " + td.weeks[0] : "");
+  const stW = td.stretchWeeks || [], poW = td.playoffWeeks || td.weeks;
   const byId = {};
   rosters.forEach(function (r) { r.players.forEach(function (p) { byId[r.name + "|" + p.id] = p; }); });
 
@@ -478,13 +489,14 @@ function renderTrade(league, meta, td, state, rerender) {
   head.appendChild(sm);
   secSum.appendChild(head);
   freshnessWarnings(league, meta, secSum);
-  secSum.appendChild(el("p", "muted aside", "Trades are scored by how much each team's best lineup changes over the playoffs, " + span + ". A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now."));
-  if (td.dynasty) secSum.appendChild(el("div", "warn", "Dynasty league. Scores only cover this season's playoffs. Ages are shown, and trades that send away a player 4 or more years younger are flagged."));
+  secSum.appendChild(el("p", "muted aside", "Trades are scored by how much each team's best lineup changes over the rest of the season, " + weekSpan(td.weeks) +
+    ", with every week counted the same. That is the stretch run" + (stW.length ? " (" + weekSpan(stW) + ")" : "") + " and the playoffs (" + weekSpan(poW) + "). A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now."));
+  if (td.dynasty) secSum.appendChild(el("div", "warn", "Dynasty league. Scores only cover the rest of this season. Ages are shown, and trades that send away a player 4 or more years younger are flagged."));
 
   // Ideas
   const secIdeas = el("section", "s-lineup");
   secIdeas.appendChild(el("h2", null, "Trade ideas"));
-  secIdeas.appendChild(el("div", "muted", "One for one trades that make both playoff lineups better. Tap one to open it below."));
+  secIdeas.appendChild(el("div", "muted", "One for one trades that make both lineups better over the rest of the season. Tap one to open it below."));
   const ic = el("div", "card list");
   if (!td.ideas.length) ic.appendChild(el("div", "slot", "No one for one trade helps both teams right now. Try the builder below."));
   td.ideas.forEach(function (i) {
@@ -497,7 +509,8 @@ function renderTrade(league, meta, td, state, rerender) {
     if (i.youthFlag) top.appendChild(el("span", "badge warn", "Younger out"));
     b.appendChild(top);
     b.appendChild(el("div", "psub", "With " + i.team + " · " + give.map(function (p) { return p.pos; }).join("/") + " for " + get.map(function (p) { return p.pos; }).join("/")));
-    const line = el("div", "extra muted-extra", "You " + signed(i.myGain) + ", they " + signed(i.theirGain) + " over the playoffs. ");
+    const split = isNum(i.stretchGain) && stW.length ? " (stretch " + signed(i.stretchGain) + ", playoffs " + signed(i.playoffGain) + ")" : "";
+    const line = el("div", "extra muted-extra", "You " + signed(i.myGain) + split + ", they " + signed(i.theirGain) + " over the rest of the season. ");
     line.appendChild(el("span", i.thisWeek < 0 ? "neg" : "", "This week " + signed(i.thisWeek) + " for you."));
     b.appendChild(line);
     b.addEventListener("click", function () {
@@ -534,19 +547,23 @@ function renderTrade(league, meta, td, state, rerender) {
     rc.appendChild(el("div", "muted", "Tick players to give and to get. The result updates as you go."));
   } else {
     const rs = el("div", "summary");
-    [["You, playoffs", signed(res.myGain)], ["They, playoffs", signed(res.theirGain)], ["You, this week", signed(res.thisWeek)]].forEach(function (x) {
+    [["You, rest of season", signed(res.myGain)], ["They, rest of season", signed(res.theirGain)], ["You, this week", signed(res.thisWeek)]].forEach(function (x) {
       const d = el("div");
       d.appendChild(el("span", "label", x[0]));
       d.appendChild(el("b", "num " + (x[1].charAt(0) === "-" ? "neg" : (x[1] === "0.0" ? "" : "pos")), x[1]));
       rs.appendChild(d);
     });
     rc.appendChild(rs);
-    if (res.weeks.length) rc.appendChild(el("div", "psub", res.weeks.map(function (x) { return "W" + x.week + " " + signed(x.gain); }).join(" · ")));
+    if (res.weeks.length) {
+      const part = function (ws) { return Math.round(res.weeks.filter(function (x) { return ws.indexOf(x.week) >= 0; }).reduce(function (a, x) { return a + x.gain; }, 0) * 10) / 10; };
+      if (stW.length) rc.appendChild(el("div", "psub", "You: stretch run " + signed(part(stW)) + " · playoffs " + signed(part(poW))));
+      rc.appendChild(el("div", "psub", res.weeks.map(function (x) { return "W" + x.week + " " + signed(x.gain); }).join(" · ")));
+    }
     let verdict;
     if (res.myGain > 0 && res.theirGain > 0) verdict = "Both teams get better. A fair offer.";
     else if (res.myGain > 0) verdict = "You win this one. They lose " + Math.abs(res.theirGain).toFixed(1) + ", so expect a no.";
     else if (res.theirGain > 0) verdict = "This helps them more than you.";
-    else verdict = "Neither playoff lineup gets better.";
+    else verdict = "Neither lineup gets better.";
     rc.appendChild(el("div", "extra" + (res.myGain > 0 && res.theirGain > 0 ? "" : " muted-extra"), verdict));
     const diff = state.get.size - state.give.size;
     if (diff > 0) rc.appendChild(el("div", "note", "You get " + diff + " more than you give. Make room on your roster."));
