@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T13:20:52Z",
+ "generatedAt": "2026-11-18T15:02:11Z",
  "league": {
   "key": "chicago-dynasty",
   "name": "Chicago Dynasty",
@@ -8,44 +8,10 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 90.6,
-  "gain": 10.7,
-  "moves": [
-   {
-    "gain": 10.7,
-    "in": {
-     "ceiling": 16.2,
-     "eligible": true,
-     "espn": 10.0,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "floor": 5.2,
-     "game": {
-      "home": true,
-      "implied": 24.2,
-      "kickoff": "2026-11-23T01:20Z",
-      "opp": "MIN",
-      "oppImplied": 21.2,
-      "spread": -3.0,
-      "total": 45.5
-     },
-     "games": 6,
-     "id": "2216",
-     "injuryNotes": "Tendinitis",
-     "locked": false,
-     "name": "Mike Evans",
-     "points": 10.7,
-     "pos": "WR",
-     "ppg": 12.6,
-     "rotowire": 11.4,
-     "team": "SF"
-    },
-    "out": null,
-    "slot": "FLEX"
-   }
-  ],
-  "recommendedPoints": 101.3,
+  "currentPoints": 101.4,
+  "gain": 0.0,
+  "moves": [],
+  "recommendedPoints": 101.4,
   "slots": [
    {
     "changed": false,
@@ -237,7 +203,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Zay Flowers",
-     "points": 11.7,
+     "points": 11.8,
      "pos": "WR",
      "ppg": 14.4,
      "rotowire": 12.5,
@@ -263,7 +229,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Zay Flowers",
-     "points": 11.7,
+     "points": 11.8,
      "pos": "WR",
      "ppg": 14.4,
      "rotowire": 12.5,
@@ -440,10 +406,9 @@
     "slot": "FLEX"
    },
    {
-    "changed": true,
-    "current": null,
-    "recommended": {
-     "ceiling": 16.2,
+    "changed": false,
+    "current": {
+     "ceiling": 16.1,
      "eligible": true,
      "espn": 10.0,
      "flags": [
@@ -467,7 +432,35 @@
      "points": 10.7,
      "pos": "WR",
      "ppg": 12.6,
-     "rotowire": 11.4,
+     "rotowire": 11.3,
+     "team": "SF"
+    },
+    "recommended": {
+     "ceiling": 16.1,
+     "eligible": true,
+     "espn": 10.0,
+     "flags": [
+      "QUESTIONABLE"
+     ],
+     "floor": 5.2,
+     "game": {
+      "home": true,
+      "implied": 24.2,
+      "kickoff": "2026-11-23T01:20Z",
+      "opp": "MIN",
+      "oppImplied": 21.2,
+      "spread": -3.0,
+      "total": 45.5
+     },
+     "games": 6,
+     "id": "2216",
+     "injuryNotes": "Tendinitis",
+     "locked": false,
+     "name": "Mike Evans",
+     "points": 10.7,
+     "pos": "WR",
+     "ppg": 12.6,
+     "rotowire": 11.3,
      "team": "SF"
     },
     "slot": "FLEX"
@@ -585,7 +578,17 @@
     "slot": "K"
    }
   ],
-  "watch": []
+  "watch": [
+   {
+    "flags": [
+     "QUESTIONABLE"
+    ],
+    "injuryNotes": "Tendinitis",
+    "kickoff": "2026-11-23T01:20Z",
+    "player": "Mike Evans",
+    "slot": "FLEX"
+   }
+  ]
  },
  "roster": [
   {
@@ -655,6 +658,39 @@
    "team": "LV"
   },
   {
+   "ceiling": 19.6,
+   "eligible": true,
+   "espn": 11.0,
+   "flags": [],
+   "floor": 3.9,
+   "game": {
+    "home": false,
+    "implied": 21.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "CAR",
+    "oppImplied": 23.5,
+    "spread": 2.5,
+    "total": 44.5
+   },
+   "games": 8,
+   "id": "9997",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Zay Flowers",
+   "points": 11.8,
+   "pos": "WR",
+   "ppg": 14.4,
+   "rotowire": 12.5,
+   "sd": 7.84,
+   "slot": "START",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "BAL"
+  },
+  {
    "ceiling": 17.5,
    "eligible": true,
    "espn": 12.9,
@@ -688,40 +724,7 @@
    "team": "MIA"
   },
   {
-   "ceiling": 19.6,
-   "eligible": true,
-   "espn": 11.0,
-   "flags": [],
-   "floor": 3.9,
-   "game": {
-    "home": false,
-    "implied": 21.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "CAR",
-    "oppImplied": 23.5,
-    "spread": 2.5,
-    "total": 44.5
-   },
-   "games": 8,
-   "id": "9997",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Zay Flowers",
-   "points": 11.7,
-   "pos": "WR",
-   "ppg": 14.4,
-   "rotowire": 12.5,
-   "sd": 7.84,
-   "slot": "START",
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "BAL"
-  },
-  {
-   "ceiling": 16.2,
+   "ceiling": 16.1,
    "eligible": true,
    "espn": 10.0,
    "flags": [
@@ -745,9 +748,9 @@
    "points": 10.7,
    "pos": "WR",
    "ppg": 12.6,
-   "rotowire": 11.4,
+   "rotowire": 11.3,
    "sd": 5.48,
-   "slot": "BN",
+   "slot": "START",
    "sources": [
     "espn",
     "rotowire"
@@ -1011,7 +1014,7 @@
    "points": 3.1,
    "pos": "WR",
    "ppg": 7.2,
-   "rotowire": 3.3,
+   "rotowire": 3.2,
    "sd": 4.37,
    "slot": "BN",
    "sources": [
@@ -1273,36 +1276,42 @@
  ],
  "scoringNotes": [],
  "season": 2026,
+ "seasonPhase": "regular",
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:02:11Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:02:11Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:02:09Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:02:09Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:02:09Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   }
  },
  "standings": {
@@ -1310,18 +1319,18 @@
   "divisions": 0,
   "myGames": [
    {
-    "myMean": 101.3,
+    "myMean": 101.4,
     "opp": "All Gas No Brakes",
-    "oppMean": 127.7,
+    "oppMean": 127.6,
     "week": 11,
-    "winPct": 22.5
+    "winPct": 22.6
    },
    {
-    "myMean": 116.0,
+    "myMean": 116.1,
     "opp": "Brandon Aubrey Supremacy",
-    "oppMean": 141.1,
+    "oppMean": 141.0,
     "week": 12,
-    "winPct": 23.6
+    "winPct": 23.8
    },
    {
     "myMean": 98.6,
@@ -1331,11 +1340,11 @@
     "winPct": 37.5
    },
    {
-    "myMean": 116.0,
+    "myMean": 116.1,
     "opp": "Ladd’s McConcubines",
     "oppMean": 129.7,
     "week": 14,
-    "winPct": 34.7
+    "winPct": 34.8
    }
   ],
   "playoffTeams": 6,
@@ -1359,7 +1368,7 @@
    },
    {
     "avgSeed": 2.7,
-    "byePct": 52.7,
+    "byePct": 52.6,
     "division": null,
     "isMine": false,
     "losses": 3,
@@ -1379,7 +1388,7 @@
     "isMine": false,
     "losses": 3,
     "name": "Team 5",
-    "playoffPct": 91.5,
+    "playoffPct": 91.6,
     "pointsAgainst": 1076.4,
     "pointsFor": 1166.9,
     "projWins": 8.8,
@@ -1389,7 +1398,7 @@
    },
    {
     "avgSeed": 3.6,
-    "byePct": 28.3,
+    "byePct": 28.2,
     "division": null,
     "isMine": false,
     "losses": 4,
@@ -1404,12 +1413,12 @@
    },
    {
     "avgSeed": 5.7,
-    "byePct": 3.4,
+    "byePct": 3.5,
     "division": null,
     "isMine": false,
     "losses": 4,
     "name": "Tinman0506",
-    "playoffPct": 64.1,
+    "playoffPct": 64.2,
     "pointsAgainst": 1153.82,
     "pointsFor": 1113.22,
     "projWins": 7.9,
@@ -1424,7 +1433,7 @@
     "isMine": false,
     "losses": 5,
     "name": "Team 12",
-    "playoffPct": 64.0,
+    "playoffPct": 63.8,
     "pointsAgainst": 1228.28,
     "pointsFor": 1231.98,
     "projWins": 7.3,
@@ -1433,13 +1442,13 @@
     "wins": 5
    },
    {
-    "avgSeed": 5.5,
+    "avgSeed": 5.4,
     "byePct": 0.5,
     "division": null,
     "isMine": false,
     "losses": 5,
     "name": "Ladd’s McConcubines",
-    "playoffPct": 77.7,
+    "playoffPct": 77.8,
     "pointsAgainst": 1211.12,
     "pointsFor": 1168.62,
     "projWins": 7.8,
@@ -1612,7 +1621,7 @@
      "points": 8.8,
      "pos": "K",
      "ppg": 10.2,
-     "rotowire": 7.8,
+     "rotowire": 7.7,
      "team": "CHI"
     }
    ],
@@ -1983,7 +1992,7 @@
       "points": 8.8,
       "pos": "K",
       "ppg": 10.2,
-      "rotowire": 7.8,
+      "rotowire": 7.7,
       "team": "CHI"
      },
      "rate": 10.2,

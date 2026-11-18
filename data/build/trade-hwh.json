@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T13:20:52Z",
+ "generatedAt": "2026-11-18T15:02:11Z",
  "ideas": [
   {
    "get": [
@@ -43,14 +43,14 @@
     "11563"
    ],
    "give": [
-    "13281"
+    "11635"
    ],
-   "myGain": 18.0,
-   "playoffGain": 10.5,
-   "stretchGain": 7.5,
+   "myGain": 18.6,
+   "playoffGain": 10.8,
+   "stretchGain": 7.8,
    "team": "Team 3",
-   "theirGain": 18.0,
-   "thisWeek": 0.5,
+   "theirGain": 16.8,
+   "thisWeek": 0.6,
    "youthFlag": false
   },
   {
@@ -58,13 +58,13 @@
     "11563"
    ],
    "give": [
-    "11635"
+    "13281"
    ],
    "myGain": 18.6,
    "playoffGain": 10.8,
    "stretchGain": 7.8,
    "team": "Team 3",
-   "theirGain": 17.4,
+   "theirGain": 16.8,
    "thisWeek": 0.6,
    "youthFlag": false
   },
@@ -103,14 +103,14 @@
     "11564"
    ],
    "give": [
-    "13281"
+    "11635"
    ],
-   "myGain": 16.2,
-   "playoffGain": 9.6,
-   "stretchGain": 6.6,
+   "myGain": 16.8,
+   "playoffGain": 9.9,
+   "stretchGain": 6.9,
    "team": "Kirkboi Charlies",
-   "theirGain": 13.2,
-   "thisWeek": -3.1,
+   "theirGain": 12.6,
+   "thisWeek": -3.0,
    "youthFlag": false
   },
   {
@@ -613,7 +613,7 @@
      "games": 5,
      "id": "12533",
      "name": "Jacory Croskey-Merritt",
-     "points": 7.6,
+     "points": 7.5,
      "pos": "RB",
      "ppg": 9.0,
      "rate": 0.0,
@@ -929,10 +929,10 @@
      "games": 9,
      "id": "8183",
      "name": "Brock Purdy",
-     "points": 18.0,
+     "points": 17.9,
      "pos": "QB",
      "ppg": 23.1,
-     "rate": 18.0,
+     "rate": 17.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -961,10 +961,10 @@
      "games": 9,
      "id": "4217",
      "name": "George Kittle",
-     "points": 12.8,
+     "points": 12.7,
      "pos": "TE",
      "ppg": 14.2,
-     "rate": 12.8,
+     "rate": 12.7,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -977,10 +977,10 @@
      "games": 9,
      "id": "11620",
      "name": "Rome Odunze",
-     "points": 11.5,
+     "points": 11.4,
      "pos": "WR",
      "ppg": 9.9,
-     "rate": 11.5,
+     "rate": 11.4,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "CHI",
@@ -1201,10 +1201,10 @@
      "games": 9,
      "id": "7594",
      "name": "Chuba Hubbard",
-     "points": 18.0,
+     "points": 17.9,
      "pos": "RB",
      "ppg": 20.1,
-     "rate": 18.0,
+     "rate": 17.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CAR",
@@ -1438,10 +1438,10 @@
      "games": 6,
      "id": "11560",
      "name": "Caleb Williams",
-     "points": 20.1,
+     "points": 20.0,
      "pos": "QB",
      "ppg": 19.2,
-     "rate": 20.1,
+     "rate": 20.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CHI",
@@ -1462,6 +1462,22 @@
      "slot": "START",
      "team": "DAL",
      "yearsExp": 5
+    },
+    {
+     "age": 38,
+     "eligible": true,
+     "flags": [],
+     "games": 10,
+     "id": "1166",
+     "name": "Kirk Cousins",
+     "points": 16.3,
+     "pos": "QB",
+     "ppg": 19.7,
+     "rate": 16.3,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "MIN",
+     "yearsExp": 14
     },
     {
      "age": 23,
@@ -1528,6 +1544,22 @@
      "yearsExp": 4
     },
     {
+     "age": 35,
+     "eligible": true,
+     "flags": [],
+     "games": 8,
+     "id": "2020",
+     "name": "Cairo Santos",
+     "points": 8.8,
+     "pos": "K",
+     "ppg": 9.9,
+     "rate": 9.9,
+     "rateFrom": "season",
+     "slot": "START",
+     "team": "CHI",
+     "yearsExp": 12
+    },
+    {
      "age": 25,
      "eligible": false,
      "flags": [
@@ -1578,6 +1610,22 @@
      "slot": "BN",
      "team": "WAS",
      "yearsExp": 0
+    },
+    {
+     "age": null,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "CHI",
+     "name": "Chicago Bears",
+     "points": 8.4,
+     "pos": "DEF",
+     "ppg": 8.2,
+     "rate": 8.2,
+     "rateFrom": "season",
+     "slot": "START",
+     "team": "CHI",
+     "yearsExp": null
     },
     {
      "age": 27,
@@ -1759,10 +1807,10 @@
      "games": 2,
      "id": "13281",
      "name": "Jordyn Tyson",
-     "points": 11.4,
+     "points": 11.3,
      "pos": "WR",
      "ppg": 12.0,
-     "rate": 11.4,
+     "rate": 11.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "NO",
@@ -1782,7 +1830,7 @@
      "ppg": 10.3,
      "rate": 11.3,
      "rateFrom": "projection",
-     "slot": "BN",
+     "slot": "START",
      "team": "LAC",
      "yearsExp": 2
     },
@@ -1846,7 +1894,7 @@
      "ppg": 12.4,
      "rate": 8.3,
      "rateFrom": "projection",
-     "slot": "START",
+     "slot": "BN",
      "team": "LV",
      "yearsExp": 3
     },
@@ -1878,7 +1926,7 @@
      "ppg": 7.7,
      "rate": 7.7,
      "rateFrom": "season",
-     "slot": "BN",
+     "slot": "START",
      "team": "BUF",
      "yearsExp": null
     },
@@ -3013,10 +3061,10 @@
      "games": 9,
      "id": "6790",
      "name": "D'Andre Swift",
-     "points": 18.2,
+     "points": 18.1,
      "pos": "RB",
      "ppg": 17.1,
-     "rate": 18.2,
+     "rate": 18.1,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CHI",
@@ -3503,33 +3551,38 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:02:11Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:02:11Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:02:09Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:02:09Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:02:09Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   }
  },
  "stretchWeeks": [

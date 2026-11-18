@@ -10624,7 +10624,7 @@
     "rec_10_19": 3.0,
     "rec_20_29": 1.0,
     "rec_5_9": 1.0,
-    "rec_air_yd": 48.0,
+    "rec_air_yd": 50.0,
     "rec_drop": 1.0,
     "rec_fd": 2.0,
     "rec_lng": 23.0,
@@ -10632,7 +10632,7 @@
     "rec_td": 1.0,
     "rec_td_lng": 11.0,
     "rec_tgt": 7.0,
-    "rec_yar": 23.0,
+    "rec_yar": 21.0,
     "rec_yd": 71.0,
     "rec_ypr": 11.83,
     "rec_ypt": 10.14,
@@ -10642,7 +10642,7 @@
     "tm_st_snp": 33.0
    },
    "team": "DAL",
-   "updatedAt": 1794949735786,
+   "updatedAt": 1795010940266,
    "week": 10
   },
   {
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-18T13:20:50Z",
+ "fetchedAt": "2026-11-18T15:02:09Z",
  "source": "sleeper_stats"
 }

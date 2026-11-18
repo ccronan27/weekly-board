@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T13:20:52Z",
+ "generatedAt": "2026-11-18T15:02:11Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -999,30 +999,35 @@
   "D/ST scored with ESPN's default values from config. The sync file does not carry this league's D/ST scoring yet"
  ],
  "season": 2026,
+ "seasonPhase": "regular",
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:02:11Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
    "lastUpdated": "2026-11-18T13:18:41.319Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:02:11Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:02:09Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   }
  },
  "standings": null,
@@ -1328,30 +1333,30 @@
      "team": "CIN"
     },
     {
-     "ceiling": 17.6,
+     "ceiling": 11.3,
      "eligible": true,
-     "espn": 7.1,
+     "espn": 7.9,
      "flags": [],
-     "floor": 0.0,
+     "floor": 4.0,
      "game": {
       "home": false,
-      "implied": 12.5,
+      "implied": 23.0,
       "kickoff": "2026-11-22T18:00Z",
-      "opp": "KC",
-      "oppImplied": 29.0,
-      "spread": 16.5,
-      "total": 41.5
+      "opp": "DAL",
+      "oppImplied": 31.5,
+      "spread": 8.5,
+      "total": 54.5
      },
-     "games": 10,
-     "id": "8132",
+     "games": 7,
+     "id": "9508",
      "injuryNotes": null,
      "locked": false,
-     "name": "Tyler Allgeier",
+     "name": "Tyjae Spears",
      "points": 7.7,
      "pos": "RB",
-     "ppg": 9.2,
-     "rotowire": 8.2,
-     "team": "ARI"
+     "ppg": 4.4,
+     "rotowire": 7.5,
+     "team": "TEN"
     }
    ],
    "TE": [
