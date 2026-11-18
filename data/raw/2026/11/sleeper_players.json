@@ -342,7 +342,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Rashee Rice",
-   "newsUpdated": 1794786932735,
+   "newsUpdated": 1795015252278,
    "pos": "WR",
    "status": "Active",
    "team": "KC",
@@ -7806,7 +7806,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Bhayshul Tuten",
-   "newsUpdated": 1794797133801,
+   "newsUpdated": 1795015252281,
    "pos": "RB",
    "status": "Active",
    "team": "JAX",
@@ -9669,7 +9669,7 @@
    "newsUpdated": 1793768432722,
    "pos": "WR",
    "status": "Active",
-   "team": null,
+   "team": "PHI",
    "yearsExp": 1
   },
   "12908": {
@@ -28098,7 +28098,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Aaron Jones Sr.",
-   "newsUpdated": 1794879041430,
+   "newsUpdated": 1795014952251,
    "pos": "RB",
    "status": "Active",
    "team": "MIN",
@@ -50310,7 +50310,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Josh Downs",
-   "newsUpdated": 1794786332758,
+   "newsUpdated": 1795014952250,
    "pos": "WR",
    "status": "Active",
    "team": "KC",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-18T15:27:00Z",
+ "fetchedAt": "2026-11-18T15:37:06Z",
  "source": "sleeper_players"
 }
