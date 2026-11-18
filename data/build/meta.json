@@ -1,13 +1,16 @@
 {
  "espnRosters": {
-  "ageDays": 0.0,
+  "ageDays": 0.09,
+  "fromCache": false,
   "stale": false,
+  "staleAfterDays": 4,
+  "state": "fresh",
   "syncedAt": "2026-11-18T13:18:41.319Z",
   "week": 11,
   "weekMismatch": false
  },
  "gapFills": 25,
- "generatedAt": "2026-11-18T13:20:52Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "idmap": {
   "matched": 1040,
   "unmatchedEspnPlayers": 21
@@ -21,67 +24,76 @@
   },
   {
    "file": "hwh.json",
-   "gain": 12.1,
+   "gain": 0.0,
    "key": "hwh",
    "name": "HWH: The League"
   },
   {
    "file": "chicago-dynasty.json",
-   "gain": 10.7,
+   "gain": 0.0,
    "key": "chicago-dynasty",
    "name": "Chicago Dynasty"
   }
  ],
  "model": "Equal average of ESPN and Rotowire projections, each re-scored with the league's scoring. Floor and ceiling are one weekly SD below and above.",
  "season": 2026,
+ "skippedLeagues": [],
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
    "lastUpdated": "2026-11-18T13:18:41.319Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "nflverse_schedule": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:52Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_stats_w10": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   }
  },
  "week": 11

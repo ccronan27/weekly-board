@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T13:20:52Z",
+ "generatedAt": "2026-11-18T15:25:33Z",
  "league": {
   "key": "fantasizing",
   "name": "Fantasizing 2026",
@@ -135,11 +135,11 @@
      "floor": 10.5,
      "game": {
       "home": true,
-      "implied": 29.0,
+      "implied": 28.5,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "ARI",
-      "oppImplied": 12.5,
-      "spread": -16.5,
+      "oppImplied": 13.0,
+      "spread": -15.5,
       "total": 41.5
      },
      "games": 6,
@@ -150,7 +150,7 @@
      "points": 13.9,
      "pos": "WR",
      "ppg": 13.2,
-     "rotowire": 15.0,
+     "rotowire": 14.9,
      "team": "KC"
     },
     "recommended": {
@@ -161,11 +161,11 @@
      "floor": 10.5,
      "game": {
       "home": true,
-      "implied": 29.0,
+      "implied": 28.5,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "ARI",
-      "oppImplied": 12.5,
-      "spread": -16.5,
+      "oppImplied": 13.0,
+      "spread": -15.5,
       "total": 41.5
      },
      "games": 6,
@@ -176,7 +176,7 @@
      "points": 13.9,
      "pos": "WR",
      "ppg": 13.2,
-     "rotowire": 15.0,
+     "rotowire": 14.9,
      "team": "KC"
     },
     "slot": "WR"
@@ -628,11 +628,11 @@
    "floor": 10.5,
    "game": {
     "home": true,
-    "implied": 29.0,
+    "implied": 28.5,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -16.5,
+    "oppImplied": 13.0,
+    "spread": -15.5,
     "total": 41.5
    },
    "games": 6,
@@ -643,7 +643,7 @@
    "points": 13.9,
    "pos": "WR",
    "ppg": 13.2,
-   "rotowire": 15.0,
+   "rotowire": 14.9,
    "sd": 3.33,
    "slot": "WR",
    "sources": [
@@ -999,30 +999,35 @@
   "D/ST scored with ESPN's default values from config. The sync file does not carry this league's D/ST scoring yet"
  ],
  "season": 2026,
+ "seasonPhase": "regular",
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:25:32Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
    "lastUpdated": "2026-11-18T13:18:41.319Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:51Z",
+   "lastUpdated": "2026-11-18T15:25:33Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:20:50Z",
+   "lastUpdated": "2026-11-18T15:25:31Z",
    "ok": true,
-   "stale": false
+   "stale": false,
+   "state": "fresh"
   }
  },
  "standings": null,
@@ -1328,18 +1333,18 @@
      "team": "CIN"
     },
     {
-     "ceiling": 17.6,
+     "ceiling": 17.7,
      "eligible": true,
      "espn": 7.1,
      "flags": [],
      "floor": 0.0,
      "game": {
       "home": false,
-      "implied": 12.5,
+      "implied": 13.0,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "KC",
-      "oppImplied": 29.0,
-      "spread": 16.5,
+      "oppImplied": 28.5,
+      "spread": 15.5,
       "total": 41.5
      },
      "games": 10,
@@ -1350,7 +1355,7 @@
      "points": 7.7,
      "pos": "RB",
      "ppg": 9.2,
-     "rotowire": 8.2,
+     "rotowire": 8.3,
      "team": "ARI"
     }
    ],

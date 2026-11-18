@@ -21,8 +21,8 @@ data/espn/rosters.json (Claude skill) ---------------+--> pipeline.build --> dat
 
 - Projection is the equal average of ESPN and Rotowire (via Sleeper), each re-scored with the league's exact scoring. There is no weighting, calibration or Vegas multiplier because none of them beat the equal average out of sample. See `docs/BACKTEST.md`.
 - Floor and ceiling are one weekly standard deviation below and above the projection, from the player's own games this season.
-- If one source fails, the run still publishes and marks that source stale. An empty board is never published.
-- ESPN league data is never fetched by Actions. It arrives only as `data/espn/rosters.json`, written by the Claude `espn-roster-sync` skill. Say "sync ESPN" to Claude to refresh it. The page warns when the sync is more than 4 days old.
+- If one source fails, the run still publishes and marks that source stale. An empty board is never published. Every source is `fresh`, `stale` or `missing`. See `docs/STATES.md` for this and the board's other state machines.
+- ESPN league data is never fetched by Actions. It arrives only as `data/espn/rosters.json`, written by the Claude `espn-roster-sync` skill. Say "sync ESPN" to Claude to refresh it. The page warns when the sync is more than 4 days old. If a sync saves a broken file, the board keeps publishing from the last good copy (cached under `data/raw/`) and says so on the page. With no good copy at all, the ESPN league is left off and the Sleeper leagues still publish.
 - No credentials, tokens or cookies exist anywhere in this repo. The repo is public, so keep it that way.
 
 ## Run locally
@@ -77,5 +77,6 @@ data/espn/           roster file written by the Claude skill
 data/raw/            cached raw pulls by season and week
 data/build/          what the site reads
 site/                plain HTML, CSS and JS
-tests/               contract, scoring, build and site tests
+tests/               contract, scoring, build, site and state machine tests
+docs/                SPEC (what to build), BACKTEST (why the model), STATES (every state machine)
 ```

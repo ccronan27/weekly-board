@@ -78,9 +78,9 @@
    "gameday": "2026-11-22",
    "gametime": "13:00",
    "home": "KC",
-   "homeSpread": 16.5,
-   "impliedAway": 12.5,
-   "impliedHome": 29.0,
+   "homeSpread": 15.5,
+   "impliedAway": 13.0,
+   "impliedHome": 28.5,
    "total": 41.5,
    "week": 11
   },
@@ -157,6 +157,6 @@
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-18T13:20:51Z",
+ "fetchedAt": "2026-11-18T15:25:33Z",
  "source": "nflverse_lines"
 }

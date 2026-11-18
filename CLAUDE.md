@@ -1,6 +1,6 @@
 # weekly-board
 
-Conor's cross-league fantasy football start/sit dashboard. Read `docs/SPEC.md` (what to build) and `docs/BACKTEST.md` (why the model is what it is) before changing anything.
+Conor's cross-league fantasy football start/sit dashboard. Read `docs/SPEC.md` (what to build) and `docs/BACKTEST.md` (why the model is what it is) before changing anything. Read `docs/STATES.md` before touching source status, the ESPN roster file, season phase, routing or the Trade view. Each state machine there has one function that decides its state, so change that function, not its readers.
 
 ## Hard rules
 - No credentials, tokens or cookies anywhere: repo, workflows, logs or site. The repo is public
