@@ -4134,7 +4134,7 @@
    "injuryNotes": null,
    "injuryStatus": "Out",
    "name": "Marvin Harrison Jr.",
-   "newsUpdated": 1794940547150,
+   "newsUpdated": 1794953146901,
    "pos": "WR",
    "status": "Active",
    "team": "HOU",
@@ -31962,7 +31962,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Daniel Carlson",
-   "newsUpdated": 1794952246612,
+   "newsUpdated": 1794953146553,
    "pos": "K",
    "status": "Active",
    "team": "MIA",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-17T22:07:31Z",
+ "fetchedAt": "2026-11-17T22:20:41Z",
  "source": "sleeper_players"
 }

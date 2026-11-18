@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T22:07:32Z",
+ "generatedAt": "2026-11-17T22:20:43Z",
  "league": {
   "key": "hwh",
   "name": "HWH: The League",
@@ -24,6 +24,7 @@
     "in": {
      "ceiling": 17.2,
      "eligible": true,
+     "espn": 8.2,
      "flags": [],
      "floor": 0.0,
      "game": {
@@ -36,14 +37,18 @@
       "total": 40.5
      },
      "id": "10213",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Tre Tucker",
      "points": 8.3,
      "pos": "WR",
+     "rotowire": 8.5,
      "team": "LV"
     },
     "out": {
      "ceiling": 17.6,
      "eligible": false,
+     "espn": 10.7,
      "flags": [
       "OUT"
      ],
@@ -58,9 +63,12 @@
       "total": 41.5
      },
      "id": "11635",
+     "injuryNotes": "Spasms",
+     "locked": false,
      "name": "Ladd McConkey",
      "points": 11.3,
      "pos": "WR",
+     "rotowire": 11.9,
      "team": "LAC"
     },
     "slot": "FLEX"
@@ -73,6 +81,7 @@
     "current": {
      "ceiling": 23.8,
      "eligible": true,
+     "espn": 15.4,
      "flags": [],
      "floor": 8.4,
      "game": {
@@ -85,14 +94,18 @@
       "total": 45.5
      },
      "id": "3163",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Jared Goff",
      "points": 16.1,
      "pos": "QB",
+     "rotowire": 16.8,
      "team": "DET"
     },
     "recommended": {
      "ceiling": 23.8,
      "eligible": true,
+     "espn": 15.4,
      "flags": [],
      "floor": 8.4,
      "game": {
@@ -105,9 +118,12 @@
       "total": 45.5
      },
      "id": "3163",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Jared Goff",
      "points": 16.1,
      "pos": "QB",
+     "rotowire": 16.8,
      "team": "DET"
     },
     "slot": "QB"
@@ -117,6 +133,7 @@
     "current": {
      "ceiling": 23.2,
      "eligible": true,
+     "espn": 16.4,
      "flags": [],
      "floor": 7.6,
      "game": {
@@ -129,14 +146,18 @@
       "total": 44.5
      },
      "id": "6813",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Jonathan Taylor",
      "points": 15.4,
      "pos": "RB",
+     "rotowire": 14.4,
      "team": "IND"
     },
     "recommended": {
      "ceiling": 23.2,
      "eligible": true,
+     "espn": 16.4,
      "flags": [],
      "floor": 7.6,
      "game": {
@@ -149,9 +170,12 @@
       "total": 44.5
      },
      "id": "6813",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Jonathan Taylor",
      "points": 15.4,
      "pos": "RB",
+     "rotowire": 14.4,
      "team": "IND"
     },
     "slot": "RB"
@@ -161,6 +185,7 @@
     "current": {
      "ceiling": 16.7,
      "eligible": true,
+     "espn": 12.9,
      "flags": [],
      "floor": 8.3,
      "game": {
@@ -173,14 +198,18 @@
       "total": 41.5
      },
      "id": "8155",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Breece Hall",
      "points": 12.5,
      "pos": "RB",
+     "rotowire": 12.2,
      "team": "NYJ"
     },
     "recommended": {
      "ceiling": 16.7,
      "eligible": true,
+     "espn": 12.9,
      "flags": [],
      "floor": 8.3,
      "game": {
@@ -193,9 +222,12 @@
       "total": 41.5
      },
      "id": "8155",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Breece Hall",
      "points": 12.5,
      "pos": "RB",
+     "rotowire": 12.2,
      "team": "NYJ"
     },
     "slot": "RB"
@@ -205,41 +237,49 @@
     "current": {
      "ceiling": null,
      "eligible": true,
+     "espn": 11.7,
      "flags": [],
      "floor": null,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 19.0,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "CHI",
-      "oppImplied": 30.0,
+      "oppImplied": 30.5,
       "spread": 11.5,
-      "total": 48.5
+      "total": 49.5
      },
      "id": "13281",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Jordyn Tyson",
      "points": 11.4,
      "pos": "WR",
+     "rotowire": 11.0,
      "team": "NO"
     },
     "recommended": {
      "ceiling": null,
      "eligible": true,
+     "espn": 11.7,
      "flags": [],
      "floor": null,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 19.0,
       "kickoff": "2026-11-22T18:00Z",
       "opp": "CHI",
-      "oppImplied": 30.0,
+      "oppImplied": 30.5,
       "spread": 11.5,
-      "total": 48.5
+      "total": 49.5
      },
      "id": "13281",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Jordyn Tyson",
      "points": 11.4,
      "pos": "WR",
+     "rotowire": 11.0,
      "team": "NO"
     },
     "slot": "WR"
@@ -249,6 +289,7 @@
     "current": {
      "ceiling": 27.8,
      "eligible": true,
+     "espn": 15.7,
      "flags": [],
      "floor": 3.6,
      "game": {
@@ -261,14 +302,18 @@
       "total": 54.5
      },
      "id": "8137",
+     "injuryNotes": null,
+     "locked": false,
      "name": "George Pickens",
      "points": 15.7,
      "pos": "WR",
+     "rotowire": 15.7,
      "team": "DAL"
     },
     "recommended": {
      "ceiling": 27.8,
      "eligible": true,
+     "espn": 15.7,
      "flags": [],
      "floor": 3.6,
      "game": {
@@ -281,9 +326,12 @@
       "total": 54.5
      },
      "id": "8137",
+     "injuryNotes": null,
+     "locked": false,
      "name": "George Pickens",
      "points": 15.7,
      "pos": "WR",
+     "rotowire": 15.7,
      "team": "DAL"
     },
     "slot": "WR"
@@ -293,6 +341,7 @@
     "current": {
      "ceiling": 25.1,
      "eligible": true,
+     "espn": 13.1,
      "flags": [],
      "floor": 3.0,
      "game": {
@@ -305,14 +354,18 @@
       "total": 46.5
      },
      "id": "8131",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Isaiah Likely",
      "points": 14.1,
      "pos": "TE",
+     "rotowire": 15.0,
      "team": "NYG"
     },
     "recommended": {
      "ceiling": 25.1,
      "eligible": true,
+     "espn": 13.1,
      "flags": [],
      "floor": 3.0,
      "game": {
@@ -325,9 +378,12 @@
       "total": 46.5
      },
      "id": "8131",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Isaiah Likely",
      "points": 14.1,
      "pos": "TE",
+     "rotowire": 15.0,
      "team": "NYG"
     },
     "slot": "TE"
@@ -337,6 +393,7 @@
     "current": {
      "ceiling": 17.6,
      "eligible": false,
+     "espn": 10.7,
      "flags": [
       "OUT"
      ],
@@ -351,14 +408,18 @@
       "total": 41.5
      },
      "id": "11635",
+     "injuryNotes": "Spasms",
+     "locked": false,
      "name": "Ladd McConkey",
      "points": 11.3,
      "pos": "WR",
+     "rotowire": 11.9,
      "team": "LAC"
     },
     "recommended": {
      "ceiling": 17.2,
      "eligible": true,
+     "espn": 8.2,
      "flags": [],
      "floor": 0.0,
      "game": {
@@ -371,9 +432,12 @@
       "total": 40.5
      },
      "id": "10213",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Tre Tucker",
      "points": 8.3,
      "pos": "WR",
+     "rotowire": 8.5,
      "team": "LV"
     },
     "slot": "FLEX"
@@ -383,6 +447,7 @@
     "current": {
      "ceiling": 15.2,
      "eligible": true,
+     "espn": 9.7,
      "flags": [],
      "floor": 5.0,
      "game": {
@@ -395,14 +460,18 @@
       "total": 54.5
      },
      "id": "11783",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Ryan Flournoy",
      "points": 10.1,
      "pos": "WR",
+     "rotowire": 10.6,
      "team": "DAL"
     },
     "recommended": {
      "ceiling": 15.2,
      "eligible": true,
+     "espn": 9.7,
      "flags": [],
      "floor": 5.0,
      "game": {
@@ -415,9 +484,12 @@
       "total": 54.5
      },
      "id": "11783",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Ryan Flournoy",
      "points": 10.1,
      "pos": "WR",
+     "rotowire": 10.6,
      "team": "DAL"
     },
     "slot": "FLEX"
@@ -427,6 +499,7 @@
     "current": {
      "ceiling": 16.0,
      "eligible": true,
+     "espn": 9.3,
      "flags": [],
      "floor": 2.7,
      "game": {
@@ -439,14 +512,18 @@
       "total": 44.5
      },
      "id": "12185",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Spencer Shrader",
      "points": 9.4,
      "pos": "K",
+     "rotowire": 9.4,
      "team": "IND"
     },
     "recommended": {
      "ceiling": 16.0,
      "eligible": true,
+     "espn": 9.3,
      "flags": [],
      "floor": 2.7,
      "game": {
@@ -459,9 +536,12 @@
       "total": 44.5
      },
      "id": "12185",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Spencer Shrader",
      "points": 9.4,
      "pos": "K",
+     "rotowire": 9.4,
      "team": "IND"
     },
     "slot": "K"
@@ -471,6 +551,7 @@
     "current": {
      "ceiling": 8.9,
      "eligible": true,
+     "espn": 5.5,
      "flags": [],
      "floor": 0.5,
      "game": {
@@ -483,14 +564,18 @@
       "total": 44.5
      },
      "id": "IND",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Indianapolis Colts",
      "points": 4.7,
      "pos": "DEF",
+     "rotowire": 3.8,
      "team": "IND"
     },
     "recommended": {
      "ceiling": 8.9,
      "eligible": true,
+     "espn": 5.5,
      "flags": [],
      "floor": 0.5,
      "game": {
@@ -503,14 +588,18 @@
       "total": 44.5
      },
      "id": "IND",
+     "injuryNotes": null,
+     "locked": false,
      "name": "Indianapolis Colts",
      "points": 4.7,
      "pos": "DEF",
+     "rotowire": 3.8,
      "team": "IND"
     },
     "slot": "DEF"
    }
-  ]
+  ],
+  "watch": []
  },
  "roster": [
   {
@@ -530,6 +619,8 @@
    },
    "games": 9,
    "id": "3163",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Jared Goff",
    "points": 16.1,
    "pos": "QB",
@@ -560,6 +651,8 @@
    },
    "games": 9,
    "id": "8137",
+   "injuryNotes": null,
+   "locked": false,
    "name": "George Pickens",
    "points": 15.7,
    "pos": "WR",
@@ -590,6 +683,8 @@
    },
    "games": 10,
    "id": "6813",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Jonathan Taylor",
    "points": 15.4,
    "pos": "RB",
@@ -620,6 +715,8 @@
    },
    "games": 9,
    "id": "8131",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Isaiah Likely",
    "points": 14.1,
    "pos": "TE",
@@ -650,6 +747,8 @@
    },
    "games": 5,
    "id": "8155",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Breece Hall",
    "points": 12.5,
    "pos": "RB",
@@ -671,15 +770,17 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 19.0,
     "kickoff": "2026-11-22T18:00Z",
     "opp": "CHI",
-    "oppImplied": 30.0,
+    "oppImplied": 30.5,
     "spread": 11.5,
-    "total": 48.5
+    "total": 49.5
    },
    "games": 2,
    "id": "13281",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Jordyn Tyson",
    "points": 11.4,
    "pos": "WR",
@@ -712,6 +813,8 @@
    },
    "games": 5,
    "id": "11635",
+   "injuryNotes": "Spasms",
+   "locked": false,
    "name": "Ladd McConkey",
    "points": 11.3,
    "pos": "WR",
@@ -742,6 +845,8 @@
    },
    "games": 10,
    "id": "11783",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Ryan Flournoy",
    "points": 10.1,
    "pos": "WR",
@@ -772,6 +877,8 @@
    },
    "games": 10,
    "id": "12185",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Spencer Shrader",
    "points": 9.4,
    "pos": "K",
@@ -802,6 +909,8 @@
    },
    "games": 9,
    "id": "11610",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Malik Washington",
    "points": 8.3,
    "pos": "WR",
@@ -832,6 +941,8 @@
    },
    "games": 9,
    "id": "10213",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Tre Tucker",
    "points": 8.3,
    "pos": "WR",
@@ -862,6 +973,8 @@
    },
    "games": 10,
    "id": "11576",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Braelon Allen",
    "points": 8.1,
    "pos": "RB",
@@ -894,6 +1007,8 @@
    },
    "games": 3,
    "id": "6819",
+   "injuryNotes": "Plantar Fasciitis",
+   "locked": false,
    "name": "Michael Pittman Jr.",
    "points": 5.0,
    "pos": "WR",
@@ -924,6 +1039,8 @@
    },
    "games": 10,
    "id": "IND",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Indianapolis Colts",
    "points": 4.7,
    "pos": "DEF",
@@ -948,6 +1065,8 @@
    "game": null,
    "games": 10,
    "id": "8167",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Christian Watson",
    "points": null,
    "pos": "WR",
@@ -969,6 +1088,8 @@
    "game": null,
    "games": 10,
    "id": "12506",
+   "injuryNotes": null,
+   "locked": false,
    "name": "Harold Fannin Jr.",
    "points": null,
    "pos": "TE",
@@ -985,31 +1106,31 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:32Z",
+   "lastUpdated": "2026-11-17T22:20:43Z",
    "ok": true,
    "stale": false
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:32Z",
+   "lastUpdated": "2026-11-17T22:20:43Z",
    "ok": true,
    "stale": false
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:30Z",
+   "lastUpdated": "2026-11-17T22:20:41Z",
    "ok": true,
    "stale": false
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:31Z",
+   "lastUpdated": "2026-11-17T22:20:41Z",
    "ok": true,
    "stale": false
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-17T22:07:31Z",
+   "lastUpdated": "2026-11-17T22:20:41Z",
    "ok": true,
    "stale": false
   }

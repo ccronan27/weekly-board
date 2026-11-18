@@ -11675,7 +11675,6 @@
     "rec_30_39": 1.0,
     "rec_5_9": 2.0,
     "rec_air_yd": 66.0,
-    "rec_drop": 1.0,
     "rec_fd": 4.0,
     "rec_lng": 38.0,
     "rec_rz_tgt": 1.0,
@@ -11690,7 +11689,7 @@
     "tm_st_snp": 33.0
    },
    "team": "ATL",
-   "updatedAt": 1794870522882,
+   "updatedAt": 1794953329936,
    "week": 10
   },
   {
@@ -13164,6 +13163,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-17T22:07:31Z",
+ "fetchedAt": "2026-11-17T22:20:41Z",
  "source": "sleeper_stats"
 }

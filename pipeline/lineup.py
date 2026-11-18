@@ -19,16 +19,22 @@ def _width(slot: str) -> int:
     return len(FLEX_ELIGIBLE.get(slot, ())) or 1
 
 
-def recommend(slots: list[str], players: list[dict]) -> list[str | None]:
+def recommend(slots: list[str], players: list[dict], fixed: dict[int, str] | None = None) -> list[str | None]:
     """Best set of players for the slots. Returns player ids, one per slot index (None if no one fits).
 
     players: dicts with id, pos, points (float), eligible (bool). Ineligible players are never picked.
+    fixed: slot index -> player id that must stay there (locked starters). Those players are kept
+    whatever their eligibility, and the other slots are filled from the rest of the pool.
     """
-    pool = [p for p in players if p["eligible"]]
+    fixed = fixed or {}
+    locked = set(fixed.values())
+    pool = [p for p in players if p["eligible"] and p["id"] not in locked]
     pool.sort(key=lambda p: (-(p["points"] or 0.0), str(p["id"])))
-    taken: set = set()
-    out: list = [None] * len(slots)
+    taken: set = set(locked)
+    out: list = [fixed.get(i) for i in range(len(slots))]
     for i in sorted(range(len(slots)), key=lambda i: (_width(slots[i]), i)):
+        if i in fixed:
+            continue
         for p in pool:
             if p["id"] not in taken and eligible_for(slots[i], p["pos"]):
                 out[i] = p["id"]
@@ -37,14 +43,19 @@ def recommend(slots: list[str], players: list[dict]) -> list[str | None]:
     return out
 
 
-def arrange(slots: list[str], chosen: list[str | None], current: list[str | None], pos_of: dict) -> list[str | None]:
+def arrange(slots: list[str], chosen: list[str | None], current: list[str | None], pos_of: dict,
+            fixed: dict[int, str] | None = None) -> list[str | None]:
     """Place the chosen players into slots so as many as possible stay in their current slot.
 
     Bitmask DP over slots. Primary goal is to place every chosen player, then to keep players
     where they already are. Same total points as `chosen`, fewer pointless moves.
+    fixed: slot index -> player id that must stay in that slot (see recommend).
     """
+    fixed = fixed or {}
     ids = [c for c in chosen if c is not None]
     n = len(ids)
+    assert all(p in ids for p in fixed.values()), "fixed players must be in chosen"
+    start = sum(1 << j for j, pid in enumerate(ids) if pid in fixed.values())
     memo: dict = {}
 
     def solve(i: int, mask: int):
@@ -54,9 +65,12 @@ def arrange(slots: list[str], chosen: list[str | None], current: list[str | None
         key = (i, mask)
         if key in memo:
             return memo[key]
-        options = [(None, mask)]
-        options += [(ids[j], mask | (1 << j)) for j in range(n)
-                    if not mask & (1 << j) and eligible_for(slots[i], pos_of[ids[j]])]
+        if i in fixed:
+            options = [(fixed[i], mask)]
+        else:
+            options = [(None, mask)]
+            options += [(ids[j], mask | (1 << j)) for j in range(n)
+                        if not mask & (1 << j) and eligible_for(slots[i], pos_of[ids[j]])]
         best = None
         for pid, nmask in options:
             placed, kept, picks = solve(i + 1, nmask)
@@ -66,7 +80,7 @@ def arrange(slots: list[str], chosen: list[str | None], current: list[str | None
         memo[key] = best
         return best
 
-    placed, _, picks = solve(0, 0)
+    placed, _, picks = solve(0, start)
     assert placed == n, "chosen players do not all fit the slots"
     return list(picks)
 
