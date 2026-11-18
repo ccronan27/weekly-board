@@ -121,6 +121,17 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .chip.pos-k{background:var(--pos-k-bg);color:var(--pos-k-fg)}
 .chip.pos-def{background:var(--pos-def-bg);color:var(--pos-def-fg)}
 
+/* Hover and selected states. Hover only where a pointer can hover, so a tap on a phone never leaves a stuck highlight.
+   Only things you can click get a hover. Colors come from the existing tokens, no animation. */
+@media (hover:hover){
+  .tab:not([aria-selected=true]):hover,.view:not([aria-pressed=true]):hover{background:var(--card)}
+  .pick:hover{background:var(--bg)}
+}
+.pick{margin:0 -8px;padding:8px;border-radius:6px}
+.pick:has(input:checked){background:var(--goodbg)}
+.pick:has(input:checked) .chip{box-shadow:0 0 0 2px var(--card)}   /* keeps the green RB chip apart from the green row */
+#builder{scroll-margin-top:16px}
+
 /* Layout: phones get one column. Wide screens get a sticky sidebar and a wider main column */
 .cols{display:flex;flex-direction:column}
 .colA,.colB{display:contents}
