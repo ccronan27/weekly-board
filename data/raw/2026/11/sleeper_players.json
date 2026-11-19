@@ -306,7 +306,7 @@
    "injuryNotes": "Surgery",
    "injuryStatus": "IR",
    "name": "Andrei Iosivas",
-   "newsUpdated": 1794688512391,
+   "newsUpdated": 1795124404262,
    "pos": "WR",
    "status": "Inactive",
    "team": "CIN",
@@ -904,7 +904,7 @@
    "active": true,
    "age": 28,
    "injuryNotes": null,
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Luke Schoonmaker",
    "newsUpdated": 1794969948391,
    "pos": "TE",
@@ -4218,7 +4218,7 @@
    "injuryNotes": "Spasms",
    "injuryStatus": "Questionable",
    "name": "Ladd McConkey",
-   "newsUpdated": 1795052455853,
+   "newsUpdated": 1795124702997,
    "pos": "WR",
    "status": "Active",
    "team": "LAC",
@@ -8022,7 +8022,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "Omarion Hampton",
-   "newsUpdated": 1795061156603,
+   "newsUpdated": 1795124702771,
    "pos": "RB",
    "status": "Active",
    "team": "LAC",
@@ -39762,7 +39762,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "injuryStatus": "IR",
    "name": "Michael Pittman Jr.",
-   "newsUpdated": 1795122602657,
+   "newsUpdated": 1795124702768,
    "pos": "WR",
    "status": "Inactive",
    "team": "PIT",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-19T21:43:25Z",
+ "fetchedAt": "2026-11-19T22:01:16Z",
  "source": "sleeper_players"
 }

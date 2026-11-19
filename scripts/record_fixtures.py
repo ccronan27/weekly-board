@@ -1,8 +1,9 @@
 """Record trimmed, scrubbed fixtures of real source responses into tests/fixtures/.
 
 Run this when a contract test fails because a source changed shape: re-record, look at the
-diff, then update the adapter. Only public endpoints are called. ESPN league endpoints are
-never used. Owner identities are scrubbed (team_name is kept, handles and ids are replaced).
+diff, then update the adapter. Only public endpoints are called. The ESPN league is public, so its
+league endpoint is recorded too. Owner identities are scrubbed everywhere (team names are kept,
+handles, member lists and owner ids are dropped or replaced).
 
     python scripts/record_fixtures.py
 """
@@ -16,7 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from pipeline.adapters import espn_defaults, nflverse_lines, sleeper  # noqa: E402
+from pipeline.adapters import espn_defaults, espn_league, nflverse_lines, sleeper  # noqa: E402
 from pipeline.ingest import load_config  # noqa: E402
 
 OUT = Path(__file__).resolve().parent.parent / "tests" / "fixtures"
@@ -105,6 +106,59 @@ def main() -> None:
     w.writeheader(); w.writerows(rows)
     (OUT / "nflverse_games.csv").write_text(buf.getvalue(), encoding="utf-8")
     print("wrote nflverse_games.csv", f"(season {season}, week {week})")
+
+    record_espn_league(cfg, season, week)
+
+
+PLAYER_KEEP = ("id", "fullName", "defaultPositionId", "proTeamId", "injuryStatus")
+
+
+def record_espn_league(cfg, season: int, week: int) -> None:
+    """Two teams of the public ESPN league, and one matchup of last week's lineups. No owners."""
+    lid = int(next(l["id"] for l in cfg["leagues"] if l["platform"] == "espn"))
+    d = espn_league.fetch_league(season, lid)
+    d.pop("members", None)
+    d.pop("draftDetail", None)
+    d["teams"] = d["teams"][:2]
+    ids = {t["id"] for t in d["teams"]}
+    for t in d["teams"]:
+        for k in list(t):
+            if k not in ("id", "name", "abbrev", "record", "roster"):
+                t.pop(k)
+        t["record"] = {"overall": t["record"]["overall"]}
+        t["roster"]["entries"] = t["roster"]["entries"][:6]
+        for e in t["roster"]["entries"]:
+            e["playerPoolEntry"] = {"player": {k: e["playerPoolEntry"]["player"].get(k) for k in PLAYER_KEEP}}
+    d["schedule"] = [{"matchupPeriodId": g["matchupPeriodId"], "winner": g["winner"],
+                      "home": {"teamId": g["home"]["teamId"], "totalPoints": g["home"].get("totalPoints")},
+                      **({"away": {"teamId": g["away"]["teamId"], "totalPoints": g["away"].get("totalPoints")}} if g.get("away") else {})}
+                     for g in d["schedule"] if g["home"]["teamId"] in ids][:6]
+    s = d["settings"]
+    d["settings"] = {k: s[k] for k in ("name", "rosterSettings", "scoringSettings", "scheduleSettings")}
+    d["settings"]["rosterSettings"] = {"lineupSlotCounts": s["rosterSettings"]["lineupSlotCounts"]}
+    d["settings"]["scoringSettings"] = {"scoringItems": s["scoringSettings"]["scoringItems"]}
+    d["settings"]["scheduleSettings"] = {k: s["scheduleSettings"][k] for k in ("matchupPeriodCount", "playoffTeamCount")}
+    d["status"] = {k: d["status"].get(k) for k in ("currentMatchupPeriod", "latestScoringPeriod")}
+    dump("espn_league.json", d)
+
+    w = week - 1
+    b = espn_league.fetch_week(season, lid, w)
+    g = next(x for x in b["schedule"] if x.get("matchupPeriodId") == w and x.get("away"))
+    for side in ("home", "away"):
+        h = g[side]
+        g[side] = {"teamId": h["teamId"], "totalPoints": h.get("totalPoints"),
+                   "rosterForCurrentScoringPeriod": {"entries": [
+                       {"playerId": e.get("playerId"), "lineupSlotId": e["lineupSlotId"],
+                        "playerPoolEntry": {"appliedStatTotal": e["playerPoolEntry"]["appliedStatTotal"],
+                                            "player": {**{k: e["playerPoolEntry"]["player"].get(k) for k in PLAYER_KEEP},
+                                                       "stats": [st for st in e["playerPoolEntry"]["player"].get("stats", [])
+                                                                 if st.get("scoringPeriodId") == w and st.get("statSourceId") in (0, 1)]}}}
+                       for e in h["rosterForCurrentScoringPeriod"]["entries"]]}}
+    for st_list in (e["playerPoolEntry"]["player"]["stats"] for side in ("home", "away")
+                    for e in g[side]["rosterForCurrentScoringPeriod"]["entries"]):
+        for st in st_list:
+            st.pop("stats", None)   # raw stat maps are heavy and unused here
+    dump("espn_league_week.json", {"scoringPeriodId": w, "schedule": [g]})
 
 
 if __name__ == "__main__":

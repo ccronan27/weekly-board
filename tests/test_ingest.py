@@ -30,12 +30,12 @@ def test_failed_source_with_no_cache_is_missing(tmp_path):
 
 
 def test_run_survives_every_network_source_failing(tmp_path, monkeypatch):
-    from pipeline.adapters import espn_defaults, nflverse_lines, sleeper
+    from pipeline.adapters import espn_defaults, espn_league, nflverse_lines, sleeper
 
     def fail(*a, **k):
         raise ConnectionError("offline")
     for mod, names in ((sleeper, ["fetch_league", "fetch_rosters", "fetch_users", "fetch_matchups", "fetch_players", "fetch_projections", "fetch_stats"]),
-                       (espn_defaults, ["fetch"]), (nflverse_lines, ["fetch"])):
+                       (espn_defaults, ["fetch"]), (espn_league, ["fetch_league", "fetch_week"]), (nflverse_lines, ["fetch"])):
         for n in names:
             monkeypatch.setattr(mod, n, fail)
     out = ingest.run(2026, 11, root=tmp_path)
@@ -64,18 +64,25 @@ def _text_files():
                 yield p
 
 
-def test_no_espn_league_endpoints_or_credentials():
-    banned = ["swid", "espn_s2", "espn-s2", "cookie", "/leagues/125685129", "apis/v3/games/ffl/seasons/{season}/segments/0/leagues/"]
+def test_no_espn_credentials():
+    banned = ["swid", "espn_s2", "espn-s2", "cookie"]
     for p in _text_files():
         t = p.read_text(encoding="utf-8").lower()
         for b in banned:
             assert b not in t, f"{p.relative_to(REPO)} contains banned term {b!r}"
 
 
-def test_espn_calls_only_leaguedefaults():
-    # Calls: only leaguedefaults. Links: the public team page a viewer opens (league.appUrl), never fetched
+def test_espn_league_calls_only_from_the_public_adapter():
+    """The league is public since 11/19/26. Its endpoint lives in one adapter, which sends no cookies or
+    auth headers. Everything else may only use leaguedefaults, or link to the public team page."""
     import re
+    adapter = REPO / "pipeline" / "adapters" / "espn_league.py"
     for p in _text_files():
-        for m in re.finditer(r"fantasy\.espn\.com[^\s\"']*", p.read_text(encoding="utf-8")):
-            assert "leaguedefaults" in m.group(0) or m.group(0).startswith("fantasy.espn.com/football/team?"), \
+        t = p.read_text(encoding="utf-8")
+        if "segments/0/leagues/" in t:
+            assert p == adapter, f"{p.relative_to(REPO)} builds an ESPN league URL outside the public adapter"
+        for m in re.finditer(r"fantasy\.espn\.com[^\s\"']*", t):
+            assert p == adapter or "leaguedefaults" in m.group(0) or m.group(0).startswith("fantasy.espn.com/football/team?"), \
                 f"{p.relative_to(REPO)}: {m.group(0)}"
+    src = adapter.read_text(encoding="utf-8").lower()
+    assert "authorization" not in src and "headers=" not in src

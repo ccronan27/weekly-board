@@ -81,6 +81,10 @@ def league_recap(*, season: int, week: int, lg: scoring.League, roster: list[dic
     rec_ids = read_recommended(raw_root, season, w, lg.key)
     recommended = round(sum(pts.get(pid, 0.0) for pid in rec_ids if pid), 1) \
         if pts is not None and rec_ids is not None else None
+    # The board re-scores from Sleeper stats, which miss a few ESPN stat ids. A "best possible" below what the
+    # platform actually scored is that gap, not a real number, so it is dropped rather than shown.
+    if optimal is not None and actual is not None and optimal < actual:
+        optimal = None
     if actual is None and optimal is None and recommended is None:
         return None
     left = round(optimal - actual, 1) if optimal is not None and actual is not None else None

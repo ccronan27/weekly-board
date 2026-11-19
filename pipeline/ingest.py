@@ -16,7 +16,7 @@ from pathlib import Path
 
 import yaml
 
-from pipeline.adapters import espn_defaults, espn_rosters, nflverse_lines, sleeper
+from pipeline.adapters import espn_defaults, espn_league, espn_rosters, nflverse_lines, sleeper
 from pipeline.common import CONFIG, MISSING, RAW, ContractError, now_iso, read_json, source_status, source_state, write_json
 
 
@@ -93,7 +93,9 @@ def resolve_week(season: int | None, week: int | None) -> tuple[int, int]:
         return season or r["season"], week or r["week"]
 
 
-def run(season: int | None = None, week: int | None = None, root: Path = RAW) -> dict:
+def run(season: int | None = None, week: int | None = None, root: Path = RAW, rosters_path: Path | None = None) -> dict:
+    """rosters_path: where a good ESPN league pull is written. Defaults to data/espn/rosters.json for real
+    runs (root is data/raw). Tests that pass another root get no write unless they ask for one."""
     cfg = load_config()
     season, week = resolve_week(season, week)
     status: dict = {}
@@ -146,9 +148,37 @@ def run(season: int | None = None, week: int | None = None, root: Path = RAW) ->
     _run_source(status, root, season, week, "nflverse_schedule",
                 lambda: nflverse_lines.normalize_schedule(nflverse_lines.parse(nflverse_lines.fetch()), season))
 
-    # ESPN rosters come from the committed file only. Never the network. A good file is cached
-    # like any other pull, so a bad sync later falls back to it instead of stopping the build.
-    rosters, err = load_rosters(root, season, week)
+    # ESPN league: public endpoint since the league went public (11/19/26). A good pull replaces
+    # data/espn/rosters.json, so the roster file machine (docs/STATES.md section 2) is unchanged and the
+    # espn-roster-sync skill still works as a fallback writer. A failed pull leaves the file alone.
+    if rosters_path is None and root == RAW:
+        rosters_path = espn_rosters.PATH
+    for lg in cfg["leagues"]:
+        if lg["platform"] != "espn":
+            continue
+        lid = int(lg["id"])
+
+        def pull(lid=lid):
+            d = espn_league.normalize_league(espn_league.fetch_league(season, lid))
+            espn_rosters.validate(d)   # same contract the sync skill's file meets
+            return d
+
+        _run_source(status, root, season, week, "espn_league", pull)
+        if rosters_path is not None and source_state(status["espn_league"]) == "fresh":
+            write_json(rosters_path, read_json(_cache_path(root, season, week, "espn_league"))["data"])
+        # Past weeks' starters for the Shotguns page. Completed weeks are fetched once, the most recent
+        # completed week is refetched each run for stat corrections (same rule as sleeper_stats).
+        if lg.get("shotguns"):
+            for w in range(1, week):
+                if _cache_path(root, season, w, "espn_lineups").exists() and w < week - 1:
+                    continue
+                _run_source(status, root, season, week, "espn_lineups",
+                            lambda w=w, lid=lid: espn_league.normalize_week(espn_league.fetch_week(season, lid, w), w), wk_dir=w)
+                status[f"espn_lineups_w{w}"] = status.pop("espn_lineups")
+
+    # The roster file (written above, or by the sync skill) is cached like any other pull,
+    # so a bad file later falls back to it instead of stopping the build.
+    rosters, err = load_rosters(root, season, week, rosters_path)
     if rosters is not None and err is None:
         write_json(_cache_path(root, season, week, "espn_rosters"),
                    {"source": "espn_rosters", "fetchedAt": rosters["syncedAt"], "data": rosters})
