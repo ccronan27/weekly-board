@@ -124,8 +124,9 @@ def backup_for(candidates: list[dict], flagged_points: float | None, flagged: bo
 
 def late_risk(flagged_kickoff: str | None, candidates: list[dict]) -> bool:
     """True when the flagged player kicks off after every backup, so no swap is left if he is ruled out late.
-    With no backups at all that is also true. Unknown kickoff times never count as a risk."""
-    if flagged_kickoff is None:
+    With no backups at all it is false: the site says there is no backup instead (backup is null).
+    Unknown kickoff times never count as a risk."""
+    if flagged_kickoff is None or not candidates:
         return False
     return all(b.get("kickoff") is not None and flagged_kickoff > b["kickoff"] for b in candidates)
 

@@ -2,6 +2,7 @@
  "data": {
   "chicago-dynasty": {
    "divisions": 0,
+   "draftRounds": 4,
    "leagueId": "1335703355086893056",
    "matchups": {
     "1": [
@@ -962,6 +963,7 @@
    "teamCount": 12,
    "teams": [
     {
+     "faabUsed": 40,
      "isMine": false,
      "players": [
       "10222",
@@ -1013,6 +1015,7 @@
      "teamName": "The Texans RB Room"
     },
     {
+     "faabUsed": 1,
      "isMine": true,
      "players": [
       "11563",
@@ -1064,6 +1067,7 @@
      "teamName": "Zay My Name"
     },
     {
+     "faabUsed": 38,
      "isMine": false,
      "players": [
       "11560",
@@ -1100,20 +1104,21 @@
      "rosterId": 3,
      "starters": [
       "11560",
-      "8151",
+      "5967",
       "8155",
       "6801",
       "5947",
       "12517",
-      "5967",
+      "9480",
       "11632",
       "8210",
-      "0"
+      "6650"
      ],
      "taxi": [],
      "teamName": "God, Country, Caleb 💅"
     },
     {
+     "faabUsed": 30,
      "isMine": false,
      "players": [
       "10236",
@@ -1165,6 +1170,7 @@
      "teamName": "Dak FC"
     },
     {
+     "faabUsed": 96,
      "isMine": false,
      "players": [
       "10219",
@@ -1201,7 +1207,7 @@
      "reserve": [],
      "rosterId": 5,
      "starters": [
-      "11564",
+      "96",
       "12490",
       "13424",
       "7564",
@@ -1213,9 +1219,10 @@
       "7839"
      ],
      "taxi": [],
-     "teamName": "Team 5"
+     "teamName": "Team 5 (no name set)"
     },
     {
+     "faabUsed": 10,
      "isMine": false,
      "players": [
       "10232",
@@ -1267,6 +1274,7 @@
      "teamName": "When in Rome"
     },
     {
+     "faabUsed": 58,
      "isMine": false,
      "players": [
       "10229",
@@ -1318,6 +1326,7 @@
      "teamName": "All Gas No Brakes"
     },
     {
+     "faabUsed": 23,
      "isMine": false,
      "players": [
       "10859",
@@ -1369,6 +1378,7 @@
      "teamName": "Jared Goff Glazer"
     },
     {
+     "faabUsed": 82,
      "isMine": false,
      "players": [
       "10218",
@@ -1413,13 +1423,14 @@
       "1466",
       "4866",
       "3198",
-      "4199",
+      "12499",
       "11533"
      ],
      "taxi": [],
      "teamName": "Brandon Aubrey Supremacy"
     },
     {
+     "faabUsed": 0,
      "isMine": false,
      "players": [
       "10213",
@@ -1471,6 +1482,7 @@
      "teamName": "Tinman0506"
     },
     {
+     "faabUsed": 12,
      "isMine": false,
      "players": [
       "11635",
@@ -1522,6 +1534,7 @@
      "teamName": "Ladd’s McConcubines"
     },
     {
+     "faabUsed": 0,
      "isMine": false,
      "players": [
       "11584",
@@ -1570,9 +1583,163 @@
       "3451"
      ],
      "taxi": [],
-     "teamName": "Team 12"
+     "teamName": "Team 12 (no name set)"
     }
-   ]
+   ],
+   "tradedPicks": [
+    {
+     "ownerId": 1,
+     "rosterId": 1,
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "ownerId": 8,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 10,
+     "rosterId": 3,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 8,
+     "rosterId": 3,
+     "round": 4,
+     "season": "2026"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "ownerId": 6,
+     "rosterId": 3,
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "ownerId": 12,
+     "rosterId": 3,
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 1,
+     "season": "2029"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2029"
+    },
+    {
+     "ownerId": 5,
+     "rosterId": 5,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 5,
+     "rosterId": 8,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 3,
+     "rosterId": 8,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 9,
+     "round": 1,
+     "season": "2026"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 9,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 11,
+     "rosterId": 9,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 5,
+     "rosterId": 9,
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "ownerId": 2,
+     "rosterId": 9,
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "ownerId": 3,
+     "rosterId": 10,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 9,
+     "rosterId": 10,
+     "round": 4,
+     "season": "2026"
+    },
+    {
+     "ownerId": 2,
+     "rosterId": 11,
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "ownerId": 11,
+     "rosterId": 12,
+     "round": 2,
+     "season": "2026"
+    }
+   ],
+   "waiverBudget": 100,
+   "waiverType": 2
   },
   "hwh": {
    "divisions": 2,
@@ -2607,12 +2774,13 @@
    "teamCount": 12,
    "teams": [
     {
+     "faabUsed": 100,
      "isMine": false,
      "players": [
       "10236",
       "11199",
       "11564",
-      "11834",
+      "12492",
       "12533",
       "13298",
       "5022",
@@ -2645,7 +2813,7 @@
       "6794",
       "7564",
       "10236",
-      "5045",
+      "12492",
       "5022",
       "7839",
       "DEN"
@@ -2654,6 +2822,7 @@
      "teamName": "Kirkboi Charlies"
     },
     {
+     "faabUsed": 0,
      "isMine": false,
      "players": [
       "11533",
@@ -2701,6 +2870,7 @@
      "teamName": "Cigarettes& Alcohol AK26"
     },
     {
+     "faabUsed": 0,
      "isMine": false,
      "players": [
       "10235",
@@ -2744,9 +2914,10 @@
       "WAS"
      ],
      "taxi": [],
-     "teamName": "Team 3"
+     "teamName": "Team 3 (no name set)"
     },
     {
+     "faabUsed": 0,
      "isMine": false,
      "players": [
       "10859",
@@ -2791,6 +2962,7 @@
      "teamName": "Scatt Pack"
     },
     {
+     "faabUsed": 12,
      "isMine": false,
      "players": [
       "11560",
@@ -2838,6 +3010,7 @@
      "teamName": "sign STEELERS"
     },
     {
+     "faabUsed": 77,
      "isMine": true,
      "players": [
       "10213",
@@ -2885,6 +3058,7 @@
      "teamName": "Likely Suckin"
     },
     {
+     "faabUsed": 11,
      "isMine": false,
      "players": [
       "12517",
@@ -2929,6 +3103,7 @@
      "teamName": "Olav é Trois"
     },
     {
+     "faabUsed": 10,
      "isMine": false,
      "players": [
       "11586",
@@ -2976,12 +3151,15 @@
      "teamName": "Adam4Arbutus"
     },
     {
+     "faabUsed": 62,
      "isMine": false,
      "players": [
+      "10218",
       "11579",
       "11632",
       "11786",
       "12534",
+      "12700",
       "13286",
       "13294",
       "13346",
@@ -2989,10 +3167,8 @@
       "6650",
       "8138",
       "9484",
-      "9502",
       "9997",
-      "MIN",
-      "NE"
+      "MIN"
      ],
      "record": {
       "division": 1,
@@ -3007,12 +3183,12 @@
      "starters": [
       "4984",
       "8138",
-      "13286",
+      "12534",
       "11632",
       "9997",
-      "9484",
-      "11579",
-      "13346",
+      "12700",
+      "10218",
+      "13294",
       "11786",
       "MIN"
      ],
@@ -3020,6 +3196,7 @@
      "teamName": "The Zoo"
     },
     {
+     "faabUsed": 0,
      "isMine": false,
      "players": [
       "10229",
@@ -3066,6 +3243,7 @@
      "teamName": "Jamflowmen"
     },
     {
+     "faabUsed": 85,
      "isMine": false,
      "players": [
       "11792",
@@ -3113,6 +3291,7 @@
      "teamName": "Gay tier ball knowledge"
     },
     {
+     "faabUsed": 0,
      "isMine": false,
      "players": [
       "11604",
@@ -3159,9 +3338,11 @@
      "taxi": [],
      "teamName": "Green room special "
     }
-   ]
+   ],
+   "waiverBudget": 100,
+   "waiverType": 2
   }
  },
- "fetchedAt": "2026-11-18T21:03:18Z",
+ "fetchedAt": "2026-11-19T20:21:46Z",
  "source": "sleeper_leagues"
 }

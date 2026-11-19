@@ -193,7 +193,7 @@ def test_late_risk_when_flagged_kicks_off_after_every_backup():
     assert lu.late_risk("2026-11-22T17:00Z", cands) is False, "a backup playing at the same time is still usable"
 
 
-def test_late_risk_true_with_no_backups_and_false_without_a_kickoff():
-    assert lu.late_risk("2026-11-22T18:00Z", []) is True
+def test_late_risk_false_with_no_backups_or_without_a_kickoff():
+    assert lu.late_risk("2026-11-22T18:00Z", []) is False, "no backup is its own message, backup is null"
     assert lu.late_risk(None, []) is False
     assert lu.late_risk("2026-11-22T18:00Z", [C("b1", "RB", 8, ko=None)]) is False, "unknown backup kickoff is not a risk"
