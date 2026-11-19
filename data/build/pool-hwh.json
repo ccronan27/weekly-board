@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T22:01:20Z",
+ "generatedAt": "2026-11-19T22:04:33Z",
  "league": "hwh",
  "players": [
   {
@@ -4454,7 +4454,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "T.J. Hockenson",
-   "newsUpdated": "2026-11-19T00:35:55Z",
+   "newsUpdated": "2026-11-19T21:50:03Z",
    "points": 10.4,
    "pos": "TE",
    "ppg": 10.7,
@@ -11232,7 +11232,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Roman Wilson",
-   "newsUpdated": "2026-11-19T00:20:55Z",
+   "newsUpdated": "2026-11-19T21:55:02Z",
    "points": 5.3,
    "pos": "WR",
    "ppg": 11.2,
@@ -20656,35 +20656,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:18Z",
+   "lastUpdated": "2026-11-19T22:04:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:19Z",
+   "lastUpdated": "2026-11-19T22:04:32Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:16Z",
+   "lastUpdated": "2026-11-19T22:04:30Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:16Z",
+   "lastUpdated": "2026-11-19T22:04:30Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:17Z",
+   "lastUpdated": "2026-11-19T22:04:31Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
