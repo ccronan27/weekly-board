@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T20:22:18Z",
+ "generatedAt": "2026-11-19T20:24:08Z",
  "league": {
   "appName": "ESPN",
   "appUrl": "https://fantasy.espn.com/football/team?leagueId=125685129&teamId=14",
@@ -10,10 +10,10 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 100.5,
+  "currentPoints": 100.7,
   "gain": 0.0,
   "moves": [],
-  "recommendedPoints": 100.5,
+  "recommendedPoints": 100.7,
   "slots": [
    {
     "changed": false,
@@ -208,11 +208,11 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 17.1,
+     "ceiling": 17.3,
      "eligible": true,
      "espn": 12.8,
      "flags": [],
-     "floor": 10.5,
+     "floor": 10.7,
      "game": {
       "home": true,
       "implied": 28.0,
@@ -228,7 +228,7 @@
      "locked": false,
      "name": "Rashee Rice",
      "newsUpdated": "2026-11-18T15:20:52Z",
-     "points": 13.8,
+     "points": 14.0,
      "pos": "WR",
      "ppg": 13.2,
      "recent": [
@@ -249,7 +249,7 @@
        "week": 10
       }
      ],
-     "rotowire": 14.8,
+     "rotowire": 15.2,
      "team": "KC"
     },
     "nextBest": {
@@ -259,11 +259,11 @@
      "pos": "WR"
     },
     "recommended": {
-     "ceiling": 17.1,
+     "ceiling": 17.3,
      "eligible": true,
      "espn": 12.8,
      "flags": [],
-     "floor": 10.5,
+     "floor": 10.7,
      "game": {
       "home": true,
       "implied": 28.0,
@@ -279,7 +279,7 @@
      "locked": false,
      "name": "Rashee Rice",
      "newsUpdated": "2026-11-18T15:20:52Z",
-     "points": 13.8,
+     "points": 14.0,
      "pos": "WR",
      "ppg": 13.2,
      "recent": [
@@ -300,7 +300,7 @@
        "week": 10
       }
      ],
-     "rotowire": 14.8,
+     "rotowire": 15.2,
      "team": "KC"
     },
     "slot": "WR"
@@ -1074,11 +1074,11 @@
    "team": "NYJ"
   },
   {
-   "ceiling": 17.1,
+   "ceiling": 17.3,
    "eligible": true,
    "espn": 12.8,
    "flags": [],
-   "floor": 10.5,
+   "floor": 10.7,
    "game": {
     "home": true,
     "implied": 28.0,
@@ -1094,7 +1094,7 @@
    "locked": false,
    "name": "Rashee Rice",
    "newsUpdated": "2026-11-18T15:20:52Z",
-   "points": 13.8,
+   "points": 14.0,
    "pos": "WR",
    "ppg": 13.2,
    "recent": [
@@ -1115,7 +1115,7 @@
      "week": 10
     }
    ],
-   "rotowire": 14.8,
+   "rotowire": 15.2,
    "sd": 3.33,
    "slot": "WR",
    "sources": [
@@ -1682,7 +1682,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:48Z",
+   "lastUpdated": "2026-11-19T20:24:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1696,14 +1696,14 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:49Z",
+   "lastUpdated": "2026-11-19T20:24:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:47Z",
+   "lastUpdated": "2026-11-19T20:24:06Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -2348,7 +2348,7 @@
        "week": 10
       }
      ],
-     "rotowire": 7.2,
+     "rotowire": 7.3,
      "team": "BAL"
     },
     {

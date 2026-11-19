@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T20:22:18Z",
+ "generatedAt": "2026-11-19T20:24:08Z",
  "league": {
   "appName": "Sleeper",
   "appUrl": "https://sleeper.com/leagues/1389389185361653760/team",
@@ -1848,35 +1848,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:48Z",
+   "lastUpdated": "2026-11-19T20:24:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:49Z",
+   "lastUpdated": "2026-11-19T20:24:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:46Z",
+   "lastUpdated": "2026-11-19T20:24:05Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:46Z",
+   "lastUpdated": "2026-11-19T20:24:05Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:47Z",
+   "lastUpdated": "2026-11-19T20:24:06Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1888,12 +1888,12 @@
   "myGames": [
    {
     "ifLose": 47.6,
-    "ifWin": 80.5,
+    "ifWin": 80.6,
     "myMean": 124.6,
     "opp": "Olav é Trois",
-    "oppMean": 145.8,
+    "oppMean": 145.9,
     "week": 11,
-    "winPct": 27.7
+    "winPct": 27.6
    },
    {
     "myMean": 133.9,
@@ -1923,7 +1923,7 @@
   "teams": [
    {
     "avgSeed": 1.9,
-    "byePct": 58.0,
+    "byePct": 58.1,
     "division": 1,
     "isMine": false,
     "losses": 1,
@@ -1938,7 +1938,7 @@
    },
    {
     "avgSeed": 2.4,
-    "byePct": 89.0,
+    "byePct": 89.1,
     "division": 2,
     "isMine": false,
     "losses": 4,
@@ -2018,7 +2018,7 @@
     "isMine": false,
     "losses": 5,
     "name": "The Zoo",
-    "playoffPct": 28.3,
+    "playoffPct": 28.4,
     "pointsAgainst": 1244.26,
     "pointsFor": 1317.7,
     "projWins": 6.5,
@@ -2028,12 +2028,12 @@
    },
    {
     "avgSeed": 6.4,
-    "byePct": 5.1,
+    "byePct": 5.0,
     "division": 2,
     "isMine": false,
     "losses": 5,
     "name": "Green room special ",
-    "playoffPct": 50.0,
+    "playoffPct": 49.9,
     "pointsAgainst": 1130.18,
     "pointsFor": 1247.18,
     "projWins": 7.5,

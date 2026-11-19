@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T20:22:18Z",
+ "generatedAt": "2026-11-19T20:24:08Z",
  "league": {
   "appName": "Sleeper",
   "appUrl": "https://sleeper.com/leagues/1335703355086893056/team",
@@ -10,10 +10,10 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 101.9,
+  "currentPoints": 102.0,
   "gain": 0.0,
   "moves": [],
-  "recommendedPoints": 101.9,
+  "recommendedPoints": 102.0,
   "slots": [
    {
     "changed": false,
@@ -308,7 +308,7 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 19.5,
+     "ceiling": 19.6,
      "eligible": true,
      "espn": 11.0,
      "flags": [],
@@ -349,7 +349,7 @@
        "week": 10
       }
      ],
-     "rotowire": 12.4,
+     "rotowire": 12.5,
      "team": "BAL"
     },
     "nextBest": {
@@ -359,7 +359,7 @@
      "pos": "WR"
     },
     "recommended": {
-     "ceiling": 19.5,
+     "ceiling": 19.6,
      "eligible": true,
      "espn": 11.0,
      "flags": [],
@@ -400,7 +400,7 @@
        "week": 10
       }
      ],
-     "rotowire": 12.4,
+     "rotowire": 12.5,
      "team": "BAL"
     },
     "slot": "WR"
@@ -603,11 +603,11 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 11.1,
+     "ceiling": 11.2,
      "eligible": true,
      "espn": 7.7,
      "flags": [],
-     "floor": 3.7,
+     "floor": 3.8,
      "game": {
       "home": true,
       "implied": 28.0,
@@ -623,7 +623,7 @@
      "locked": false,
      "name": "Josh Downs",
      "newsUpdated": "2026-11-18T15:15:52Z",
-     "points": 7.4,
+     "points": 7.5,
      "pos": "WR",
      "ppg": 7.2,
      "recent": [
@@ -644,7 +644,7 @@
        "week": 10
       }
      ],
-     "rotowire": 7.1,
+     "rotowire": 7.3,
      "team": "KC"
     },
     "nextBest": {
@@ -654,11 +654,11 @@
      "pos": "WR"
     },
     "recommended": {
-     "ceiling": 11.1,
+     "ceiling": 11.2,
      "eligible": true,
      "espn": 7.7,
      "flags": [],
-     "floor": 3.7,
+     "floor": 3.8,
      "game": {
       "home": true,
       "implied": 28.0,
@@ -674,7 +674,7 @@
      "locked": false,
      "name": "Josh Downs",
      "newsUpdated": "2026-11-18T15:15:52Z",
-     "points": 7.4,
+     "points": 7.5,
      "pos": "WR",
      "ppg": 7.2,
      "recent": [
@@ -695,7 +695,7 @@
        "week": 10
       }
      ],
-     "rotowire": 7.1,
+     "rotowire": 7.3,
      "team": "KC"
     },
     "slot": "FLEX"
@@ -1146,7 +1146,7 @@
    "team": "LV"
   },
   {
-   "ceiling": 19.5,
+   "ceiling": 19.6,
    "eligible": true,
    "espn": 11.0,
    "flags": [],
@@ -1187,7 +1187,7 @@
      "week": 10
     }
    ],
-   "rotowire": 12.4,
+   "rotowire": 12.5,
    "sd": 7.84,
    "slot": "START",
    "sources": [
@@ -1461,6 +1461,58 @@
    "team": "CIN"
   },
   {
+   "ceiling": 11.2,
+   "eligible": true,
+   "espn": 7.7,
+   "flags": [],
+   "floor": 3.8,
+   "game": {
+    "home": true,
+    "implied": 28.0,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "ARI",
+    "oppImplied": 12.5,
+    "spread": -15.5,
+    "total": 40.5
+   },
+   "games": 10,
+   "id": "9500",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Josh Downs",
+   "newsUpdated": "2026-11-18T15:15:52Z",
+   "points": 7.5,
+   "pos": "WR",
+   "ppg": 7.2,
+   "recent": [
+    {
+     "pts": 2.8,
+     "week": 7
+    },
+    {
+     "pts": 10.3,
+     "week": 8
+    },
+    {
+     "pts": 3.9,
+     "week": 9
+    },
+    {
+     "pts": 13.3,
+     "week": 10
+    }
+   ],
+   "rotowire": 7.3,
+   "sd": 3.69,
+   "slot": "START",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "KC"
+  },
+  {
    "ceiling": 14.1,
    "eligible": true,
    "espn": 6.8,
@@ -1511,58 +1563,6 @@
    ],
    "status": null,
    "team": "NYJ"
-  },
-  {
-   "ceiling": 11.1,
-   "eligible": true,
-   "espn": 7.7,
-   "flags": [],
-   "floor": 3.7,
-   "game": {
-    "home": true,
-    "implied": 28.0,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "ARI",
-    "oppImplied": 12.5,
-    "spread": -15.5,
-    "total": 40.5
-   },
-   "games": 10,
-   "id": "9500",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Josh Downs",
-   "newsUpdated": "2026-11-18T15:15:52Z",
-   "points": 7.4,
-   "pos": "WR",
-   "ppg": 7.2,
-   "recent": [
-    {
-     "pts": 2.8,
-     "week": 7
-    },
-    {
-     "pts": 10.3,
-     "week": 8
-    },
-    {
-     "pts": 3.9,
-     "week": 9
-    },
-    {
-     "pts": 13.3,
-     "week": 10
-    }
-   ],
-   "rotowire": 7.1,
-   "sd": 3.69,
-   "slot": "START",
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "KC"
   },
   {
    "ceiling": 9.9,
@@ -2124,35 +2124,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:48Z",
+   "lastUpdated": "2026-11-19T20:24:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:49Z",
+   "lastUpdated": "2026-11-19T20:24:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:46Z",
+   "lastUpdated": "2026-11-19T20:24:05Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:46Z",
+   "lastUpdated": "2026-11-19T20:24:05Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:21:47Z",
+   "lastUpdated": "2026-11-19T20:24:06Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -2165,32 +2165,32 @@
    {
     "ifLose": 0.2,
     "ifWin": 4.7,
-    "myMean": 101.9,
+    "myMean": 102.0,
     "opp": "All Gas No Brakes",
-    "oppMean": 127.6,
+    "oppMean": 127.7,
     "week": 11,
     "winPct": 23.1
    },
    {
-    "myMean": 116.5,
+    "myMean": 116.6,
     "opp": "Brandon Aubrey Supremacy",
-    "oppMean": 141.5,
+    "oppMean": 141.6,
     "week": 12,
     "winPct": 23.7
    },
    {
-    "myMean": 99.1,
+    "myMean": 99.2,
     "opp": "Dak FC",
-    "oppMean": 108.6,
+    "oppMean": 108.7,
     "week": 13,
     "winPct": 39.3
    },
    {
-    "myMean": 116.5,
+    "myMean": 116.6,
     "opp": "Ladd’s McConcubines",
     "oppMean": 129.5,
     "week": 14,
-    "winPct": 35.5
+    "winPct": 35.6
    }
   ],
   "playoffTeams": 6,
@@ -2214,7 +2214,7 @@
    },
    {
     "avgSeed": 2.7,
-    "byePct": 51.8,
+    "byePct": 51.7,
     "division": null,
     "isMine": false,
     "losses": 3,
@@ -2234,7 +2234,7 @@
     "isMine": false,
     "losses": 3,
     "name": "Team 5 (no name set)",
-    "playoffPct": 91.7,
+    "playoffPct": 91.6,
     "pointsAgainst": 1076.4,
     "pointsFor": 1166.9,
     "projWins": 8.8,
@@ -2249,7 +2249,7 @@
     "isMine": false,
     "losses": 4,
     "name": "All Gas No Brakes",
-    "playoffPct": 94.8,
+    "playoffPct": 94.7,
     "pointsAgainst": 1029.76,
     "pointsFor": 1328.26,
     "projWins": 8.6,
@@ -2259,12 +2259,12 @@
    },
    {
     "avgSeed": 5.6,
-    "byePct": 3.9,
+    "byePct": 4.0,
     "division": null,
     "isMine": false,
     "losses": 4,
     "name": "Tinman0506",
-    "playoffPct": 66.8,
+    "playoffPct": 67.0,
     "pointsAgainst": 1153.82,
     "pointsFor": 1113.22,
     "projWins": 8.0,
@@ -2279,7 +2279,7 @@
     "isMine": false,
     "losses": 5,
     "name": "Team 12 (no name set)",
-    "playoffPct": 62.5,
+    "playoffPct": 62.6,
     "pointsAgainst": 1228.28,
     "pointsFor": 1231.98,
     "projWins": 7.3,
@@ -2294,7 +2294,7 @@
     "isMine": false,
     "losses": 5,
     "name": "Ladd’s McConcubines",
-    "playoffPct": 76.4,
+    "playoffPct": 76.2,
     "pointsAgainst": 1211.12,
     "pointsFor": 1168.62,
     "projWins": 7.8,
