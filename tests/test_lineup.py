@@ -137,3 +137,63 @@ def test_no_locks_gives_the_same_answer():
     assert lu.recommend(SLOTS, rs, fixed={}) == lu.recommend(SLOTS, rs)
     chosen = lu.recommend(SLOTS, rs)
     assert lu.arrange(SLOTS, chosen, cur, pos, fixed={}) == lu.arrange(SLOTS, chosen, cur, pos)
+
+
+# ---- lineup context: next best, backups, late risk ----
+
+def C(i, pos, pts, ok=True, locked=False, ko=None, name=None):
+    return {"id": i, "name": name or i, "pos": pos, "points": pts, "eligible": ok, "locked": locked, "kickoff": ko}
+
+
+def test_next_best_is_best_movable_player_outside_the_recommended_lineup():
+    slots = ["RB", "FLEX"]
+    players = [C("r1", "RB", 12), C("r2", "RB", 9), C("w1", "WR", 11), C("w2", "WR", 7), C("r3", "RB", 15, locked=True)]
+    rec = ["r1", "w1"]
+    nb = lu.next_best(slots, 0, players, rec)
+    assert nb == {"id": "r2", "name": "r2", "pos": "RB", "points": 9.0}, "locked r3 is skipped, r1 is recommended"
+    assert lu.next_best(slots, 1, players, rec)["id"] == "r2", "a FLEX slot takes any RB, WR or TE"
+
+
+def test_next_best_skips_ineligible_and_returns_none_when_nobody_is_left():
+    players = [C("r1", "RB", 12), C("r2", "RB", 9, ok=False)]
+    assert lu.next_best(["RB"], 0, players, ["r1"]) is None
+
+
+def test_next_best_respects_position_rules_for_restrictive_slots():
+    slots = ["WR", "SUPER_FLEX"]
+    players = [C("q1", "QB", 20), C("w1", "WR", 10), C("w2", "WR", 9)]
+    assert lu.next_best(slots, 0, players, ["w1"])["id"] == "w2"
+    assert lu.next_best(slots, 1, players, ["q1"])["id"] == "w1", "QB is not a WR, so the next SUPER_FLEX is w1"
+
+
+def test_backup_candidates_exclude_starters_and_locked_or_ineligible():
+    slots = ["RB", "RB"]
+    players = [C("r1", "RB", 14, ko="2026-11-22T18:00Z"), C("r2", "RB", 9, ko="2026-11-22T13:00Z"),
+               C("r3", "RB", 8, ok=False), C("r4", "RB", 7, locked=True, ko="2026-11-22T13:00Z"),
+               C("r5", "RB", 6, ko="2026-11-23T20:15Z")]
+    cands = lu.backup_candidates(slots, 0, players, ["r1", "r2"])
+    assert [c["id"] for c in cands] == ["r5"]
+
+
+def test_backup_for_watch_gain_is_backup_minus_flagged_points():
+    cands = [C("b1", "RB", 8.456, ko="2026-11-22T13:00Z", name="Bee")]
+    b = lu.backup_for(cands, 12.0)
+    assert b == {"id": "b1", "name": "Bee", "points": 8.5, "kickoff": "2026-11-22T13:00Z", "gain": -3.5}
+
+
+def test_backup_for_alert_gain_is_backup_points_when_flagged_is_out():
+    cands = [C("b1", "RB", 8.0, ko="2026-11-22T13:00Z", name="Bee")]
+    assert lu.backup_for(cands, 12.0, flagged=False)["gain"] == 8.0
+    assert lu.backup_for([], 12.0) is None
+
+
+def test_late_risk_when_flagged_kicks_off_after_every_backup():
+    cands = [C("b1", "RB", 8, ko="2026-11-22T13:00Z"), C("b2", "RB", 5, ko="2026-11-22T17:00Z")]
+    assert lu.late_risk("2026-11-22T18:00Z", cands) is True
+    assert lu.late_risk("2026-11-22T17:00Z", cands) is False, "a backup playing at the same time is still usable"
+
+
+def test_late_risk_false_with_no_backups_or_without_a_kickoff():
+    assert lu.late_risk("2026-11-22T18:00Z", []) is False, "no backup is its own message, backup is null"
+    assert lu.late_risk(None, []) is False
+    assert lu.late_risk("2026-11-22T18:00Z", [C("b1", "RB", 8, ko=None)]) is False, "unknown backup kickoff is not a risk"

@@ -15,9 +15,9 @@ import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from pipeline import lineup, odds, players as pm, scoring, trades, waivers
+from pipeline import lineup, odds, players as pm, recap, scoring, trades, waivers
 from pipeline.adapters import espn_rosters
-from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, source_state, write_json
+from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, next_refresh, now_iso, read_json, source_state, write_json
 from pipeline.ingest import load_config, load_rosters, rosters_status
 
 EASTERN = ZoneInfo("America/New_York")
@@ -202,7 +202,9 @@ def standings_block(lc, norm, rosters, week, pw, slots, rosters_t, team_name, pl
             means[(w, n)] = this_week(players[n]) if w == week else trades.playoff_total(slots, [w], players[n], plays)[0]
     sd = odds.weekly_sd(history)
     byes = odds.playoff_byes(n_playoff)
-    sim = odds.simulate(teams, records, schedule, means, sd, n_playoff, division, n_div, byes)
+    sim = odds.simulate(teams, records, schedule, means, sd, n_playoff, division, n_div, byes, focus=team_name)
+    mine_sim = sim.get(team_name, {})
+    swing = {k: mine_sim.pop(k) for k in ("ifWin", "ifLose") if k in mine_sim}   # kept out of the team rows
     now = odds.seed_order(teams, {n: records[n]["wins"] + 0.5 * records[n]["ties"] for n in teams},
                           {n: records[n]["pointsFor"] for n in teams}, division, n_div)
     rows = [{"name": n, "isMine": n == team_name, "seed": i + 1, "division": division.get(n),
@@ -210,20 +212,40 @@ def standings_block(lc, norm, rosters, week, pw, slots, rosters_t, team_name, pl
             for i, n in enumerate(now)]
     mine = [{"week": w, "opp": b if a == team_name else a,
              "myMean": round(means[(w, team_name)], 1), "oppMean": round(means[(w, b if a == team_name else a)], 1),
-             "winPct": round(100 * odds.head_to_head(means[(w, team_name)], means[(w, b if a == team_name else a)], sd), 1)}
+             "winPct": round(100 * odds.head_to_head(means[(w, team_name)], means[(w, b if a == team_name else a)], sd), 1),
+             **(swing if w == week else {})}
             for w, a, b in sorted(schedule) if team_name in (a, b)]
     return {"teams": rows, "myGames": mine, "weeksLeft": sorted({g[0] for g in schedule}), "sd": sd, "sims": odds.SIMS,
             "playoffTeams": n_playoff, "byes": byes, "divisions": n_div}
+
+
+def trade_picks(norm: dict, season: int, rosters_t: list) -> dict:
+    """Dynasty: team name -> picks for the next 2 drafts after traded picks. None for every team when the
+    draft rounds or the traded picks did not load, so the site hides picks instead of showing wrong ones."""
+    if not norm.get("draftRounds") or norm.get("tradedPicks") is None:
+        return {r["name"]: None for r in rosters_t}
+    team_names = {t["rosterId"]: t["teamName"] for t in norm["teams"]}
+    owned = trades.owned_picks(team_names, norm["tradedPicks"], [str(season + 1), str(season + 2)], norm["draftRounds"])
+    return {team_names[rid]: picks for rid, picks in owned.items()}
 
 
 def _r(x, n=1):
     return None if x is None else round(x, n)
 
 
+def iso_from_ms(ms) -> str | None:
+    """Sleeper epoch milliseconds to ISO UTC with a Z. None when missing."""
+    if ms is None:
+        return None
+    return datetime.fromtimestamp(ms / 1000, timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
 # ------------------------------------------------------------------ main build
 
 def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None, save_idmap: bool = True,
-          now: datetime | None = None) -> dict:
+          now: datetime | None = None, recommended_root=None) -> dict:
+    """recommended_root: where recommended-{league}.json is written. Defaults to raw_root. Tests point it at tmp_path."""
+    rec_root = recommended_root or raw_root
     cfg = load_config()
     raw = load_raw(season, week, raw_root)
     if not raw["players"]:
@@ -296,7 +318,8 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         proj = scoring.project_player(lg, pos, rw["stats"] if rw else None,
                                       er["projection"]["stats"] if er and er["projection"] else None, support) if pos else \
             {"points": None, "espn": None, "rotowire": None, "sources": [], "filled": []}
-        weekly = scoring.weekly_points(lg, pos, actuals.get(pid, {})) if pos and pid else []
+        weekly_by_week = scoring.weekly_points_by_week(lg, pos, actuals.get(pid, {})) if pos and pid else []
+        weekly = [pts for _, pts in weekly_by_week]
         fc = scoring.floor_ceiling(proj["points"], weekly)
         # Sleeper injury data is refreshed every run, the ESPN roster file can be days old.
         # Use Sleeper when the player is matched, otherwise fall back to the roster file.
@@ -317,6 +340,8 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             "ppg": round(statistics.fmean(weekly), 1) if weekly else None,   # season points per game, this league's scoring
             "status": status, "flags": flags, "eligible": eligible, "game": game, "locked": locked,
             "injuryNotes": sp.get("injuryNotes") if sp else None,
+            "newsUpdated": iso_from_ms(sp.get("newsUpdated")) if sp else None,
+            "recent": [{"week": w, "pts": round(pts, 1)} for w, pts in weekly_by_week[-4:]],   # last 4 played weeks, oldest first
             "_filled": proj["filled"],
         }
 
@@ -388,7 +413,26 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 return None
             p = by_id[pid]
             return {k: p[k] for k in ("id", "name", "pos", "team", "points", "espn", "rotowire", "floor", "ceiling", "flags",
-                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games")}
+                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games", "newsUpdated", "recent")}
+
+        # ---- lineup context: next best per slot, backups for flagged starters, late risk
+        cur_ids = [c for c in cur if c]
+        view = [{"id": p["id"], "name": p["name"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"],
+                 "locked": p["locked"], "kickoff": (p["game"] or {}).get("kickoff")} for p in my_players]
+        alerts, watch = [], []
+        for i, (s, pid) in enumerate(zip(slots, cur)):
+            if not pid:
+                continue
+            p = by_id[pid]
+            cands = lineup.backup_candidates(slots, i, view, cur_ids)
+            if any(f in ("BYE", *OUT_STATUSES) for f in p["flags"]):
+                alerts.append({"player": p["name"], "slot": s, "flags": p["flags"],
+                               "backup": lineup.backup_for(cands, p["points"], flagged=False)})
+            if p["status"] in ("QUESTIONABLE", "DOUBTFUL"):
+                kick = (p["game"] or {}).get("kickoff")
+                watch.append({"player": p["name"], "slot": s, "flags": p["flags"], "kickoff": kick,
+                              "injuryNotes": p["injuryNotes"], "backup": lineup.backup_for(cands, p["points"]),
+                              "lateRisk": lineup.late_risk(kick, cands)})
 
         cur_total = round(sum(pts.get(c, 0.0) for c in cur if c), 1)
         rec_total = round(sum(pts.get(r, 0.0) for r in rec_slots if r), 1)
@@ -398,24 +442,35 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             n_filled += len(p["_filled"])
             p.pop("_filled")
         src_used = ["sleeper_projections", "espn_defaults", "nflverse_lines"] + (["espn_rosters"] if lc["platform"] == "espn" else ["sleeper_leagues", "sleeper_players"])
+        if lc["platform"] == "espn":
+            app_name, app_url = "ESPN", f"https://fantasy.espn.com/football/team?leagueId={lc['id']}&teamId={cfg['espnTeamId']}"
+        else:
+            app_name, app_url = "Sleeper", f"https://sleeper.com/leagues/{lc['id']}/team"
         out = {
             "generatedAt": generated, "season": season, "week": week,
-            "league": {"key": lc["key"], "name": lg.name, "platform": lg.platform, "teamName": team_name},
+            "league": {"key": lc["key"], "name": lg.name, "platform": lg.platform, "teamName": team_name,
+                       "appName": app_name, "appUrl": app_url},
             "sources": {k: sources[k] for k in src_used if k in sources},
             "lineup": {
                 "slots": [{"slot": slots[i], "current": brief(cur[i]), "recommended": brief(rec_slots[i]),
-                           "changed": cur[i] != rec_slots[i]} for i in range(len(slots))],
+                           "changed": cur[i] != rec_slots[i],
+                           "nextBest": lineup.next_best(slots, i, view, rec_slots)} for i in range(len(slots))],
                 "currentPoints": cur_total, "recommendedPoints": rec_total, "gain": round(rec_total - cur_total, 1),
                 "moves": [{"in": brief(m["in"]), "out": brief(m["out"]), "slot": m["slot"], "gain": m["gain"]} for m in mv],
-                "alerts": [{"player": p["name"], "slot": s, "flags": p["flags"]} for s, pid in zip(slots, cur) if pid
-                           for p in [by_id[pid]] if any(f in ("BYE", *OUT_STATUSES) for f in p["flags"])],
-                "watch": [{"player": p["name"], "slot": s, "flags": p["flags"], "kickoff": (p["game"] or {}).get("kickoff"),
-                           "injuryNotes": p["injuryNotes"]} for s, pid in zip(slots, cur) if pid
-                          for p in [by_id[pid]] if p["status"] in ("QUESTIONABLE", "DOUBTFUL")],
+                "alerts": alerts,
+                "watch": watch,
             },
             "roster": sorted(my_players, key=lambda p: (-(p["points"] or 0), p["name"])),
             "scoringNotes": lg.notes,
         }
+        # ---- P3 recap: store this run's recommended lineup, then last week's recap (pipeline/recap.py)
+        recap.write_recommended(rec_root, season, week, lc["key"], slots, rec_slots, generated)
+        sleeper_norm = entry[2] if len(entry) > 2 else None
+        out["recap"] = recap.league_recap(
+            season=season, week=week, lg=lg, roster=my_players, stats=raw["stats"],
+            matchups=(sleeper_norm or {}).get("matchups"),
+            my_roster_id=next((t["rosterId"] for t in sleeper_norm["teams"] if t["isMine"]), None) if sleeper_norm else None,
+            raw_root=rec_root)
         # ---- full pool for v2: every player either source projects, under this league's scoring
         pool = []
         seen = set()
@@ -443,7 +498,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         def fa_brief(pid):
             p = fa_by[pid]
             return {k: p[k] for k in ("id", "name", "pos", "team", "points", "espn", "rotowire", "floor", "ceiling", "flags",
-                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games")}
+                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games", "newsUpdated", "recent")}
 
         mine_in = [{"id": p["id"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"]} for p in my_players]
         fa_in = [{"id": p["id"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"], "locked": p["locked"]} for p in fas]
@@ -452,8 +507,9 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         dynasty = bool(lc.get("dynasty"))
         drop = None if dynasty else waivers.drop_candidate(
             [p for p in my_players if p["id"] not in rec_set and p["slot"] not in ("IR", "TAXI")])
+        faab = waivers.faab_summary(entry[2], team_name) if lc["platform"] == "sleeper" else None
         out["waivers"] = {
-            "freeAgents": len(fas), "dynasty": dynasty,
+            "freeAgents": len(fas), "dynasty": dynasty, "faab": faab,
             "targets": [{"player": fa_brief(t["id"]), "gain": t["gain"], "slot": t["slot"],
                          "replaces": brief(t["replaces"])}
                         for t in waivers.diversify(waivers.targets(slots, mine_in, fa_in, fixed), {p["id"]: p["pos"] for p in fas})],
@@ -472,6 +528,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         out["seasonPhase"] = season_phase(week, pw)
         stretch_weeks = [w for w in range(week + 1, pw[0])]   # regular season weeks left after this one
         out["waivers"]["stretch"] = None
+        ros_gain = None   # free agent -> points added over stretch + playoff weeks, when there is a schedule
         if matchups:
             rates = {p["id"]: long_term_rate(p) for p in my_players + fas}
             mine_lt = [{"id": p["id"], "pos": p["pos"], "team": p["team"], "rate": rates[p["id"]][0]} for p in my_players]
@@ -492,6 +549,13 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
 
             out["waivers"]["longTerm"] = {"weeks": lt_weeks, "playoffWeeks": pw, "teams": n_teams, "targets": horizon(lt_weeks)}
             out["waivers"]["stretch"] = {"weeks": stretch_weeks, "teams": n_teams, "targets": horizon(stretch_weeks)}
+            ros_gain = {t["id"]: t["gain"] for t in waivers.long_term(
+                slots, stretch_weeks + lt_weeks, mine_lt, fa_lt, lambda w, t: t in matchups.get(w, {}))}
+        # rosGain and FAAB bid on every waiver target (this week, stretch and playoff lists)
+        for lst in [out["waivers"]["targets"]] + [h["targets"] for h in (out["waivers"]["stretch"], out["waivers"]["longTerm"]) if h]:
+            for t in lst:
+                t["rosGain"] = None if ros_gain is None else round(ros_gain.get(t["player"]["id"], 0.0), 1)
+                t["bid"] = waivers.bid(faab["left"] if faab else None, t["rosGain"])
         # ---- v3 trades: every roster with playoff rates, plus 1 for 1 ideas that help both teams
         out["trade"] = None
         out["standings"] = None
@@ -508,6 +572,12 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             rosters_t = [{"name": n, "isMine": n == team_name,
                           "players": sorted((trade_player(p) for p in recs), key=lambda p: (-(p["rate"] or 0), p["name"]))}
                          for n, recs in team_recs.items()]
+            for r, nd in zip(rosters_t, trades.needs(slots, [r["players"] for r in rosters_t])):
+                r["needs"] = nd
+            if dynasty:
+                owned = trade_picks(norm, season, rosters_t)
+                for r in rosters_t:
+                    r["picks"] = owned.get(r["name"])
             mine_t = next(r for r in rosters_t if r["isMine"])["players"]
             others = [r for r in rosters_t if not r["isMine"]]
             all_weeks = stretch_weeks + lt_weeks    # rest of season, every week counts the same
@@ -531,7 +601,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 "generatedAt": generated, "season": season, "week": week, "league": lc["key"], "dynasty": dynasty,
                 "slots": slots, "weeks": all_weeks, "stretchWeeks": stretch_weeks, "playoffWeeks": lt_weeks, "flexEligible": {k: sorted(v) for k, v in scoring.FLEX_ELIGIBLE.items()},
                 "plays": {str(w): sorted(matchups.get(w, {})) for w in all_weeks}, "rosters": rosters_t, "ideas": ideas,
-                "sources": out["sources"]})
+                "minIdeaGain": trades.MIN_IDEA_GAIN, "sources": out["sources"]})
             out["trade"] = {"file": f"trade-{lc['key']}.json", "ideas": len(ideas)}
 
             # ---- v4 standings and playoff odds
@@ -554,6 +624,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                      "fromCache": False, "state": "missing", "week": None, "weekMismatch": False}
     meta = {
         "generatedAt": generated, "season": season, "week": week,
+        "nextRefresh": next_refresh(generated),
         "sources": sources,
         # stale here is the age rule only. The site checks it again against its own clock.
         # fromCache: the committed file was unusable and the last good sync is in use.

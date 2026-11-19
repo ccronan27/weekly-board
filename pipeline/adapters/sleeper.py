@@ -41,6 +41,10 @@ def fetch_players() -> dict:
     return http.get_json(f"{V1}/players/nfl")
 
 
+def fetch_traded_picks(league_id: str) -> list:
+    return http.get_json(f"{V1}/league/{league_id}/traded_picks")
+
+
 def _pos_params(positions):
     return [("season_type", "regular")] + [("position[]", p) for p in positions]
 
@@ -65,6 +69,9 @@ def validate_league(d) -> None:
     require_keys(d, ["league_id", "name", "season", "status", "total_rosters", "roster_positions",
                      "scoring_settings", "settings"], "sleeper league")
     require(isinstance(d["roster_positions"], list) and d["roster_positions"], "sleeper league: roster_positions empty")
+    for k in ("waiver_type", "waiver_budget"):     # optional, FAAB leagues only. Checked when present
+        require(d["settings"].get(k) is None or isinstance(d["settings"][k], int),
+                f"sleeper league: settings[{k!r}] not an integer")
     ss = d["scoring_settings"]
     require(isinstance(ss, dict), "sleeper league: scoring_settings not an object")
     for k in ("rec", "pass_yd", "pass_td", "rush_yd", "rush_td", "rec_yd", "rec_td"):
@@ -79,6 +86,8 @@ def validate_rosters(d) -> None:
         require(isinstance(r["players"], list), "sleeper roster: players not a list")
         for k in ("starters", "reserve", "taxi"):
             require(r.get(k) is None or isinstance(r[k], list), f"sleeper roster: {k} not a list")
+        used = (r.get("settings") or {}).get("waiver_budget_used")   # optional, FAAB leagues only
+        require(used is None or isinstance(used, int), "sleeper roster: settings['waiver_budget_used'] not an integer")
 
 
 def validate_users(d) -> None:
@@ -98,6 +107,20 @@ def normalize_matchups(d) -> list:
     """One row per roster: rosterId, matchupId (None when unpaired), points (0 before the game)."""
     validate_matchups(d)
     return [{"rosterId": m["roster_id"], "matchupId": m["matchup_id"], "points": float(m["points"] or 0.0)} for m in d]
+
+
+def validate_traded_picks(d) -> None:
+    """Dynasty pick trades. roster_id is the original owner, owner_id the current owner (both roster ids)."""
+    require(isinstance(d, list), "sleeper traded_picks: expected list")
+    for p in d:
+        require_keys(p, ["season", "round", "roster_id", "owner_id"], "sleeper traded pick")
+        require(str(p["season"]).isdigit(), f"sleeper traded_picks: bad season {p['season']!r}")
+        require(isinstance(p["round"], int) and p["round"] >= 1, f"sleeper traded_picks: bad round {p['round']!r}")
+
+
+def normalize_traded_picks(d: list) -> list:
+    validate_traded_picks(d)
+    return [{"season": str(p["season"]), "round": p["round"], "rosterId": p["roster_id"], "ownerId": p["owner_id"]} for p in d]
 
 
 def validate_players(d, min_players: int = 1) -> None:
@@ -156,8 +179,9 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
                        "pointsAgainst": st.get("fpts_against", 0) + st.get("fpts_against_decimal", 0) / 100,
                        "division": st.get("division")},
             "rosterId": rid,
-            "teamName": names.get(r["owner_id"]) or f"Team {rid}",
+            "teamName": names.get(r["owner_id"]) or f"Team {rid} (no name set)",
             "isMine": r["owner_id"] in mine,
+            "faabUsed": st.get("waiver_budget_used"),
             "players": [str(p) for p in r["players"]],
             "starters": [str(p) for p in (r.get("starters") or [])],
             "reserve": [str(p) for p in (r.get("reserve") or [])],
@@ -173,6 +197,8 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
         "playoffWeekStart": (league.get("settings") or {}).get("playoff_week_start"),
         "playoffTeams": (league.get("settings") or {}).get("playoff_teams"),
         "playoffRoundType": (league.get("settings") or {}).get("playoff_round_type"),
+        "waiverType": (league.get("settings") or {}).get("waiver_type"),      # 2 is FAAB
+        "waiverBudget": (league.get("settings") or {}).get("waiver_budget"),
         "divisions": (league.get("settings") or {}).get("divisions") or 0,   # 0 one week a round, 1 two week final, 2 two weeks a round
         "scoring": league["scoring_settings"],
         "teams": teams,

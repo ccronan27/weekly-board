@@ -241,10 +241,16 @@ def project_player(league: League, pos: str, rotowire_stats: dict | None, espn_r
 MIN_GAMES_FOR_SD = 3
 
 
+def weekly_points_by_week(league: League, pos: str, weekly_stats: dict) -> list[tuple[int, float]]:
+    """(week, points) for each played week, oldest first. Stat map is week -> Sleeper stat map."""
+    return [(int(w), score(actual_to_canon(s, pos), league.scoring))
+            for w, s in sorted(weekly_stats.items(), key=lambda kv: int(kv[0]))
+            if s.get("gp", 1) and s.get("gp", 1) > 0]
+
+
 def weekly_points(league: League, pos: str, weekly_stats: dict) -> list[float]:
     """Re-score one player's actual stat lines (week -> Sleeper stat map) under the league."""
-    return [score(actual_to_canon(s, pos), league.scoring) for _, s in sorted(weekly_stats.items(), key=lambda kv: int(kv[0]))
-            if s.get("gp", 1) and s.get("gp", 1) > 0]
+    return [pts for _, pts in weekly_points_by_week(league, pos, weekly_stats)]
 
 
 def floor_ceiling(projection: float | None, weekly: list[float]) -> dict:

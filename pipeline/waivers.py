@@ -119,3 +119,46 @@ def long_term(slots: list[str], weeks: list[int], mine: list[dict], free_agents:
     out = [r for r in out if r["gain"] > 0]
     out.sort(key=lambda r: (-r["gain"], str(r["id"])))
     return out
+
+
+# ---------------------------------------------------------------- FAAB
+
+FAAB_TYPE = 2   # Sleeper waiver_type for free agent acquisition budget
+
+
+def bid(left: int | None, ros_gain: float | None) -> int | None:
+    """Suggested FAAB bid in whole dollars. Rough guide, not tested against real bids.
+
+    round(left * min(0.4, rosGain / (rosGain + 40))), at least 1 when rosGain > 0 (never more than
+    you have left). None without FAAB data. 0 when the player adds nothing over the remaining weeks.
+    """
+    if left is None or ros_gain is None:
+        return None
+    if ros_gain <= 0 or left <= 0:
+        return 0
+    share = min(0.4, ros_gain / (ros_gain + 40))
+    return min(int(left), max(1, round(left * share)))
+
+
+def faab_summary(norm: dict, team_name: str) -> dict | None:
+    """FAAB budget and what every team has left, from a normalized Sleeper league.
+
+    None when the league is not FAAB or any team lacks waiverBudget data (older raw caches).
+    leagueMaxLeft is the most any OTHER team has left, None when there are no other teams.
+    """
+    budget = norm.get("waiverBudget")
+    teams = norm.get("teams") or []
+    if norm.get("waiverType") != FAAB_TYPE or budget is None or not teams:
+        return None
+    if any(t.get("faabUsed") is None for t in teams):
+        return None
+    left = {t["teamName"]: budget - t["faabUsed"] for t in teams}
+    if team_name not in left:
+        return None
+    others = [v for k, v in left.items() if k != team_name]
+    return {
+        "budget": budget,
+        "left": left[team_name],
+        "leagueMaxLeft": max(others) if others else None,
+        "teams": sorted(({"name": k, "left": v} for k, v in left.items()), key=lambda t: (-t["left"], t["name"])),
+    }

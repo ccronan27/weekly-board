@@ -16,7 +16,7 @@ needs_raw = pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 @pytest.fixture(scope="module")
 def built(tmp_path_factory):
     out = tmp_path_factory.mktemp("build")
-    res = bd.build(SEASON, WEEK, out_dir=out, save_idmap=False)
+    res = bd.build(SEASON, WEEK, out_dir=out, save_idmap=False, recommended_root=out / "rec")
     return out, res
 
 
@@ -152,7 +152,7 @@ def _edit(raw_root, name, fn):
 @pytest.fixture(scope="module")
 def locked(tmp_path_factory):
     out = tmp_path_factory.mktemp("locked")
-    return bd.build(SEASON, WEEK, out_dir=out, save_idmap=False, now=LOCK_NOW)
+    return bd.build(SEASON, WEEK, out_dir=out, save_idmap=False, recommended_root=out / "rec", now=LOCK_NOW)
 
 
 @needs_raw
@@ -218,7 +218,7 @@ def test_taxi_players_get_taxi_slot_and_reserve_gets_ir(tmp_path):
 
 @needs_raw
 def test_watch_lists_questionable_starter(tmp_path):
-    base = bd.build(SEASON, WEEK, out_dir=tmp_path / "a", save_idmap=False, now=LOCK_NOW)["leagues"]["hwh"]
+    base = bd.build(SEASON, WEEK, out_dir=tmp_path / "a", save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW)["leagues"]["hwh"]
     starter = next(s["current"] for s in base["lineup"]["slots"] if s["current"] and not s["current"]["locked"]
                    and not s["current"]["flags"])
     raw = _raw_copy(tmp_path)
@@ -226,18 +226,18 @@ def test_watch_lists_questionable_starter(tmp_path):
     o = bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "b", save_idmap=False, now=LOCK_NOW)["leagues"]["hwh"]
     w = next(x for x in o["lineup"]["watch"] if x["player"] == starter["name"])
     assert w["flags"] == ["QUESTIONABLE"] and w["injuryNotes"] == "Knee"
-    assert set(w) == {"player", "slot", "flags", "kickoff", "injuryNotes"}
+    assert set(w) == {"player", "slot", "flags", "kickoff", "injuryNotes", "backup", "lateRisk"}
 
 
 @needs_raw
 def test_week_mismatch_flag(tmp_path):
-    ok = bd.build(SEASON, WEEK, out_dir=tmp_path / "ok", save_idmap=False, now=LOCK_NOW)
+    ok = bd.build(SEASON, WEEK, out_dir=tmp_path / "ok", save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW)
     assert ok["meta"]["espnRosters"]["weekMismatch"] is False
     rosters = read_json(DATA / "espn" / "rosters.json")
     rosters["week"] = WEEK - 1
     f = tmp_path / "rosters.json"
     f.write_text(json.dumps(rosters))
-    bad = bd.build(SEASON, WEEK, out_dir=tmp_path / "bad", save_idmap=False, now=LOCK_NOW, rosters_path=f)
+    bad = bd.build(SEASON, WEEK, out_dir=tmp_path / "bad", save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW, rosters_path=f)
     assert bad["meta"]["espnRosters"]["weekMismatch"] is True
 
 
@@ -277,7 +277,7 @@ def test_dynasty_gets_no_drop_idea_and_redraft_drop_is_a_bench_player(built):
 
 @needs_raw
 def test_locked_free_agents_never_targeted(tmp_path):
-    o = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, now=LOCK_NOW)["leagues"]
+    o = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW)["leagues"]
     for k, lg in o.items():
         for t in lg["waivers"]["targets"]:
             assert t["player"]["team"] not in ("IND", "HOU"), (k, t["player"]["name"])   # played Thursday
@@ -367,3 +367,52 @@ def test_standings_for_sleeper_leagues(built):
         assert [g["week"] for g in st["myGames"]] == [11, 12, 13, 14]
         assert all(0 <= g["winPct"] <= 100 for g in st["myGames"])
         assert 10 < st["sd"] < 60
+
+
+@needs_raw
+def test_recap_field_and_recommended_files(built):
+    """Every league carries recap (or null), and each build stores its recommended lineup for the next week."""
+    out, res = built
+    for k, o in res["leagues"].items():
+        assert "recap" in o, k
+        stored = read_json(out / "rec" / str(SEASON) / str(WEEK) / f"recommended-{k}.json")
+        assert [s["slot"] for s in stored["slots"]] == [s["slot"] for s in o["lineup"]["slots"]], k
+        assert [s["playerId"] for s in stored["slots"]] == [(s["recommended"] or {}).get("id") for s in o["lineup"]["slots"]], k
+        r = o["recap"]
+        if r is None:
+            continue
+        assert set(r) == {"week", "actual", "optimal", "recommended", "left"}, k
+        assert r["week"] == WEEK - 1, k
+        assert r["recommended"] is None, "no recommended file exists for the week before the cache"
+        if k == "fantasizing":   # ESPN has no platform score
+            assert r["actual"] is None, k
+        if r["optimal"] is not None and r["actual"] is not None:
+            assert r["left"] == pytest.approx(r["optimal"] - r["actual"], abs=0.11), k
+
+
+@needs_raw
+def test_faab_rosgain_and_bids_for_sleeper_leagues(built):
+    lg = built[1]["leagues"]
+    assert lg["fantasizing"]["waivers"]["faab"] is None and lg["fantasizing"]["waivers"]["targets"] is not None
+    for k in ("hwh", "chicago-dynasty"):
+        w = lg[k]["waivers"]
+        faab = w["faab"]
+        if faab is None:       # older raw cache without waiver keys: null, never a crash
+            assert all(t["bid"] is None for t in w["targets"])
+            continue
+        assert faab["budget"] == 100 and 0 <= faab["left"] <= 100
+        assert faab["teams"] == sorted(faab["teams"], key=lambda t: -t["left"])
+        lists = [w["targets"]] + [x["targets"] for x in (w["stretch"], w["longTerm"]) if x]
+        for targets in lists:
+            for t in targets:
+                assert t["rosGain"] is not None and t["rosGain"] >= 0
+                assert 0 <= t["bid"] <= faab["left"]
+                if t["rosGain"] > 0:
+                    assert t["bid"] >= 1
+    for k in ("hwh", "chicago-dynasty"):
+        st = lg[k]["standings"]
+        games = st["myGames"]
+        cur = [g for g in games if g["week"] == 11]
+        assert cur and cur[0]["ifWin"] is not None and cur[0]["ifWin"] >= cur[0]["ifLose"]
+        assert all("ifWin" not in g for g in games if g["week"] != 11)
+        assert all("ifWin" not in t for t in st["teams"])

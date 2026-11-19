@@ -5,6 +5,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 SITE = REPO / "site"
+SVG_NAMESPACE = 'xmlns="http://www.w3.org/2000/svg"'
 
 
 def test_noindex_and_robots():
@@ -30,7 +31,9 @@ def test_site_reads_only_data_build_and_loads_nothing_external():
     js = (SITE / "app.js").read_text(encoding="utf-8")
     assert all(p.startswith("data/build/") for p in re.findall(r'"(data/[^"]*)"', js))
     for p in SITE.iterdir():
-        assert not re.search(r"https?://", p.read_text(encoding="utf-8")), f"external URL in {p.name}"
+        # The SVG namespace is an identifier, not a request. icon.svg needs it to render as an image.
+        text = p.read_text(encoding="utf-8").replace(SVG_NAMESPACE, "")
+        assert not re.search(r"https?://", text), f"external URL in {p.name}"
 
 
 def test_data_is_never_inserted_as_html():
@@ -90,3 +93,29 @@ def test_standings_view_is_wired():
     js = (SITE / "app.js").read_text(encoding="utf-8")
     for needle in ("renderStandings", "league.standings", "playoffPct", "byePct", "myGames", '"standings", "Standings"'):
         assert needle in js, needle
+
+
+def test_add_to_home_screen_files():
+    import json
+    m = json.loads((SITE / "manifest.webmanifest").read_text(encoding="utf-8"))
+    assert (m["name"], m["short_name"], m["display"], m["start_url"]) == ("Weekly Board", "Board", "standalone", ".")
+    assert m["icons"] == [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+    css = (SITE / "style.css").read_text(encoding="utf-8")
+    assert "--bg:#f6f7f9" in css and "--bg:#0f1318" in css   # manifest and theme colors come from these tokens
+    assert m["theme_color"] == m["background_color"] == "#f6f7f9"
+    assert (SITE / "icon.svg").read_text(encoding="utf-8").startswith("<svg ")
+    html = (SITE / "index.html").read_text(encoding="utf-8")
+    for needle in ('rel="manifest" href="manifest.webmanifest"', 'rel="icon" type="image/svg+xml" href="icon.svg"',
+                   'rel="apple-touch-icon" href="icon.svg"',
+                   'name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)"',
+                   'name="theme-color" content="#0f1318" media="(prefers-color-scheme: dark)"'):
+        assert needle in html, needle
+
+
+def test_next_refresh_line_starts_hidden_and_the_bar_sticks_on_phones():
+    html = (SITE / "index.html").read_text(encoding="utf-8")
+    assert '<p id="next" class="muted" hidden></p>' in html
+    assert 'id="viewbar"' in html and 'class="bar"' in html
+    css = (SITE / "style.css").read_text(encoding="utf-8")
+    assert "@media (max-width:999px){\n  .bar{position:sticky;top:0" in css
+    assert "nextRefresh" in (SITE / "app.js").read_text(encoding="utf-8")

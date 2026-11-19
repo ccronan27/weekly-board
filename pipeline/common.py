@@ -3,8 +3,9 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -106,3 +107,39 @@ def normalize_name(name: str) -> str:
 def norm_pos(pos: str) -> str:
     """Canonical position labels. Sleeper DEF and ESPN D/ST both become DEF."""
     return "DEF" if pos in ("DEF", "D/ST", "DST") else pos
+
+
+# ------------------------------------------------------------------ refresh schedule
+# Scheduled runs of .github/workflows/refresh.yml. tests/test_refresh_schedule.py parses that file
+# and fails when it and this table disagree. Times are America/Chicago.
+REFRESH_TZ = "America/Chicago"
+REFRESH_RUNS = [   # (day, hour, minute) in 24 hour time
+    ("Tue", 21, 7),    # post-MNF baseline
+    ("Thu", 14, 7),    # TNF injury reports
+    ("Fri", 17, 7),    # final injury designations
+    ("Sun", 9, 7),     # morning news
+    ("Sun", 10, 47),   # inactives for noon games
+    ("Sun", 13, 7),    # inactives for late games
+    ("Sun", 17, 47),   # SNF inactives
+    ("Mon", 17, 47),   # MNF inactives
+]
+_DAY_INDEX = {"Mon": 0, "Tue": 1, "Wed": 2, "Thu": 3, "Fri": 4, "Sat": 5, "Sun": 6}   # datetime.weekday()
+
+
+def next_refresh(generated_at) -> str:
+    """The first scheduled run after generated_at (ISO string or datetime), as ISO UTC with a Z."""
+    start = datetime.fromisoformat(generated_at) if isinstance(generated_at, str) else generated_at
+    if start.tzinfo is None:
+        start = start.replace(tzinfo=timezone.utc)
+    tz = ZoneInfo(REFRESH_TZ)
+    local = start.astimezone(tz)
+    best = None
+    for offset in range(8):   # one full week covers every weekly run
+        day = local.date() + timedelta(days=offset)
+        for name, hour, minute in REFRESH_RUNS:
+            if day.weekday() != _DAY_INDEX[name]:
+                continue
+            cand = datetime(day.year, day.month, day.day, hour, minute, tzinfo=tz)
+            if cand > start and (best is None or cand < best):
+                best = cand
+    return best.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")

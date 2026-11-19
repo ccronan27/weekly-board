@@ -21,70 +21,10 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-18T21:03:20Z",
- "ideas": [
-  {
-   "get": [
-    "13301"
-   ],
-   "give": [
-    "11576"
-   ],
-   "myGain": 0.7,
-   "playoffGain": 0.0,
-   "stretchGain": 0.7,
-   "team": "Team 5",
-   "theirGain": 2.4,
-   "thisWeek": -6.5,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "11637"
-   ],
-   "give": [
-    "11576"
-   ],
-   "myGain": 0.6,
-   "playoffGain": 0.0,
-   "stretchGain": 0.6,
-   "team": "Dak FC",
-   "theirGain": 2.0,
-   "thisWeek": -6.6,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "12540"
-   ],
-   "give": [
-    "11576"
-   ],
-   "myGain": 0.6,
-   "playoffGain": 0.0,
-   "stretchGain": 0.6,
-   "team": "Team 5",
-   "theirGain": 2.5,
-   "thisWeek": -6.6,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "11603"
-   ],
-   "give": [
-    "11576"
-   ],
-   "myGain": 0.6,
-   "playoffGain": 0.0,
-   "stretchGain": 0.6,
-   "team": "The Texans RB Room",
-   "theirGain": 2.8,
-   "thisWeek": -7.4,
-   "youthFlag": false
-  }
- ],
+ "generatedAt": "2026-11-19T20:39:00Z",
+ "ideas": [],
  "league": "chicago-dynasty",
+ "minIdeaGain": 2.0,
  "playoffWeeks": [
   15,
   16,
@@ -294,6 +234,90 @@
   {
    "isMine": false,
    "name": "The Texans RB Room",
+   "needs": [
+    "RB",
+    "TE"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": "God, Country, Caleb 💅",
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": "God, Country, Caleb 💅",
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": "God, Country, Caleb 💅",
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": "God, Country, Caleb 💅",
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": "God, Country, Caleb 💅",
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 25,
@@ -302,10 +326,10 @@
      "games": 7,
      "id": "11566",
      "name": "Jayden Daniels",
-     "points": 21.0,
+     "points": 20.9,
      "pos": "QB",
      "ppg": 19.7,
-     "rate": 21.0,
+     "rate": 20.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "WAS",
@@ -318,14 +342,30 @@
      "games": 9,
      "id": "9228",
      "name": "Bryce Young",
-     "points": 18.3,
+     "points": 18.4,
      "pos": "QB",
      "ppg": 18.1,
-     "rate": 18.3,
+     "rate": 18.4,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "CAR",
      "yearsExp": 3
+    },
+    {
+     "age": 23,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "13337",
+     "name": "Emmett Johnson",
+     "points": 14.2,
+     "pos": "RB",
+     "ppg": 9.7,
+     "rate": 14.2,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "KC",
+     "yearsExp": 0
     },
     {
      "age": 26,
@@ -346,7 +386,9 @@
     {
      "age": 32,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 10,
      "id": "6083",
      "name": "Matt Gay",
@@ -358,22 +400,6 @@
      "slot": "START",
      "team": "LV",
      "yearsExp": 7
-    },
-    {
-     "age": 23,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "13337",
-     "name": "Emmett Johnson",
-     "points": 9.0,
-     "pos": "RB",
-     "ppg": 9.7,
-     "rate": 9.0,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "KC",
-     "yearsExp": 0
     },
     {
      "age": 30,
@@ -448,7 +474,9 @@
     {
      "age": 23,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 6,
      "id": "13296",
      "name": "Caleb Douglas",
@@ -482,23 +510,9 @@
     {
      "age": 25,
      "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "11610",
-     "name": "Malik Washington",
-     "points": 6.6,
-     "pos": "WR",
-     "ppg": 7.9,
-     "rate": 6.6,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "MIA",
-     "yearsExp": 2
-    },
-    {
-     "age": 25,
-     "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 7,
      "id": "9508",
      "name": "Tyjae Spears",
@@ -515,13 +529,29 @@
      "age": 25,
      "eligible": true,
      "flags": [],
+     "games": 9,
+     "id": "11610",
+     "name": "Malik Washington",
+     "points": 6.5,
+     "pos": "WR",
+     "ppg": 7.9,
+     "rate": 6.5,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "MIA",
+     "yearsExp": 2
+    },
+    {
+     "age": 25,
+     "eligible": true,
+     "flags": [],
      "games": 7,
      "id": "11647",
      "name": "Kimani Vidal",
-     "points": 6.4,
+     "points": 6.2,
      "pos": "RB",
      "ppg": 5.9,
-     "rate": 6.4,
+     "rate": 6.2,
      "rateFrom": "projection",
      "slot": "START",
      "team": "LAC",
@@ -674,6 +704,72 @@
   {
    "isMine": true,
    "name": "Zay My Name",
+   "needs": [
+    "RB",
+    "TE"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": "Ladd’s McConcubines",
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": "Brandon Aubrey Supremacy",
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 26,
@@ -742,22 +838,6 @@
      "yearsExp": 2
     },
     {
-     "age": 22,
-     "eligible": true,
-     "flags": [],
-     "games": 8,
-     "id": "12495",
-     "name": "Ollie Gordon II",
-     "points": 11.7,
-     "pos": "RB",
-     "ppg": 11.2,
-     "rate": 11.7,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "MIA",
-     "yearsExp": 1
-    },
-    {
      "age": 26,
      "eligible": true,
      "flags": [],
@@ -774,6 +854,22 @@
      "yearsExp": 3
     },
     {
+     "age": 22,
+     "eligible": true,
+     "flags": [],
+     "games": 8,
+     "id": "12495",
+     "name": "Ollie Gordon II",
+     "points": 11.6,
+     "pos": "RB",
+     "ppg": 11.2,
+     "rate": 11.6,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "MIA",
+     "yearsExp": 1
+    },
+    {
      "age": 33,
      "eligible": true,
      "flags": [
@@ -782,10 +878,10 @@
      "games": 6,
      "id": "2216",
      "name": "Mike Evans",
-     "points": 10.6,
+     "points": 11.4,
      "pos": "WR",
      "ppg": 12.6,
-     "rate": 10.6,
+     "rate": 11.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -816,10 +912,10 @@
      "games": 8,
      "id": "4993",
      "name": "Mike Gesicki",
-     "points": 8.3,
+     "points": 8.2,
      "pos": "TE",
      "ppg": 10.3,
-     "rate": 8.3,
+     "rate": 8.2,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -844,6 +940,22 @@
      "yearsExp": 9
     },
     {
+     "age": 25,
+     "eligible": true,
+     "flags": [],
+     "games": 10,
+     "id": "9500",
+     "name": "Josh Downs",
+     "points": 7.5,
+     "pos": "WR",
+     "ppg": 7.2,
+     "rate": 7.5,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "KC",
+     "yearsExp": 3
+    },
+    {
      "age": 22,
      "eligible": true,
      "flags": [],
@@ -858,22 +970,6 @@
      "slot": "START",
      "team": "NYJ",
      "yearsExp": 2
-    },
-    {
-     "age": 25,
-     "eligible": true,
-     "flags": [],
-     "games": 10,
-     "id": "9500",
-     "name": "Josh Downs",
-     "points": 7.4,
-     "pos": "WR",
-     "ppg": 7.2,
-     "rate": 7.4,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "KC",
-     "yearsExp": 3
     },
     {
      "age": 23,
@@ -1057,6 +1153,18 @@
   {
    "isMine": false,
    "name": "God, Country, Caleb 💅",
+   "needs": [
+    "TE",
+    "RB"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 24,
@@ -1077,24 +1185,6 @@
      "yearsExp": 3
     },
     {
-     "age": 26,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 8,
-     "id": "8151",
-     "name": "Kenneth Walker III",
-     "points": 20.6,
-     "pos": "RB",
-     "ppg": 23.1,
-     "rate": 20.6,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "KC",
-     "yearsExp": 4
-    },
-    {
      "age": 25,
      "eligible": true,
      "flags": [],
@@ -1109,6 +1199,24 @@
      "slot": "START",
      "team": "CHI",
      "yearsExp": 2
+    },
+    {
+     "age": 26,
+     "eligible": true,
+     "flags": [
+      "QUESTIONABLE"
+     ],
+     "games": 8,
+     "id": "8151",
+     "name": "Kenneth Walker III",
+     "points": 16.8,
+     "pos": "RB",
+     "ppg": 23.1,
+     "rate": 16.8,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "KC",
+     "yearsExp": 4
     },
     {
      "age": 27,
@@ -1151,10 +1259,10 @@
      "games": 9,
      "id": "6801",
      "name": "Tee Higgins",
-     "points": 15.0,
+     "points": 14.9,
      "pos": "WR",
      "ppg": 16.1,
-     "rate": 15.0,
+     "rate": 14.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -1167,10 +1275,10 @@
      "games": 5,
      "id": "11565",
      "name": "J.J. McCarthy",
-     "points": 14.8,
+     "points": 14.7,
      "pos": "QB",
      "ppg": 10.8,
-     "rate": 14.8,
+     "rate": 14.7,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "NYG",
@@ -1233,12 +1341,12 @@
      "games": 9,
      "id": "6650",
      "name": "Chase McLaughlin",
-     "points": 8.8,
+     "points": 8.9,
      "pos": "K",
      "ppg": 11.4,
      "rate": 11.4,
      "rateFrom": "season",
-     "slot": "BN",
+     "slot": "START",
      "team": "TB",
      "yearsExp": 7
     },
@@ -1286,14 +1394,16 @@
      "ppg": 8.9,
      "rate": 8.6,
      "rateFrom": "projection",
-     "slot": "BN",
+     "slot": "START",
      "team": "JAX",
      "yearsExp": 3
     },
     {
      "age": 30,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 9,
      "id": "5947",
      "name": "Jakobi Meyers",
@@ -1313,10 +1423,10 @@
      "games": 9,
      "id": "7567",
      "name": "Kenny Gainwell",
-     "points": 6.5,
+     "points": 6.7,
      "pos": "RB",
      "ppg": 6.2,
-     "rate": 6.5,
+     "rate": 6.7,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "TB",
@@ -1411,6 +1521,60 @@
   {
    "isMine": false,
    "name": "Dak FC",
+   "needs": [
+    "TE",
+    "RB"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 33,
@@ -1435,10 +1599,10 @@
      "games": 9,
      "id": "7594",
      "name": "Chuba Hubbard",
-     "points": 16.4,
+     "points": 16.5,
      "pos": "RB",
      "ppg": 18.4,
-     "rate": 16.4,
+     "rate": 16.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CAR",
@@ -1451,10 +1615,10 @@
      "games": 9,
      "id": "9224",
      "name": "Chase Brown",
-     "points": 13.2,
+     "points": 13.0,
      "pos": "RB",
      "ppg": 11.8,
-     "rate": 13.2,
+     "rate": 13.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -1498,14 +1662,16 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 9,
      "id": "10236",
      "name": "Dalton Kincaid",
-     "points": 9.2,
+     "points": 9.1,
      "pos": "TE",
      "ppg": 10.3,
-     "rate": 9.2,
+     "rate": 9.1,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -1550,10 +1716,10 @@
      "games": 9,
      "id": "11637",
      "name": "Keon Coleman",
-     "points": 6.8,
+     "points": 6.7,
      "pos": "WR",
      "ppg": 6.8,
-     "rate": 6.8,
+     "rate": 6.7,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -1594,6 +1760,22 @@
      "yearsExp": 0
     },
     {
+     "age": 23,
+     "eligible": true,
+     "flags": [],
+     "games": 8,
+     "id": "11624",
+     "name": "Xavier Worthy",
+     "points": 6.0,
+     "pos": "WR",
+     "ppg": 6.3,
+     "rate": 6.0,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "KC",
+     "yearsExp": 2
+    },
+    {
      "age": 22,
      "eligible": false,
      "flags": [
@@ -1610,22 +1792,6 @@
      "slot": "START",
      "team": "NE",
      "yearsExp": 0
-    },
-    {
-     "age": 23,
-     "eligible": true,
-     "flags": [],
-     "games": 8,
-     "id": "11624",
-     "name": "Xavier Worthy",
-     "points": 5.7,
-     "pos": "WR",
-     "ppg": 6.3,
-     "rate": 5.7,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "KC",
-     "yearsExp": 2
     },
     {
      "age": 22,
@@ -1666,10 +1832,10 @@
      "games": 4,
      "id": "11597",
      "name": "Theo Johnson",
-     "points": 2.9,
+     "points": 2.8,
      "pos": "TE",
      "ppg": 4.3,
-     "rate": 2.9,
+     "rate": 2.8,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "NYG",
@@ -1714,10 +1880,10 @@
      "games": 1,
      "id": "13307",
      "name": "Marlin Klein",
-     "points": 0.9,
+     "points": 0.8,
      "pos": "TE",
      "ppg": 2.6,
-     "rate": 0.9,
+     "rate": 0.8,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "HOU",
@@ -1779,7 +1945,67 @@
   },
   {
    "isMine": false,
-   "name": "Team 5",
+   "name": "Team 5 (no name set)",
+   "needs": [
+    "RB",
+    "QB"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": "Brandon Aubrey Supremacy",
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 26,
@@ -1788,10 +2014,10 @@
      "games": 9,
      "id": "7564",
      "name": "Ja'Marr Chase",
-     "points": 19.9,
+     "points": 19.8,
      "pos": "WR",
      "ppg": 18.1,
-     "rate": 19.9,
+     "rate": 19.8,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -1812,7 +2038,7 @@
      "ppg": 19.3,
      "rate": 19.3,
      "rateFrom": "season",
-     "slot": "START",
+     "slot": "BN",
      "team": "NE",
      "yearsExp": 2
     },
@@ -1828,14 +2054,16 @@
      "ppg": 15.5,
      "rate": 16.5,
      "rateFrom": "projection",
-     "slot": "BN",
+     "slot": "START",
      "team": "PIT",
      "yearsExp": 21
     },
     {
      "age": 23,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 9,
      "id": "12490",
      "name": "Bhayshul Tuten",
@@ -1871,10 +2099,10 @@
      "games": 7,
      "id": "7569",
      "name": "Nico Collins",
-     "points": 13.7,
+     "points": 13.6,
      "pos": "WR",
      "ppg": 13.9,
-     "rate": 13.7,
+     "rate": 13.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "HOU",
@@ -1903,10 +2131,10 @@
      "games": 1,
      "id": "12494",
      "name": "Kyle McCord",
-     "points": 10.8,
+     "points": 10.7,
      "pos": "QB",
      "ppg": 12.8,
-     "rate": 10.8,
+     "rate": 10.7,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "MIA",
@@ -2017,10 +2245,10 @@
      "games": 6,
      "id": "8122",
      "name": "Zonovan Knight",
-     "points": 6.4,
+     "points": 6.2,
      "pos": "RB",
      "ppg": 4.0,
-     "rate": 6.4,
+     "rate": 6.2,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "ARI",
@@ -2029,7 +2257,9 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 9,
      "id": "10219",
      "name": "Chris Rodriguez Jr.",
@@ -2049,10 +2279,10 @@
      "games": 9,
      "id": "13424",
      "name": "Seth McGowan",
-     "points": 5.3,
+     "points": 5.2,
      "pos": "RB",
      "ppg": 4.9,
-     "rate": 5.3,
+     "rate": 5.2,
      "rateFrom": "projection",
      "slot": "START",
      "team": "IND",
@@ -2079,7 +2309,9 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 7,
      "id": "11575",
      "name": "Ray Davis",
@@ -2151,6 +2383,65 @@
   {
    "isMine": false,
    "name": "When in Rome",
+   "needs": [
+    "TE"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": "God, Country, Caleb 💅",
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 29,
@@ -2159,10 +2450,10 @@
      "games": 9,
      "id": "6770",
      "name": "Joe Burrow",
-     "points": 25.2,
+     "points": 25.0,
      "pos": "QB",
      "ppg": 26.8,
-     "rate": 25.2,
+     "rate": 25.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -2175,10 +2466,10 @@
      "games": 10,
      "id": "1166",
      "name": "Kirk Cousins",
-     "points": 16.4,
+     "points": 16.5,
      "pos": "QB",
      "ppg": 19.7,
-     "rate": 16.4,
+     "rate": 16.5,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "MIN",
@@ -2191,10 +2482,10 @@
      "games": 8,
      "id": "6794",
      "name": "Justin Jefferson",
-     "points": 15.8,
+     "points": 15.9,
      "pos": "WR",
      "ppg": 11.5,
-     "rate": 15.8,
+     "rate": 15.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "MIN",
@@ -2217,6 +2508,22 @@
      "yearsExp": 1
     },
     {
+     "age": 23,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "12507",
+     "name": "Omarion Hampton",
+     "points": 11.1,
+     "pos": "RB",
+     "ppg": 8.9,
+     "rate": 11.1,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "LAC",
+     "yearsExp": 1
+    },
+    {
      "age": 25,
      "eligible": false,
      "flags": [
@@ -2233,22 +2540,6 @@
      "slot": "BN",
      "team": "LAR",
      "yearsExp": 2
-    },
-    {
-     "age": 23,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "12507",
-     "name": "Omarion Hampton",
-     "points": 10.7,
-     "pos": "RB",
-     "ppg": 8.9,
-     "rate": 10.7,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "LAC",
-     "yearsExp": 1
     },
     {
      "age": 23,
@@ -2305,7 +2596,9 @@
     {
      "age": 22,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 2,
      "id": "13281",
      "name": "Jordyn Tyson",
@@ -2530,6 +2823,60 @@
   {
    "isMine": false,
    "name": "All Gas No Brakes",
+   "needs": [
+    "WR",
+    "QB"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 27,
@@ -2554,10 +2901,10 @@
      "games": 9,
      "id": "9221",
      "name": "Jahmyr Gibbs",
-     "points": 20.4,
+     "points": 20.5,
      "pos": "RB",
      "ppg": 25.9,
-     "rate": 20.4,
+     "rate": 20.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DET",
@@ -2570,10 +2917,10 @@
      "games": 9,
      "id": "4034",
      "name": "Christian McCaffrey",
-     "points": 17.8,
+     "points": 17.9,
      "pos": "RB",
      "ppg": 21.7,
-     "rate": 17.8,
+     "rate": 17.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -2620,7 +2967,7 @@
      "games": 8,
      "id": "11792",
      "name": "Will Reichard",
-     "points": 9.6,
+     "points": 9.7,
      "pos": "K",
      "ppg": 13.6,
      "rate": 13.6,
@@ -2670,10 +3017,10 @@
      "games": 6,
      "id": "10229",
      "name": "Rashee Rice",
-     "points": 11.5,
+     "points": 11.6,
      "pos": "WR",
      "ppg": 10.7,
-     "rate": 11.5,
+     "rate": 11.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "KC",
@@ -2732,9 +3079,7 @@
     {
      "age": 24,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 4,
      "id": "12534",
      "name": "Kyle Monangai",
@@ -2764,22 +3109,6 @@
      "yearsExp": 2
     },
     {
-     "age": 26,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "8134",
-     "name": "Khalil Shakir",
-     "points": 7.9,
-     "pos": "WR",
-     "ppg": 7.5,
-     "rate": 7.9,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "BUF",
-     "yearsExp": 4
-    },
-    {
      "age": 22,
      "eligible": false,
      "flags": [
@@ -2796,6 +3125,22 @@
      "slot": "BN",
      "team": "CLE",
      "yearsExp": 1
+    },
+    {
+     "age": 26,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "8134",
+     "name": "Khalil Shakir",
+     "points": 7.8,
+     "pos": "WR",
+     "ppg": 7.5,
+     "rate": 7.8,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "BUF",
+     "yearsExp": 4
     },
     {
      "age": 24,
@@ -2907,6 +3252,59 @@
   {
    "isMine": false,
    "name": "Jared Goff Glazer",
+   "needs": [
+    "RB"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 30,
@@ -2915,10 +3313,10 @@
      "games": 9,
      "id": "4984",
      "name": "Josh Allen",
-     "points": 24.7,
+     "points": 24.4,
      "pos": "QB",
      "ppg": 25.5,
-     "rate": 24.7,
+     "rate": 24.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -2931,10 +3329,10 @@
      "games": 9,
      "id": "3163",
      "name": "Jared Goff",
-     "points": 16.2,
+     "points": 16.3,
      "pos": "QB",
      "ppg": 19.3,
-     "rate": 16.2,
+     "rate": 16.3,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "DET",
@@ -2979,10 +3377,10 @@
      "games": 9,
      "id": "10859",
      "name": "Sam LaPorta",
-     "points": 10.7,
+     "points": 10.8,
      "pos": "TE",
      "ppg": 10.6,
-     "rate": 10.7,
+     "rate": 10.8,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DET",
@@ -3013,10 +3411,10 @@
      "games": 9,
      "id": "8148",
      "name": "Jameson Williams",
-     "points": 9.8,
+     "points": 9.9,
      "pos": "WR",
      "ppg": 11.0,
-     "rate": 9.8,
+     "rate": 9.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DET",
@@ -3045,10 +3443,10 @@
      "games": 7,
      "id": "5022",
      "name": "Dallas Goedert",
-     "points": 8.9,
+     "points": 9.0,
      "pos": "TE",
      "ppg": 10.6,
-     "rate": 8.9,
+     "rate": 9.0,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "PHI",
@@ -3061,14 +3459,30 @@
      "games": 7,
      "id": "12514",
      "name": "Emeka Egbuka",
-     "points": 8.0,
+     "points": 8.1,
      "pos": "WR",
      "ppg": 8.9,
-     "rate": 8.0,
+     "rate": 8.1,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "TB",
      "yearsExp": 1
+    },
+    {
+     "age": 34,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "1479",
+     "name": "Keenan Allen",
+     "points": 6.0,
+     "pos": "WR",
+     "ppg": 7.7,
+     "rate": 6.0,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "SF",
+     "yearsExp": 13
     },
     {
      "age": 25,
@@ -3135,22 +3549,6 @@
      "slot": "BN",
      "team": "SF",
      "yearsExp": 0
-    },
-    {
-     "age": 34,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "1479",
-     "name": "Keenan Allen",
-     "points": 5.1,
-     "pos": "WR",
-     "ppg": 7.7,
-     "rate": 5.1,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "SF",
-     "yearsExp": 13
     },
     {
      "age": 21,
@@ -3276,6 +3674,48 @@
   {
    "isMine": false,
    "name": "Brandon Aubrey Supremacy",
+   "needs": [
+    "QB",
+    "WR"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 26,
@@ -3316,10 +3756,10 @@
      "games": 9,
      "id": "8183",
      "name": "Brock Purdy",
-     "points": 18.1,
+     "points": 18.2,
      "pos": "QB",
      "ppg": 23.6,
-     "rate": 18.1,
+     "rate": 18.2,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -3348,10 +3788,10 @@
      "games": 9,
      "id": "7547",
      "name": "Amon-Ra St. Brown",
-     "points": 14.9,
+     "points": 15.0,
      "pos": "WR",
      "ppg": 16.9,
-     "rate": 14.9,
+     "rate": 15.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DET",
@@ -3380,10 +3820,10 @@
      "games": 10,
      "id": "3198",
      "name": "Derrick Henry",
-     "points": 14.2,
+     "points": 14.1,
      "pos": "RB",
      "ppg": 15.3,
-     "rate": 14.2,
+     "rate": 14.1,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BAL",
@@ -3396,10 +3836,10 @@
      "games": 9,
      "id": "1466",
      "name": "Travis Kelce",
-     "points": 11.9,
+     "points": 12.1,
      "pos": "TE",
      "ppg": 11.6,
-     "rate": 11.9,
+     "rate": 12.1,
      "rateFrom": "projection",
      "slot": "START",
      "team": "KC",
@@ -3412,10 +3852,10 @@
      "games": 7,
      "id": "4866",
      "name": "Saquon Barkley",
-     "points": 11.4,
+     "points": 11.3,
      "pos": "RB",
      "ppg": 7.9,
-     "rate": 11.4,
+     "rate": 11.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -3467,7 +3907,7 @@
      "ppg": 4.9,
      "rate": 8.3,
      "rateFrom": "projection",
-     "slot": "BN",
+     "slot": "START",
      "team": "TEN",
      "yearsExp": 1
     },
@@ -3515,7 +3955,7 @@
      "ppg": 9.7,
      "rate": 7.5,
      "rateFrom": "projection",
-     "slot": "START",
+     "slot": "BN",
      "team": "MIN",
      "yearsExp": 9
     },
@@ -3526,10 +3966,10 @@
      "games": 10,
      "id": "8132",
      "name": "Tyler Allgeier",
-     "points": 6.5,
+     "points": 6.4,
      "pos": "RB",
      "ppg": 8.2,
-     "rate": 6.5,
+     "rate": 6.4,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "ARI",
@@ -3610,10 +4050,10 @@
      "games": 4,
      "id": "13413",
      "name": "Cyrus Allen",
-     "points": 1.8,
+     "points": 2.6,
      "pos": "WR",
      "ppg": 5.1,
-     "rate": 1.8,
+     "rate": 2.6,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "KC",
@@ -3642,6 +4082,60 @@
   {
    "isMine": false,
    "name": "Tinman0506",
+   "needs": [
+    "QB",
+    "WR"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 23,
@@ -3715,16 +4209,50 @@
      "yearsExp": 8
     },
     {
+     "age": 31,
+     "eligible": true,
+     "flags": [
+      "QUESTIONABLE"
+     ],
+     "games": 6,
+     "id": "4892",
+     "name": "Baker Mayfield",
+     "points": 14.2,
+     "pos": "QB",
+     "ppg": 9.1,
+     "rate": 14.2,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "TB",
+     "yearsExp": 8
+    },
+    {
+     "age": 33,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "4217",
+     "name": "George Kittle",
+     "points": 13.4,
+     "pos": "TE",
+     "ppg": 14.3,
+     "rate": 13.4,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "SF",
+     "yearsExp": 9
+    },
+    {
      "age": 26,
      "eligible": true,
      "flags": [],
      "games": 10,
      "id": "8130",
      "name": "Trey McBride",
-     "points": 13.2,
+     "points": 13.4,
      "pos": "TE",
      "ppg": 17.1,
-     "rate": 13.2,
+     "rate": 13.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "ARI",
@@ -3748,22 +4276,6 @@
      "slot": "BN",
      "team": "GB",
      "yearsExp": 7
-    },
-    {
-     "age": 33,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "4217",
-     "name": "George Kittle",
-     "points": 12.7,
-     "pos": "TE",
-     "ppg": 14.3,
-     "rate": 12.7,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "SF",
-     "yearsExp": 9
     },
     {
      "age": 23,
@@ -3833,24 +4345,6 @@
      "yearsExp": 3
     },
     {
-     "age": 31,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 6,
-     "id": "4892",
-     "name": "Baker Mayfield",
-     "points": null,
-     "pos": "QB",
-     "ppg": 9.1,
-     "rate": 9.1,
-     "rateFrom": "season",
-     "slot": "BN",
-     "team": "TB",
-     "yearsExp": 8
-    },
-    {
      "age": 28,
      "eligible": true,
      "flags": [],
@@ -3873,10 +4367,10 @@
      "games": 6,
      "id": "5872",
      "name": "Deebo Samuel Sr.",
-     "points": 8.0,
+     "points": 8.3,
      "pos": "WR",
      "ppg": 13.1,
-     "rate": 8.0,
+     "rate": 8.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -3899,22 +4393,6 @@
      "yearsExp": 8
     },
     {
-     "age": 31,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "4147",
-     "name": "Samaje Perine",
-     "points": 6.9,
-     "pos": "RB",
-     "ppg": 5.9,
-     "rate": 6.9,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "CIN",
-     "yearsExp": 9
-    },
-    {
      "age": 25,
      "eligible": true,
      "flags": [],
@@ -3929,6 +4407,22 @@
      "slot": "BN",
      "team": "LV",
      "yearsExp": 3
+    },
+    {
+     "age": 31,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "4147",
+     "name": "Samaje Perine",
+     "points": 6.8,
+     "pos": "RB",
+     "ppg": 5.9,
+     "rate": 6.8,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "CIN",
+     "yearsExp": 9
     },
     {
      "age": 31,
@@ -4021,6 +4515,54 @@
   {
    "isMine": false,
    "name": "Ladd’s McConcubines",
+   "needs": [
+    "TE",
+    "WR"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 25,
@@ -4045,10 +4587,10 @@
      "games": 9,
      "id": "8138",
      "name": "James Cook III",
-     "points": 19.5,
+     "points": 19.3,
      "pos": "RB",
      "ppg": 18.3,
-     "rate": 19.5,
+     "rate": 19.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -4111,10 +4653,10 @@
      "games": 7,
      "id": "4983",
      "name": "DJ Moore",
-     "points": 11.3,
+     "points": 11.1,
      "pos": "WR",
      "ppg": 9.6,
-     "rate": 11.3,
+     "rate": 11.1,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -4393,7 +4935,66 @@
   },
   {
    "isMine": false,
-   "name": "Team 12",
+   "name": "Team 12 (no name set)",
+   "needs": [
+    "WR"
+   ],
+   "picks": [
+    {
+     "from": null,
+     "label": "2027 1st",
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 2nd",
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 3rd",
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2027 4th",
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "from": null,
+     "label": "2028 1st",
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 2nd",
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "from": "God, Country, Caleb 💅",
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 3rd",
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "from": null,
+     "label": "2028 4th",
+     "round": 4,
+     "season": "2028"
+    }
+   ],
    "players": [
     {
      "age": 31,
@@ -4402,10 +5003,10 @@
      "games": 9,
      "id": "4046",
      "name": "Patrick Mahomes",
-     "points": 22.3,
+     "points": 22.6,
      "pos": "QB",
      "ppg": 20.3,
-     "rate": 22.3,
+     "rate": 22.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "KC",
@@ -4566,22 +5167,6 @@
      "yearsExp": 10
     },
     {
-     "age": 28,
-     "eligible": true,
-     "flags": [],
-     "games": 6,
-     "id": "7021",
-     "name": "Rico Dowdle",
-     "points": 7.9,
-     "pos": "RB",
-     "ppg": 7.1,
-     "rate": 7.9,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "PIT",
-     "yearsExp": 6
-    },
-    {
      "age": 27,
      "eligible": false,
      "flags": [
@@ -4598,6 +5183,22 @@
      "slot": "BN",
      "team": "DAL",
      "yearsExp": 4
+    },
+    {
+     "age": 28,
+     "eligible": true,
+     "flags": [],
+     "games": 6,
+     "id": "7021",
+     "name": "Rico Dowdle",
+     "points": 7.8,
+     "pos": "RB",
+     "ppg": 7.1,
+     "rate": 7.8,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "PIT",
+     "yearsExp": 6
     },
     {
      "age": 25,
@@ -4636,9 +5237,7 @@
     {
      "age": 29,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 4,
      "id": "7049",
      "name": "Jauan Jennings",
@@ -4794,35 +5393,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-18T21:03:19Z",
+   "lastUpdated": "2026-11-19T20:38:59Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-18T21:03:20Z",
+   "lastUpdated": "2026-11-19T20:38:59Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-18T21:03:18Z",
+   "lastUpdated": "2026-11-19T20:38:58Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-18T21:03:18Z",
+   "lastUpdated": "2026-11-19T20:38:58Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-18T21:03:18Z",
+   "lastUpdated": "2026-11-19T20:38:58Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

@@ -57,6 +57,8 @@ def main() -> None:
     rosters = [dict(r, owner_id=ids[r["owner_id"]], co_owners=None, metadata=None) for r in rosters if r["owner_id"] in ids]
     dump("sleeper_rosters.json", rosters)
     dump("sleeper_users.json", users)
+    dyn = str(next(l["id"] for l in cfg["leagues"] if l.get("dynasty")))
+    dump("sleeper_traded_picks.json", sleeper.fetch_traded_picks(dyn))   # roster ids only, no owners
 
     players = sleeper.fetch_players()
     keep, seen = {}, {}

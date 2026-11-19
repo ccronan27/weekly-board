@@ -20,7 +20,8 @@ def test_league_normalizes_and_hides_owners(load):
     assert out["scoring"]["rec"] == 1.0 and "QB" in out["rosterPositions"]
     mine = [t for t in out["teams"] if t["isMine"]]
     assert len(mine) == 1 and mine[0]["teamName"]
-    assert any(t["teamName"].startswith("Team ") for t in out["teams"]), "null team_name should fall back to Team N"
+    assert any(t["teamName"].startswith("Team ") and t["teamName"].endswith("(no name set)") for t in out["teams"]), \
+        "null team_name should fall back to 'Team N (no name set)'"
     blob = repr(out)
     assert "display_name" not in blob and "owner_id" not in blob and "user1" not in blob
 
@@ -100,8 +101,50 @@ def test_stats(load):
         sleeper.validate_rows(rows, "stats")
 
 
+def test_league_keeps_faab_settings(load):
+    out = sleeper.normalize_league(load("sleeper_league.json"), load("sleeper_rosters.json"), load("sleeper_users.json"), "u1")
+    assert out["waiverType"] == 2 and out["waiverBudget"] == 100
+    assert all(isinstance(t["faabUsed"], int) for t in out["teams"])
+
+
+def test_faab_keys_are_optional_but_checked_when_present(load):
+    d = load("sleeper_league.json")
+    del d["settings"]["waiver_type"]
+    del d["settings"]["waiver_budget"]
+    sleeper.validate_league(d)                                # an older or non FAAB league still passes
+    d = load("sleeper_league.json")
+    d["settings"]["waiver_budget"] = "100"
+    with pytest.raises(ContractError, match="waiver_budget"):
+        sleeper.validate_league(d)
+    r = load("sleeper_rosters.json")
+    r[0]["settings"]["waiver_budget_used"] = "x"
+    with pytest.raises(ContractError, match="waiver_budget_used"):
+        sleeper.validate_rosters(r)
+    r = load("sleeper_rosters.json")
+    del r[0]["settings"]["waiver_budget_used"]
+    sleeper.validate_rosters(r)
+
+
 def test_league_keeps_playoff_settings(load):
     raw = load("sleeper_league.json")
     out = sleeper.normalize_league(raw, load("sleeper_rosters.json"), load("sleeper_users.json"), "u1")
     st = raw["settings"]
     assert out["playoffWeekStart"] == st.get("playoff_week_start") and out["playoffTeams"] == st.get("playoff_teams")
+
+
+def test_traded_picks(load):
+    rows = load("sleeper_traded_picks.json")
+    sleeper.validate_traded_picks(rows)
+    out = sleeper.normalize_traded_picks(rows)
+    assert len(out) == len(rows) and {p["season"] for p in out} >= {"2026", "2027"}
+    assert all(isinstance(p["rosterId"], int) and isinstance(p["ownerId"], int) for p in out)
+    rows[0].pop("owner_id")
+    with pytest.raises(ContractError, match="owner_id"):
+        sleeper.validate_traded_picks(rows)
+
+
+def test_traded_picks_season_shape_change_fails(load):
+    rows = load("sleeper_traded_picks.json")
+    rows[0]["season"] = "2027 draft"
+    with pytest.raises(ContractError, match="season"):
+        sleeper.validate_traded_picks(rows)

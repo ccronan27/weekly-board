@@ -42,7 +42,8 @@ Every run that reads a good file caches it to `data/raw/{season}/{week}/espn_ros
 
 The build stamps `generatedAt` and `espnRosters.syncedAt`, but a page can be open for days after its build, and scheduled runs can stop (dropped crons, the 60 day auto-disable). So the site checks the clock again on every render (`site/app.js`: `espnSync`, `rowState`, `freshnessMessages`):
 
-- Board older than 72 hours (`BOARD_STALE_HOURS`): warns that the refresh may have stopped. The longest planned gap is Sun 1:07pm to Tue 9:07pm, 56 hours.
+- Board older than 72 hours (`BOARD_STALE_HOURS`): warns that the refresh may have stopped. The longest planned gap is Fri 5:07pm to Sun 9:07am, 40 hours.
+- When the tab becomes visible again, at most once a minute, the site refetches `meta.json` and reloads when `generatedAt` changed (`refreshDue`, `shouldReload`).
 - ESPN sync older than `meta.espnRosters.staleAfterDays` (4): the ESPN row and warning go stale even when the build said fresh.
 
 ## 4. Season phase
@@ -63,8 +64,13 @@ What is on screen is `route = { league, view }` inside `main()` in `site/app.js`
 
 - Views come from one registry, `VIEWS`. Each entry says whether a league's build carries it: Lineup always, Waivers when `waivers` is set, Trade when `trade` is set, Standings whenever the key exists (null shows an explanation, used by the ESPN league until the sync file carries standings).
 - `resolveView()` sends any view a league does not carry to Lineup. `viewSwitch()` shows exactly the registry's views, and only when there is more than one.
-- The URL hash mirrors the route: `#league` for Lineup, `#league/view` otherwise (`hashFor`, `routeFromHash`). An unknown league opens the first one. An unknown view opens Lineup. `show()` writes the hash with `replaceState`, so the back button leaves the page instead of stepping through views.
+- The URL hash mirrors the route: `#league` for Lineup, `#league/view` otherwise (`hashFor`, `routeFromHash`). `#all` is the All route. An unknown league opens the first one. An unknown view opens Lineup. `show()` writes the hash with `replaceState`, so the back button leaves the page instead of stepping through views.
 - Switching league keeps the current view when the new league has it.
+
+- The All tab is the first tab. Its route is `{ league: -1, view: "all" }` (`ALL` in the code), hash `#all`. It has no views, so the view switch and the app link are hidden on it. `hashFor(null)` gives `#all`. A bare hash still opens the first league, not All.
+- Leaving All for a league opens it on the view it last showed (`leagueView` in `main()`), or Lineup if none.
+- The arrow, Home and End keys move across All and the leagues (`nextTabIndex` counts every tab). All renders with `renderAll`, a to-do list, the players in more than one lineup, and the data freshness lines. Its helpers are `leagueTodos`, `exposure`, `leagueFreshness`.
+- League tabs show `tabStatus()` in place of the gain: `Out` with a red dot when a starter is out, the gain when moves are pending, `n Q` for questionable starters, and a check mark `Set` otherwise. The All tab shows `allStatus()`, the count of to-dos or Set.
 
 ## 6. Trade file loading
 
@@ -97,6 +103,8 @@ Decided per player in `player_record()` in `pipeline/build.py`, read by the opti
 - `locked`: the player's game has kicked off. A locked starter keeps the slot (`fixed` in the optimizer). A locked bench player cannot move in.
 
 Starters with an out flag go to `lineup.alerts`, starters who are questionable or doubtful go to `lineup.watch`.
+
+Each alert and watch entry carries `backup`, the best eligible, unlocked, non-starting player for that slot, or null when there is none (`backup_for` in `pipeline/lineup.py`). Watch entries also carry `lateRisk`, true only when backups exist and the flagged player kicks off after every one of them (`late_risk`). No backup at all is shown as its own message, never as a late risk.
 
 ## 9. Lineup changes
 

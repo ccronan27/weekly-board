@@ -2812,7 +2812,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Tyjae Spears",
    "opponent": "JAX",
    "playerId": "9508",
@@ -2884,7 +2884,7 @@
     "pts_half_ppr": 5.0,
     "pts_ppr": 5.0,
     "pts_std": 5.0,
-    "qb_hit": 6.0,
+    "qb_hit": 7.0,
     "sack": 3.0,
     "sack_yd": 25.0,
     "td": 5.0,
@@ -2896,7 +2896,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "CIN",
-   "updatedAt": 1794841720355,
+   "updatedAt": 1795046944385,
    "week": 10
   },
   {
@@ -3508,7 +3508,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Caleb Douglas",
    "opponent": "IND",
    "playerId": "13296",
@@ -4948,7 +4948,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Ray Davis",
    "opponent": "NYJ",
    "playerId": "11575",
@@ -5190,7 +5190,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Bhayshul Tuten",
    "opponent": "TEN",
    "playerId": "12490",
@@ -5304,7 +5304,7 @@
     "h1_pass_yd": 99.0,
     "h1_rush_yd": 13.0,
     "off_snp": 57.0,
-    "pass_air_yd": 104.0,
+    "pass_air_yd": 99.0,
     "pass_att": 39.0,
     "pass_cmp": 28.0,
     "pass_cmp_40p": 1.0,
@@ -5339,7 +5339,7 @@
     "tm_st_snp": 30.0
    },
    "team": "TEN",
-   "updatedAt": 1794870538997,
+   "updatedAt": 1795046959599,
    "week": 10
   },
   {
@@ -5798,7 +5798,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Jakobi Meyers",
    "opponent": "TEN",
    "playerId": "5947",
@@ -6512,15 +6512,15 @@
     "sack": 8.0,
     "sack_yd": 59.0,
     "td": 3.0,
-    "tkl": 46.0,
+    "tkl": 47.0,
     "tkl_ast": 13.0,
     "tkl_loss": 10.0,
-    "tkl_solo": 33.0,
+    "tkl_solo": 34.0,
     "yds_allow": 220.0,
     "yds_allow_200_299": 1.0
    },
    "team": "MIN",
-   "updatedAt": 1794841726555,
+   "updatedAt": 1795046949549,
    "week": 10
   },
   {
@@ -6653,7 +6653,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Dalton Kincaid",
    "opponent": "NYJ",
    "playerId": "10236",
@@ -6813,7 +6813,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Sione Vaki",
    "opponent": "NE",
    "playerId": "11729",
@@ -7888,7 +7888,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Matt Gay",
    "opponent": "SEA",
    "playerId": "6083",
@@ -8921,10 +8921,10 @@
     "rec": 4.0,
     "rec_0_4": 1.0,
     "rec_5_9": 3.0,
-    "rec_air_yd": 17.0,
+    "rec_air_yd": 12.0,
     "rec_lng": 9.0,
     "rec_tgt": 4.0,
-    "rec_yar": 6.0,
+    "rec_yar": 11.0,
     "rec_yd": 23.0,
     "rec_ypr": 5.75,
     "rec_ypt": 5.75,
@@ -8935,7 +8935,7 @@
     "tm_st_snp": 30.0
    },
    "team": "TEN",
-   "updatedAt": 1794841733104,
+   "updatedAt": 1795046959541,
    "week": 10
   },
   {
@@ -9103,7 +9103,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Jordyn Tyson",
    "opponent": "CAR",
    "playerId": "13281",
@@ -10200,7 +10200,7 @@
     "def_kr_lng": 39.0,
     "def_kr_yd": 168.0,
     "def_kr_ypa": 28.0,
-    "def_pass_def": 2.0,
+    "def_pass_def": 1.0,
     "def_pr": 5.0,
     "def_pr_lng": 24.0,
     "def_pr_yd": 81.0,
@@ -10234,7 +10234,7 @@
     "yds_allow_450_499": 1.0
    },
    "team": "ATL",
-   "updatedAt": 1794776963654,
+   "updatedAt": 1795046939984,
    "week": 10
   },
   {
@@ -10497,7 +10497,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Chris Rodriguez Jr.",
    "opponent": "TEN",
    "playerId": "10219",
@@ -12310,7 +12310,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Charlie Kolar",
    "opponent": "BAL",
    "playerId": "8127",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-18T21:03:18Z",
+ "fetchedAt": "2026-11-19T20:38:58Z",
  "source": "sleeper_stats"
 }
