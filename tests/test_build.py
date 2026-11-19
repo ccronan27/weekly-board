@@ -367,3 +367,31 @@ def test_standings_for_sleeper_leagues(built):
         assert [g["week"] for g in st["myGames"]] == [11, 12, 13, 14]
         assert all(0 <= g["winPct"] <= 100 for g in st["myGames"])
         assert 10 < st["sd"] < 60
+
+
+@needs_raw
+def test_faab_rosgain_and_bids_for_sleeper_leagues(built):
+    lg = built[1]["leagues"]
+    assert lg["fantasizing"]["waivers"]["faab"] is None and lg["fantasizing"]["waivers"]["targets"] is not None
+    for k in ("hwh", "chicago-dynasty"):
+        w = lg[k]["waivers"]
+        faab = w["faab"]
+        if faab is None:       # older raw cache without waiver keys: null, never a crash
+            assert all(t["bid"] is None for t in w["targets"])
+            continue
+        assert faab["budget"] == 100 and 0 <= faab["left"] <= 100
+        assert faab["teams"] == sorted(faab["teams"], key=lambda t: -t["left"])
+        lists = [w["targets"]] + [x["targets"] for x in (w["stretch"], w["longTerm"]) if x]
+        for targets in lists:
+            for t in targets:
+                assert t["rosGain"] is not None and t["rosGain"] >= 0
+                assert 0 <= t["bid"] <= faab["left"]
+                if t["rosGain"] > 0:
+                    assert t["bid"] >= 1
+    for k in ("hwh", "chicago-dynasty"):
+        st = lg[k]["standings"]
+        games = st["myGames"]
+        cur = [g for g in games if g["week"] == 11]
+        assert cur and cur[0]["ifWin"] is not None and cur[0]["ifWin"] >= cur[0]["ifLose"]
+        assert all("ifWin" not in g for g in games if g["week"] != 11)
+        assert all("ifWin" not in t for t in st["teams"])

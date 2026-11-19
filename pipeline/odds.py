@@ -52,12 +52,14 @@ def seed_order(names: list[str], wins, points, division: dict | None, n_div: int
 
 def simulate(teams: list[str], records: dict, schedule: list[tuple[int, str, str]], means: dict, sd: float,
              playoff_teams: int, division: dict | None = None, n_div: int = 0, byes: int = 2,
-             sims: int = SIMS, seed: int = SEED) -> dict:
+             sims: int = SIMS, seed: int = SEED, focus: str | None = None) -> dict:
     """Play out the rest of the regular season many times.
 
     records: name -> {"wins", "losses", "ties", "pointsFor"}
     schedule: (week, team a, team b) for every remaining game
     means: (week, name) -> expected points
+    focus: optional team. Its entry also gets ifWin and ifLose, its playoff pct when it wins or
+    loses its game in the first remaining week (None when it has no game that week). Same draws.
     Returns name -> {"playoffPct", "byePct", "projWins", "avgSeed"}.
     """
     rng = np.random.default_rng(seed)
@@ -67,10 +69,14 @@ def simulate(teams: list[str], records: dict, schedule: list[tuple[int, str, str
     base_pf = np.array([records[n]["pointsFor"] for n in teams], dtype=float)
     wins = np.tile(base_w, (sims, 1))
     pf = np.tile(base_pf, (sims, 1))
+    first = min((w for w, _, _ in schedule), default=None)
+    focus_won = None   # per sim: did the focus team win its first remaining game
     for week, a, b in schedule:
         ia, ib = idx[a], idx[b]
         sa = rng.normal(means[(week, a)], sd, sims)
         sb = rng.normal(means[(week, b)], sd, sims)
+        if focus and focus_won is None and week == first and focus in (a, b):
+            focus_won = (sa > sb) if a == focus else (sb > sa)
         wins[:, ia] += sa > sb
         wins[:, ib] += sb > sa
         pf[:, ia] += sa
@@ -78,6 +84,7 @@ def simulate(teams: list[str], records: dict, schedule: list[tuple[int, str, str
     made = np.zeros(k)
     bye = np.zeros(k)
     seed_sum = np.zeros(k)
+    focus_made = np.zeros(sims, dtype=bool)
     # Ties in the sort key are broken by points for, then name, the same as seed_order
     for s in range(sims):
         order = seed_order(teams, dict(zip(teams, wins[s])), dict(zip(teams, pf[s])), division, n_div)
@@ -86,11 +93,19 @@ def simulate(teams: list[str], records: dict, schedule: list[tuple[int, str, str
             seed_sum[i] += pos + 1
             if pos < playoff_teams:
                 made[i] += 1
+                if n == focus:
+                    focus_made[s] = True
             if pos < byes:
                 bye[i] += 1
-    return {n: {"playoffPct": round(100 * made[idx[n]] / sims, 1), "byePct": round(100 * bye[idx[n]] / sims, 1),
-                "projWins": round(float(wins[:, idx[n]].mean()), 1), "avgSeed": round(float(seed_sum[idx[n]] / sims), 1)}
-            for n in teams}
+    out = {n: {"playoffPct": round(100 * made[idx[n]] / sims, 1), "byePct": round(100 * bye[idx[n]] / sims, 1),
+               "projWins": round(float(wins[:, idx[n]].mean()), 1), "avgSeed": round(float(seed_sum[idx[n]] / sims), 1)}
+           for n in teams}
+    if focus in out and focus_won is not None:
+        def pct(mask):
+            return round(100 * float(focus_made[mask].mean()), 1) if mask.any() else None
+        out[focus]["ifWin"] = pct(focus_won)
+        out[focus]["ifLose"] = pct(~focus_won)
+    return out
 
 
 def playoff_byes(playoff_teams: int) -> int:

@@ -65,6 +65,9 @@ def validate_league(d) -> None:
     require_keys(d, ["league_id", "name", "season", "status", "total_rosters", "roster_positions",
                      "scoring_settings", "settings"], "sleeper league")
     require(isinstance(d["roster_positions"], list) and d["roster_positions"], "sleeper league: roster_positions empty")
+    for k in ("waiver_type", "waiver_budget"):     # optional, FAAB leagues only. Checked when present
+        require(d["settings"].get(k) is None or isinstance(d["settings"][k], int),
+                f"sleeper league: settings[{k!r}] not an integer")
     ss = d["scoring_settings"]
     require(isinstance(ss, dict), "sleeper league: scoring_settings not an object")
     for k in ("rec", "pass_yd", "pass_td", "rush_yd", "rush_td", "rec_yd", "rec_td"):
@@ -79,6 +82,8 @@ def validate_rosters(d) -> None:
         require(isinstance(r["players"], list), "sleeper roster: players not a list")
         for k in ("starters", "reserve", "taxi"):
             require(r.get(k) is None or isinstance(r[k], list), f"sleeper roster: {k} not a list")
+        used = (r.get("settings") or {}).get("waiver_budget_used")   # optional, FAAB leagues only
+        require(used is None or isinstance(used, int), "sleeper roster: settings['waiver_budget_used'] not an integer")
 
 
 def validate_users(d) -> None:
@@ -158,6 +163,7 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
             "rosterId": rid,
             "teamName": names.get(r["owner_id"]) or f"Team {rid}",
             "isMine": r["owner_id"] in mine,
+            "faabUsed": st.get("waiver_budget_used"),
             "players": [str(p) for p in r["players"]],
             "starters": [str(p) for p in (r.get("starters") or [])],
             "reserve": [str(p) for p in (r.get("reserve") or [])],
@@ -173,6 +179,8 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
         "playoffWeekStart": (league.get("settings") or {}).get("playoff_week_start"),
         "playoffTeams": (league.get("settings") or {}).get("playoff_teams"),
         "playoffRoundType": (league.get("settings") or {}).get("playoff_round_type"),
+        "waiverType": (league.get("settings") or {}).get("waiver_type"),      # 2 is FAAB
+        "waiverBudget": (league.get("settings") or {}).get("waiver_budget"),
         "divisions": (league.get("settings") or {}).get("divisions") or 0,   # 0 one week a round, 1 two week final, 2 two weeks a round
         "scoring": league["scoring_settings"],
         "teams": teams,

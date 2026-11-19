@@ -58,6 +58,17 @@ def test_simulation_is_deterministic_and_sane():
     assert a["A"]["projWins"] == pytest.approx(9 + 2 * 0.6, abs=0.6)
 
 
+def test_focus_reports_if_win_and_if_lose_on_the_same_draws():
+    teams, records, schedule, means = league()
+    plain = odds.simulate(teams, records, schedule, means, 25, 2, sims=4000)
+    r = odds.simulate(teams, records, schedule, means, 25, 2, sims=4000, focus="B")
+    assert "ifWin" not in plain["B"]                          # no focus, output unchanged
+    assert r["B"]["playoffPct"] == plain["B"]["playoffPct"]   # same draws, same odds
+    assert r["B"]["ifWin"] >= r["B"]["ifLose"]
+    assert r["B"]["ifLose"] <= r["B"]["playoffPct"] <= r["B"]["ifWin"]
+    assert all("ifWin" not in v for k, v in r.items() if k != "B")
+
+
 def test_bye_pct_counts_top_seeds_only():
     teams, records, schedule, means = league()
     r = odds.simulate(teams, records, schedule, means, 25, 3, byes=1, sims=1000)
