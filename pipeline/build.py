@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from pipeline import lineup, odds, players as pm, scoring, trades, waivers
+from pipeline import lineup, odds, players as pm, recap, scoring, trades, waivers
 from pipeline.adapters import espn_rosters
 from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, source_state, write_json
 from pipeline.ingest import load_config, load_rosters, rosters_status
@@ -223,7 +223,9 @@ def _r(x, n=1):
 # ------------------------------------------------------------------ main build
 
 def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None, save_idmap: bool = True,
-          now: datetime | None = None) -> dict:
+          now: datetime | None = None, recommended_root=None) -> dict:
+    """recommended_root: where recommended-{league}.json is written. Defaults to raw_root. Tests point it at tmp_path."""
+    rec_root = recommended_root or raw_root
     cfg = load_config()
     raw = load_raw(season, week, raw_root)
     if not raw["players"]:
@@ -416,6 +418,14 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             "roster": sorted(my_players, key=lambda p: (-(p["points"] or 0), p["name"])),
             "scoringNotes": lg.notes,
         }
+        # ---- P3 recap: store this run's recommended lineup, then last week's recap (pipeline/recap.py)
+        recap.write_recommended(rec_root, season, week, lc["key"], slots, rec_slots, generated)
+        sleeper_norm = entry[2] if len(entry) > 2 else None
+        out["recap"] = recap.league_recap(
+            season=season, week=week, lg=lg, roster=my_players, stats=raw["stats"],
+            matchups=(sleeper_norm or {}).get("matchups"),
+            my_roster_id=next((t["rosterId"] for t in sleeper_norm["teams"] if t["isMine"]), None) if sleeper_norm else None,
+            raw_root=rec_root)
         # ---- full pool for v2: every player either source projects, under this league's scoring
         pool = []
         seen = set()

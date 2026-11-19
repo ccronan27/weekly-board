@@ -145,7 +145,7 @@ def test_build_publishes_sleeper_leagues_with_no_usable_rosters(tmp_path):
 
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 def test_build_sources_all_carry_state(tmp_path):
-    res = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, now=LOCK_NOW)
+    res = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW)
     assert all(s["state"] in ("fresh", "stale", "missing") for s in res["meta"]["sources"].values())
     assert res["meta"]["espnRosters"]["fromCache"] is False and res["meta"]["espnRosters"]["staleAfterDays"] == 4
     assert res["meta"]["skippedLeagues"] == []
