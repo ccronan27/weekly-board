@@ -591,12 +591,13 @@ function thisWeekTotal(td, players) {
     return { id: p.id, pos: p.pos, pts: p.points || 0, ok: p.eligible !== false && !!p.points };
   }));
 }
-// Both sides of a trade. give and get are sets of player ids.
+// Both sides of a trade. give and get are sets of ids. Pick ids (see pickId) are not players, so they are left out.
 function tradeResult(td, mine, theirs, give, get) {
-  const out = mine.filter(function (p) { return give.has(p.id); });
-  const inn = theirs.filter(function (p) { return get.has(p.id); });
-  const myAfter = mine.filter(function (p) { return !give.has(p.id); }).concat(inn);
-  const thAfter = theirs.filter(function (p) { return !get.has(p.id); }).concat(out);
+  const giveP = playerIdsOf(give), getP = playerIdsOf(get);
+  const out = mine.filter(function (p) { return giveP.has(p.id); });
+  const inn = theirs.filter(function (p) { return getP.has(p.id); });
+  const myAfter = mine.filter(function (p) { return !giveP.has(p.id); }).concat(inn);
+  const thAfter = theirs.filter(function (p) { return !getP.has(p.id); }).concat(out);
   const myB = playoffWeeks(td, mine), myA = playoffWeeks(td, myAfter);
   return {
     myGain: Math.round((sum(myA) - sum(myB)) * 10) / 10,
@@ -618,18 +619,143 @@ function tradePlayerLine(p, dynasty) {
   return t;
 }
 
+// ---------------------------------------------------------------- S4 trade helpers (the pure ones are tested in node)
+const TRADE_POS_ORDER = ["QB", "RB", "WR", "TE", "K", "DEF"];
+const TRADE_FILTERS = ["ALL", "QB", "RB", "WR", "TE"];
+const PICK_PREFIX = "pick:";
+// Picks share the give and get sets with players. Their ids start with PICK_PREFIX, which no player id does.
+function pickId(p) { return PICK_PREFIX + [p.season, p.round, p.from || ""].join("|"); }
+function isPickId(id) { return String(id).indexOf(PICK_PREFIX) === 0; }
+// "2027 1st", plus the team it came from when it was traded
+function pickLabel(p) { return p.label + (p.from ? " (from " + p.from + ")" : ""); }
+function playerIdsOf(set) { return new Set(Array.from(set).filter(function (id) { return !isPickId(id); })); }
+function countPlayers(set) { return Array.from(set).filter(function (id) { return !isPickId(id); }).length; }
+// Sign class for a number in the result card and the sticky bar. Zero is neutral
+function signClass(x) { return x > 0 ? "pos" : x < 0 ? "neg" : ""; }
+
+// The standings row for a team name, or null. Standings is null on ESPN until its sync carries it.
+function standingFor(standings, name) {
+  if (!standings || !standings.teams) return null;
+  return standings.teams.filter(function (t) { return t.name === name; })[0] || null;
+}
+function myStanding(standings) {
+  if (!standings || !standings.teams) return null;
+  return standings.teams.filter(function (t) { return t.isMine; })[0] || null;
+}
+// "100% playoffs", "under 1% playoffs", "38% playoffs"
+function playoffText(x) {
+  if (!isNum(x)) return null;
+  return (x >= 99.95 ? "100%" : x > 0 && x < 0.5 ? "under 1%" : Math.round(x) + "%") + " playoffs";
+}
+// "Olav é Trois · seed 3 · 100% playoffs". Just the name when there is no standings row for the team
+function partnerText(standings, name) {
+  const t = standingFor(standings, name);
+  if (!t) return name;
+  return [name, isNum(t.seed) ? "seed " + t.seed : null, playoffText(t.playoffPct)].filter(Boolean).join(" · ");
+}
+// A rival is top 4 or ahead of you in the standings, and gains more from the trade than you do
+function helpsRival(partnerSeed, mySeed, myGain, theirGain) {
+  if (!isNum(partnerSeed) || !isNum(myGain) || !isNum(theirGain)) return false;
+  const ahead = partnerSeed <= 4 || (isNum(mySeed) && partnerSeed < mySeed);
+  return ahead && theirGain > myGain;
+}
+// Ideas with the same partner, the same players back and the same gains become one entry.
+// variants keeps the original ideas in order. Tapping the entry opens variants[0].
+function mergeIdeas(ideas) {
+  const groups = [], seen = {};
+  ideas.forEach(function (i) {
+    const key = JSON.stringify([i.team, i.get.slice().sort(), i.myGain, i.theirGain]);
+    if (!seen[key]) {
+      seen[key] = { team: i.team, get: i.get, myGain: i.myGain, theirGain: i.theirGain, variants: [] };
+      groups.push(seen[key]);
+    }
+    seen[key].variants.push(i);
+  });
+  return groups;
+}
+// Players in position order (QB, RB, WR, TE, K, DEF, then any other position), best rate first inside each group
+function groupByPosition(players) {
+  const byPos = {}, others = [];
+  players.forEach(function (p) {
+    const pos = p.pos || "Other";
+    if (!byPos[pos]) {
+      byPos[pos] = [];
+      if (TRADE_POS_ORDER.indexOf(pos) < 0) others.push(pos);
+    }
+    byPos[pos].push(p);
+  });
+  return TRADE_POS_ORDER.concat(others).filter(function (pos) { return byPos[pos]; }).map(function (pos) {
+    const ps = byPos[pos].slice().sort(function (a, b) {
+      return (b.rate || 0) - (a.rate || 0) || (a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
+    });
+    return { pos: pos, players: ps };
+  });
+}
+// An idea shows under a position when one of the players it brings back plays there. byId is keyed team|id
+function ideaHasPos(i, pos, byId) {
+  return pos === "ALL" || i.get.some(function (id) { const p = byId[i.team + "|" + id]; return !!p && p.pos === pos; });
+}
+// The empty ideas line, with the threshold the build used
+function noIdeasText(minGain) {
+  return isNum(minGain) ? "No one for one trade adds at least " + minGain.toFixed(1) + " points for you and helps them too. Try the builder below."
+    : "No one for one trade helps both teams right now. Try the builder below.";
+}
+// "Weakest spots: RB, TE", or "" when the team has no needs
+function needsNote(needs, prefix) {
+  return needs && needs.length ? prefix + needs.join(", ") : "";
+}
+function positionFilter(state, rerender) {
+  const box = el("div", "posfilter");
+  box.setAttribute("role", "group");
+  box.setAttribute("aria-label", "Filter ideas by position");
+  TRADE_FILTERS.forEach(function (f) {
+    const b = el("button", "posbtn", f === "ALL" ? "All" : f);
+    b.type = "button";
+    b.setAttribute("aria-pressed", String(state.pos === f));
+    b.addEventListener("click", function () { state.pos = f; rerender(); });
+    box.appendChild(b);
+  });
+  return box;
+}
+// One row in a builder list: a checkbox, the chip, the name with badges, and an optional line
+function tickRow(id, chosen, chipLabel, name, badges, sub, onChange) {
+  const row = el("label", "pick");
+  const cb = el("input");
+  cb.type = "checkbox";
+  cb.checked = chosen.has(id);
+  cb.addEventListener("change", function () {
+    if (cb.checked) chosen.add(id); else chosen.delete(id);
+    onChange();
+  });
+  row.appendChild(cb);
+  row.appendChild(chipNode(chipLabel));
+  const body = el("div", "pbody");
+  const nm = el("div", "pname");
+  nm.appendChild(el("span", "name", name));
+  badges.forEach(function (n) { nm.appendChild(n); });
+  body.appendChild(nm);
+  if (sub) body.appendChild(el("div", "psub", sub));
+  row.appendChild(body);
+  return row;
+}
+
 function renderTrade(league, meta, td, state, rerender) {
   const rosters = td.rosters;
-  const mine = rosters.filter(function (r) { return r.isMine; })[0].players;
+  const myRoster = rosters.filter(function (r) { return r.isMine; })[0];
+  const mine = myRoster.players;
   const others = rosters.filter(function (r) { return !r.isMine; });
   if (!state.team || !others.some(function (r) { return r.name === state.team; })) {
     state.team = td.ideas.length ? td.ideas[0].team : others[0].name;
     state.give = new Set(); state.get = new Set();
   }
+  if (!state.pos) state.pos = "ALL";
   const partner = others.filter(function (r) { return r.name === state.team; })[0];
   const stW = td.stretchWeeks || [], poW = td.playoffWeeks || td.weeks;
   const byId = {};
   rosters.forEach(function (r) { r.players.forEach(function (p) { byId[r.name + "|" + p.id] = p; }); });
+  const standings = league.standings || null;
+  const mySeed = (myStanding(standings) || {}).seed;
+  const myPicks = myRoster.picks || [], theirPicks = partner.picks || [];
 
   const secSum = el("section", "s-sum");
   const head = el("div", "card");
@@ -650,34 +776,51 @@ function renderTrade(league, meta, td, state, rerender) {
     ", with every week counted the same. That is the stretch run" + (stW.length ? " (" + weekSpan(stW) + ")" : "") + (poW.length ? " and the playoffs (" + weekSpan(poW) + ")" : "") + ". A week's rate is this week's projection for healthy players, and the season average for DEF, K and anyone hurt or on bye now."));
   if (td.dynasty) secSum.appendChild(el("div", "warn", "Dynasty league. Scores only cover the rest of this season. Ages are shown, and trades that send away a player 4 or more years younger are flagged."));
 
-  // Ideas
-  const secIdeas = el("section", "s-lineup");
-  secIdeas.appendChild(el("h2", null, "Trade ideas"));
-  secIdeas.appendChild(el("div", "muted", "One for one trades that make both lineups better over the rest of the season. Tap one to open it below."));
-  const ic = el("div", "card list");
-  if (!td.ideas.length) ic.appendChild(el("div", "slot", "No one for one trade helps both teams right now. Try the builder below."));
-  td.ideas.forEach(function (i) {
-    const give = i.give.map(function (id) { return mine.filter(function (p) { return p.id === id; })[0]; });
-    const get = i.get.map(function (id) { return byId[i.team + "|" + id]; });
+  // One idea entry. Tapping it opens the first variant in the builder
+  function ideaRow(g) {
+    const first = g.variants[0];
+    const giveText = g.variants.map(function (v) {
+      return v.give.map(function (id) { return byId[myRoster.name + "|" + id].name; }).join(", ");
+    }).join(" or ");
+    const getText = g.get.map(function (id) { return byId[g.team + "|" + id].name; }).join(", ");
+    const posText = function (team, ids) { return ids.map(function (id) { return byId[team + "|" + id].pos; }).join("/"); };
     const b = el("button", "idea");
     b.type = "button";
     const top = el("div", "pname");
-    top.appendChild(el("span", "name", "Give " + give.map(function (p) { return p.name; }).join(", ") + " for " + get.map(function (p) { return p.name; }).join(", ")));
-    if (i.youthFlag) top.appendChild(el("span", "badge warn", "Younger out"));
+    top.appendChild(el("span", "name", "Give " + giveText + " for " + getText));
+    if (g.variants.some(function (v) { return v.youthFlag; })) top.appendChild(el("span", "badge warn", "Younger out"));
+    const rival = standingFor(standings, g.team);
+    if (helpsRival(rival ? rival.seed : null, mySeed, g.myGain, g.theirGain)) {
+      const rv = el("span", "badge warn", "Helps a rival");
+      rv.title = "They gain more than you and they are ahead of you in the standings.";
+      top.appendChild(rv);
+    }
     b.appendChild(top);
-    b.appendChild(el("div", "psub", "With " + i.team + " · " + give.map(function (p) { return p.pos; }).join("/") + " for " + get.map(function (p) { return p.pos; }).join("/")));
-    const split = isNum(i.stretchGain) && stW.length ? " (stretch " + signed(i.stretchGain) + ", playoffs " + signed(i.playoffGain) + ")" : "";
-    const line = el("div", "extra muted-extra", "You " + signed(i.myGain) + split + ", they " + signed(i.theirGain) + " over the rest of the season. ");
-    line.appendChild(el("span", i.thisWeek < 0 ? "neg" : "", "This week " + signed(i.thisWeek) + " for you."));
+    b.appendChild(el("div", "psub", partnerText(standings, g.team) + " · " + posText(myRoster.name, first.give) + " for " + posText(g.team, g.get)));
+    const split = isNum(first.stretchGain) && stW.length ? " (stretch " + signed(first.stretchGain) + ", playoffs " + signed(first.playoffGain) + ")" : "";
+    const line = el("div", "extra muted-extra", "You " + signed(g.myGain) + split + ", they " + signed(g.theirGain) + " over the rest of the season. ");
+    line.appendChild(el("span", first.thisWeek < 0 ? "neg" : "", "This week " + signed(first.thisWeek) + " for you."));
     b.appendChild(line);
+    if (g.variants.length > 1) b.appendChild(el("div", "psub", g.variants.length + " ways to make this. Tap to open the first."));
     b.addEventListener("click", function () {
-      state.team = i.team; state.give = new Set(i.give); state.get = new Set(i.get); state.scroll = true;
+      state.team = g.team; state.give = new Set(first.give); state.get = new Set(first.get); state.scroll = true;
       rerender();
     });
     const wrap = el("div", "slot");
     wrap.appendChild(b);
-    ic.appendChild(wrap);
-  });
+    return wrap;
+  }
+
+  // Ideas
+  const secIdeas = el("section", "s-lineup");
+  secIdeas.appendChild(el("h2", null, "Trade ideas"));
+  secIdeas.appendChild(el("div", "muted", "One for one trades that make both lineups better over the rest of the season. Tap one to open it below."));
+  if (td.ideas.length >= 4) secIdeas.appendChild(positionFilter(state, rerender));
+  const shown = td.ideas.filter(function (i) { return ideaHasPos(i, state.pos, byId); });
+  const ic = el("div", "card list");
+  if (!td.ideas.length) ic.appendChild(el("div", "slot", noIdeasText(td.minIdeaGain)));
+  else if (!shown.length) ic.appendChild(el("div", "slot", "No ideas bring back a " + state.pos + " right now. Tap All to see every idea."));
+  mergeIdeas(shown).forEach(function (g) { ic.appendChild(ideaRow(g)); });
   secIdeas.appendChild(ic);
 
   // Builder
@@ -694,76 +837,116 @@ function renderTrade(league, meta, td, state, rerender) {
   });
   pick.addEventListener("change", function () { state.team = pick.value; state.give = new Set(); state.get = new Set(); rerender(); });
   secBuild.appendChild(pick);
+  if (standingFor(standings, partner.name)) secBuild.appendChild(el("div", "muted aside", partnerText(standings, partner.name)));
 
-  // Ticking a box redraws only this card, so focus and scroll stay put
-  function resultCard() {
-  const res = tradeResult(td, mine, partner.players, state.give, state.get);
-  const rc = el("div", "card result");
-  rc.setAttribute("aria-live", "polite");
-  if (!state.give.size && !state.get.size) {
-    rc.appendChild(el("div", "muted", "Tick players to give and to get. The result updates as you go."));
-  } else {
+  function compute() { return tradeResult(td, mine, partner.players, state.give, state.get); }
+
+  // The result card. Ticking a box redraws only this card and the sticky bar, so focus and scroll stay put
+  function resultCard(res) {
+    const card = el("div", "card result");
+    card.setAttribute("aria-live", "polite");
+    if (!state.give.size && !state.get.size) {
+      card.appendChild(el("div", "muted", "Tick players or picks to give and to get. The result updates as you go."));
+      return card;
+    }
     const rs = el("div", "summary");
-    [["You, rest of season", signed(res.myGain)], ["They, rest of season", signed(res.theirGain)], ["You, this week", signed(res.thisWeek)]].forEach(function (x) {
+    [["You, rest of season", res.myGain], ["They, rest of season", res.theirGain], ["You, this week", res.thisWeek]].forEach(function (x) {
       const d = el("div");
       d.appendChild(el("span", "label", x[0]));
-      d.appendChild(el("b", "num " + (x[1].charAt(0) === "-" ? "neg" : (x[1] === "0.0" ? "" : "pos")), x[1]));
+      d.appendChild(el("b", "num " + signClass(x[1]), signed(x[1])));
       rs.appendChild(d);
     });
-    rc.appendChild(rs);
+    card.appendChild(rs);
     if (res.weeks.length) {
       const part = function (ws) { return Math.round(res.weeks.filter(function (x) { return ws.indexOf(x.week) >= 0; }).reduce(function (a, x) { return a + x.gain; }, 0) * 10) / 10; };
-      if (stW.length) rc.appendChild(el("div", "psub", "You: stretch run " + signed(part(stW)) + " · playoffs " + signed(part(poW))));
-      rc.appendChild(el("div", "psub", res.weeks.map(function (x) { return "W" + x.week + " " + signed(x.gain); }).join(" · ")));
+      if (stW.length) card.appendChild(el("div", "psub", "You: stretch run " + signed(part(stW)) + " · playoffs " + signed(part(poW))));
+      card.appendChild(el("div", "psub", res.weeks.map(function (x) { return "W" + x.week + " " + signed(x.gain); }).join(" · ")));
     }
     let verdict;
     if (res.myGain > 0 && res.theirGain > 0) verdict = "Both teams get better. A fair offer.";
     else if (res.myGain > 0) verdict = "You win this one. They lose " + Math.abs(res.theirGain).toFixed(1) + ", so expect a no.";
     else if (res.theirGain > 0) verdict = "This helps them more than you.";
     else verdict = "Neither lineup gets better.";
-    rc.appendChild(el("div", "extra" + (res.myGain > 0 && res.theirGain > 0 ? "" : " muted-extra"), verdict));
-    const diff = state.get.size - state.give.size;
-    if (diff > 0) rc.appendChild(el("div", "note", "You get " + diff + " more than you give. Make room on your roster."));
-    if (diff < 0) rc.appendChild(el("div", "note", "They get " + (-diff) + " more than they give. They need roster room."));
+    card.appendChild(el("div", "extra" + (res.myGain > 0 && res.theirGain > 0 ? "" : " muted-extra"), verdict));
+    const givePicks = myPicks.filter(function (p) { return state.give.has(pickId(p)); });
+    const getPicks = theirPicks.filter(function (p) { return state.get.has(pickId(p)); });
+    if (givePicks.length || getPicks.length) {
+      const parts = [];
+      if (givePicks.length) parts.push("you give " + givePicks.map(function (p) { return pickLabel(p); }).join(", "));
+      if (getPicks.length) parts.push("you get " + getPicks.map(function (p) { return pickLabel(p); }).join(", "));
+      card.appendChild(el("div", "psub", "Plus picks: " + parts.join(" · ")));
+      card.appendChild(el("div", "muted", "Picks are not scored."));
+    }
+    // Roster room counts players only. Picks take no roster spot
+    const diff = countPlayers(state.get) - countPlayers(state.give);
+    if (diff > 0) card.appendChild(el("div", "note", "You get " + diff + " more than you give. Make room on your roster."));
+    if (diff < 0) card.appendChild(el("div", "note", "They get " + (-diff) + " more than they give. They need roster room."));
     const yo = youngest(res.out), yi = youngest(res.inn);
-    if (td.dynasty && yo !== null && yi !== null && yi - yo >= 4) rc.appendChild(el("div", "note", "Dynasty: the youngest player you give is " + (yi - yo) + " years younger than anyone you get."));
+    if (td.dynasty && yo !== null && yi !== null && yi - yo >= 4) card.appendChild(el("div", "note", "Dynasty: the youngest player you give is " + (yi - yo) + " years younger than anyone you get."));
+    return card;
   }
-  return rc;
-  }
-  let rc = resultCard();
-  secBuild.appendChild(rc);
 
-  function pickList(title, players, chosen) {
+  // Sticky result bar, phones only (style.css S4). It lives inside the builder, so a redraw removes it with the panel
+  const bar = el("div", "tbar");
+  bar.setAttribute("aria-live", "polite");
+  let inView = !("IntersectionObserver" in window);   // without the observer the bar follows the ticks alone
+  let lastRes = compute();
+  function paintBar(res) {
+    bar.replaceChildren();
+    [["You", res.myGain], ["They", res.theirGain], ["This week", res.thisWeek]].forEach(function (x, k) {
+      if (k) bar.appendChild(el("span", "sep", "·"));
+      bar.appendChild(el("span", signClass(x[1]), x[0] + " " + signed(x[1])));
+    });
+    bar.hidden = !(inView && (state.give.size || state.get.size));
+  }
+  let rc = resultCard(lastRes);
+  secBuild.appendChild(rc);
+  secBuild.appendChild(bar);
+  paintBar(lastRes);
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(function (entries) {
+      if (!secBuild.isConnected) { io.disconnect(); return; }   // the panel was redrawn
+      inView = entries[entries.length - 1].isIntersecting;
+      paintBar(lastRes);
+    });
+    io.observe(secBuild);
+  }
+
+  function refresh() {
+    lastRes = compute();
+    const next = resultCard(lastRes);
+    rc.replaceWith(next);
+    rc = next;
+    paintBar(lastRes);
+  }
+
+  // A builder list: groups by position, then the picks group when the team has picks
+  function pickList(title, note, players, picks, chosen) {
     const box = el("div", "plist");
     box.appendChild(el("h3", null, title));
+    if (note) box.appendChild(el("div", "muted", note));
     const card = el("div", "card list");
-    players.forEach(function (p) {
-      const row = el("label", "pick");
-      const cb = el("input");
-      cb.type = "checkbox";
-      cb.checked = chosen.has(p.id);
-      cb.addEventListener("change", function () {
-        if (cb.checked) chosen.add(p.id); else chosen.delete(p.id);
-        const next = resultCard();
-        rc.replaceWith(next);
-        rc = next;
+    groupByPosition(players).forEach(function (g) {
+      const grp = el("div", "pgrp");
+      grp.appendChild(el("div", "pghead", g.pos));
+      g.players.forEach(function (p) {
+        grp.appendChild(tickRow(p.id, chosen, POSITIONS.indexOf(p.pos) >= 0 ? p.pos : "BN", p.name, badgeNodes(p), tradePlayerLine(p, td.dynasty), refresh));
       });
-      row.appendChild(cb);
-      row.appendChild(chipNode(POSITIONS.indexOf(p.pos) >= 0 ? p.pos : "BN"));
-      const body = el("div", "pbody");
-      const nm = el("div", "pname");
-      nm.appendChild(el("span", "name", p.name));
-      badgeNodes(p).forEach(function (n) { nm.appendChild(n); });
-      body.appendChild(nm);
-      body.appendChild(el("div", "psub", tradePlayerLine(p, td.dynasty)));
-      row.appendChild(body);
-      card.appendChild(row);
+      card.appendChild(grp);
     });
+    if (picks.length) {
+      const grp = el("div", "pgrp");
+      grp.appendChild(el("div", "pghead", "Picks"));
+      picks.forEach(function (p) { grp.appendChild(tickRow(pickId(p), chosen, "PICK", pickLabel(p), [], null, refresh)); });
+      card.appendChild(grp);
+    }
     box.appendChild(card);
     return box;
   }
   const lists = el("div", "plists");
-  lists.append(pickList("You give", mine, state.give), pickList("You get from " + partner.name, partner.players, state.get));
+  lists.append(
+    pickList("You give", needsNote(myRoster.needs, "Your weakest spots: "), mine, myPicks, state.give),
+    pickList("You get from " + partner.name, needsNote(partner.needs, "Weakest spots: "), partner.players, theirPicks, state.get));
   secBuild.appendChild(lists);
 
   return columns([secSum, sourcesSection(league, meta)], [secIdeas, secBuild]);
