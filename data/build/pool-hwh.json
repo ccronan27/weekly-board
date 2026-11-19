@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T21:59:25Z",
+ "generatedAt": "2026-11-19T22:00:19Z",
  "league": "hwh",
  "players": [
   {
@@ -3777,7 +3777,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Omarion Hampton",
-   "newsUpdated": "2026-11-19T04:05:56Z",
+   "newsUpdated": "2026-11-19T21:45:02Z",
    "points": 11.9,
    "pos": "RB",
    "ppg": 9.5,
@@ -4046,7 +4046,7 @@
    "injuryNotes": "Spasms",
    "locked": false,
    "name": "Ladd McConkey",
-   "newsUpdated": "2026-11-19T01:40:55Z",
+   "newsUpdated": "2026-11-19T21:45:02Z",
    "points": 11.3,
    "pos": "WR",
    "ppg": 10.3,
@@ -11493,7 +11493,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "locked": false,
    "name": "Michael Pittman Jr.",
-   "newsUpdated": "2026-11-19T21:10:02Z",
+   "newsUpdated": "2026-11-19T21:45:02Z",
    "points": 5.0,
    "pos": "WR",
    "ppg": 5.3,
@@ -11903,7 +11903,7 @@
    "injuryNotes": "Surgery",
    "locked": false,
    "name": "Andrei Iosivas",
-   "newsUpdated": "2026-11-14T20:35:12Z",
+   "newsUpdated": "2026-11-19T21:40:04Z",
    "points": 4.7,
    "pos": "WR",
    "ppg": 2.5,
@@ -13584,7 +13584,9 @@
    "ceiling": 3.5,
    "eligible": true,
    "espn": 3.2,
-   "flags": [],
+   "flags": [
+    "QUESTIONABLE"
+   ],
    "floor": 3.2,
    "game": {
     "home": true,
@@ -13629,7 +13631,7 @@
     "espn",
     "rotowire"
    ],
-   "status": null,
+   "status": "QUESTIONABLE",
    "team": "DAL",
    "teamName": null
   },
@@ -20654,35 +20656,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:15Z",
+   "lastUpdated": "2026-11-19T22:00:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:15Z",
+   "lastUpdated": "2026-11-19T22:00:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:12Z",
+   "lastUpdated": "2026-11-19T22:00:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:12Z",
+   "lastUpdated": "2026-11-19T22:00:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:12Z",
+   "lastUpdated": "2026-11-19T22:00:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

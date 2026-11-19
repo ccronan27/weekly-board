@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T21:59:25Z",
+ "generatedAt": "2026-11-19T22:00:19Z",
  "league": {
   "appName": "ESPN",
   "appUrl": "https://fantasy.espn.com/football/team?leagueId=125685129&teamId=14",
@@ -1394,7 +1394,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "locked": false,
    "name": "Michael Pittman Jr.",
-   "newsUpdated": "2026-11-19T21:10:02Z",
+   "newsUpdated": "2026-11-19T21:45:02Z",
    "points": 5.0,
    "pos": "WR",
    "ppg": 5.3,
@@ -3070,28 +3070,28 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:15Z",
+   "lastUpdated": "2026-11-19T22:00:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:16.000Z",
+   "lastUpdated": "2026-11-19T22:00:19.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:15Z",
+   "lastUpdated": "2026-11-19T22:00:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:49:12Z",
+   "lastUpdated": "2026-11-19T22:00:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

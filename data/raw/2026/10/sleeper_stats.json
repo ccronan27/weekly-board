@@ -1008,7 +1008,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Luke Schoonmaker",
    "opponent": "SF",
    "playerId": "10871",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-19T21:49:13Z",
+ "fetchedAt": "2026-11-19T22:00:17Z",
  "source": "sleeper_stats"
 }
