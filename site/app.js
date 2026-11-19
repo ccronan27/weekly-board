@@ -81,10 +81,11 @@ function chipNode(label) {
   return el("span", "chip " + (isPos ? "pos-" + label.toLowerCase() : "neutral"), label);
 }
 function benchChip(p) {
-  if (p.slot === "IR") return "IR";
+  if (p.slot === "IR" || hasFlag(p, "IR")) return "IR";
   if (p.slot === "TAXI") return "Taxi";
   return "BN";
 }
+
 function badgeNodes(p) {
   const out = [];
   (p.flags || []).forEach(function (f) {
@@ -103,6 +104,8 @@ function badgeNodes(p) {
 // One compact row: slot chip, name with badges, a small matchup line, then the projection.
 // opts.chip is the chip label. opts.rowCls is "cur" or "rec" in a changed slot. opts.struck dims the current player.
 // opts.gain (rec rows only) adds the arrow and point gain.
+// opts.detail (Lineup view only) adds the floor to ceiling bar, the too-few-games note and a row you tap to open details.
+// Without opts.detail the row is the same one Waivers and Trade have always had.
 function playerRow(p, opts) {
   const row = el("div", "prow" + (opts.rowCls ? " " + opts.rowCls : ""));
   row.appendChild(chipNode(opts.chip));
@@ -116,6 +119,7 @@ function playerRow(p, opts) {
   const top = el("div", "pname");
   top.appendChild(el("span", "name" + (opts.struck ? " struck" : ""), p.name));
   badgeNodes(p).forEach(function (n) { top.appendChild(n); });
+  if (opts.detail) top.appendChild(el("span", "caret"));
   body.appendChild(top);
 
   let subText = (p.pos || "") + " " + (p.team || "FA") + " · " + gameText(p);
@@ -141,11 +145,14 @@ function playerRow(p, opts) {
   }
   if (eligible && isNum(p.floor) && isNum(p.ceiling)) {
     nums.appendChild(el("div", "range", p.floor.toFixed(1) + " to " + p.ceiling.toFixed(1)));
+    if (opts.detail) nums.appendChild(track(p));
+  } else if (opts.detail && eligible) {
+    nums.appendChild(el("div", "range few", "Too few games for a range"));
   }
   if (opts.gain !== undefined) nums.appendChild(el("div", "gainline", "→ " + signed(opts.gain)));
 
   row.append(body, nums);
-  return row;
+  return opts.detail ? expandable(row, p) : row;
 }
 
 // Points gained by starting the recommended player over the current one. An ineligible current player counts as 0.
@@ -158,16 +165,208 @@ function gainOf(s) {
 function slotGroup(s) {
   const wrap = el("div", "slot" + (s.changed ? " changed" : ""));
   if (s.changed) {
-    wrap.appendChild(playerRow(s.current, { chip: s.slot, rowCls: "cur", struck: true }));
+    wrap.appendChild(playerRow(s.current, { chip: s.slot, rowCls: "cur", struck: true, detail: true }));
     if (s.recommended) {
       const rec = s.recommended;
       // A locked player is never styled as a recommended move
-      wrap.appendChild(playerRow(rec, { chip: s.slot, rowCls: rec.locked ? "" : "rec", gain: rec.locked ? undefined : gainOf(s) }));
+      wrap.appendChild(playerRow(rec, { chip: s.slot, rowCls: rec.locked ? "" : "rec", gain: rec.locked ? undefined : gainOf(s), detail: true }));
     }
   } else {
-    wrap.appendChild(playerRow(s.current || s.recommended, { chip: s.slot }));
+    wrap.appendChild(playerRow(s.current || s.recommended, { chip: s.slot, detail: true }));
   }
+  const cc = closeCallText(s);
+  if (cc) wrap.appendChild(el("div", "close", cc));
   return wrap;
+}
+
+// Floor to ceiling bar on one fixed 0 to 40 point axis, so every row compares. The tick is the projection.
+const AXIS_MAX = 40;
+function axisPct(x) {
+  return isNum(x) ? Math.min(AXIS_MAX, Math.max(0, x)) / AXIS_MAX * 100 : 0;
+}
+function track(p) {
+  const t = el("div", "track");
+  t.setAttribute("aria-hidden", "true");
+  const fill = el("span", "fill");
+  fill.style.left = axisPct(p.floor) + "%";
+  fill.style.width = (axisPct(p.ceiling) - axisPct(p.floor)) + "%";
+  t.appendChild(fill);
+  if (isNum(p.points)) {
+    const tick = el("span", "tick");
+    tick.style.left = axisPct(p.points) + "%";
+    t.appendChild(tick);
+  }
+  return t;
+}
+
+// Turns a row into a button that opens the detail panel under it. Works with Enter and Space.
+let detailSeq = 0;
+function expandable(row, p) {
+  const id = "pd" + (++detailSeq);
+  row.setAttribute("role", "button");
+  row.tabIndex = 0;
+  row.setAttribute("aria-expanded", "false");
+  row.setAttribute("aria-controls", id);
+  const panel = el("div", "pdetail");
+  panel.id = id;
+  panel.hidden = true;
+  const lines = detailLines(p, Date.now());
+  if (!lines.length) panel.appendChild(el("div", "muted", "Nothing more to show for this player."));
+  lines.forEach(function (x) {
+    const d = el("div", "dline");
+    d.appendChild(el("span", "label", x[0]));
+    d.appendChild(el("div", null, x[1]));
+    panel.appendChild(d);
+  });
+  function toggle() {
+    const open = row.getAttribute("aria-expanded") !== "true";
+    row.setAttribute("aria-expanded", String(open));
+    panel.hidden = !open;
+  }
+  row.addEventListener("click", toggle);
+  row.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+  });
+  const wrap = el("div", "pwrap");
+  wrap.append(row, panel);
+  return wrap;
+}
+
+// ---------------------------------------------------------------- S2 pure helpers (node tests in tests/test_site_lineup.py)
+// Slots a player can fill besides their own position. Same table as FLEX_ELIGIBLE in pipeline/scoring.py.
+const FLEX_FILLS = { FLEX: ["RB", "WR", "TE"], REC_FLEX: ["WR", "TE"], WRRB_FLEX: ["RB", "WR"], SUPER_FLEX: ["QB", "RB", "WR", "TE"] };
+function canFill(slot, pos) {
+  return slot === pos || (FLEX_FILLS[slot] || []).indexOf(pos) >= 0;
+}
+// Upside box: up to 3 bench players (eligible, not locked, with a ceiling) whose ceiling beats the ceiling of a
+// starter they could replace at a slot they fit. Each one names the starter with the biggest gap.
+function upsideOptions(slots, bench) {
+  const found = [];
+  bench.forEach(function (p) {
+    if (!isEligible(p) || p.locked || !isNum(p.ceiling)) return;
+    let best = null;
+    slots.forEach(function (s) {
+      const st = s.recommended;
+      if (!st || st.locked || !isNum(st.ceiling) || !canFill(s.slot, p.pos)) return;
+      const gap = p.ceiling - st.ceiling;
+      if (gap > 0 && (!best || gap > best.gap)) best = { player: p, starter: st, slot: s.slot, gap: gap };
+    });
+    if (best) found.push(best);
+  });
+  found.sort(function (a, b) { return b.gap - a.gap; });
+  return found.slice(0, 3);
+}
+// Bench split: playable (eligible, not on bye, out, IR or taxi) first, the rest folds away
+function benchSplit(list) {
+  const playable = [];
+  const out = [];
+  list.forEach(function (p) {
+    const ok = isEligible(p) && !p.locked && !hasFlag(p, "BYE") && !hasFlag(p, "OUT") && !hasFlag(p, "IR") &&
+      p.slot !== "IR" && p.slot !== "TAXI";
+    (ok ? playable : out).push(p);
+  });
+  return { playable: playable, out: out };
+}
+// "Close call. Next best X, 1.6 behind." when the starter's next best is within 2 points. Empty otherwise.
+function closeCallText(s) {
+  const st = s.recommended;
+  const nb = s.nextBest;
+  if (!st || !nb || !nb.name || st.locked || !isEligible(st) || !isNum(st.points) || !isNum(nb.points)) return "";
+  const margin = st.points - nb.points;
+  if (margin < 0 || margin > 2) return "";
+  return "Close call. Next best " + nb.name + ", " + margin.toFixed(1) + " behind.";
+}
+// "updated 3h ago" from an ISO time. Empty when the time is missing or unreadable.
+function relativeAgo(iso, now) {
+  const t = iso ? Date.parse(iso) : NaN;
+  if (isNaN(t)) return "";
+  const mins = Math.floor((now - t) / 60000);
+  if (mins < 1) return "updated just now";
+  if (mins < 60) return "updated " + mins + "m ago";
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 48) return "updated " + hrs + "h ago";
+  return "updated " + Math.floor(hrs / 24) + "d ago";
+}
+// Label and value rows for the detail panel. Only the parts the build has.
+function detailLines(p, now) {
+  const out = [];
+  const proj = [];
+  if (isNum(p.espn)) proj.push("ESPN " + p.espn.toFixed(1));
+  if (isNum(p.rotowire)) proj.push("Rotowire " + p.rotowire.toFixed(1));
+  if (proj.length) out.push(["Projections", proj.join(" · ")]);
+  const g = p.game || {};
+  const game = [];
+  if (isNum(g.implied)) game.push("team total " + g.implied.toFixed(1));
+  if (isNum(g.spread)) game.push("spread " + (g.spread > 0 ? "+" : "") + g.spread.toFixed(1));
+  if (isNum(g.oppImplied)) game.push("opponent total " + g.oppImplied.toFixed(1));
+  if (game.length) out.push(["Game", game.join(" · ")]);
+  if (Array.isArray(p.recent)) {
+    const rs = p.recent.filter(function (r) { return isNum(r.pts); }).map(function (r) { return "W" + r.week + " " + r.pts.toFixed(1); });
+    out.push(["Recent", rs.length ? rs.join(" · ") : "No games played yet"]);
+  }
+  if (p.injuryNotes) {
+    const ago = relativeAgo(p.newsUpdated, now);
+    out.push(["Injury note", p.injuryNotes + (ago ? " (" + ago + ")" : "")]);
+  }
+  return out;
+}
+// Lines under a watch or alert note. The backup is the best eligible bench player for the slot.
+// Each line is { text, late }. A late line is the red warning when the flagged player plays after every backup.
+function backupLines(item) {
+  const out = [];
+  if (!("backup" in item)) return out;   // older builds have no backup at all, so say nothing
+  const b = item.backup;
+  if (!b) return [{ text: "No eligible backup on your bench.", late: false }];
+  const pts = isNum(b.points) ? b.points.toFixed(1) : "";
+  const k = shortWhen(b.kickoff);
+  const where = [pts, k].filter(Boolean).join(", ");
+  out.push({ text: "If he sits, start " + b.name + (where ? " (" + where + ")" : "") + ".", late: false });
+  if (item.lateRisk) {
+    let t = "He plays after every backup, so there is no swap left if he is ruled out late.";
+    if (k) t += " Decide before " + k + ".";
+    out.push({ text: t, late: true });
+  }
+  return out;
+}
+// This week's game from the standings block. Null for ESPN leagues and during a bye.
+function thisGame(league) {
+  const st = league.standings;
+  if (!st || !Array.isArray(st.myGames)) return null;
+  return st.myGames.filter(function (g) { return g.week === league.week; })[0] || null;
+}
+// Win pct color: green at 60 or more, red at 40 or less
+function winClass(x) {
+  if (!isNum(x)) return "";
+  return x >= 60 ? "good" : x <= 40 ? "bad" : "";
+}
+function pctText(x) {
+  return isNum(x) ? Math.round(x) + "%" : "";
+}
+// "Playoff odds 81% with a win, 48% with a loss". Empty when the build has neither.
+function oddsText(g) {
+  const parts = [];
+  if (isNum(g.ifWin)) parts.push(pctText(g.ifWin) + " with a win");
+  if (isNum(g.ifLose)) parts.push(pctText(g.ifLose) + " with a loss");
+  return parts.length ? "Playoff odds " + parts.join(", ") : "";
+}
+// Recap lines. Any part that is null is left out.
+function recapLines(r) {
+  const out = [];
+  if (!r) return out;
+  if (isNum(r.actual)) out.push("You scored " + r.actual.toFixed(1));
+  if (isNum(r.optimal)) out.push("Best possible with hindsight " + r.optimal.toFixed(1));
+  if (isNum(r.recommended)) out.push("Board's lineup " + r.recommended.toFixed(1));
+  return out;
+}
+// Older pipeline output could name a source's scoring in engineer terms. Reword those, keep anything else as is.
+function scoringNoteText(n) {
+  const s = String(n);
+  const ids = /^ESPN scoring ids with points but no Rotowire equivalent, ignored for Rotowire: \[([^\]]*)\]$/.exec(s);
+  if (ids) return "ESPN gives points for stats (ids " + ids[1] + ") that Rotowire does not have, so Rotowire projections leave them out.";
+  if (/^D\/ST scored with ESPN's default values/.test(s)) {
+    return "Defense scoring uses ESPN's default values. This league's own defense settings are not in the roster file yet.";
+  }
+  return s;
 }
 
 // ---------------------------------------------------------------- source freshness (docs/STATES.md)
@@ -249,6 +448,7 @@ function sourcesSection(league, meta) {
   sec.appendChild(el("h2", null, "Data sources"));
   const sc = el("div", "card");
   sc.appendChild(sourcesTable(league, meta));
+  (league.scoringNotes || []).forEach(function (n) { sc.appendChild(el("div", "muted aside", scoringNoteText(n))); });
   sec.appendChild(sc);
   return sec;
 }
@@ -264,12 +464,69 @@ function columns(sideSecs, mainSecs) {
   return cols;
 }
 
+// Sidebar card for this week's game. Hidden when there is no game this week.
+function matchupCard(league, g) {
+  if (!g) return null;
+  const card = el("div", "card matchup");
+  card.appendChild(el("div", "mhead", "Week " + league.week + " vs " + String(g.opp || "").trim()));
+  if (isNum(g.winPct)) {
+    const box = el("div", "wpbox");
+    box.appendChild(el("div", "label", "Win chance"));
+    box.appendChild(el("div", "wp " + winClass(g.winPct), pctText(g.winPct)));
+    card.appendChild(box);
+  }
+  if (isNum(g.myMean) && isNum(g.oppMean)) {
+    card.appendChild(el("div", "muted", "You " + g.myMean.toFixed(1) + " · them " + g.oppMean.toFixed(1)));
+  }
+  const odds = oddsText(g);
+  if (odds) card.appendChild(el("div", "muted", odds));
+  return card;
+}
+
+// Sidebar card for last week. Null when the build has no recap or every part is empty.
+function recapCard(r) {
+  const lines = recapLines(r);
+  if (!lines.length) return null;
+  const card = el("div", "card recap");
+  card.appendChild(el("div", "mhead", isNum(r.week) ? "Week " + r.week + " recap" : "Last week recap"));
+  lines.forEach(function (t) { card.appendChild(el("div", "rline", t)); });
+  return card;
+}
+
+// Underdog box, shown when this week's win chance is under 40. Context only, the lineup is still the projection's.
+function upsideCard(list) {
+  const card = el("div", "card upside");
+  card.appendChild(el("div", "mhead", "Underdog this week. Upside options:"));
+  if (!list.length) card.appendChild(el("div", "muted", "No bench player has a higher ceiling than a starter they can replace."));
+  list.forEach(function (o) {
+    const d = el("div", "opt");
+    d.appendChild(el("span", "name", o.player.name));
+    d.appendChild(document.createTextNode(", ceiling " + o.player.ceiling.toFixed(1) + " vs " + o.starter.name + " " + o.starter.ceiling.toFixed(1)));
+    card.appendChild(d);
+  });
+  card.appendChild(el("div", "muted aside", "Context only. The projection still recommends the lineup below."));
+  return card;
+}
+
+function benchRow(p) {
+  const wrap = el("div", "slot");
+  wrap.appendChild(playerRow(p, { chip: benchChip(p), detail: true }));
+  return wrap;
+}
+
 function renderLeague(league, meta) {
   const lu = league.lineup;
+  const game = thisGame(league);
   const secSum = el("section", "s-sum");
   const secMoves = el("section", "s-moves");
   const secLineup = el("section", "s-lineup");
   const secBench = el("section", "s-bench");
+
+  const inRec = new Set(lu.slots.filter(function (s) { return s.recommended; }).map(function (s) { return s.recommended.id; }));
+  const bench = league.roster.filter(function (p) { return !inRec.has(p.id); });
+
+  const mc = matchupCard(league, game);
+  if (mc) secSum.appendChild(mc);
 
   const head = el("div", "card");
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
@@ -287,7 +544,10 @@ function renderLeague(league, meta) {
 
   (lu.alerts || []).forEach(function (a) {
     const flags = a.flags.map(function (f) { return FLAG_TEXT[f] || f; }).join(", ");
-    secSum.appendChild(el("div", "alert", a.player + " is starting at " + a.slot + " and is " + flags.toLowerCase() + "."));
+    const box = el("div", "alert");
+    box.appendChild(el("div", null, a.player + " is starting at " + a.slot + " and is " + flags.toLowerCase() + "."));
+    backupLines(a).forEach(function (x) { box.appendChild(el("div", x.late ? "late" : "line", x.text)); });
+    secSum.appendChild(box);
   });
 
   (lu.watch || []).forEach(function (w) {
@@ -296,7 +556,9 @@ function renderLeague(league, meta) {
     let t = w.player + " (" + w.slot + ") is " + word + ".";
     const k = shortWhen(w.kickoff);
     if (k) t += " Kickoff " + k + ".";
-    const note = el("div", "warn", t);
+    const note = el("div", "warn");
+    note.appendChild(el("div", null, t));
+    backupLines(w).forEach(function (x) { note.appendChild(el("div", x.late ? "late" : "line", x.text)); });
     if (w.injuryNotes) note.title = w.injuryNotes;
     secSum.appendChild(note);
   });
@@ -313,23 +575,36 @@ function renderLeague(league, meta) {
   });
   secMoves.appendChild(moves);
 
+  const side = [secSum, secMoves];
+  const rc = recapCard(league.recap);
+  if (rc) {
+    const secRecap = el("section", "s-recap");
+    secRecap.appendChild(rc);
+    side.push(secRecap);
+  }
+  side.push(sourcesSection(league, meta));
+
+  const ub = game && isNum(game.winPct) && game.winPct < 40 ? upsideCard(upsideOptions(lu.slots, bench)) : null;
   secLineup.appendChild(el("h2", null, "Lineup by slot"));
+  if (ub) secLineup.appendChild(ub);
   const slots = el("div", "card list");
   lu.slots.forEach(function (s) { slots.appendChild(slotGroup(s)); });
   secLineup.appendChild(slots);
 
-  const inRec = new Set(lu.slots.filter(function (s) { return s.recommended; }).map(function (s) { return s.recommended.id; }));
-  const bench = league.roster.filter(function (p) { return !inRec.has(p.id); });
   secBench.appendChild(el("h2", null, "Bench"));
   const bc = el("div", "card list");
-  bench.forEach(function (p) {
-    const wrap = el("div", "slot");
-    wrap.appendChild(playerRow(p, { chip: benchChip(p) }));
-    bc.appendChild(wrap);
-  });
+  const split = benchSplit(bench);
+  split.playable.forEach(function (p) { bc.appendChild(benchRow(p)); });
+  if (split.out.length) {
+    const fold = el("details", "fold outs");
+    fold.appendChild(el("summary", null, "Show " + split.out.length + " out, on bye or on IR"));
+    split.out.forEach(function (p) { fold.appendChild(benchRow(p)); });
+    bc.appendChild(fold);
+  }
+  if (!bench.length) bc.appendChild(el("div", "slot muted", "Nobody on the bench."));
   secBench.appendChild(bc);
 
-  return columns([secSum, secMoves, sourcesSection(league, meta)], [secLineup, secBench]);
+  return columns(side, [secLineup, secBench]);
 }
 
 // v2 waivers: free agents ranked by how much they raise your best lineup this week

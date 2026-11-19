@@ -200,3 +200,34 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .tbar .sep{color:var(--muted);font-weight:400;margin:0 6px}
 @media (max-width:999px){#builder{padding-bottom:64px}}
 @media (min-width:1000px){.tbar{display:none}}
+
+/* S2 Lineup view */
+.matchup .mhead,.recap .mhead,.upside .mhead{font-weight:700;font-size:1.02rem;line-height:1.3;overflow-wrap:anywhere}
+.matchup .muted{margin-top:6px;line-height:1.35}
+.wp{font-size:1.5rem;font-weight:700;line-height:1.2;font-variant-numeric:tabular-nums}
+.wp.good{color:var(--good)}
+.wp.bad{color:var(--bad)}
+.recap .rline{margin-top:4px;font-variant-numeric:tabular-nums;line-height:1.35}
+.alert .line,.warn .line{font-weight:400;font-size:.9rem;margin-top:4px;line-height:1.35}
+.late{color:var(--bad);font-weight:700;font-size:.9rem;margin-top:4px;line-height:1.35}
+.close{margin:-2px 0 0 56px;padding-bottom:6px;font-size:.78rem;line-height:1.3;color:var(--muted)}
+.upside{border-color:var(--warn)}
+.upside .opt{padding:8px 0;border-top:1px solid var(--line);line-height:1.35;overflow-wrap:anywhere}
+.upside .opt .name{font-weight:600}
+.upside .muted.aside{margin-top:8px}
+.fold.outs>summary{font-size:.92rem;font-weight:600;color:var(--muted);margin:10px 0 6px}
+.prow[role=button]{cursor:pointer;border-radius:8px}
+.prow[role=button]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (hover:hover){.prow[role=button]:not(.rec):hover{background:var(--bg)}}
+.caret{display:inline-block;margin-left:6px}
+.caret::before{content:"\25BE";font-size:.75rem;font-weight:400;color:var(--muted)}
+.prow[aria-expanded=true] .caret{transform:rotate(180deg)}
+.pdetail{margin:2px 0 8px 56px;padding:4px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);font-size:.82rem;line-height:1.35}
+.dline{padding:6px 0;border-top:1px solid var(--line)}
+.dline:first-child{border-top:0}
+.dline .label{display:block;margin-bottom:2px}
+.track{position:relative;width:84px;height:6px;margin:5px 0 0 auto;border-radius:3px;background:var(--line)}
+.track .fill{position:absolute;top:0;bottom:0;border-radius:3px;background:var(--accent);opacity:.5}
+.track .tick{position:absolute;top:-3px;bottom:-3px;width:3px;margin-left:-1px;border-radius:2px;background:var(--text)}
+.range.few{white-space:normal;max-width:96px;line-height:1.25;text-align:right}
+.s-recap{order:4.5}
