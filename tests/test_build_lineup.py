@@ -16,7 +16,7 @@ ISO_Z = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
 @pytest.fixture(scope="module")
 def built(tmp_path_factory):
     out = tmp_path_factory.mktemp("build-lineup")
-    res = bd.build(SEASON, WEEK, out_dir=out, save_idmap=False)
+    res = bd.build(SEASON, WEEK, out_dir=out, save_idmap=False, recommended_root=out / "rec")
     return out, res
 
 
