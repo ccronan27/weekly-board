@@ -17,6 +17,10 @@ on:
       timezone: "America/Chicago"
     - cron: "7 13 * * 0"    # Sun 1:07pm  inactives for late games
       timezone: "America/Chicago"
+    - cron: "47 17 * * 0"   # Sun 5:47pm  SNF inactives
+      timezone: "America/Chicago"
+    - cron: "47 17 * * 1"   # Mon 5:47pm  MNF inactives
+      timezone: "America/Chicago"
   workflow_dispatch:
   push:
     paths:

@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 
 from pipeline import lineup, odds, players as pm, recap, scoring, trades, waivers
 from pipeline.adapters import espn_rosters
-from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, now_iso, read_json, source_state, write_json
+from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, next_refresh, now_iso, read_json, source_state, write_json
 from pipeline.ingest import load_config, load_rosters, rosters_status
 
 EASTERN = ZoneInfo("America/New_York")
@@ -223,6 +223,13 @@ def _r(x, n=1):
     return None if x is None else round(x, n)
 
 
+def iso_from_ms(ms) -> str | None:
+    """Sleeper epoch milliseconds to ISO UTC with a Z. None when missing."""
+    if ms is None:
+        return None
+    return datetime.fromtimestamp(ms / 1000, timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
 # ------------------------------------------------------------------ main build
 
 def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None, save_idmap: bool = True,
@@ -301,7 +308,8 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         proj = scoring.project_player(lg, pos, rw["stats"] if rw else None,
                                       er["projection"]["stats"] if er and er["projection"] else None, support) if pos else \
             {"points": None, "espn": None, "rotowire": None, "sources": [], "filled": []}
-        weekly = scoring.weekly_points(lg, pos, actuals.get(pid, {})) if pos and pid else []
+        weekly_by_week = scoring.weekly_points_by_week(lg, pos, actuals.get(pid, {})) if pos and pid else []
+        weekly = [pts for _, pts in weekly_by_week]
         fc = scoring.floor_ceiling(proj["points"], weekly)
         # Sleeper injury data is refreshed every run, the ESPN roster file can be days old.
         # Use Sleeper when the player is matched, otherwise fall back to the roster file.
@@ -322,6 +330,8 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             "ppg": round(statistics.fmean(weekly), 1) if weekly else None,   # season points per game, this league's scoring
             "status": status, "flags": flags, "eligible": eligible, "game": game, "locked": locked,
             "injuryNotes": sp.get("injuryNotes") if sp else None,
+            "newsUpdated": iso_from_ms(sp.get("newsUpdated")) if sp else None,
+            "recent": [{"week": w, "pts": round(pts, 1)} for w, pts in weekly_by_week[-4:]],   # last 4 played weeks, oldest first
             "_filled": proj["filled"],
         }
 
@@ -393,7 +403,26 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 return None
             p = by_id[pid]
             return {k: p[k] for k in ("id", "name", "pos", "team", "points", "espn", "rotowire", "floor", "ceiling", "flags",
-                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games")}
+                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games", "newsUpdated", "recent")}
+
+        # ---- lineup context: next best per slot, backups for flagged starters, late risk
+        cur_ids = [c for c in cur if c]
+        view = [{"id": p["id"], "name": p["name"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"],
+                 "locked": p["locked"], "kickoff": (p["game"] or {}).get("kickoff")} for p in my_players]
+        alerts, watch = [], []
+        for i, (s, pid) in enumerate(zip(slots, cur)):
+            if not pid:
+                continue
+            p = by_id[pid]
+            cands = lineup.backup_candidates(slots, i, view, cur_ids)
+            if any(f in ("BYE", *OUT_STATUSES) for f in p["flags"]):
+                alerts.append({"player": p["name"], "slot": s, "flags": p["flags"],
+                               "backup": lineup.backup_for(cands, p["points"], flagged=False)})
+            if p["status"] in ("QUESTIONABLE", "DOUBTFUL"):
+                kick = (p["game"] or {}).get("kickoff")
+                watch.append({"player": p["name"], "slot": s, "flags": p["flags"], "kickoff": kick,
+                              "injuryNotes": p["injuryNotes"], "backup": lineup.backup_for(cands, p["points"]),
+                              "lateRisk": lineup.late_risk(kick, cands)})
 
         cur_total = round(sum(pts.get(c, 0.0) for c in cur if c), 1)
         rec_total = round(sum(pts.get(r, 0.0) for r in rec_slots if r), 1)
@@ -403,20 +432,23 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             n_filled += len(p["_filled"])
             p.pop("_filled")
         src_used = ["sleeper_projections", "espn_defaults", "nflverse_lines"] + (["espn_rosters"] if lc["platform"] == "espn" else ["sleeper_leagues", "sleeper_players"])
+        if lc["platform"] == "espn":
+            app_name, app_url = "ESPN", f"https://fantasy.espn.com/football/team?leagueId={lc['id']}&teamId={cfg['espnTeamId']}"
+        else:
+            app_name, app_url = "Sleeper", f"https://sleeper.com/leagues/{lc['id']}/team"
         out = {
             "generatedAt": generated, "season": season, "week": week,
-            "league": {"key": lc["key"], "name": lg.name, "platform": lg.platform, "teamName": team_name},
+            "league": {"key": lc["key"], "name": lg.name, "platform": lg.platform, "teamName": team_name,
+                       "appName": app_name, "appUrl": app_url},
             "sources": {k: sources[k] for k in src_used if k in sources},
             "lineup": {
                 "slots": [{"slot": slots[i], "current": brief(cur[i]), "recommended": brief(rec_slots[i]),
-                           "changed": cur[i] != rec_slots[i]} for i in range(len(slots))],
+                           "changed": cur[i] != rec_slots[i],
+                           "nextBest": lineup.next_best(slots, i, view, rec_slots)} for i in range(len(slots))],
                 "currentPoints": cur_total, "recommendedPoints": rec_total, "gain": round(rec_total - cur_total, 1),
                 "moves": [{"in": brief(m["in"]), "out": brief(m["out"]), "slot": m["slot"], "gain": m["gain"]} for m in mv],
-                "alerts": [{"player": p["name"], "slot": s, "flags": p["flags"]} for s, pid in zip(slots, cur) if pid
-                           for p in [by_id[pid]] if any(f in ("BYE", *OUT_STATUSES) for f in p["flags"])],
-                "watch": [{"player": p["name"], "slot": s, "flags": p["flags"], "kickoff": (p["game"] or {}).get("kickoff"),
-                           "injuryNotes": p["injuryNotes"]} for s, pid in zip(slots, cur) if pid
-                          for p in [by_id[pid]] if p["status"] in ("QUESTIONABLE", "DOUBTFUL")],
+                "alerts": alerts,
+                "watch": watch,
             },
             "roster": sorted(my_players, key=lambda p: (-(p["points"] or 0), p["name"])),
             "scoringNotes": lg.notes,
@@ -456,7 +488,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         def fa_brief(pid):
             p = fa_by[pid]
             return {k: p[k] for k in ("id", "name", "pos", "team", "points", "espn", "rotowire", "floor", "ceiling", "flags",
-                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games")}
+                                      "eligible", "game", "injuryNotes", "locked", "ppg", "games", "newsUpdated", "recent")}
 
         mine_in = [{"id": p["id"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"]} for p in my_players]
         fa_in = [{"id": p["id"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"], "locked": p["locked"]} for p in fas]
@@ -576,6 +608,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                      "fromCache": False, "state": "missing", "week": None, "weekMismatch": False}
     meta = {
         "generatedAt": generated, "season": season, "week": week,
+        "nextRefresh": next_refresh(generated),
         "sources": sources,
         # stale here is the age rule only. The site checks it again against its own clock.
         # fromCache: the committed file was unusable and the last good sync is in use.

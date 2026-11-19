@@ -226,7 +226,7 @@ def test_watch_lists_questionable_starter(tmp_path):
     o = bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "b", save_idmap=False, now=LOCK_NOW)["leagues"]["hwh"]
     w = next(x for x in o["lineup"]["watch"] if x["player"] == starter["name"])
     assert w["flags"] == ["QUESTIONABLE"] and w["injuryNotes"] == "Knee"
-    assert set(w) == {"player", "slot", "flags", "kickoff", "injuryNotes"}
+    assert set(w) == {"player", "slot", "flags", "kickoff", "injuryNotes", "backup", "lateRisk"}
 
 
 @needs_raw

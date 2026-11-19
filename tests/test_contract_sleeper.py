@@ -20,7 +20,8 @@ def test_league_normalizes_and_hides_owners(load):
     assert out["scoring"]["rec"] == 1.0 and "QB" in out["rosterPositions"]
     mine = [t for t in out["teams"] if t["isMine"]]
     assert len(mine) == 1 and mine[0]["teamName"]
-    assert any(t["teamName"].startswith("Team ") for t in out["teams"]), "null team_name should fall back to Team N"
+    assert any(t["teamName"].startswith("Team ") and t["teamName"].endswith("(no name set)") for t in out["teams"]), \
+        "null team_name should fall back to 'Team N (no name set)'"
     blob = repr(out)
     assert "display_name" not in blob and "owner_id" not in blob and "user1" not in blob
 

@@ -73,7 +73,9 @@ def test_no_espn_league_endpoints_or_credentials():
 
 
 def test_espn_calls_only_leaguedefaults():
+    # Calls: only leaguedefaults. Links: the public team page a viewer opens (league.appUrl), never fetched
     import re
     for p in _text_files():
         for m in re.finditer(r"fantasy\.espn\.com[^\s\"']*", p.read_text(encoding="utf-8")):
-            assert "leaguedefaults" in m.group(0), f"{p.relative_to(REPO)}: {m.group(0)}"
+            assert "leaguedefaults" in m.group(0) or m.group(0).startswith("fantasy.espn.com/football/team?"), \
+                f"{p.relative_to(REPO)}: {m.group(0)}"

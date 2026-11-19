@@ -161,7 +161,7 @@ def normalize_league(league: dict, rosters: list, users: list, my_user_id: str |
                        "pointsAgainst": st.get("fpts_against", 0) + st.get("fpts_against_decimal", 0) / 100,
                        "division": st.get("division")},
             "rosterId": rid,
-            "teamName": names.get(r["owner_id"]) or f"Team {rid}",
+            "teamName": names.get(r["owner_id"]) or f"Team {rid} (no name set)",
             "isMine": r["owner_id"] in mine,
             "faabUsed": st.get("waiver_budget_used"),
             "players": [str(p) for p in r["players"]],

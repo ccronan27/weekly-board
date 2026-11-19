@@ -85,6 +85,51 @@ def arrange(slots: list[str], chosen: list[str | None], current: list[str | None
     return list(picks)
 
 
+def _movable(p: dict) -> bool:
+    """Eligible and not locked. The only players a swap can bring in."""
+    return bool(p["eligible"]) and not p.get("locked")
+
+
+def _ranked(slot: str, players: list[dict], exclude: set) -> list[dict]:
+    """Movable players who fit the slot under the optimizer's eligibility rule, best first."""
+    pool = [p for p in players if _movable(p) and p["id"] not in exclude and eligible_for(slot, p["pos"])]
+    return sorted(pool, key=lambda p: (-(p["points"] or 0.0), str(p["id"])))
+
+
+def next_best(slots: list[str], i: int, players: list[dict], recommended: list) -> dict | None:
+    """Best movable player who could fill slot i but is not in the recommended lineup."""
+    pool = _ranked(slots[i], players, {r for r in recommended if r})
+    if not pool:
+        return None
+    p = pool[0]
+    return {"id": p["id"], "name": p["name"], "pos": p["pos"], "points": round(p["points"] or 0.0, 1)}
+
+
+def backup_candidates(slots: list[str], i: int, players: list[dict], starters: list) -> list[dict]:
+    """Every movable non-starting player who could fill slot i, best first. Used for backups and late risk."""
+    return _ranked(slots[i], players, {s for s in starters if s})
+
+
+def backup_for(candidates: list[dict], flagged_points: float | None, flagged: bool = True) -> dict | None:
+    """Best candidate as a swap for a flagged starter. gain is backup points minus the flagged player's
+    points (an out player scores 0 for this purpose, so flagged=False gives gain = backup points)."""
+    if not candidates:
+        return None
+    b = candidates[0]
+    pts = round(b["points"] or 0.0, 1)
+    base = (flagged_points or 0.0) if flagged else 0.0
+    return {"id": b["id"], "name": b["name"], "points": pts, "kickoff": b.get("kickoff"),
+            "gain": round(pts - base, 1)}
+
+
+def late_risk(flagged_kickoff: str | None, candidates: list[dict]) -> bool:
+    """True when the flagged player kicks off after every backup, so no swap is left if he is ruled out late.
+    With no backups at all that is also true. Unknown kickoff times never count as a risk."""
+    if flagged_kickoff is None:
+        return False
+    return all(b.get("kickoff") is not None and flagged_kickoff > b["kickoff"] for b in candidates)
+
+
 def moves(slots: list[str], current: list, recommended: list, pts: dict, pos_of: dict) -> list[dict]:
     """Bench-in and starter-out pairs, matched to the slot the incoming player takes."""
     cur_set = {c for c in current if c}
