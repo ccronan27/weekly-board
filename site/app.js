@@ -333,6 +333,108 @@ function renderLeague(league, meta) {
 }
 
 // v2 waivers: free agents ranked by how much they raise your best lineup this week
+// A gain under 1.0 is a small gain. Those rows are muted and labeled.
+const SMALL_GAIN = 1;
+const PICKUP_ROWS = 8;
+function isSmallGain(x) { return isNum(x) && x < SMALL_GAIN; }
+// A horizon counts only when it has weeks. The summary and the lists use the same rule.
+function horizonOf(h) { return h && h.weeks && h.weeks.length ? h : null; }
+// Marks a target row with a small gain. playerRow is not changed: the row gets a class and a label after it.
+function markSmallGain(wrap, gain) {
+  if (!isSmallGain(gain)) return;
+  wrap.classList.add("small");
+  wrap.appendChild(el("div", "smallgain", "small gain"));
+}
+function statBox(label, value) {
+  const d = el("div");
+  d.appendChild(el("span", "label", label));
+  d.appendChild(el("b", null, value));
+  return d;
+}
+
+// Best pickups: one row per player across the three lists, merged by player id. Pure, so a test can run it.
+// Rest of season gain sorts the rows, this week's gain is the fallback. Lists that are not in use do not count.
+function pickupRows(w) {
+  const st = horizonOf(w.stretch), lt = horizonOf(w.longTerm);
+  const lists = [["week", w.targets], ["stretch", st && st.targets], ["playoffs", lt && lt.targets]];
+  const byId = {}, order = [];
+  lists.forEach(function (pair) {
+    (pair[1] || []).forEach(function (t) {
+      const id = String(t.player.id);
+      if (!byId[id]) {
+        byId[id] = {id: id, name: t.player.name, pos: t.player.pos || "", week: null, stretch: null, playoffs: null, ros: null, bid: null};
+        order.push(id);
+      }
+      const r = byId[id];
+      r[pair[0]] = isNum(t.gain) ? t.gain : null;
+      if (r.ros === null && isNum(t.rosGain)) r.ros = t.rosGain;
+      if (r.bid === null && isNum(t.bid)) r.bid = t.bid;
+    });
+  });
+  function key(r) { return isNum(r.ros) ? r.ros : isNum(r.week) ? r.week : -Infinity; }
+  return order.map(function (id) { return byId[id]; }).sort(function (a, b) {
+    const ka = key(a), kb = key(b);
+    if (ka !== kb) return kb > ka ? 1 : -1;
+    return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+  }).slice(0, PICKUP_ROWS);
+}
+
+// The Best pickups table. Stretch and playoff columns only exist when that horizon is in use.
+// Rest of season only shows when some row has it. The bid column only shows in FAAB leagues.
+function pickupsCard(w) {
+  const st = horizonOf(w.stretch), lt = horizonOf(w.longTerm);
+  const rows = pickupRows(w);
+  const card = el("div", "card tablecard");
+  if (!rows.length) {
+    card.appendChild(el("div", "slot", "No free agent beats your lineup in these lists."));
+    return card;
+  }
+  const cols = [{label: "This week", key: "week"}];
+  if (st) cols.push({label: "Stretch", key: "stretch", wide: true});
+  if (lt) cols.push({label: "Playoffs", key: "playoffs", wide: true});
+  if (rows.some(function (r) { return isNum(r.ros); })) cols.push({label: "Rest of season", key: "ros"});
+  if (w.faab) cols.push({label: "FAAB bid", key: "bid", money: true});
+  const t = el("table", "pickups");
+  const hr = el("tr");
+  hr.appendChild(el("th", null, "Player"));
+  cols.forEach(function (c) { hr.appendChild(el("th", c.wide ? "pk-wide" : null, c.label)); });
+  const thead = el("thead");
+  thead.appendChild(hr);
+  t.appendChild(thead);
+  const tb = el("tbody");
+  rows.forEach(function (r) {
+    const tr = el("tr");
+    const name = el("td", "pk-name");
+    name.appendChild(document.createTextNode(r.name));
+    if (r.pos) name.appendChild(el("span", "pk-pos", r.pos));
+    tr.appendChild(name);
+    cols.forEach(function (c) {
+      const v = r[c.key];
+      const cls = [];
+      if (c.wide) cls.push("pk-wide");
+      if (c.money) cls.push("pk-bid");
+      else if (isSmallGain(v)) cls.push("small");
+      const txt = !isNum(v) ? "" : c.money ? "$" + v : signed(v);
+      tr.appendChild(el("td", cls.join(" "), txt));
+    });
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+  card.appendChild(t);
+  return card;
+}
+
+// FAAB budget and the most any team in the league has left. Only in FAAB leagues.
+function faabCard(faab) {
+  const c = el("div", "card");
+  const sum = el("div", "summary");
+  if (isNum(faab.left)) sum.appendChild(statBox("FAAB left", "$" + faab.left + (isNum(faab.budget) ? " of $" + faab.budget : "")));
+  if (isNum(faab.leagueMaxLeft)) sum.appendChild(statBox("Most left in the league", "$" + faab.leagueMaxLeft));
+  c.appendChild(sum);
+  c.appendChild(el("div", "muted faabnote", "Bids are a rough guide, not tested against real bids. Bigger rest of season gain means a bigger share of what you have left, capped at 40 percent."));
+  return c;
+}
+
 function renderWaivers(league, meta) {
   const w = league.waivers;
   const secSum = el("section", "s-sum");
@@ -343,22 +445,19 @@ function renderWaivers(league, meta) {
   const head = el("div", "card");
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
   const best = w.targets.length ? w.targets[0] : null;
-  const lt = w.longTerm && w.longTerm.weeks && w.longTerm.weeks.length ? w.longTerm : null;
+  const lt = horizonOf(w.longTerm);
   const bestLt = lt && lt.targets.length ? lt.targets[0] : null;
-  const st = w.stretch && w.stretch.weeks && w.stretch.weeks.length ? w.stretch : null;
+  const st = horizonOf(w.stretch);
   const bestSt = st && st.targets.length ? st.targets[0] : null;
   const sum = el("div", "summary");
-  const rows = [["This week", best ? best.player.name + " " + signed(best.gain) : "None"]];
+  const thisWeek = best ? best.player.name + " " + signed(best.gain) + (isNum(best.bid) ? ", bid $" + best.bid : "") : "None";
+  const rows = [["This week", thisWeek]];
   if (st) rows.push(["Stretch run", bestSt ? bestSt.player.name + " " + signed(bestSt.gain) : "None"]);
   rows.push(["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : noFutureWeeks(league.seasonPhase)]);
-  rows.forEach(function (x) {
-    const d = el("div");
-    d.appendChild(el("span", "label", x[0]));
-    d.appendChild(el("b", null, x[1]));
-    sum.appendChild(d);
-  });
+  rows.forEach(function (x) { sum.appendChild(statBox(x[0], x[1])); });
   head.appendChild(sum);
   secSum.appendChild(head);
+  if (w.faab) secSum.appendChild(faabCard(w.faab));
   freshnessWarnings(league, meta, secSum);
   if (league.league.platform === "espn") secSum.appendChild(el("p", "muted aside", "ESPN does not say who is on waivers, so some of these may need a claim."));
 
@@ -375,6 +474,10 @@ function renderWaivers(league, meta) {
   }
   secDrop.appendChild(dc);
 
+  secTargets.appendChild(el("h2", null, "Best pickups"));
+  secTargets.appendChild(el("div", "muted", "Each player once across the lists below. Blank means the player is not in that list. Sorted by rest of season gain."));
+  secTargets.appendChild(pickupsCard(w));
+
   secTargets.appendChild(el("h2", null, "Short term, week " + league.week));
   secTargets.appendChild(el("div", "muted", "Projected points each player adds to your best lineup this week. Two per position at most."));
   const tc = el("div", "card list");
@@ -383,6 +486,7 @@ function renderWaivers(league, meta) {
     const wrap = el("div", "slot");
     const extra = "Starts at " + t.slot + (t.replaces ? " and sends " + t.replaces.name + " to the bench." : ".");
     wrap.appendChild(playerRow(t.player, { chip: t.player.pos, gain: t.gain, ppg: true, extra: extra }));
+    markSmallGain(wrap, t.gain);
     tc.appendChild(wrap);
   });
   secTargets.appendChild(tc);
@@ -445,6 +549,7 @@ function horizonSection(lt, title, intro) {
     const rate = isNum(t.rate) ? t.rate.toFixed(1) + " a week, " + (t.rateFrom === "season" ? "season average" : "this week's projection") + ". " : "";
     const sched = t.weeks.map(function (x) { return matchupText(x, lt.teams || 32); }).join(" · ");
     wrap.appendChild(playerRow(t.player, { chip: t.player.pos, gain: t.gain, ppg: true, extra: rate + sched }));
+    markSmallGain(wrap, t.gain);
     c.appendChild(wrap);
   });
   sec.appendChild(c);
@@ -668,6 +773,20 @@ function renderTrade(league, meta, td, state, rerender) {
 function pct(x) { return isNum(x) ? (x >= 99.95 ? "100%" : x > 0 && x < 0.5 ? "under 1%" : Math.round(x) + "%") : "n/a"; }
 function record(t) { return t.wins + "-" + t.losses + (t.ties ? "-" + t.ties : ""); }
 
+// The current-week game is the one that carries ifWin and ifLose. Null when no game has them.
+function currentGame(st) {
+  return st.myGames.filter(function (g) { return isNum(g.ifWin) && isNum(g.ifLose); })[0] || null;
+}
+// "Playoff odds 81% with a win, 48% with a loss"
+function oddsLine(g) {
+  return "Playoff odds " + pct(g.ifWin) + " with a win, " + pct(g.ifLose) + " with a loss";
+}
+// "This week swings your odds by 33 points."
+function swingLine(g) {
+  const n = Math.round(g.ifWin - g.ifLose);
+  return "This week swings your odds by " + n + (n === 1 ? " point." : " points.");
+}
+
 function renderStandings(league, meta) {
   const st = league.standings;
   const secSum = el("section", "s-sum");
@@ -676,23 +795,22 @@ function renderStandings(league, meta) {
   if (!st) {
     const c = el("div", "card");
     c.appendChild(el("div", null, league.league.platform === "espn"
-      ? "ESPN standings are not in the roster file yet. Once the espn-roster-sync skill saves standings and schedule (see docs/SPEC.md), odds show up here on the next run."
+      ? "ESPN standings show up here once the roster sync starts saving them."
       : "Standings are not available for this league right now."));
     secSum.appendChild(c);
     return columns([secSum, sourcesSection(league, meta)], []);
   }
   const me = st.teams.filter(function (t) { return t.isMine; })[0];
+  const cur = currentGame(st);
   const head = el("div", "card");
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
   const sm = el("div", "summary");
   [["Record", me ? record(me) : "n/a"], ["Playoffs", me ? pct(me.playoffPct) : "n/a"], ["Bye", me ? pct(me.byePct) : "n/a"]].forEach(function (x) {
-    const d = el("div");
-    d.appendChild(el("span", "label", x[0]));
-    d.appendChild(el("b", null, x[1]));
-    sm.appendChild(d);
+    sm.appendChild(statBox(x[0], x[1]));
   });
   head.appendChild(sm);
   if (me) head.appendChild(el("div", "psub", "Seed " + me.seed + " now. Projected " + me.projWins.toFixed(1) + " wins, average finish seed " + me.avgSeed.toFixed(1) + "."));
+  if (cur) head.appendChild(el("div", "psub", swingLine(cur)));
   secSum.appendChild(head);
   freshnessWarnings(league, meta, secSum);
   secSum.appendChild(el("p", "muted aside", (st.weeksLeft.length
@@ -712,6 +830,7 @@ function renderStandings(league, meta) {
     const body = el("div", "pbody");
     body.appendChild(el("div", "pname", "vs " + g.opp));
     body.appendChild(el("div", "psub", "You " + g.myMean.toFixed(1) + " · them " + g.oppMean.toFixed(1) + " expected"));
+    if (g === cur) body.appendChild(el("div", "psub", oddsLine(g)));
     pr.appendChild(body);
     const nums = el("div", "pnums");
     nums.appendChild(el("div", "pts " + (g.winPct >= 60 ? "good" : g.winPct <= 40 ? "bad" : ""), pct(g.winPct)));
@@ -727,7 +846,10 @@ function renderStandings(league, meta) {
   const card = el("div", "card tablecard");
   const t = el("table", "standings");
   const hr = el("tr");
-  ["", "Team", "Record", "Points", "Playoffs", "Bye"].forEach(function (h, i) { hr.appendChild(el("th", (i > 1 ? "num" : "") + (i === 3 ? " pf" : ""), h)); });
+  // Points stays on phones. Bye is the column that goes under 400px (see style.css)
+  ["", "Team", "Record", "Points", "Playoffs", "Bye"].forEach(function (h, i) {
+    hr.appendChild(el("th", (i > 1 ? "num" : "") + (i === 3 ? " pf" : "") + (i === 5 ? " bye" : ""), h));
+  });
   const thead = el("thead");
   thead.appendChild(hr);
   t.appendChild(thead);
@@ -742,7 +864,7 @@ function renderStandings(league, meta) {
     tr.appendChild(el("td", "num", record(r)));
     tr.appendChild(el("td", "num pf", r.pointsFor.toFixed(1)));
     tr.appendChild(el("td", "num strong", pct(r.playoffPct)));
-    tr.appendChild(el("td", "num", pct(r.byePct)));
+    tr.appendChild(el("td", "num bye", pct(r.byePct)));
     tb.appendChild(tr);
   });
   t.appendChild(tb);

@@ -98,7 +98,7 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .standings .strong{font-weight:700}
 .standings tr.mine td{background:var(--goodbg);font-weight:600}
 .standings tr.cutline+tr td{border-top:2px solid var(--accent)}
-@media (max-width:639px){.standings .pf{display:none}.standings{font-size:.82rem}.standings td,.standings th{padding-left:4px;padding-right:4px}}
+@media (max-width:639px){.standings{font-size:.82rem}.standings td,.standings th{padding-left:4px;padding-right:4px}}
 .pts.good{color:var(--good)}
 .pts.bad{color:var(--bad)}
 .fold>summary{font-size:1.1rem;font-weight:700;margin:20px 0 8px;cursor:pointer}
@@ -162,3 +162,26 @@ h2{font-size:1.1rem;margin:20px 0 8px}
   #builder{scroll-margin-top:calc(var(--bar-h,0px) + 16px)}
 }
 @media (min-width:1000px){.bar{max-width:1180px}}
+
+/* ---------------------------------------------------------------- S3 Waivers and Standings
+   Best pickups table, small gain rows, FAAB card, and the standings Bye column on small phones.
+   The Points column stays on phones. Under 640px the Stretch and Playoffs columns go. */
+.pickups{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
+.pickups th{font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600;text-align:right;padding:8px 4px 6px;line-height:1.2;vertical-align:bottom}
+.pickups td{padding:8px 4px;border-top:1px solid var(--line);text-align:right;white-space:nowrap;line-height:1.3}
+.pickups th:first-child,.pickups td.pk-name{text-align:left;padding-left:0}
+.pickups td.pk-name{white-space:normal;overflow-wrap:anywhere;font-weight:600}
+.pickups .pk-pos{display:inline-block;margin-left:6px;font-size:.72rem;font-weight:600;color:var(--muted)}
+.pickups td.small{color:var(--muted);font-weight:500}
+.pickups td.pk-bid{font-weight:700}
+@media (max-width:639px){.pickups .pk-wide{display:none}}
+.pickups .pk-name{min-width:6rem}
+
+/* Small gain: a waiver row under 1.0 points is muted, with a label under it */
+.slot.small .pname,.slot.small .pts,.slot.small .gainline{color:var(--muted)}
+.smallgain{font-size:.72rem;color:var(--muted);margin:2px 0 0 56px}
+.faabnote{margin-top:10px}
+
+/* Standings: the Bye column goes under 400px. Points stays. Long team names wrap instead of pushing the table sideways */
+@media (max-width:399px){.standings .bye{display:none}}
+.standings .tname{min-width:0;overflow-wrap:anywhere}
