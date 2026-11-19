@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T21:35:37Z",
+ "generatedAt": "2026-11-19T21:43:27Z",
  "league": "chicago-dynasty",
  "players": [
   {
@@ -10,19 +10,19 @@
    "floor": 16.1,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "6770",
    "injuryNotes": null,
    "locked": false,
    "name": "Joe Burrow",
-   "newsUpdated": "2026-11-19T15:25:00Z",
+   "newsUpdated": "2026-11-19T21:25:03Z",
    "points": 24.9,
    "pos": "QB",
    "ppg": 26.8,
@@ -275,12 +275,12 @@
    "floor": 14.6,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 7,
    "id": "11566",
@@ -540,12 +540,12 @@
    "floor": 10.0,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "7564",
@@ -1084,7 +1084,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Kenneth Walker III",
-   "newsUpdated": "2026-11-19T21:15:03Z",
+   "newsUpdated": "2026-11-19T21:35:03Z",
    "points": 16.8,
    "pos": "RB",
    "ppg": 23.1,
@@ -1670,7 +1670,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Bhayshul Tuten",
-   "newsUpdated": "2026-11-19T17:35:01Z",
+   "newsUpdated": "2026-11-19T21:35:04Z",
    "points": 15.2,
    "pos": "RB",
    "ppg": 15.4,
@@ -1819,19 +1819,19 @@
    "floor": 5.7,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "6801",
    "injuryNotes": null,
    "locked": false,
    "name": "Tee Higgins",
-   "newsUpdated": "2026-11-19T18:30:01Z",
+   "newsUpdated": "2026-11-19T21:35:03Z",
    "points": 14.8,
    "pos": "WR",
    "ppg": 16.1,
@@ -1990,7 +1990,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Cam Skattebo",
-   "newsUpdated": "2026-11-19T16:45:01Z",
+   "newsUpdated": "2026-11-19T21:35:04Z",
    "points": 14.2,
    "pos": "RB",
    "ppg": 12.9,
@@ -2607,12 +2607,12 @@
    "floor": 7.2,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "9224",
@@ -3867,12 +3867,12 @@
    "floor": 5.6,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 8,
    "id": "2449",
@@ -4232,12 +4232,12 @@
    "floor": 5.6,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 7,
    "id": "8210",
@@ -5365,7 +5365,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jordyn Tyson",
-   "newsUpdated": "2026-11-19T21:00:04Z",
+   "newsUpdated": "2026-11-19T21:30:03Z",
    "points": 8.8,
    "pos": "WR",
    "ppg": 8.2,
@@ -6078,12 +6078,12 @@
    "floor": 2.8,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "7839",
@@ -6198,7 +6198,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jakobi Meyers",
-   "newsUpdated": "2026-11-18T23:35:55Z",
+   "newsUpdated": "2026-11-19T21:35:04Z",
    "points": 8.3,
    "pos": "WR",
    "ppg": 7.5,
@@ -6292,12 +6292,12 @@
    "floor": 4.6,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "13968",
@@ -6504,12 +6504,12 @@
    "floor": 1.9,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 8,
    "id": "4993",
@@ -8041,12 +8041,12 @@
    "floor": 2.8,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 8,
    "id": "8136",
@@ -8096,19 +8096,19 @@
    "floor": 2.8,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 5,
    "id": "12533",
    "injuryNotes": null,
    "locked": false,
    "name": "Jacory Croskey-Merritt",
-   "newsUpdated": "2026-11-19T21:15:03Z",
+   "newsUpdated": "2026-11-19T21:25:02Z",
    "points": 7.1,
    "pos": "RB",
    "ppg": 8.5,
@@ -8149,12 +8149,12 @@
    "floor": 1.3,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "CIN",
@@ -8459,12 +8459,12 @@
    "floor": 2.9,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "13301",
@@ -8618,12 +8618,12 @@
    "floor": 2.0,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "4147",
@@ -9097,12 +9097,12 @@
    "floor": 3.4,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 6,
    "id": "8135",
@@ -10280,7 +10280,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Chris Rodriguez Jr.",
-   "newsUpdated": "2026-11-18T23:45:55Z",
+   "newsUpdated": "2026-11-19T21:35:04Z",
    "points": 5.6,
    "pos": "RB",
    "ppg": 5.9,
@@ -10586,12 +10586,12 @@
    "floor": 0.5,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 9,
    "id": "WAS",
@@ -12076,12 +12076,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 5,
    "id": "6001",
@@ -12131,12 +12131,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 2,
    "id": "10226",
@@ -12437,12 +12437,12 @@
    "floor": 1.7,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 6,
    "id": "4663",
@@ -12930,7 +12930,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Sione Vaki",
-   "newsUpdated": "2026-11-18T22:25:54Z",
+   "newsUpdated": "2026-11-19T21:35:03Z",
    "points": 3.5,
    "pos": "RB",
    "ppg": 3.2,
@@ -14102,12 +14102,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 1,
    "id": "6853",
@@ -14591,12 +14591,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 7,
    "id": "13264",
@@ -15687,12 +15687,12 @@
    "floor": 0.4,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 4,
    "id": "7716",
@@ -15881,12 +15881,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 2,
    "id": "11596",
@@ -15926,12 +15926,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 3,
    "id": "13282",
@@ -16109,7 +16109,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "LeQuint Allen Jr.",
-   "newsUpdated": "2026-11-19T15:30:00Z",
+   "newsUpdated": "2026-11-19T21:30:03Z",
    "points": 1.1,
    "pos": "RB",
    "ppg": 1.0,
@@ -16783,18 +16783,16 @@
    "ceiling": 1.4,
    "eligible": true,
    "espn": null,
-   "flags": [
-    "QUESTIONABLE"
-   ],
+   "flags": [],
    "floor": 0.1,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 4,
    "id": "11942",
@@ -16829,7 +16827,7 @@
    "sources": [
     "rotowire"
    ],
-   "status": "QUESTIONABLE",
+   "status": null,
    "team": "WAS",
    "teamName": null
   },
@@ -16841,12 +16839,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 1,
    "id": "13418",
@@ -17090,12 +17088,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 0,
    "id": "12062",
@@ -17912,12 +17910,12 @@
    "floor": null,
    "game": {
     "home": true,
-    "implied": 24.2,
+    "implied": 23.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "CIN",
-    "oppImplied": 30.2,
+    "oppImplied": 29.8,
     "spread": 6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 1,
    "id": "11650",
@@ -18338,12 +18336,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 2,
    "id": "12543",
@@ -19417,12 +19415,12 @@
    "floor": 0.0,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 3,
    "id": "11068",
@@ -20281,12 +20279,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 30.2,
+    "implied": 29.8,
     "kickoff": "2026-11-24T01:15Z",
     "opp": "WAS",
-    "oppImplied": 24.2,
+    "oppImplied": 23.8,
     "spread": -6.0,
-    "total": 54.5
+    "total": 53.5
    },
    "games": 2,
    "id": "13477",
@@ -20656,35 +20654,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:36Z",
+   "lastUpdated": "2026-11-19T21:43:27Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:36Z",
+   "lastUpdated": "2026-11-19T21:43:27Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:34Z",
+   "lastUpdated": "2026-11-19T21:43:25Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:35Z",
+   "lastUpdated": "2026-11-19T21:43:25Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:35Z",
+   "lastUpdated": "2026-11-19T21:43:25Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

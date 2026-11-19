@@ -15226,7 +15226,7 @@
     "7": 0.0
    },
    "espnId": 4372096,
-   "injuryStatus": "ACTIVE",
+   "injuryStatus": "QUESTIONABLE",
    "name": "Luke Schoonmaker",
    "pos": "TE",
    "proTeamId": 6,
@@ -27634,6 +27634,6 @@
    "team": null
   }
  ],
- "fetchedAt": "2026-11-19T21:35:36Z",
+ "fetchedAt": "2026-11-19T21:43:27Z",
  "source": "espn_defaults"
 }

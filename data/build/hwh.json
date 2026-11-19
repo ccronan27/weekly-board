@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T21:35:37Z",
+ "generatedAt": "2026-11-19T21:43:27Z",
  "league": {
   "appName": "Sleeper",
   "appUrl": "https://sleeper.com/leagues/1389389185361653760/team",
@@ -334,7 +334,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Jordyn Tyson",
-     "newsUpdated": "2026-11-19T21:00:04Z",
+     "newsUpdated": "2026-11-19T21:30:03Z",
      "points": 11.3,
      "pos": "WR",
      "ppg": 12.0,
@@ -379,7 +379,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Jordyn Tyson",
-     "newsUpdated": "2026-11-19T21:00:04Z",
+     "newsUpdated": "2026-11-19T21:30:03Z",
      "points": 11.3,
      "pos": "WR",
      "ppg": 12.0,
@@ -1315,7 +1315,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jordyn Tyson",
-   "newsUpdated": "2026-11-19T21:00:04Z",
+   "newsUpdated": "2026-11-19T21:30:03Z",
    "points": 11.3,
    "pos": "WR",
    "ppg": 12.0,
@@ -1848,35 +1848,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:36Z",
+   "lastUpdated": "2026-11-19T21:43:27Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:36Z",
+   "lastUpdated": "2026-11-19T21:43:27Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:34Z",
+   "lastUpdated": "2026-11-19T21:43:25Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:35Z",
+   "lastUpdated": "2026-11-19T21:43:25Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:35:35Z",
+   "lastUpdated": "2026-11-19T21:43:25Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -2672,12 +2672,12 @@
      "floor": 5.6,
      "game": {
       "home": true,
-      "implied": 24.2,
+      "implied": 23.8,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "CIN",
-      "oppImplied": 30.2,
+      "oppImplied": 29.8,
       "spread": 6.0,
-      "total": 54.5
+      "total": 53.5
      },
      "games": 7,
      "id": "8210",
@@ -2895,12 +2895,12 @@
      "floor": 4.5,
      "game": {
       "home": true,
-      "implied": 24.2,
+      "implied": 23.8,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "CIN",
-      "oppImplied": 30.2,
+      "oppImplied": 29.8,
       "spread": 6.0,
-      "total": 54.5
+      "total": 53.5
      },
      "games": 6,
      "id": "8135",
@@ -3919,12 +3919,12 @@
      "floor": 5.6,
      "game": {
       "home": true,
-      "implied": 24.2,
+      "implied": 23.8,
       "kickoff": "2026-11-24T01:15Z",
       "opp": "CIN",
-      "oppImplied": 30.2,
+      "oppImplied": 29.8,
       "spread": 6.0,
-      "total": 54.5
+      "total": 53.5
      },
      "games": 7,
      "id": "8210",
