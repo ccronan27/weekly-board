@@ -340,7 +340,7 @@ function winClass(x) {
   return x >= 60 ? "good" : x <= 40 ? "bad" : "";
 }
 function pctText(x) {
-  return isNum(x) ? Math.round(x) + "%" : "";
+  return isNum(x) ? pct(x) : "";   // same wording as Standings: "under 1%", "100%"
 }
 // "Playoff odds 81% with a win, 48% with a loss". Empty when the build has neither.
 function oddsText(g) {
@@ -376,7 +376,7 @@ function sourceState(s) {
   return !s.lastUpdated ? "missing" : (!s.ok || s.stale) ? "stale" : "fresh";
 }
 // Rules that depend on the clock are checked again here, because a page can outlive its build by days.
-const BOARD_STALE_HOURS = 72;   // the longest planned gap between refreshes is Sun 1:07pm to Tue 9:07pm, 56 hours
+const BOARD_STALE_HOURS = 72;   // the longest planned gap between refreshes is Fri 5:07pm to Sun 9:07am, 40 hours
 function hoursSince(iso, now) {
   const t = iso ? Date.parse(iso) : NaN;
   return isNaN(t) ? Infinity : (now - t) / 3600000;
@@ -495,9 +495,9 @@ function recapCard(r) {
 
 // Underdog box, shown when this week's win chance is under 40. Context only, the lineup is still the projection's.
 function upsideCard(list) {
+  if (!list.length) return null;   // nothing to offer, so no box
   const card = el("div", "card upside");
   card.appendChild(el("div", "mhead", "Underdog this week. Upside options:"));
-  if (!list.length) card.appendChild(el("div", "muted", "No bench player has a higher ceiling than a starter they can replace."));
   list.forEach(function (o) {
     const d = el("div", "opt");
     d.appendChild(el("span", "name", o.player.name));
@@ -689,7 +689,7 @@ function pickupsCard(w) {
       if (c.wide) cls.push("pk-wide");
       if (c.money) cls.push("pk-bid");
       else if (isSmallGain(v)) cls.push("small");
-      const txt = !isNum(v) ? "" : c.money ? "$" + v : signed(v);
+      const txt = !isNum(v) ? "" : c.money ? (v > 0 ? "$" + v : "-") : signed(v);
       tr.appendChild(el("td", cls.join(" "), txt));
     });
     tb.appendChild(tr);
@@ -725,7 +725,7 @@ function renderWaivers(league, meta) {
   const st = horizonOf(w.stretch);
   const bestSt = st && st.targets.length ? st.targets[0] : null;
   const sum = el("div", "summary");
-  const thisWeek = best ? best.player.name + " " + signed(best.gain) + (isNum(best.bid) ? ", bid $" + best.bid : "") : "None";
+  const thisWeek = best ? best.player.name + " " + signed(best.gain) + (isNum(best.bid) && best.bid > 0 ? ", bid $" + best.bid : "") : "None";
   const rows = [["This week", thisWeek]];
   if (st) rows.push(["Stretch run", bestSt ? bestSt.player.name + " " + signed(bestSt.gain) : "None"]);
   rows.push(["Playoffs", lt ? (bestLt ? bestLt.player.name + " " + signed(bestLt.gain) : "None") : noFutureWeeks(league.seasonPhase)]);
@@ -1037,7 +1037,7 @@ function renderTrade(league, meta, td, state, rerender) {
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
   const sm = el("div", "summary");
   const best = td.ideas[0];
-  [["Best idea", best ? signed(best.myGain) + " for you" : "None"], ["Ideas", String(td.ideas.length)], ["Teams", String(others.length)]].forEach(function (x) {
+  [["Best idea", best ? signed(best.myGain) + " for you" : "None"], ["Ideas", String(mergeIdeas(td.ideas).length)], ["Teams", String(others.length)]].forEach(function (x) {
     const d = el("div");
     d.appendChild(el("span", "label", x[0]));
     d.appendChild(el("b", null, x[1]));

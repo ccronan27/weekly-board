@@ -79,6 +79,8 @@ The board works without these and uses each one as soon as it appears. Each is v
 | Sun 9:07am | Claude skill + Actions | ESPN roster sync + morning news |
 | Sun 10:47am | Actions | Inactives for noon games |
 | Sun 1:07pm | Actions | Inactives for late games |
+| Sun 5:47pm | Actions | Inactives for the Sunday night game |
+| Mon 5:47pm | Actions | Inactives for the Monday night game |
 | On demand | Both | `workflow_dispatch` button (GitHub mobile), or "sync ESPN" to Claude |
 
 Actions should also run when `data/espn/rosters.json` changes (push trigger on that path).
@@ -99,4 +101,5 @@ Actions should also run when `data/espn/rosters.json` changes (push trigger on t
 - v2 (shipped 11/18/26): waiver targets per league, scored against each team's weakest starting slots, byes and injuries. Short term: the gain in your best lineup this week. Long term: the gain summed over the fantasy playoff weeks, using this week's projection as the rate for healthy skill players and the season average for DEF, K and players hurt or on bye now. Playoff matchup strength is display context only. See `pipeline/waivers.py`
 - v3 (shipped 11/18/26): trade analyzer (dynasty-aware for Chicago Dynasty). Ideas are 1 for 1 trades that raise both teams' playoff lineups. The site builder handles any trade. Dynasty awareness is ages plus a flag when you send away a player 4 or more years younger. See `pipeline/trades.py`
 - v4 (shipped 11/18/26): stretch run weeks (12 to 14) in waivers and trades, standings with simulated playoff and bye odds (`pipeline/odds.py`), the ESPN league's own D/ST scoring and playoff weeks when the sync file carries them, and `scripts/backtest.py`
+- v5 (shipped 11/19/26): end-user pass from `docs/UX_PLAN.md`. All leagues tab and tab status, matchup and odds swing on Lineup, backups and late-game risk for questionable starters, close calls, underdog upside box, last week recap (`pipeline/recap.py`), player detail rows, FAAB budgets and bids, Best pickups table, trade idea threshold (2.0), merged ideas, rival flag, team needs, dynasty picks (Sleeper `traded_picks`), open-in-app links, refresh on return, sticky tabs, add to home screen, Sunday and Monday night inactives runs
 - v1 stores full league player pools so v2 needs no rework

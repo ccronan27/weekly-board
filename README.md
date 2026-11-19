@@ -10,6 +10,8 @@ A Standings view (v4) shows each league's table with playoff and bye odds and yo
 
 The only piece that needs Claude is the ESPN roster sync. Everything else runs on its own.
 
+An All tab collects every pending move, injury watch and stale source across the leagues, lists players starting in more than one lineup, and each league tab shows its status (Set, +gain, n Q, or Out). The Lineup view shows this week's matchup with win chance and the playoff odds swing, a backup for each questionable starter with a warning when the backup plays earlier, close calls, an underdog box with higher ceiling bench options (context only), last week's recap, and a tap-to-open detail row per player. Waivers adds a Best pickups table across the three horizons and, in FAAB leagues, a suggested bid (a rough rule, not tested against real bids). Trade merges duplicate ideas, filters by position, flags ideas that help a rival, shows each team's weakest spots, and lists dynasty draft picks in the builder as unscored items. The page refetches the build when you come back to the tab. See `docs/UX_PLAN.md` for the full list and the data contract.
+
 ## How it works
 
 ```
@@ -48,7 +50,7 @@ Useful scripts:
 
 ## Schedule
 
-Defined in `.github/workflows/refresh.yml`, all times America/Chicago: Tue 9:07pm, Thu 2:07pm, Fri 5:07pm, Sun 9:07am, 10:47am and 1:07pm. It also runs on the manual "Run workflow" button (works from GitHub mobile) and whenever `data/espn/**` changes. Scheduled runs only fire from the default branch.
+Defined in `.github/workflows/refresh.yml`, all times America/Chicago: Tue 9:07pm, Thu 2:07pm, Fri 5:07pm, Sun 9:07am, 10:47am, 1:07pm and 5:47pm (Sunday night inactives), Mon 5:47pm (Monday night inactives). `pipeline/common.py` keeps the same table for the "Next refresh" line, and a test checks the two match. It also runs on the manual "Run workflow" button (works from GitHub mobile) and whenever `data/espn/**` changes. Scheduled runs only fire from the default branch.
 
 ## Setup once
 

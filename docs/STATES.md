@@ -42,7 +42,8 @@ Every run that reads a good file caches it to `data/raw/{season}/{week}/espn_ros
 
 The build stamps `generatedAt` and `espnRosters.syncedAt`, but a page can be open for days after its build, and scheduled runs can stop (dropped crons, the 60 day auto-disable). So the site checks the clock again on every render (`site/app.js`: `espnSync`, `rowState`, `freshnessMessages`):
 
-- Board older than 72 hours (`BOARD_STALE_HOURS`): warns that the refresh may have stopped. The longest planned gap is Sun 1:07pm to Tue 9:07pm, 56 hours.
+- Board older than 72 hours (`BOARD_STALE_HOURS`): warns that the refresh may have stopped. The longest planned gap is Fri 5:07pm to Sun 9:07am, 40 hours.
+- When the tab becomes visible again, at most once a minute, the site refetches `meta.json` and reloads when `generatedAt` changed (`refreshDue`, `shouldReload`).
 - ESPN sync older than `meta.espnRosters.staleAfterDays` (4): the ESPN row and warning go stale even when the build said fresh.
 
 ## 4. Season phase
@@ -102,6 +103,8 @@ Decided per player in `player_record()` in `pipeline/build.py`, read by the opti
 - `locked`: the player's game has kicked off. A locked starter keeps the slot (`fixed` in the optimizer). A locked bench player cannot move in.
 
 Starters with an out flag go to `lineup.alerts`, starters who are questionable or doubtful go to `lineup.watch`.
+
+Each alert and watch entry carries `backup`, the best eligible, unlocked, non-starting player for that slot, or null when there is none (`backup_for` in `pipeline/lineup.py`). Watch entries also carry `lateRisk`, true only when backups exist and the flagged player kicks off after every one of them (`late_risk`). No backup at all is shown as its own message, never as a late risk.
 
 ## 9. Lineup changes
 

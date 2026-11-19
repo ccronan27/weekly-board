@@ -1,4 +1,4 @@
-# UX plan (11/19/26)
+# UX plan (11/19/26, shipped as v5)
 
 The end-user review of the live board found the gaps below. This file is the plan and the data contract that every work package codes against. Pipeline packages add fields. Site packages read them. Every new field is optional on the site: when a field is absent (older build, ESPN league), the site hides that piece and never breaks.
 
