@@ -12,6 +12,8 @@ SEASON, WEEK = 2026, 11
 HAVE_RAW = (RAW / str(SEASON) / str(WEEK) / "status.json").exists()
 needs_raw = pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 
+from pipeline.adapters.espn_rosters import PATH as ROSTERS_FILE  # noqa: E402
+
 
 @pytest.fixture(scope="module")
 def built(tmp_path_factory):
@@ -356,7 +358,8 @@ def test_stretch_run_covers_weeks_before_the_playoffs(built):
 @needs_raw
 def test_standings_for_sleeper_leagues(built):
     lg = built[1]["leagues"]
-    assert lg["fantasizing"]["standings"] is None          # the ESPN sync file has no standings yet
+    has = bool(read_json(ROSTERS_FILE).get("standings")) and bool(read_json(ROSTERS_FILE).get("schedule"))
+    assert (lg["fantasizing"]["standings"] is not None) == has   # ESPN standings exist when the roster file carries them
     for k in ("hwh", "chicago-dynasty"):
         st = lg[k]["standings"]
         assert st["weeksLeft"] == [11, 12, 13, 14] and st["playoffTeams"] == 6 and st["byes"] == 2
@@ -384,8 +387,8 @@ def test_recap_field_and_recommended_files(built):
         assert set(r) == {"week", "actual", "optimal", "recommended", "left"}, k
         assert r["week"] == WEEK - 1, k
         assert r["recommended"] is None, "no recommended file exists for the week before the cache"
-        if k == "fantasizing":   # ESPN has no platform score
-            assert r["actual"] is None, k
+        if k == "fantasizing" and not any("homePoints" in g for g in read_json(ROSTERS_FILE).get("schedule") or []):
+            assert r["actual"] is None, k   # a roster file without scores gives no platform score
         if r["optimal"] is not None and r["actual"] is not None:
             assert r["left"] == pytest.approx(r["optimal"] - r["actual"], abs=0.11), k
 

@@ -161,6 +161,7 @@ def test_synced_dst_scoring_beats_config_defaults():
     import copy
     from pipeline.adapters import espn_rosters
     r = copy.deepcopy(espn_rosters.load())
+    r["settings"].pop("dstScoringByStatId", None)   # a roster file without it (the sync skill's older shape)
     cfg = scoring.league_from_espn("fantasizing", r)
     assert cfg.espn_dst_points[99] == 1.0 and any("default values from config" in n for n in cfg.notes)
     r["settings"]["dstScoringByStatId"] = {"99": 2, "95": 3}

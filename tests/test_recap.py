@@ -100,3 +100,13 @@ def test_first_week_has_no_recap(lg, tmp_path):
     stats = {1: [row("a", "RB", rush_yd=100.0)]}
     assert recap.league_recap(season=2026, week=1, lg=lg, roster=[{"id": "a", "pos": "RB", "slot": "START"}],
                               stats=stats, matchups=None, my_roster_id=None, raw_root=tmp_path) is None
+
+
+def test_best_possible_below_actual_is_dropped(tmp_path, monkeypatch):
+    """Re-scored stats can miss platform stat ids. A best possible under the real score is not shown."""
+    from pipeline import recap as rc
+    monkeypatch.setattr(rc, "week_points", lambda lg, rows: {"a": 10.0})
+    monkeypatch.setattr(rc, "optimal_points", lambda lg, roster, pts: 150.0)
+    out = rc.league_recap(season=2026, week=11, lg=type("L", (), {"key": "x"})(), roster=[{"id": "a"}],
+                          stats={10: []}, matchups={"10": [{"rosterId": 1, "points": 160.0}]}, my_roster_id=1, raw_root=tmp_path)
+    assert out["actual"] == 160.0 and out["optimal"] is None and out["left"] is None

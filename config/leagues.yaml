@@ -9,7 +9,8 @@ leagues:
     platform: espn
     id: 125685129
     name: Fantasizing 2026
-    playoffWeeks: [15, 16, 17]   # confirmed by the owner 11/18/26. The ESPN sync file has no playoff settings
+    playoffWeeks: [15, 16, 17]   # confirmed by the owner 11/18/26. The public league settings also give 15 to 17 (8 teams, one week a round)
+    shotguns: true               # house rule for this ESPN league only: a starter, K or D/ST at 0 or less owes a shotgun. Adds the Shotguns view
   - key: hwh
     platform: sleeper
     id: "1389389185361653760"

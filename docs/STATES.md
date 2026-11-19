@@ -26,7 +26,7 @@ The essential sources (`sleeper_leagues`, `sleeper_players`, `sleeper_projection
 
 ## 2. ESPN roster file
 
-`data/espn/rosters.json` is written by the Claude `espn-roster-sync` skill. The decision lives in `pipeline/ingest.py` (`load_rosters`, `rosters_status`). Build calls the same two functions, so the board and the status always describe the same file.
+`data/espn/rosters.json` is written by ingest from the public league endpoint when that pull succeeds (`espn_league` source), and can also be written by the Claude `espn-roster-sync` skill. A failed pull leaves the file as it was, so the states below still apply to whatever file is there. The decision lives in `pipeline/ingest.py` (`load_rosters`, `rosters_status`). Build calls the same two functions, so the board and the status always describe the same file.
 
 | State | Meaning | Board behavior |
 |---|---|---|
@@ -62,7 +62,7 @@ Each league file carries `seasonPhase`, decided by `season_phase()` in `pipeline
 
 What is on screen is `route = { league, view }` inside `main()` in `site/app.js`. Only `show()` changes it.
 
-- Views come from one registry, `VIEWS`. Each entry says whether a league's build carries it: Lineup always, Waivers when `waivers` is set, Trade when `trade` is set, Standings whenever the key exists (null shows an explanation, used by the ESPN league until the sync file carries standings).
+- Views come from one registry, `VIEWS`. Each entry says whether a league's build carries it: Lineup always, Waivers when `waivers` is set, Trade when `trade` is set, Standings whenever the key exists (null shows an explanation, used when the ESPN roster file has no standings), Shotguns when `shotguns` is set (leagues with `shotguns: true` in config).
 - `resolveView()` sends any view a league does not carry to Lineup. `viewSwitch()` shows exactly the registry's views, and only when there is more than one.
 - The URL hash mirrors the route: `#league` for Lineup, `#league/view` otherwise (`hashFor`, `routeFromHash`). `#all` is the All route. An unknown league opens the first one. An unknown view opens Lineup. `show()` writes the hash with `replaceState`, so the back button leaves the page instead of stepping through views.
 - Switching league keeps the current view when the new league has it.

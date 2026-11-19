@@ -1,7 +1,8 @@
 """ESPN league rosters and settings, read from data/espn/rosters.json only.
 
-The file is written by the Claude espn-roster-sync skill. This module never touches the
-network and never logs in to ESPN.
+Ingest writes the file from the public league endpoint (pipeline.adapters.espn_league) on every
+run that reaches it. The Claude espn-roster-sync skill can still write it as a fallback. This module
+never touches the network and never logs in to ESPN.
 """
 from __future__ import annotations
 
@@ -50,6 +51,9 @@ def validate(d) -> None:
         require(isinstance(d["schedule"], list), "espn rosters.json: schedule not a list")
         for g in d["schedule"]:
             require_keys(g, ["week", "homeTeamId", "awayTeamId"], "espn rosters.json schedule row")
+            for k in ("homePoints", "awayPoints"):
+                if k in g:
+                    require(isinstance(g[k], (int, float)), f"espn rosters.json: schedule {k} not a number")
     teams = d["teams"]
     require(isinstance(teams, list) and len(teams) == s["teams"], f"espn rosters.json: expected {s['teams']} teams, got {len(teams) if isinstance(teams, list) else teams!r}")
     for t in teams:
