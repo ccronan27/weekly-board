@@ -1349,13 +1349,18 @@ function viewsFor(league) {
 function resolveView(league, view) {
   return viewsFor(league).some(function (v) { return v[0] === view; }) ? view : "lineup";
 }
-// URL hash is #league or #league/view. Unknown leagues open the first one, unknown views open lineup.
+// The All route. Its league index is ALL (-1). It has no views of its own.
+const ALL = -1;
+// URL hash is #all, #league or #league/view. Unknown leagues open the first one, unknown views open lineup.
 function routeFromHash(hash, leagues) {
   const parts = String(hash || "").replace(/^#/, "").split("/");
+  if (parts[0] === "all") return { league: ALL, view: "all" };
   const i = Math.max(0, leagues.findIndex(function (l) { return l.league.key === parts[0]; }));
   return { league: i, view: resolveView(leagues[i], parts[1]) };
 }
+// hashFor(null) is the All route
 function hashFor(league, view) {
+  if (!league) return "#all";
   return "#" + league.league.key + (view === "lineup" ? "" : "/" + view);
 }
 
@@ -1371,6 +1376,181 @@ function viewSwitch(league, view, go) {
     box.appendChild(b);
   });
   return box;
+}
+
+// ---------------------------------------------------------------- S5 All leagues and tabs
+// Plain lines for the To do list, worded like the Lineup view. Each keeps its kind for styling.
+function moveLine(m) {
+  if (m.in && m.out) return "Start " + m.in.name + " over " + m.out.name + " at " + m.slot + ". " + signed(m.gain);
+  if (m.out) return "Remove " + m.out.name + " from " + m.slot + ". No eligible replacement. " + signed(m.gain);
+  return "Start " + m.in.name + " at " + m.slot + ". " + signed(m.gain);
+}
+function alertLine(a) {
+  const flags = a.flags.map(function (f) { return FLAG_TEXT[f] || f; }).join(", ").toLowerCase();
+  let t = a.player + " is starting at " + a.slot + " and is " + flags + ".";
+  if (a.backup) t += " If he sits, start " + a.backup.name + ".";
+  return t;
+}
+function watchLine(w) {
+  const first = (w.flags || [])[0];
+  let t = w.player + " (" + w.slot + ") is " + (first ? (FLAG_TEXT[first] || first).toLowerCase() : "flagged") + ".";
+  const k = shortWhen(w.kickoff);
+  if (k) t += " Kickoff " + k + ".";
+  if (w.backup) t += " If he sits, start " + w.backup.name + ".";
+  return t;
+}
+// Every pending move, alert and watch in one league, in that order
+function leagueTodos(league) {
+  const lu = league.lineup;
+  const out = [];
+  (lu.moves || []).forEach(function (m) { out.push({ kind: "move", text: moveLine(m) }); });
+  (lu.alerts || []).forEach(function (a) { out.push({ kind: "alert", text: alertLine(a) }); });
+  (lu.watch || []).forEach(function (w) { out.push({ kind: "watch", text: watchLine(w) }); });
+  return out;
+}
+// The status on a league tab, in place of the gain. cls picks the color. "out" also gets a red dot.
+function tabStatus(league) {
+  const lu = league.lineup;
+  if ((lu.alerts || []).length) return { text: "Out", cls: "out" };
+  if (lu.gain > 0) return { text: signed(lu.gain), cls: "good" };
+  if ((lu.watch || []).length) return { text: lu.watch.length + " Q", cls: "warn" };
+  return { text: "✓ Set", cls: "muted" };
+}
+// The All tab: the total count of to-dos across leagues, or Set
+function allStatus(leagues) {
+  const n = leagues.reduce(function (a, lg) { return a + leagueTodos(lg).length; }, 0);
+  return n ? { text: n + " to do", cls: "warn" } : { text: "✓ Set", cls: "muted" };
+}
+// Players recommended to start in 2 or more leagues. Matched by name and position, since ESPN and Sleeper ids differ.
+// Most leagues first, then the earliest kickoff, then name.
+function exposure(leagues) {
+  const byKey = {};
+  leagues.forEach(function (lg) {
+    const seen = {};
+    (lg.lineup.slots || []).forEach(function (s) {
+      const p = s.recommended;
+      if (!p) return;
+      const key = p.name + "|" + p.pos;
+      if (seen[key]) return;
+      seen[key] = true;
+      const e = byKey[key] || (byKey[key] = { name: p.name, pos: p.pos, leagues: [], kickoff: null });
+      e.leagues.push(lg.league.name);
+      const k = p.game && p.game.kickoff;
+      if (k && (!e.kickoff || Date.parse(k) < Date.parse(e.kickoff))) e.kickoff = k;
+    });
+  });
+  return Object.keys(byKey).map(function (k) { return byKey[k]; })
+    .filter(function (e) { return e.leagues.length > 1; })
+    .sort(function (a, b) {
+      if (b.leagues.length !== a.leagues.length) return b.leagues.length - a.leagues.length;
+      const ka = a.kickoff ? Date.parse(a.kickoff) : Infinity;
+      const kb = b.kickoff ? Date.parse(b.kickoff) : Infinity;
+      if (ka !== kb) return ka < kb ? -1 : 1;
+      return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+    });
+}
+// Freshness lines for one league. Board-wide lines (old build, skipped leagues) are left out, since the All view shows them once.
+function leagueFreshness(league, meta, now) {
+  const shared = freshnessMessages({ league: { platform: "" }, sources: {} }, meta, now);
+  return freshnessMessages(league, meta, now).filter(function (m) { return shared.indexOf(m) < 0; });
+}
+// Label and address of the league's app, from league.appUrl and appName in the data. Only https links. Null when absent.
+function appLinkInfo(league) {
+  const url = league.league.appUrl;
+  const name = league.league.appName;
+  if (!url || !name) return null;
+  try { if (new URL(url).protocol !== "https:") return null; } catch (e) { return null; }
+  return { label: "Open in " + name, href: url };
+}
+function appLink(league) {
+  const info = appLinkInfo(league);
+  if (!info) return null;
+  const a = el("a", "applink", info.label);
+  a.href = info.href;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  return a;
+}
+// A tab's status line. A red dot comes first for Out.
+function tabStatusNode(st) {
+  const n = el("span", "tstat " + st.cls);
+  if (st.cls === "out") {
+    const dot = el("span", "dot");
+    dot.setAttribute("aria-hidden", "true");
+    n.appendChild(dot);
+  }
+  n.appendChild(document.createTextNode(st.text));
+  return n;
+}
+function todoNode(it) {
+  return el("div", it.kind === "alert" ? "alert" : it.kind === "watch" ? "warn" : "move", it.text);
+}
+
+// The All view. Every to-do grouped by league (league names open that league's Lineup), players starting in
+// more than one league, and data warnings. go(i) opens league i on its Lineup view.
+function renderAll(leagues, meta, go) {
+  const now = Date.now();
+  const secTodo = el("section", "s-sum");
+  const secExpo = el("section", "s-moves");
+  const secFresh = el("section", "s-src");
+
+  secTodo.appendChild(el("h2", null, "To do"));
+  const todo = el("div", "card");
+  leagues.forEach(function (lg, i) {
+    const block = el("div", "todo-league");
+    const items = leagueTodos(lg);
+    if (!items.length) {
+      block.appendChild(el("div", "todo-set", lg.league.name + ": set, nothing to do."));
+    } else {
+      const jump = el("button", "jump", lg.league.name);
+      jump.type = "button";
+      jump.addEventListener("click", function () { go(i); });
+      block.appendChild(jump);
+      items.forEach(function (it) { block.appendChild(todoNode(it)); });
+    }
+    todo.appendChild(block);
+  });
+  if (!todo.children.length) todo.appendChild(el("div", "todo-set", "No leagues to show."));
+  secTodo.appendChild(todo);
+
+  secExpo.appendChild(el("h2", null, "Players in more than one lineup"));
+  secExpo.appendChild(el("div", "muted", "Recommended starters in two or more leagues. One injury or bye hits each of those lineups."));
+  const ec = el("div", "card list");
+  const ex = exposure(leagues);
+  if (!ex.length) ec.appendChild(el("div", "slot", "No player starts in more than one league."));
+  ex.forEach(function (e) {
+    const wrap = el("div", "slot");
+    const row = el("div", "prow");
+    row.appendChild(chipNode(e.pos || ""));
+    const body = el("div", "pbody");
+    body.appendChild(el("div", "pname", e.name));
+    let sub = "Starts in " + e.leagues.length + " leagues: " + e.leagues.join(", ") + ".";
+    const k = shortWhen(e.kickoff);
+    if (k) sub += " First kickoff " + k + ".";
+    body.appendChild(el("div", "psub", sub));
+    row.appendChild(body);
+    wrap.appendChild(row);
+    ec.appendChild(wrap);
+  });
+  secExpo.appendChild(ec);
+
+  secFresh.appendChild(el("h2", null, "Data freshness"));
+  const shared = freshnessMessages({ league: { platform: "" }, sources: {} }, meta, now);
+  shared.forEach(function (m) { secFresh.appendChild(el("div", "warn", m)); });
+  let any = shared.length > 0;
+  leagues.forEach(function (lg) {
+    const msgs = leagueFreshness(lg, meta, now);
+    if (!msgs.length) return;
+    any = true;
+    const box = el("div", "warn");
+    box.appendChild(el("span", "fresh-name", lg.league.name));
+    msgs.forEach(function (m) { box.appendChild(el("div", null, m)); });
+    secFresh.appendChild(box);
+  });
+  if (!any) secFresh.appendChild(el("div", "muted", "Every source is fresh."));
+
+  // Phones stack To do first. Wide screens put To do in the main column, with the list and warnings beside it.
+  return columns([secExpo, secFresh], [secTodo]);
 }
 
 function fail(msg) {
@@ -1443,6 +1623,7 @@ async function main() {
   const viewbar = document.getElementById("viewbar");
   const panel = document.getElementById("panel");
   const route = { league: 0, view: "lineup" };   // what is on screen. Only show() changes it
+  let leagueView = "lineup";   // the view a league tab reopens with, so All and back keeps your place
   const tradeLoads = {};   // league key -> { status, data }, see loadTrade
   const tradeState = {};   // league key -> builder picks, kept while you switch views
 
@@ -1464,23 +1645,33 @@ async function main() {
     return renderTrade(lg, meta, load.data, st, function () { show(i, "trade"); });
   }
 
+  // i is a league index, or ALL for the All tab. v is a view name, and All has none.
   function show(i, v) {
-    const lg = leagues[i];
-    const view = resolveView(lg, v);
+    const onAll = i === ALL;
+    const lg = onAll ? null : leagues[i];
+    const view = onAll ? "all" : resolveView(lg, v);
     route.league = i;
     route.view = view;
+    if (!onAll) leagueView = view;
     Array.prototype.forEach.call(tabs.children, function (b, j) {
-      b.setAttribute("aria-selected", String(i === j));
-      b.tabIndex = i === j ? 0 : -1;   // roving tabindex: only the selected tab is in the Tab order
+      const on = j === i + 1;   // tab 0 is All, tab j + 1 is league j
+      b.setAttribute("aria-selected", String(on));
+      b.tabIndex = on ? 0 : -1;   // roving tabindex: only the selected tab is in the Tab order
     });
-    panel.setAttribute("aria-labelledby", tabs.children[i].id);
-    const body = view === "waivers" ? renderWaivers(lg, meta)
+    panel.setAttribute("aria-labelledby", tabs.children[i + 1].id);
+    let body;
+    if (onAll) body = renderAll(leagues, meta, function (k) { show(k, "lineup"); });
+    else body = view === "waivers" ? renderWaivers(lg, meta)
       : view === "standings" ? renderStandings(lg, meta)
       : view === "trade" ? tradeBody(i, lg)
       : renderLeague(lg, meta);
     const keepY = view === "trade" ? window.scrollY : 0;
     viewbar.replaceChildren();
-    if (viewsFor(lg).length > 1) viewbar.appendChild(viewSwitch(lg, view, function (nv) { show(i, nv); }));
+    if (!onAll) {
+      if (viewsFor(lg).length > 1) viewbar.appendChild(viewSwitch(lg, view, function (nv) { show(i, nv); }));
+      const app = appLink(lg);
+      if (app) viewbar.appendChild(app);
+    }
     panel.replaceChildren(body);
     setBarHeight();
     if (view === "trade") {
@@ -1490,6 +1681,16 @@ async function main() {
     }
     history.replaceState(null, "", hashFor(lg, view));
   }
+  // All comes first and is not a league. Each league tab shows its status in place of the gain.
+  const allTab = el("button", "tab");
+  allTab.type = "button";
+  allTab.id = "tab-all";
+  allTab.setAttribute("role", "tab");
+  allTab.setAttribute("aria-controls", "panel");
+  allTab.appendChild(el("span", "tname", "All"));
+  allTab.appendChild(tabStatusNode(allStatus(leagues)));
+  allTab.addEventListener("click", function () { show(ALL, "all"); });
+  tabs.appendChild(allTab);
   leagues.forEach(function (l) {
     const b = el("button", "tab");
     b.type = "button";
@@ -1497,22 +1698,23 @@ async function main() {
     b.setAttribute("role", "tab");
     b.setAttribute("aria-controls", "panel");
     b.appendChild(el("span", "tname", l.league.name));
-    b.appendChild(el("span", "gain" + (l.lineup.gain === 0 ? " zero" : ""), signed(l.lineup.gain)));
-    b.addEventListener("click", function () { show(leagues.indexOf(l), route.view); });
+    b.appendChild(tabStatusNode(tabStatus(l)));
+    b.addEventListener("click", function () { show(leagues.indexOf(l), leagueView); });
     tabs.appendChild(b);
   });
   function fromHash() {
     const r = routeFromHash(location.hash, leagues);
     show(r.league, r.view);
   }
-  // League tablist keys. Focus follows the arrow, so the tab that gets focus is the one that opens.
+  // Tablist keys, All included. Focus follows the arrow, so the tab that gets focus is the one that opens.
   tabs.addEventListener("keydown", function (e) {
     const cur = Array.prototype.indexOf.call(tabs.children, e.target);
-    const j = nextTabIndex(cur, e.key, leagues.length);
+    const j = nextTabIndex(cur, e.key, tabs.children.length);
     if (j < 0) return;
     e.preventDefault();
     tabs.children[j].focus();
-    show(j, route.view);
+    if (j === 0) show(ALL, "all");
+    else show(j - 1, leagueView);
   });
   window.addEventListener("resize", setBarHeight);
   window.addEventListener("hashchange", fromHash);

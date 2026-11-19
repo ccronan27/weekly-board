@@ -189,6 +189,7 @@ console.log(JSON.stringify({
   r1: routeFromHash("#a/trade", L), r2: routeFromHash("#b/trade", L), r3: routeFromHash("#zzz/waivers", L),
   r4: routeFromHash("", L), r5: routeFromHash("#a/nonsense", L),
   h1: hashFor(L[0], "lineup"), h2: hashFor(L[0], "standings"),
+  all1: routeFromHash("#all", L), all2: routeFromHash("#all/trade", L), hAll: hashFor(null, "all"),
 }));""")
     assert got["viewsA"] == ["lineup", "waivers", "trade", "standings"]
     assert got["viewsB"] == ["lineup"], "a view the build does not carry is not offered"
@@ -197,6 +198,8 @@ console.log(JSON.stringify({
     assert got["r3"] == {"league": 0, "view": "waivers"}
     assert got["r4"] == got["r5"] == {"league": 0, "view": "lineup"}
     assert (got["h1"], got["h2"]) == ("#a", "#a/standings")
+    assert got["all1"] == got["all2"] == {"league": -1, "view": "all"}, "#all is the All route, with no view"
+    assert got["hAll"] == "#all"
 
 
 @needs_node
@@ -268,3 +271,85 @@ console.log(JSON.stringify({
     assert got["reload"] == [False, True, False, True], "a changed generatedAt reloads, a missing one never does"
     assert got["none"] == ""
     assert re.fullmatch(r"Next refresh Sun 10:47\s[AP]M", got["some"]), got["some"]
+
+
+# ---------------------------------------------------------------- S5: All tab, league tab status, to-dos, exposure
+
+S5_LEAGUES_JS = """
+const T = "2026-11-22T21:05:00Z";   // Sun 3:05 PM Central
+const earlier = "2026-11-22T18:00:00Z";
+const lg = (key, name, lineup, extra) => Object.assign({league: {key, name, appName: "Sleeper", appUrl: "https://example.test/x"},
+  week: 11, lineup: Object.assign({gain: 0, moves: [], alerts: [], watch: [], slots: []}, lineup), sources: {}, roster: []}, extra || {});
+const ALPHA = lg("alpha", "Alpha", {gain: 1.6, moves: [{in: {name: "Ann Cole"}, out: {name: "Bo Dean"}, slot: "FLEX", gain: 1.6}],
+  slots: [{slot: "QB", recommended: {name: "Jared Goff", pos: "QB", game: {kickoff: earlier}}},
+          {slot: "FLEX", recommended: {name: "Ladd McConkey", pos: "WR", game: {kickoff: T}}}]});
+const BETA = lg("beta", "Beta", {watch: [{player: "Ladd McConkey", slot: "FLEX", flags: ["QUESTIONABLE"], kickoff: T,
+    backup: {name: "Tre Tucker"}}, {player: "Matt Gay", slot: "K", flags: ["QUESTIONABLE"], kickoff: earlier, backup: null}],
+  slots: [{slot: "QB", recommended: {name: "Jared Goff", pos: "QB", game: {kickoff: earlier}}},
+          {slot: "FLEX", recommended: {name: "Ladd McConkey", pos: "WR", game: {kickoff: T}}}]});
+const GAMMA = lg("gamma", "Gamma", {alerts: [{player: "Jordan Hart", slot: "RB", flags: ["OUT", "IR"], backup: {name: "Sam Bell"}}],
+  slots: [{slot: "K", recommended: null}, {slot: "TE", recommended: {name: "Mike Gesicki", pos: "TE", game: {kickoff: T}}}]});
+const DELTA = lg("delta", "Delta", {slots: []});
+const ALL4 = [ALPHA, BETA, GAMMA, DELTA];
+"""
+
+
+@needs_node
+def test_site_tab_status():
+    got = _node(S5_LEAGUES_JS + """
+console.log(JSON.stringify({
+  alpha: tabStatus(ALPHA), beta: tabStatus(BETA), gamma: tabStatus(GAMMA), delta: tabStatus(DELTA),
+  allStatus: allStatus(ALL4), allSet: allStatus([DELTA]),
+}));""")
+    assert got["alpha"] == {"text": "+1.6", "cls": "good"}
+    assert got["beta"] == {"text": "2 Q", "cls": "warn"}, "questionable count is the watch length"
+    assert got["gamma"] == {"text": "Out", "cls": "out"}, "any alert means Out, even with a gain"
+    assert got["delta"] == {"text": "\u2713 Set", "cls": "muted"}
+    assert got["allStatus"] == {"text": "4 to do", "cls": "warn"}   # alpha 1 move, beta 2 watch, gamma 1 alert
+    assert got["allSet"] == {"text": "\u2713 Set", "cls": "muted"}
+
+
+@needs_node
+def test_site_todos_and_todo_text():
+    got = _node(S5_LEAGUES_JS + """
+console.log(JSON.stringify({
+  alpha: leagueTodos(ALPHA), beta: leagueTodos(BETA), gamma: leagueTodos(GAMMA), delta: leagueTodos(DELTA),
+}));""")
+    assert got["alpha"] == [{"kind": "move", "text": "Start Ann Cole over Bo Dean at FLEX. +1.6"}]
+    assert got["beta"][0] == {"kind": "watch", "text": "Ladd McConkey (FLEX) is questionable. Kickoff Sun 3:05 PM. If he sits, start Tre Tucker."}
+    assert got["beta"][1] == {"kind": "watch", "text": "Matt Gay (K) is questionable. Kickoff Sun 12:00 PM."}, "no backup, no swap line"
+    assert got["gamma"] == [{"kind": "alert", "text": "Jordan Hart is starting at RB and is out, injured reserve. If he sits, start Sam Bell."}]
+    assert got["delta"] == []
+
+
+@needs_node
+def test_site_exposure():
+    got = _node(S5_LEAGUES_JS + """
+console.log(JSON.stringify({ex: exposure(ALL4).map(e => [e.name, e.pos, e.leagues, e.kickoff])}));""")
+    assert got["ex"] == [
+        ["Jared Goff", "QB", ["Alpha", "Beta"], "2026-11-22T18:00:00Z"],
+        ["Ladd McConkey", "WR", ["Alpha", "Beta"], "2026-11-22T21:05:00Z"],
+    ], "two or more leagues only, earliest kickoff first on ties"
+
+
+@needs_node
+def test_site_all_freshness_and_links():
+    got = _node(S5_LEAGUES_JS + """
+const iso = t => new Date(t).toISOString();
+const built = Date.parse("2026-11-18T13:00:00Z");
+const meta = {generatedAt: iso(built), espnRosters: null, skippedLeagues: [{key: "x", name: "Old League", reason: "r"}]};
+const stale = lg("eps", "Eps", {}, {sources: {nflverse_lines: {ok: false, stale: true, lastUpdated: iso(built)}}});
+const now = built + 86400000;
+const link = appLinkInfo(ALPHA), noUrl = appLinkInfo(lg("n", "N", {}, {league: {key: "n", name: "N"}})), http = appLinkInfo(lg("h", "H", {}, {league: {key: "h", name: "H", appName: "ESPN", appUrl: "http:" + "//insecure.test/"}}));
+console.log(JSON.stringify({
+  shared: freshnessMessages({league: {platform: ""}, sources: {}}, meta, now),
+  perLeague: leagueFreshness(stale, meta, now),
+  perLeagueClean: leagueFreshness(ALPHA, meta, now),
+  link: link,
+  noUrl: noUrl, http: http,
+}));""")
+    assert got["shared"] == ["Old League is not shown because there is no usable ESPN roster file. Ask Claude to sync ESPN."]
+    assert got["perLeague"] == ["Stale data: Vegas lines. Using the last good pull."], "board-wide lines are not repeated per league"
+    assert got["perLeagueClean"] == []
+    assert got["link"] == {"label": "Open in Sleeper", "href": "https://example.test/x"}
+    assert got["noUrl"] is None and got["http"] is None, "no link without an https url"

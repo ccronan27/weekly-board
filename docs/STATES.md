@@ -63,8 +63,13 @@ What is on screen is `route = { league, view }` inside `main()` in `site/app.js`
 
 - Views come from one registry, `VIEWS`. Each entry says whether a league's build carries it: Lineup always, Waivers when `waivers` is set, Trade when `trade` is set, Standings whenever the key exists (null shows an explanation, used by the ESPN league until the sync file carries standings).
 - `resolveView()` sends any view a league does not carry to Lineup. `viewSwitch()` shows exactly the registry's views, and only when there is more than one.
-- The URL hash mirrors the route: `#league` for Lineup, `#league/view` otherwise (`hashFor`, `routeFromHash`). An unknown league opens the first one. An unknown view opens Lineup. `show()` writes the hash with `replaceState`, so the back button leaves the page instead of stepping through views.
+- The URL hash mirrors the route: `#league` for Lineup, `#league/view` otherwise (`hashFor`, `routeFromHash`). `#all` is the All route. An unknown league opens the first one. An unknown view opens Lineup. `show()` writes the hash with `replaceState`, so the back button leaves the page instead of stepping through views.
 - Switching league keeps the current view when the new league has it.
+
+- The All tab is the first tab. Its route is `{ league: -1, view: "all" }` (`ALL` in the code), hash `#all`. It has no views, so the view switch and the app link are hidden on it. `hashFor(null)` gives `#all`. A bare hash still opens the first league, not All.
+- Leaving All for a league opens it on the view it last showed (`leagueView` in `main()`), or Lineup if none.
+- The arrow, Home and End keys move across All and the leagues (`nextTabIndex` counts every tab). All renders with `renderAll`, a to-do list, the players in more than one lineup, and the data freshness lines. Its helpers are `leagueTodos`, `exposure`, `leagueFreshness`.
+- League tabs show `tabStatus()` in place of the gain: `Out` with a red dot when a starter is out, the gain when moves are pending, `n Q` for questionable starters, and a check mark `Set` otherwise. The All tab shows `allStatus()`, the count of to-dos or Set.
 
 ## 6. Trade file loading
 
