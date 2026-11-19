@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T21:43:27Z",
+ "generatedAt": "2026-11-19T22:01:20Z",
  "league": "fantasizing",
  "players": [
   {
@@ -3631,7 +3631,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Omarion Hampton",
-   "newsUpdated": "2026-11-19T04:05:56Z",
+   "newsUpdated": "2026-11-19T21:45:02Z",
    "points": 11.9,
    "pos": "RB",
    "ppg": 9.5,
@@ -4046,7 +4046,7 @@
    "injuryNotes": "Spasms",
    "locked": false,
    "name": "Ladd McConkey",
-   "newsUpdated": "2026-11-19T01:40:55Z",
+   "newsUpdated": "2026-11-19T21:45:02Z",
    "points": 11.3,
    "pos": "WR",
    "ppg": 10.3,
@@ -4968,7 +4968,7 @@
      "week": 10
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 10.1,
    "sd": 3.85,
    "sources": [
@@ -4977,7 +4977,7 @@
    ],
    "status": null,
    "team": "TEN",
-   "teamName": null
+   "teamName": "3rd and Likely"
   },
   {
    "ceiling": 15.6,
@@ -6228,7 +6228,7 @@
      "week": 9
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 7.9,
    "sd": 4.5,
    "sources": [
@@ -6237,7 +6237,7 @@
    ],
    "status": null,
    "team": "TB",
-   "teamName": null
+   "teamName": "Riders of Rohan"
   },
   {
    "ceiling": 14.1,
@@ -6654,7 +6654,7 @@
      "week": 10
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 8.2,
    "sd": 6.69,
    "sources": [
@@ -6663,7 +6663,7 @@
    ],
    "status": null,
    "team": "HOU",
-   "teamName": null
+   "teamName": "Exempt List"
   },
   {
    "ceiling": 14.9,
@@ -6760,7 +6760,7 @@
      "week": 10
     }
    ],
-   "rostered": true,
+   "rostered": false,
    "rotowire": 7.8,
    "sd": 5.43,
    "sources": [
@@ -6769,7 +6769,7 @@
    ],
    "status": null,
    "team": "NYG",
-   "teamName": "Riders of Rohan"
+   "teamName": null
   },
   {
    "ceiling": 13.1,
@@ -7449,7 +7449,7 @@
      "week": 10
     }
    ],
-   "rostered": true,
+   "rostered": false,
    "rotowire": 8.3,
    "sd": 7.68,
    "sources": [
@@ -7458,7 +7458,7 @@
    ],
    "status": null,
    "team": "BUF",
-   "teamName": "I Aint Brown"
+   "teamName": null
   },
   {
    "ceiling": 9.2,
@@ -7983,7 +7983,7 @@
      "week": 10
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 8.0,
    "sd": 9.98,
    "sources": [
@@ -7992,7 +7992,7 @@
    ],
    "status": null,
    "team": "ARI",
-   "teamName": null
+   "teamName": "C0K3 H3AD"
   },
   {
    "ceiling": 11.7,
@@ -8038,7 +8038,7 @@
      "week": 5
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 7.6,
    "sd": 4.12,
    "sources": [
@@ -8047,7 +8047,7 @@
    ],
    "status": "IR",
    "team": "WAS",
-   "teamName": null
+   "teamName": "Exempt List"
   },
   {
    "ceiling": 12.9,
@@ -8303,7 +8303,7 @@
      "week": 10
     }
    ],
-   "rostered": true,
+   "rostered": false,
    "rotowire": 7.4,
    "sd": 5.95,
    "sources": [
@@ -8312,7 +8312,7 @@
    ],
    "status": null,
    "team": "PIT",
-   "teamName": "MikeyBen"
+   "teamName": null
   },
   {
    "ceiling": 9.2,
@@ -8981,7 +8981,7 @@
      "week": 6
     }
    ],
-   "rostered": true,
+   "rostered": false,
    "rotowire": 5.4,
    "sd": 4.68,
    "sources": [
@@ -8990,7 +8990,7 @@
    ],
    "status": "QUESTIONABLE",
    "team": "PHI",
-   "teamName": "Slimelord’s Nickolodean"
+   "teamName": null
   },
   {
    "ceiling": 10.6,
@@ -9662,7 +9662,7 @@
      "week": 10
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 6.0,
    "sd": 5.24,
    "sources": [
@@ -9671,7 +9671,7 @@
    ],
    "status": null,
    "team": "DET",
-   "teamName": null
+   "teamName": "Honorary Brown"
   },
   {
    "ceiling": 11.1,
@@ -10088,7 +10088,7 @@
      "week": 10
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 5.6,
    "sd": 6.03,
    "sources": [
@@ -10097,7 +10097,7 @@
    ],
    "status": null,
    "team": "NYJ",
-   "teamName": null
+   "teamName": "Slimelord’s Nickolodean"
   },
   {
    "ceiling": 8.8,
@@ -10249,7 +10249,7 @@
      "week": 10
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 5.8,
    "sd": 9.35,
    "sources": [
@@ -10258,7 +10258,7 @@
    ],
    "status": null,
    "team": "CAR",
-   "teamName": null
+   "teamName": "MikeyBen"
   },
   {
    "ceiling": 12.0,
@@ -10408,7 +10408,7 @@
      "week": 10
     }
    ],
-   "rostered": false,
+   "rostered": true,
    "rotowire": 5.9,
    "sd": 7.98,
    "sources": [
@@ -10417,7 +10417,7 @@
    ],
    "status": null,
    "team": "SF",
-   "teamName": null
+   "teamName": "I Aint Brown"
   },
   {
    "ceiling": 11.3,
@@ -10930,7 +10930,7 @@
      "week": 10
     }
    ],
-   "rostered": true,
+   "rostered": false,
    "rotowire": 5.5,
    "sd": 4.14,
    "sources": [
@@ -10939,7 +10939,7 @@
    ],
    "status": null,
    "team": "BAL",
-   "teamName": "Honorary Brown"
+   "teamName": null
   },
   {
    "ceiling": 10.4,
@@ -11175,7 +11175,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "locked": false,
    "name": "Michael Pittman Jr.",
-   "newsUpdated": "2026-11-19T21:10:02Z",
+   "newsUpdated": "2026-11-19T21:45:02Z",
    "points": 5.0,
    "pos": "WR",
    "ppg": 5.3,
@@ -11246,7 +11246,7 @@
      "week": 10
     }
    ],
-   "rostered": true,
+   "rostered": false,
    "rotowire": 5.6,
    "sd": 7.46,
    "sources": [
@@ -11255,7 +11255,7 @@
    ],
    "status": null,
    "team": "NYJ",
-   "teamName": "C0K3 H3AD"
+   "teamName": null
   },
   {
    "ceiling": 13.0,
@@ -11638,7 +11638,7 @@
    "injuryNotes": "Surgery",
    "locked": false,
    "name": "Andrei Iosivas",
-   "newsUpdated": "2026-11-14T20:35:12Z",
+   "newsUpdated": "2026-11-19T21:40:04Z",
    "points": 4.7,
    "pos": "WR",
    "ppg": 2.5,
@@ -12518,7 +12518,7 @@
      "week": 10
     }
    ],
-   "rostered": true,
+   "rostered": false,
    "rotowire": 4.6,
    "sd": 6.2,
    "sources": [
@@ -12527,7 +12527,7 @@
    ],
    "status": null,
    "team": "NYG",
-   "teamName": "3rd and Likely"
+   "teamName": null
   },
   {
    "ceiling": 8.9,
@@ -13213,7 +13213,9 @@
    "ceiling": 3.5,
    "eligible": true,
    "espn": 3.2,
-   "flags": [],
+   "flags": [
+    "QUESTIONABLE"
+   ],
    "floor": 3.2,
    "game": {
     "home": true,
@@ -13258,7 +13260,7 @@
     "espn",
     "rotowire"
    ],
-   "status": null,
+   "status": "QUESTIONABLE",
    "team": "DAL",
    "teamName": null
   },
@@ -20654,28 +20656,28 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:43:27Z",
+   "lastUpdated": "2026-11-19T22:01:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:18:41.319Z",
+   "lastUpdated": "2026-11-19T22:01:19.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:43:27Z",
+   "lastUpdated": "2026-11-19T22:01:19Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T21:43:25Z",
+   "lastUpdated": "2026-11-19T22:01:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
