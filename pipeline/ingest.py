@@ -104,9 +104,17 @@ def run(season: int | None = None, week: int | None = None, root: Path = RAW) ->
             if lg["platform"] != "sleeper":
                 continue
             lid = str(lg["id"])
-            norm = sleeper.normalize_league(
-                sleeper.fetch_league(lid), sleeper.fetch_rosters(lid), sleeper.fetch_users(lid),
-                cfg.get("sleeperUserId"))
+            league = sleeper.fetch_league(lid)
+            norm = sleeper.normalize_league(league, sleeper.fetch_rosters(lid), sleeper.fetch_users(lid),
+                                            cfg.get("sleeperUserId"))
+            if lg.get("dynasty"):
+                # dynasty only: draft picks for the trade view. A pick failure leaves them null, the league still builds
+                norm["draftRounds"] = (league.get("settings") or {}).get("draft_rounds")
+                try:
+                    norm["tradedPicks"] = sleeper.normalize_traded_picks(sleeper.fetch_traded_picks(lid))
+                except Exception as e:  # noqa: BLE001
+                    print(f"[ingest] {lg['key']} traded picks FAILED: {e}", file=sys.stderr)
+                    norm["tradedPicks"] = None
             # every regular season week: past scores for the spread, future pairings for the odds
             last = (norm.get("playoffWeekStart") or 15) - 1
             norm["matchups"] = {str(w): sleeper.normalize_matchups(sleeper.fetch_matchups(lid, w)) for w in range(1, last + 1)}

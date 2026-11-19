@@ -105,3 +105,21 @@ def test_league_keeps_playoff_settings(load):
     out = sleeper.normalize_league(raw, load("sleeper_rosters.json"), load("sleeper_users.json"), "u1")
     st = raw["settings"]
     assert out["playoffWeekStart"] == st.get("playoff_week_start") and out["playoffTeams"] == st.get("playoff_teams")
+
+
+def test_traded_picks(load):
+    rows = load("sleeper_traded_picks.json")
+    sleeper.validate_traded_picks(rows)
+    out = sleeper.normalize_traded_picks(rows)
+    assert len(out) == len(rows) and {p["season"] for p in out} >= {"2026", "2027"}
+    assert all(isinstance(p["rosterId"], int) and isinstance(p["ownerId"], int) for p in out)
+    rows[0].pop("owner_id")
+    with pytest.raises(ContractError, match="owner_id"):
+        sleeper.validate_traded_picks(rows)
+
+
+def test_traded_picks_season_shape_change_fails(load):
+    rows = load("sleeper_traded_picks.json")
+    rows[0]["season"] = "2027 draft"
+    with pytest.raises(ContractError, match="season"):
+        sleeper.validate_traded_picks(rows)
