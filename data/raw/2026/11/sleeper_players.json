@@ -4158,7 +4158,7 @@
    "injuryNotes": null,
    "injuryStatus": "IR",
    "name": "Roman Wilson",
-   "newsUpdated": 1795047655297,
+   "newsUpdated": 1795125302910,
    "pos": "WR",
    "status": "Inactive",
    "team": "PIT",
@@ -35442,7 +35442,7 @@
    "injuryNotes": null,
    "injuryStatus": "Questionable",
    "name": "T.J. Hockenson",
-   "newsUpdated": 1795048555407,
+   "newsUpdated": 1795125003531,
    "pos": "TE",
    "status": "Active",
    "team": "MIN",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-19T22:01:16Z",
+ "fetchedAt": "2026-11-19T22:03:17Z",
  "source": "sleeper_players"
 }

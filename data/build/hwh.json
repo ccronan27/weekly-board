@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T22:01:20Z",
+ "generatedAt": "2026-11-19T22:03:19Z",
  "league": {
   "appName": "Sleeper",
   "appUrl": "https://sleeper.com/leagues/1389389185361653760/team",
@@ -1848,35 +1848,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:18Z",
+   "lastUpdated": "2026-11-19T22:03:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:19Z",
+   "lastUpdated": "2026-11-19T22:03:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:16Z",
+   "lastUpdated": "2026-11-19T22:03:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:16Z",
+   "lastUpdated": "2026-11-19T22:03:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:01:17Z",
+   "lastUpdated": "2026-11-19T22:03:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
