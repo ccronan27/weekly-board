@@ -202,7 +202,9 @@ def standings_block(lc, norm, rosters, week, pw, slots, rosters_t, team_name, pl
             means[(w, n)] = this_week(players[n]) if w == week else trades.playoff_total(slots, [w], players[n], plays)[0]
     sd = odds.weekly_sd(history)
     byes = odds.playoff_byes(n_playoff)
-    sim = odds.simulate(teams, records, schedule, means, sd, n_playoff, division, n_div, byes)
+    sim = odds.simulate(teams, records, schedule, means, sd, n_playoff, division, n_div, byes, focus=team_name)
+    mine_sim = sim.get(team_name, {})
+    swing = {k: mine_sim.pop(k) for k in ("ifWin", "ifLose") if k in mine_sim}   # kept out of the team rows
     now = odds.seed_order(teams, {n: records[n]["wins"] + 0.5 * records[n]["ties"] for n in teams},
                           {n: records[n]["pointsFor"] for n in teams}, division, n_div)
     rows = [{"name": n, "isMine": n == team_name, "seed": i + 1, "division": division.get(n),
@@ -210,7 +212,8 @@ def standings_block(lc, norm, rosters, week, pw, slots, rosters_t, team_name, pl
             for i, n in enumerate(now)]
     mine = [{"week": w, "opp": b if a == team_name else a,
              "myMean": round(means[(w, team_name)], 1), "oppMean": round(means[(w, b if a == team_name else a)], 1),
-             "winPct": round(100 * odds.head_to_head(means[(w, team_name)], means[(w, b if a == team_name else a)], sd), 1)}
+             "winPct": round(100 * odds.head_to_head(means[(w, team_name)], means[(w, b if a == team_name else a)], sd), 1),
+             **(swing if w == week else {})}
             for w, a, b in sorted(schedule) if team_name in (a, b)]
     return {"teams": rows, "myGames": mine, "weeksLeft": sorted({g[0] for g in schedule}), "sd": sd, "sims": odds.SIMS,
             "playoffTeams": n_playoff, "byes": byes, "divisions": n_div}
@@ -462,8 +465,9 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         dynasty = bool(lc.get("dynasty"))
         drop = None if dynasty else waivers.drop_candidate(
             [p for p in my_players if p["id"] not in rec_set and p["slot"] not in ("IR", "TAXI")])
+        faab = waivers.faab_summary(entry[2], team_name) if lc["platform"] == "sleeper" else None
         out["waivers"] = {
-            "freeAgents": len(fas), "dynasty": dynasty,
+            "freeAgents": len(fas), "dynasty": dynasty, "faab": faab,
             "targets": [{"player": fa_brief(t["id"]), "gain": t["gain"], "slot": t["slot"],
                          "replaces": brief(t["replaces"])}
                         for t in waivers.diversify(waivers.targets(slots, mine_in, fa_in, fixed), {p["id"]: p["pos"] for p in fas})],
@@ -482,6 +486,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         out["seasonPhase"] = season_phase(week, pw)
         stretch_weeks = [w for w in range(week + 1, pw[0])]   # regular season weeks left after this one
         out["waivers"]["stretch"] = None
+        ros_gain = None   # free agent -> points added over stretch + playoff weeks, when there is a schedule
         if matchups:
             rates = {p["id"]: long_term_rate(p) for p in my_players + fas}
             mine_lt = [{"id": p["id"], "pos": p["pos"], "team": p["team"], "rate": rates[p["id"]][0]} for p in my_players]
@@ -502,6 +507,13 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
 
             out["waivers"]["longTerm"] = {"weeks": lt_weeks, "playoffWeeks": pw, "teams": n_teams, "targets": horizon(lt_weeks)}
             out["waivers"]["stretch"] = {"weeks": stretch_weeks, "teams": n_teams, "targets": horizon(stretch_weeks)}
+            ros_gain = {t["id"]: t["gain"] for t in waivers.long_term(
+                slots, stretch_weeks + lt_weeks, mine_lt, fa_lt, lambda w, t: t in matchups.get(w, {}))}
+        # rosGain and FAAB bid on every waiver target (this week, stretch and playoff lists)
+        for lst in [out["waivers"]["targets"]] + [h["targets"] for h in (out["waivers"]["stretch"], out["waivers"]["longTerm"]) if h]:
+            for t in lst:
+                t["rosGain"] = None if ros_gain is None else round(ros_gain.get(t["player"]["id"], 0.0), 1)
+                t["bid"] = waivers.bid(faab["left"] if faab else None, t["rosGain"])
         # ---- v3 trades: every roster with playoff rates, plus 1 for 1 ideas that help both teams
         out["trade"] = None
         out["standings"] = None

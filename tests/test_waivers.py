@@ -103,3 +103,48 @@ def test_long_term_ignores_zero_rate_and_no_gain_players():
     plays = lambda w, t: True
     fas = [R("hurt", "QB", "EEE", 0.0), R("meh", "TE", "EEE", 5)]
     assert wv.long_term(SLOTS, [15, 16], mine_lt(), fas, plays) == []
+
+
+# ---------------------------------------------------------------- FAAB bids
+
+def test_bid_formula_values():
+    assert wv.bid(100, 40) == 40                      # share 40/80 = 0.5, capped at 0.4
+    assert wv.bid(100, 10) == 20                      # 10/50 = 0.2
+    assert wv.bid(100, 1) == 2                        # 1/41 of 100 = 2.4
+    assert wv.bid(100, 500) == 40                     # cap
+    assert wv.bid(62, 10) == 12                       # uses what is left, not the budget
+
+
+def test_bid_at_least_one_when_player_adds_something():
+    assert wv.bid(100, 0.1) == 1
+    assert wv.bid(100, 0) == 0
+
+
+def test_bid_never_more_than_left_and_null_without_faab():
+    assert wv.bid(0, 20) == 0
+    assert wv.bid(1, 500) == 1
+    assert wv.bid(None, 20) is None
+    assert wv.bid(100, None) is None
+
+
+def faab_norm(**over):
+    norm = {"waiverType": 2, "waiverBudget": 100,
+            "teams": [{"teamName": "Me", "faabUsed": 38}, {"teamName": "A", "faabUsed": 12}, {"teamName": "B", "faabUsed": 0}]}
+    norm.update(over)
+    return norm
+
+
+def test_faab_summary_lists_every_team_and_max_of_others():
+    out = wv.faab_summary(faab_norm(), "Me")
+    assert out == {"budget": 100, "left": 62, "leagueMaxLeft": 100,
+                   "teams": [{"name": "B", "left": 100}, {"name": "A", "left": 88}, {"name": "Me", "left": 62}]}
+
+
+def test_faab_summary_null_when_not_faab_or_data_missing():
+    assert wv.faab_summary(faab_norm(waiverType=0), "Me") is None
+    assert wv.faab_summary(faab_norm(waiverBudget=None), "Me") is None
+    assert wv.faab_summary({"teams": [{"teamName": "Me", "faabUsed": 1}]}, "Me") is None   # older raw cache
+    old = faab_norm()
+    del old["teams"][1]["faabUsed"]
+    assert wv.faab_summary(old, "Me") is None
+    assert wv.faab_summary(faab_norm(), "Nobody") is None

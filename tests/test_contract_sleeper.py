@@ -100,6 +100,30 @@ def test_stats(load):
         sleeper.validate_rows(rows, "stats")
 
 
+def test_league_keeps_faab_settings(load):
+    out = sleeper.normalize_league(load("sleeper_league.json"), load("sleeper_rosters.json"), load("sleeper_users.json"), "u1")
+    assert out["waiverType"] == 2 and out["waiverBudget"] == 100
+    assert all(isinstance(t["faabUsed"], int) for t in out["teams"])
+
+
+def test_faab_keys_are_optional_but_checked_when_present(load):
+    d = load("sleeper_league.json")
+    del d["settings"]["waiver_type"]
+    del d["settings"]["waiver_budget"]
+    sleeper.validate_league(d)                                # an older or non FAAB league still passes
+    d = load("sleeper_league.json")
+    d["settings"]["waiver_budget"] = "100"
+    with pytest.raises(ContractError, match="waiver_budget"):
+        sleeper.validate_league(d)
+    r = load("sleeper_rosters.json")
+    r[0]["settings"]["waiver_budget_used"] = "x"
+    with pytest.raises(ContractError, match="waiver_budget_used"):
+        sleeper.validate_rosters(r)
+    r = load("sleeper_rosters.json")
+    del r[0]["settings"]["waiver_budget_used"]
+    sleeper.validate_rosters(r)
+
+
 def test_league_keeps_playoff_settings(load):
     raw = load("sleeper_league.json")
     out = sleeper.normalize_league(raw, load("sleeper_rosters.json"), load("sleeper_users.json"), "u1")
