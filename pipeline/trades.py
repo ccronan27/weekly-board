@@ -10,10 +10,14 @@ is not a real offer, so it is never suggested. The site's analyzer handles any o
 """
 from __future__ import annotations
 
+import statistics
+
 from pipeline import waivers
 
-MIN_GAIN = 0.5        # below this a trade is noise, not an idea
+MIN_IDEA_GAIN = 2.0   # an idea must add at least this much to your playoff lineup, and must help them too
 TRADE_POSITIONS = {"QB", "RB", "WR", "TE"}   # K and DEF are streamed, not traded
+NEED_POSITIONS = ("QB", "RB", "WR", "TE")
+NEED_MAX = 2
 YOUTH_GAP = 4         # dynasty: flag a trade that sends away a player this many years younger
 
 
@@ -53,6 +57,60 @@ def youth_flag(give: list[dict], get: list[dict], gap: int = YOUTH_GAP) -> bool:
     return bool(ga and ra) and min(ra) - min(ga) >= gap
 
 
+def starter_strength(slots: list[str], players: list[dict]) -> dict[str, float]:
+    """Playoff rate summed over one team's best lineup, per trade position. Same rates trades use."""
+    ps = [{"id": p["id"], "pos": p["pos"], "points": p["rate"], "eligible": bool(p["rate"])} for p in players]
+    _, ids = waivers.best_lineup(slots, ps)
+    by_id = {p["id"]: p for p in players}
+    out = {pos: 0.0 for pos in NEED_POSITIONS}
+    for i in ids:
+        if i is not None and by_id[i]["pos"] in out:
+            out[by_id[i]["pos"]] += by_id[i]["rate"]
+    return {pos: round(v, 1) for pos, v in out.items()}
+
+
+def needs(slots: list[str], rosters: list[list[dict]]) -> list[list[str]]:
+    """Per roster (same order as input): up to NEED_MAX positions where its starters sit furthest
+    below the league median. Empty when nothing is below median."""
+    if not rosters:
+        return []
+    strengths = [starter_strength(slots, players) for players in rosters]
+    median = {pos: statistics.median(s[pos] for s in strengths) for pos in NEED_POSITIONS}
+    out = []
+    for s in strengths:
+        short = [(round(median[pos] - s[pos], 1), pos) for pos in NEED_POSITIONS if round(median[pos] - s[pos], 1) > 0]
+        short.sort(key=lambda x: (-x[0], NEED_POSITIONS.index(x[1])))
+        out.append([pos for _, pos in short[:NEED_MAX]])
+    return out
+
+
+def _ordinal(n: int) -> str:
+    suffix = "th" if 11 <= n % 100 <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
+def owned_picks(team_names: dict[int, str], traded: list[dict], seasons: list[str], rounds: int) -> dict[int, list[dict]]:
+    """Draft picks each roster owns after trades: its own picks for rounds 1..rounds in each season.
+
+    team_names: roster id -> team name. traded: rows {season, round, rosterId, ownerId}, where rosterId
+    is the original owner and ownerId the current one. Returns roster id -> picks sorted by season, round.
+    Each pick: {season, round, label, from}, from is the original team name, or None when it is their own.
+    """
+    owner = {(s, r, rid): rid for s in seasons for r in range(1, rounds + 1) for rid in team_names}
+    for t in traded:
+        key = (t["season"], t["round"], t["rosterId"])
+        if key in owner:
+            owner[key] = t["ownerId"]
+    out = {rid: [] for rid in team_names}
+    for (s, r, orig), who in owner.items():
+        if who in out:
+            out[who].append({"season": s, "round": r, "label": f"{s} {_ordinal(r)}",
+                             "from": None if who == orig else team_names[orig]})
+    for picks in out.values():
+        picks.sort(key=lambda p: (p["season"], p["round"]))
+    return out
+
+
 def suggest(slots, weeks, mine: list[dict], teams: list[dict], plays, limit: int = 8) -> list[dict]:
     """1 for 1 trades with every other team that raise both teams' playoff lineups.
 
@@ -74,11 +132,11 @@ def suggest(slots, weeks, mine: list[dict], teams: list[dict], plays, limit: int
                     continue
                 my_after = playoff_total(slots, weeks, [p for p in mine if p["id"] != g["id"]] + [r], plays)[0]
                 mg = round(my_after - my_base, 1)
-                if mg < MIN_GAIN:
+                if mg < MIN_IDEA_GAIN:
                     continue
                 th_after = playoff_total(slots, weeks, [p for p in theirs if p["id"] != r["id"]] + [g], plays)[0]
                 tg = round(th_after - th_base, 1)
-                if tg < MIN_GAIN:
+                if tg <= 0:
                     continue
                 ideas.append({"team": t["name"], "give": [g["id"]], "get": [r["id"]], "myGain": mg, "theirGain": tg})
         ideas.sort(key=lambda i: (-min(i["myGain"], i["theirGain"]), -i["myGain"], i["give"][0], i["get"][0]))

@@ -48,7 +48,7 @@ def test_suggest_only_trades_that_help_both():
     ideas = tr.suggest(SLOTS, [15, 16], mine(), [{"name": "T", "players": theirs()}], ALL)
     assert ideas, "rb for wr swap should help both"
     for i in ideas:
-        assert i["myGain"] >= tr.MIN_GAIN and i["theirGain"] >= tr.MIN_GAIN
+        assert i["myGain"] >= tr.MIN_IDEA_GAIN and i["theirGain"] > 0
         assert tr.evaluate(SLOTS, [15, 16], mine(), theirs(), i["give"], i["get"], ALL)["myGain"] == i["myGain"]
 
 
@@ -56,6 +56,62 @@ def test_suggest_skips_k_def_and_no_weeks():
     assert tr.suggest(SLOTS, [], mine(), [{"name": "T", "players": theirs()}], ALL) == []
     k = [R("k", "K", 20)]
     assert all(i["give"] != ["k"] for i in tr.suggest(SLOTS + ["K"], [15], mine() + k, [{"name": "T", "players": theirs()}], ALL))
+
+
+def test_ideas_drop_below_threshold():
+    # rb2 for twr1 gives me +10 and them +8, so it stays. A 1 point gain for me is dropped
+    assert tr.MIN_IDEA_GAIN == 2.0
+    ideas = tr.suggest(SLOTS, [15], mine(), [{"name": "T", "players": theirs()}], ALL)
+    assert ideas and all(i["myGain"] >= 2.0 and i["theirGain"] > 0 for i in ideas)
+    weak = [R("wr", "WR", 4), R("rb1", "RB", 6)]
+    got = tr.suggest(SLOTS, [15], weak, [{"name": "T", "players": [R("tw", "WR", 5), R("tr", "RB", 1)]}], ALL)
+    assert got == [], "gains of 1 for me are below the idea threshold"
+
+
+def test_needs_names_weakest_positions_up_to_two():
+    # everyone has 2 starting WR and 2 RB slots filled by good players. The rosters differ at QB and TE only
+    slots = ["QB", "RB", "RB", "WR", "WR", "TE"]
+    good = [R("q", "QB", 20), R("r1", "RB", 15), R("r2", "RB", 15), R("w1", "WR", 15), R("w2", "WR", 15), R("t", "TE", 10)]
+    weak_qb = [R("q", "QB", 5), R("r1", "RB", 15), R("r2", "RB", 15), R("w1", "WR", 15), R("w2", "WR", 15), R("t", "TE", 2)]
+    weak_rb = [R("q", "QB", 20), R("r1", "RB", 2), R("r2", "RB", 3), R("w1", "WR", 15), R("w2", "WR", 15), R("t", "TE", 10)]
+    out = tr.needs(slots, [good, good, good, weak_qb, weak_rb])
+    assert out[0] == out[1] == out[2] == []
+    assert out[3] == ["QB", "TE"]       # QB deficit 15 then TE 8, both below median
+    assert out[4] == ["RB"]             # RB starters total 5 against a median of 30, nothing else is below median
+
+
+def test_needs_empty_when_nothing_below_median():
+    slots = ["QB", "RB", "WR", "TE"]
+    same = [R("q", "QB", 10), R("r", "RB", 10), R("w", "WR", 10), R("t", "TE", 10)]
+    assert tr.needs(slots, [same, same]) == [[], []]
+    assert tr.needs(slots, []) == []
+
+
+def test_owned_picks_apply_trades_and_label_origin():
+    names = {1: "Alpha", 2: "Bravo", 3: "Charlie"}
+    traded = [
+        {"season": "2027", "round": 1, "rosterId": 1, "ownerId": 2},   # Alpha's 2027 1st goes to Bravo
+        {"season": "2027", "round": 2, "rosterId": 3, "ownerId": 1},   # Charlie's 2027 2nd goes to Alpha
+        {"season": "2026", "round": 1, "rosterId": 2, "ownerId": 3},   # old season: ignored
+        {"season": "2028", "round": 9, "rosterId": 2, "ownerId": 1},   # beyond draft rounds: ignored
+    ]
+    out = tr.owned_picks(names, traded, ["2027", "2028"], 2)
+    assert out[1] == [   # Alpha keeps its own 2027 2nd and also gets Charlie's 2027 2nd
+        {"season": "2027", "round": 2, "label": "2027 2nd", "from": None},
+        {"season": "2027", "round": 2, "label": "2027 2nd", "from": "Charlie"},
+        {"season": "2028", "round": 1, "label": "2028 1st", "from": None},
+        {"season": "2028", "round": 2, "label": "2028 2nd", "from": None},
+    ]
+    assert [(p["season"], p["round"], p["from"]) for p in out[2]] == [   # Bravo keeps its 2027 1st and gets Alpha's
+        ("2027", 1, "Alpha"), ("2027", 1, None), ("2027", 2, None), ("2028", 1, None), ("2028", 2, None)]
+    assert [(p["season"], p["round"], p["from"]) for p in out[3]] == [("2027", 1, None), ("2028", 1, None), ("2028", 2, None)]
+
+
+def test_ordinals_in_labels():
+    names = {1: "A"}
+    picks = tr.owned_picks(names, [], ["2027"], 13)[1]
+    assert [p["label"] for p in picks][10:13] == ["2027 11th", "2027 12th", "2027 13th"]
+    assert [p["label"] for p in picks][:3] == ["2027 1st", "2027 2nd", "2027 3rd"]
 
 
 def test_youth_flag():

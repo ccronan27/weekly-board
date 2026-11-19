@@ -219,6 +219,16 @@ def standings_block(lc, norm, rosters, week, pw, slots, rosters_t, team_name, pl
             "playoffTeams": n_playoff, "byes": byes, "divisions": n_div}
 
 
+def trade_picks(norm: dict, season: int, rosters_t: list) -> dict:
+    """Dynasty: team name -> picks for the next 2 drafts after traded picks. None for every team when the
+    draft rounds or the traded picks did not load, so the site hides picks instead of showing wrong ones."""
+    if not norm.get("draftRounds") or norm.get("tradedPicks") is None:
+        return {r["name"]: None for r in rosters_t}
+    team_names = {t["rosterId"]: t["teamName"] for t in norm["teams"]}
+    owned = trades.owned_picks(team_names, norm["tradedPicks"], [str(season + 1), str(season + 2)], norm["draftRounds"])
+    return {team_names[rid]: picks for rid, picks in owned.items()}
+
+
 def _r(x, n=1):
     return None if x is None else round(x, n)
 
@@ -562,6 +572,12 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
             rosters_t = [{"name": n, "isMine": n == team_name,
                           "players": sorted((trade_player(p) for p in recs), key=lambda p: (-(p["rate"] or 0), p["name"]))}
                          for n, recs in team_recs.items()]
+            for r, nd in zip(rosters_t, trades.needs(slots, [r["players"] for r in rosters_t])):
+                r["needs"] = nd
+            if dynasty:
+                owned = trade_picks(norm, season, rosters_t)
+                for r in rosters_t:
+                    r["picks"] = owned.get(r["name"])
             mine_t = next(r for r in rosters_t if r["isMine"])["players"]
             others = [r for r in rosters_t if not r["isMine"]]
             all_weeks = stretch_weeks + lt_weeks    # rest of season, every week counts the same
@@ -585,7 +601,7 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                 "generatedAt": generated, "season": season, "week": week, "league": lc["key"], "dynasty": dynasty,
                 "slots": slots, "weeks": all_weeks, "stretchWeeks": stretch_weeks, "playoffWeeks": lt_weeks, "flexEligible": {k: sorted(v) for k, v in scoring.FLEX_ELIGIBLE.items()},
                 "plays": {str(w): sorted(matchups.get(w, {})) for w in all_weeks}, "rosters": rosters_t, "ideas": ideas,
-                "sources": out["sources"]})
+                "minIdeaGain": trades.MIN_IDEA_GAIN, "sources": out["sources"]})
             out["trade"] = {"file": f"trade-{lc['key']}.json", "ideas": len(ideas)}
 
             # ---- v4 standings and playoff odds

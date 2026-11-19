@@ -41,6 +41,10 @@ def fetch_players() -> dict:
     return http.get_json(f"{V1}/players/nfl")
 
 
+def fetch_traded_picks(league_id: str) -> list:
+    return http.get_json(f"{V1}/league/{league_id}/traded_picks")
+
+
 def _pos_params(positions):
     return [("season_type", "regular")] + [("position[]", p) for p in positions]
 
@@ -103,6 +107,20 @@ def normalize_matchups(d) -> list:
     """One row per roster: rosterId, matchupId (None when unpaired), points (0 before the game)."""
     validate_matchups(d)
     return [{"rosterId": m["roster_id"], "matchupId": m["matchup_id"], "points": float(m["points"] or 0.0)} for m in d]
+
+
+def validate_traded_picks(d) -> None:
+    """Dynasty pick trades. roster_id is the original owner, owner_id the current owner (both roster ids)."""
+    require(isinstance(d, list), "sleeper traded_picks: expected list")
+    for p in d:
+        require_keys(p, ["season", "round", "roster_id", "owner_id"], "sleeper traded pick")
+        require(str(p["season"]).isdigit(), f"sleeper traded_picks: bad season {p['season']!r}")
+        require(isinstance(p["round"], int) and p["round"] >= 1, f"sleeper traded_picks: bad round {p['round']!r}")
+
+
+def normalize_traded_picks(d: list) -> list:
+    validate_traded_picks(d)
+    return [{"season": str(p["season"]), "round": p["round"], "rosterId": p["roster_id"], "ownerId": p["owner_id"]} for p in d]
 
 
 def validate_players(d, min_players: int = 1) -> None:
