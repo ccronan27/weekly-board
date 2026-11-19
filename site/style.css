@@ -28,8 +28,6 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .tab[aria-selected=true]{background:var(--card);border-color:var(--line);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .tname{display:block}
-.gain{font-size:.75rem;font-weight:700;color:var(--good)}
-.gain.zero{color:var(--muted)}
 
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0}
 .card.list{padding:0 12px}
@@ -162,3 +160,26 @@ h2{font-size:1.1rem;margin:20px 0 8px}
   #builder{scroll-margin-top:calc(var(--bar-h,0px) + 16px)}
 }
 @media (min-width:1000px){.bar{max-width:1180px}}
+
+/* ---------------------------------------------------------------- S5 All leagues and tabs
+   The All tab comes first. A league tab shows its status in place of the gain: a red dot and Out, a green gain,
+   an amber count of questionable starters, or a muted check when set. The view bar holds the view switch and the
+   link to the league's app. The link sits at the right on wide screens and wraps under the switch on phones. */
+.tstat{display:inline-flex;align-items:center;gap:4px;font-size:.75rem;font-weight:700;line-height:1.2;white-space:nowrap;max-width:100%}
+.tstat.good{color:var(--good)}
+.tstat.warn{color:var(--warn)}
+.tstat.out{color:var(--bad)}
+.tstat.muted{color:var(--muted);font-weight:600}
+.tstat .dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+#viewbar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px}
+#viewbar:empty{display:none}
+.applink{font-size:.85rem;font-weight:600;color:var(--accent);padding:5px 0;text-decoration:underline;text-underline-offset:2px}
+.applink:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+@media (min-width:640px){.applink{margin-left:auto}}
+.jump{border:0;background:transparent;color:var(--accent);font:inherit;font-weight:700;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-underline-offset:2px}
+.jump:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.todo-league{padding:10px 0;border-top:1px solid var(--line)}
+.todo-league:first-child{border-top:0}
+.todo-set{color:var(--muted);font-size:.9rem}
+.fresh-name{display:block;font-weight:700;margin-bottom:2px}
+@media (min-width:1000px){.colA>.s-moves:first-child h2{margin-top:0}}
