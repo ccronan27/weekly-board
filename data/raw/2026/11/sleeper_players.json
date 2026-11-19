@@ -18882,7 +18882,7 @@
    "injuryNotes": "Tendinitis",
    "injuryStatus": "Questionable",
    "name": "Mike Evans",
-   "newsUpdated": 1795119303807,
+   "newsUpdated": 1795119602602,
    "pos": "WR",
    "status": "Active",
    "team": "SF",
@@ -31398,7 +31398,7 @@
    "injuryNotes": null,
    "injuryStatus": null,
    "name": "DJ Moore",
-   "newsUpdated": 1794795032092,
+   "newsUpdated": 1795119602503,
    "pos": "WR",
    "status": "Active",
    "team": "BUF",
@@ -51205,6 +51205,6 @@
    "yearsExp": null
   }
  },
- "fetchedAt": "2026-11-19T20:24:05Z",
+ "fetchedAt": "2026-11-19T20:38:58Z",
  "source": "sleeper_players"
 }

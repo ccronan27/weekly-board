@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T20:24:08Z",
+ "generatedAt": "2026-11-19T20:39:00Z",
  "league": "hwh",
  "players": [
   {
@@ -3098,7 +3098,7 @@
    "injuryNotes": "Tendinitis",
    "locked": false,
    "name": "Mike Evans",
-   "newsUpdated": "2026-11-19T20:15:03Z",
+   "newsUpdated": "2026-11-19T20:20:02Z",
    "points": 13.3,
    "pos": "WR",
    "ppg": 14.8,
@@ -3258,7 +3258,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "DJ Moore",
-   "newsUpdated": "2026-11-16T02:10:32Z",
+   "newsUpdated": "2026-11-19T20:20:02Z",
    "points": 13.0,
    "pos": "WR",
    "ppg": 11.3,
@@ -9939,59 +9939,6 @@
    "teamName": null
   },
   {
-   "ceiling": 9.8,
-   "eligible": true,
-   "espn": 7.1,
-   "flags": [],
-   "floor": 3.2,
-   "game": {
-    "home": false,
-    "implied": 20.2,
-    "kickoff": "2026-11-22T18:00Z",
-    "opp": "CAR",
-    "oppImplied": 23.2,
-    "spread": 3.0,
-    "total": 43.5
-   },
-   "games": 10,
-   "id": "BAL",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Baltimore Ravens",
-   "newsUpdated": null,
-   "points": 6.5,
-   "pos": "DEF",
-   "ppg": 4.5,
-   "recent": [
-    {
-     "pts": -2.0,
-     "week": 7
-    },
-    {
-     "pts": 2.0,
-     "week": 8
-    },
-    {
-     "pts": 2.0,
-     "week": 9
-    },
-    {
-     "pts": 4.0,
-     "week": 10
-    }
-   ],
-   "rostered": true,
-   "rotowire": 5.9,
-   "sd": 3.31,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "BAL",
-   "teamName": "Jamflowmen"
-  },
-  {
    "ceiling": 11.1,
    "eligible": true,
    "espn": 6.1,
@@ -10202,6 +10149,59 @@
    "status": null,
    "team": "PHI",
    "teamName": null
+  },
+  {
+   "ceiling": 9.7,
+   "eligible": true,
+   "espn": 6.9,
+   "flags": [],
+   "floor": 3.1,
+   "game": {
+    "home": false,
+    "implied": 20.2,
+    "kickoff": "2026-11-22T18:00Z",
+    "opp": "CAR",
+    "oppImplied": 23.2,
+    "spread": 3.0,
+    "total": 43.5
+   },
+   "games": 10,
+   "id": "BAL",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Baltimore Ravens",
+   "newsUpdated": null,
+   "points": 6.4,
+   "pos": "DEF",
+   "ppg": 4.5,
+   "recent": [
+    {
+     "pts": -2.0,
+     "week": 7
+    },
+    {
+     "pts": 2.0,
+     "week": 8
+    },
+    {
+     "pts": 2.0,
+     "week": 9
+    },
+    {
+     "pts": 4.0,
+     "week": 10
+    }
+   ],
+   "rostered": true,
+   "rotowire": 5.9,
+   "sd": 3.31,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "BAL",
+   "teamName": "Jamflowmen"
   },
   {
    "ceiling": 11.1,
@@ -20656,35 +20656,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:24:07Z",
+   "lastUpdated": "2026-11-19T20:38:59Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:24:07Z",
+   "lastUpdated": "2026-11-19T20:38:59Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:24:05Z",
+   "lastUpdated": "2026-11-19T20:38:58Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:24:05Z",
+   "lastUpdated": "2026-11-19T20:38:58Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:24:06Z",
+   "lastUpdated": "2026-11-19T20:38:58Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
