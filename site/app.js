@@ -407,7 +407,7 @@ function sourcesTable(league, meta) {
     tr.appendChild(el("td", null, SOURCE_TEXT[k] || k));
     const td = el("td");
     let txt = "Updated " + stamp(s.lastUpdated);
-    if (k === "espn_rosters" && meta.espnRosters) txt = "Synced " + stamp(meta.espnRosters.syncedAt);
+    if (k === "espn_rosters" && meta.espnRosters) txt = "Updated " + stamp(meta.espnRosters.syncedAt);
     td.appendChild(document.createTextNode(txt));
     const st = rowState(k, s, meta, now);
     if (STATE_TEXT[st]) td.appendChild(el("span", "stale", "  " + STATE_TEXT[st]));
@@ -425,11 +425,11 @@ function freshnessMessages(league, meta, now) {
   if (age > BOARD_STALE_HOURS && age !== Infinity) {
     out.push("This board was built " + Math.floor(age / 24) + " days ago, so the scheduled refresh may have stopped. Run the refresh workflow on GitHub.");
   }
-  (meta.skippedLeagues || []).forEach(function (s) { out.push(s.name + " is not shown because there is no usable ESPN roster file. Ask Claude to sync ESPN."); });
+  (meta.skippedLeagues || []).forEach(function (s) { out.push(s.name + " is not shown because there is no usable ESPN roster file. Run the refresh workflow, or ask Claude to sync ESPN."); });
   const sync = league.league.platform === "espn" ? espnSync(meta, now) : null;
-  if (sync && sync.fromCache) out.push("The last ESPN sync did not save a usable roster file. Showing the sync from " + stamp(sync.syncedAt) + ". Ask Claude to sync ESPN.");
-  else if (sync && sync.old) out.push("The ESPN roster sync is more than " + sync.limit + " days old. Lineups may be out of date. Ask Claude to sync ESPN.");
-  if (sync && sync.weekMismatch) out.push("The ESPN roster file is from week " + sync.week + ". Ask Claude to sync ESPN.");
+  if (sync && sync.fromCache) out.push("The last ESPN update did not save a usable roster file. Showing the one from " + stamp(sync.syncedAt) + ". Run the refresh workflow, or ask Claude to sync ESPN.");
+  else if (sync && sync.old) out.push("ESPN rosters have not updated in more than " + sync.limit + " days. Lineups may be out of date. Run the refresh workflow, or ask Claude to sync ESPN.");
+  if (sync && sync.weekMismatch) out.push("The ESPN roster file is from week " + sync.week + ". Run the refresh workflow, or ask Claude to sync ESPN.");
   const bad = Object.keys(league.sources).filter(function (k) { return k !== "espn_rosters" && sourceState(league.sources[k]) !== "fresh"; });
   const missing = bad.filter(function (k) { return sourceState(league.sources[k]) === "missing"; });
   const stale = bad.filter(function (k) { return missing.indexOf(k) < 0; });
@@ -1263,7 +1263,8 @@ function renderStandings(league, meta) {
   const head = el("div", "card");
   head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
   const sm = el("div", "summary");
-  [["Record", me ? record(me) : "n/a"], ["Playoffs", me ? pct(me.playoffPct) : "n/a"], ["Bye", me ? pct(me.byePct) : "n/a"]].forEach(function (x) {
+  const hasByes = st.byes > 0;   // a league with no playoff byes shows no Bye number or column
+  [["Record", me ? record(me) : "n/a"], ["Playoffs", me ? pct(me.playoffPct) : "n/a"]].concat(hasByes ? [["Bye", me ? pct(me.byePct) : "n/a"]] : []).forEach(function (x) {
     sm.appendChild(statBox(x[0], x[1]));
   });
   head.appendChild(sm);
@@ -1276,7 +1277,7 @@ function renderStandings(league, meta) {
       " times. Each team's expected score is its own best lineup under the board's projections, with a spread of " + st.sd.toFixed(1) +
       " points, the typical week to week swing in this league. "
     : "The regular season is over, so the odds are the final standings. ") +
-    "Top " + st.playoffTeams + " make the playoffs and top " + st.byes + " get a bye." +
+    "Top " + st.playoffTeams + " make the playoffs" + (hasByes ? " and top " + st.byes + " get a bye." : ". There are no byes.") +
     (st.divisions ? " Assumes division winners take the top seeds." : "")));
 
   secGames.appendChild(el("h2", null, "Your games"));
@@ -1305,7 +1306,7 @@ function renderStandings(league, meta) {
   const t = el("table", "standings");
   const hr = el("tr");
   // Points stays on phones. Bye is the column that goes under 400px (see style.css)
-  ["", "Team", "Record", "Points", "Playoffs", "Bye"].forEach(function (h, i) {
+  ["", "Team", "Record", "Points", "Playoffs"].concat(hasByes ? ["Bye"] : []).forEach(function (h, i) {
     hr.appendChild(el("th", (i > 1 ? "num" : "") + (i === 3 ? " pf" : "") + (i === 5 ? " bye" : ""), h));
   });
   const thead = el("thead");
@@ -1322,7 +1323,7 @@ function renderStandings(league, meta) {
     tr.appendChild(el("td", "num", record(r)));
     tr.appendChild(el("td", "num pf", r.pointsFor.toFixed(1)));
     tr.appendChild(el("td", "num strong", pct(r.playoffPct)));
-    tr.appendChild(el("td", "num bye", pct(r.byePct)));
+    if (hasByes) tr.appendChild(el("td", "num bye", pct(r.byePct)));
     tb.appendChild(tr);
   });
   t.appendChild(tb);
@@ -1333,6 +1334,114 @@ function renderStandings(league, meta) {
   return columns([secSum, secGames, sourcesSection(league, meta)], [secTable]);
 }
 
+// ---------------------------------------------------------------- shotguns (house rule, ESPN league)
+// Any starter, K or D/ST at 0 or less in a week is one shotgun. Raw counts. Doubling is not tracked.
+function shotgunWord(n) { return n + (n === 1 ? " shotgun" : " shotguns"); }
+// The headline numbers. Pure, so a test can run it.
+function shotgunSummary(sg) {
+  const me = (sg.totals || []).filter(function (t) { return t.isMine; })[0] || null;
+  const last = (sg.weeks || [])[0] || null;
+  const mineLast = last ? (last.teams.filter(function (t) { return t.isMine; })[0] || null) : null;
+  const leader = (sg.totals || [])[0] || null;
+  return {
+    season: sg.seasonTotal || 0,
+    mine: me ? me.total : null,
+    lastWeek: last ? last.week : null,
+    lastTotal: last ? last.teams.reduce(function (a, t) { return a + t.count; }, 0) : 0,
+    mineLast: mineLast ? mineLast.count : null,
+    leader: leader && leader.total > 0 ? leader : null,
+  };
+}
+function shotgunPlayerLine(p) {
+  let t = p.name + ", " + p.slot + ", " + num(p.points);
+  if (isNum(p.projected) && p.projected > 0) t += " (projected " + p.projected.toFixed(1) + ")";
+  return t;
+}
+// One week as a card: teams that owe, then a line for everyone who is clear
+function shotgunWeek(wk) {
+  const card = el("div", "card list sg-week");
+  const owe = wk.teams.filter(function (t) { return t.count > 0; });
+  if (!owe.length) card.appendChild(el("div", "slot", "Nobody owes a shotgun this week."));
+  owe.forEach(function (t) {
+    const row = el("div", "slot sg-team" + (t.isMine ? " mine" : ""));
+    const top = el("div", "sg-top");
+    top.appendChild(el("span", "pname", t.name + (t.isMine ? " (you)" : "")));
+    top.appendChild(el("span", "sg-count", shotgunWord(t.count)));
+    row.appendChild(top);
+    t.players.forEach(function (p) { row.appendChild(el("div", "psub", shotgunPlayerLine(p))); });
+    card.appendChild(row);
+  });
+  const clear = wk.teams.length - owe.length;
+  if (owe.length && clear > 0) card.appendChild(el("div", "slot muted", clear + (clear === 1 ? " team is" : " teams are") + " clear."));
+  return card;
+}
+
+function renderShotguns(league, meta) {
+  const sg = league.shotguns;
+  const secSum = el("section", "s-sum");
+  const secLast = el("section", "s-moves");
+  const secTable = el("section", "s-lineup");
+  const secOlder = el("section", "s-bench");
+  const sm = shotgunSummary(sg);
+
+  const head = el("div", "card");
+  head.appendChild(el("div", "muted", league.league.teamName + ", week " + league.week));
+  const box = el("div", "summary");
+  box.appendChild(statBox("League this season", String(sm.season)));
+  if (sm.mine !== null) box.appendChild(statBox("You this season", String(sm.mine)));
+  if (sm.mineLast !== null) box.appendChild(statBox("You in week " + sm.lastWeek, String(sm.mineLast)));
+  head.appendChild(box);
+  if (sm.leader) head.appendChild(el("div", "psub", "Most this season: " + sm.leader.name + " with " + shotgunWord(sm.leader.total) + "."));
+  secSum.appendChild(head);
+  freshnessWarnings(league, meta, secSum);
+  secSum.appendChild(el("p", "muted aside", "The rule: anyone in your starting lineup, kicker and D/ST included, who scores 0 or less means one shotgun. Bench and IR do not count. Points are ESPN's league scoring. Doubling is not counted here, so these are raw counts."));
+
+  const weeks = sg.weeks || [];
+  if (!weeks.length) {
+    secLast.appendChild(el("div", "card", "No finished weeks yet."));
+    return columns([secSum, sourcesSection(league, meta)], [secLast]);
+  }
+  const last = weeks[0];
+  secLast.appendChild(el("h2", null, "Week " + last.week + ", " + shotgunWord(sm.lastTotal)));
+  secLast.appendChild(shotgunWeek(last));
+
+  secTable.appendChild(el("h2", null, "Season totals"));
+  const card = el("div", "card tablecard");
+  const t = el("table", "standings sg-table");
+  const thead = el("thead");
+  const hr = el("tr");
+  [["", ""], ["Team", ""], ["Shotguns", "num"], ["Weeks", "num"]].forEach(function (h) { hr.appendChild(el("th", h[1], h[0])); });
+  thead.appendChild(hr);
+  t.appendChild(thead);
+  const tb = el("tbody");
+  let rank = 0, prev = null;
+  sg.totals.forEach(function (r, i) {
+    if (r.total !== prev) { rank = i + 1; prev = r.total; }
+    const tr = el("tr", r.isMine ? "mine" : "");
+    tr.appendChild(el("td", "seed", String(rank)));
+    tr.appendChild(el("td", "tname", r.name));
+    tr.appendChild(el("td", "num strong", String(r.total)));
+    tr.appendChild(el("td", "num", String(r.weeksHit)));
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+  card.appendChild(t);
+  secTable.appendChild(card);
+  secTable.appendChild(el("div", "muted", "Weeks is how many weeks a team owed at least one."));
+
+  if (weeks.length > 1) {
+    secOlder.appendChild(el("h2", null, "Earlier weeks"));
+    weeks.slice(1).forEach(function (wk) {
+      const n = wk.teams.reduce(function (a, x) { return a + x.count; }, 0);
+      const d = el("details", "fold sg-fold");
+      d.appendChild(el("summary", null, "Week " + wk.week + ", " + shotgunWord(n)));
+      d.appendChild(shotgunWeek(wk));
+      secOlder.appendChild(d);
+    });
+  }
+  return columns([secSum, secTable, sourcesSection(league, meta)], [secLast, secOlder]);
+}
+
 // ---------------------------------------------------------------- views and routing (docs/STATES.md)
 // Every view a league can open, in button order. The test says whether this build carries it.
 // Standings is listed whenever the key exists, even when null, so the ESPN league can say why it is empty.
@@ -1341,6 +1450,7 @@ const VIEWS = [
   ["waivers", "Waivers", function (league) { return !!league.waivers; }],
   ["trade", "Trade", function (league) { return !!league.trade; }],
   ["standings", "Standings", function (league) { return "standings" in league; }],
+  ["shotguns", "Shotguns", function (league) { return !!league.shotguns; }],
 ];
 function viewsFor(league) {
   return VIEWS.filter(function (v) { return v[2](league); });
@@ -1663,6 +1773,7 @@ async function main() {
     if (onAll) body = renderAll(leagues, meta, function (k) { show(k, "lineup"); });
     else body = view === "waivers" ? renderWaivers(lg, meta)
       : view === "standings" ? renderStandings(lg, meta)
+      : view === "shotguns" ? renderShotguns(lg, meta)
       : view === "trade" ? tradeBody(i, lg)
       : renderLeague(lg, meta);
     const keepY = view === "trade" ? window.scrollY : 0;

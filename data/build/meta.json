@@ -1,16 +1,16 @@
 {
  "espnRosters": {
-  "ageDays": 1.31,
+  "ageDays": 0.01,
   "fromCache": false,
   "stale": false,
   "staleAfterDays": 4,
   "state": "fresh",
-  "syncedAt": "2026-11-18T13:18:41.319Z",
+  "syncedAt": "2026-11-19T21:49:16.000Z",
   "week": 11,
   "weekMismatch": false
  },
  "gapFills": 24,
- "generatedAt": "2026-11-19T20:39:00Z",
+ "generatedAt": "2026-11-19T21:59:25Z",
  "idmap": {
   "matched": 1040,
   "unmatchedEspnPlayers": 21
@@ -42,56 +42,133 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:49:15Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_league": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:16Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w1": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:16Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w10": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:17Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w2": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:16Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w3": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:16Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w4": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:16Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w5": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:16Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w6": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:16Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w7": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:17Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w8": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:17Z",
+   "ok": true,
+   "stale": false,
+   "state": "fresh"
+  },
+  "espn_lineups_w9": {
+   "error": null,
+   "lastUpdated": "2026-11-19T21:49:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-18T13:18:41.319Z",
+   "lastUpdated": "2026-11-19T21:49:16.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:49:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_schedule": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:49:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:49:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:49:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:49:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_stats_w10": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:49:13Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

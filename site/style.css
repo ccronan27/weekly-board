@@ -253,3 +253,15 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .todo-set{color:var(--muted);font-size:.9rem}
 .fresh-name{display:block;font-weight:700;margin-bottom:2px}
 @media (min-width:1000px){.colA>.s-moves:first-child h2{margin-top:0}}
+
+/* Shotguns (house rule, ESPN league) */
+.sg-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.sg-count{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--bad)}
+.sg-team .psub{margin-top:2px}
+.sg-team.mine{background:var(--goodbg);margin:0 -12px;padding-left:12px;padding-right:12px}
+.sg-table td.tname{min-width:0}
+.sg-fold>summary{font-size:1rem;margin:12px 0 6px}
+/* Five view buttons fit a 360px phone */
+@media (max-width:420px){.views{width:100%;max-width:100%}.view{flex:1 1 auto;min-width:0;padding:5px 2px;font-size:.76rem}}
+/* League tab names break between words, not inside one, on small phones */
+@media (max-width:400px){.tab{font-size:.74rem;overflow-wrap:normal;word-break:normal;hyphens:auto;padding:6px 2px}}

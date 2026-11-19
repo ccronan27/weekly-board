@@ -4,7 +4,7 @@ Conor's cross-league fantasy football start/sit dashboard. Read `docs/SPEC.md` (
 
 ## Hard rules
 - No credentials, tokens or cookies anywhere: repo, workflows, logs or site. The repo is public
-- Never call ESPN league endpoints from Actions. ESPN league data arrives only as `data/espn/rosters.json`, written by the Claude `espn-roster-sync` skill. ESPN default projections (leaguedefaults) need no login and are fine to fetch
+- ESPN league data comes only from the public league endpoint, with no login, cookies or auth headers, and only through `pipeline/adapters/espn_league.py` (the league was made public 11/19/26). Never store owner names or member data from it. If the league goes private again, do not add credentials. The board falls back to `data/espn/rosters.json`, which the Claude `espn-roster-sync` skill can still write. ESPN default projections (leaguedefaults) are fine to fetch
 - No owners' real names in data or UI. Team names only
 - Site must ship a noindex meta tag and a robots.txt that disallows everything
 - Projection model is the equal average of ESPN + Rotowire. Do not add weighting, calibration or a Vegas multiplier unless it beats the equal average in the cross-season backtest (fit last season, score this season)

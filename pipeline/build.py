@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-from pipeline import lineup, odds, players as pm, recap, scoring, trades, waivers
+from pipeline import lineup, odds, players as pm, recap, scoring, shotguns, trades, waivers
 from pipeline.adapters import espn_rosters
 from pipeline.common import BUILD, ESPN_TEAMS, RAW, ContractError, norm_team, normalize_name, next_refresh, now_iso, read_json, source_state, write_json
 from pipeline.ingest import load_config, load_rosters, rosters_status
@@ -40,11 +40,14 @@ def load_raw(season: int, week: int, raw_root=RAW) -> dict:
     status = _load(d, "status")
     if status is None:
         raise BuildError(f"no ingest status at {d}. Run python -m pipeline.ingest first")
-    stats = {}
+    stats, espn_lineups = {}, {}
     for w in range(1, week):
         f = _load(raw_root / str(season) / str(w), "sleeper_stats")
         if f:
             stats[w] = f["data"]
+        f = _load(raw_root / str(season) / str(w), "espn_lineups")
+        if f:
+            espn_lineups[w] = f["data"]
     return {
         "status": status,
         "leagues": (_load(d, "sleeper_leagues") or {}).get("data"),
@@ -54,6 +57,7 @@ def load_raw(season: int, week: int, raw_root=RAW) -> dict:
         "lines": (_load(d, "nflverse_lines") or {}).get("data") or [],
         "schedule": (_load(d, "nflverse_schedule") or {}).get("data") or [],
         "stats": stats,
+        "espnLineups": espn_lineups,   # week -> every ESPN team's starters and points, for the Shotguns page
     }
 
 
@@ -227,6 +231,18 @@ def trade_picks(norm: dict, season: int, rosters_t: list) -> dict:
     team_names = {t["rosterId"]: t["teamName"] for t in norm["teams"]}
     owned = trades.owned_picks(team_names, norm["tradedPicks"], [str(season + 1), str(season + 2)], norm["draftRounds"])
     return {team_names[rid]: picks for rid, picks in owned.items()}
+
+
+def espn_matchups(rosters: dict | None) -> dict | None:
+    """Past ESPN scores in the Sleeper matchups shape recap reads: week -> [{rosterId, points}].
+    None when the schedule has no scores (a roster file from the sync skill)."""
+    out: dict = {}
+    for g in (rosters or {}).get("schedule") or []:
+        if "homePoints" not in g:
+            continue
+        out.setdefault(str(g["week"]), []).extend([{"rosterId": g["homeTeamId"], "points": g["homePoints"]},
+                                                   {"rosterId": g["awayTeamId"], "points": g["awayPoints"]}])
+    return out or None
 
 
 def _r(x, n=1):
@@ -466,11 +482,17 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         # ---- P3 recap: store this run's recommended lineup, then last week's recap (pipeline/recap.py)
         recap.write_recommended(rec_root, season, week, lc["key"], slots, rec_slots, generated)
         sleeper_norm = entry[2] if len(entry) > 2 else None
+        if sleeper_norm:
+            rc_matchups = sleeper_norm.get("matchups")
+            rc_mine = next((t["rosterId"] for t in sleeper_norm["teams"] if t["isMine"]), None)
+        else:   # ESPN: past scores from the public league schedule, when the roster file carries them
+            rc_matchups, rc_mine = espn_matchups(rosters), cfg["espnTeamId"]
         out["recap"] = recap.league_recap(
             season=season, week=week, lg=lg, roster=my_players, stats=raw["stats"],
-            matchups=(sleeper_norm or {}).get("matchups"),
-            my_roster_id=next((t["rosterId"] for t in sleeper_norm["teams"] if t["isMine"]), None) if sleeper_norm else None,
-            raw_root=rec_root)
+            matchups=rc_matchups, my_roster_id=rc_mine, raw_root=rec_root)
+        if lc.get("shotguns") and lc["platform"] == "espn":
+            out["shotguns"] = shotguns.season_block(raw["espnLineups"], {t["teamId"]: t["name"] for t in rosters["teams"]},
+                                                    cfg["espnTeamId"])
         # ---- full pool for v2: every player either source projects, under this league's scoring
         pool = []
         seen = set()

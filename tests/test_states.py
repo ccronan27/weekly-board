@@ -98,12 +98,12 @@ def test_old_sync_is_stale_and_week_mismatch_is_reported():
 
 
 def test_ingest_caches_a_good_roster_file(tmp_path, monkeypatch):
-    from pipeline.adapters import espn_defaults, nflverse_lines, sleeper
+    from pipeline.adapters import espn_defaults, espn_league, nflverse_lines, sleeper
 
     def fail(*a, **k):
         raise ConnectionError("offline")
     for mod, names in ((sleeper, ["fetch_league", "fetch_rosters", "fetch_users", "fetch_matchups", "fetch_players", "fetch_projections", "fetch_stats"]),
-                       (espn_defaults, ["fetch"]), (nflverse_lines, ["fetch"])):
+                       (espn_defaults, ["fetch"]), (espn_league, ["fetch_league", "fetch_week"]), (nflverse_lines, ["fetch"])):
         for n in names:
             monkeypatch.setattr(mod, n, fail)
     out = ingest.run(SEASON, WEEK, root=tmp_path)
@@ -247,7 +247,7 @@ console.log(JSON.stringify({
     assert got["now"] == ["Missing data: ESPN projections. Nothing has loaded from it yet.",
                           "Stale data: Vegas lines. Using the last good pull."]
     assert got["later"][0].startswith("This board was built 5 days ago")
-    assert any("more than 4 days old" in m for m in got["later"]), "ESPN sync ages in the browser too"
+    assert any("not updated in more than 4 days" in m for m in got["later"]), "ESPN rosters age in the browser too"
     assert any("did not save a usable roster file" in m for m in got["cached"])
     assert got["skipped"][0].startswith("Fantasizing 2026 is not shown")
     assert (got["rowNow"], got["rowLater"]) == ("fresh", "stale")
@@ -348,7 +348,7 @@ console.log(JSON.stringify({
   link: link,
   noUrl: noUrl, http: http,
 }));""")
-    assert got["shared"] == ["Old League is not shown because there is no usable ESPN roster file. Ask Claude to sync ESPN."]
+    assert got["shared"] == ["Old League is not shown because there is no usable ESPN roster file. Run the refresh workflow, or ask Claude to sync ESPN."]
     assert got["perLeague"] == ["Stale data: Vegas lines. Using the last good pull."], "board-wide lines are not repeated per league"
     assert got["perLeagueClean"] == []
     assert got["link"] == {"label": "Open in Sleeper", "href": "https://example.test/x"}

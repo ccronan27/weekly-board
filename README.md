@@ -6,9 +6,11 @@ Each league also has a Waivers view (v2) with three lists. Short term ranks free
 
 A Trade view (v3) does two things. Trade ideas lists 1 for 1 trades with each other team that make both teams' lineups better over the rest of the season (stretch run plus playoffs, every week counted the same), scored the same way as the waiver lists, so the offer is one the other side has a reason to accept. Build a trade lets you pick any partner and any players on both sides and shows the change for you and for them over the playoffs and this week. The builder runs the same lineup optimizer in the browser, and a test checks it against the Python one. In dynasty leagues it shows ages and flags trades that send away a player 4 or more years younger. It does not score dynasty value, because no free source publishes one.
 
-A Standings view (v4) shows each league's table with playoff and bye odds and your remaining games with a win chance for each. Odds come from playing out the rest of the regular season 10,000 times with a fixed seed. Each team's expected score is its own best lineup under the board's projections, with the league's typical week to week swing as the spread. With divisions, division winners are assumed to take the top seeds. Sleeper leagues work now. The ESPN league shows odds once the sync skill saves standings and schedule (see `docs/SPEC.md`). Dynasty leagues (`dynasty: true` in `config/leagues.yaml`) get no drop suggestion, because weekly points ignore long term value. Players whose game has started are never suggested.
+A Standings view (v4) shows each league's table with playoff and bye odds and your remaining games with a win chance for each. Odds come from playing out the rest of the regular season 10,000 times with a fixed seed. Each team's expected score is its own best lineup under the board's projections, with the league's typical week to week swing as the spread. With divisions, division winners are assumed to take the top seeds. Sleeper leagues work now. The ESPN league gets standings and odds from its public league data. Dynasty leagues (`dynasty: true` in `config/leagues.yaml`) get no drop suggestion, because weekly points ignore long term value. Players whose game has started are never suggested.
 
-The only piece that needs Claude is the ESPN roster sync. Everything else runs on its own.
+The ESPN league is public, so every run reads its rosters, settings, standings, schedule and past lineups directly, with no login. Nothing needs Claude any more. The Claude `espn-roster-sync` skill is only a fallback if the league goes private again.
+
+The ESPN league also has a Shotguns view for the house rule: any starter, kicker or D/ST who scores 0 or less owes a shotgun. It shows last week by team and player, a season table, and every earlier week. Counts are raw, doubling is not tracked. It is turned on with `shotguns: true` in `config/leagues.yaml` and computed in `pipeline/shotguns.py` from ESPN's own league-scored lineups.
 
 An All tab collects every pending move, injury watch and stale source across the leagues, lists players starting in more than one lineup, and each league tab shows its status (Set, +gain, n Q, or Out). The Lineup view shows this week's matchup with win chance and the playoff odds swing, a backup for each questionable starter with a warning when the backup plays earlier, close calls, an underdog box with higher ceiling bench options (context only), last week's recap, and a tap-to-open detail row per player. Waivers adds a Best pickups table across the three horizons and, in FAAB leagues, a suggested bid (a rough rule, not tested against real bids). Trade merges duplicate ideas, filters by position, flags ideas that help a rival, shows each team's weakest spots, and lists dynasty draft picks in the builder as unscored items. The page refetches the build when you come back to the tab. See `docs/UX_PLAN.md` for the full list and the data contract.
 
@@ -18,13 +20,13 @@ An All tab collects every pending move, injury watch and stale source across the
 Sleeper API ----\
 ESPN leaguedefaults ---> pipeline.ingest --> data/raw/{season}/{week}/
 nflverse lines --/                                   |
-data/espn/rosters.json (Claude skill) ---------------+--> pipeline.build --> data/build/*.json --> site
+ESPN public league ---> data/espn/rosters.json ------+--> pipeline.build --> data/build/*.json --> site
 ```
 
 - Projection is the equal average of ESPN and Rotowire (via Sleeper), each re-scored with the league's exact scoring. There is no weighting, calibration or Vegas multiplier because none of them beat the equal average out of sample. See `docs/BACKTEST.md`.
 - Floor and ceiling are one weekly standard deviation below and above the projection, from the player's own games this season.
 - If one source fails, the run still publishes and marks that source stale. An empty board is never published. Every source is `fresh`, `stale` or `missing`. See `docs/STATES.md` for this and the board's other state machines.
-- ESPN league data is never fetched by Actions. It arrives only as `data/espn/rosters.json`, written by the Claude `espn-roster-sync` skill. Say "sync ESPN" to Claude to refresh it. The page warns when the sync is more than 4 days old. If a sync saves a broken file, the board keeps publishing from the last good copy (cached under `data/raw/`) and says so on the page. With no good copy at all, the ESPN league is left off and the Sleeper leagues still publish.
+- ESPN league data comes from the public league endpoint on every run (`pipeline/adapters/espn_league.py`, no login). A good pull is written to `data/espn/rosters.json`, so if a later pull fails the board keeps using that file. The page warns when it is more than 4 days old. The Claude `espn-roster-sync` skill can still write the file if the league goes private again. If a sync saves a broken file, the board keeps publishing from the last good copy (cached under `data/raw/`) and says so on the page. With no good copy at all, the ESPN league is left off and the Sleeper leagues still publish.
 - No credentials, tokens or cookies exist anywhere in this repo. The repo is public, so keep it that way.
 
 ## Run locally
@@ -64,7 +66,7 @@ Scheduled workflows are disabled automatically after 60 days without repo activi
 
 1. Re-enable workflows in August: Actions tab, select `refresh`, Enable workflow.
 2. Update the league IDs and season in `config/leagues.yaml`, and the ESPN league's `playoffWeeks` (Sleeper playoff weeks come from the API). Scoring and lineups are pulled from the platforms. Check `config/leagues/*.overrides.yaml` still apply.
-3. Ask Claude to sync ESPN so `data/espn/rosters.json` is for the new league. Confirm the ESPN D/ST scoring in `config/leagues/fantasizing.overrides.yaml` still matches the league.
+3. Confirm the new ESPN league is viewable to the public (League Info, Basic Settings), then run the workflow once so `data/espn/rosters.json` is for the new league. If it is private, ask Claude to sync ESPN instead.
 4. Re-run the backtest before any model change ships: `python scripts/backtest.py`. Part 1 scores this season so far, Part 3 fits on last season and scores this one. It prints a verdict line, and a model change ships only when it beats the equal average with the whole bootstrap range above zero. Pulls are cached under `data/raw/{season}/{week}/backtest_*.json` (gitignored, about 11 MB). Add `--refresh` to re-pull.
 5. Run `python -m pytest -m live`. A contract failure means a source changed shape.
 6. Trigger `refresh` by hand and check that all three leagues show on the page with current stamps.
@@ -75,7 +77,7 @@ Scheduled workflows are disabled automatically after 60 days without repo activi
 pipeline/adapters/   one adapter per source, each with a contract test
 pipeline/            ingest, scoring, lineup optimizer, waiver targets, trades, playoff odds, build
 config/              league IDs and per league overrides
-data/espn/           roster file written by the Claude skill
+data/espn/           ESPN roster file, written by ingest from the public league (or by the Claude skill as a fallback)
 data/raw/            cached raw pulls by season and week
 data/build/          what the site reads
 site/                plain HTML, CSS and JS

@@ -11,7 +11,7 @@ A self-updating start/sit dashboard across all of Conor's fantasy leagues. Runs 
 ## Leagues
 | League | Platform | ID | Teams | Scoring | Starters | Access |
 |---|---|---|---|---|---|---|
-| Fantasizing 2026 | ESPN | 125685129 | 14 | Full PPR | QB, RB, 2 WR, TE, 2 FLEX, D/ST, K. 4 BN, 2 IR | Rosters + settings from `data/espn/rosters.json`, written by the Claude `espn-roster-sync` skill. League is private. Actions never logs in to ESPN |
+| Fantasizing 2026 | ESPN | 125685129 | 14 | Full PPR | QB, RB, 2 WR, TE, 2 FLEX, D/ST, K. 4 BN, 2 IR | Public league (made viewable to the public 11/19/26). Rosters, settings, standings, schedule and past lineups from the public league endpoint, no login. Written to `data/espn/rosters.json`. The Claude `espn-roster-sync` skill is a fallback |
 | HWH: The League | Sleeper | 1389389185361653760 | 12 | Full PPR, no bonuses | QB, 2 RB, 2 WR, TE, 2 FLEX, K, DEF | Public Sleeper API |
 | Chicago Dynasty | Sleeper | 1335703355086893056 | 12 | Half PPR, TE premium +0.5/rec, 400 pass / 200 rush / 200 rec yd bonuses, 50+ yd TD bonuses, custom K scoring | QB, 2 RB, 2 WR, TE, 3 FLEX, K (no DEF) | Public Sleeper API |
 
@@ -27,13 +27,13 @@ A self-updating start/sit dashboard across all of Conor's fantasy leagues. Runs 
 | Sleeper projections | `api.sleeper.app/projections/nfl/{season}/{week}?season_type=regular&position[]=QB` (repeat per position) | None | Unofficial. Provider: Rotowire (`company` field). Raw stat lines in `stats`, re-scorable |
 | Sleeper actual stats | `api.sleeper.app/stats/nfl/{season}/{week}?season_type=regular&position[]=QB` | None | Unofficial. `pts_ppr` etc. |
 | ESPN default projections | `lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{season}/segments/0/leaguedefaults/3?view=kona_player_info&scoringPeriodId={week}` with header `X-Fantasy-Filter: {"players":{"limit":1200,"filterSlotIds":{"value":[0,2,4,6]},"sortPercOwned":{"sortAsc":false,"sortPriority":1}}}` | None (verified 11/17 without cookies, from a browser. Verify from Actions runners) | Weekly projection = stat with `scoringPeriodId == week`, `statSourceId == 1`, `statSplitTypeId == 1`. Actual = `statSourceId == 0`. `appliedTotal` is default PPR. Raw stats in `stats` map keyed by ESPN stat id |
-| ESPN league rosters + settings | `data/espn/rosters.json` | n/a | Written by Claude skill. See schema below |
+| ESPN league | `lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{season}/segments/0/leagues/{id}?view=mTeam&view=mRoster&view=mSettings&view=mMatchup`, and `?view=mBoxscore&view=mMatchupScore&scoringPeriodId={week}` per finished week | None (league is public) | `pipeline/adapters/espn_league.py`. Normalized to the `data/espn/rosters.json` schema below. `members` and team `owners` are dropped before anything is cached. Past weeks feed the Shotguns view |
 | Vegas lines | `raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv` | None | `spread_line` = home expected margin, `total_line`. Implied home = (total + spread) / 2, away = (total - spread) / 2. Team codes: nflverse `LA` = Sleeper `LAR` |
 | Injuries / news | Sleeper player fields `injury_status`, `injury_notes`, `news_updated` | None | v1 starting point |
 
 Player matching across sources: normalize name (lowercase, strip `.'’-`, drop jr/sr/ii/iii/iv/v suffixes, collapse spaces) + position. Backtest matched 3,450 player-weeks this way. Build a persistent ID map (Sleeper id <-> ESPN id) to replace name matching over time.
 
-## `data/espn/rosters.json` schema (written by Claude skill)
+## `data/espn/rosters.json` schema (written by ingest from the public league, or by the Claude skill)
 ```json
 {
   "ok": true, "platform": "espn", "leagueId": 125685129, "season": 2026, "week": 11,
@@ -73,10 +73,9 @@ The board works without these and uses each one as soon as it appears. Each is v
 | Run | Who | Why |
 |---|---|---|
 | Tue 9:07pm | Actions | Post-MNF baseline, before Wed 3am waivers |
-| Wed 7:13am | Claude skill | ESPN roster sync after waivers |
 | Thu 2:07pm | Actions | TNF injury reports |
 | Fri 5:07pm | Actions | Final injury designations |
-| Sun 9:07am | Claude skill + Actions | ESPN roster sync + morning news |
+| Sun 9:07am | Actions | Morning news |
 | Sun 10:47am | Actions | Inactives for noon games |
 | Sun 1:07pm | Actions | Inactives for late games |
 | Sun 5:47pm | Actions | Inactives for the Sunday night game |
@@ -102,4 +101,5 @@ Actions should also run when `data/espn/rosters.json` changes (push trigger on t
 - v3 (shipped 11/18/26): trade analyzer (dynasty-aware for Chicago Dynasty). Ideas are 1 for 1 trades that raise both teams' playoff lineups. The site builder handles any trade. Dynasty awareness is ages plus a flag when you send away a player 4 or more years younger. See `pipeline/trades.py`
 - v4 (shipped 11/18/26): stretch run weeks (12 to 14) in waivers and trades, standings with simulated playoff and bye odds (`pipeline/odds.py`), the ESPN league's own D/ST scoring and playoff weeks when the sync file carries them, and `scripts/backtest.py`
 - v5 (shipped 11/19/26): end-user pass from `docs/UX_PLAN.md`. All leagues tab and tab status, matchup and odds swing on Lineup, backups and late-game risk for questionable starters, close calls, underdog upside box, last week recap (`pipeline/recap.py`), player detail rows, FAAB budgets and bids, Best pickups table, trade idea threshold (2.0), merged ideas, rival flag, team needs, dynasty picks (Sleeper `traded_picks`), open-in-app links, refresh on return, sticky tabs, add to home screen, Sunday and Monday night inactives runs
+- v6 (shipped 11/19/26): the ESPN league is public, so ingest reads it directly every run (rosters, settings, D/ST scoring, playoff settings, standings, schedule with scores). ESPN standings, odds and the recap score now work. Shotguns view for the house rule (`pipeline/shotguns.py`): every starter, K or D/ST at 0 or less owes one shotgun. Raw counts, doubling not tracked
 - v1 stores full league player pools so v2 needs no rework

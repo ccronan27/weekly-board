@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-19T20:39:00Z",
+ "generatedAt": "2026-11-19T21:59:25Z",
  "ideas": [
   {
    "get": [
@@ -85,6 +85,21 @@
   },
   {
    "get": [
+    "9224"
+   ],
+   "give": [
+    "8131"
+   ],
+   "myGain": 18.5,
+   "playoffGain": 3.6,
+   "stretchGain": 14.9,
+   "team": "Gay tier ball knowledge",
+   "theirGain": 13.8,
+   "thisWeek": -8.7,
+   "youthFlag": false
+  },
+  {
+   "get": [
     "4866"
    ],
    "give": [
@@ -96,21 +111,6 @@
    "team": "Gay tier ball knowledge",
    "theirGain": 18.6,
    "thisWeek": 2.3,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "9224"
-   ],
-   "give": [
-    "8131"
-   ],
-   "myGain": 19.1,
-   "playoffGain": 3.9,
-   "stretchGain": 15.2,
-   "team": "Gay tier ball knowledge",
-   "theirGain": 13.2,
-   "thisWeek": -8.6,
    "youthFlag": false
   },
   {
@@ -367,10 +367,10 @@
      "games": 9,
      "id": "7564",
      "name": "Ja'Marr Chase",
-     "points": 23.6,
+     "points": 23.5,
      "pos": "WR",
      "ppg": 21.5,
-     "rate": 23.6,
+     "rate": 23.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -1991,10 +1991,10 @@
      "games": 9,
      "id": "6770",
      "name": "Joe Burrow",
-     "points": 24.8,
+     "points": 24.7,
      "pos": "QB",
      "ppg": 26.5,
-     "rate": 24.8,
+     "rate": 24.7,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -2411,7 +2411,7 @@
      "games": 9,
      "id": "13968",
      "name": "Drew Stevens",
-     "points": 8.1,
+     "points": 8.2,
      "pos": "K",
      "ppg": 8.1,
      "rate": 8.1,
@@ -3155,10 +3155,10 @@
      "games": 9,
      "id": "9224",
      "name": "Chase Brown",
-     "points": 15.3,
+     "points": 15.2,
      "pos": "RB",
      "ppg": 14.4,
-     "rate": 15.3,
+     "rate": 15.2,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -3601,35 +3601,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:49:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:49:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:49:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:49:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:49:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
