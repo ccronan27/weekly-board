@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-19T20:39:00Z",
+ "generatedAt": "2026-11-19T21:35:37Z",
  "league": "chicago-dynasty",
  "players": [
   {
-   "ceiling": 33.8,
+   "ceiling": 33.7,
    "eligible": true,
    "espn": 23.8,
    "flags": [],
-   "floor": 16.3,
+   "floor": 16.1,
    "game": {
     "home": false,
     "implied": 30.2,
@@ -23,7 +23,7 @@
    "locked": false,
    "name": "Joe Burrow",
    "newsUpdated": "2026-11-19T15:25:00Z",
-   "points": 25.0,
+   "points": 24.9,
    "pos": "QB",
    "ppg": 26.8,
    "recent": [
@@ -45,7 +45,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 26.3,
+   "rotowire": 26.0,
    "sd": 8.77,
    "sources": [
     "espn",
@@ -268,11 +268,11 @@
    "teamName": "Ladd’s McConcubines"
   },
   {
-   "ceiling": 27.3,
+   "ceiling": 27.4,
    "eligible": true,
    "espn": 20.2,
    "flags": [],
-   "floor": 14.5,
+   "floor": 14.6,
    "game": {
     "home": true,
     "implied": 24.2,
@@ -288,7 +288,7 @@
    "locked": false,
    "name": "Jayden Daniels",
    "newsUpdated": "2026-11-17T21:25:46Z",
-   "points": 20.9,
+   "points": 21.0,
    "pos": "QB",
    "ppg": 19.7,
    "recent": [
@@ -310,7 +310,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 21.6,
+   "rotowire": 21.7,
    "sd": 6.41,
    "sources": [
     "espn",
@@ -533,11 +533,11 @@
    "teamName": "Zay My Name"
   },
   {
-   "ceiling": 29.4,
+   "ceiling": 29.3,
    "eligible": true,
    "espn": 21.1,
    "flags": [],
-   "floor": 10.1,
+   "floor": 10.0,
    "game": {
     "home": false,
     "implied": 30.2,
@@ -553,7 +553,7 @@
    "locked": false,
    "name": "Ja'Marr Chase",
    "newsUpdated": "2026-11-16T16:00:38Z",
-   "points": 19.8,
+   "points": 19.7,
    "pos": "WR",
    "ppg": 18.1,
    "recent": [
@@ -575,7 +575,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 18.5,
+   "rotowire": 18.3,
    "sd": 9.67,
    "sources": [
     "espn",
@@ -1084,7 +1084,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Kenneth Walker III",
-   "newsUpdated": "2026-11-18T18:45:55Z",
+   "newsUpdated": "2026-11-19T21:15:03Z",
    "points": 16.8,
    "pos": "RB",
    "ppg": 23.1,
@@ -1812,11 +1812,11 @@
    "teamName": "Brandon Aubrey Supremacy"
   },
   {
-   "ceiling": 24.1,
+   "ceiling": 24.0,
    "eligible": true,
    "espn": 13.8,
    "flags": [],
-   "floor": 5.8,
+   "floor": 5.7,
    "game": {
     "home": false,
     "implied": 30.2,
@@ -1832,7 +1832,7 @@
    "locked": false,
    "name": "Tee Higgins",
    "newsUpdated": "2026-11-19T18:30:01Z",
-   "points": 14.9,
+   "points": 14.8,
    "pos": "WR",
    "ppg": 16.1,
    "recent": [
@@ -1854,7 +1854,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 16.1,
+   "rotowire": 15.9,
    "sd": 9.14,
    "sources": [
     "espn",
@@ -2600,11 +2600,11 @@
    "teamName": "God, Country, Caleb 💅"
   },
   {
-   "ceiling": 18.8,
+   "ceiling": 18.7,
    "eligible": true,
    "espn": 13.2,
    "flags": [],
-   "floor": 7.3,
+   "floor": 7.2,
    "game": {
     "home": false,
     "implied": 30.2,
@@ -2642,7 +2642,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 12.9,
+   "rotowire": 12.8,
    "sd": 5.73,
    "sources": [
     "espn",
@@ -2830,7 +2830,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Luther Burden III",
-   "newsUpdated": "2026-11-18T22:45:54Z",
+   "newsUpdated": "2026-11-19T20:45:02Z",
    "points": 12.6,
    "pos": "WR",
    "ppg": 12.5,
@@ -3403,7 +3403,7 @@
    "injuryNotes": "Tendinitis",
    "locked": false,
    "name": "Mike Evans",
-   "newsUpdated": "2026-11-19T20:20:02Z",
+   "newsUpdated": "2026-11-19T20:40:02Z",
    "points": 11.4,
    "pos": "WR",
    "ppg": 12.6,
@@ -3864,7 +3864,7 @@
    "eligible": true,
    "espn": 10.5,
    "flags": [],
-   "floor": 5.5,
+   "floor": 5.6,
    "game": {
     "home": true,
     "implied": 24.2,
@@ -3975,7 +3975,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Carnell Tate",
-   "newsUpdated": "2026-11-18T22:30:54Z",
+   "newsUpdated": "2026-11-19T21:20:03Z",
    "points": 10.5,
    "pos": "WR",
    "ppg": 8.6,
@@ -5365,7 +5365,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jordyn Tyson",
-   "newsUpdated": "2026-11-19T04:20:56Z",
+   "newsUpdated": "2026-11-19T21:00:04Z",
    "points": 8.8,
    "pos": "WR",
    "ppg": 8.2,
@@ -5665,7 +5665,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Darren Waller",
-   "newsUpdated": "2026-11-19T20:15:03Z",
+   "newsUpdated": "2026-11-19T20:40:02Z",
    "points": 8.6,
    "pos": "TE",
    "ppg": 10.3,
@@ -6285,6 +6285,59 @@
    "teamName": "Tinman0506"
   },
   {
+   "ceiling": 12.0,
+   "eligible": true,
+   "espn": 9.0,
+   "flags": [],
+   "floor": 4.6,
+   "game": {
+    "home": true,
+    "implied": 24.2,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "CIN",
+    "oppImplied": 30.2,
+    "spread": 6.0,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "13968",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Drew Stevens",
+   "newsUpdated": "2026-11-14T00:50:19Z",
+   "points": 8.3,
+   "pos": "K",
+   "ppg": 8.2,
+   "recent": [
+    {
+     "pts": 8.0,
+     "week": 6
+    },
+    {
+     "pts": 17.0,
+     "week": 8
+    },
+    {
+     "pts": 8.0,
+     "week": 9
+    },
+    {
+     "pts": 7.0,
+     "week": 10
+    }
+   ],
+   "rostered": false,
+   "rotowire": 7.6,
+   "sd": 3.7,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "WAS",
+   "teamName": null
+  },
+  {
    "ceiling": 19.6,
    "eligible": true,
    "espn": 8.4,
@@ -6304,7 +6357,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Kyle Monangai",
-   "newsUpdated": "2026-11-18T23:00:54Z",
+   "newsUpdated": "2026-11-19T20:55:02Z",
    "points": 8.2,
    "pos": "RB",
    "ppg": 14.4,
@@ -6444,59 +6497,6 @@
    "teamName": null
   },
   {
-   "ceiling": 11.9,
-   "eligible": true,
-   "espn": 9.0,
-   "flags": [],
-   "floor": 4.5,
-   "game": {
-    "home": true,
-    "implied": 24.2,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "CIN",
-    "oppImplied": 30.2,
-    "spread": 6.0,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "13968",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Drew Stevens",
-   "newsUpdated": "2026-11-14T00:50:19Z",
-   "points": 8.2,
-   "pos": "K",
-   "ppg": 8.2,
-   "recent": [
-    {
-     "pts": 8.0,
-     "week": 6
-    },
-    {
-     "pts": 17.0,
-     "week": 8
-    },
-    {
-     "pts": 8.0,
-     "week": 9
-    },
-    {
-     "pts": 7.0,
-     "week": 10
-    }
-   ],
-   "rostered": false,
-   "rotowire": 7.5,
-   "sd": 3.7,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "WAS",
-   "teamName": null
-  },
-  {
    "ceiling": 14.5,
    "eligible": true,
    "espn": 7.4,
@@ -6539,7 +6539,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 9.1,
+   "rotowire": 9.0,
    "sd": 6.29,
    "sources": [
     "espn",
@@ -8108,7 +8108,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jacory Croskey-Merritt",
-   "newsUpdated": "2026-11-19T17:50:01Z",
+   "newsUpdated": "2026-11-19T21:15:03Z",
    "points": 7.1,
    "pos": "RB",
    "ppg": 8.5,
@@ -8142,7 +8142,7 @@
    "teamName": "Team 12 (no name set)"
   },
   {
-   "ceiling": 13.0,
+   "ceiling": 12.9,
    "eligible": true,
    "espn": 7.7,
    "flags": [],
@@ -8611,7 +8611,7 @@
    "teamName": "When in Rome"
   },
   {
-   "ceiling": 11.7,
+   "ceiling": 11.6,
    "eligible": true,
    "espn": 7.0,
    "flags": [],
@@ -8653,7 +8653,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 6.7,
+   "rotowire": 6.6,
    "sd": 4.83,
    "sources": [
     "espn",
@@ -9746,7 +9746,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Tommy Tremble",
-   "newsUpdated": "2026-11-18T21:15:54Z",
+   "newsUpdated": "2026-11-19T20:30:04Z",
    "points": 6.2,
    "pos": "TE",
    "ppg": 7.3,
@@ -11986,7 +11986,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "locked": false,
    "name": "Michael Pittman Jr.",
-   "newsUpdated": "2026-11-19T19:00:03Z",
+   "newsUpdated": "2026-11-19T21:10:02Z",
    "points": 4.0,
    "pos": "WR",
    "ppg": 4.1,
@@ -12069,7 +12069,7 @@
    "teamName": "Dak FC"
   },
   {
-   "ceiling": 8.7,
+   "ceiling": 8.6,
    "eligible": true,
    "espn": 3.4,
    "flags": [],
@@ -12243,7 +12243,7 @@
    "injuryNotes": "Surgery",
    "locked": false,
    "name": "Jonathon Brooks",
-   "newsUpdated": "2026-11-19T18:55:01Z",
+   "newsUpdated": "2026-11-19T20:30:04Z",
    "points": 3.9,
    "pos": "RB",
    "ppg": 4.2,
@@ -20656,35 +20656,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:34Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:35Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:35Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

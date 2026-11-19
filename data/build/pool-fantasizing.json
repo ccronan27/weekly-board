@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-19T20:39:00Z",
+ "generatedAt": "2026-11-19T21:35:37Z",
  "league": "fantasizing",
  "players": [
   {
-   "ceiling": 32.3,
+   "ceiling": 32.1,
    "eligible": true,
    "espn": 22.9,
    "flags": [],
-   "floor": 16.3,
+   "floor": 16.2,
    "game": {
     "home": false,
     "implied": 30.2,
@@ -23,7 +23,7 @@
    "locked": false,
    "name": "Joe Burrow",
    "newsUpdated": "2026-11-19T15:25:00Z",
-   "points": 24.3,
+   "points": 24.2,
    "pos": "QB",
    "ppg": 25.8,
    "recent": [
@@ -45,7 +45,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 25.7,
+   "rotowire": 25.4,
    "sd": 7.98,
    "sources": [
     "espn",
@@ -54,59 +54,6 @@
    "status": null,
    "team": "CIN",
    "teamName": "2024 Purdue Football"
-  },
-  {
-   "ceiling": 34.7,
-   "eligible": true,
-   "espn": 25.4,
-   "flags": [],
-   "floor": 12.4,
-   "game": {
-    "home": false,
-    "implied": 30.2,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 24.2,
-    "spread": -6.0,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "7564",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Ja'Marr Chase",
-   "newsUpdated": "2026-11-16T16:00:38Z",
-   "points": 23.6,
-   "pos": "WR",
-   "ppg": 21.5,
-   "recent": [
-    {
-     "pts": 17.2,
-     "week": 7
-    },
-    {
-     "pts": 31.1,
-     "week": 8
-    },
-    {
-     "pts": 31.5,
-     "week": 9
-    },
-    {
-     "pts": 34.1,
-     "week": 10
-    }
-   ],
-   "rostered": true,
-   "rotowire": 21.7,
-   "sd": 11.14,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CIN",
-   "teamName": "C0K3 H3AD"
   },
   {
    "ceiling": 32.9,
@@ -160,6 +107,59 @@
    "status": null,
    "team": "BUF",
    "teamName": "QWOP"
+  },
+  {
+   "ceiling": 34.6,
+   "eligible": true,
+   "espn": 25.4,
+   "flags": [],
+   "floor": 12.3,
+   "game": {
+    "home": false,
+    "implied": 30.2,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.2,
+    "spread": -6.0,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "7564",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Ja'Marr Chase",
+   "newsUpdated": "2026-11-16T16:00:38Z",
+   "points": 23.5,
+   "pos": "WR",
+   "ppg": 21.5,
+   "recent": [
+    {
+     "pts": 17.2,
+     "week": 7
+    },
+    {
+     "pts": 31.1,
+     "week": 8
+    },
+    {
+     "pts": 31.5,
+     "week": 9
+    },
+    {
+     "pts": 34.1,
+     "week": 10
+    }
+   ],
+   "rostered": true,
+   "rotowire": 21.5,
+   "sd": 11.14,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN",
+   "teamName": "C0K3 H3AD"
   },
   {
    "ceiling": 34.1,
@@ -1031,7 +1031,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Kenneth Walker III",
-   "newsUpdated": "2026-11-18T18:45:55Z",
+   "newsUpdated": "2026-11-19T21:15:03Z",
    "points": 18.1,
    "pos": "RB",
    "ppg": 24.6,
@@ -1170,11 +1170,11 @@
    "teamName": "C0K3 H3AD"
   },
   {
-   "ceiling": 28.1,
+   "ceiling": 28.0,
    "eligible": true,
    "espn": 16.8,
    "flags": [],
-   "floor": 7.4,
+   "floor": 7.3,
    "game": {
     "home": false,
     "implied": 30.2,
@@ -1212,7 +1212,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 18.7,
+   "rotowire": 18.5,
    "sd": 10.39,
    "sources": [
     "espn",
@@ -2020,59 +2020,6 @@
    "teamName": null
   },
   {
-   "ceiling": 22.1,
-   "eligible": true,
-   "espn": 15.6,
-   "flags": [],
-   "floor": 8.5,
-   "game": {
-    "home": false,
-    "implied": 30.2,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 24.2,
-    "spread": -6.0,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "9224",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Chase Brown",
-   "newsUpdated": "2026-11-16T16:00:38Z",
-   "points": 15.3,
-   "pos": "RB",
-   "ppg": 14.4,
-   "recent": [
-    {
-     "pts": 9.8,
-     "week": 7
-    },
-    {
-     "pts": 16.1,
-     "week": 8
-    },
-    {
-     "pts": 10.5,
-     "week": 9
-    },
-    {
-     "pts": 28.3,
-     "week": 10
-    }
-   ],
-   "rostered": true,
-   "rotowire": 14.9,
-   "sd": 6.79,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "CIN",
-   "teamName": "Honorary Brown"
-  },
-  {
    "ceiling": 24.1,
    "eligible": true,
    "espn": 15.7,
@@ -2145,7 +2092,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Luther Burden III",
-   "newsUpdated": "2026-11-18T22:45:54Z",
+   "newsUpdated": "2026-11-19T20:45:02Z",
    "points": 15.2,
    "pos": "WR",
    "ppg": 15.1,
@@ -2177,6 +2124,59 @@
    "status": null,
    "team": "CHI",
    "teamName": "Riders of Rohan"
+  },
+  {
+   "ceiling": 22.0,
+   "eligible": true,
+   "espn": 15.6,
+   "flags": [],
+   "floor": 8.4,
+   "game": {
+    "home": false,
+    "implied": 30.2,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.2,
+    "spread": -6.0,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "9224",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Chase Brown",
+   "newsUpdated": "2026-11-16T16:00:38Z",
+   "points": 15.2,
+   "pos": "RB",
+   "ppg": 14.4,
+   "recent": [
+    {
+     "pts": 9.8,
+     "week": 7
+    },
+    {
+     "pts": 16.1,
+     "week": 8
+    },
+    {
+     "pts": 10.5,
+     "week": 9
+    },
+    {
+     "pts": 28.3,
+     "week": 10
+    }
+   ],
+   "rostered": true,
+   "rotowire": 14.8,
+   "sd": 6.79,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "CIN",
+   "teamName": "Honorary Brown"
   },
   {
    "ceiling": 23.6,
@@ -3053,7 +3053,7 @@
    "injuryNotes": "Tendinitis",
    "locked": false,
    "name": "Mike Evans",
-   "newsUpdated": "2026-11-19T20:20:02Z",
+   "newsUpdated": "2026-11-19T20:40:02Z",
    "points": 13.3,
    "pos": "WR",
    "ppg": 14.8,
@@ -3107,7 +3107,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Carnell Tate",
-   "newsUpdated": "2026-11-18T22:30:54Z",
+   "newsUpdated": "2026-11-19T21:20:03Z",
    "points": 13.1,
    "pos": "WR",
    "ppg": 11.0,
@@ -3183,7 +3183,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 13.2,
+   "rotowire": 13.3,
    "sd": 5.58,
    "sources": [
     "espn",
@@ -4101,7 +4101,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jordyn Tyson",
-   "newsUpdated": "2026-11-19T04:20:56Z",
+   "newsUpdated": "2026-11-19T21:00:04Z",
    "points": 11.3,
    "pos": "WR",
    "ppg": 12.0,
@@ -6047,7 +6047,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Kyle Monangai",
-   "newsUpdated": "2026-11-18T23:00:54Z",
+   "newsUpdated": "2026-11-19T20:55:02Z",
    "points": 8.7,
    "pos": "RB",
    "ppg": 14.8,
@@ -6420,7 +6420,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Darren Waller",
-   "newsUpdated": "2026-11-19T20:15:03Z",
+   "newsUpdated": "2026-11-19T20:40:02Z",
    "points": 8.6,
    "pos": "TE",
    "ppg": 10.2,
@@ -6602,7 +6602,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 8.8,
+   "rotowire": 8.7,
    "sd": 4.8,
    "sources": [
     "espn",
@@ -6876,6 +6876,59 @@
    "status": null,
    "team": "LV",
    "teamName": "Slimelord’s Nickolodean"
+  },
+  {
+   "ceiling": 11.2,
+   "eligible": true,
+   "espn": 8.6,
+   "flags": [],
+   "floor": 5.4,
+   "game": {
+    "home": true,
+    "implied": 24.2,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "CIN",
+    "oppImplied": 30.2,
+    "spread": 6.0,
+    "total": 54.5
+   },
+   "games": 9,
+   "id": "13968",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Drew Stevens",
+   "newsUpdated": "2026-11-14T00:50:19Z",
+   "points": 8.3,
+   "pos": "K",
+   "ppg": 8.4,
+   "recent": [
+    {
+     "pts": 7.0,
+     "week": 6
+    },
+    {
+     "pts": 15.0,
+     "week": 8
+    },
+    {
+     "pts": 8.0,
+     "week": 9
+    },
+    {
+     "pts": 7.0,
+     "week": 10
+    }
+   ],
+   "rostered": false,
+   "rotowire": 7.9,
+   "sd": 2.92,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "WAS",
+   "teamName": null
   },
   {
    "ceiling": 11.9,
@@ -7196,59 +7249,6 @@
    "teamName": "Honorary Brown"
   },
   {
-   "ceiling": 11.2,
-   "eligible": true,
-   "espn": 8.6,
-   "flags": [],
-   "floor": 5.3,
-   "game": {
-    "home": true,
-    "implied": 24.2,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "CIN",
-    "oppImplied": 30.2,
-    "spread": 6.0,
-    "total": 54.5
-   },
-   "games": 9,
-   "id": "13968",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Drew Stevens",
-   "newsUpdated": "2026-11-14T00:50:19Z",
-   "points": 8.2,
-   "pos": "K",
-   "ppg": 8.4,
-   "recent": [
-    {
-     "pts": 7.0,
-     "week": 6
-    },
-    {
-     "pts": 15.0,
-     "week": 8
-    },
-    {
-     "pts": 8.0,
-     "week": 9
-    },
-    {
-     "pts": 7.0,
-     "week": 10
-    }
-   ],
-   "rostered": false,
-   "rotowire": 7.8,
-   "sd": 2.92,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "WAS",
-   "teamName": null
-  },
-  {
    "ceiling": 14.5,
    "eligible": true,
    "espn": 7.4,
@@ -7291,7 +7291,7 @@
     }
    ],
    "rostered": true,
-   "rotowire": 9.1,
+   "rotowire": 9.0,
    "sd": 6.29,
    "sources": [
     "espn",
@@ -8016,7 +8016,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jacory Croskey-Merritt",
-   "newsUpdated": "2026-11-19T17:50:01Z",
+   "newsUpdated": "2026-11-19T21:15:03Z",
    "points": 7.6,
    "pos": "RB",
    "ppg": 9.0,
@@ -8054,7 +8054,7 @@
    "eligible": true,
    "espn": 7.7,
    "flags": [],
-   "floor": 2.4,
+   "floor": 2.3,
    "game": {
     "home": false,
     "implied": 30.2,
@@ -8092,7 +8092,7 @@
     }
    ],
    "rostered": false,
-   "rotowire": 7.6,
+   "rotowire": 7.5,
    "sd": 5.29,
    "sources": [
     "espn",
@@ -9748,7 +9748,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Tommy Tremble",
-   "newsUpdated": "2026-11-18T21:15:54Z",
+   "newsUpdated": "2026-11-19T20:30:04Z",
    "points": 6.2,
    "pos": "TE",
    "ppg": 7.3,
@@ -11175,7 +11175,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "locked": false,
    "name": "Michael Pittman Jr.",
-   "newsUpdated": "2026-11-19T19:00:03Z",
+   "newsUpdated": "2026-11-19T21:10:02Z",
    "points": 5.0,
    "pos": "WR",
    "ppg": 5.3,
@@ -11458,53 +11458,6 @@
    "teamName": null
   },
   {
-   "ceiling": null,
-   "eligible": false,
-   "espn": 4.1,
-   "flags": [
-    "IR"
-   ],
-   "floor": null,
-   "game": {
-    "home": false,
-    "implied": 30.2,
-    "kickoff": "2026-11-24T01:15Z",
-    "opp": "WAS",
-    "oppImplied": 24.2,
-    "spread": -6.0,
-    "total": 54.5
-   },
-   "games": 2,
-   "id": "10226",
-   "injuryNotes": "Surgery",
-   "locked": false,
-   "name": "Andrei Iosivas",
-   "newsUpdated": "2026-11-14T20:35:12Z",
-   "points": 4.8,
-   "pos": "WR",
-   "ppg": 2.5,
-   "recent": [
-    {
-     "pts": 3.2,
-     "week": 1
-    },
-    {
-     "pts": 1.7,
-     "week": 2
-    }
-   ],
-   "rostered": false,
-   "rotowire": 5.4,
-   "sd": null,
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": "IR",
-   "team": "CIN",
-   "teamName": null
-  },
-  {
    "ceiling": 7.0,
    "eligible": true,
    "espn": 5.2,
@@ -11661,6 +11614,53 @@
    ],
    "status": null,
    "team": "LV",
+   "teamName": null
+  },
+  {
+   "ceiling": null,
+   "eligible": false,
+   "espn": 4.1,
+   "flags": [
+    "IR"
+   ],
+   "floor": null,
+   "game": {
+    "home": false,
+    "implied": 30.2,
+    "kickoff": "2026-11-24T01:15Z",
+    "opp": "WAS",
+    "oppImplied": 24.2,
+    "spread": -6.0,
+    "total": 54.5
+   },
+   "games": 2,
+   "id": "10226",
+   "injuryNotes": "Surgery",
+   "locked": false,
+   "name": "Andrei Iosivas",
+   "newsUpdated": "2026-11-14T20:35:12Z",
+   "points": 4.7,
+   "pos": "WR",
+   "ppg": 2.5,
+   "recent": [
+    {
+     "pts": 3.2,
+     "week": 1
+    },
+    {
+     "pts": 1.7,
+     "week": 2
+    }
+   ],
+   "rostered": false,
+   "rotowire": 5.3,
+   "sd": null,
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": "IR",
+   "team": "CIN",
    "teamName": null
   },
   {
@@ -12107,7 +12107,7 @@
    "injuryNotes": "Surgery",
    "locked": false,
    "name": "Jonathon Brooks",
-   "newsUpdated": "2026-11-19T18:55:01Z",
+   "newsUpdated": "2026-11-19T20:30:04Z",
    "points": 4.3,
    "pos": "RB",
    "ppg": 4.7,
@@ -12636,7 +12636,7 @@
    "teamName": null
   },
   {
-   "ceiling": 8.7,
+   "ceiling": 8.6,
    "eligible": true,
    "espn": 3.4,
    "flags": [],
@@ -20656,7 +20656,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -20670,14 +20670,14 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:35Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

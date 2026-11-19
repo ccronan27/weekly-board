@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-19T20:39:00Z",
+ "generatedAt": "2026-11-19T21:35:37Z",
  "ideas": [
   {
    "get": [
@@ -1573,10 +1573,10 @@
      "games": 9,
      "id": "7564",
      "name": "Ja'Marr Chase",
-     "points": 23.6,
+     "points": 23.5,
      "pos": "WR",
      "ppg": 21.5,
-     "rate": 23.6,
+     "rate": 23.5,
      "rateFrom": "projection",
      "slot": "WR",
      "team": "CIN",
@@ -2764,10 +2764,10 @@
      "games": 9,
      "id": "6770",
      "name": "Joe Burrow",
-     "points": 24.3,
+     "points": 24.2,
      "pos": "QB",
      "ppg": 25.8,
-     "rate": 24.3,
+     "rate": 24.2,
      "rateFrom": "projection",
      "slot": "QB",
      "team": "CIN",
@@ -3075,10 +3075,10 @@
      "games": 9,
      "id": "9224",
      "name": "Chase Brown",
-     "points": 15.3,
+     "points": 15.2,
      "pos": "RB",
      "ppg": 14.4,
-     "rate": 15.3,
+     "rate": 15.2,
      "rateFrom": "projection",
      "slot": "RB",
      "team": "CIN",
@@ -3773,7 +3773,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -3787,14 +3787,14 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:35Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

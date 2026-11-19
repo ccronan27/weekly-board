@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T20:39:00Z",
+ "generatedAt": "2026-11-19T21:35:37Z",
  "league": {
   "appName": "Sleeper",
   "appUrl": "https://sleeper.com/leagues/1389389185361653760/team",
@@ -334,7 +334,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Jordyn Tyson",
-     "newsUpdated": "2026-11-19T04:20:56Z",
+     "newsUpdated": "2026-11-19T21:00:04Z",
      "points": 11.3,
      "pos": "WR",
      "ppg": 12.0,
@@ -379,7 +379,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Jordyn Tyson",
-     "newsUpdated": "2026-11-19T04:20:56Z",
+     "newsUpdated": "2026-11-19T21:00:04Z",
      "points": 11.3,
      "pos": "WR",
      "ppg": 12.0,
@@ -1315,7 +1315,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Jordyn Tyson",
-   "newsUpdated": "2026-11-19T04:20:56Z",
+   "newsUpdated": "2026-11-19T21:00:04Z",
    "points": 11.3,
    "pos": "WR",
    "ppg": 12.0,
@@ -1727,7 +1727,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "locked": false,
    "name": "Michael Pittman Jr.",
-   "newsUpdated": "2026-11-19T19:00:03Z",
+   "newsUpdated": "2026-11-19T21:10:02Z",
    "points": 5.0,
    "pos": "WR",
    "ppg": 5.3,
@@ -1848,35 +1848,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:34Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:35Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:35Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1891,9 +1891,9 @@
     "ifWin": 80.6,
     "myMean": 124.6,
     "opp": "Olav é Trois",
-    "oppMean": 145.9,
+    "oppMean": 145.8,
     "week": 11,
-    "winPct": 27.6
+    "winPct": 27.7
    },
    {
     "myMean": 133.9,
@@ -1923,7 +1923,7 @@
   "teams": [
    {
     "avgSeed": 1.9,
-    "byePct": 58.1,
+    "byePct": 58.2,
     "division": 1,
     "isMine": false,
     "losses": 1,
@@ -1953,7 +1953,7 @@
    },
    {
     "avgSeed": 2.4,
-    "byePct": 38.2,
+    "byePct": 38.1,
     "division": 1,
     "isMine": false,
     "losses": 2,
@@ -1967,8 +1967,8 @@
     "wins": 8
    },
    {
-    "avgSeed": 3.7,
-    "byePct": 3.7,
+    "avgSeed": 3.8,
+    "byePct": 3.6,
     "division": 1,
     "isMine": false,
     "losses": 3,
@@ -2012,16 +2012,16 @@
     "wins": 6
    },
    {
-    "avgSeed": 7.3,
+    "avgSeed": 7.2,
     "byePct": 0.0,
     "division": 1,
     "isMine": false,
     "losses": 5,
     "name": "The Zoo",
-    "playoffPct": 28.4,
+    "playoffPct": 28.5,
     "pointsAgainst": 1244.26,
     "pointsFor": 1317.7,
-    "projWins": 6.5,
+    "projWins": 6.6,
     "seed": 7,
     "ties": 0,
     "wins": 5

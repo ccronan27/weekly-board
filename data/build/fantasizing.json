@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T20:39:00Z",
+ "generatedAt": "2026-11-19T21:35:37Z",
  "league": {
   "appName": "ESPN",
   "appUrl": "https://fantasy.espn.com/football/team?leagueId=125685129&teamId=14",
@@ -449,7 +449,7 @@
        "week": 10
       }
      ],
-     "rotowire": 9.1,
+     "rotowire": 9.0,
      "team": "CIN"
     },
     "nextBest": null,
@@ -495,7 +495,7 @@
        "week": 10
       }
      ],
-     "rotowire": 9.1,
+     "rotowire": 9.0,
      "team": "CIN"
     },
     "slot": "TE"
@@ -1271,7 +1271,7 @@
      "week": 10
     }
    ],
-   "rotowire": 9.1,
+   "rotowire": 9.0,
    "sd": 6.29,
    "slot": "TE",
    "sources": [
@@ -1411,7 +1411,7 @@
    "injuryNotes": "Plantar Fasciitis",
    "locked": false,
    "name": "Michael Pittman Jr.",
-   "newsUpdated": "2026-11-19T19:00:03Z",
+   "newsUpdated": "2026-11-19T21:10:02Z",
    "points": 5.0,
    "pos": "WR",
    "ppg": 5.3,
@@ -1682,7 +1682,7 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1696,14 +1696,14 @@
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:59Z",
+   "lastUpdated": "2026-11-19T21:35:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T20:38:58Z",
+   "lastUpdated": "2026-11-19T21:35:35Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -1949,7 +1949,7 @@
      "eligible": true,
      "espn": 8.6,
      "flags": [],
-     "floor": 5.3,
+     "floor": 5.4,
      "game": {
       "home": true,
       "implied": 24.2,
@@ -1965,7 +1965,7 @@
      "locked": false,
      "name": "Drew Stevens",
      "newsUpdated": "2026-11-14T00:50:19Z",
-     "points": 8.2,
+     "points": 8.3,
      "pos": "K",
      "ppg": 8.4,
      "recent": [
@@ -1986,7 +1986,7 @@
        "week": 10
       }
      ],
-     "rotowire": 7.8,
+     "rotowire": 7.9,
      "team": "WAS"
     }
    ],
@@ -2219,7 +2219,7 @@
      "eligible": true,
      "espn": 7.7,
      "flags": [],
-     "floor": 2.4,
+     "floor": 2.3,
      "game": {
       "home": false,
       "implied": 30.2,
@@ -2256,7 +2256,7 @@
        "week": 10
       }
      ],
-     "rotowire": 7.6,
+     "rotowire": 7.5,
      "team": "CIN"
     }
    ],
@@ -3881,7 +3881,7 @@
        "week": 10
       }
      ],
-     "rotowire": 9.1,
+     "rotowire": 9.0,
      "team": "CIN"
     },
     "rosGain": 0.2,
