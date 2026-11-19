@@ -1,6 +1,7 @@
 """The state machines in docs/STATES.md: source freshness, the ESPN roster fallback, season phase,
 and the site's routing, trade loading and clock-based staleness."""
 import json
+import re
 import shutil
 import subprocess
 from datetime import datetime, timedelta, timezone
@@ -249,3 +250,21 @@ console.log(JSON.stringify({
     assert (got["rowNow"], got["rowLater"]) == ("fresh", "stale")
     assert got["legacy"] == ["stale", "missing"]
     assert got["phases"] == ["Final week", "Over", "n/a", "Over"]
+
+
+@needs_node
+def test_site_shell_helpers():
+    got = _node("""
+console.log(JSON.stringify({
+  keys: [nextTabIndex(0, "ArrowRight", 3), nextTabIndex(2, "ArrowRight", 3), nextTabIndex(0, "ArrowLeft", 3),
+         nextTabIndex(1, "Home", 3), nextTabIndex(1, "End", 3), nextTabIndex(1, "a", 3), nextTabIndex(-1, "ArrowRight", 3)],
+  due: [refreshDue(0, 59999), refreshDue(0, 60000)],
+  reload: [shouldReload("2026-11-18T13:00:00Z", "2026-11-18T13:00:00Z"), shouldReload("2026-11-18T13:00:00Z", "2026-11-18T19:00:00Z"),
+           shouldReload("2026-11-18T13:00:00Z", undefined), shouldReload(undefined, "2026-11-18T19:00:00Z")],
+  none: nextRefreshText(undefined), some: nextRefreshText("2026-11-22T16:47:00Z"),
+}));""")
+    assert got["keys"] == [1, 0, 2, 0, 2, -1, -1], "arrows wrap, Home and End go to the ends, other keys do nothing"
+    assert got["due"] == [False, True], "meta.json is refetched at most once a minute"
+    assert got["reload"] == [False, True, False, True], "a changed generatedAt reloads, a missing one never does"
+    assert got["none"] == ""
+    assert re.fullmatch(r"Next refresh Sun 10:47\s[AP]M", got["some"]), got["some"]

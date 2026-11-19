@@ -815,6 +815,34 @@ function loadTrade(store, league, settled) {
   return t;
 }
 
+// ---------------------------------------------------------------- S1 shell: keys, refresh on return, next refresh line
+// The tab the arrow, Home or End key moves to, or -1 for any other key. Arrows wrap at the ends.
+function nextTabIndex(current, key, count) {
+  if (count < 1 || current < 0) return -1;
+  if (key === "ArrowRight") return (current + 1) % count;
+  if (key === "ArrowLeft") return (current - 1 + count) % count;
+  if (key === "Home") return 0;
+  if (key === "End") return count - 1;
+  return -1;
+}
+// meta.json is refetched when the page comes back into view, at most once a minute
+function refreshDue(lastMs, nowMs) { return nowMs - lastMs >= 60000; }
+// Reload when the build changed since this page loaded. A missing or unreadable fresh stamp never reloads.
+function shouldReload(loadedIso, freshIso) {
+  if (isNaN(Date.parse(freshIso))) return false;
+  return Date.parse(loadedIso) !== Date.parse(freshIso);
+}
+// Header line, or "" when the build has no nextRefresh (older builds, and the ESPN league until the field ships)
+function nextRefreshText(iso) {
+  const t = shortWhen(iso);
+  return t ? "Next refresh " + t : "";
+}
+// The sticky bar's height, so the builder scrolls to a spot below it (style.css, #builder)
+function setBarHeight() {
+  const bar = document.querySelector(".bar");
+  if (bar) document.documentElement.style.setProperty("--bar-h", bar.offsetHeight + "px");
+}
+
 async function main() {
   let meta, leagues;
   try {
@@ -826,8 +854,13 @@ async function main() {
   }
   if (!leagues.length) { fail("The board has no leagues. Nothing to show."); return; }
   document.getElementById("stamp").textContent = "Week " + meta.week + ", built " + when(meta.generatedAt);
+  const nextLine = nextRefreshText(meta.nextRefresh);
+  const nextEl = document.getElementById("next");
+  nextEl.textContent = nextLine;
+  nextEl.hidden = !nextLine;
 
   const tabs = document.getElementById("tabs");
+  const viewbar = document.getElementById("viewbar");
   const panel = document.getElementById("panel");
   const route = { league: 0, view: "lineup" };   // what is on screen. Only show() changes it
   const tradeLoads = {};   // league key -> { status, data }, see loadTrade
@@ -856,15 +889,20 @@ async function main() {
     const view = resolveView(lg, v);
     route.league = i;
     route.view = view;
-    Array.prototype.forEach.call(tabs.children, function (b, j) { b.setAttribute("aria-selected", String(i === j)); });
+    Array.prototype.forEach.call(tabs.children, function (b, j) {
+      b.setAttribute("aria-selected", String(i === j));
+      b.tabIndex = i === j ? 0 : -1;   // roving tabindex: only the selected tab is in the Tab order
+    });
     panel.setAttribute("aria-labelledby", tabs.children[i].id);
     const body = view === "waivers" ? renderWaivers(lg, meta)
       : view === "standings" ? renderStandings(lg, meta)
       : view === "trade" ? tradeBody(i, lg)
       : renderLeague(lg, meta);
     const keepY = view === "trade" ? window.scrollY : 0;
-    if (viewsFor(lg).length > 1) panel.replaceChildren(viewSwitch(lg, view, function (nv) { show(i, nv); }), body);
-    else panel.replaceChildren(body);
+    viewbar.replaceChildren();
+    if (viewsFor(lg).length > 1) viewbar.appendChild(viewSwitch(lg, view, function (nv) { show(i, nv); }));
+    panel.replaceChildren(body);
+    setBarHeight();
     if (view === "trade") {
       const st = tradeState[lg.league.key];
       if (st && st.scroll) { st.scroll = false; const bld = document.getElementById("builder"); if (bld) bld.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
@@ -887,8 +925,31 @@ async function main() {
     const r = routeFromHash(location.hash, leagues);
     show(r.league, r.view);
   }
+  // League tablist keys. Focus follows the arrow, so the tab that gets focus is the one that opens.
+  tabs.addEventListener("keydown", function (e) {
+    const cur = Array.prototype.indexOf.call(tabs.children, e.target);
+    const j = nextTabIndex(cur, e.key, leagues.length);
+    if (j < 0) return;
+    e.preventDefault();
+    tabs.children[j].focus();
+    show(j, route.view);
+  });
+  window.addEventListener("resize", setBarHeight);
   window.addEventListener("hashchange", fromHash);
   fromHash();
+
+  // Refresh on return: a build that finished while the page was in the background reloads the board in place
+  const loadedAt = meta.generatedAt;
+  let lastCheck = Date.now();
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState !== "visible") return;
+    const now = Date.now();
+    if (!refreshDue(lastCheck, now)) return;
+    lastCheck = now;
+    getJSON("data/build/meta.json").then(function (fresh) {
+      if (shouldReload(loadedAt, fresh.generatedAt)) location.reload();   // keeps the hash route
+    }, function () { /* offline or failed: keep the board on screen */ });
+  });
 }
 
 main();

@@ -23,7 +23,7 @@ h2{font-size:1.1rem;margin:20px 0 8px}
 .muted{color:var(--muted);font-size:.875rem}
 
 /* League tabs: one segmented control that fits 360px wide */
-.tabs{display:flex;gap:4px;width:calc(100% - 32px);max-width:728px;margin:12px auto 0;padding:4px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.tabs{display:flex;gap:4px;width:100%;max-width:728px;margin:0 auto;padding:4px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
 .tab{flex:1 1 0;min-width:0;border:1px solid transparent;background:transparent;color:var(--text);border-radius:9px;padding:6px 4px;font:inherit;font-size:.85rem;line-height:1.2;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;overflow-wrap:anywhere}
 .tab[aria-selected=true]{background:var(--card);border-color:var(--line);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.12)}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
@@ -150,3 +150,15 @@ h2{font-size:1.1rem;margin:20px 0 8px}
   .s-bench h2,.s-src h2{margin-top:24px}
   .summary{justify-content:space-between}
 }
+
+/* ---------------------------------------------------------------- S1 site shell
+   The league tabs and the view switch form one bar. Under 1000px the bar sticks to the top
+   so it stays in reach while the board scrolls. It has the page background, so content slides
+   under it cleanly. Wide screens keep the static layout, so the sidebar (sticky at top:12px) never
+   slides under the bar. #builder scroll margin is set from --bar-h, which app.js writes. */
+.bar{max-width:760px;margin:0 auto;padding:12px 16px 8px}
+@media (max-width:999px){
+  .bar{position:sticky;top:0;z-index:5;background:var(--bg)}
+  #builder{scroll-margin-top:calc(var(--bar-h,0px) + 16px)}
+}
+@media (min-width:1000px){.bar{max-width:1180px}}

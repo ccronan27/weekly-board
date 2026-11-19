@@ -5,15 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1318" media="(prefers-color-scheme: dark)">
 <title>Weekly Board</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <h1>Weekly Board</h1>
   <p id="stamp" class="muted">Loading</p>
+  <p id="next" class="muted" hidden></p>
 </header>
-<nav id="tabs" class="tabs" role="tablist" aria-label="Leagues"></nav>
+<div class="bar">
+  <nav id="tabs" class="tabs" role="tablist" aria-label="Leagues"></nav>
+  <div id="viewbar"></div>
+</div>
 <main id="panel" role="tabpanel" aria-live="polite"></main>
 <footer class="foot muted">
   <p>Projection is the equal average of ESPN and Rotowire, scored with each league's rules. Floor and ceiling are one weekly standard deviation from the projection. Vegas lines are context only. All times are Central.</p>
