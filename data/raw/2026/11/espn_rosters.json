@@ -880,7 +880,7 @@
     "wins": 5
    }
   ],
-  "syncedAt": "2026-11-20T01:45:47.000Z",
+  "syncedAt": "2026-11-20T20:53:11.000Z",
   "teams": [
    {
     "name": "Exempt List",
@@ -2240,22 +2240,6 @@
       "slot": "BN"
      },
      {
-      "espnId": 4569559,
-      "injuryStatus": "NORMAL",
-      "name": "Devaughn Vele",
-      "pos": "WR",
-      "proTeamId": 18,
-      "slot": "WR"
-     },
-     {
-      "espnId": 4685261,
-      "injuryStatus": "NORMAL",
-      "name": "Germie Bernard",
-      "pos": "WR",
-      "proTeamId": 23,
-      "slot": "BN"
-     },
-     {
       "espnId": 4697815,
       "injuryStatus": "NORMAL",
       "name": "Rachaad White",
@@ -2294,6 +2278,22 @@
       "pos": "D/ST",
       "proTeamId": 8,
       "slot": "D/ST"
+     },
+     {
+      "espnId": 3116365,
+      "injuryStatus": "NORMAL",
+      "name": "Mark Andrews",
+      "pos": "TE",
+      "proTeamId": 33,
+      "slot": "BN"
+     },
+     {
+      "espnId": 2973405,
+      "injuryStatus": "NORMAL",
+      "name": "Kalif Raymond",
+      "pos": "WR",
+      "proTeamId": 3,
+      "slot": "WR"
      }
     ],
     "teamId": 12
@@ -2545,6 +2545,6 @@
   ],
   "week": 11
  },
- "fetchedAt": "2026-11-20T01:45:47.000Z",
+ "fetchedAt": "2026-11-20T20:53:11.000Z",
  "source": "espn_rosters"
 }

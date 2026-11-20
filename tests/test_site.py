@@ -6,6 +6,9 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 SITE = REPO / "site"
 SVG_NAMESPACE = 'xmlns="http://www.w3.org/2000/svg"'
+# The Refresh button is a plain link to the workflow page. It loads nothing and holds no token.
+# GitHub only shows Run workflow to signed-in users with write access.
+REFRESH_URL = "https://github.com/ccronan27/weekly-board/actions/workflows/refresh.yml"
 
 
 def test_noindex_and_robots():
@@ -33,6 +36,8 @@ def test_site_reads_only_data_build_and_loads_nothing_external():
     for p in SITE.iterdir():
         # The SVG namespace is an identifier, not a request. icon.svg needs it to render as an image.
         text = p.read_text(encoding="utf-8").replace(SVG_NAMESPACE, "")
+        if p.name == "index.html":
+            text = text.replace(f'href="{REFRESH_URL}"', "", 1)
         assert not re.search(r"https?://", text), f"external URL in {p.name}"
 
 
@@ -119,3 +124,11 @@ def test_next_refresh_line_starts_hidden_and_the_bar_sticks_on_phones():
     css = (SITE / "style.css").read_text(encoding="utf-8")
     assert "@media (max-width:999px){\n  .bar{position:sticky;top:0" in css
     assert "nextRefresh" in (SITE / "app.js").read_text(encoding="utf-8")
+
+
+def test_refresh_button_is_a_plain_link_to_the_workflow():
+    html = (SITE / "index.html").read_text(encoding="utf-8")
+    assert html.count(REFRESH_URL) == 1
+    assert re.search(r'<a class="refresh" href="' + re.escape(REFRESH_URL) + r'"[^>]*rel="noopener noreferrer"[^>]*>Refresh</a>', html)
+    assert "github.com" not in (SITE / "app.js").read_text(encoding="utf-8")
+    assert "workflow_dispatch:" in (REPO / ".github/workflows/refresh.yml").read_text(encoding="utf-8")

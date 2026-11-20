@@ -21,36 +21,51 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T01:45:48Z",
+ "generatedAt": "2026-11-20T20:53:12Z",
  "ideas": [
   {
    "get": [
-    "4046"
-   ],
-   "give": [
-    "8131"
-   ],
-   "myGain": 19.2,
-   "playoffGain": 11.1,
-   "stretchGain": 8.1,
-   "team": "Olav é Trois",
-   "theirGain": 27.7,
-   "thisWeek": -7.6,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "4046"
+    "6770"
    ],
    "give": [
     "8137"
    ],
-   "myGain": 17.9,
-   "playoffGain": 6.9,
-   "stretchGain": 11.0,
+   "myGain": 31.1,
+   "playoffGain": 13.5,
+   "stretchGain": 17.6,
    "team": "Olav é Trois",
-   "theirGain": 29.5,
-   "thisWeek": -0.7,
+   "theirGain": 27.5,
+   "thisWeek": 1.5,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "6770"
+   ],
+   "give": [
+    "8131"
+   ],
+   "myGain": 32.4,
+   "playoffGain": 17.7,
+   "stretchGain": 14.7,
+   "team": "Olav é Trois",
+   "theirGain": 25.7,
+   "thisWeek": -5.4,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "13337"
+   ],
+   "give": [
+    "8131"
+   ],
+   "myGain": 25.7,
+   "playoffGain": 7.2,
+   "stretchGain": 18.5,
+   "team": "Gay tier ball knowledge",
+   "theirGain": 21.7,
+   "thisWeek": -7.5,
    "youthFlag": false
   },
   {
@@ -64,38 +79,8 @@
    "playoffGain": 3.6,
    "stretchGain": 14.9,
    "team": "Gay tier ball knowledge",
-   "theirGain": 14.4,
+   "theirGain": 28.9,
    "thisWeek": -8.7,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "4866"
-   ],
-   "give": [
-    "12506"
-   ],
-   "myGain": 14.3,
-   "playoffGain": 1.5,
-   "stretchGain": 12.8,
-   "team": "Gay tier ball knowledge",
-   "theirGain": 18.6,
-   "thisWeek": 2.4,
-   "youthFlag": false
-  },
-  {
-   "get": [
-    "11563"
-   ],
-   "give": [
-    "12506"
-   ],
-   "myGain": 15.0,
-   "playoffGain": 9.0,
-   "stretchGain": 6.0,
-   "team": "Team 3 (no name set)",
-   "theirGain": 13.8,
-   "thisWeek": 3.5,
    "youthFlag": false
   },
   {
@@ -109,7 +94,7 @@
    "playoffGain": 8.1,
    "stretchGain": 5.1,
    "team": "Kirkboi Charlies",
-   "theirGain": 16.2,
+   "theirGain": 15.6,
    "thisWeek": 0.0,
    "youthFlag": false
   },
@@ -133,14 +118,29 @@
     "11563"
    ],
    "give": [
-    "11635"
+    "12506"
    ],
-   "myGain": 18.0,
-   "playoffGain": 10.5,
-   "stretchGain": 7.5,
+   "myGain": 15.0,
+   "playoffGain": 9.0,
+   "stretchGain": 6.0,
    "team": "Team 3 (no name set)",
-   "theirGain": 10.8,
-   "thisWeek": 0.5,
+   "theirGain": 12.0,
+   "thisWeek": 3.5,
+   "youthFlag": false
+  },
+  {
+   "get": [
+    "3294"
+   ],
+   "give": [
+    "8131"
+   ],
+   "myGain": 10.3,
+   "playoffGain": 9.6,
+   "stretchGain": 0.7,
+   "team": "Cigarettes& Alcohol AK26",
+   "theirGain": 14.8,
+   "thisWeek": -8.1,
    "youthFlag": false
   }
  ],
@@ -482,6 +482,24 @@
     {
      "age": 27,
      "eligible": true,
+     "flags": [
+      "DOUBTFUL"
+     ],
+     "games": 9,
+     "id": "10236",
+     "name": "Dalton Kincaid",
+     "points": 9.6,
+     "pos": "TE",
+     "ppg": 10.3,
+     "rate": 9.6,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "BUF",
+     "yearsExp": 3
+    },
+    {
+     "age": 27,
+     "eligible": true,
      "flags": [],
      "games": 9,
      "id": "7839",
@@ -507,27 +525,9 @@
      "ppg": 7.1,
      "rate": 9.2,
      "rateFrom": "projection",
-     "slot": "BN",
+     "slot": "START",
      "team": "DEN",
      "yearsExp": 8
-    },
-    {
-     "age": 27,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 9,
-     "id": "10236",
-     "name": "Dalton Kincaid",
-     "points": 9.1,
-     "pos": "TE",
-     "ppg": 10.3,
-     "rate": 9.1,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "BUF",
-     "yearsExp": 3
     },
     {
      "age": 31,
@@ -536,10 +536,10 @@
      "games": 7,
      "id": "5022",
      "name": "Dallas Goedert",
-     "points": 9.0,
+     "points": 8.9,
      "pos": "TE",
      "ppg": 10.6,
-     "rate": 9.0,
+     "rate": 8.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -584,10 +584,10 @@
      "games": 4,
      "id": "11199",
      "name": "Emari Demercado",
-     "points": 7.9,
+     "points": 7.8,
      "pos": "RB",
      "ppg": 1.9,
-     "rate": 7.9,
+     "rate": 7.8,
      "rateFrom": "projection",
      "slot": "START",
      "team": "HOU",
@@ -678,10 +678,10 @@
      "games": 9,
      "id": "8146",
      "name": "Garrett Wilson",
-     "points": 14.4,
+     "points": 15.0,
      "pos": "WR",
      "ppg": 14.4,
-     "rate": 14.4,
+     "rate": 15.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "NYJ",
@@ -774,9 +774,7 @@
     {
      "age": 29,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 8,
      "id": "5844",
      "name": "T.J. Hockenson",
@@ -830,10 +828,10 @@
      "games": 9,
      "id": "9480",
      "name": "Brenton Strange",
-     "points": 8.6,
+     "points": 8.5,
      "pos": "TE",
      "ppg": 8.9,
-     "rate": 8.6,
+     "rate": 8.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "JAX",
@@ -864,7 +862,7 @@
      "games": 9,
      "id": "DET",
      "name": "Detroit Lions",
-     "points": 7.8,
+     "points": 7.5,
      "pos": "DEF",
      "ppg": 6.8,
      "rate": 6.8,
@@ -875,16 +873,18 @@
     },
     {
      "age": 25,
-     "eligible": true,
-     "flags": [],
+     "eligible": false,
+     "flags": [
+      "OUT"
+     ],
      "games": 9,
      "id": "13424",
      "name": "Seth McGowan",
      "points": 5.8,
      "pos": "RB",
      "ppg": 5.2,
-     "rate": 5.8,
-     "rateFrom": "projection",
+     "rate": 5.2,
+     "rateFrom": "season",
      "slot": "START",
      "team": "IND",
      "yearsExp": 0
@@ -972,10 +972,10 @@
      "games": 9,
      "id": "4217",
      "name": "George Kittle",
-     "points": 13.4,
+     "points": 12.8,
      "pos": "TE",
      "ppg": 14.2,
-     "rate": 13.4,
+     "rate": 12.8,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -988,10 +988,10 @@
      "games": 4,
      "id": "7525",
      "name": "DeVonta Smith",
-     "points": 12.8,
+     "points": 12.7,
      "pos": "WR",
      "ppg": 17.2,
-     "rate": 12.8,
+     "rate": 12.7,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -1020,10 +1020,10 @@
      "games": 8,
      "id": "11646",
      "name": "Jalen Coker",
-     "points": 10.7,
+     "points": 10.8,
      "pos": "WR",
      "ppg": 10.8,
-     "rate": 10.7,
+     "rate": 10.8,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CAR",
@@ -1036,10 +1036,10 @@
      "games": 9,
      "id": "11637",
      "name": "Keon Coleman",
-     "points": 8.0,
+     "points": 8.3,
      "pos": "WR",
      "ppg": 8.2,
-     "rate": 8.0,
+     "rate": 8.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -1169,8 +1169,8 @@
    "isMine": false,
    "name": "Scatt Pack",
    "needs": [
-    "QB",
-    "WR"
+    "WR",
+    "QB"
    ],
    "players": [
     {
@@ -1214,10 +1214,10 @@
      "games": 9,
      "id": "7594",
      "name": "Chuba Hubbard",
-     "points": 18.0,
+     "points": 17.9,
      "pos": "RB",
      "ppg": 20.1,
-     "rate": 18.0,
+     "rate": 17.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CAR",
@@ -1230,10 +1230,10 @@
      "games": 9,
      "id": "11584",
      "name": "Bucky Irving",
-     "points": 17.1,
+     "points": 17.4,
      "pos": "RB",
      "ppg": 17.7,
-     "rate": 17.1,
+     "rate": 17.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "TB",
@@ -1246,10 +1246,10 @@
      "games": 9,
      "id": "96",
      "name": "Aaron Rodgers",
-     "points": 16.5,
+     "points": 16.3,
      "pos": "QB",
      "ppg": 15.4,
-     "rate": 16.5,
+     "rate": 16.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PIT",
@@ -1325,9 +1325,7 @@
     {
      "age": 23,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 6,
      "id": "13296",
      "name": "Caleb Douglas",
@@ -1347,7 +1345,7 @@
      "games": 9,
      "id": "11539",
      "name": "Jake Bates",
-     "points": 8.7,
+     "points": 8.6,
      "pos": "K",
      "ppg": 9.3,
      "rate": 9.3,
@@ -1415,10 +1413,10 @@
      "games": 9,
      "id": "1479",
      "name": "Keenan Allen",
-     "points": 7.5,
+     "points": 6.7,
      "pos": "WR",
      "ppg": 10.2,
-     "rate": 7.5,
+     "rate": 6.7,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "SF",
@@ -1441,10 +1439,10 @@
      "games": 9,
      "id": "9221",
      "name": "Jahmyr Gibbs",
-     "points": 22.7,
+     "points": 22.6,
      "pos": "RB",
      "ppg": 28.2,
-     "rate": 22.7,
+     "rate": 22.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DET",
@@ -1539,10 +1537,10 @@
      "games": 10,
      "id": "8130",
      "name": "Trey McBride",
-     "points": 13.3,
+     "points": 13.4,
      "pos": "TE",
      "ppg": 17.1,
-     "rate": 13.3,
+     "rate": 13.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "ARI",
@@ -1555,10 +1553,10 @@
      "games": 9,
      "id": "8148",
      "name": "Jameson Williams",
-     "points": 11.7,
+     "points": 11.6,
      "pos": "WR",
      "ppg": 12.7,
-     "rate": 11.7,
+     "rate": 11.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DET",
@@ -1671,10 +1669,10 @@
      "games": 8,
      "id": "11624",
      "name": "Xavier Worthy",
-     "points": 7.2,
+     "points": 7.7,
      "pos": "WR",
      "ppg": 8.3,
-     "rate": 7.2,
+     "rate": 7.7,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "KC",
@@ -1705,8 +1703,8 @@
    "isMine": true,
    "name": "Likely Suckin",
    "needs": [
-    "RB",
-    "QB"
+    "QB",
+    "RB"
    ],
    "players": [
     {
@@ -1778,7 +1776,9 @@
     {
      "age": 26,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 9,
      "id": "8131",
      "name": "Isaiah Likely",
@@ -1798,10 +1798,10 @@
      "games": 5,
      "id": "8155",
      "name": "Breece Hall",
-     "points": 12.6,
+     "points": 13.4,
      "pos": "RB",
      "ppg": 13.8,
-     "rate": 12.6,
+     "rate": 13.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "NYJ",
@@ -1828,9 +1828,7 @@
     {
      "age": 22,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 2,
      "id": "13281",
      "name": "Jordyn Tyson",
@@ -1894,6 +1892,22 @@
      "yearsExp": 2
     },
     {
+     "age": 22,
+     "eligible": true,
+     "flags": [],
+     "games": 10,
+     "id": "11576",
+     "name": "Braelon Allen",
+     "points": 8.3,
+     "pos": "RB",
+     "ppg": 11.1,
+     "rate": 8.3,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "NYJ",
+     "yearsExp": 2
+    },
+    {
      "age": 25,
      "eligible": true,
      "flags": [],
@@ -1924,22 +1938,6 @@
      "slot": "BN",
      "team": "LV",
      "yearsExp": 3
-    },
-    {
-     "age": 22,
-     "eligible": true,
-     "flags": [],
-     "games": 10,
-     "id": "11576",
-     "name": "Braelon Allen",
-     "points": 8.2,
-     "pos": "RB",
-     "ppg": 11.1,
-     "rate": 8.2,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "NYJ",
-     "yearsExp": 2
     },
     {
      "age": null,
@@ -1983,6 +1981,22 @@
    "needs": [],
    "players": [
     {
+     "age": 31,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "4046",
+     "name": "Patrick Mahomes",
+     "points": 25.3,
+     "pos": "QB",
+     "ppg": 20.2,
+     "rate": 25.3,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "KC",
+     "yearsExp": 9
+    },
+    {
      "age": 29,
      "eligible": true,
      "flags": [],
@@ -1997,22 +2011,6 @@
      "slot": "START",
      "team": "CIN",
      "yearsExp": 6
-    },
-    {
-     "age": 31,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "4046",
-     "name": "Patrick Mahomes",
-     "points": 22.5,
-     "pos": "QB",
-     "ppg": 20.2,
-     "rate": 22.5,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "KC",
-     "yearsExp": 9
     },
     {
      "age": 27,
@@ -2085,10 +2083,10 @@
      "games": 9,
      "id": "1466",
      "name": "Travis Kelce",
-     "points": 12.0,
+     "points": 13.0,
      "pos": "TE",
      "ppg": 11.6,
-     "rate": 12.0,
+     "rate": 13.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "KC",
@@ -2111,6 +2109,22 @@
      "yearsExp": 1
     },
     {
+     "age": 26,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "8134",
+     "name": "Khalil Shakir",
+     "points": 9.9,
+     "pos": "WR",
+     "ppg": 9.3,
+     "rate": 9.9,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "BUF",
+     "yearsExp": 4
+    },
+    {
      "age": 32,
      "eligible": true,
      "flags": [
@@ -2127,22 +2141,6 @@
      "slot": "START",
      "team": "LV",
      "yearsExp": 7
-    },
-    {
-     "age": 26,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "8134",
-     "name": "Khalil Shakir",
-     "points": 9.5,
-     "pos": "WR",
-     "ppg": 9.3,
-     "rate": 9.5,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "BUF",
-     "yearsExp": 4
     },
     {
      "age": null,
@@ -2261,10 +2259,10 @@
      "games": 10,
      "id": "1373",
      "name": "Geno Smith",
-     "points": 15.3,
+     "points": 15.4,
      "pos": "QB",
      "ppg": 13.9,
-     "rate": 15.3,
+     "rate": 15.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "NYJ",
@@ -2311,32 +2309,14 @@
      "games": 7,
      "id": "12514",
      "name": "Emeka Egbuka",
-     "points": 9.9,
+     "points": 10.4,
      "pos": "WR",
      "ppg": 11.1,
-     "rate": 9.9,
+     "rate": 10.4,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "TB",
      "yearsExp": 1
-    },
-    {
-     "age": 30,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 9,
-     "id": "5947",
-     "name": "Jakobi Meyers",
-     "points": 9.9,
-     "pos": "WR",
-     "ppg": 9.1,
-     "rate": 9.9,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "JAX",
-     "yearsExp": 7
     },
     {
      "age": 23,
@@ -2353,6 +2333,24 @@
      "slot": "START",
      "team": "TEN",
      "yearsExp": 1
+    },
+    {
+     "age": 30,
+     "eligible": true,
+     "flags": [
+      "QUESTIONABLE"
+     ],
+     "games": 9,
+     "id": "5947",
+     "name": "Jakobi Meyers",
+     "points": 9.8,
+     "pos": "WR",
+     "ppg": 9.1,
+     "rate": 9.8,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "JAX",
+     "yearsExp": 7
     },
     {
      "age": 24,
@@ -2616,7 +2614,7 @@
      "games": 9,
      "id": "6650",
      "name": "Chase McLaughlin",
-     "points": 8.6,
+     "points": 8.7,
      "pos": "K",
      "ppg": 11.0,
      "rate": 11.0,
@@ -2804,19 +2802,19 @@
      "yearsExp": 1
     },
     {
-     "age": 24,
+     "age": 26,
      "eligible": true,
      "flags": [],
-     "games": 9,
-     "id": "9487",
-     "name": "Parker Washington",
-     "points": 14.7,
+     "games": 6,
+     "id": "10229",
+     "name": "Rashee Rice",
+     "points": 15.2,
      "pos": "WR",
-     "ppg": 15.3,
-     "rate": 14.7,
+     "ppg": 13.2,
+     "rate": 15.2,
      "rateFrom": "projection",
-     "slot": "START",
-     "team": "JAX",
+     "slot": "BN",
+     "team": "KC",
      "yearsExp": 3
     },
     {
@@ -2839,19 +2837,19 @@
      "yearsExp": 7
     },
     {
-     "age": 26,
+     "age": 24,
      "eligible": true,
      "flags": [],
-     "games": 6,
-     "id": "10229",
-     "name": "Rashee Rice",
-     "points": 14.0,
+     "games": 9,
+     "id": "9487",
+     "name": "Parker Washington",
+     "points": 14.6,
      "pos": "WR",
-     "ppg": 13.2,
-     "rate": 14.0,
+     "ppg": 15.3,
+     "rate": 14.6,
      "rateFrom": "projection",
-     "slot": "BN",
-     "team": "KC",
+     "slot": "START",
+     "team": "JAX",
      "yearsExp": 3
     },
     {
@@ -2911,10 +2909,10 @@
      "games": 9,
      "id": "5846",
      "name": "DK Metcalf",
-     "points": 10.5,
+     "points": 10.4,
      "pos": "WR",
      "ppg": 10.4,
-     "rate": 10.5,
+     "rate": 10.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PIT",
@@ -2945,10 +2943,10 @@
      "games": 10,
      "id": "9500",
      "name": "Josh Downs",
-     "points": 8.9,
+     "points": 9.6,
      "pos": "WR",
      "ppg": 9.0,
-     "rate": 8.9,
+     "rate": 9.6,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "KC",
@@ -3028,10 +3026,27 @@
    "isMine": false,
    "name": "Gay tier ball knowledge",
    "needs": [
-    "WR",
     "TE"
    ],
    "players": [
+    {
+     "age": 26,
+     "eligible": false,
+     "flags": [
+      "OUT"
+     ],
+     "games": 8,
+     "id": "8151",
+     "name": "Kenneth Walker III",
+     "points": null,
+     "pos": "RB",
+     "ppg": 24.6,
+     "rate": 24.6,
+     "rateFrom": "season",
+     "slot": "BN",
+     "team": "KC",
+     "yearsExp": 4
+    },
     {
      "age": 27,
      "eligible": true,
@@ -3039,10 +3054,10 @@
      "games": 9,
      "id": "7523",
      "name": "Trevor Lawrence",
-     "points": 20.4,
+     "points": 20.3,
      "pos": "QB",
      "ppg": 19.9,
-     "rate": 20.4,
+     "rate": 20.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "JAX",
@@ -3071,10 +3086,10 @@
      "games": 9,
      "id": "9228",
      "name": "Bryce Young",
-     "points": 18.2,
+     "points": 18.1,
      "pos": "QB",
      "ppg": 17.9,
-     "rate": 18.2,
+     "rate": 18.1,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "CAR",
@@ -3097,22 +3112,20 @@
      "yearsExp": 6
     },
     {
-     "age": 26,
+     "age": 23,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 8,
-     "id": "8151",
-     "name": "Kenneth Walker III",
-     "points": 18.1,
+     "flags": [],
+     "games": 9,
+     "id": "13337",
+     "name": "Emmett Johnson",
+     "points": 16.4,
      "pos": "RB",
-     "ppg": 24.6,
-     "rate": 18.1,
+     "ppg": 10.7,
+     "rate": 16.4,
      "rateFrom": "projection",
-     "slot": "BN",
+     "slot": "START",
      "team": "KC",
-     "yearsExp": 4
+     "yearsExp": 0
     },
     {
      "age": 27,
@@ -3131,19 +3144,21 @@
      "yearsExp": 5
     },
     {
-     "age": 23,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
-     "id": "13337",
-     "name": "Emmett Johnson",
-     "points": 15.4,
-     "pos": "RB",
-     "ppg": 10.7,
-     "rate": 15.4,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "KC",
+     "age": 22,
+     "eligible": false,
+     "flags": [
+      "OUT"
+     ],
+     "games": 4,
+     "id": "13276",
+     "name": "Omar Cooper Jr.",
+     "points": null,
+     "pos": "WR",
+     "ppg": 15.7,
+     "rate": 15.7,
+     "rateFrom": "season",
+     "slot": "BN",
+     "team": "NYJ",
      "yearsExp": 0
     },
     {
@@ -3195,24 +3210,6 @@
      "yearsExp": 8
     },
     {
-     "age": 22,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 4,
-     "id": "13276",
-     "name": "Omar Cooper Jr.",
-     "points": 10.2,
-     "pos": "WR",
-     "ppg": 15.7,
-     "rate": 10.2,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "NYJ",
-     "yearsExp": 0
-    },
-    {
      "age": 26,
      "eligible": false,
      "flags": [
@@ -3237,7 +3234,7 @@
      "games": 9,
      "id": "KC",
      "name": "Kansas City Chiefs",
-     "points": 11.2,
+     "points": 10.6,
      "pos": "DEF",
      "ppg": 7.9,
      "rate": 7.9,
@@ -3269,10 +3266,10 @@
      "games": 8,
      "id": "13274",
      "name": "Germie Bernard",
-     "points": 4.9,
+     "points": 4.8,
      "pos": "WR",
      "ppg": 8.5,
-     "rate": 4.9,
+     "rate": 4.8,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "PIT",
@@ -3402,10 +3399,10 @@
      "games": 6,
      "id": "2216",
      "name": "Mike Evans",
-     "points": 13.3,
+     "points": 12.4,
      "pos": "WR",
      "ppg": 14.8,
-     "rate": 13.3,
+     "rate": 12.4,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "SF",
@@ -3468,10 +3465,10 @@
      "games": 6,
      "id": "5872",
      "name": "Deebo Samuel Sr.",
-     "points": 9.9,
+     "points": 9.6,
      "pos": "WR",
      "ppg": 14.4,
-     "rate": 9.9,
+     "rate": 9.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -3516,10 +3513,10 @@
      "games": 9,
      "id": "7600",
      "name": "Pat Freiermuth",
-     "points": 7.6,
+     "points": 7.5,
      "pos": "TE",
      "ppg": 10.1,
-     "rate": 7.6,
+     "rate": 7.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PIT",
@@ -3597,35 +3594,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T01:45:47Z",
+   "lastUpdated": "2026-11-20T20:53:11Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T01:45:47Z",
+   "lastUpdated": "2026-11-20T20:53:11Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-20T01:45:44Z",
+   "lastUpdated": "2026-11-20T20:53:08Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-20T01:45:45Z",
+   "lastUpdated": "2026-11-20T20:53:09Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T01:45:45Z",
+   "lastUpdated": "2026-11-20T20:53:09Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

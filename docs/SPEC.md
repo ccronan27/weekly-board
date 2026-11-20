@@ -80,7 +80,7 @@ The board works without these and uses each one as soon as it appears. Each is v
 | Sun 1:07pm | Actions | Inactives for late games |
 | Sun 5:47pm | Actions | Inactives for the Sunday night game |
 | Mon 5:47pm | Actions | Inactives for the Monday night game |
-| On demand | Both | `workflow_dispatch` button (GitHub mobile), or "sync ESPN" to Claude |
+| On demand | Both | Refresh button on the board (opens the workflow page, tap Run workflow), `workflow_dispatch` in GitHub mobile, or "sync ESPN" to Claude |
 
 Actions should also run when `data/espn/rosters.json` changes (push trigger on that path).
 
