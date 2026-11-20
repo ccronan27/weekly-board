@@ -1,73 +1,73 @@
 {
- "generatedAt": "2026-11-19T22:05:57Z",
+ "generatedAt": "2026-11-20T01:45:47Z",
  "season": 2026,
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:56Z",
+   "lastUpdated": "2026-11-20T01:45:47Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_league": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:57Z",
+   "lastUpdated": "2026-11-20T01:45:47Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_lineups_w10": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:57Z",
+   "lastUpdated": "2026-11-20T01:45:47Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:57.000Z",
+   "lastUpdated": "2026-11-20T01:45:47.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:57Z",
+   "lastUpdated": "2026-11-20T01:45:47Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_schedule": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:57Z",
+   "lastUpdated": "2026-11-20T01:45:47Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:55Z",
+   "lastUpdated": "2026-11-20T01:45:44Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:55Z",
+   "lastUpdated": "2026-11-20T01:45:45Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:55Z",
+   "lastUpdated": "2026-11-20T01:45:45Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_stats_w10": {
    "error": null,
-   "lastUpdated": "2026-11-19T22:05:55Z",
+   "lastUpdated": "2026-11-20T01:45:45Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

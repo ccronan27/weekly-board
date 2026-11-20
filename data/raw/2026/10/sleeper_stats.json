@@ -6858,7 +6858,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Anthony Gould",
    "opponent": "MIA",
    "playerId": "11762",
@@ -11039,7 +11039,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Carson Beck",
    "opponent": "LAR",
    "playerId": "13272",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-19T22:05:55Z",
+ "fetchedAt": "2026-11-20T01:45:45Z",
  "source": "sleeper_stats"
 }

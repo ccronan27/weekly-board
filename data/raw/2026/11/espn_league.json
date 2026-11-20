@@ -880,7 +880,7 @@
     "wins": 5
    }
   ],
-  "syncedAt": "2026-11-19T22:05:57.000Z",
+  "syncedAt": "2026-11-20T01:45:47.000Z",
   "teams": [
    {
     "name": "Exempt List",
@@ -1717,7 +1717,7 @@
       "name": "Bijan Robinson",
       "pos": "RB",
       "proTeamId": 1,
-      "slot": "RB"
+      "slot": "BN"
      },
      {
       "espnId": 4427366,
@@ -1757,7 +1757,7 @@
       "name": "Jaylen Warren",
       "pos": "RB",
       "proTeamId": 23,
-      "slot": "FLEX"
+      "slot": "RB"
      },
      {
       "espnId": 4683062,
@@ -1773,15 +1773,7 @@
       "name": "Deebo Samuel Sr.",
       "pos": "WR",
       "proTeamId": 25,
-      "slot": "BN"
-     },
-     {
-      "espnId": -16005,
-      "injuryStatus": "NORMAL",
-      "name": "Browns D/ST",
-      "pos": "D/ST",
-      "proTeamId": 5,
-      "slot": "D/ST"
+      "slot": "FLEX"
      },
      {
       "espnId": 4426338,
@@ -1789,7 +1781,7 @@
       "name": "Bo Nix",
       "pos": "QB",
       "proTeamId": 7,
-      "slot": "BN"
+      "slot": "QB"
      },
      {
       "espnId": 4360234,
@@ -1813,7 +1805,15 @@
       "name": "Deshaun Watson",
       "pos": "QB",
       "proTeamId": 5,
-      "slot": "QB"
+      "slot": "BN"
+     },
+     {
+      "espnId": -16019,
+      "injuryStatus": "NORMAL",
+      "name": "Giants D/ST",
+      "pos": "D/ST",
+      "proTeamId": 19,
+      "slot": "D/ST"
      }
     ],
     "teamId": 8
@@ -2492,14 +2492,6 @@
       "slot": "BN"
      },
      {
-      "espnId": 4249087,
-      "injuryStatus": "NORMAL",
-      "name": "Matt Gay",
-      "pos": "K",
-      "proTeamId": 13,
-      "slot": "K"
-     },
-     {
       "espnId": 4428718,
       "injuryStatus": "NORMAL",
       "name": "Tre Tucker",
@@ -2538,6 +2530,14 @@
       "pos": "D/ST",
       "proTeamId": 20,
       "slot": "D/ST"
+     },
+     {
+      "espnId": 17427,
+      "injuryStatus": "NORMAL",
+      "name": "Cairo Santos",
+      "pos": "K",
+      "proTeamId": 3,
+      "slot": "K"
      }
     ],
     "teamId": 14
@@ -2545,6 +2545,6 @@
   ],
   "week": 11
  },
- "fetchedAt": "2026-11-19T22:05:57Z",
+ "fetchedAt": "2026-11-20T01:45:47Z",
  "source": "espn_league"
 }
