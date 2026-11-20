@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T21:08:39Z",
+ "generatedAt": "2026-11-20T21:10:15Z",
  "league": {
   "appName": "ESPN",
   "appUrl": "https://fantasy.espn.com/football/team?leagueId=125685129&teamId=14",
@@ -3052,28 +3052,28 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:38Z",
+   "lastUpdated": "2026-11-20T21:10:14Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:39.000Z",
+   "lastUpdated": "2026-11-20T21:10:14.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:38Z",
+   "lastUpdated": "2026-11-20T21:10:14Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:37Z",
+   "lastUpdated": "2026-11-20T21:10:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -4206,7 +4206,7 @@
   },
   "dynasty": false,
   "faab": null,
-  "freeAgents": 255,
+  "freeAgents": 254,
   "longTerm": {
    "playoffWeeks": [
     15,

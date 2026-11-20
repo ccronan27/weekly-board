@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T21:08:39Z",
+ "generatedAt": "2026-11-20T21:10:15Z",
  "ideas": [
   {
    "get": [
@@ -1446,6 +1446,24 @@
      "slot": "START",
      "team": "JAX",
      "yearsExp": 7
+    },
+    {
+     "age": 25,
+     "eligible": true,
+     "flags": [
+      "QUESTIONABLE"
+     ],
+     "games": 6,
+     "id": "9486",
+     "name": "Dontayvion Wicks",
+     "points": null,
+     "pos": "WR",
+     "ppg": 7.3,
+     "rate": 7.3,
+     "rateFrom": "season",
+     "slot": "BN",
+     "team": "PHI",
+     "yearsExp": 3
     },
     {
      "age": 27,
@@ -5434,35 +5452,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:38Z",
+   "lastUpdated": "2026-11-20T21:10:14Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:38Z",
+   "lastUpdated": "2026-11-20T21:10:14Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:36Z",
+   "lastUpdated": "2026-11-20T21:10:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:36Z",
+   "lastUpdated": "2026-11-20T21:10:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:08:37Z",
+   "lastUpdated": "2026-11-20T21:10:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
