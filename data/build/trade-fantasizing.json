@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T20:53:12Z",
+ "generatedAt": "2026-11-20T21:08:39Z",
  "ideas": [
   {
    "get": [
@@ -634,10 +634,10 @@
      "games": 9,
      "id": "8144",
      "name": "Chris Olave",
-     "points": 14.7,
+     "points": 14.8,
      "pos": "WR",
      "ppg": 16.4,
-     "rate": 14.7,
+     "rate": 14.8,
      "rateFrom": "projection",
      "slot": "FLEX",
      "team": "NO",
@@ -858,10 +858,10 @@
      "games": 7,
      "id": "4866",
      "name": "Saquon Barkley",
-     "points": 12.3,
+     "points": 12.4,
      "pos": "RB",
      "ppg": 8.4,
-     "rate": 12.3,
+     "rate": 12.4,
      "rateFrom": "projection",
      "slot": "RB",
      "team": "PHI",
@@ -958,7 +958,7 @@
      "games": 9,
      "id": "CAR",
      "name": "Carolina Panthers",
-     "points": 5.9,
+     "points": 5.8,
      "pos": "DEF",
      "ppg": 3.9,
      "rate": 3.9,
@@ -1962,7 +1962,7 @@
      "games": 4,
      "id": "7525",
      "name": "DeVonta Smith",
-     "points": 12.7,
+     "points": 12.8,
      "pos": "WR",
      "ppg": 17.2,
      "rate": 0.0,
@@ -2360,10 +2360,10 @@
      "games": 7,
      "id": "5022",
      "name": "Dallas Goedert",
-     "points": 8.9,
+     "points": 9.0,
      "pos": "TE",
      "ppg": 10.6,
-     "rate": 8.9,
+     "rate": 9.0,
      "rateFrom": "projection",
      "slot": "TE",
      "team": "PHI",
@@ -3702,28 +3702,28 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11.000Z",
+   "lastUpdated": "2026-11-20T21:08:39.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:37Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

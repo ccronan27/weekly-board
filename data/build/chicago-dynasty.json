@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T20:53:12Z",
+ "generatedAt": "2026-11-20T21:08:39Z",
  "league": {
   "appName": "Sleeper",
   "appUrl": "https://sleeper.com/leagues/1335703355086893056/team",
@@ -622,7 +622,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Josh Downs",
-     "newsUpdated": "2026-11-18T15:15:52Z",
+     "newsUpdated": "2026-11-20T20:56:00Z",
      "points": 8.2,
      "pos": "WR",
      "ppg": 7.2,
@@ -673,7 +673,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Josh Downs",
-     "newsUpdated": "2026-11-18T15:15:52Z",
+     "newsUpdated": "2026-11-20T20:56:00Z",
      "points": 8.2,
      "pos": "WR",
      "ppg": 7.2,
@@ -1429,7 +1429,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Josh Downs",
-   "newsUpdated": "2026-11-18T15:15:52Z",
+   "newsUpdated": "2026-11-20T20:56:00Z",
    "points": 8.2,
    "pos": "WR",
    "ppg": 7.2,
@@ -2125,35 +2125,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:08Z",
+   "lastUpdated": "2026-11-20T21:08:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:37Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -2175,23 +2175,23 @@
    {
     "myMean": 116.4,
     "opp": "Brandon Aubrey Supremacy",
-    "oppMean": 142.7,
+    "oppMean": 142.8,
     "week": 12,
     "winPct": 22.5
    },
    {
     "myMean": 99.0,
     "opp": "Dak FC",
-    "oppMean": 112.4,
+    "oppMean": 112.5,
     "week": 13,
-    "winPct": 35.0
+    "winPct": 34.9
    },
    {
     "myMean": 116.4,
     "opp": "Ladd’s McConcubines",
-    "oppMean": 133.3,
+    "oppMean": 133.4,
     "week": 14,
-    "winPct": 31.4
+    "winPct": 31.3
    }
   ],
   "playoffTeams": 6,
@@ -2215,7 +2215,7 @@
    },
    {
     "avgSeed": 2.7,
-    "byePct": 51.4,
+    "byePct": 51.5,
     "division": null,
     "isMine": false,
     "losses": 3,
@@ -2245,7 +2245,7 @@
    },
    {
     "avgSeed": 3.6,
-    "byePct": 28.6,
+    "byePct": 28.5,
     "division": null,
     "isMine": false,
     "losses": 4,
@@ -2265,10 +2265,10 @@
     "isMine": false,
     "losses": 4,
     "name": "Tinman0506",
-    "playoffPct": 60.7,
+    "playoffPct": 60.6,
     "pointsAgainst": 1153.82,
     "pointsFor": 1113.22,
-    "projWins": 7.9,
+    "projWins": 7.8,
     "seed": 5,
     "ties": 0,
     "wins": 6
@@ -2280,7 +2280,7 @@
     "isMine": false,
     "losses": 5,
     "name": "Team 12 (no name set)",
-    "playoffPct": 66.7,
+    "playoffPct": 66.6,
     "pointsAgainst": 1228.28,
     "pointsFor": 1231.98,
     "projWins": 7.4,
@@ -2295,7 +2295,7 @@
     "isMine": false,
     "losses": 5,
     "name": "Ladd’s McConcubines",
-    "playoffPct": 78.4,
+    "playoffPct": 78.5,
     "pointsAgainst": 1211.12,
     "pointsFor": 1168.62,
     "projWins": 7.9,
@@ -2739,7 +2739,7 @@
      "locked": false,
      "name": "Israel Abanikanda",
      "newsUpdated": "2026-11-19T03:40:56Z",
-     "points": 4.4,
+     "points": 4.5,
      "pos": "RB",
      "ppg": 1.5,
      "recent": [
@@ -2748,7 +2748,7 @@
        "week": 10
       }
      ],
-     "rotowire": 4.6,
+     "rotowire": 4.7,
      "team": "DAL"
     }
    ],
@@ -3080,7 +3080,7 @@
     }
    ]
   },
-  "freeAgents": 226,
+  "freeAgents": 225,
   "longTerm": {
    "playoffWeeks": [
     15,

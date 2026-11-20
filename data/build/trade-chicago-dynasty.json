@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T20:53:12Z",
+ "generatedAt": "2026-11-20T21:08:39Z",
  "ideas": [
   {
    "get": [
@@ -1480,24 +1480,6 @@
      "yearsExp": 9
     },
     {
-     "age": 25,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 6,
-     "id": "9486",
-     "name": "Dontayvion Wicks",
-     "points": 5.7,
-     "pos": "WR",
-     "ppg": 7.3,
-     "rate": 5.7,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "PHI",
-     "yearsExp": 3
-    },
-    {
      "age": 28,
      "eligible": true,
      "flags": [],
@@ -1512,6 +1494,24 @@
      "slot": "BN",
      "team": "NO",
      "yearsExp": 2
+    },
+    {
+     "age": 25,
+     "eligible": true,
+     "flags": [
+      "QUESTIONABLE"
+     ],
+     "games": 6,
+     "id": "9486",
+     "name": "Dontayvion Wicks",
+     "points": 4.6,
+     "pos": "WR",
+     "ppg": 7.3,
+     "rate": 4.6,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "PHI",
+     "yearsExp": 3
     },
     {
      "age": 23,
@@ -1632,10 +1632,10 @@
      "games": 10,
      "id": "3294",
      "name": "Dak Prescott",
-     "points": 22.2,
+     "points": 22.3,
      "pos": "QB",
      "ppg": 20.8,
-     "rate": 22.2,
+     "rate": 22.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DAL",
@@ -1867,10 +1867,10 @@
      "games": 9,
      "id": "13294",
      "name": "Makai Lemon",
-     "points": 4.2,
+     "points": 5.0,
      "pos": "WR",
      "ppg": 6.1,
-     "rate": 4.2,
+     "rate": 5.0,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "PHI",
@@ -3491,10 +3491,10 @@
      "games": 7,
      "id": "5022",
      "name": "Dallas Goedert",
-     "points": 8.9,
+     "points": 9.0,
      "pos": "TE",
      "ppg": 10.6,
-     "rate": 8.9,
+     "rate": 9.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -3900,10 +3900,10 @@
      "games": 7,
      "id": "4866",
      "name": "Saquon Barkley",
-     "points": 11.4,
+     "points": 11.5,
      "pos": "RB",
      "ppg": 7.9,
-     "rate": 11.4,
+     "rate": 11.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -4222,9 +4222,7 @@
     {
      "age": 36,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 10,
      "id": "1373",
      "name": "Geno Smith",
@@ -4491,9 +4489,7 @@
     {
      "age": 22,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 5,
      "id": "13311",
      "name": "Chris Bell",
@@ -4766,10 +4762,10 @@
      "games": 4,
      "id": "7525",
      "name": "DeVonta Smith",
-     "points": 10.3,
+     "points": 10.4,
      "pos": "WR",
      "ppg": 14.0,
-     "rate": 10.3,
+     "rate": 10.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -5438,35 +5434,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:08Z",
+   "lastUpdated": "2026-11-20T21:08:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:37Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

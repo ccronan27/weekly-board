@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T20:53:12Z",
+ "generatedAt": "2026-11-20T21:08:39Z",
  "league": {
   "appName": "ESPN",
   "appUrl": "https://fantasy.espn.com/football/team?leagueId=125685129&teamId=14",
@@ -227,7 +227,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Rashee Rice",
-     "newsUpdated": "2026-11-18T15:20:52Z",
+     "newsUpdated": "2026-11-20T20:46:00Z",
      "points": 15.2,
      "pos": "WR",
      "ppg": 13.2,
@@ -273,7 +273,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Rashee Rice",
-     "newsUpdated": "2026-11-18T15:20:52Z",
+     "newsUpdated": "2026-11-20T20:46:00Z",
      "points": 15.2,
      "pos": "WR",
      "ppg": 13.2,
@@ -1010,7 +1010,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Rashee Rice",
-   "newsUpdated": "2026-11-18T15:20:52Z",
+   "newsUpdated": "2026-11-20T20:46:00Z",
    "points": 15.2,
    "pos": "WR",
    "ppg": 13.2,
@@ -3052,28 +3052,28 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11.000Z",
+   "lastUpdated": "2026-11-20T21:08:39.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:37Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -3085,7 +3085,7 @@
   "myGames": [
    {
     "ifLose": 59.2,
-    "ifWin": 91.9,
+    "ifWin": 92.0,
     "myMean": 105.2,
     "opp": "Drake it 2 the limit",
     "oppMean": 107.9,
@@ -3140,7 +3140,7 @@
     "isMine": false,
     "losses": 4,
     "name": "I Aint Brown",
-    "playoffPct": 91.9,
+    "playoffPct": 92.0,
     "pointsAgainst": 1053.72,
     "pointsFor": 1123.46,
     "projWins": 8.0,
@@ -3155,7 +3155,7 @@
     "isMine": false,
     "losses": 4,
     "name": "Riders of Rohan",
-    "playoffPct": 95.8,
+    "playoffPct": 95.9,
     "pointsAgainst": 1105.58,
     "pointsFor": 1110.8999999999999,
     "projWins": 8.4,
@@ -3170,7 +3170,7 @@
     "isMine": false,
     "losses": 4,
     "name": "3rd and Likely",
-    "playoffPct": 84.7,
+    "playoffPct": 84.6,
     "pointsAgainst": 987.6399999999999,
     "pointsFor": 1088.68,
     "projWins": 7.7,
@@ -3200,7 +3200,7 @@
     "isMine": false,
     "losses": 5,
     "name": "C0K3 H3AD",
-    "playoffPct": 95.4,
+    "playoffPct": 95.3,
     "pointsAgainst": 1089.1,
     "pointsFor": 1245.16,
     "projWins": 7.9,
@@ -3275,7 +3275,7 @@
     "isMine": false,
     "losses": 6,
     "name": "Drake it 2 the limit",
-    "playoffPct": 22.2,
+    "playoffPct": 22.1,
     "pointsAgainst": 1103.1,
     "pointsFor": 1077.88,
     "projWins": 5.8,
@@ -3305,7 +3305,7 @@
     "isMine": false,
     "losses": 7,
     "name": "Honorary Brown",
-    "playoffPct": 6.1,
+    "playoffPct": 6.0,
     "pointsAgainst": 1262.56,
     "pointsFor": 1128.0600000000002,
     "projWins": 4.9,
@@ -3344,9 +3344,9 @@
   "byPosition": {
    "DEF": [
     {
-     "ceiling": 9.3,
+     "ceiling": 9.4,
      "eligible": true,
-     "espn": 4.8,
+     "espn": 4.9,
      "flags": [],
      "floor": 1.1,
      "game": {
@@ -3666,9 +3666,7 @@
      "ceiling": 21.7,
      "eligible": true,
      "espn": 14.2,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "floor": 7.9,
      "game": {
       "home": false,
@@ -3684,7 +3682,7 @@
      "injuryNotes": null,
      "locked": false,
      "name": "Geno Smith",
-     "newsUpdated": "2026-11-20T15:55:08Z",
+     "newsUpdated": "2026-11-20T20:51:00Z",
      "points": 14.8,
      "pos": "QB",
      "ppg": 13.6,
@@ -4208,7 +4206,7 @@
   },
   "dynasty": false,
   "faab": null,
-  "freeAgents": 256,
+  "freeAgents": 255,
   "longTerm": {
    "playoffWeeks": [
     15,

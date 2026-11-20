@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T20:53:12Z",
+ "generatedAt": "2026-11-20T21:08:39Z",
  "ideas": [
   {
    "get": [
@@ -64,7 +64,7 @@
    "playoffGain": 7.2,
    "stretchGain": 18.5,
    "team": "Gay tier ball knowledge",
-   "theirGain": 21.7,
+   "theirGain": 21.8,
    "thisWeek": -7.5,
    "youthFlag": false
   },
@@ -79,7 +79,7 @@
    "playoffGain": 3.6,
    "stretchGain": 14.9,
    "team": "Gay tier ball knowledge",
-   "theirGain": 28.9,
+   "theirGain": 29.0,
    "thisWeek": -8.7,
    "youthFlag": false
   },
@@ -135,12 +135,12 @@
    "give": [
     "8131"
    ],
-   "myGain": 10.3,
-   "playoffGain": 9.6,
-   "stretchGain": 0.7,
+   "myGain": 10.8,
+   "playoffGain": 9.9,
+   "stretchGain": 0.9,
    "team": "Cigarettes& Alcohol AK26",
-   "theirGain": 14.8,
-   "thisWeek": -8.1,
+   "theirGain": 14.3,
+   "thisWeek": -8.0,
    "youthFlag": false
   }
  ],
@@ -536,10 +536,10 @@
      "games": 7,
      "id": "5022",
      "name": "Dallas Goedert",
-     "points": 8.9,
+     "points": 9.0,
      "pos": "TE",
      "ppg": 10.6,
-     "rate": 8.9,
+     "rate": 9.0,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -644,10 +644,10 @@
      "games": 10,
      "id": "3294",
      "name": "Dak Prescott",
-     "points": 22.0,
+     "points": 22.1,
      "pos": "QB",
      "ppg": 20.8,
-     "rate": 22.0,
+     "rate": 22.1,
      "rateFrom": "projection",
      "slot": "START",
      "team": "DAL",
@@ -822,6 +822,24 @@
      "yearsExp": 1
     },
     {
+     "age": 34,
+     "eligible": true,
+     "flags": [
+      "QUESTIONABLE"
+     ],
+     "games": 8,
+     "id": "2505",
+     "name": "Darren Waller",
+     "points": 8.6,
+     "pos": "TE",
+     "ppg": 10.2,
+     "rate": 8.6,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "CAR",
+     "yearsExp": 11
+    },
+    {
      "age": 25,
      "eligible": true,
      "flags": [],
@@ -836,24 +854,6 @@
      "slot": "START",
      "team": "JAX",
      "yearsExp": 3
-    },
-    {
-     "age": 34,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 8,
-     "id": "2505",
-     "name": "Darren Waller",
-     "points": 8.5,
-     "pos": "TE",
-     "ppg": 10.2,
-     "rate": 8.5,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "CAR",
-     "yearsExp": 11
     },
     {
      "age": null,
@@ -966,6 +966,22 @@
      "yearsExp": 10
     },
     {
+     "age": 28,
+     "eligible": true,
+     "flags": [],
+     "games": 4,
+     "id": "7525",
+     "name": "DeVonta Smith",
+     "points": 12.8,
+     "pos": "WR",
+     "ppg": 17.2,
+     "rate": 12.8,
+     "rateFrom": "projection",
+     "slot": "START",
+     "team": "PHI",
+     "yearsExp": 5
+    },
+    {
      "age": 33,
      "eligible": true,
      "flags": [],
@@ -980,22 +996,6 @@
      "slot": "START",
      "team": "SF",
      "yearsExp": 9
-    },
-    {
-     "age": 28,
-     "eligible": true,
-     "flags": [],
-     "games": 4,
-     "id": "7525",
-     "name": "DeVonta Smith",
-     "points": 12.7,
-     "pos": "WR",
-     "ppg": 17.2,
-     "rate": 12.7,
-     "rateFrom": "projection",
-     "slot": "START",
-     "team": "PHI",
-     "yearsExp": 5
     },
     {
      "age": 24,
@@ -1246,10 +1246,10 @@
      "games": 9,
      "id": "96",
      "name": "Aaron Rodgers",
-     "points": 16.3,
+     "points": 16.4,
      "pos": "QB",
      "ppg": 15.4,
-     "rate": 16.3,
+     "rate": 16.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PIT",
@@ -2067,10 +2067,10 @@
      "games": 9,
      "id": "8144",
      "name": "Chris Olave",
-     "points": 14.7,
+     "points": 14.8,
      "pos": "WR",
      "ppg": 16.4,
-     "rate": 14.7,
+     "rate": 14.8,
      "rateFrom": "projection",
      "slot": "START",
      "team": "NO",
@@ -2253,9 +2253,7 @@
     {
      "age": 36,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 10,
      "id": "1373",
      "name": "Geno Smith",
@@ -2716,10 +2714,10 @@
      "games": 9,
      "id": "13294",
      "name": "Makai Lemon",
-     "points": 5.6,
+     "points": 6.6,
      "pos": "WR",
      "ppg": 8.2,
-     "rate": 5.6,
+     "rate": 6.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -2993,7 +2991,7 @@
      "games": 10,
      "id": "BAL",
      "name": "Baltimore Ravens",
-     "points": 6.4,
+     "points": 6.5,
      "pos": "DEF",
      "ppg": 4.5,
      "rate": 4.5,
@@ -3200,10 +3198,10 @@
      "games": 7,
      "id": "4866",
      "name": "Saquon Barkley",
-     "points": 12.3,
+     "points": 12.4,
      "pos": "RB",
      "ppg": 8.4,
-     "rate": 12.3,
+     "rate": 12.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -3594,35 +3592,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:11Z",
+   "lastUpdated": "2026-11-20T21:08:38Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:08Z",
+   "lastUpdated": "2026-11-20T21:08:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:36Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T20:53:09Z",
+   "lastUpdated": "2026-11-20T21:08:37Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
