@@ -774,7 +774,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Isaiah Likely",
    "opponent": "WAS",
    "playerId": "8131",
@@ -3050,7 +3050,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Isaiah Williams",
    "opponent": "BUF",
    "playerId": "11608",
@@ -3508,7 +3508,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Caleb Douglas",
    "opponent": "IND",
    "playerId": "13296",
@@ -3646,7 +3646,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Geno Smith",
    "opponent": "BUF",
    "playerId": "1373",
@@ -3962,7 +3962,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Ian Thomas",
    "opponent": "SEA",
    "playerId": "4995",
@@ -4948,7 +4948,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Ray Davis",
    "opponent": "NYJ",
    "playerId": "11575",
@@ -6653,7 +6653,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Doubtful",
    "name": "Dalton Kincaid",
    "opponent": "NYJ",
    "playerId": "10236",
@@ -7451,7 +7451,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Out",
    "name": "Seth McGowan",
    "opponent": "MIA",
    "playerId": "13424",
@@ -9103,7 +9103,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Jordyn Tyson",
    "opponent": "CAR",
    "playerId": "13281",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-20T01:45:45Z",
+ "fetchedAt": "2026-11-20T20:53:09Z",
  "source": "sleeper_stats"
 }
