@@ -127,7 +127,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Treylon Burks",
    "opponent": "NYG",
    "playerId": "8135",
@@ -298,7 +298,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Rachaad White",
    "opponent": "NYG",
    "playerId": "8136",
@@ -774,7 +774,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Isaiah Likely",
    "opponent": "WAS",
    "playerId": "8131",
@@ -3962,7 +3962,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Ian Thomas",
    "opponent": "SEA",
    "playerId": "4995",
@@ -5190,7 +5190,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Bhayshul Tuten",
    "opponent": "TEN",
    "playerId": "12490",
@@ -5798,7 +5798,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Jakobi Meyers",
    "opponent": "TEN",
    "playerId": "5947",
@@ -10497,7 +10497,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Chris Rodriguez Jr.",
    "opponent": "TEN",
    "playerId": "10219",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-20T21:10:12Z",
+ "fetchedAt": "2026-11-21T03:54:07Z",
  "source": "sleeper_stats"
 }

@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T21:10:15Z",
+ "generatedAt": "2026-11-21T03:54:09Z",
  "ideas": [
   {
    "get": [
@@ -376,10 +376,10 @@
      "games": 8,
      "id": "12495",
      "name": "Ollie Gordon II",
-     "points": 12.4,
+     "points": 12.5,
      "pos": "RB",
      "ppg": 11.9,
-     "rate": 12.4,
+     "rate": 12.5,
      "rateFrom": "projection",
      "slot": "RB",
      "team": "MIA",
@@ -392,10 +392,10 @@
      "games": 6,
      "id": "13296",
      "name": "Caleb Douglas",
-     "points": 9.3,
+     "points": 9.2,
      "pos": "WR",
      "ppg": 11.8,
-     "rate": 9.3,
+     "rate": 9.2,
      "rateFrom": "projection",
      "slot": "WR",
      "team": "MIA",
@@ -510,7 +510,7 @@
      "games": 5,
      "id": "12533",
      "name": "Jacory Croskey-Merritt",
-     "points": 7.6,
+     "points": 7.5,
      "pos": "RB",
      "ppg": 9.0,
      "rate": 0.0,
@@ -634,10 +634,10 @@
      "games": 9,
      "id": "8144",
      "name": "Chris Olave",
-     "points": 14.8,
+     "points": 14.7,
      "pos": "WR",
      "ppg": 16.4,
-     "rate": 14.8,
+     "rate": 14.7,
      "rateFrom": "projection",
      "slot": "FLEX",
      "team": "NO",
@@ -668,10 +668,10 @@
      "games": 9,
      "id": "10236",
      "name": "Dalton Kincaid",
-     "points": 9.6,
+     "points": 9.5,
      "pos": "TE",
      "ppg": 10.3,
-     "rate": 9.6,
+     "rate": 9.5,
      "rateFrom": "projection",
      "slot": "TE",
      "team": "BUF",
@@ -858,10 +858,10 @@
      "games": 7,
      "id": "4866",
      "name": "Saquon Barkley",
-     "points": 12.4,
+     "points": 12.5,
      "pos": "RB",
      "ppg": 8.4,
-     "rate": 12.4,
+     "rate": 12.5,
      "rateFrom": "projection",
      "slot": "RB",
      "team": "PHI",
@@ -1311,9 +1311,7 @@
     {
      "age": 26,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "8131",
      "name": "Isaiah Likely",
@@ -1962,7 +1960,7 @@
      "games": 4,
      "id": "7525",
      "name": "DeVonta Smith",
-     "points": 12.8,
+     "points": 12.9,
      "pos": "WR",
      "ppg": 17.2,
      "rate": 0.0,
@@ -2306,9 +2304,7 @@
     {
      "age": 30,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "5947",
      "name": "Jakobi Meyers",
@@ -2344,7 +2340,7 @@
      "games": 9,
      "id": "1945",
      "name": "Chris Boswell",
-     "points": 9.1,
+     "points": 9.0,
      "pos": "K",
      "ppg": 9.1,
      "rate": 9.1,
@@ -2525,10 +2521,10 @@
      "games": 9,
      "id": "96",
      "name": "Aaron Rodgers",
-     "points": 15.9,
+     "points": 15.8,
      "pos": "QB",
      "ppg": 14.8,
-     "rate": 15.9,
+     "rate": 15.8,
      "rateFrom": "projection",
      "slot": "QB",
      "team": "PIT",
@@ -2592,10 +2588,10 @@
      "games": 9,
      "id": "8134",
      "name": "Khalil Shakir",
-     "points": 9.9,
+     "points": 9.8,
      "pos": "WR",
      "ppg": 9.3,
-     "rate": 9.9,
+     "rate": 9.8,
      "rateFrom": "projection",
      "slot": "WR",
      "team": "BUF",
@@ -2986,9 +2982,7 @@
     {
      "age": 23,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "12490",
      "name": "Bhayshul Tuten",
@@ -3052,7 +3046,9 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 8,
      "id": "8136",
      "name": "Rachaad White",
@@ -3276,9 +3272,7 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "7526",
      "name": "Jaylen Waddle",
@@ -3638,7 +3632,7 @@
      "games": 3,
      "id": "6819",
      "name": "Michael Pittman Jr.",
-     "points": 5.0,
+     "points": 4.9,
      "pos": "WR",
      "ppg": 5.3,
      "rate": 0.0,
@@ -3702,28 +3696,28 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:14Z",
+   "lastUpdated": "2026-11-21T03:54:08Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:14.000Z",
+   "lastUpdated": "2026-11-21T03:54:09.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:14Z",
+   "lastUpdated": "2026-11-21T03:54:09Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:12Z",
+   "lastUpdated": "2026-11-21T03:54:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

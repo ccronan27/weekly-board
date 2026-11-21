@@ -35,7 +35,7 @@
     "rush_yd": 0.57
    },
    "team": "IND",
-   "updatedAt": 1795208462811,
+   "updatedAt": 1795231854000,
    "week": 11
   },
   {
@@ -74,7 +74,7 @@
     "rush_yd": 24.81
    },
    "team": "IND",
-   "updatedAt": 1795208462807,
+   "updatedAt": 1795231853994,
    "week": 11
   },
   {
@@ -112,7 +112,7 @@
     "rush_yd": 11.13
    },
    "team": "HOU",
-   "updatedAt": 1795208462697,
+   "updatedAt": 1795231853893,
    "week": 11
   },
   {
@@ -144,7 +144,7 @@
     "rec_yd": 8.64
    },
    "team": "HOU",
-   "updatedAt": 1795208462732,
+   "updatedAt": 1795231853928,
    "week": 11
   },
   {
@@ -176,7 +176,7 @@
     "rec_yd": 2.69
    },
    "team": "IND",
-   "updatedAt": 1795208462832,
+   "updatedAt": 1795231854038,
    "week": 11
   },
   {
@@ -208,7 +208,7 @@
     "rec_yd": 40.0
    },
    "team": "HOU",
-   "updatedAt": 1795208462737,
+   "updatedAt": 1795231853933,
    "week": 11
   },
   {
@@ -246,7 +246,7 @@
     "rush_yd": 52.42
    },
    "team": "HOU",
-   "updatedAt": 1795208462695,
+   "updatedAt": 1795231853889,
    "week": 11
   },
   {
@@ -283,7 +283,7 @@
     "rush_40p": 0.0
    },
    "team": "HOU",
-   "updatedAt": 1795208462718,
+   "updatedAt": 1795231853898,
    "week": 11
   },
   {
@@ -320,7 +320,7 @@
     "rush_40p": 0.01
    },
    "team": "IND",
-   "updatedAt": 1795208462816,
+   "updatedAt": 1795231854005,
    "week": 11
   },
   {
@@ -352,7 +352,7 @@
     "rec_yd": 4.15
    },
    "team": "HOU",
-   "updatedAt": 1795208462730,
+   "updatedAt": 1795231853926,
    "week": 11
   },
   {
@@ -391,7 +391,7 @@
     "rush_yd": 0.39
    },
    "team": "IND",
-   "updatedAt": 1795208462814,
+   "updatedAt": 1795231854003,
    "week": 11
   },
   {
@@ -423,7 +423,7 @@
     "rec_yd": 2.29
    },
    "team": "IND",
-   "updatedAt": 1795208462830,
+   "updatedAt": 1795231854036,
    "week": 11
   },
   {
@@ -455,7 +455,7 @@
     "rec_yd": 34.98
    },
    "team": "HOU",
-   "updatedAt": 1795208462728,
+   "updatedAt": 1795231853924,
    "week": 11
   },
   {
@@ -491,7 +491,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "HOU",
-   "updatedAt": 1795208462690,
+   "updatedAt": 1795231853882,
    "week": 11
   },
   {
@@ -520,7 +520,7 @@
     "xpmiss": 0.07
    },
    "team": "HOU",
-   "updatedAt": 1795208462739,
+   "updatedAt": 1795231853936,
    "week": 11
   },
   {
@@ -548,7 +548,7 @@
     "rec_yd": 1.02
    },
    "team": "IND",
-   "updatedAt": 1795208462821,
+   "updatedAt": 1795231854027,
    "week": 11
   },
   {
@@ -586,7 +586,7 @@
     "rush_yd": 15.76
    },
    "team": "HOU",
-   "updatedAt": 1795208462692,
+   "updatedAt": 1795231853885,
    "week": 11
   },
   {
@@ -618,7 +618,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "IND",
-   "updatedAt": 1795208462787,
+   "updatedAt": 1795231853992,
    "week": 11
   },
   {
@@ -656,7 +656,7 @@
     "rush_yd": 37.64
    },
    "team": "HOU",
-   "updatedAt": 1795208462715,
+   "updatedAt": 1795231853896,
    "week": 11
   },
   {
@@ -694,7 +694,7 @@
     "rush_yd": 0.93
    },
    "team": "IND",
-   "updatedAt": 1795208462827,
+   "updatedAt": 1795231854033,
    "week": 11
   },
   {
@@ -732,7 +732,7 @@
     "rush_yd": 0.39
    },
    "team": "HOU",
-   "updatedAt": 1795208462725,
+   "updatedAt": 1795231853922,
    "week": 11
   },
   {
@@ -770,7 +770,7 @@
     "rush_yd": 0.5
    },
    "team": "HOU",
-   "updatedAt": 1795208462734,
+   "updatedAt": 1795231853930,
    "week": 11
   },
   {
@@ -799,7 +799,7 @@
     "xpmiss": 0.07
    },
    "team": "IND",
-   "updatedAt": 1795208462835,
+   "updatedAt": 1795231854040,
    "week": 11
   },
   {
@@ -831,7 +831,7 @@
     "rec_yd": 18.86
    },
    "team": "IND",
-   "updatedAt": 1795208462825,
+   "updatedAt": 1795231854031,
    "week": 11
   },
   {
@@ -859,7 +859,7 @@
     "rec_yd": 33.3
    },
    "team": "IND",
-   "updatedAt": 1795208462819,
+   "updatedAt": 1795231854008,
    "week": 11
   },
   {
@@ -897,7 +897,7 @@
     "rush_yd": 63.95
    },
    "team": "IND",
-   "updatedAt": 1795208462809,
+   "updatedAt": 1795231853998,
    "week": 11
   },
   {
@@ -929,7 +929,7 @@
     "rec_yd": 2.94
    },
    "team": "IND",
-   "updatedAt": 1795208462823,
+   "updatedAt": 1795231854029,
    "week": 11
   },
   {
@@ -967,7 +967,7 @@
     "rush_yd": 1.26
    },
    "team": "HOU",
-   "updatedAt": 1795208462720,
+   "updatedAt": 1795231853901,
    "week": 11
   },
   {
@@ -1005,7 +1005,7 @@
     "rush_yd": 0.28
    },
    "team": "HOU",
-   "updatedAt": 1795208462723,
+   "updatedAt": 1795231853919,
    "week": 11
   },
   {
@@ -1015,7 +1015,7 @@
    "playerId": "10235",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.14,
+    "bonus_rec_rb": 0.13,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.0,
@@ -1023,7 +1023,7 @@
     "pts_half_ppr": 0.49,
     "pts_ppr": 0.55,
     "pts_std": 0.42,
-    "rec": 0.14,
+    "rec": 0.13,
     "rec_0_4": 0.03,
     "rec_10_19": 0.04,
     "rec_20_29": 0.03,
@@ -1034,16 +1034,16 @@
     "rec_fd": 0.11,
     "rec_td": 0.01,
     "rec_tgt": 0.16,
-    "rec_yd": 1.14,
+    "rec_yd": 1.13,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
-    "rush_att": 0.4,
+    "rush_att": 0.41,
     "rush_fd": 0.17,
     "rush_td": 0.02,
-    "rush_yd": 1.7
+    "rush_yd": 1.71
    },
    "team": "CHI",
-   "updatedAt": 1795208462699,
+   "updatedAt": 1795231853895,
    "week": 11
   },
   {
@@ -1081,7 +1081,7 @@
     "rush_yd": 23.65
    },
    "team": "DEN",
-   "updatedAt": 1795208463092,
+   "updatedAt": 1795231854303,
    "week": 11
   },
   {
@@ -1091,16 +1091,16 @@
    "playerId": "11577",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.97,
+    "bonus_rec_rb": 0.96,
     "def_fum_td": 0.0,
-    "def_kr_yd": 33.43,
-    "fum": 0.03,
+    "def_kr_yd": 33.6,
+    "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 2.87,
-    "pts_ppr": 3.35,
-    "pts_std": 2.39,
-    "rec": 0.97,
+    "pts_half_ppr": 2.93,
+    "pts_ppr": 3.41,
+    "pts_std": 2.45,
+    "rec": 0.96,
     "rec_0_4": 0.19,
     "rec_10_19": 0.29,
     "rec_20_29": 0.19,
@@ -1108,19 +1108,19 @@
     "rec_30_39": 0.1,
     "rec_40p": 0.1,
     "rec_5_9": 0.19,
-    "rec_fd": 0.73,
-    "rec_td": 0.04,
-    "rec_tgt": 1.31,
-    "rec_yd": 7.25,
+    "rec_fd": 0.72,
+    "rec_td": 0.05,
+    "rec_tgt": 1.3,
+    "rec_yd": 7.24,
     "rush_2pt": 0.01,
     "rush_40p": 0.03,
-    "rush_att": 3.61,
-    "rush_fd": 0.96,
-    "rush_td": 0.07,
-    "rush_yd": 9.62
+    "rush_att": 3.64,
+    "rush_fd": 0.97,
+    "rush_td": 0.08,
+    "rush_yd": 9.74
    },
    "team": "PHI",
-   "updatedAt": 1795208462925,
+   "updatedAt": 1795231854121,
    "week": 11
   },
   {
@@ -1138,7 +1138,7 @@
     "gp": 1.0,
     "pts_half_ppr": 3.87,
     "pts_ppr": 4.36,
-    "pts_std": 3.37,
+    "pts_std": 3.38,
     "rec": 0.98,
     "rec_0_4": 0.2,
     "rec_10_19": 0.3,
@@ -1150,16 +1150,16 @@
     "rec_fd": 0.9,
     "rec_td": 0.05,
     "rec_tgt": 1.34,
-    "rec_yd": 8.98,
+    "rec_yd": 8.97,
     "rush_2pt": 0.01,
     "rush_40p": 0.05,
     "rush_att": 4.49,
     "rush_fd": 1.54,
     "rush_td": 0.11,
-    "rush_yd": 15.39
+    "rush_yd": 15.4
    },
    "team": "CAR",
-   "updatedAt": 1795208462812,
+   "updatedAt": 1795231853988,
    "week": 11
   },
   {
@@ -1191,7 +1191,7 @@
     "rec_yd": 1.2
    },
    "team": "CAR",
-   "updatedAt": 1795208462838,
+   "updatedAt": 1795231854024,
    "week": 11
   },
   {
@@ -1201,7 +1201,7 @@
    "playerId": "11610",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 3.65,
+    "bonus_rec_wr": 3.62,
     "def_fum_td": 0.0,
     "def_kr_yd": 29.25,
     "fum": 0.04,
@@ -1209,30 +1209,30 @@
     "gp": 1.0,
     "pr": 1.16,
     "pr_yd": 11.79,
-    "pts_half_ppr": 7.05,
-    "pts_ppr": 8.87,
-    "pts_std": 5.23,
-    "rec": 3.65,
-    "rec_0_4": 0.73,
+    "pts_half_ppr": 7.02,
+    "pts_ppr": 8.83,
+    "pts_std": 5.21,
+    "rec": 3.62,
+    "rec_0_4": 0.72,
     "rec_10_19": 1.09,
-    "rec_20_29": 0.73,
+    "rec_20_29": 0.72,
     "rec_2pt": 0.01,
     "rec_30_39": 0.36,
     "rec_40p": 0.36,
-    "rec_5_9": 0.73,
-    "rec_fd": 3.87,
+    "rec_5_9": 0.72,
+    "rec_fd": 3.85,
     "rec_td": 0.13,
-    "rec_tgt": 6.11,
-    "rec_yd": 38.7,
+    "rec_tgt": 6.07,
+    "rec_yd": 38.45,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
     "rush_att": 1.0,
-    "rush_fd": 0.47,
+    "rush_fd": 0.48,
     "rush_td": 0.03,
-    "rush_yd": 4.74
+    "rush_yd": 4.78
    },
    "team": "MIA",
-   "updatedAt": 1795208462846,
+   "updatedAt": 1795231854033,
    "week": 11
   },
   {
@@ -1273,7 +1273,7 @@
     "rush_yd": 0.47
    },
    "team": "LAC",
-   "updatedAt": 1795208463097,
+   "updatedAt": 1795231854299,
    "week": 11
   },
   {
@@ -1288,8 +1288,8 @@
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 10.65,
-    "pts_ppr": 12.73,
+    "pts_half_ppr": 10.64,
+    "pts_ppr": 12.72,
     "pts_std": 8.57,
     "rec": 4.15,
     "rec_0_4": 0.83,
@@ -1302,7 +1302,7 @@
     "rec_fd": 5.94,
     "rec_td": 0.43,
     "rec_tgt": 6.69,
-    "rec_yd": 59.44,
+    "rec_yd": 59.42,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.08,
@@ -1311,7 +1311,7 @@
     "rush_yd": 0.24
    },
    "team": "CAR",
-   "updatedAt": 1795208462820,
+   "updatedAt": 1795231853996,
    "week": 11
   },
   {
@@ -1340,7 +1340,7 @@
     "xpmiss": 0.07
    },
    "team": "MIN",
-   "updatedAt": 1795208463148,
+   "updatedAt": 1795231854333,
    "week": 11
   },
   {
@@ -1355,8 +1355,8 @@
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 0.18,
-    "pts_ppr": 0.21,
+    "pts_half_ppr": 0.19,
+    "pts_ppr": 0.22,
     "pts_std": 0.16,
     "rec": 0.06,
     "rec_0_4": 0.01,
@@ -1375,10 +1375,10 @@
     "rush_att": 0.19,
     "rush_fd": 0.06,
     "rush_td": 0.01,
-    "rush_yd": 0.59
+    "rush_yd": 0.6
    },
    "team": "PHI",
-   "updatedAt": 1795208462930,
+   "updatedAt": 1795231854126,
    "week": 11
   },
   {
@@ -1414,10 +1414,10 @@
     "rush_att": 0.58,
     "rush_fd": 0.24,
     "rush_td": 0.01,
-    "rush_yd": 2.43
+    "rush_yd": 2.44
    },
    "team": "SF",
-   "updatedAt": 1795208463214,
+   "updatedAt": 1795231854398,
    "week": 11
   },
   {
@@ -1457,7 +1457,7 @@
     "rush_yd": 0.23
    },
    "team": "LV",
-   "updatedAt": 1795208463194,
+   "updatedAt": 1795231854406,
    "week": 11
   },
   {
@@ -1493,7 +1493,7 @@
     "rush_yd": 0.11
    },
    "team": "TEN",
-   "updatedAt": 1795208462998,
+   "updatedAt": 1795231854200,
    "week": 11
   },
   {
@@ -1503,39 +1503,39 @@
    "playerId": "12534",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.88,
+    "bonus_rec_rb": 0.87,
     "def_fum_td": 0.0,
     "fum": 0.08,
     "fum_lost": 0.04,
     "gp": 1.0,
-    "pts_half_ppr": 8.05,
-    "pts_ppr": 8.49,
-    "pts_std": 7.61,
-    "rec": 0.88,
-    "rec_0_4": 0.18,
+    "pts_half_ppr": 8.08,
+    "pts_ppr": 8.52,
+    "pts_std": 7.64,
+    "rec": 0.87,
+    "rec_0_4": 0.17,
     "rec_10_19": 0.26,
-    "rec_20_29": 0.18,
+    "rec_20_29": 0.17,
     "rec_2pt": 0.0,
     "rec_30_39": 0.09,
     "rec_40p": 0.09,
-    "rec_5_9": 0.18,
-    "rec_fd": 0.8,
+    "rec_5_9": 0.17,
+    "rec_fd": 0.79,
     "rec_td": 0.04,
     "rec_tgt": 1.1,
-    "rec_yd": 7.97,
+    "rec_yd": 7.94,
     "rush_2pt": 0.02,
     "rush_40p": 0.08,
-    "rush_att": 7.12,
-    "rush_fd": 3.91,
+    "rush_att": 7.16,
+    "rush_fd": 3.94,
     "rush_td": 0.44,
-    "rush_yd": 39.09
+    "rush_yd": 39.39
    },
    "team": "CHI",
-   "updatedAt": 1795208462702,
+   "updatedAt": 1795231853897,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "LeQuint Allen Jr.",
    "opponent": "NYG",
    "playerId": "12544",
@@ -1570,7 +1570,7 @@
     "rush_yd": 4.12
    },
    "team": "JAX",
-   "updatedAt": 1795208463101,
+   "updatedAt": 1795231854286,
    "week": 11
   },
   {
@@ -1587,28 +1587,28 @@
     "fum_lost": 0.18,
     "gp": 1.0,
     "pass_2pt": 0.08,
-    "pass_att": 34.45,
-    "pass_cmp": 22.92,
-    "pass_cmp_40p": 0.43,
-    "pass_fd": 24.27,
-    "pass_inc": 11.53,
+    "pass_att": 34.27,
+    "pass_cmp": 22.8,
+    "pass_cmp_40p": 0.42,
+    "pass_fd": 24.17,
+    "pass_inc": 11.47,
     "pass_int": 0.84,
     "pass_int_td": 0.0,
-    "pass_sack": 2.55,
-    "pass_td": 1.21,
-    "pass_yd": 242.72,
-    "pts_half_ppr": 16.11,
-    "pts_ppr": 16.11,
-    "pts_std": 16.11,
+    "pass_sack": 2.54,
+    "pass_td": 1.2,
+    "pass_yd": 241.74,
+    "pts_half_ppr": 16.07,
+    "pts_ppr": 16.07,
+    "pts_std": 16.07,
     "rush_2pt": 0.01,
     "rush_40p": 0.04,
-    "rush_att": 4.41,
-    "rush_fd": 1.95,
+    "rush_att": 4.44,
+    "rush_fd": 1.97,
     "rush_td": 0.11,
-    "rush_yd": 19.49
+    "rush_yd": 19.65
    },
    "team": "NO",
-   "updatedAt": 1795208462816,
+   "updatedAt": 1795231854001,
    "week": 11
   },
   {
@@ -1643,7 +1643,7 @@
     "rush_40p": 0.0
    },
    "team": "LAC",
-   "updatedAt": 1795208463101,
+   "updatedAt": 1795231854295,
    "week": 11
   },
   {
@@ -1675,7 +1675,7 @@
     "rec_yd": 0.98
    },
    "team": "NYG",
-   "updatedAt": 1795208463218,
+   "updatedAt": 1795231854403,
    "week": 11
   },
   {
@@ -1688,7 +1688,7 @@
     "bonus_rec_te": 0.27,
     "gp": 1.0,
     "pts_half_ppr": 0.56,
-    "pts_ppr": 0.7,
+    "pts_ppr": 0.69,
     "pts_std": 0.42,
     "rec": 0.27,
     "rec_0_4": 0.05,
@@ -1697,13 +1697,13 @@
     "rec_30_39": 0.03,
     "rec_40p": 0.03,
     "rec_5_9": 0.05,
-    "rec_fd": 0.31,
+    "rec_fd": 0.3,
     "rec_td": 0.02,
-    "rec_tgt": 0.36,
-    "rec_yd": 3.06
+    "rec_tgt": 0.35,
+    "rec_yd": 3.04
    },
    "team": "BUF",
-   "updatedAt": 1795208462741,
+   "updatedAt": 1795231853938,
    "week": 11
   },
   {
@@ -1737,7 +1737,7 @@
     "rush_40p": 0.0
    },
    "team": "KC",
-   "updatedAt": 1795208463020,
+   "updatedAt": 1795231854232,
    "week": 11
   },
   {
@@ -1766,10 +1766,10 @@
     "rec_fd": 2.31,
     "rec_td": 0.17,
     "rec_tgt": 3.31,
-    "rec_yd": 23.07
+    "rec_yd": 23.06
    },
    "team": "MIN",
-   "updatedAt": 1795208463139,
+   "updatedAt": 1795231854323,
    "week": 11
   },
   {
@@ -1781,13 +1781,13 @@
    "stats": {
     "bonus_rec_wr": 0.43,
     "def_fum_td": 0.0,
-    "def_kr_yd": 1.71,
+    "def_kr_yd": 1.72,
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 1.35,
-    "pts_ppr": 1.57,
-    "pts_std": 1.14,
+    "pts_half_ppr": 1.38,
+    "pts_ppr": 1.59,
+    "pts_std": 1.16,
     "rec": 0.43,
     "rec_0_4": 0.09,
     "rec_10_19": 0.13,
@@ -1799,10 +1799,10 @@
     "rec_fd": 0.67,
     "rec_td": 0.08,
     "rec_tgt": 0.87,
-    "rec_yd": 6.72
+    "rec_yd": 6.71
    },
    "team": "PHI",
-   "updatedAt": 1795208462934,
+   "updatedAt": 1795231854133,
    "week": 11
   },
   {
@@ -1840,7 +1840,7 @@
     "rush_yd": 7.01
    },
    "team": "ARI",
-   "updatedAt": 1795208462913,
+   "updatedAt": 1795231854115,
    "week": 11
   },
   {
@@ -1850,12 +1850,12 @@
    "playerId": "13277",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.5,
+    "bonus_rec_rb": 0.49,
     "gp": 1.0,
-    "pts_half_ppr": 1.46,
+    "pts_half_ppr": 1.47,
     "pts_ppr": 1.71,
     "pts_std": 1.22,
-    "rec": 0.5,
+    "rec": 0.49,
     "rec_0_4": 0.1,
     "rec_10_19": 0.15,
     "rec_20_29": 0.1,
@@ -1865,14 +1865,14 @@
     "rec_fd": 0.36,
     "rec_td": 0.02,
     "rec_tgt": 0.69,
-    "rec_yd": 3.6,
-    "rush_att": 1.24,
+    "rec_yd": 3.59,
+    "rush_att": 1.25,
     "rush_fd": 0.56,
     "rush_td": 0.03,
-    "rush_yd": 5.56
+    "rush_yd": 5.6
    },
    "team": "NO",
-   "updatedAt": 1795208462823,
+   "updatedAt": 1795231854009,
    "week": 11
   },
   {
@@ -1913,7 +1913,7 @@
     "rush_yd": 0.11
    },
    "team": "TEN",
-   "updatedAt": 1795208463001,
+   "updatedAt": 1795231854202,
    "week": 11
   },
   {
@@ -1930,7 +1930,7 @@
     "gp": 1.0,
     "pts_half_ppr": 4.9,
     "pts_ppr": 6.36,
-    "pts_std": 3.44,
+    "pts_std": 3.43,
     "rec": 2.92,
     "rec_0_4": 0.58,
     "rec_10_19": 0.88,
@@ -1942,7 +1942,7 @@
     "rec_fd": 2.74,
     "rec_td": 0.11,
     "rec_tgt": 5.09,
-    "rec_yd": 27.4,
+    "rec_yd": 27.39,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.03,
@@ -1951,7 +1951,7 @@
     "rush_yd": 0.12
    },
    "team": "BAL",
-   "updatedAt": 1795208462726,
+   "updatedAt": 1795231853916,
    "week": 11
   },
   {
@@ -1983,7 +1983,7 @@
     "rec_yd": 10.92
    },
    "team": "JAX",
-   "updatedAt": 1795208463129,
+   "updatedAt": 1795231854310,
    "week": 11
   },
   {
@@ -2022,7 +2022,7 @@
     "rush_yd": 1.18
    },
    "team": "BAL",
-   "updatedAt": 1795208462696,
+   "updatedAt": 1795231853892,
    "week": 11
   },
   {
@@ -2054,7 +2054,7 @@
     "rec_yd": 8.64
    },
    "team": "BAL",
-   "updatedAt": 1795208462732,
+   "updatedAt": 1795231853923,
    "week": 11
   },
   {
@@ -2092,11 +2092,11 @@
     "rush_yd": 0.4
    },
    "team": "NYJ",
-   "updatedAt": 1795208463202,
+   "updatedAt": 1795231854403,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Doubtful",
    "name": "Brenen Thompson",
    "opponent": "NYJ",
    "playerId": "13380",
@@ -2124,7 +2124,7 @@
     "rec_yd": 3.92
    },
    "team": "LAC",
-   "updatedAt": 1795208463092,
+   "updatedAt": 1795231854291,
    "week": 11
   },
   {
@@ -2156,7 +2156,7 @@
     "rec_yd": 4.94
    },
    "team": "JAX",
-   "updatedAt": 1795208463125,
+   "updatedAt": 1795231854305,
    "week": 11
   },
   {
@@ -2194,7 +2194,7 @@
     "rush_yd": 0.29
    },
    "team": "PIT",
-   "updatedAt": 1795208463021,
+   "updatedAt": 1795231854224,
    "week": 11
   },
   {
@@ -2222,7 +2222,7 @@
     "rec_yd": 0.46
    },
    "team": "JAX",
-   "updatedAt": 1795208463118,
+   "updatedAt": 1795231854299,
    "week": 11
   },
   {
@@ -2251,10 +2251,10 @@
     "rec_fd": 2.79,
     "rec_td": 0.1,
     "rec_tgt": 3.78,
-    "rec_yd": 27.87
+    "rec_yd": 27.85
    },
    "team": "SF",
-   "updatedAt": 1795208463225,
+   "updatedAt": 1795231854416,
    "week": 11
   },
   {
@@ -2269,9 +2269,9 @@
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 11.46,
-    "pts_ppr": 13.31,
-    "pts_std": 9.62,
+    "pts_half_ppr": 11.45,
+    "pts_ppr": 13.3,
+    "pts_std": 9.61,
     "rec": 3.69,
     "rec_0_4": 0.74,
     "rec_10_19": 1.11,
@@ -2283,10 +2283,10 @@
     "rec_fd": 7.14,
     "rec_td": 0.41,
     "rec_tgt": 6.3,
-    "rec_yd": 71.43
+    "rec_yd": 71.38
    },
    "team": "SF",
-   "updatedAt": 1795208463228,
+   "updatedAt": 1795231854413,
    "week": 11
   },
   {
@@ -2303,7 +2303,7 @@
     "gp": 1.0,
     "pts_half_ppr": 14.75,
     "pts_ppr": 15.43,
-    "pts_std": 14.07,
+    "pts_std": 14.08,
     "rec": 1.36,
     "rec_0_4": 0.27,
     "rec_10_19": 0.41,
@@ -2318,13 +2318,13 @@
     "rec_yd": 7.77,
     "rush_2pt": 0.05,
     "rush_40p": 0.17,
-    "rush_att": 17.56,
-    "rush_fd": 7.6,
+    "rush_att": 17.57,
+    "rush_fd": 7.61,
     "rush_td": 0.9,
-    "rush_yd": 76.05
+    "rush_yd": 76.09
    },
    "team": "BAL",
-   "updatedAt": 1795208462698,
+   "updatedAt": 1795231853895,
    "week": 11
   },
   {
@@ -2362,7 +2362,7 @@
     "rush_yd": 0.47
    },
    "team": "TB",
-   "updatedAt": 1795208463005,
+   "updatedAt": 1795231854208,
    "week": 11
   },
   {
@@ -2400,7 +2400,7 @@
     "rush_yd": 24.28
    },
    "team": "KC",
-   "updatedAt": 1795208463000,
+   "updatedAt": 1795231854207,
    "week": 11
   },
   {
@@ -2432,7 +2432,7 @@
     "rec_yd": 24.54
    },
    "team": "DEN",
-   "updatedAt": 1795208463117,
+   "updatedAt": 1795231854327,
    "week": 11
   },
   {
@@ -2449,7 +2449,7 @@
     "gp": 1.0,
     "pts_half_ppr": 7.58,
     "pts_ppr": 8.72,
-    "pts_std": 6.43,
+    "pts_std": 6.44,
     "rec": 2.29,
     "rec_0_4": 0.46,
     "rec_10_19": 0.69,
@@ -2461,16 +2461,16 @@
     "rec_fd": 1.37,
     "rec_td": 0.11,
     "rec_tgt": 2.88,
-    "rec_yd": 13.7,
+    "rec_yd": 13.69,
     "rush_2pt": 0.01,
     "rush_40p": 0.1,
     "rush_att": 10.16,
     "rush_fd": 3.68,
     "rush_td": 0.13,
-    "rush_yd": 36.8
+    "rush_yd": 36.83
    },
    "team": "MIN",
-   "updatedAt": 1795208463124,
+   "updatedAt": 1795231854309,
    "week": 11
   },
   {
@@ -2480,7 +2480,7 @@
    "playerId": "5012",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 3.63,
+    "bonus_rec_te": 3.62,
     "def_fum_td": 0.0,
     "fum": 0.04,
     "fum_lost": 0.02,
@@ -2488,18 +2488,18 @@
     "pts_half_ppr": 5.58,
     "pts_ppr": 7.39,
     "pts_std": 3.77,
-    "rec": 3.63,
-    "rec_0_4": 0.73,
+    "rec": 3.62,
+    "rec_0_4": 0.72,
     "rec_10_19": 1.09,
-    "rec_20_29": 0.73,
+    "rec_20_29": 0.72,
     "rec_2pt": 0.01,
     "rec_30_39": 0.36,
     "rec_40p": 0.36,
-    "rec_5_9": 0.73,
+    "rec_5_9": 0.72,
     "rec_fd": 2.56,
     "rec_td": 0.18,
     "rec_tgt": 5.22,
-    "rec_yd": 25.57,
+    "rec_yd": 25.56,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.2,
@@ -2508,7 +2508,7 @@
     "rush_yd": 0.86
    },
    "team": "BAL",
-   "updatedAt": 1795208462737,
+   "updatedAt": 1795231853927,
    "week": 11
   },
   {
@@ -2544,7 +2544,7 @@
     "rush_yd": 0.09
    },
    "team": "NYJ",
-   "updatedAt": 1795208463208,
+   "updatedAt": 1795231854390,
    "week": 11
   },
   {
@@ -2582,7 +2582,7 @@
     "rush_yd": 1.03
    },
    "team": "DAL",
-   "updatedAt": 1795208462905,
+   "updatedAt": 1795231854107,
    "week": 11
   },
   {
@@ -2620,7 +2620,7 @@
     "rush_yd": 32.54
    },
    "team": "DEN",
-   "updatedAt": 1795208463094,
+   "updatedAt": 1795231854305,
    "week": 11
   },
   {
@@ -2630,31 +2630,31 @@
    "playerId": "6819",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 1.46,
+    "bonus_rec_wr": 1.45,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 3.29,
-    "pts_ppr": 4.02,
-    "pts_std": 2.57,
-    "rec": 1.46,
+    "pts_half_ppr": 3.27,
+    "pts_ppr": 4.0,
+    "pts_std": 2.55,
+    "rec": 1.45,
     "rec_0_4": 0.29,
-    "rec_10_19": 0.44,
+    "rec_10_19": 0.43,
     "rec_20_29": 0.29,
     "rec_2pt": 0.01,
-    "rec_30_39": 0.15,
-    "rec_40p": 0.15,
+    "rec_30_39": 0.14,
+    "rec_40p": 0.14,
     "rec_5_9": 0.29,
-    "rec_fd": 1.85,
+    "rec_fd": 1.84,
     "rec_td": 0.12,
-    "rec_tgt": 2.47,
-    "rec_yd": 18.51,
+    "rec_tgt": 2.45,
+    "rec_yd": 18.43,
     "rush_2pt": 0.0,
     "rush_40p": 0.0
    },
    "team": "PIT",
-   "updatedAt": 1795208463033,
+   "updatedAt": 1795231854231,
    "week": 11
   },
   {
@@ -2696,7 +2696,7 @@
     "rush_yd": 0.13
    },
    "team": "ARI",
-   "updatedAt": 1795208462926,
+   "updatedAt": 1795231854128,
    "week": 11
   },
   {
@@ -2725,7 +2725,7 @@
     "xpmiss": 0.13
    },
    "team": "BUF",
-   "updatedAt": 1795208462747,
+   "updatedAt": 1795231853943,
    "week": 11
   },
   {
@@ -2737,9 +2737,9 @@
    "stats": {
     "bonus_rec_rb": 0.67,
     "gp": 1.0,
-    "pts_half_ppr": 2.38,
-    "pts_ppr": 2.72,
-    "pts_std": 2.05,
+    "pts_half_ppr": 2.43,
+    "pts_ppr": 2.76,
+    "pts_std": 2.1,
     "rec": 0.67,
     "rec_0_4": 0.13,
     "rec_10_19": 0.2,
@@ -2748,16 +2748,16 @@
     "rec_40p": 0.07,
     "rec_5_9": 0.13,
     "rec_fd": 0.4,
-    "rec_td": 0.03,
+    "rec_td": 0.04,
     "rec_tgt": 0.87,
-    "rec_yd": 4.05,
-    "rush_att": 3.23,
-    "rush_fd": 1.12,
-    "rush_td": 0.05,
-    "rush_yd": 11.21
+    "rec_yd": 4.04,
+    "rush_att": 3.25,
+    "rush_fd": 1.13,
+    "rush_td": 0.06,
+    "rush_yd": 11.34
    },
    "team": "PHI",
-   "updatedAt": 1795208462928,
+   "updatedAt": 1795231854123,
    "week": 11
   },
   {
@@ -2795,7 +2795,7 @@
     "rush_yd": 80.4
    },
    "team": "DAL",
-   "updatedAt": 1795208462893,
+   "updatedAt": 1795231854093,
    "week": 11
   },
   {
@@ -2805,15 +2805,15 @@
    "playerId": "7600",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 2.47,
+    "bonus_rec_te": 2.46,
     "def_fum_td": 0.0,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 6.18,
-    "pts_ppr": 7.42,
-    "pts_std": 4.95,
-    "rec": 2.47,
+    "pts_half_ppr": 6.13,
+    "pts_ppr": 7.36,
+    "pts_std": 4.9,
+    "rec": 2.46,
     "rec_0_4": 0.49,
     "rec_10_19": 0.74,
     "rec_20_29": 0.49,
@@ -2821,13 +2821,13 @@
     "rec_30_39": 0.25,
     "rec_40p": 0.25,
     "rec_5_9": 0.49,
-    "rec_fd": 2.58,
+    "rec_fd": 2.57,
     "rec_td": 0.39,
-    "rec_tgt": 3.51,
-    "rec_yd": 25.81
+    "rec_tgt": 3.5,
+    "rec_yd": 25.68
    },
    "team": "PIT",
-   "updatedAt": 1795208463051,
+   "updatedAt": 1795231854247,
    "week": 11
   },
   {
@@ -2839,7 +2839,7 @@
    "stats": {
     "bonus_rec_wr": 0.08,
     "gp": 1.0,
-    "pts_half_ppr": 0.21,
+    "pts_half_ppr": 0.2,
     "pts_ppr": 0.24,
     "pts_std": 0.17,
     "rec": 0.08,
@@ -2855,7 +2855,7 @@
     "rec_yd": 0.93
    },
    "team": "PIT",
-   "updatedAt": 1795208463037,
+   "updatedAt": 1795231854234,
    "week": 11
   },
   {
@@ -2883,7 +2883,7 @@
     "rec_yd": 17.03
    },
    "team": "ARI",
-   "updatedAt": 1795208462929,
+   "updatedAt": 1795231854130,
    "week": 11
   },
   {
@@ -2898,9 +2898,9 @@
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 0.65,
-    "pts_ppr": 0.79,
-    "pts_std": 0.51,
+    "pts_half_ppr": 0.64,
+    "pts_ppr": 0.78,
+    "pts_std": 0.5,
     "rec": 0.28,
     "rec_0_4": 0.06,
     "rec_10_19": 0.08,
@@ -2909,17 +2909,17 @@
     "rec_30_39": 0.03,
     "rec_40p": 0.03,
     "rec_5_9": 0.06,
-    "rec_fd": 0.39,
+    "rec_fd": 0.38,
     "rec_td": 0.02,
     "rec_tgt": 0.58,
-    "rec_yd": 3.85
+    "rec_yd": 3.83
    },
    "team": "MIA",
-   "updatedAt": 1795208462843,
+   "updatedAt": 1795231854012,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Isaiah Likely",
    "opponent": "JAX",
    "playerId": "8131",
@@ -2930,9 +2930,9 @@
     "fum": 0.05,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 12.24,
-    "pts_ppr": 14.88,
-    "pts_std": 9.6,
+    "pts_half_ppr": 12.25,
+    "pts_ppr": 14.89,
+    "pts_std": 9.61,
     "rec": 5.28,
     "rec_0_4": 1.06,
     "rec_10_19": 1.58,
@@ -2944,10 +2944,10 @@
     "rec_fd": 5.85,
     "rec_td": 0.62,
     "rec_tgt": 7.29,
-    "rec_yd": 58.51
+    "rec_yd": 58.54
    },
    "team": "NYG",
-   "updatedAt": 1795208463222,
+   "updatedAt": 1795231854396,
    "week": 11
   },
   {
@@ -2979,7 +2979,7 @@
     "rec_yd": 2.31
    },
    "team": "NYJ",
-   "updatedAt": 1795208463200,
+   "updatedAt": 1795231854400,
    "week": 11
   },
   {
@@ -3020,7 +3020,7 @@
     "rush_yd": 0.02
    },
    "team": "CAR",
-   "updatedAt": 1795208462828,
+   "updatedAt": 1795231854014,
    "week": 11
   },
   {
@@ -3030,36 +3030,36 @@
    "playerId": "8228",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 2.69,
+    "bonus_rec_rb": 2.68,
     "def_fum_td": 0.0,
-    "def_kr_yd": 2.59,
+    "def_kr_yd": 2.58,
     "fum": 0.15,
     "fum_lost": 0.07,
     "gp": 1.0,
-    "pts_half_ppr": 13.39,
-    "pts_ppr": 14.73,
-    "pts_std": 12.04,
-    "rec": 2.69,
+    "pts_half_ppr": 13.4,
+    "pts_ppr": 14.74,
+    "pts_std": 12.05,
+    "rec": 2.68,
     "rec_0_4": 0.54,
-    "rec_10_19": 0.81,
+    "rec_10_19": 0.8,
     "rec_20_29": 0.54,
     "rec_2pt": 0.01,
     "rec_30_39": 0.27,
     "rec_40p": 0.27,
     "rec_5_9": 0.54,
-    "rec_fd": 2.43,
-    "rec_td": 0.11,
-    "rec_tgt": 3.54,
-    "rec_yd": 24.34,
+    "rec_fd": 2.42,
+    "rec_td": 0.1,
+    "rec_tgt": 3.53,
+    "rec_yd": 24.23,
     "rush_2pt": 0.01,
     "rush_40p": 0.15,
-    "rush_att": 15.28,
-    "rush_fd": 8.21,
+    "rush_att": 15.36,
+    "rush_fd": 8.25,
     "rush_td": 0.14,
-    "rush_yd": 82.12
+    "rush_yd": 82.54
    },
    "team": "PIT",
-   "updatedAt": 1795208463019,
+   "updatedAt": 1795231854215,
    "week": 11
   },
   {
@@ -3097,7 +3097,7 @@
     "rush_yd": 85.66
    },
    "team": "DET",
-   "updatedAt": 1795208462903,
+   "updatedAt": 1795231854094,
    "week": 11
   },
   {
@@ -3107,7 +3107,7 @@
    "playerId": "9480",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 3.63,
+    "bonus_rec_te": 3.64,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.02,
@@ -3115,7 +3115,7 @@
     "pts_half_ppr": 7.24,
     "pts_ppr": 9.06,
     "pts_std": 5.42,
-    "rec": 3.63,
+    "rec": 3.64,
     "rec_0_4": 0.73,
     "rec_10_19": 1.09,
     "rec_20_29": 0.73,
@@ -3126,10 +3126,10 @@
     "rec_fd": 4.0,
     "rec_td": 0.24,
     "rec_tgt": 4.67,
-    "rec_yd": 40.01
+    "rec_yd": 40.03
    },
    "team": "JAX",
-   "updatedAt": 1795208463127,
+   "updatedAt": 1795231854307,
    "week": 11
   },
   {
@@ -3161,7 +3161,7 @@
     "rec_yd": 38.29
    },
    "team": "LV",
-   "updatedAt": 1795208463212,
+   "updatedAt": 1795231854424,
    "week": 11
   },
   {
@@ -3189,11 +3189,11 @@
     "pts_std": 9.01,
     "sack": 2.97,
     "tkl_loss": 5.56,
-    "yds_allow": 265.78,
+    "yds_allow": 265.54,
     "yds_allow_200_299": 1.0
    },
    "team": "BUF",
-   "updatedAt": 1795208462690,
+   "updatedAt": 1795231853883,
    "week": 11
   },
   {
@@ -3227,7 +3227,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "DAL",
-   "updatedAt": 1795208462885,
+   "updatedAt": 1795231854085,
    "week": 11
   },
   {
@@ -3258,7 +3258,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "LV",
-   "updatedAt": 1795208463181,
+   "updatedAt": 1795231854394,
    "week": 11
   },
   {
@@ -3286,11 +3286,11 @@
     "pts_std": 6.61,
     "sack": 2.49,
     "tkl_loss": 4.43,
-    "yds_allow": 324.53,
+    "yds_allow": 324.45,
     "yds_allow_300_349": 1.0
    },
    "team": "SF",
-   "updatedAt": 1795208463206,
+   "updatedAt": 1795231854392,
    "week": 11
   },
   {
@@ -3332,7 +3332,7 @@
     "rush_yd": 0.63
    },
    "team": "LAC",
-   "updatedAt": 1795208463089,
+   "updatedAt": 1795231854288,
    "week": 11
   },
   {
@@ -3342,29 +3342,29 @@
    "playerId": "10236",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 3.4,
+    "bonus_rec_te": 3.37,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 7.88,
-    "pts_ppr": 9.57,
-    "pts_std": 6.18,
-    "rec": 3.4,
-    "rec_0_4": 0.68,
-    "rec_10_19": 1.02,
-    "rec_20_29": 0.68,
+    "pts_half_ppr": 7.82,
+    "pts_ppr": 9.5,
+    "pts_std": 6.14,
+    "rec": 3.37,
+    "rec_0_4": 0.67,
+    "rec_10_19": 1.01,
+    "rec_20_29": 0.67,
     "rec_2pt": 0.01,
     "rec_30_39": 0.34,
     "rec_40p": 0.34,
-    "rec_5_9": 0.68,
-    "rec_fd": 4.77,
+    "rec_5_9": 0.67,
+    "rec_fd": 4.74,
     "rec_td": 0.23,
-    "rec_tgt": 4.13,
-    "rec_yd": 47.7
+    "rec_tgt": 4.09,
+    "rec_yd": 47.42
    },
    "team": "BUF",
-   "updatedAt": 1795208462735,
+   "updatedAt": 1795231853933,
    "week": 11
   },
   {
@@ -3396,7 +3396,7 @@
     "rec_yd": 15.69
    },
    "team": "DAL",
-   "updatedAt": 1795208462909,
+   "updatedAt": 1795231854112,
    "week": 11
   },
   {
@@ -3428,7 +3428,7 @@
     "rec_yd": 35.74
    },
    "team": "DAL",
-   "updatedAt": 1795208462912,
+   "updatedAt": 1795231854116,
    "week": 11
   },
   {
@@ -3467,7 +3467,7 @@
     "rush_yd": 0.18
    },
    "team": "NYJ",
-   "updatedAt": 1795208463187,
+   "updatedAt": 1795231854388,
    "week": 11
   },
   {
@@ -3506,7 +3506,7 @@
     "rush_yd": 22.66
    },
    "team": "LAC",
-   "updatedAt": 1795208463081,
+   "updatedAt": 1795231854279,
    "week": 11
   },
   {
@@ -3534,7 +3534,7 @@
     "rec_yd": 0.92
    },
    "team": "MIN",
-   "updatedAt": 1795208463130,
+   "updatedAt": 1795231854314,
    "week": 11
   },
   {
@@ -3575,7 +3575,7 @@
     "rush_yd": 0.25
    },
    "team": "TB",
-   "updatedAt": 1795208463001,
+   "updatedAt": 1795231854198,
    "week": 11
   },
   {
@@ -3603,7 +3603,7 @@
     "rec_yd": 0.48
    },
    "team": "TEN",
-   "updatedAt": 1795208463010,
+   "updatedAt": 1795231854212,
    "week": 11
   },
   {
@@ -3613,15 +3613,15 @@
    "playerId": "12495",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 1.5,
+    "bonus_rec_rb": 1.49,
     "def_fum_td": 0.0,
     "fum": 0.12,
     "fum_lost": 0.05,
     "gp": 1.0,
-    "pts_half_ppr": 10.31,
-    "pts_ppr": 11.06,
-    "pts_std": 9.56,
-    "rec": 1.5,
+    "pts_half_ppr": 10.39,
+    "pts_ppr": 11.14,
+    "pts_std": 9.65,
+    "rec": 1.49,
     "rec_0_4": 0.3,
     "rec_10_19": 0.45,
     "rec_20_29": 0.3,
@@ -3631,17 +3631,17 @@
     "rec_5_9": 0.3,
     "rec_fd": 0.77,
     "rec_td": 0.06,
-    "rec_tgt": 2.04,
-    "rec_yd": 7.7,
+    "rec_tgt": 2.02,
+    "rec_yd": 7.66,
     "rush_2pt": 0.03,
     "rush_40p": 0.12,
-    "rush_att": 14.57,
-    "rush_fd": 5.95,
-    "rush_td": 0.41,
-    "rush_yd": 59.52
+    "rush_att": 14.69,
+    "rush_fd": 6.01,
+    "rush_td": 0.42,
+    "rush_yd": 60.06
    },
    "team": "MIA",
-   "updatedAt": 1795208462826,
+   "updatedAt": 1795231854007,
    "week": 11
   },
   {
@@ -3682,7 +3682,7 @@
     "rush_yd": 0.03
    },
    "team": "KC",
-   "updatedAt": 1795208463013,
+   "updatedAt": 1795231854220,
    "week": 11
   },
   {
@@ -3720,7 +3720,7 @@
     "rush_yd": 0.6
    },
    "team": "LAC",
-   "updatedAt": 1795208463086,
+   "updatedAt": 1795231854284,
    "week": 11
   },
   {
@@ -3758,7 +3758,7 @@
     "rush_yd": 15.53
    },
    "team": "TEN",
-   "updatedAt": 1795208462976,
+   "updatedAt": 1795231854178,
    "week": 11
   },
   {
@@ -3796,7 +3796,7 @@
     "rush_yd": 38.54
    },
    "team": "LV",
-   "updatedAt": 1795208463190,
+   "updatedAt": 1795231854401,
    "week": 11
   },
   {
@@ -3837,7 +3837,7 @@
     "rush_yd": 1.26
    },
    "team": "CAR",
-   "updatedAt": 1795208462816,
+   "updatedAt": 1795231853993,
    "week": 11
   },
   {
@@ -3852,9 +3852,9 @@
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 0.73,
-    "pts_ppr": 0.9,
-    "pts_std": 0.56,
+    "pts_half_ppr": 0.72,
+    "pts_ppr": 0.89,
+    "pts_std": 0.55,
     "rec": 0.34,
     "rec_0_4": 0.07,
     "rec_10_19": 0.1,
@@ -3865,11 +3865,11 @@
     "rec_5_9": 0.07,
     "rec_fd": 0.39,
     "rec_td": 0.03,
-    "rec_tgt": 0.47,
-    "rec_yd": 3.93
+    "rec_tgt": 0.46,
+    "rec_yd": 3.91
    },
    "team": "BUF",
-   "updatedAt": 1795208462744,
+   "updatedAt": 1795231853941,
    "week": 11
   },
   {
@@ -3902,7 +3902,7 @@
     "rec_yd": 1.33
    },
    "team": "LAC",
-   "updatedAt": 1795208463094,
+   "updatedAt": 1795231854293,
    "week": 11
   },
   {
@@ -3934,7 +3934,7 @@
     "rec_yd": 4.33
    },
    "team": "MIN",
-   "updatedAt": 1795208463141,
+   "updatedAt": 1795231854326,
    "week": 11
   },
   {
@@ -3966,7 +3966,7 @@
     "rec_yd": 10.63
    },
    "team": "BAL",
-   "updatedAt": 1795208462735,
+   "updatedAt": 1795231853925,
    "week": 11
   },
   {
@@ -3976,38 +3976,38 @@
    "playerId": "13294",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 2.43,
+    "bonus_rec_wr": 2.42,
     "def_fum_td": 0.0,
-    "def_kr_yd": 6.76,
+    "def_kr_yd": 6.8,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
     "pr": 0.28,
-    "pr_yd": 2.63,
-    "pts_half_ppr": 4.27,
-    "pts_ppr": 5.48,
-    "pts_std": 3.05,
-    "rec": 2.43,
-    "rec_0_4": 0.49,
+    "pr_yd": 2.64,
+    "pts_half_ppr": 4.29,
+    "pts_ppr": 5.5,
+    "pts_std": 3.08,
+    "rec": 2.42,
+    "rec_0_4": 0.48,
     "rec_10_19": 0.73,
-    "rec_20_29": 0.49,
+    "rec_20_29": 0.48,
     "rec_2pt": 0.01,
     "rec_30_39": 0.24,
     "rec_40p": 0.24,
-    "rec_5_9": 0.49,
+    "rec_5_9": 0.48,
     "rec_fd": 2.48,
     "rec_td": 0.09,
-    "rec_tgt": 3.7,
-    "rec_yd": 24.83,
+    "rec_tgt": 3.68,
+    "rec_yd": 24.78,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
-    "rush_att": 0.09,
+    "rush_att": 0.1,
     "rush_fd": 0.03,
     "rush_td": 0.0,
     "rush_yd": 0.29
    },
    "team": "PHI",
-   "updatedAt": 1795208462941,
+   "updatedAt": 1795231854131,
    "week": 11
   },
   {
@@ -4017,33 +4017,33 @@
    "playerId": "13296",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 3.14,
+    "bonus_rec_wr": 3.12,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 7.3,
-    "pts_ppr": 8.87,
-    "pts_std": 5.73,
-    "rec": 3.14,
-    "rec_0_4": 0.63,
+    "pts_half_ppr": 7.26,
+    "pts_ppr": 8.82,
+    "pts_std": 5.7,
+    "rec": 3.12,
+    "rec_0_4": 0.62,
     "rec_10_19": 0.94,
-    "rec_20_29": 0.63,
+    "rec_20_29": 0.62,
     "rec_2pt": 0.01,
     "rec_30_39": 0.31,
     "rec_40p": 0.31,
-    "rec_5_9": 0.63,
-    "rec_fd": 4.57,
+    "rec_5_9": 0.62,
+    "rec_fd": 4.54,
     "rec_td": 0.19,
-    "rec_tgt": 5.53,
-    "rec_yd": 45.7,
+    "rec_tgt": 5.49,
+    "rec_yd": 45.41,
     "rush_att": 0.05,
     "rush_fd": 0.02,
     "rush_td": 0.0,
     "rush_yd": 0.2
    },
    "team": "MIA",
-   "updatedAt": 1795208462838,
+   "updatedAt": 1795231854040,
    "week": 11
   },
   {
@@ -4053,15 +4053,15 @@
    "playerId": "13322",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 1.12,
+    "bonus_rec_te": 1.11,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 2.13,
-    "pts_ppr": 2.69,
-    "pts_std": 1.58,
-    "rec": 1.12,
+    "pts_half_ppr": 2.12,
+    "pts_ppr": 2.68,
+    "pts_std": 1.57,
+    "rec": 1.11,
     "rec_0_4": 0.22,
     "rec_10_19": 0.33,
     "rec_20_29": 0.22,
@@ -4069,13 +4069,13 @@
     "rec_30_39": 0.11,
     "rec_40p": 0.11,
     "rec_5_9": 0.22,
-    "rec_fd": 1.23,
+    "rec_fd": 1.22,
     "rec_td": 0.06,
-    "rec_tgt": 1.51,
-    "rec_yd": 12.28
+    "rec_tgt": 1.5,
+    "rec_yd": 12.23
    },
    "team": "CHI",
-   "updatedAt": 1795208462733,
+   "updatedAt": 1795231853929,
    "week": 11
   },
   {
@@ -4110,7 +4110,7 @@
     "rush_yd": 0.06
    },
    "team": "PIT",
-   "updatedAt": 1795208463114,
+   "updatedAt": 1795231854299,
    "week": 11
   },
   {
@@ -4143,10 +4143,10 @@
     "rec_fd": 0.35,
     "rec_td": 0.01,
     "rec_tgt": 0.34,
-    "rec_yd": 3.48
+    "rec_yd": 3.46
    },
    "team": "NO",
-   "updatedAt": 1795208462830,
+   "updatedAt": 1795231854037,
    "week": 11
   },
   {
@@ -4174,7 +4174,7 @@
     "rec_yd": 0.03
    },
    "team": "NYJ",
-   "updatedAt": 1795208463194,
+   "updatedAt": 1795231854386,
    "week": 11
   },
   {
@@ -4206,7 +4206,7 @@
     "rec_yd": 0.23
    },
    "team": "SF",
-   "updatedAt": 1795208463221,
+   "updatedAt": 1795231854409,
    "week": 11
   },
   {
@@ -4245,7 +4245,7 @@
     "rush_yd": 4.11
    },
    "team": "JAX",
-   "updatedAt": 1795208463099,
+   "updatedAt": 1795231854283,
    "week": 11
   },
   {
@@ -4262,28 +4262,28 @@
     "fum_lost": 0.18,
     "gp": 1.0,
     "pass_2pt": 0.07,
-    "pass_att": 32.83,
-    "pass_cmp": 20.53,
+    "pass_att": 32.81,
+    "pass_cmp": 20.52,
     "pass_cmp_40p": 0.4,
     "pass_fd": 18.05,
-    "pass_inc": 12.3,
+    "pass_inc": 12.29,
     "pass_int": 0.57,
     "pass_int_td": 0.0,
     "pass_sack": 2.52,
     "pass_td": 0.93,
-    "pass_yd": 180.53,
-    "pts_half_ppr": 11.95,
-    "pts_ppr": 11.95,
-    "pts_std": 11.95,
+    "pass_yd": 180.45,
+    "pts_half_ppr": 11.94,
+    "pts_ppr": 11.94,
+    "pts_std": 11.94,
     "rush_2pt": 0.0,
     "rush_40p": 0.03,
     "rush_att": 2.91,
     "rush_fd": 1.23,
     "rush_td": 0.1,
-    "rush_yd": 12.28
+    "rush_yd": 12.29
    },
    "team": "BAL",
-   "updatedAt": 1795208462693,
+   "updatedAt": 1795231853887,
    "week": 11
   },
   {
@@ -4293,26 +4293,26 @@
    "playerId": "5846",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 3.03,
+    "bonus_rec_wr": 3.02,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 8.18,
-    "pts_ppr": 9.69,
-    "pts_std": 6.66,
-    "rec": 3.03,
-    "rec_0_4": 0.61,
+    "pts_half_ppr": 8.12,
+    "pts_ppr": 9.63,
+    "pts_std": 6.61,
+    "rec": 3.02,
+    "rec_0_4": 0.6,
     "rec_10_19": 0.91,
-    "rec_20_29": 0.61,
+    "rec_20_29": 0.6,
     "rec_2pt": 0.01,
     "rec_30_39": 0.3,
     "rec_40p": 0.3,
-    "rec_5_9": 0.61,
-    "rec_fd": 4.67,
+    "rec_5_9": 0.6,
+    "rec_fd": 4.65,
     "rec_td": 0.31,
-    "rec_tgt": 6.47,
-    "rec_yd": 46.73,
+    "rec_tgt": 6.44,
+    "rec_yd": 46.51,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.15,
@@ -4321,11 +4321,11 @@
     "rush_yd": 0.75
    },
    "team": "PIT",
-   "updatedAt": 1795208463035,
+   "updatedAt": 1795231854228,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Jakobi Meyers",
    "opponent": "NYG",
    "playerId": "5947",
@@ -4350,16 +4350,16 @@
     "rec_fd": 4.17,
     "rec_td": 0.25,
     "rec_tgt": 4.64,
-    "rec_yd": 41.73,
+    "rec_yd": 41.75,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.09,
-    "rush_fd": 0.05,
+    "rush_fd": 0.04,
     "rush_td": 0.0,
     "rush_yd": 0.45
    },
    "team": "JAX",
-   "updatedAt": 1795208463120,
+   "updatedAt": 1795231854301,
    "week": 11
   },
   {
@@ -4392,7 +4392,7 @@
     "rec_yd": 6.48
    },
    "team": "LV",
-   "updatedAt": 1795208463198,
+   "updatedAt": 1795231854412,
    "week": 11
   },
   {
@@ -4421,10 +4421,10 @@
     "rec_fd": 1.38,
     "rec_td": 0.12,
     "rec_tgt": 2.15,
-    "rec_yd": 13.77
+    "rec_yd": 13.76
    },
    "team": "MIN",
-   "updatedAt": 1795208463134,
+   "updatedAt": 1795231854319,
    "week": 11
   },
   {
@@ -4441,7 +4441,7 @@
     "gp": 1.0,
     "pts_half_ppr": 2.42,
     "pts_ppr": 2.97,
-    "pts_std": 1.87,
+    "pts_std": 1.88,
     "rec": 1.09,
     "rec_0_4": 0.22,
     "rec_10_19": 0.33,
@@ -4453,7 +4453,7 @@
     "rec_fd": 1.69,
     "rec_td": 0.03,
     "rec_tgt": 2.19,
-    "rec_yd": 16.93,
+    "rec_yd": 16.94,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.01,
@@ -4462,7 +4462,7 @@
     "rush_yd": 0.06
    },
    "team": "NYG",
-   "updatedAt": 1795208463205,
+   "updatedAt": 1795231854384,
    "week": 11
   },
   {
@@ -4494,7 +4494,7 @@
     "rec_yd": 1.77
    },
    "team": "JAX",
-   "updatedAt": 1795208463122,
+   "updatedAt": 1795231854303,
    "week": 11
   },
   {
@@ -4533,7 +4533,7 @@
     "rush_yd": 25.03
    },
    "team": "TB",
-   "updatedAt": 1795208462996,
+   "updatedAt": 1795231854188,
    "week": 11
   },
   {
@@ -4565,7 +4565,7 @@
     "rec_yd": 0.81
    },
    "team": "TEN",
-   "updatedAt": 1795208463006,
+   "updatedAt": 1795231854207,
    "week": 11
   },
   {
@@ -4597,7 +4597,7 @@
     "rec_yd": 6.44
    },
    "team": "DET",
-   "updatedAt": 1795208462927,
+   "updatedAt": 1795231854118,
    "week": 11
   },
   {
@@ -4629,7 +4629,7 @@
     "rec_yd": 29.77
    },
    "team": "TB",
-   "updatedAt": 1795208463016,
+   "updatedAt": 1795231854211,
    "week": 11
   },
   {
@@ -4666,7 +4666,7 @@
     "rush_yd": 26.96
    },
    "team": "ARI",
-   "updatedAt": 1795208462917,
+   "updatedAt": 1795231854122,
    "week": 11
   },
   {
@@ -4676,15 +4676,15 @@
    "playerId": "8138",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 1.41,
+    "bonus_rec_rb": 1.39,
     "def_fum_td": 0.0,
     "fum": 0.23,
     "fum_lost": 0.1,
     "gp": 1.0,
-    "pts_half_ppr": 18.34,
-    "pts_ppr": 19.04,
-    "pts_std": 17.64,
-    "rec": 1.41,
+    "pts_half_ppr": 18.46,
+    "pts_ppr": 19.16,
+    "pts_std": 17.77,
+    "rec": 1.39,
     "rec_0_4": 0.28,
     "rec_10_19": 0.42,
     "rec_20_29": 0.28,
@@ -4692,19 +4692,19 @@
     "rec_30_39": 0.14,
     "rec_40p": 0.14,
     "rec_5_9": 0.28,
-    "rec_fd": 1.21,
+    "rec_fd": 1.2,
     "rec_td": 0.09,
-    "rec_tgt": 1.71,
-    "rec_yd": 12.12,
+    "rec_tgt": 1.69,
+    "rec_yd": 12.05,
     "rush_2pt": 0.07,
     "rush_40p": 0.24,
-    "rush_att": 21.3,
-    "rush_fd": 11.09,
+    "rush_att": 21.45,
+    "rush_fd": 11.19,
     "rush_td": 0.81,
-    "rush_yd": 110.86
+    "rush_yd": 111.93
    },
    "team": "BUF",
-   "updatedAt": 1795208462698,
+   "updatedAt": 1795231853892,
    "week": 11
   },
   {
@@ -4736,7 +4736,7 @@
     "rec_yd": 10.25
    },
    "team": "TEN",
-   "updatedAt": 1795208463003,
+   "updatedAt": 1795231854205,
    "week": 11
   },
   {
@@ -4770,7 +4770,7 @@
     "rush_40p": 0.0
    },
    "team": "DET",
-   "updatedAt": 1795208462917,
+   "updatedAt": 1795231854110,
    "week": 11
   },
   {
@@ -4812,7 +4812,7 @@
     "rush_yd": 3.7
    },
    "team": "DAL",
-   "updatedAt": 1795208462895,
+   "updatedAt": 1795231854095,
    "week": 11
   },
   {
@@ -4844,7 +4844,7 @@
     "rush_yd": 1.9
    },
    "team": "ARI",
-   "updatedAt": 1795208462919,
+   "updatedAt": 1795231854125,
    "week": 11
   },
   {
@@ -4856,28 +4856,28 @@
    "stats": {
     "blk_kick": 0.04,
     "def_fum_td": 0.09,
-    "def_kr_yd": 64.72,
-    "def_pr_yd": 77.66,
+    "def_kr_yd": 65.04,
+    "def_pr_yd": 78.05,
     "def_td": 0.17,
-    "ff": 0.6,
+    "ff": 0.61,
     "fum_rec": 0.43,
     "gp": 1.0,
     "int": 0.65,
     "pass_int_td": 0.09,
-    "pr_yd": 12.94,
-    "pts_allow": 20.75,
+    "pr_yd": 13.01,
+    "pts_allow": 20.5,
     "pts_allow_14_20": 1.0,
-    "pts_half_ppr": 6.95,
-    "pts_ppr": 6.95,
-    "pts_std": 6.95,
-    "sack": 1.98,
+    "pts_half_ppr": 6.98,
+    "pts_ppr": 6.98,
+    "pts_std": 6.98,
+    "sack": 1.99,
     "safe": 0.04,
-    "tkl_loss": 3.8,
-    "yds_allow": 334.75,
+    "tkl_loss": 3.82,
+    "yds_allow": 334.44,
     "yds_allow_300_349": 1.0
    },
    "team": "PHI",
-   "updatedAt": 1795208462921,
+   "updatedAt": 1795231854116,
    "week": 11
   },
   {
@@ -4889,27 +4889,27 @@
    "stats": {
     "blk_kick": 0.06,
     "def_fum_td": 0.06,
-    "def_kr_yd": 106.76,
-    "def_pr_yd": 123.58,
+    "def_kr_yd": 106.27,
+    "def_pr_yd": 123.02,
     "def_td": 0.13,
-    "ff": 0.78,
+    "ff": 0.77,
     "fum_rec": 0.58,
     "gp": 1.0,
     "int": 0.84,
     "pass_int_td": 0.06,
-    "pr_yd": 16.82,
-    "pts_allow": 16.75,
+    "pr_yd": 16.75,
+    "pts_allow": 17.0,
     "pts_allow_14_20": 1.0,
-    "pts_half_ppr": 8.25,
-    "pts_ppr": 8.25,
-    "pts_std": 8.25,
-    "sack": 2.72,
-    "tkl_loss": 4.98,
-    "yds_allow": 303.28,
+    "pts_half_ppr": 8.21,
+    "pts_ppr": 8.21,
+    "pts_std": 8.21,
+    "sack": 2.71,
+    "tkl_loss": 4.96,
+    "yds_allow": 303.88,
     "yds_allow_300_349": 1.0
    },
    "team": "PIT",
-   "updatedAt": 1795208463012,
+   "updatedAt": 1795231854209,
    "week": 11
   },
   {
@@ -4937,7 +4937,7 @@
     "rec_yd": 0.43
    },
    "team": "SF",
-   "updatedAt": 1795208463239,
+   "updatedAt": 1795231854426,
    "week": 11
   },
   {
@@ -4947,15 +4947,15 @@
    "playerId": "11377",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 0.65,
+    "bonus_rec_wr": 0.64,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 1.78,
-    "pts_ppr": 2.1,
-    "pts_std": 1.46,
-    "rec": 0.65,
+    "pts_half_ppr": 1.77,
+    "pts_ppr": 2.09,
+    "pts_std": 1.45,
+    "rec": 0.64,
     "rec_0_4": 0.13,
     "rec_10_19": 0.19,
     "rec_20_29": 0.13,
@@ -4964,12 +4964,12 @@
     "rec_40p": 0.06,
     "rec_5_9": 0.13,
     "rec_fd": 1.12,
-    "rec_td": 0.06,
+    "rec_td": 0.05,
     "rec_tgt": 0.96,
-    "rec_yd": 11.24
+    "rec_yd": 11.17
    },
    "team": "BUF",
-   "updatedAt": 1795208462733,
+   "updatedAt": 1795231853931,
    "week": 11
   },
   {
@@ -5001,7 +5001,7 @@
     "rec_yd": 4.95
    },
    "team": "DEN",
-   "updatedAt": 1795208463121,
+   "updatedAt": 1795231854332,
    "week": 11
   },
   {
@@ -5018,28 +5018,28 @@
     "fum_lost": 0.16,
     "gp": 1.0,
     "pass_2pt": 0.05,
-    "pass_att": 29.13,
-    "pass_cmp": 18.83,
+    "pass_att": 28.97,
+    "pass_cmp": 18.73,
     "pass_cmp_40p": 0.33,
-    "pass_fd": 20.24,
-    "pass_inc": 10.3,
-    "pass_int": 0.67,
+    "pass_fd": 20.19,
+    "pass_inc": 10.24,
+    "pass_int": 0.66,
     "pass_int_td": 0.0,
     "pass_sack": 2.08,
-    "pass_td": 0.76,
-    "pass_yd": 202.37,
-    "pts_half_ppr": 11.91,
-    "pts_ppr": 11.91,
-    "pts_std": 11.91,
+    "pass_td": 0.8,
+    "pass_yd": 201.92,
+    "pts_half_ppr": 12.11,
+    "pts_ppr": 12.11,
+    "pts_std": 12.11,
     "rush_2pt": 0.0,
     "rush_40p": 0.03,
-    "rush_att": 3.04,
-    "rush_fd": 1.36,
+    "rush_att": 3.06,
+    "rush_fd": 1.37,
     "rush_td": 0.05,
-    "rush_yd": 13.59
+    "rush_yd": 13.75
    },
    "team": "PHI",
-   "updatedAt": 1795208462923,
+   "updatedAt": 1795231854119,
    "week": 11
   },
   {
@@ -5078,7 +5078,7 @@
     "rush_yd": 0.43
    },
    "team": "BAL",
-   "updatedAt": 1795208462718,
+   "updatedAt": 1795231853901,
    "week": 11
   },
   {
@@ -5117,7 +5117,7 @@
     "rush_yd": 40.58
    },
    "team": "NYJ",
-   "updatedAt": 1795208463180,
+   "updatedAt": 1795231854374,
    "week": 11
   },
   {
@@ -5155,7 +5155,7 @@
     "rush_yd": 0.25
    },
    "team": "BAL",
-   "updatedAt": 1795208462728,
+   "updatedAt": 1795231853918,
    "week": 11
   },
   {
@@ -5167,13 +5167,13 @@
    "stats": {
     "bonus_rec_wr": 0.93,
     "def_fum_td": 0.0,
-    "def_kr_yd": 4.18,
+    "def_kr_yd": 4.16,
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 2.71,
-    "pts_ppr": 3.18,
-    "pts_std": 2.25,
+    "pts_half_ppr": 2.69,
+    "pts_ppr": 3.15,
+    "pts_std": 2.23,
     "rec": 0.93,
     "rec_0_4": 0.19,
     "rec_10_19": 0.28,
@@ -5182,17 +5182,17 @@
     "rec_30_39": 0.09,
     "rec_40p": 0.09,
     "rec_5_9": 0.19,
-    "rec_fd": 1.35,
-    "rec_td": 0.15,
-    "rec_tgt": 1.85,
-    "rec_yd": 13.46,
+    "rec_fd": 1.34,
+    "rec_td": 0.14,
+    "rec_tgt": 1.84,
+    "rec_yd": 13.4,
     "rush_att": 0.03,
     "rush_fd": 0.01,
     "rush_td": 0.0,
-    "rush_yd": 0.11
+    "rush_yd": 0.12
    },
    "team": "PIT",
-   "updatedAt": 1795208463040,
+   "updatedAt": 1795231854238,
    "week": 11
   },
   {
@@ -5221,7 +5221,7 @@
     "xpmiss": 0.06
    },
    "team": "NO",
-   "updatedAt": 1795208462852,
+   "updatedAt": 1795231854057,
    "week": 11
   },
   {
@@ -5260,7 +5260,7 @@
     "rush_yd": 0.43
    },
    "team": "TB",
-   "updatedAt": 1795208463003,
+   "updatedAt": 1795231854201,
    "week": 11
   },
   {
@@ -5292,7 +5292,7 @@
     "rec_yd": 32.2
    },
    "team": "NYJ",
-   "updatedAt": 1795208463206,
+   "updatedAt": 1795231854398,
    "week": 11
   },
   {
@@ -5302,26 +5302,26 @@
    "playerId": "12517",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 4.35,
+    "bonus_rec_te": 4.32,
     "def_fum_td": 0.0,
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 8.87,
-    "pts_ppr": 11.05,
-    "pts_std": 6.7,
-    "rec": 4.35,
-    "rec_0_4": 0.87,
-    "rec_10_19": 1.31,
-    "rec_20_29": 0.87,
+    "pts_half_ppr": 8.82,
+    "pts_ppr": 10.99,
+    "pts_std": 6.66,
+    "rec": 4.32,
+    "rec_0_4": 0.86,
+    "rec_10_19": 1.3,
+    "rec_20_29": 0.86,
     "rec_2pt": 0.02,
-    "rec_30_39": 0.44,
-    "rec_40p": 0.44,
-    "rec_5_9": 0.87,
-    "rec_fd": 4.86,
+    "rec_30_39": 0.43,
+    "rec_40p": 0.43,
+    "rec_5_9": 0.86,
+    "rec_fd": 4.84,
     "rec_td": 0.3,
-    "rec_tgt": 6.14,
-    "rec_yd": 48.61,
+    "rec_tgt": 6.1,
+    "rec_yd": 48.39,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.06,
@@ -5330,7 +5330,7 @@
     "rush_yd": 0.25
    },
    "team": "CHI",
-   "updatedAt": 1795208462736,
+   "updatedAt": 1795231853932,
    "week": 11
   },
   {
@@ -5340,36 +5340,36 @@
    "playerId": "12519",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 5.18,
+    "bonus_rec_wr": 5.15,
     "def_fum_td": 0.0,
     "def_kr_yd": 11.05,
     "fum": 0.06,
     "fum_lost": 0.03,
     "gp": 1.0,
-    "pts_half_ppr": 12.81,
-    "pts_ppr": 15.4,
-    "pts_std": 10.23,
-    "rec": 5.18,
-    "rec_0_4": 1.04,
-    "rec_10_19": 1.55,
-    "rec_20_29": 1.04,
+    "pts_half_ppr": 12.75,
+    "pts_ppr": 15.33,
+    "pts_std": 10.18,
+    "rec": 5.15,
+    "rec_0_4": 1.03,
+    "rec_10_19": 1.54,
+    "rec_20_29": 1.03,
     "rec_2pt": 0.02,
-    "rec_30_39": 0.52,
-    "rec_40p": 0.52,
-    "rec_5_9": 1.04,
-    "rec_fd": 7.51,
+    "rec_30_39": 0.51,
+    "rec_40p": 0.51,
+    "rec_5_9": 1.03,
+    "rec_fd": 7.48,
     "rec_td": 0.35,
-    "rec_tgt": 6.83,
-    "rec_yd": 75.15,
+    "rec_tgt": 6.79,
+    "rec_yd": 74.81,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
     "rush_att": 0.84,
     "rush_fd": 0.41,
     "rush_td": 0.03,
-    "rush_yd": 4.08
+    "rush_yd": 4.11
    },
    "team": "CHI",
-   "updatedAt": 1795208462721,
+   "updatedAt": 1795231853900,
    "week": 11
   },
   {
@@ -5384,8 +5384,8 @@
     "fum": 0.05,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 12.19,
-    "pts_ppr": 14.67,
+    "pts_half_ppr": 12.18,
+    "pts_ppr": 14.66,
     "pts_std": 9.7,
     "rec": 4.97,
     "rec_0_4": 0.99,
@@ -5395,10 +5395,10 @@
     "rec_30_39": 0.5,
     "rec_40p": 0.5,
     "rec_5_9": 0.99,
-    "rec_fd": 7.77,
+    "rec_fd": 7.76,
     "rec_td": 0.32,
     "rec_tgt": 8.4,
-    "rec_yd": 77.66,
+    "rec_yd": 77.63,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.08,
@@ -5407,7 +5407,7 @@
     "rush_yd": 0.3
    },
    "team": "CAR",
-   "updatedAt": 1795208462825,
+   "updatedAt": 1795231854012,
    "week": 11
   },
   {
@@ -5436,7 +5436,7 @@
     "xpmiss": 0.06
    },
    "team": "CAR",
-   "updatedAt": 1795208462844,
+   "updatedAt": 1795231854034,
    "week": 11
   },
   {
@@ -5474,7 +5474,7 @@
     "rush_yd": 12.73
    },
    "team": "LV",
-   "updatedAt": 1795208463184,
+   "updatedAt": 1795231854396,
    "week": 11
   },
   {
@@ -5512,7 +5512,7 @@
     "rush_yd": 0.4
    },
    "team": "TB",
-   "updatedAt": 1795208463007,
+   "updatedAt": 1795231854205,
    "week": 11
   },
   {
@@ -5527,9 +5527,9 @@
     "fum": 0.07,
     "fum_lost": 0.03,
     "gp": 1.0,
-    "pts_half_ppr": 4.37,
-    "pts_ppr": 4.68,
-    "pts_std": 4.06,
+    "pts_half_ppr": 4.38,
+    "pts_ppr": 4.69,
+    "pts_std": 4.07,
     "rec": 0.62,
     "rec_0_4": 0.12,
     "rec_10_19": 0.19,
@@ -5540,17 +5540,17 @@
     "rec_5_9": 0.12,
     "rec_fd": 0.45,
     "rec_td": 0.03,
-    "rec_tgt": 0.95,
-    "rec_yd": 4.51,
+    "rec_tgt": 0.94,
+    "rec_yd": 4.5,
     "rush_2pt": 0.01,
     "rush_40p": 0.07,
     "rush_att": 6.62,
     "rush_fd": 2.76,
     "rush_td": 0.12,
-    "rush_yd": 27.6
+    "rush_yd": 27.62
    },
    "team": "SF",
-   "updatedAt": 1795208463219,
+   "updatedAt": 1795231854405,
    "week": 11
   },
   {
@@ -5578,7 +5578,7 @@
     "rec_yd": 7.04
    },
    "team": "ARI",
-   "updatedAt": 1795208462924,
+   "updatedAt": 1795231854135,
    "week": 11
   },
   {
@@ -5606,7 +5606,7 @@
     "rec_yd": 1.26
    },
    "team": "DAL",
-   "updatedAt": 1795208462900,
+   "updatedAt": 1795231854103,
    "week": 11
   },
   {
@@ -5635,7 +5635,7 @@
     "xpmiss": 0.07
    },
    "team": "NYG",
-   "updatedAt": 1795208463226,
+   "updatedAt": 1795231854405,
    "week": 11
   },
   {
@@ -5667,7 +5667,7 @@
     "rec_yd": 73.41
    },
    "team": "KC",
-   "updatedAt": 1795208463028,
+   "updatedAt": 1795231854239,
    "week": 11
   },
   {
@@ -5699,7 +5699,7 @@
     "rush_yd": 0.34
    },
    "team": "DET",
-   "updatedAt": 1795208462919,
+   "updatedAt": 1795231854112,
    "week": 11
   },
   {
@@ -5731,7 +5731,7 @@
     "rec_yd": 0.46
    },
    "team": "NYG",
-   "updatedAt": 1795208463224,
+   "updatedAt": 1795231854398,
    "week": 11
   },
   {
@@ -5741,36 +5741,36 @@
    "playerId": "3634",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 2.79,
+    "bonus_rec_wr": 2.77,
     "def_fum_td": 0.0,
     "def_kr_yd": 27.48,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 5.75,
-    "pts_ppr": 7.14,
-    "pts_std": 4.36,
-    "rec": 2.79,
-    "rec_0_4": 0.56,
-    "rec_10_19": 0.84,
-    "rec_20_29": 0.56,
+    "pts_half_ppr": 5.72,
+    "pts_ppr": 7.11,
+    "pts_std": 4.34,
+    "rec": 2.77,
+    "rec_0_4": 0.55,
+    "rec_10_19": 0.83,
+    "rec_20_29": 0.55,
     "rec_2pt": 0.01,
     "rec_30_39": 0.28,
     "rec_40p": 0.28,
-    "rec_5_9": 0.56,
-    "rec_fd": 3.25,
+    "rec_5_9": 0.55,
+    "rec_fd": 3.24,
     "rec_td": 0.15,
-    "rec_tgt": 3.49,
-    "rec_yd": 32.54,
+    "rec_tgt": 3.47,
+    "rec_yd": 32.4,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
     "rush_att": 0.2,
     "rush_fd": 0.14,
     "rush_td": 0.01,
-    "rush_yd": 1.39
+    "rush_yd": 1.4
    },
    "team": "CHI",
-   "updatedAt": 1795208462726,
+   "updatedAt": 1795231853922,
    "week": 11
   },
   {
@@ -5799,7 +5799,7 @@
     "xpmiss": 0.12
    },
    "team": "DEN",
-   "updatedAt": 1795208463125,
+   "updatedAt": 1795231854337,
    "week": 11
   },
   {
@@ -5809,39 +5809,39 @@
    "playerId": "4983",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 3.67,
+    "bonus_rec_wr": 3.64,
     "def_fum_td": 0.0,
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 10.56,
-    "pts_ppr": 12.4,
-    "pts_std": 8.73,
-    "rec": 3.67,
+    "pts_half_ppr": 10.49,
+    "pts_ppr": 12.31,
+    "pts_std": 8.68,
+    "rec": 3.64,
     "rec_0_4": 0.73,
-    "rec_10_19": 1.1,
+    "rec_10_19": 1.09,
     "rec_20_29": 0.73,
     "rec_2pt": 0.03,
-    "rec_30_39": 0.37,
-    "rec_40p": 0.37,
+    "rec_30_39": 0.36,
+    "rec_40p": 0.36,
     "rec_5_9": 0.73,
-    "rec_fd": 6.0,
+    "rec_fd": 5.96,
     "rec_td": 0.41,
-    "rec_tgt": 5.78,
-    "rec_yd": 59.99,
+    "rec_tgt": 5.73,
+    "rec_yd": 59.63,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.39,
     "rush_fd": 0.18,
     "rush_td": 0.01,
-    "rush_yd": 1.77
+    "rush_yd": 1.78
    },
    "team": "BUF",
-   "updatedAt": 1795208462728,
+   "updatedAt": 1795231853908,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Ian Thomas",
    "opponent": "DEN",
    "playerId": "4995",
@@ -5869,7 +5869,7 @@
     "rec_yd": 2.23
    },
    "team": "LV",
-   "updatedAt": 1795208463210,
+   "updatedAt": 1795231854426,
    "week": 11
   },
   {
@@ -5898,7 +5898,7 @@
     "xpmiss": 0.12
    },
    "team": "SF",
-   "updatedAt": 1795208463243,
+   "updatedAt": 1795231854433,
    "week": 11
   },
   {
@@ -5914,7 +5914,7 @@
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 7.33,
+    "pts_half_ppr": 7.32,
     "pts_ppr": 8.87,
     "pts_std": 5.78,
     "rec": 3.09,
@@ -5928,7 +5928,7 @@
     "rec_fd": 3.56,
     "rec_td": 0.18,
     "rec_tgt": 4.57,
-    "rec_yd": 35.63,
+    "rec_yd": 35.61,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
     "rush_att": 1.24,
@@ -5937,7 +5937,7 @@
     "rush_yd": 8.06
    },
    "team": "SF",
-   "updatedAt": 1795208463230,
+   "updatedAt": 1795231854419,
    "week": 11
   },
   {
@@ -5947,29 +5947,29 @@
    "playerId": "5906",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 1.36,
+    "bonus_rec_te": 1.35,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 2.82,
-    "pts_ppr": 3.5,
-    "pts_std": 2.15,
-    "rec": 1.36,
+    "pts_half_ppr": 2.8,
+    "pts_ppr": 3.48,
+    "pts_std": 2.13,
+    "rec": 1.35,
     "rec_0_4": 0.27,
-    "rec_10_19": 0.41,
+    "rec_10_19": 0.4,
     "rec_20_29": 0.27,
     "rec_2pt": 0.01,
-    "rec_30_39": 0.14,
-    "rec_40p": 0.14,
+    "rec_30_39": 0.13,
+    "rec_40p": 0.13,
     "rec_5_9": 0.27,
-    "rec_fd": 1.35,
+    "rec_fd": 1.34,
     "rec_td": 0.13,
-    "rec_tgt": 1.73,
-    "rec_yd": 13.49
+    "rec_tgt": 1.72,
+    "rec_yd": 13.4
    },
    "team": "BUF",
-   "updatedAt": 1795208462738,
+   "updatedAt": 1795231853936,
    "week": 11
   },
   {
@@ -5996,7 +5996,7 @@
     "xpmiss": 0.12
    },
    "team": "LV",
-   "updatedAt": 1795208463217,
+   "updatedAt": 1795231854431,
    "week": 11
   },
   {
@@ -6032,10 +6032,10 @@
     "rush_att": 4.22,
     "rush_fd": 1.35,
     "rush_td": 0.2,
-    "rush_yd": 13.53
+    "rush_yd": 13.52
    },
    "team": "NYG",
-   "updatedAt": 1795208463199,
+   "updatedAt": 1795231854377,
    "week": 11
   },
   {
@@ -6045,35 +6045,35 @@
    "playerId": "6790",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 2.63,
+    "bonus_rec_rb": 2.62,
     "def_fum_td": 0.0,
-    "fum": 0.18,
+    "fum": 0.19,
     "fum_lost": 0.08,
     "gp": 1.0,
-    "pts_half_ppr": 18.04,
-    "pts_ppr": 19.36,
-    "pts_std": 16.73,
-    "rec": 2.63,
-    "rec_0_4": 0.53,
-    "rec_10_19": 0.79,
-    "rec_20_29": 0.53,
+    "pts_half_ppr": 18.11,
+    "pts_ppr": 19.41,
+    "pts_std": 16.8,
+    "rec": 2.62,
+    "rec_0_4": 0.52,
+    "rec_10_19": 0.78,
+    "rec_20_29": 0.52,
     "rec_2pt": 0.01,
     "rec_30_39": 0.26,
     "rec_40p": 0.26,
-    "rec_5_9": 0.53,
-    "rec_fd": 2.05,
+    "rec_5_9": 0.52,
+    "rec_fd": 2.04,
     "rec_td": 0.11,
-    "rec_tgt": 2.99,
-    "rec_yd": 20.46,
-    "rush_2pt": 0.06,
+    "rec_tgt": 2.97,
+    "rec_yd": 20.37,
+    "rush_2pt": 0.07,
     "rush_40p": 0.18,
-    "rush_att": 15.83,
-    "rush_fd": 6.96,
+    "rush_att": 15.93,
+    "rush_fd": 7.02,
     "rush_td": 1.18,
-    "rush_yd": 69.65
+    "rush_yd": 70.17
    },
    "team": "CHI",
-   "updatedAt": 1795208462696,
+   "updatedAt": 1795231853892,
    "week": 11
   },
   {
@@ -6105,7 +6105,7 @@
     "rec_yd": 12.69
    },
    "team": "DEN",
-   "updatedAt": 1795208463123,
+   "updatedAt": 1795231854334,
    "week": 11
   },
   {
@@ -6121,9 +6121,9 @@
     "fum": 0.18,
     "fum_lost": 0.08,
     "gp": 1.0,
-    "pts_half_ppr": 14.47,
+    "pts_half_ppr": 14.48,
     "pts_ppr": 15.91,
-    "pts_std": 13.04,
+    "pts_std": 13.05,
     "rec": 2.86,
     "rec_0_4": 0.57,
     "rec_10_19": 0.86,
@@ -6135,16 +6135,16 @@
     "rec_fd": 2.01,
     "rec_td": 0.2,
     "rec_tgt": 3.35,
-    "rec_yd": 20.14,
+    "rec_yd": 20.13,
     "rush_2pt": 0.04,
     "rush_40p": 0.17,
-    "rush_att": 17.28,
-    "rush_fd": 6.6,
+    "rush_att": 17.29,
+    "rush_fd": 6.61,
     "rush_td": 0.54,
-    "rush_yd": 66.04
+    "rush_yd": 66.08
    },
    "team": "CAR",
-   "updatedAt": 1795208462809,
+   "updatedAt": 1795231853986,
    "week": 11
   },
   {
@@ -6180,7 +6180,7 @@
     "rush_yd": 0.36
    },
    "team": "ARI",
-   "updatedAt": 1795208462935,
+   "updatedAt": 1795231854143,
    "week": 11
   },
   {
@@ -6218,7 +6218,7 @@
     "rush_yd": 0.71
    },
    "team": "NYJ",
-   "updatedAt": 1795208463197,
+   "updatedAt": 1795231854382,
    "week": 11
   },
   {
@@ -6228,29 +6228,29 @@
    "playerId": "8172",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 2.9,
+    "bonus_rec_te": 2.88,
     "def_fum_td": 0.0,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 4.96,
-    "pts_ppr": 6.41,
-    "pts_std": 3.51,
-    "rec": 2.9,
+    "pts_half_ppr": 4.93,
+    "pts_ppr": 6.37,
+    "pts_std": 3.49,
+    "rec": 2.88,
     "rec_0_4": 0.58,
-    "rec_10_19": 0.87,
+    "rec_10_19": 0.86,
     "rec_20_29": 0.58,
     "rec_2pt": 0.0,
     "rec_30_39": 0.29,
     "rec_40p": 0.29,
     "rec_5_9": 0.58,
-    "rec_fd": 2.99,
+    "rec_fd": 2.97,
     "rec_td": 0.09,
-    "rec_tgt": 4.37,
-    "rec_yd": 29.89
+    "rec_tgt": 4.34,
+    "rec_yd": 29.7
    },
    "team": "MIA",
-   "updatedAt": 1795208462848,
+   "updatedAt": 1795231854050,
    "week": 11
   },
   {
@@ -6265,9 +6265,9 @@
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 0.78,
-    "pts_ppr": 0.98,
-    "pts_std": 0.59,
+    "pts_half_ppr": 0.79,
+    "pts_ppr": 0.99,
+    "pts_std": 0.6,
     "rec": 0.39,
     "rec_0_4": 0.08,
     "rec_10_19": 0.12,
@@ -6279,10 +6279,10 @@
     "rec_fd": 0.4,
     "rec_td": 0.03,
     "rec_tgt": 0.52,
-    "rec_yd": 4.02
+    "rec_yd": 4.01
    },
    "team": "PHI",
-   "updatedAt": 1795208462954,
+   "updatedAt": 1795231854153,
    "week": 11
   },
   {
@@ -6299,16 +6299,16 @@
     "fum_lost": 0.19,
     "gp": 1.0,
     "pass_2pt": 0.13,
-    "pass_att": 31.52,
-    "pass_cmp": 20.0,
+    "pass_att": 31.5,
+    "pass_cmp": 19.99,
     "pass_cmp_40p": 0.45,
-    "pass_fd": 25.4,
-    "pass_inc": 11.52,
+    "pass_fd": 25.38,
+    "pass_inc": 11.51,
     "pass_int": 1.07,
     "pass_int_td": 0.0,
     "pass_sack": 2.62,
-    "pass_td": 1.39,
-    "pass_yd": 253.99,
+    "pass_td": 1.38,
+    "pass_yd": 253.82,
     "pts_half_ppr": 17.84,
     "pts_ppr": 17.84,
     "pts_std": 17.84,
@@ -6317,10 +6317,10 @@
     "rush_att": 4.52,
     "rush_fd": 2.28,
     "rush_td": 0.17,
-    "rush_yd": 22.82
+    "rush_yd": 22.83
    },
    "team": "SF",
-   "updatedAt": 1795208463208,
+   "updatedAt": 1795231854396,
    "week": 11
   },
   {
@@ -6352,7 +6352,7 @@
     "rec_yd": 0.17
    },
    "team": "TB",
-   "updatedAt": 1795208463014,
+   "updatedAt": 1795231854216,
    "week": 11
   },
   {
@@ -6394,7 +6394,7 @@
     "rush_yd": 2.45
    },
    "team": "DEN",
-   "updatedAt": 1795208463110,
+   "updatedAt": 1795231854321,
    "week": 11
   },
   {
@@ -6411,28 +6411,28 @@
     "fum_lost": 0.17,
     "gp": 1.0,
     "pass_2pt": 0.09,
-    "pass_att": 30.82,
-    "pass_cmp": 18.09,
+    "pass_att": 30.67,
+    "pass_cmp": 18.01,
     "pass_cmp_40p": 0.37,
-    "pass_fd": 20.73,
-    "pass_inc": 12.72,
+    "pass_fd": 20.63,
+    "pass_inc": 12.66,
     "pass_int": 0.31,
     "pass_int_td": 0.0,
-    "pass_sack": 2.38,
-    "pass_td": 2.03,
-    "pass_yd": 207.3,
-    "pts_half_ppr": 16.92,
-    "pts_ppr": 16.92,
-    "pts_std": 16.92,
+    "pass_sack": 2.36,
+    "pass_td": 1.99,
+    "pass_yd": 206.33,
+    "pts_half_ppr": 16.76,
+    "pts_ppr": 16.76,
+    "pts_std": 16.76,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
-    "rush_att": 1.26,
+    "rush_att": 1.27,
     "rush_fd": 0.66,
     "rush_td": 0.06,
-    "rush_yd": 6.58
+    "rush_yd": 6.61
    },
    "team": "PIT",
-   "updatedAt": 1795208463015,
+   "updatedAt": 1795231854211,
    "week": 11
   },
   {
@@ -6460,11 +6460,11 @@
     "pts_std": 8.06,
     "sack": 2.49,
     "tkl_loss": 4.86,
-    "yds_allow": 362.07,
+    "yds_allow": 362.12,
     "yds_allow_350_399": 1.0
    },
    "team": "JAX",
-   "updatedAt": 1795208463088,
+   "updatedAt": 1795231854273,
    "week": 11
   },
   {
@@ -6492,11 +6492,11 @@
     "pts_std": 5.37,
     "sack": 2.09,
     "tkl_loss": 3.58,
-    "yds_allow": 381.39,
+    "yds_allow": 381.43,
     "yds_allow_350_399": 1.0
    },
    "team": "NYG",
-   "updatedAt": 1795208463192,
+   "updatedAt": 1795231854371,
    "week": 11
   },
   {
@@ -6534,7 +6534,7 @@
     "rush_yd": 1.8
    },
    "team": "KC",
-   "updatedAt": 1795208463010,
+   "updatedAt": 1795231854217,
    "week": 11
   },
   {
@@ -6563,7 +6563,7 @@
     "xpmiss": 0.11
    },
    "team": "ARI",
-   "updatedAt": 1795208462940,
+   "updatedAt": 1795231854145,
    "week": 11
   },
   {
@@ -6588,14 +6588,14 @@
     "rec_fd": 0.13,
     "rec_td": 0.01,
     "rec_tgt": 0.19,
-    "rec_yd": 1.31,
+    "rec_yd": 1.32,
     "rush_att": 0.02,
     "rush_fd": 0.01,
     "rush_td": 0.0,
     "rush_yd": 0.11
    },
    "team": "NYG",
-   "updatedAt": 1795208463212,
+   "updatedAt": 1795231854389,
    "week": 11
   },
   {
@@ -6624,7 +6624,7 @@
     "xpmiss": 0.14
    },
    "team": "DAL",
-   "updatedAt": 1795208462914,
+   "updatedAt": 1795231854118,
    "week": 11
   },
   {
@@ -6653,7 +6653,7 @@
     "xpmiss": 0.13
    },
    "team": "DET",
-   "updatedAt": 1795208462929,
+   "updatedAt": 1795231854121,
    "week": 11
   },
   {
@@ -6669,29 +6669,29 @@
     "fum": 0.47,
     "fum_lost": 0.21,
     "gp": 1.0,
-    "pass_2pt": 0.09,
-    "pass_att": 31.48,
-    "pass_cmp": 21.8,
-    "pass_cmp_40p": 0.48,
-    "pass_fd": 25.93,
-    "pass_inc": 9.68,
-    "pass_int": 0.37,
+    "pass_2pt": 0.08,
+    "pass_att": 31.29,
+    "pass_cmp": 21.67,
+    "pass_cmp_40p": 0.47,
+    "pass_fd": 25.81,
+    "pass_inc": 9.63,
+    "pass_int": 0.36,
     "pass_int_td": 0.0,
-    "pass_sack": 2.84,
-    "pass_td": 1.38,
-    "pass_yd": 259.31,
-    "pts_half_ppr": 20.41,
-    "pts_ppr": 20.41,
-    "pts_std": 20.41,
+    "pass_sack": 2.82,
+    "pass_td": 1.37,
+    "pass_yd": 258.15,
+    "pts_half_ppr": 20.36,
+    "pts_ppr": 20.36,
+    "pts_std": 20.36,
     "rush_2pt": 0.02,
     "rush_40p": 0.07,
-    "rush_att": 5.95,
-    "rush_fd": 3.24,
+    "rush_att": 5.98,
+    "rush_fd": 3.26,
     "rush_td": 0.31,
-    "rush_yd": 32.37
+    "rush_yd": 32.62
    },
    "team": "CHI",
-   "updatedAt": 1795208462693,
+   "updatedAt": 1795231853886,
    "week": 11
   },
   {
@@ -6701,18 +6701,18 @@
    "playerId": "11579",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.89,
+    "bonus_rec_rb": 0.88,
     "def_fum_td": 0.0,
     "def_kr_yd": 1.7,
     "fum": 0.05,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 4.27,
-    "pts_ppr": 4.71,
-    "pts_std": 3.83,
-    "rec": 0.89,
+    "pts_half_ppr": 4.29,
+    "pts_ppr": 4.73,
+    "pts_std": 3.85,
+    "rec": 0.88,
     "rec_0_4": 0.18,
-    "rec_10_19": 0.27,
+    "rec_10_19": 0.26,
     "rec_20_29": 0.18,
     "rec_2pt": 0.0,
     "rec_30_39": 0.09,
@@ -6721,16 +6721,16 @@
     "rec_fd": 0.68,
     "rec_td": 0.03,
     "rec_tgt": 1.03,
-    "rec_yd": 6.79,
+    "rec_yd": 6.76,
     "rush_2pt": 0.01,
     "rush_40p": 0.05,
-    "rush_att": 4.96,
-    "rush_fd": 1.9,
+    "rush_att": 4.99,
+    "rush_fd": 1.91,
     "rush_td": 0.18,
-    "rush_yd": 18.99
+    "rush_yd": 19.15
    },
    "team": "NO",
-   "updatedAt": 1795208462818,
+   "updatedAt": 1795231854003,
    "week": 11
   },
   {
@@ -6768,7 +6768,7 @@
     "rush_yd": 0.17
    },
    "team": "JAX",
-   "updatedAt": 1795208463110,
+   "updatedAt": 1795231854294,
    "week": 11
   },
   {
@@ -6778,15 +6778,15 @@
    "playerId": "11643",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.52,
+    "bonus_rec_rb": 0.51,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 1.97,
-    "pts_ppr": 2.23,
-    "pts_std": 1.71,
-    "rec": 0.52,
+    "pts_half_ppr": 1.98,
+    "pts_ppr": 2.24,
+    "pts_std": 1.72,
+    "rec": 0.51,
     "rec_0_4": 0.1,
     "rec_10_19": 0.15,
     "rec_20_29": 0.1,
@@ -6797,16 +6797,16 @@
     "rec_fd": 0.37,
     "rec_td": 0.02,
     "rec_tgt": 0.87,
-    "rec_yd": 3.7,
+    "rec_yd": 3.67,
     "rush_2pt": 0.0,
     "rush_40p": 0.03,
-    "rush_att": 3.31,
-    "rush_fd": 0.88,
+    "rush_att": 3.34,
+    "rush_fd": 0.89,
     "rush_td": 0.06,
-    "rush_yd": 8.77
+    "rush_yd": 8.85
    },
    "team": "MIA",
-   "updatedAt": 1795208462832,
+   "updatedAt": 1795231854004,
    "week": 11
   },
   {
@@ -6823,16 +6823,16 @@
     "fum_lost": 0.19,
     "gp": 1.0,
     "pass_2pt": 0.11,
-    "pass_att": 33.09,
-    "pass_cmp": 22.67,
+    "pass_att": 33.07,
+    "pass_cmp": 22.66,
     "pass_cmp_40p": 0.42,
-    "pass_fd": 23.17,
-    "pass_inc": 10.42,
+    "pass_fd": 23.16,
+    "pass_inc": 10.41,
     "pass_int": 0.61,
     "pass_int_td": 0.0,
     "pass_sack": 2.59,
     "pass_td": 1.84,
-    "pass_yd": 231.72,
+    "pass_yd": 231.57,
     "pts_half_ppr": 17.1,
     "pts_ppr": 17.1,
     "pts_std": 17.1,
@@ -6841,10 +6841,10 @@
     "rush_att": 2.41,
     "rush_fd": 0.56,
     "rush_td": 0.11,
-    "rush_yd": 5.61
+    "rush_yd": 5.62
    },
    "team": "MIN",
-   "updatedAt": 1795208463119,
+   "updatedAt": 1795231854304,
    "week": 11
   },
   {
@@ -6882,7 +6882,7 @@
     "rush_yd": 0.28
    },
    "team": "DAL",
-   "updatedAt": 1795208462902,
+   "updatedAt": 1795231854105,
    "week": 11
   },
   {
@@ -6908,13 +6908,13 @@
     "rec_30_39": 0.14,
     "rec_40p": 0.14,
     "rec_5_9": 0.28,
-    "rec_fd": 1.57,
+    "rec_fd": 1.56,
     "rec_td": 0.06,
     "rec_tgt": 1.77,
     "rec_yd": 15.65
    },
    "team": "CAR",
-   "updatedAt": 1795208462842,
+   "updatedAt": 1795231854030,
    "week": 11
   },
   {
@@ -6930,8 +6930,8 @@
     "fum_lost": 0.08,
     "gp": 1.0,
     "pts_half_ppr": 15.37,
-    "pts_ppr": 16.81,
-    "pts_std": 13.94,
+    "pts_ppr": 16.8,
+    "pts_std": 13.93,
     "rec": 2.87,
     "rec_0_4": 0.57,
     "rec_10_19": 0.86,
@@ -6943,16 +6943,16 @@
     "rec_fd": 2.56,
     "rec_td": 0.13,
     "rec_tgt": 3.5,
-    "rec_yd": 25.58,
+    "rec_yd": 25.59,
     "rush_2pt": 0.03,
     "rush_40p": 0.19,
-    "rush_att": 19.64,
+    "rush_att": 19.63,
     "rush_fd": 7.23,
     "rush_td": 0.57,
-    "rush_yd": 72.3
+    "rush_yd": 72.26
    },
    "team": "NYG",
-   "updatedAt": 1795208463201,
+   "updatedAt": 1795231854379,
    "week": 11
   },
   {
@@ -6965,23 +6965,23 @@
     "bonus_rush_td_qb": 0.05,
     "cmp_pct": 58.48,
     "gp": 1.0,
-    "pass_att": 29.12,
-    "pass_cmp": 17.03,
-    "pass_fd": 17.35,
-    "pass_inc": 12.09,
+    "pass_att": 28.91,
+    "pass_cmp": 16.91,
+    "pass_fd": 17.24,
+    "pass_inc": 12.0,
     "pass_int": 0.64,
     "pass_td": 0.76,
-    "pass_yd": 173.46,
-    "pts_half_ppr": 10.47,
-    "pts_ppr": 10.47,
-    "pts_std": 10.47,
-    "rush_att": 2.24,
-    "rush_fd": 0.81,
+    "pass_yd": 172.37,
+    "pts_half_ppr": 10.45,
+    "pts_ppr": 10.45,
+    "pts_std": 10.45,
+    "rush_att": 2.26,
+    "rush_fd": 0.82,
     "rush_td": 0.05,
-    "rush_yd": 8.1
+    "rush_yd": 8.17
    },
    "team": "MIA",
-   "updatedAt": 1795208462806,
+   "updatedAt": 1795231854001,
    "week": 11
   },
   {
@@ -7023,7 +7023,7 @@
     "rush_yd": 0.78
    },
    "team": "TEN",
-   "updatedAt": 1795208462996,
+   "updatedAt": 1795231854196,
    "week": 11
   },
   {
@@ -7055,7 +7055,7 @@
     "rec_yd": 4.27
    },
    "team": "KC",
-   "updatedAt": 1795208463022,
+   "updatedAt": 1795231854235,
    "week": 11
   },
   {
@@ -7084,10 +7084,10 @@
     "rec_fd": 0.1,
     "rec_td": 0.01,
     "rec_tgt": 0.13,
-    "rec_yd": 1.0
+    "rec_yd": 0.99
    },
    "team": "CHI",
-   "updatedAt": 1795208462731,
+   "updatedAt": 1795231853927,
    "week": 11
   },
   {
@@ -7119,7 +7119,7 @@
     "rec_yd": 17.59
    },
    "team": "ARI",
-   "updatedAt": 1795208462922,
+   "updatedAt": 1795231854132,
    "week": 11
   },
   {
@@ -7158,7 +7158,7 @@
     "rush_yd": 27.28
    },
    "team": "LV",
-   "updatedAt": 1795208463187,
+   "updatedAt": 1795231854399,
    "week": 11
   },
   {
@@ -7186,7 +7186,7 @@
     "rec_yd": 0.46
    },
    "team": "TB",
-   "updatedAt": 1795208463022,
+   "updatedAt": 1795231854218,
    "week": 11
   },
   {
@@ -7225,7 +7225,7 @@
     "rush_yd": 70.51
    },
    "team": "DEN",
-   "updatedAt": 1795208463097,
+   "updatedAt": 1795231854308,
    "week": 11
   },
   {
@@ -7245,7 +7245,7 @@
     "pts_std": 0.24,
     "rec": 0.18,
     "rec_0_4": 0.04,
-    "rec_10_19": 0.06,
+    "rec_10_19": 0.05,
     "rec_20_29": 0.04,
     "rec_2pt": 0.0,
     "rec_30_39": 0.02,
@@ -7254,10 +7254,10 @@
     "rec_fd": 0.18,
     "rec_td": 0.01,
     "rec_tgt": 0.29,
-    "rec_yd": 1.79
+    "rec_yd": 1.78
    },
    "team": "MIA",
-   "updatedAt": 1795208462853,
+   "updatedAt": 1795231854045,
    "week": 11
   },
   {
@@ -7267,16 +7267,16 @@
    "playerId": "13405",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.41,
+    "bonus_rec_rb": 0.4,
     "def_fum_td": 0.0,
     "def_kr_yd": 9.59,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 2.01,
-    "pts_ppr": 2.21,
-    "pts_std": 1.81,
-    "rec": 0.41,
+    "pts_half_ppr": 2.02,
+    "pts_ppr": 2.22,
+    "pts_std": 1.82,
+    "rec": 0.4,
     "rec_0_4": 0.08,
     "rec_10_19": 0.12,
     "rec_20_29": 0.08,
@@ -7287,16 +7287,16 @@
     "rec_fd": 0.37,
     "rec_td": 0.02,
     "rec_tgt": 0.58,
-    "rec_yd": 3.68,
+    "rec_yd": 3.66,
     "rush_2pt": 0.0,
     "rush_40p": 0.03,
-    "rush_att": 3.19,
-    "rush_fd": 1.06,
+    "rush_att": 3.21,
+    "rush_fd": 1.07,
     "rush_td": 0.05,
-    "rush_yd": 10.58
+    "rush_yd": 10.68
    },
    "team": "MIA",
-   "updatedAt": 1795208462828,
+   "updatedAt": 1795231854009,
    "week": 11
   },
   {
@@ -7325,10 +7325,10 @@
     "rec_fd": 0.08,
     "rec_td": 0.0,
     "rec_tgt": 0.14,
-    "rec_yd": 0.76
+    "rec_yd": 0.75
    },
    "team": "NO",
-   "updatedAt": 1795208462828,
+   "updatedAt": 1795231854035,
    "week": 11
   },
   {
@@ -7353,14 +7353,14 @@
     "rec_fd": 0.05,
     "rec_td": 0.0,
     "rec_tgt": 0.06,
-    "rec_yd": 0.46,
+    "rec_yd": 0.45,
     "rush_att": 0.05,
     "rush_fd": 0.02,
     "rush_td": 0.0,
     "rush_yd": 0.23
    },
    "team": "PIT",
-   "updatedAt": 1795208463042,
+   "updatedAt": 1795231854236,
    "week": 11
   },
   {
@@ -7397,7 +7397,7 @@
     "rush_yd": 0.04
    },
    "team": "MIN",
-   "updatedAt": 1795208463204,
+   "updatedAt": 1795231854389,
    "week": 11
   },
   {
@@ -7407,26 +7407,26 @@
    "playerId": "1945",
    "pos": "K",
    "stats": {
-    "fga": 2.3,
-    "fgm": 1.98,
+    "fga": 2.29,
+    "fgm": 1.97,
     "fgm_20_29": 0.3,
     "fgm_30_39": 0.46,
-    "fgm_40_49": 0.41,
-    "fgm_50p": 0.41,
-    "fgm_yds": 66.91,
+    "fgm_40_49": 0.4,
+    "fgm_50p": 0.4,
+    "fgm_yds": 66.61,
     "fgmiss_30_39": 0.04,
     "fgmiss_40_49": 0.04,
     "fgmiss_50p": 0.12,
     "gp": 1.0,
-    "pts_half_ppr": 8.18,
-    "pts_ppr": 8.18,
-    "pts_std": 8.18,
-    "xpa": 2.37,
-    "xpm": 2.3,
+    "pts_half_ppr": 8.14,
+    "pts_ppr": 8.14,
+    "pts_std": 8.14,
+    "xpa": 2.35,
+    "xpm": 2.29,
     "xpmiss": 0.06
    },
    "team": "PIT",
-   "updatedAt": 1795208463053,
+   "updatedAt": 1795231854249,
    "week": 11
   },
   {
@@ -7464,7 +7464,7 @@
     "rush_yd": 16.55
    },
    "team": "DAL",
-   "updatedAt": 1795208462887,
+   "updatedAt": 1795231854087,
    "week": 11
   },
   {
@@ -7496,7 +7496,7 @@
     "rec_yd": 17.81
    },
    "team": "LAC",
-   "updatedAt": 1795208463106,
+   "updatedAt": 1795231854304,
    "week": 11
   },
   {
@@ -7506,35 +7506,35 @@
    "playerId": "4034",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 3.68,
+    "bonus_rec_rb": 3.67,
     "def_fum_td": 0.0,
     "fum": 0.18,
     "fum_lost": 0.08,
     "gp": 1.0,
     "pts_half_ppr": 18.15,
-    "pts_ppr": 19.98,
+    "pts_ppr": 19.99,
     "pts_std": 16.31,
-    "rec": 3.68,
-    "rec_0_4": 0.74,
+    "rec": 3.67,
+    "rec_0_4": 0.73,
     "rec_10_19": 1.1,
-    "rec_20_29": 0.74,
+    "rec_20_29": 0.73,
     "rec_2pt": 0.01,
     "rec_30_39": 0.37,
     "rec_40p": 0.37,
-    "rec_5_9": 0.74,
+    "rec_5_9": 0.73,
     "rec_fd": 2.9,
     "rec_td": 0.1,
-    "rec_tgt": 4.67,
-    "rec_yd": 29.01,
+    "rec_tgt": 4.66,
+    "rec_yd": 28.99,
     "rush_2pt": 0.08,
     "rush_40p": 0.16,
-    "rush_att": 15.68,
+    "rush_att": 15.69,
     "rush_fd": 6.81,
     "rush_td": 1.0,
-    "rush_yd": 68.08
+    "rush_yd": 68.14
    },
    "team": "SF",
-   "updatedAt": 1795208463212,
+   "updatedAt": 1795231854401,
    "week": 11
   },
   {
@@ -7549,9 +7549,9 @@
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 10.36,
-    "pts_ppr": 12.55,
-    "pts_std": 8.17,
+    "pts_half_ppr": 10.35,
+    "pts_ppr": 12.54,
+    "pts_std": 8.16,
     "rec": 4.38,
     "rec_0_4": 0.88,
     "rec_10_19": 1.31,
@@ -7562,11 +7562,11 @@
     "rec_5_9": 0.88,
     "rec_fd": 5.71,
     "rec_td": 0.4,
-    "rec_tgt": 6.35,
-    "rec_yd": 57.15
+    "rec_tgt": 6.34,
+    "rec_yd": 57.11
    },
    "team": "SF",
-   "updatedAt": 1795208463237,
+   "updatedAt": 1795231854429,
    "week": 11
   },
   {
@@ -7598,7 +7598,7 @@
     "rec_yd": 0.55
    },
    "team": "NYJ",
-   "updatedAt": 1795208463191,
+   "updatedAt": 1795231854384,
    "week": 11
   },
   {
@@ -7625,12 +7625,12 @@
     "rec_40p": 0.0,
     "rec_5_9": 0.01,
     "rec_fd": 0.03,
-    "rec_td": 0.01,
+    "rec_td": 0.0,
     "rec_tgt": 0.04,
     "rec_yd": 0.32
    },
    "team": "PIT",
-   "updatedAt": 1795208463044,
+   "updatedAt": 1795231854241,
    "week": 11
   },
   {
@@ -7668,7 +7668,7 @@
     "rush_yd": 0.02
    },
    "team": "TEN",
-   "updatedAt": 1795208462993,
+   "updatedAt": 1795231854194,
    "week": 11
   },
   {
@@ -7697,7 +7697,7 @@
     "xpmiss": 0.06
    },
    "team": "NYJ",
-   "updatedAt": 1795208463210,
+   "updatedAt": 1795231854405,
    "week": 11
   },
   {
@@ -7729,7 +7729,7 @@
     "rec_yd": 0.49
    },
    "team": "DET",
-   "updatedAt": 1795208462922,
+   "updatedAt": 1795231854114,
    "week": 11
   },
   {
@@ -7745,23 +7745,23 @@
     "fum_lost": 0.01,
     "gp": 1.0,
     "pts_half_ppr": 7.19,
-    "pts_ppr": 9.17,
+    "pts_ppr": 9.16,
     "pts_std": 5.21,
     "rec": 3.95,
     "rec_0_4": 0.79,
-    "rec_10_19": 1.19,
+    "rec_10_19": 1.18,
     "rec_20_29": 0.79,
     "rec_2pt": 0.01,
-    "rec_30_39": 0.4,
-    "rec_40p": 0.4,
+    "rec_30_39": 0.39,
+    "rec_40p": 0.39,
     "rec_5_9": 0.79,
     "rec_fd": 3.55,
     "rec_td": 0.28,
     "rec_tgt": 4.96,
-    "rec_yd": 35.49
+    "rec_yd": 35.47
    },
    "team": "MIN",
-   "updatedAt": 1795208463144,
+   "updatedAt": 1795231854328,
    "week": 11
   },
   {
@@ -7776,24 +7776,24 @@
     "fum": 0.01,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 3.23,
-    "pts_ppr": 3.99,
-    "pts_std": 2.47,
+    "pts_half_ppr": 3.21,
+    "pts_ppr": 3.97,
+    "pts_std": 2.46,
     "rec": 1.52,
     "rec_0_4": 0.3,
-    "rec_10_19": 0.46,
+    "rec_10_19": 0.45,
     "rec_20_29": 0.3,
     "rec_2pt": 0.01,
     "rec_30_39": 0.15,
     "rec_40p": 0.15,
     "rec_5_9": 0.3,
-    "rec_fd": 1.54,
+    "rec_fd": 1.53,
     "rec_td": 0.15,
-    "rec_tgt": 2.14,
-    "rec_yd": 15.38
+    "rec_tgt": 2.12,
+    "rec_yd": 15.32
    },
    "team": "NO",
-   "updatedAt": 1795208462845,
+   "updatedAt": 1795231854050,
    "week": 11
   },
   {
@@ -7825,7 +7825,7 @@
     "rec_yd": 4.93
    },
    "team": "DEN",
-   "updatedAt": 1795208463105,
+   "updatedAt": 1795231854317,
    "week": 11
   },
   {
@@ -7864,7 +7864,7 @@
     "rush_yd": 68.58
    },
    "team": "TEN",
-   "updatedAt": 1795208462983,
+   "updatedAt": 1795231854182,
    "week": 11
   },
   {
@@ -7896,7 +7896,7 @@
     "rush_yd": 0.11
    },
    "team": "PIT",
-   "updatedAt": 1795208463024,
+   "updatedAt": 1795231854219,
    "week": 11
   },
   {
@@ -7925,7 +7925,7 @@
     "xpmiss": 0.07
    },
    "team": "TEN",
-   "updatedAt": 1795208463012,
+   "updatedAt": 1795231854214,
    "week": 11
   },
   {
@@ -7951,13 +7951,13 @@
     "rec_td": 0.0,
     "rec_tgt": 0.07,
     "rec_yd": 0.42,
-    "rush_att": 0.31,
+    "rush_att": 0.32,
     "rush_fd": 0.09,
     "rush_td": 0.01,
     "rush_yd": 0.91
    },
    "team": "CAR",
-   "updatedAt": 1795208462814,
+   "updatedAt": 1795231853990,
    "week": 11
   },
   {
@@ -7986,7 +7986,7 @@
     "rec_fd": 2.65,
     "rec_td": 0.1,
     "rec_tgt": 3.61,
-    "rec_yd": 26.51,
+    "rec_yd": 26.5,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.05,
@@ -7995,7 +7995,7 @@
     "rush_yd": 0.27
    },
    "team": "BAL",
-   "updatedAt": 1795208462723,
+   "updatedAt": 1795231853914,
    "week": 11
   },
   {
@@ -8005,12 +8005,12 @@
    "playerId": "7596",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 0.11,
+    "bonus_rec_wr": 0.1,
     "gp": 1.0,
-    "pts_half_ppr": 0.23,
-    "pts_ppr": 0.28,
+    "pts_half_ppr": 0.24,
+    "pts_ppr": 0.29,
     "pts_std": 0.18,
-    "rec": 0.11,
+    "rec": 0.1,
     "rec_0_4": 0.02,
     "rec_10_19": 0.03,
     "rec_20_29": 0.02,
@@ -8024,10 +8024,10 @@
     "rush_att": 0.07,
     "rush_fd": 0.02,
     "rush_td": 0.0,
-    "rush_yd": 0.22
+    "rush_yd": 0.23
    },
    "team": "PHI",
-   "updatedAt": 1795208462944,
+   "updatedAt": 1795231854140,
    "week": 11
   },
   {
@@ -8042,9 +8042,9 @@
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 4.45,
+    "pts_half_ppr": 4.44,
     "pts_ppr": 5.56,
-    "pts_std": 3.33,
+    "pts_std": 3.32,
     "rec": 2.24,
     "rec_0_4": 0.45,
     "rec_10_19": 0.67,
@@ -8055,11 +8055,11 @@
     "rec_5_9": 0.45,
     "rec_fd": 2.17,
     "rec_td": 0.19,
-    "rec_tgt": 3.15,
-    "rec_yd": 21.72
+    "rec_tgt": 3.14,
+    "rec_yd": 21.71
    },
    "team": "CAR",
-   "updatedAt": 1795208462833,
+   "updatedAt": 1795231854019,
    "week": 11
   },
   {
@@ -8097,7 +8097,7 @@
     "rush_yd": 0.29
    },
    "team": "DAL",
-   "updatedAt": 1795208462897,
+   "updatedAt": 1795231854100,
    "week": 11
   },
   {
@@ -8107,26 +8107,26 @@
    "playerId": "8144",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 5.5,
+    "bonus_rec_wr": 5.47,
     "def_fum_td": 0.0,
     "fum": 0.05,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 12.6,
-    "pts_ppr": 15.35,
-    "pts_std": 9.85,
-    "rec": 5.5,
-    "rec_0_4": 1.1,
-    "rec_10_19": 1.65,
-    "rec_20_29": 1.1,
+    "pts_half_ppr": 12.55,
+    "pts_ppr": 15.28,
+    "pts_std": 9.81,
+    "rec": 5.47,
+    "rec_0_4": 1.09,
+    "rec_10_19": 1.64,
+    "rec_20_29": 1.09,
     "rec_2pt": 0.02,
     "rec_30_39": 0.55,
     "rec_40p": 0.55,
-    "rec_5_9": 1.1,
-    "rec_fd": 8.22,
+    "rec_5_9": 1.09,
+    "rec_fd": 8.19,
     "rec_td": 0.27,
-    "rec_tgt": 8.78,
-    "rec_yd": 82.25,
+    "rec_tgt": 8.74,
+    "rec_yd": 81.92,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.05,
@@ -8135,7 +8135,7 @@
     "rush_yd": 0.19
    },
    "team": "NO",
-   "updatedAt": 1795208462832,
+   "updatedAt": 1795231854040,
    "week": 11
   },
   {
@@ -8163,7 +8163,7 @@
     "rec_yd": 6.84
    },
    "team": "ARI",
-   "updatedAt": 1795208462937,
+   "updatedAt": 1795231854137,
    "week": 11
   },
   {
@@ -8179,9 +8179,9 @@
     "fum": 0.11,
     "fum_lost": 0.05,
     "gp": 1.0,
-    "pts_half_ppr": 8.25,
-    "pts_ppr": 8.83,
-    "pts_std": 7.67,
+    "pts_half_ppr": 8.26,
+    "pts_ppr": 8.84,
+    "pts_std": 7.68,
     "rec": 1.16,
     "rec_0_4": 0.23,
     "rec_10_19": 0.35,
@@ -8192,17 +8192,17 @@
     "rec_5_9": 0.23,
     "rec_fd": 0.74,
     "rec_td": 0.07,
-    "rec_tgt": 1.56,
+    "rec_tgt": 1.55,
     "rec_yd": 7.4,
     "rush_2pt": 0.02,
     "rush_40p": 0.11,
-    "rush_att": 11.63,
+    "rush_att": 11.64,
     "rush_fd": 4.82,
     "rush_td": 0.29,
-    "rush_yd": 48.21
+    "rush_yd": 48.25
    },
    "team": "MIN",
-   "updatedAt": 1795208463121,
+   "updatedAt": 1795231854306,
    "week": 11
   },
   {
@@ -8212,7 +8212,7 @@
    "playerId": "9487",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 4.03,
+    "bonus_rec_wr": 4.04,
     "def_fum_td": 0.0,
     "def_kr_yd": 5.95,
     "fum": 0.05,
@@ -8222,9 +8222,9 @@
     "pr_td": 0.07,
     "pr_yd": 17.64,
     "pts_half_ppr": 12.22,
-    "pts_ppr": 14.23,
+    "pts_ppr": 14.24,
     "pts_std": 10.2,
-    "rec": 4.03,
+    "rec": 4.04,
     "rec_0_4": 0.81,
     "rec_10_19": 1.21,
     "rec_20_29": 0.81,
@@ -8232,10 +8232,10 @@
     "rec_30_39": 0.4,
     "rec_40p": 0.4,
     "rec_5_9": 0.81,
-    "rec_fd": 6.74,
+    "rec_fd": 6.75,
     "rec_td": 0.54,
-    "rec_tgt": 7.41,
-    "rec_yd": 67.44,
+    "rec_tgt": 7.42,
+    "rec_yd": 67.47,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
     "rush_att": 0.3,
@@ -8244,7 +8244,7 @@
     "rush_yd": 1.31
    },
    "team": "JAX",
-   "updatedAt": 1795208463112,
+   "updatedAt": 1795231854296,
    "week": 11
   },
   {
@@ -8272,7 +8272,7 @@
     "rec_yd": 2.3
    },
    "team": "NYG",
-   "updatedAt": 1795208463210,
+   "updatedAt": 1795231854394,
    "week": 11
   },
   {
@@ -8310,7 +8310,7 @@
     "rush_yd": 0.71
    },
    "team": "LAC",
-   "updatedAt": 1795208463099,
+   "updatedAt": 1795231854297,
    "week": 11
   },
   {
@@ -8320,15 +8320,15 @@
    "playerId": "9997",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 5.64,
+    "bonus_rec_wr": 5.63,
     "def_fum_td": 0.0,
     "fum": 0.06,
     "fum_lost": 0.03,
     "gp": 1.0,
-    "pts_half_ppr": 12.4,
-    "pts_ppr": 15.22,
-    "pts_std": 9.58,
-    "rec": 5.64,
+    "pts_half_ppr": 12.39,
+    "pts_ppr": 15.21,
+    "pts_std": 9.57,
+    "rec": 5.63,
     "rec_0_4": 1.13,
     "rec_10_19": 1.69,
     "rec_20_29": 1.13,
@@ -8338,8 +8338,8 @@
     "rec_5_9": 1.13,
     "rec_fd": 7.47,
     "rec_td": 0.32,
-    "rec_tgt": 8.91,
-    "rec_yd": 74.73,
+    "rec_tgt": 8.9,
+    "rec_yd": 74.69,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.19,
@@ -8348,7 +8348,7 @@
     "rush_yd": 1.24
    },
    "team": "BAL",
-   "updatedAt": 1795208462721,
+   "updatedAt": 1795231853903,
    "week": 11
   },
   {
@@ -8376,11 +8376,11 @@
     "pts_std": 6.17,
     "sack": 2.19,
     "tkl_loss": 4.13,
-    "yds_allow": 347.22,
+    "yds_allow": 347.17,
     "yds_allow_300_349": 1.0
    },
    "team": "BAL",
-   "updatedAt": 1795208462690,
+   "updatedAt": 1795231853883,
    "week": 11
   },
   {
@@ -8408,11 +8408,11 @@
     "pts_std": 8.23,
     "sack": 2.72,
     "tkl_loss": 5.24,
-    "yds_allow": 341.21,
+    "yds_allow": 341.05,
     "yds_allow_300_349": 1.0
    },
    "team": "CHI",
-   "updatedAt": 1795208462691,
+   "updatedAt": 1795231853883,
    "week": 11
   },
   {
@@ -8444,7 +8444,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "LAC",
-   "updatedAt": 1795208463074,
+   "updatedAt": 1795231854271,
    "week": 11
   },
   {
@@ -8475,7 +8475,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "NYJ",
-   "updatedAt": 1795208463172,
+   "updatedAt": 1795231854365,
    "week": 11
   },
   {
@@ -8506,7 +8506,7 @@
     "yds_allow_400_449": 1.0
    },
    "team": "TEN",
-   "updatedAt": 1795208462974,
+   "updatedAt": 1795231854175,
    "week": 11
   },
   {
@@ -8547,11 +8547,11 @@
     "rush_yd": 1.0
    },
    "team": "LV",
-   "updatedAt": 1795208463208,
+   "updatedAt": 1795231854419,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Chris Rodriguez Jr.",
    "opponent": "NYG",
    "playerId": "10219",
@@ -8565,7 +8565,7 @@
     "gp": 1.0,
     "pts_half_ppr": 5.57,
     "pts_ppr": 5.81,
-    "pts_std": 5.34,
+    "pts_std": 5.33,
     "rec": 0.48,
     "rec_0_4": 0.1,
     "rec_10_19": 0.14,
@@ -8583,10 +8583,10 @@
     "rush_att": 6.14,
     "rush_fd": 3.0,
     "rush_td": 0.29,
-    "rush_yd": 30.04
+    "rush_yd": 30.02
    },
    "team": "JAX",
-   "updatedAt": 1795208463094,
+   "updatedAt": 1795231854278,
    "week": 11
   },
   {
@@ -8618,7 +8618,7 @@
     "rec_yd": 0.77
    },
    "team": "TB",
-   "updatedAt": 1795208463019,
+   "updatedAt": 1795231854214,
    "week": 11
   },
   {
@@ -8650,7 +8650,7 @@
     "rec_yd": 23.31
    },
    "team": "ARI",
-   "updatedAt": 1795208462931,
+   "updatedAt": 1795231854139,
    "week": 11
   },
   {
@@ -8688,7 +8688,7 @@
     "rush_yd": 1.07
    },
    "team": "DET",
-   "updatedAt": 1795208462905,
+   "updatedAt": 1795231854097,
    "week": 11
   },
   {
@@ -8704,9 +8704,9 @@
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 1.43,
-    "pts_ppr": 1.49,
-    "pts_std": 1.36,
+    "pts_half_ppr": 1.44,
+    "pts_ppr": 1.5,
+    "pts_std": 1.37,
     "rec": 0.13,
     "rec_0_4": 0.03,
     "rec_10_19": 0.04,
@@ -8718,16 +8718,16 @@
     "rec_fd": 0.12,
     "rec_td": 0.01,
     "rec_tgt": 0.14,
-    "rec_yd": 1.25,
+    "rec_yd": 1.24,
     "rush_2pt": 0.0,
     "rush_40p": 0.03,
-    "rush_att": 2.27,
-    "rush_fd": 0.92,
+    "rush_att": 2.28,
+    "rush_fd": 0.93,
     "rush_td": 0.05,
-    "rush_yd": 9.21
+    "rush_yd": 9.3
    },
    "team": "BUF",
-   "updatedAt": 1795208462696,
+   "updatedAt": 1795231853895,
    "week": 11
   },
   {
@@ -8765,7 +8765,7 @@
     "rush_yd": 0.85
    },
    "team": "LV",
-   "updatedAt": 1795208463215,
+   "updatedAt": 1795231854429,
    "week": 11
   },
   {
@@ -8775,26 +8775,26 @@
    "playerId": "11620",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 3.59,
+    "bonus_rec_wr": 3.57,
     "def_fum_td": 0.0,
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 9.63,
-    "pts_ppr": 11.42,
-    "pts_std": 7.83,
-    "rec": 3.59,
-    "rec_0_4": 0.72,
-    "rec_10_19": 1.08,
-    "rec_20_29": 0.72,
+    "pts_half_ppr": 9.58,
+    "pts_ppr": 11.36,
+    "pts_std": 7.79,
+    "rec": 3.57,
+    "rec_0_4": 0.71,
+    "rec_10_19": 1.07,
+    "rec_20_29": 0.71,
     "rec_2pt": 0.01,
     "rec_30_39": 0.36,
     "rec_40p": 0.36,
-    "rec_5_9": 0.72,
-    "rec_fd": 6.5,
+    "rec_5_9": 0.71,
+    "rec_fd": 6.47,
     "rec_td": 0.22,
-    "rec_tgt": 5.86,
-    "rec_yd": 64.98,
+    "rec_tgt": 5.82,
+    "rec_yd": 64.69,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.01,
@@ -8803,7 +8803,7 @@
     "rush_yd": 0.06
    },
    "team": "CHI",
-   "updatedAt": 1795208462724,
+   "updatedAt": 1795231853902,
    "week": 11
   },
   {
@@ -8818,8 +8818,8 @@
     "fum": 0.06,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 13.25,
-    "pts_ppr": 16.22,
+    "pts_half_ppr": 13.26,
+    "pts_ppr": 16.23,
     "pts_std": 10.28,
     "rec": 5.94,
     "rec_0_4": 1.19,
@@ -8831,8 +8831,8 @@
     "rec_5_9": 1.19,
     "rec_fd": 8.29,
     "rec_td": 0.31,
-    "rec_tgt": 9.1,
-    "rec_yd": 82.87,
+    "rec_tgt": 9.11,
+    "rec_yd": 82.9,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.26,
@@ -8841,7 +8841,7 @@
     "rush_yd": 0.85
    },
    "team": "NYG",
-   "updatedAt": 1795208463207,
+   "updatedAt": 1795231854387,
    "week": 11
   },
   {
@@ -8851,35 +8851,35 @@
    "playerId": "11637",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 2.7,
+    "bonus_rec_wr": 2.68,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 6.98,
-    "pts_ppr": 8.33,
-    "pts_std": 5.63,
-    "rec": 2.7,
+    "pts_half_ppr": 6.94,
+    "pts_ppr": 8.27,
+    "pts_std": 5.6,
+    "rec": 2.68,
     "rec_0_4": 0.54,
-    "rec_10_19": 0.81,
+    "rec_10_19": 0.8,
     "rec_20_29": 0.54,
     "rec_2pt": 0.02,
     "rec_30_39": 0.27,
     "rec_40p": 0.27,
     "rec_5_9": 0.54,
-    "rec_fd": 4.08,
+    "rec_fd": 4.05,
     "rec_td": 0.25,
-    "rec_tgt": 3.85,
-    "rec_yd": 40.76,
+    "rec_tgt": 3.82,
+    "rec_yd": 40.52,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.05,
     "rush_fd": 0.02,
     "rush_td": 0.0,
-    "rush_yd": 0.2
+    "rush_yd": 0.21
    },
    "team": "BUF",
-   "updatedAt": 1795208462726,
+   "updatedAt": 1795231853903,
    "week": 11
   },
   {
@@ -8917,7 +8917,7 @@
     "rush_yd": 15.2
    },
    "team": "DET",
-   "updatedAt": 1795208462908,
+   "updatedAt": 1795231854100,
    "week": 11
   },
   {
@@ -8946,11 +8946,11 @@
     "xpmiss": 0.13
    },
    "team": "JAX",
-   "updatedAt": 1795208463131,
+   "updatedAt": 1795231854313,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Bhayshul Tuten",
    "opponent": "NYG",
    "playerId": "12490",
@@ -8963,7 +8963,7 @@
     "fum_lost": 0.07,
     "gp": 1.0,
     "pts_half_ppr": 14.39,
-    "pts_ppr": 15.53,
+    "pts_ppr": 15.52,
     "pts_std": 13.26,
     "rec": 2.26,
     "rec_0_4": 0.45,
@@ -8976,16 +8976,16 @@
     "rec_fd": 2.08,
     "rec_td": 0.2,
     "rec_tgt": 2.65,
-    "rec_yd": 20.81,
+    "rec_yd": 20.82,
     "rush_2pt": 0.03,
     "rush_40p": 0.17,
-    "rush_att": 15.86,
+    "rush_att": 15.85,
     "rush_fd": 7.5,
     "rush_td": 0.42,
-    "rush_yd": 75.0
+    "rush_yd": 74.96
    },
    "team": "JAX",
-   "updatedAt": 1795208463097,
+   "updatedAt": 1795231854280,
    "week": 11
   },
   {
@@ -9017,7 +9017,7 @@
     "rec_yd": 19.16
    },
    "team": "LAC",
-   "updatedAt": 1795208463109,
+   "updatedAt": 1795231854307,
    "week": 11
   },
   {
@@ -9044,15 +9044,15 @@
     "rec_30_39": 0.2,
     "rec_40p": 0.2,
     "rec_5_9": 0.4,
-    "rec_fd": 2.21,
+    "rec_fd": 2.2,
     "rec_td": 0.14,
     "rec_tgt": 3.31,
-    "rec_yd": 22.05,
+    "rec_yd": 22.04,
     "rush_2pt": 0.0,
     "rush_40p": 0.0
    },
    "team": "MIN",
-   "updatedAt": 1795208463136,
+   "updatedAt": 1795231854321,
    "week": 11
   },
   {
@@ -9084,7 +9084,7 @@
     "rec_yd": 30.3
    },
    "team": "TEN",
-   "updatedAt": 1795208463008,
+   "updatedAt": 1795231854209,
    "week": 11
   },
   {
@@ -9122,7 +9122,7 @@
     "rush_yd": 1.09
    },
    "team": "TB",
-   "updatedAt": 1795208463010,
+   "updatedAt": 1795231854203,
    "week": 11
   },
   {
@@ -9151,10 +9151,10 @@
     "rec_fd": 0.88,
     "rec_td": 0.07,
     "rec_tgt": 1.32,
-    "rec_yd": 8.8
+    "rec_yd": 8.79
    },
    "team": "MIN",
-   "updatedAt": 1795208463146,
+   "updatedAt": 1795231854330,
    "week": 11
   },
   {
@@ -9186,7 +9186,7 @@
     "rush_yd": 0.59
    },
    "team": "CAR",
-   "updatedAt": 1795208462789,
+   "updatedAt": 1795231853983,
    "week": 11
   },
   {
@@ -9202,7 +9202,7 @@
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 5.22,
+    "pts_half_ppr": 5.23,
     "pts_ppr": 6.24,
     "pts_std": 4.21,
     "rec": 2.03,
@@ -9216,7 +9216,7 @@
     "rec_fd": 3.3,
     "rec_td": 0.15,
     "rec_tgt": 3.66,
-    "rec_yd": 33.02,
+    "rec_yd": 33.03,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.04,
@@ -9225,7 +9225,7 @@
     "rush_yd": 0.12
    },
    "team": "NYG",
-   "updatedAt": 1795208463215,
+   "updatedAt": 1795231854392,
    "week": 11
   },
   {
@@ -9240,9 +9240,9 @@
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 1.68,
-    "pts_ppr": 2.13,
-    "pts_std": 1.23,
+    "pts_half_ppr": 1.69,
+    "pts_ppr": 2.14,
+    "pts_std": 1.25,
     "rec": 0.89,
     "rec_0_4": 0.18,
     "rec_10_19": 0.27,
@@ -9252,12 +9252,12 @@
     "rec_40p": 0.09,
     "rec_5_9": 0.18,
     "rec_fd": 0.9,
-    "rec_td": 0.05,
-    "rec_tgt": 1.46,
-    "rec_yd": 9.03
+    "rec_td": 0.06,
+    "rec_tgt": 1.45,
+    "rec_yd": 9.01
    },
    "team": "PHI",
-   "updatedAt": 1795208462950,
+   "updatedAt": 1795231854149,
    "week": 11
   },
   {
@@ -9267,15 +9267,15 @@
    "playerId": "13411",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 1.04,
+    "bonus_rec_wr": 1.03,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 2.59,
-    "pts_ppr": 3.11,
+    "pts_half_ppr": 2.58,
+    "pts_ppr": 3.1,
     "pts_std": 2.07,
-    "rec": 1.04,
+    "rec": 1.03,
     "rec_0_4": 0.21,
     "rec_10_19": 0.31,
     "rec_20_29": 0.21,
@@ -9283,19 +9283,19 @@
     "rec_30_39": 0.1,
     "rec_40p": 0.1,
     "rec_5_9": 0.21,
-    "rec_fd": 1.12,
+    "rec_fd": 1.11,
     "rec_td": 0.07,
-    "rec_tgt": 1.48,
-    "rec_yd": 11.2,
+    "rec_tgt": 1.47,
+    "rec_yd": 11.15,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
-    "rush_att": 0.68,
+    "rush_att": 0.69,
     "rush_fd": 0.37,
     "rush_td": 0.03,
-    "rush_yd": 3.66
+    "rush_yd": 3.68
    },
    "team": "CHI",
-   "updatedAt": 1795208462728,
+   "updatedAt": 1795231853924,
    "week": 11
   },
   {
@@ -9327,7 +9327,7 @@
     "rec_yd": 0.33
    },
    "team": "MIA",
-   "updatedAt": 1795208462851,
+   "updatedAt": 1795231854043,
    "week": 11
   },
   {
@@ -9343,8 +9343,8 @@
     "fum_lost": 0.0,
     "gp": 1.0,
     "pts_half_ppr": 0.81,
-    "pts_ppr": 1.06,
-    "pts_std": 0.57,
+    "pts_ppr": 1.05,
+    "pts_std": 0.56,
     "rec": 0.49,
     "rec_0_4": 0.1,
     "rec_10_19": 0.15,
@@ -9353,13 +9353,13 @@
     "rec_30_39": 0.05,
     "rec_40p": 0.05,
     "rec_5_9": 0.1,
-    "rec_fd": 0.41,
+    "rec_fd": 0.4,
     "rec_td": 0.03,
     "rec_tgt": 0.87,
-    "rec_yd": 4.07
+    "rec_yd": 4.04
    },
    "team": "MIA",
-   "updatedAt": 1795208462855,
+   "updatedAt": 1795231854048,
    "week": 11
   },
   {
@@ -9387,7 +9387,7 @@
     "rec_yd": 0.97
    },
    "team": "DEN",
-   "updatedAt": 1795208463119,
+   "updatedAt": 1795231854329,
    "week": 11
   },
   {
@@ -9416,7 +9416,7 @@
     "xpmiss": 0.13
    },
    "team": "CHI",
-   "updatedAt": 1795208462741,
+   "updatedAt": 1795231853937,
    "week": 11
   },
   {
@@ -9426,15 +9426,15 @@
    "playerId": "4035",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 2.0,
+    "bonus_rec_rb": 1.99,
     "def_fum_td": 0.0,
     "fum": 0.05,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 5.17,
-    "pts_ppr": 6.17,
-    "pts_std": 4.17,
-    "rec": 2.0,
+    "pts_half_ppr": 5.18,
+    "pts_ppr": 6.18,
+    "pts_std": 4.19,
+    "rec": 1.99,
     "rec_0_4": 0.4,
     "rec_10_19": 0.6,
     "rec_20_29": 0.4,
@@ -9442,19 +9442,19 @@
     "rec_30_39": 0.2,
     "rec_40p": 0.2,
     "rec_5_9": 0.4,
-    "rec_fd": 1.25,
+    "rec_fd": 1.24,
     "rec_td": 0.08,
-    "rec_tgt": 2.41,
-    "rec_yd": 12.46,
+    "rec_tgt": 2.4,
+    "rec_yd": 12.41,
     "rush_2pt": 0.01,
     "rush_40p": 0.04,
-    "rush_att": 4.46,
-    "rush_fd": 1.59,
+    "rush_att": 4.49,
+    "rush_fd": 1.61,
     "rush_td": 0.15,
-    "rush_yd": 15.93
+    "rush_yd": 16.06
    },
    "team": "NO",
-   "updatedAt": 1795208462826,
+   "updatedAt": 1795231854031,
    "week": 11
   },
   {
@@ -9464,35 +9464,35 @@
    "playerId": "4984",
    "pos": "QB",
    "stats": {
-    "bonus_rush_td_qb": 0.92,
+    "bonus_rush_td_qb": 0.93,
     "cmp_pct": 70.94,
     "def_fum_td": 0.0,
     "fum": 0.42,
-    "fum_lost": 0.19,
+    "fum_lost": 0.18,
     "gp": 1.0,
     "pass_2pt": 0.1,
-    "pass_att": 27.53,
-    "pass_cmp": 19.53,
-    "pass_cmp_40p": 0.41,
-    "pass_fd": 25.03,
-    "pass_inc": 8.0,
+    "pass_att": 27.29,
+    "pass_cmp": 19.36,
+    "pass_cmp_40p": 0.4,
+    "pass_fd": 24.88,
+    "pass_inc": 7.93,
     "pass_int": 0.8,
     "pass_int_td": 0.0,
-    "pass_sack": 2.5,
-    "pass_td": 1.56,
-    "pass_yd": 250.25,
-    "pts_half_ppr": 24.48,
-    "pts_ppr": 24.48,
-    "pts_std": 24.48,
+    "pass_sack": 2.48,
+    "pass_td": 1.55,
+    "pass_yd": 248.76,
+    "pts_half_ppr": 24.45,
+    "pts_ppr": 24.45,
+    "pts_std": 24.45,
     "rush_2pt": 0.07,
     "rush_40p": 0.08,
-    "rush_att": 6.91,
-    "rush_fd": 3.54,
-    "rush_td": 0.92,
-    "rush_yd": 35.4
+    "rush_att": 6.96,
+    "rush_fd": 3.57,
+    "rush_td": 0.93,
+    "rush_yd": 35.74
    },
    "team": "BUF",
-   "updatedAt": 1795208462693,
+   "updatedAt": 1795231853885,
    "week": 11
   },
   {
@@ -9502,16 +9502,16 @@
    "playerId": "6039",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 1.9,
+    "bonus_rec_rb": 1.89,
     "def_fum_td": 0.0,
     "def_kr_yd": 15.77,
     "fum": 0.05,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 4.88,
-    "pts_ppr": 5.83,
-    "pts_std": 3.93,
-    "rec": 1.9,
+    "pts_half_ppr": 4.87,
+    "pts_ppr": 5.81,
+    "pts_std": 3.92,
+    "rec": 1.89,
     "rec_0_4": 0.38,
     "rec_10_19": 0.57,
     "rec_20_29": 0.38,
@@ -9519,19 +9519,19 @@
     "rec_30_39": 0.19,
     "rec_40p": 0.19,
     "rec_5_9": 0.38,
-    "rec_fd": 1.95,
+    "rec_fd": 1.94,
     "rec_td": 0.1,
-    "rec_tgt": 2.06,
-    "rec_yd": 19.55,
+    "rec_tgt": 2.05,
+    "rec_yd": 19.43,
     "rush_2pt": 0.0,
     "rush_40p": 0.03,
-    "rush_att": 2.71,
-    "rush_fd": 1.08,
+    "rush_att": 2.73,
+    "rush_fd": 1.09,
     "rush_td": 0.05,
-    "rush_yd": 10.81
+    "rush_yd": 10.92
    },
    "team": "BUF",
-   "updatedAt": 1795208462703,
+   "updatedAt": 1795231853898,
    "week": 11
   },
   {
@@ -9559,7 +9559,7 @@
     "rec_yd": 0.75
    },
    "team": "CHI",
-   "updatedAt": 1795208462739,
+   "updatedAt": 1795231853935,
    "week": 11
   },
   {
@@ -9574,7 +9574,7 @@
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 1.1,
+    "pts_half_ppr": 1.09,
     "pts_ppr": 1.4,
     "pts_std": 0.79,
     "rec": 0.6,
@@ -9597,7 +9597,7 @@
     "rush_yd": 1.96
    },
    "team": "MIN",
-   "updatedAt": 1795208463126,
+   "updatedAt": 1795231854312,
    "week": 11
   },
   {
@@ -9607,15 +9607,15 @@
    "playerId": "7002",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 3.31,
+    "bonus_rec_te": 3.29,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 7.01,
-    "pts_ppr": 8.66,
-    "pts_std": 5.35,
-    "rec": 3.31,
+    "pts_half_ppr": 6.98,
+    "pts_ppr": 8.63,
+    "pts_std": 5.33,
+    "rec": 3.29,
     "rec_0_4": 0.66,
     "rec_10_19": 0.99,
     "rec_20_29": 0.66,
@@ -9623,13 +9623,13 @@
     "rec_30_39": 0.33,
     "rec_40p": 0.33,
     "rec_5_9": 0.66,
-    "rec_fd": 3.68,
+    "rec_fd": 3.67,
     "rec_td": 0.28,
-    "rec_tgt": 4.65,
-    "rec_yd": 36.81
+    "rec_tgt": 4.63,
+    "rec_yd": 36.66
    },
    "team": "NO",
-   "updatedAt": 1795208462842,
+   "updatedAt": 1795231854048,
    "week": 11
   },
   {
@@ -9639,36 +9639,36 @@
    "playerId": "7021",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 1.85,
+    "bonus_rec_rb": 1.84,
     "def_fum_td": 0.0,
-    "def_kr_yd": 5.97,
+    "def_kr_yd": 5.94,
     "fum": 0.1,
     "fum_lost": 0.04,
     "gp": 1.0,
-    "pts_half_ppr": 7.48,
-    "pts_ppr": 8.41,
-    "pts_std": 6.56,
-    "rec": 1.85,
+    "pts_half_ppr": 7.47,
+    "pts_ppr": 8.39,
+    "pts_std": 6.55,
+    "rec": 1.84,
     "rec_0_4": 0.37,
-    "rec_10_19": 0.56,
+    "rec_10_19": 0.55,
     "rec_20_29": 0.37,
     "rec_2pt": 0.01,
-    "rec_30_39": 0.19,
-    "rec_40p": 0.19,
+    "rec_30_39": 0.18,
+    "rec_40p": 0.18,
     "rec_5_9": 0.37,
-    "rec_fd": 1.35,
+    "rec_fd": 1.34,
     "rec_td": 0.12,
-    "rec_tgt": 2.4,
-    "rec_yd": 13.47,
+    "rec_tgt": 2.39,
+    "rec_yd": 13.4,
     "rush_2pt": 0.01,
     "rush_40p": 0.09,
-    "rush_att": 9.24,
-    "rush_fd": 3.6,
+    "rush_att": 9.29,
+    "rush_fd": 3.62,
     "rush_td": 0.16,
-    "rush_yd": 36.04
+    "rush_yd": 36.23
    },
    "team": "PIT",
-   "updatedAt": 1795208463028,
+   "updatedAt": 1795231854222,
    "week": 11
   },
   {
@@ -9678,26 +9678,26 @@
    "playerId": "7525",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 4.29,
+    "bonus_rec_wr": 4.27,
     "def_fum_td": 0.0,
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 10.27,
-    "pts_ppr": 12.42,
-    "pts_std": 8.13,
-    "rec": 4.29,
-    "rec_0_4": 0.86,
-    "rec_10_19": 1.29,
-    "rec_20_29": 0.86,
+    "pts_half_ppr": 10.36,
+    "pts_ppr": 12.5,
+    "pts_std": 8.23,
+    "rec": 4.27,
+    "rec_0_4": 0.85,
+    "rec_10_19": 1.28,
+    "rec_20_29": 0.85,
     "rec_2pt": 0.02,
     "rec_30_39": 0.43,
     "rec_40p": 0.43,
-    "rec_5_9": 0.86,
-    "rec_fd": 6.15,
-    "rec_td": 0.32,
-    "rec_tgt": 6.99,
-    "rec_yd": 61.47,
+    "rec_5_9": 0.85,
+    "rec_fd": 6.13,
+    "rec_td": 0.34,
+    "rec_tgt": 6.95,
+    "rec_yd": 61.34,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.05,
@@ -9706,11 +9706,11 @@
     "rush_yd": 0.18
    },
    "team": "PHI",
-   "updatedAt": 1795208462939,
+   "updatedAt": 1795231854137,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Jaylen Waddle",
    "opponent": "LV",
    "playerId": "7526",
@@ -9744,7 +9744,7 @@
     "rush_yd": 1.47
    },
    "team": "DEN",
-   "updatedAt": 1795208463113,
+   "updatedAt": 1795231854324,
    "week": 11
   },
   {
@@ -9776,7 +9776,7 @@
     "rec_yd": 21.85
    },
    "team": "KC",
-   "updatedAt": 1795208463024,
+   "updatedAt": 1795231854237,
    "week": 11
   },
   {
@@ -9786,28 +9786,28 @@
    "playerId": "8134",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 3.43,
+    "bonus_rec_wr": 3.4,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.02,
     "gp": 1.0,
     "pr": 0.78,
     "pr_yd": 8.31,
-    "pts_half_ppr": 7.96,
-    "pts_ppr": 9.68,
-    "pts_std": 6.25,
-    "rec": 3.43,
-    "rec_0_4": 0.69,
-    "rec_10_19": 1.03,
-    "rec_20_29": 0.69,
+    "pts_half_ppr": 7.91,
+    "pts_ppr": 9.61,
+    "pts_std": 6.21,
+    "rec": 3.4,
+    "rec_0_4": 0.68,
+    "rec_10_19": 1.02,
+    "rec_20_29": 0.68,
     "rec_2pt": 0.02,
     "rec_30_39": 0.34,
     "rec_40p": 0.34,
-    "rec_5_9": 0.69,
-    "rec_fd": 4.62,
+    "rec_5_9": 0.68,
+    "rec_fd": 4.6,
     "rec_td": 0.26,
-    "rec_tgt": 4.54,
-    "rec_yd": 46.23,
+    "rec_tgt": 4.5,
+    "rec_yd": 45.95,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.12,
@@ -9816,7 +9816,7 @@
     "rush_yd": 0.58
    },
    "team": "BUF",
-   "updatedAt": 1795208462731,
+   "updatedAt": 1795231853928,
    "week": 11
   },
   {
@@ -9854,7 +9854,7 @@
     "rush_yd": 47.78
    },
    "team": "NYJ",
-   "updatedAt": 1795208463185,
+   "updatedAt": 1795231854379,
    "week": 11
   },
   {
@@ -9893,7 +9893,7 @@
     "rush_yd": 0.99
    },
    "team": "TEN",
-   "updatedAt": 1795208462981,
+   "updatedAt": 1795231854180,
    "week": 11
   },
   {
@@ -9932,7 +9932,7 @@
     "rush_yd": 23.46
    },
    "team": "DAL",
-   "updatedAt": 1795208462890,
+   "updatedAt": 1795231854090,
    "week": 11
   },
   {
@@ -9949,16 +9949,16 @@
     "fum_lost": 0.18,
     "gp": 1.0,
     "pass_2pt": 0.1,
-    "pass_att": 33.47,
-    "pass_cmp": 20.6,
+    "pass_att": 33.45,
+    "pass_cmp": 20.59,
     "pass_cmp_40p": 0.41,
-    "pass_fd": 24.6,
+    "pass_fd": 24.59,
     "pass_inc": 12.87,
     "pass_int": 0.44,
     "pass_int_td": 0.0,
     "pass_sack": 2.69,
     "pass_td": 1.58,
-    "pass_yd": 246.01,
+    "pass_yd": 245.9,
     "pts_half_ppr": 18.24,
     "pts_ppr": 18.24,
     "pts_std": 18.24,
@@ -9967,10 +9967,10 @@
     "rush_att": 3.27,
     "rush_fd": 1.6,
     "rush_td": 0.18,
-    "rush_yd": 15.96
+    "rush_yd": 15.97
    },
    "team": "CAR",
-   "updatedAt": 1795208462787,
+   "updatedAt": 1795231853981,
    "week": 11
   },
   {
@@ -10009,7 +10009,7 @@
     "rush_yd": 8.67
    },
    "team": "TB",
-   "updatedAt": 1795208462993,
+   "updatedAt": 1795231854186,
    "week": 11
   },
   {
@@ -10048,7 +10048,7 @@
     "rush_yd": 21.58
    },
    "team": "LAC",
-   "updatedAt": 1795208463079,
+   "updatedAt": 1795231854277,
    "week": 11
   },
   {
@@ -10079,7 +10079,7 @@
     "yds_allow_400_449": 1.0
    },
    "team": "ARI",
-   "updatedAt": 1795208462910,
+   "updatedAt": 1795231854113,
    "week": 11
   },
   {
@@ -10109,11 +10109,11 @@
     "sack": 2.42,
     "st_td": 0.06,
     "tkl_loss": 4.16,
-    "yds_allow": 302.23,
+    "yds_allow": 302.22,
     "yds_allow_300_349": 1.0
    },
    "team": "CAR",
-   "updatedAt": 1795208462784,
+   "updatedAt": 1795231853978,
    "week": 11
   },
   {
@@ -10148,7 +10148,7 @@
     "yds_allow_300_349": 1.0
    },
    "team": "DET",
-   "updatedAt": 1795208462897,
+   "updatedAt": 1795231854090,
    "week": 11
   },
   {
@@ -10176,11 +10176,11 @@
     "sack": 1.91,
     "st_td": 0.05,
     "tkl_loss": 3.18,
-    "yds_allow": 411.56,
+    "yds_allow": 411.54,
     "yds_allow_400_449": 1.0
    },
    "team": "NO",
-   "updatedAt": 1795208462814,
+   "updatedAt": 1795231853998,
    "week": 11
   },
   {
@@ -10218,7 +10218,7 @@
     "rush_yd": 0.23
    },
    "team": "DET",
-   "updatedAt": 1795208462924,
+   "updatedAt": 1795231854116,
    "week": 11
   },
   {
@@ -10250,7 +10250,7 @@
     "rush_yd": 0.15
    },
    "team": "CAR",
-   "updatedAt": 1795208462830,
+   "updatedAt": 1795231854016,
    "week": 11
   },
   {
@@ -10281,7 +10281,7 @@
     "rush_yd": 0.15
    },
    "team": "KC",
-   "updatedAt": 1795208463086,
+   "updatedAt": 1795231854296,
    "week": 11
   },
   {
@@ -10298,28 +10298,28 @@
     "fum_lost": 0.17,
     "gp": 1.0,
     "pass_2pt": 0.05,
-    "pass_att": 31.28,
-    "pass_cmp": 20.21,
+    "pass_att": 31.29,
+    "pass_cmp": 20.22,
     "pass_cmp_40p": 0.37,
-    "pass_fd": 25.71,
-    "pass_inc": 11.06,
+    "pass_fd": 25.72,
+    "pass_inc": 11.07,
     "pass_int": 1.43,
     "pass_int_td": 0.0,
     "pass_sack": 2.4,
     "pass_td": 0.82,
-    "pass_yd": 257.11,
-    "pts_half_ppr": 15.02,
-    "pts_ppr": 15.02,
-    "pts_std": 15.02,
+    "pass_yd": 257.22,
+    "pts_half_ppr": 15.03,
+    "pts_ppr": 15.03,
+    "pts_std": 15.03,
     "rush_2pt": 0.01,
     "rush_40p": 0.04,
     "rush_att": 3.66,
     "rush_fd": 1.68,
     "rush_td": 0.24,
-    "rush_yd": 16.78
+    "rush_yd": 16.77
    },
    "team": "NYG",
-   "updatedAt": 1795208463196,
+   "updatedAt": 1795231854374,
    "week": 11
   },
   {
@@ -10358,7 +10358,7 @@
     "rush_yd": 1.27
    },
    "team": "NYJ",
-   "updatedAt": 1795208463182,
+   "updatedAt": 1795231854377,
    "week": 11
   },
   {
@@ -10397,7 +10397,7 @@
     "rush_yd": 1.01
    },
    "team": "LV",
-   "updatedAt": 1795208463192,
+   "updatedAt": 1795231854403,
    "week": 11
   },
   {
@@ -10435,7 +10435,7 @@
     "rush_yd": 84.8
    },
    "team": "TB",
-   "updatedAt": 1795208462998,
+   "updatedAt": 1795231854191,
    "week": 11
   },
   {
@@ -10450,7 +10450,7 @@
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 2.63,
+    "pts_half_ppr": 2.64,
     "pts_ppr": 3.17,
     "pts_std": 2.1,
     "rec": 1.08,
@@ -10464,10 +10464,10 @@
     "rec_fd": 1.45,
     "rec_td": 0.11,
     "rec_tgt": 1.9,
-    "rec_yd": 14.52
+    "rec_yd": 14.53
    },
    "team": "NYG",
-   "updatedAt": 1795208463220,
+   "updatedAt": 1795231854401,
    "week": 11
   },
   {
@@ -10502,7 +10502,7 @@
     "rec_yd": 0.1
    },
    "team": "SF",
-   "updatedAt": 1795208463223,
+   "updatedAt": 1795231854411,
    "week": 11
   },
   {
@@ -10543,7 +10543,7 @@
     "rush_yd": 0.91
    },
    "team": "KC",
-   "updatedAt": 1795208463008,
+   "updatedAt": 1795231854215,
    "week": 11
   },
   {
@@ -10559,7 +10559,7 @@
     "fum_lost": 0.0,
     "gp": 1.0,
     "pts_half_ppr": 2.02,
-    "pts_ppr": 2.4,
+    "pts_ppr": 2.39,
     "pts_std": 1.64,
     "rec": 0.76,
     "rec_0_4": 0.15,
@@ -10572,7 +10572,7 @@
     "rec_fd": 1.28,
     "rec_td": 0.05,
     "rec_tgt": 1.67,
-    "rec_yd": 12.84,
+    "rec_yd": 12.83,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.05,
@@ -10581,7 +10581,7 @@
     "rush_yd": 0.18
    },
    "team": "CAR",
-   "updatedAt": 1795208462823,
+   "updatedAt": 1795231854008,
    "week": 11
   },
   {
@@ -10619,7 +10619,7 @@
     "rush_yd": 0.52
    },
    "team": "DEN",
-   "updatedAt": 1795208463099,
+   "updatedAt": 1795231854311,
    "week": 11
   },
   {
@@ -10629,27 +10629,27 @@
    "playerId": "11834",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 2.08,
+    "bonus_rec_wr": 2.07,
     "def_fum_td": 0.0,
     "def_kr_yd": 7.4,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 4.47,
-    "pts_ppr": 5.51,
-    "pts_std": 3.43,
-    "rec": 2.08,
-    "rec_0_4": 0.42,
+    "pts_half_ppr": 4.45,
+    "pts_ppr": 5.49,
+    "pts_std": 3.42,
+    "rec": 2.07,
+    "rec_0_4": 0.41,
     "rec_10_19": 0.62,
-    "rec_20_29": 0.42,
+    "rec_20_29": 0.41,
     "rec_2pt": 0.01,
     "rec_30_39": 0.21,
     "rec_40p": 0.21,
-    "rec_5_9": 0.42,
-    "rec_fd": 2.62,
+    "rec_5_9": 0.41,
+    "rec_fd": 2.61,
     "rec_td": 0.13,
-    "rec_tgt": 3.27,
-    "rec_yd": 26.17,
+    "rec_tgt": 3.25,
+    "rec_yd": 26.06,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.05,
@@ -10658,7 +10658,7 @@
     "rush_yd": 0.22
    },
    "team": "NO",
-   "updatedAt": 1795208462840,
+   "updatedAt": 1795231854045,
    "week": 11
   },
   {
@@ -10696,7 +10696,7 @@
     "rush_yd": 0.58
    },
    "team": "DEN",
-   "updatedAt": 1795208463102,
+   "updatedAt": 1795231854314,
    "week": 11
   },
   {
@@ -10734,7 +10734,7 @@
     "rush_yd": 47.73
    },
    "team": "LAC",
-   "updatedAt": 1795208463084,
+   "updatedAt": 1795231854282,
    "week": 11
   },
   {
@@ -10769,7 +10769,7 @@
     "rush_40p": 0.0
    },
    "team": "TEN",
-   "updatedAt": 1795208462991,
+   "updatedAt": 1795231854191,
    "week": 11
   },
   {
@@ -10808,7 +10808,7 @@
     "rush_yd": 0.21
    },
    "team": "DET",
-   "updatedAt": 1795208462915,
+   "updatedAt": 1795231854107,
    "week": 11
   },
   {
@@ -10840,7 +10840,7 @@
     "rec_yd": 3.85
    },
    "team": "LV",
-   "updatedAt": 1795208463205,
+   "updatedAt": 1795231854417,
    "week": 11
   },
   {
@@ -10865,11 +10865,11 @@
     "rec_5_9": 0.11,
     "rec_fd": 1.02,
     "rec_td": 0.03,
-    "rec_tgt": 0.95,
+    "rec_tgt": 0.94,
     "rec_yd": 10.22
    },
    "team": "SF",
-   "updatedAt": 1795208463234,
+   "updatedAt": 1795231854424,
    "week": 11
   },
   {
@@ -10910,7 +10910,7 @@
     "rush_yd": 0.22
    },
    "team": "BAL",
-   "updatedAt": 1795208462730,
+   "updatedAt": 1795231853921,
    "week": 11
   },
   {
@@ -10920,16 +10920,16 @@
    "playerId": "13274",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 2.6,
+    "bonus_rec_wr": 2.59,
     "def_fum_td": 0.0,
-    "def_kr_yd": 6.21,
+    "def_kr_yd": 6.18,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 5.2,
-    "pts_ppr": 6.5,
-    "pts_std": 3.9,
-    "rec": 2.6,
+    "pts_half_ppr": 5.16,
+    "pts_ppr": 6.46,
+    "pts_std": 3.87,
+    "rec": 2.59,
     "rec_0_4": 0.52,
     "rec_10_19": 0.78,
     "rec_20_29": 0.52,
@@ -10937,10 +10937,10 @@
     "rec_30_39": 0.26,
     "rec_40p": 0.26,
     "rec_5_9": 0.52,
-    "rec_fd": 2.81,
+    "rec_fd": 2.79,
     "rec_td": 0.16,
-    "rec_tgt": 4.01,
-    "rec_yd": 28.07,
+    "rec_tgt": 3.99,
+    "rec_yd": 27.94,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.16,
@@ -10949,7 +10949,7 @@
     "rush_yd": 0.71
    },
    "team": "PIT",
-   "updatedAt": 1795208463030,
+   "updatedAt": 1795231854226,
    "week": 11
   },
   {
@@ -10959,7 +10959,7 @@
    "playerId": "13281",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 4.6,
+    "bonus_rec_wr": 4.58,
     "def_fum_td": 0.0,
     "def_kr_yd": 6.39,
     "fum": 0.04,
@@ -10967,21 +10967,21 @@
     "gp": 1.0,
     "pr": 0.08,
     "pr_yd": 0.5,
-    "pts_half_ppr": 8.59,
-    "pts_ppr": 10.89,
-    "pts_std": 6.29,
-    "rec": 4.6,
+    "pts_half_ppr": 8.55,
+    "pts_ppr": 10.84,
+    "pts_std": 6.26,
+    "rec": 4.58,
     "rec_0_4": 0.92,
-    "rec_10_19": 1.38,
+    "rec_10_19": 1.37,
     "rec_20_29": 0.92,
     "rec_2pt": 0.02,
     "rec_30_39": 0.46,
     "rec_40p": 0.46,
     "rec_5_9": 0.92,
-    "rec_fd": 4.83,
+    "rec_fd": 4.81,
     "rec_td": 0.23,
-    "rec_tgt": 6.6,
-    "rec_yd": 48.28,
+    "rec_tgt": 6.57,
+    "rec_yd": 48.08,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.09,
@@ -10990,7 +10990,7 @@
     "rush_yd": 0.41
    },
    "team": "NO",
-   "updatedAt": 1795208462837,
+   "updatedAt": 1795231854043,
    "week": 11
   },
   {
@@ -11029,7 +11029,7 @@
     "rush_yd": 0.63
    },
    "team": "TEN",
-   "updatedAt": 1795208462986,
+   "updatedAt": 1795231854185,
    "week": 11
   },
   {
@@ -11039,26 +11039,26 @@
    "playerId": "13311",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 1.48,
+    "bonus_rec_wr": 1.47,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 3.13,
-    "pts_ppr": 3.87,
-    "pts_std": 2.39,
-    "rec": 1.48,
-    "rec_0_4": 0.3,
+    "pts_half_ppr": 3.11,
+    "pts_ppr": 3.85,
+    "pts_std": 2.38,
+    "rec": 1.47,
+    "rec_0_4": 0.29,
     "rec_10_19": 0.44,
-    "rec_20_29": 0.3,
+    "rec_20_29": 0.29,
     "rec_2pt": 0.0,
     "rec_30_39": 0.15,
     "rec_40p": 0.15,
-    "rec_5_9": 0.3,
-    "rec_fd": 1.87,
+    "rec_5_9": 0.29,
+    "rec_fd": 1.85,
     "rec_td": 0.08,
-    "rec_tgt": 3.49,
-    "rec_yd": 18.66,
+    "rec_tgt": 3.47,
+    "rec_yd": 18.55,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.04,
@@ -11067,7 +11067,7 @@
     "rush_yd": 0.21
    },
    "team": "MIA",
-   "updatedAt": 1795208462835,
+   "updatedAt": 1795231854035,
    "week": 11
   },
   {
@@ -11077,15 +11077,15 @@
    "playerId": "13319",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 1.01,
+    "bonus_rec_te": 1.0,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 1.58,
-    "pts_ppr": 2.08,
+    "pts_half_ppr": 1.57,
+    "pts_ppr": 2.07,
     "pts_std": 1.07,
-    "rec": 1.01,
+    "rec": 1.0,
     "rec_0_4": 0.2,
     "rec_10_19": 0.3,
     "rec_20_29": 0.2,
@@ -11093,13 +11093,13 @@
     "rec_30_39": 0.1,
     "rec_40p": 0.1,
     "rec_5_9": 0.2,
-    "rec_fd": 0.83,
+    "rec_fd": 0.82,
     "rec_td": 0.04,
-    "rec_tgt": 1.21,
-    "rec_yd": 8.27
+    "rec_tgt": 1.2,
+    "rec_yd": 8.23
    },
    "team": "NO",
-   "updatedAt": 1795208462849,
+   "updatedAt": 1795231854054,
    "week": 11
   },
   {
@@ -11133,7 +11133,7 @@
     "rush_40p": 0.0
    },
    "team": "LV",
-   "updatedAt": 1795208463196,
+   "updatedAt": 1795231854409,
    "week": 11
   },
   {
@@ -11172,7 +11172,7 @@
     "rush_yd": 40.08
    },
    "team": "KC",
-   "updatedAt": 1795208463005,
+   "updatedAt": 1795231854213,
    "week": 11
   },
   {
@@ -11182,15 +11182,15 @@
    "playerId": "13338",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 0.7,
+    "bonus_rec_wr": 0.69,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 1.6,
-    "pts_ppr": 1.95,
-    "pts_std": 1.25,
-    "rec": 0.7,
+    "pts_half_ppr": 1.59,
+    "pts_ppr": 1.94,
+    "pts_std": 1.24,
+    "rec": 0.69,
     "rec_0_4": 0.14,
     "rec_10_19": 0.21,
     "rec_20_29": 0.14,
@@ -11200,11 +11200,11 @@
     "rec_5_9": 0.14,
     "rec_fd": 0.76,
     "rec_td": 0.08,
-    "rec_tgt": 2.04,
-    "rec_yd": 7.62
+    "rec_tgt": 2.02,
+    "rec_yd": 7.57
    },
    "team": "MIA",
-   "updatedAt": 1795208462840,
+   "updatedAt": 1795231854038,
    "week": 11
   },
   {
@@ -11219,9 +11219,9 @@
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 2.02,
-    "pts_ppr": 2.51,
-    "pts_std": 1.53,
+    "pts_half_ppr": 2.04,
+    "pts_ppr": 2.53,
+    "pts_std": 1.55,
     "rec": 0.98,
     "rec_0_4": 0.2,
     "rec_10_19": 0.29,
@@ -11230,10 +11230,10 @@
     "rec_30_39": 0.1,
     "rec_40p": 0.1,
     "rec_5_9": 0.2,
-    "rec_fd": 1.16,
+    "rec_fd": 1.15,
     "rec_td": 0.06,
-    "rec_tgt": 1.46,
-    "rec_yd": 11.56,
+    "rec_tgt": 1.45,
+    "rec_yd": 11.53,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.03,
@@ -11242,7 +11242,7 @@
     "rush_yd": 0.09
    },
    "team": "PHI",
-   "updatedAt": 1795208462948,
+   "updatedAt": 1795231854144,
    "week": 11
   },
   {
@@ -11272,7 +11272,7 @@
     "rec_fd": 1.6,
     "rec_td": 0.15,
     "rec_tgt": 1.87,
-    "rec_yd": 15.97,
+    "rec_yd": 15.98,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
     "rush_att": 0.13,
@@ -11281,7 +11281,7 @@
     "rush_yd": 0.66
    },
    "team": "JAX",
-   "updatedAt": 1795208463104,
+   "updatedAt": 1795231854288,
    "week": 11
   },
   {
@@ -11296,7 +11296,7 @@
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 0.21,
+    "pts_half_ppr": 0.2,
     "pts_ppr": 0.24,
     "pts_std": 0.17,
     "rec": 0.06,
@@ -11307,19 +11307,19 @@
     "rec_30_39": 0.01,
     "rec_40p": 0.01,
     "rec_5_9": 0.01,
-    "rec_fd": 0.11,
+    "rec_fd": 0.1,
     "rec_td": 0.01,
     "rec_tgt": 0.14,
-    "rec_yd": 1.05,
+    "rec_yd": 1.04,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.03,
     "rush_fd": 0.02,
     "rush_td": 0.0,
-    "rush_yd": 0.17
+    "rush_yd": 0.18
    },
    "team": "BUF",
-   "updatedAt": 1795208462724,
+   "updatedAt": 1795231853905,
    "week": 11
   },
   {
@@ -11355,7 +11355,7 @@
     "rush_yd": 0.07
    },
    "team": "KC",
-   "updatedAt": 1795208463017,
+   "updatedAt": 1795231854226,
    "week": 11
   },
   {
@@ -11394,7 +11394,7 @@
     "rush_yd": 5.07
    },
    "team": "KC",
-   "updatedAt": 1795208463002,
+   "updatedAt": 1795231854210,
    "week": 11
   },
   {
@@ -11432,7 +11432,7 @@
     "rush_yd": 1.11
    },
    "team": "NYG",
-   "updatedAt": 1795208463203,
+   "updatedAt": 1795231854382,
    "week": 11
   },
   {
@@ -11470,7 +11470,7 @@
     "rush_yd": 9.26
    },
    "team": "NYJ",
-   "updatedAt": 1795208463175,
+   "updatedAt": 1795231854368,
    "week": 11
   },
   {
@@ -11481,7 +11481,7 @@
    "pos": "RB",
    "stats": {
     "gp": 1.0,
-    "pts_half_ppr": 0.78,
+    "pts_half_ppr": 0.77,
     "pts_ppr": 0.99,
     "pts_std": 0.56,
     "rec": 0.43,
@@ -11491,17 +11491,17 @@
     "rec_30_39": 0.04,
     "rec_40p": 0.04,
     "rec_5_9": 0.09,
-    "rec_fd": 0.4,
+    "rec_fd": 0.39,
     "rec_td": 0.02,
-    "rec_tgt": 0.7,
-    "rec_yd": 3.97,
+    "rec_tgt": 0.69,
+    "rec_yd": 3.94,
     "rush_att": 0.05,
     "rush_fd": 0.02,
     "rush_td": 0.0,
     "rush_yd": 0.21
    },
    "team": "MIA",
-   "updatedAt": 1795208462917,
+   "updatedAt": 1795231854114,
    "week": 11
   },
   {
@@ -11517,7 +11517,7 @@
     "fum_lost": 0.01,
     "gp": 1.0,
     "pts_half_ppr": 7.21,
-    "pts_ppr": 8.66,
+    "pts_ppr": 8.65,
     "pts_std": 5.77,
     "rec": 2.89,
     "rec_0_4": 0.58,
@@ -11530,10 +11530,10 @@
     "rec_fd": 3.66,
     "rec_td": 0.35,
     "rec_tgt": 4.32,
-    "rec_yd": 36.61
+    "rec_yd": 36.6
    },
    "team": "CAR",
-   "updatedAt": 1795208462836,
+   "updatedAt": 1795231854021,
    "week": 11
   },
   {
@@ -11571,7 +11571,7 @@
     "rush_yd": 4.11
    },
    "team": "DET",
-   "updatedAt": 1795208462901,
+   "updatedAt": 1795231854092,
    "week": 11
   },
   {
@@ -11600,10 +11600,10 @@
     "rec_fd": 0.93,
     "rec_td": 0.05,
     "rec_tgt": 1.1,
-    "rec_yd": 9.29
+    "rec_yd": 9.28
    },
    "team": "SF",
-   "updatedAt": 1795208463232,
+   "updatedAt": 1795231854421,
    "week": 11
   },
   {
@@ -11613,26 +11613,26 @@
    "playerId": "4195",
    "pos": "K",
    "stats": {
-    "fga": 1.76,
+    "fga": 1.77,
     "fgm": 1.53,
     "fgm_20_29": 0.3,
-    "fgm_30_39": 0.39,
-    "fgm_40_49": 0.34,
+    "fgm_30_39": 0.4,
+    "fgm_40_49": 0.35,
     "fgm_50p": 0.25,
-    "fgm_yds": 53.12,
+    "fgm_yds": 53.38,
     "fgmiss_30_39": 0.04,
     "fgmiss_40_49": 0.04,
     "fgmiss_50p": 0.08,
     "gp": 1.0,
-    "pts_half_ppr": 6.85,
-    "pts_ppr": 6.85,
-    "pts_std": 6.85,
-    "xpa": 2.41,
-    "xpm": 2.29,
+    "pts_half_ppr": 6.88,
+    "pts_ppr": 6.88,
+    "pts_std": 6.88,
+    "xpa": 2.42,
+    "xpm": 2.3,
     "xpmiss": 0.12
    },
    "team": "PHI",
-   "updatedAt": 1795208462957,
+   "updatedAt": 1795231854156,
    "week": 11
   },
   {
@@ -11661,7 +11661,7 @@
     "xpmiss": 0.11
    },
    "team": "KC",
-   "updatedAt": 1795208463030,
+   "updatedAt": 1795231854243,
    "week": 11
   },
   {
@@ -11675,7 +11675,7 @@
     "gp": 1.0,
     "pts_half_ppr": 0.62,
     "pts_ppr": 0.79,
-    "pts_std": 0.44,
+    "pts_std": 0.45,
     "rec": 0.34,
     "rec_0_4": 0.07,
     "rec_10_19": 0.1,
@@ -11686,10 +11686,10 @@
     "rec_fd": 0.32,
     "rec_td": 0.02,
     "rec_tgt": 0.52,
-    "rec_yd": 3.23
+    "rec_yd": 3.22
    },
    "team": "PHI",
-   "updatedAt": 1795208462946,
+   "updatedAt": 1795231854142,
    "week": 11
   },
   {
@@ -11699,15 +11699,15 @@
    "playerId": "4866",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 1.71,
+    "bonus_rec_rb": 1.7,
     "def_fum_td": 0.0,
     "fum": 0.15,
-    "fum_lost": 0.06,
+    "fum_lost": 0.07,
     "gp": 1.0,
-    "pts_half_ppr": 11.8,
-    "pts_ppr": 12.65,
-    "pts_std": 10.94,
-    "rec": 1.71,
+    "pts_half_ppr": 12.1,
+    "pts_ppr": 12.95,
+    "pts_std": 11.25,
+    "rec": 1.7,
     "rec_0_4": 0.34,
     "rec_10_19": 0.51,
     "rec_20_29": 0.34,
@@ -11717,17 +11717,17 @@
     "rec_5_9": 0.34,
     "rec_fd": 1.17,
     "rec_td": 0.08,
-    "rec_tgt": 2.33,
-    "rec_yd": 11.73,
+    "rec_tgt": 2.32,
+    "rec_yd": 11.7,
     "rush_2pt": 0.03,
     "rush_40p": 0.15,
-    "rush_att": 16.79,
-    "rush_fd": 6.5,
-    "rush_td": 0.48,
-    "rush_yd": 64.95
+    "rush_att": 16.93,
+    "rush_fd": 6.57,
+    "rush_td": 0.51,
+    "rush_yd": 65.73
    },
    "team": "PHI",
-   "updatedAt": 1795208462932,
+   "updatedAt": 1795231854129,
    "week": 11
   },
   {
@@ -11765,7 +11765,7 @@
     "rush_yd": 15.34
    },
    "team": "TB",
-   "updatedAt": 1795208462991,
+   "updatedAt": 1795231854183,
    "week": 11
   },
   {
@@ -11775,29 +11775,29 @@
    "playerId": "5022",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 3.59,
+    "bonus_rec_te": 3.57,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 7.97,
-    "pts_ppr": 9.77,
-    "pts_std": 6.18,
-    "rec": 3.59,
-    "rec_0_4": 0.72,
-    "rec_10_19": 1.08,
-    "rec_20_29": 0.72,
+    "pts_half_ppr": 8.08,
+    "pts_ppr": 9.86,
+    "pts_std": 6.29,
+    "rec": 3.57,
+    "rec_0_4": 0.71,
+    "rec_10_19": 1.07,
+    "rec_20_29": 0.71,
     "rec_2pt": 0.02,
     "rec_30_39": 0.36,
     "rec_40p": 0.36,
-    "rec_5_9": 0.72,
-    "rec_fd": 3.98,
-    "rec_td": 0.36,
-    "rec_tgt": 4.81,
-    "rec_yd": 39.83
+    "rec_5_9": 0.71,
+    "rec_fd": 3.97,
+    "rec_td": 0.38,
+    "rec_tgt": 4.78,
+    "rec_yd": 39.75
    },
    "team": "PHI",
-   "updatedAt": 1795208462952,
+   "updatedAt": 1795231854151,
    "week": 11
   },
   {
@@ -11829,7 +11829,7 @@
     "rec_yd": 38.44
    },
    "team": "DEN",
-   "updatedAt": 1795208463108,
+   "updatedAt": 1795231854319,
    "week": 11
   },
   {
@@ -11858,7 +11858,7 @@
     "xpmiss": 0.06
    },
    "team": "MIA",
-   "updatedAt": 1795208462857,
+   "updatedAt": 1795231854052,
    "week": 11
   },
   {
@@ -11868,7 +11868,7 @@
    "playerId": "5970",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 0.2,
+    "bonus_rec_wr": 0.19,
     "def_fum_td": 0.0,
     "def_kr_yd": 49.24,
     "fum": 0.0,
@@ -11876,10 +11876,10 @@
     "gp": 1.0,
     "pr": 1.23,
     "pr_yd": 11.08,
-    "pts_half_ppr": 0.55,
-    "pts_ppr": 0.65,
+    "pts_half_ppr": 0.54,
+    "pts_ppr": 0.64,
     "pts_std": 0.45,
-    "rec": 0.2,
+    "rec": 0.19,
     "rec_0_4": 0.04,
     "rec_10_19": 0.06,
     "rec_20_29": 0.04,
@@ -11889,17 +11889,17 @@
     "rec_5_9": 0.04,
     "rec_fd": 0.24,
     "rec_td": 0.02,
-    "rec_tgt": 0.28,
-    "rec_yd": 2.44,
+    "rec_tgt": 0.27,
+    "rec_yd": 2.43,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.14,
     "rush_fd": 0.06,
     "rush_td": 0.01,
-    "rush_yd": 0.62
+    "rush_yd": 0.63
    },
    "team": "BUF",
-   "updatedAt": 1795208462706,
+   "updatedAt": 1795231853900,
    "week": 11
   },
   {
@@ -11928,16 +11928,16 @@
     "rec_fd": 0.95,
     "rec_td": 0.05,
     "rec_tgt": 2.59,
-    "rec_yd": 9.5,
+    "rec_yd": 9.49,
     "rush_2pt": 0.01,
     "rush_40p": 0.05,
     "rush_att": 4.75,
     "rush_fd": 2.88,
     "rush_td": 0.19,
-    "rush_yd": 28.8
+    "rush_yd": 28.81
    },
    "team": "BAL",
-   "updatedAt": 1795208462716,
+   "updatedAt": 1795231853897,
    "week": 11
   },
   {
@@ -11966,7 +11966,7 @@
     "xpmiss": 0.13
    },
    "team": "TB",
-   "updatedAt": 1795208463025,
+   "updatedAt": 1795231854220,
    "week": 11
   },
   {
@@ -11981,9 +11981,9 @@
     "fum": 0.06,
     "fum_lost": 0.03,
     "gp": 1.0,
-    "pts_half_ppr": 15.3,
-    "pts_ppr": 18.49,
-    "pts_std": 12.11,
+    "pts_half_ppr": 15.29,
+    "pts_ppr": 18.48,
+    "pts_std": 12.1,
     "rec": 6.38,
     "rec_0_4": 1.28,
     "rec_10_19": 1.91,
@@ -11995,7 +11995,7 @@
     "rec_fd": 8.09,
     "rec_td": 0.66,
     "rec_tgt": 9.44,
-    "rec_yd": 80.95,
+    "rec_yd": 80.89,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.08,
@@ -12004,7 +12004,7 @@
     "rush_yd": 0.18
    },
    "team": "MIN",
-   "updatedAt": 1795208463132,
+   "updatedAt": 1795231854316,
    "week": 11
   },
   {
@@ -12042,7 +12042,7 @@
     "rush_yd": 23.34
    },
    "team": "LAC",
-   "updatedAt": 1795208463076,
+   "updatedAt": 1795231854273,
    "week": 11
   },
   {
@@ -12059,28 +12059,28 @@
     "fum_lost": 0.19,
     "gp": 1.0,
     "pass_2pt": 0.14,
-    "pass_att": 31.14,
-    "pass_cmp": 19.83,
+    "pass_att": 31.15,
+    "pass_cmp": 19.84,
     "pass_cmp_40p": 0.43,
-    "pass_fd": 23.89,
-    "pass_inc": 11.3,
+    "pass_fd": 23.9,
+    "pass_inc": 11.31,
     "pass_int": 0.87,
     "pass_int_td": 0.0,
     "pass_sack": 2.63,
     "pass_td": 2.05,
-    "pass_yd": 238.87,
-    "pts_half_ppr": 20.45,
-    "pts_ppr": 20.45,
-    "pts_std": 20.45,
+    "pass_yd": 238.98,
+    "pts_half_ppr": 20.46,
+    "pts_ppr": 20.46,
+    "pts_std": 20.46,
     "rush_2pt": 0.01,
     "rush_40p": 0.05,
     "rush_att": 5.1,
     "rush_fd": 2.6,
     "rush_td": 0.17,
-    "rush_yd": 25.97
+    "rush_yd": 25.96
    },
    "team": "JAX",
-   "updatedAt": 1795208463090,
+   "updatedAt": 1795231854275,
    "week": 11
   },
   {
@@ -12118,7 +12118,7 @@
     "rush_yd": 0.16
    },
    "team": "CAR",
-   "updatedAt": 1795208462840,
+   "updatedAt": 1795231854026,
    "week": 11
   },
   {
@@ -12146,7 +12146,7 @@
     "rec_yd": 0.82
    },
    "team": "ARI",
-   "updatedAt": 1795208462933,
+   "updatedAt": 1795231854141,
    "week": 11
   },
   {
@@ -12156,15 +12156,15 @@
    "playerId": "7543",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 1.96,
+    "bonus_rec_rb": 1.95,
     "def_fum_td": 0.0,
     "fum": 0.1,
     "fum_lost": 0.04,
     "gp": 1.0,
-    "pts_half_ppr": 7.73,
-    "pts_ppr": 8.71,
-    "pts_std": 6.74,
-    "rec": 1.96,
+    "pts_half_ppr": 7.75,
+    "pts_ppr": 8.73,
+    "pts_std": 6.78,
+    "rec": 1.95,
     "rec_0_4": 0.39,
     "rec_10_19": 0.59,
     "rec_20_29": 0.39,
@@ -12174,17 +12174,17 @@
     "rec_5_9": 0.39,
     "rec_fd": 1.35,
     "rec_td": 0.09,
-    "rec_tgt": 2.41,
-    "rec_yd": 13.51,
+    "rec_tgt": 2.4,
+    "rec_yd": 13.46,
     "rush_2pt": 0.01,
     "rush_40p": 0.09,
-    "rush_att": 9.41,
-    "rush_fd": 3.77,
+    "rush_att": 9.48,
+    "rush_fd": 3.8,
     "rush_td": 0.19,
-    "rush_yd": 37.72
+    "rush_yd": 38.04
    },
    "team": "NO",
-   "updatedAt": 1795208462821,
+   "updatedAt": 1795231854006,
    "week": 11
   },
   {
@@ -12222,7 +12222,7 @@
     "rush_yd": 1.36
    },
    "team": "DET",
-   "updatedAt": 1795208462912,
+   "updatedAt": 1795231854104,
    "week": 11
   },
   {
@@ -12261,7 +12261,7 @@
     "rush_yd": 0.61
    },
    "team": "NYJ",
-   "updatedAt": 1795208463177,
+   "updatedAt": 1795231854370,
    "week": 11
   },
   {
@@ -12277,7 +12277,7 @@
     "fum_lost": 0.0,
     "gp": 1.0,
     "pts_half_ppr": 1.25,
-    "pts_ppr": 1.62,
+    "pts_ppr": 1.61,
     "pts_std": 0.89,
     "rec": 0.73,
     "rec_0_4": 0.15,
@@ -12290,10 +12290,10 @@
     "rec_fd": 0.7,
     "rec_td": 0.03,
     "rec_tgt": 1.04,
-    "rec_yd": 7.04
+    "rec_yd": 7.03
    },
    "team": "SF",
-   "updatedAt": 1795208463241,
+   "updatedAt": 1795231854431,
    "week": 11
   },
   {
@@ -12322,7 +12322,7 @@
     "xpmiss": 0.06
    },
    "team": "BAL",
-   "updatedAt": 1795208462740,
+   "updatedAt": 1795231853930,
    "week": 11
   },
   {
@@ -12356,7 +12356,7 @@
     "rush_40p": 0.0
    },
    "team": "LAC",
-   "updatedAt": 1795208463104,
+   "updatedAt": 1795231854302,
    "week": 11
   },
   {
@@ -12394,7 +12394,7 @@
     "rush_yd": 28.16
    },
    "team": "ARI",
-   "updatedAt": 1795208462915,
+   "updatedAt": 1795231854119,
    "week": 11
   },
   {
@@ -12432,7 +12432,7 @@
     "rush_yd": 2.88
    },
    "team": "DET",
-   "updatedAt": 1795208462910,
+   "updatedAt": 1795231854102,
    "week": 11
   },
   {
@@ -12460,7 +12460,7 @@
     "rec_yd": 1.55
    },
    "team": "DAL",
-   "updatedAt": 1795208462907,
+   "updatedAt": 1795231854109,
    "week": 11
   },
   {
@@ -12498,7 +12498,7 @@
     "rush_yd": 0.87
    },
    "team": "LV",
-   "updatedAt": 1795208463203,
+   "updatedAt": 1795231854421,
    "week": 11
   },
   {
@@ -12535,7 +12535,7 @@
     "rush_yd": 1.27
    },
    "team": "LV",
-   "updatedAt": 1795208463270,
+   "updatedAt": 1795231854488,
    "week": 11
   },
   {
@@ -12563,7 +12563,7 @@
     "rec_yd": 2.56
    },
    "team": "NYJ",
-   "updatedAt": 1795208463204,
+   "updatedAt": 1795231854396,
    "week": 11
   },
   {
@@ -12592,11 +12592,11 @@
     "xpmiss": 0.06
    },
    "team": "LAC",
-   "updatedAt": 1795208463112,
+   "updatedAt": 1795231854309,
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Britain Covey",
    "opponent": "PIT",
    "playerId": "8414",
@@ -12604,13 +12604,13 @@
    "stats": {
     "bonus_rec_wr": 0.05,
     "def_fum_td": 0.0,
-    "def_kr_yd": 34.89,
+    "def_kr_yd": 35.06,
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pr": 1.34,
-    "pr_yd": 13.42,
-    "pts_half_ppr": 0.1,
+    "pr": 1.35,
+    "pr_yd": 13.48,
+    "pts_half_ppr": 0.11,
     "pts_ppr": 0.13,
     "pts_std": 0.08,
     "rec": 0.05,
@@ -12627,7 +12627,7 @@
     "rec_yd": 0.59
    },
    "team": "PHI",
-   "updatedAt": 1795208462936,
+   "updatedAt": 1795231854135,
    "week": 11
   },
   {
@@ -12660,7 +12660,7 @@
     "rec_yd": 2.31
    },
    "team": "LV",
-   "updatedAt": 1795208463200,
+   "updatedAt": 1795231854414,
    "week": 11
   },
   {
@@ -12670,15 +12670,15 @@
    "playerId": "9479",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 2.35,
+    "bonus_rec_te": 2.34,
     "def_fum_td": 0.0,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 5.62,
-    "pts_ppr": 6.79,
-    "pts_std": 4.45,
-    "rec": 2.35,
+    "pts_half_ppr": 5.58,
+    "pts_ppr": 6.75,
+    "pts_std": 4.41,
+    "rec": 2.34,
     "rec_0_4": 0.47,
     "rec_10_19": 0.7,
     "rec_20_29": 0.47,
@@ -12686,13 +12686,13 @@
     "rec_30_39": 0.23,
     "rec_40p": 0.23,
     "rec_5_9": 0.47,
-    "rec_fd": 2.94,
+    "rec_fd": 2.93,
     "rec_td": 0.25,
-    "rec_tgt": 3.51,
-    "rec_yd": 29.42
+    "rec_tgt": 3.5,
+    "rec_yd": 29.29
    },
    "team": "PIT",
-   "updatedAt": 1795208463048,
+   "updatedAt": 1795231854244,
    "week": 11
   },
   {
@@ -12728,7 +12728,7 @@
     "rush_40p": 0.0
    },
    "team": "KC",
-   "updatedAt": 1795208463015,
+   "updatedAt": 1795231854222,
    "week": 11
   },
   {
@@ -12767,7 +12767,7 @@
     "rush_yd": 20.81
    },
    "team": "TEN",
-   "updatedAt": 1795208462988,
+   "updatedAt": 1795231854189,
    "week": 11
   },
   {
@@ -12799,7 +12799,7 @@
     "rush_yd": 0.46
    },
    "team": "PIT",
-   "updatedAt": 1795208463026,
+   "updatedAt": 1795231854217,
    "week": 11
   },
   {
@@ -12831,7 +12831,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "DEN",
-   "updatedAt": 1795208463090,
+   "updatedAt": 1795231854299,
    "week": 11
   },
   {
@@ -12863,7 +12863,7 @@
     "yds_allow_200_299": 1.0
    },
    "team": "KC",
-   "updatedAt": 1795208462998,
+   "updatedAt": 1795231854204,
    "week": 11
   },
   {
@@ -12890,11 +12890,11 @@
     "pts_std": 2.45,
     "sack": 1.52,
     "tkl_loss": 2.91,
-    "yds_allow": 419.88,
+    "yds_allow": 420.02,
     "yds_allow_400_449": 1.0
    },
    "team": "MIA",
-   "updatedAt": 1795208462803,
+   "updatedAt": 1795231853999,
    "week": 11
   },
   {
@@ -12925,11 +12925,11 @@
     "sack": 2.15,
     "st_td": 0.05,
     "tkl_loss": 4.11,
-    "yds_allow": 383.39,
+    "yds_allow": 383.31,
     "yds_allow_350_399": 1.0
    },
    "team": "MIN",
-   "updatedAt": 1795208463116,
+   "updatedAt": 1795231854302,
    "week": 11
   },
   {
@@ -12961,7 +12961,7 @@
     "yds_allow_350_399": 1.0
    },
    "team": "TB",
-   "updatedAt": 1795208462989,
+   "updatedAt": 1795231854181,
    "week": 11
   },
   {
@@ -12971,15 +12971,15 @@
    "playerId": "11596",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 0.5,
+    "bonus_rec_te": 0.51,
     "def_fum_td": 0.0,
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 0.94,
-    "pts_ppr": 1.19,
+    "pts_half_ppr": 0.95,
+    "pts_ppr": 1.2,
     "pts_std": 0.69,
-    "rec": 0.5,
+    "rec": 0.51,
     "rec_0_4": 0.1,
     "rec_10_19": 0.15,
     "rec_20_29": 0.1,
@@ -12990,10 +12990,10 @@
     "rec_fd": 0.5,
     "rec_td": 0.03,
     "rec_tgt": 0.64,
-    "rec_yd": 4.95
+    "rec_yd": 4.98
    },
    "team": "WAS",
-   "updatedAt": 1795208463393,
+   "updatedAt": 1795231854593,
    "week": 11
   },
   {
@@ -13005,8 +13005,8 @@
    "stats": {
     "bonus_rec_te": 0.31,
     "gp": 1.0,
-    "pts_half_ppr": 0.61,
-    "pts_ppr": 0.77,
+    "pts_half_ppr": 0.62,
+    "pts_ppr": 0.78,
     "pts_std": 0.46,
     "rec": 0.31,
     "rec_0_4": 0.06,
@@ -13018,10 +13018,10 @@
     "rec_fd": 0.34,
     "rec_td": 0.02,
     "rec_tgt": 0.45,
-    "rec_yd": 3.36
+    "rec_yd": 3.38
    },
    "team": "WAS",
-   "updatedAt": 1795208463389,
+   "updatedAt": 1795231854589,
    "week": 11
   },
   {
@@ -13031,29 +13031,29 @@
    "playerId": "13264",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 0.95,
+    "bonus_rec_wr": 0.96,
     "gp": 1.0,
-    "pts_half_ppr": 2.2,
-    "pts_ppr": 2.68,
-    "pts_std": 1.72,
-    "rec": 0.95,
+    "pts_half_ppr": 2.21,
+    "pts_ppr": 2.69,
+    "pts_std": 1.73,
+    "rec": 0.96,
     "rec_0_4": 0.19,
     "rec_10_19": 0.29,
     "rec_20_29": 0.19,
     "rec_30_39": 0.1,
     "rec_40p": 0.1,
     "rec_5_9": 0.19,
-    "rec_fd": 1.14,
+    "rec_fd": 1.15,
     "rec_td": 0.09,
-    "rec_tgt": 1.37,
-    "rec_yd": 11.42,
-    "rush_att": 0.06,
+    "rec_tgt": 1.38,
+    "rec_yd": 11.45,
+    "rush_att": 0.05,
     "rush_fd": 0.02,
     "rush_td": 0.0,
-    "rush_yd": 0.25
+    "rush_yd": 0.24
    },
    "team": "CIN",
-   "updatedAt": 1795208463277,
+   "updatedAt": 1795231854472,
    "week": 11
   },
   {
@@ -13063,29 +13063,29 @@
    "playerId": "6001",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 2.01,
+    "bonus_rec_te": 2.03,
     "def_fum_td": 0.0,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 3.67,
-    "pts_ppr": 4.68,
+    "pts_half_ppr": 3.69,
+    "pts_ppr": 4.7,
     "pts_std": 2.67,
-    "rec": 2.01,
-    "rec_0_4": 0.4,
-    "rec_10_19": 0.6,
-    "rec_20_29": 0.4,
+    "rec": 2.03,
+    "rec_0_4": 0.41,
+    "rec_10_19": 0.61,
+    "rec_20_29": 0.41,
     "rec_2pt": 0.01,
     "rec_30_39": 0.2,
     "rec_40p": 0.2,
-    "rec_5_9": 0.4,
-    "rec_fd": 1.64,
+    "rec_5_9": 0.41,
+    "rec_fd": 1.65,
     "rec_td": 0.17,
-    "rec_tgt": 2.25,
-    "rec_yd": 16.44
+    "rec_tgt": 2.26,
+    "rec_yd": 16.48
    },
    "team": "CIN",
-   "updatedAt": 1795208463297,
+   "updatedAt": 1795231854497,
    "week": 11
   },
   {
@@ -13095,35 +13095,35 @@
    "playerId": "6801",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 5.37,
+    "bonus_rec_wr": 5.4,
     "def_fum_td": 0.0,
     "fum": 0.06,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 15.87,
-    "pts_ppr": 18.55,
-    "pts_std": 13.18,
-    "rec": 5.37,
-    "rec_0_4": 1.07,
-    "rec_10_19": 1.61,
-    "rec_20_29": 1.07,
+    "pts_half_ppr": 15.92,
+    "pts_ppr": 18.62,
+    "pts_std": 13.22,
+    "rec": 5.4,
+    "rec_0_4": 1.08,
+    "rec_10_19": 1.62,
+    "rec_20_29": 1.08,
     "rec_2pt": 0.03,
     "rec_30_39": 0.54,
     "rec_40p": 0.54,
-    "rec_5_9": 1.07,
-    "rec_fd": 9.46,
+    "rec_5_9": 1.08,
+    "rec_fd": 9.49,
     "rec_td": 0.61,
-    "rec_tgt": 7.87,
-    "rec_yd": 94.62,
+    "rec_tgt": 7.92,
+    "rec_yd": 94.87,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.06,
     "rush_fd": 0.03,
     "rush_td": 0.0,
-    "rush_yd": 0.29
+    "rush_yd": 0.28
    },
    "team": "CIN",
-   "updatedAt": 1795208463284,
+   "updatedAt": 1795231854480,
    "week": 11
   },
   {
@@ -13152,26 +13152,26 @@
     "xpmiss": 0.14
    },
    "team": "CIN",
-   "updatedAt": 1795208463299,
+   "updatedAt": 1795231854499,
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Rachaad White",
    "opponent": "CIN",
    "playerId": "8136",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 2.33,
+    "bonus_rec_rb": 2.35,
     "def_fum_td": 0.0,
     "def_kr_yd": 4.92,
     "fum": 0.07,
     "fum_lost": 0.03,
     "gp": 1.0,
-    "pts_half_ppr": 7.49,
+    "pts_half_ppr": 7.48,
     "pts_ppr": 8.66,
-    "pts_std": 6.32,
-    "rec": 2.33,
+    "pts_std": 6.31,
+    "rec": 2.35,
     "rec_0_4": 0.47,
     "rec_10_19": 0.7,
     "rec_20_29": 0.47,
@@ -13179,19 +13179,19 @@
     "rec_30_39": 0.23,
     "rec_40p": 0.23,
     "rec_5_9": 0.47,
-    "rec_fd": 1.68,
+    "rec_fd": 1.69,
     "rec_td": 0.16,
-    "rec_tgt": 2.54,
-    "rec_yd": 16.81,
+    "rec_tgt": 2.56,
+    "rec_yd": 16.92,
     "rush_2pt": 0.01,
     "rush_40p": 0.06,
-    "rush_att": 5.79,
-    "rush_fd": 2.77,
+    "rush_att": 5.74,
+    "rush_fd": 2.75,
     "rush_td": 0.16,
-    "rush_yd": 27.7
+    "rush_yd": 27.49
    },
    "team": "WAS",
-   "updatedAt": 1795208463371,
+   "updatedAt": 1795231854571,
    "week": 11
   },
   {
@@ -13207,30 +13207,30 @@
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 4.17,
+    "pts_half_ppr": 4.16,
     "pts_ppr": 4.69,
-    "pts_std": 3.65,
+    "pts_std": 3.64,
     "rec": 1.05,
     "rec_0_4": 0.21,
-    "rec_10_19": 0.31,
+    "rec_10_19": 0.32,
     "rec_20_29": 0.21,
     "rec_2pt": 0.0,
-    "rec_30_39": 0.1,
-    "rec_40p": 0.1,
+    "rec_30_39": 0.11,
+    "rec_40p": 0.11,
     "rec_5_9": 0.21,
     "rec_fd": 0.93,
     "rec_td": 0.05,
-    "rec_tgt": 1.27,
-    "rec_yd": 9.27,
+    "rec_tgt": 1.28,
+    "rec_yd": 9.33,
     "rush_2pt": 0.01,
     "rush_40p": 0.04,
-    "rush_att": 3.56,
-    "rush_fd": 1.62,
+    "rush_att": 3.53,
+    "rush_fd": 1.61,
     "rush_td": 0.13,
-    "rush_yd": 16.19
+    "rush_yd": 16.07
    },
    "team": "WAS",
-   "updatedAt": 1795208463367,
+   "updatedAt": 1795231854567,
    "week": 11
   },
   {
@@ -13240,35 +13240,35 @@
    "playerId": "7564",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 6.51,
+    "bonus_rec_wr": 6.54,
     "def_fum_td": 0.0,
     "fum": 0.07,
     "fum_lost": 0.03,
     "gp": 1.0,
-    "pts_half_ppr": 18.27,
-    "pts_ppr": 21.52,
-    "pts_std": 15.02,
-    "rec": 6.51,
-    "rec_0_4": 1.3,
-    "rec_10_19": 1.95,
-    "rec_20_29": 1.3,
+    "pts_half_ppr": 18.33,
+    "pts_ppr": 21.6,
+    "pts_std": 15.05,
+    "rec": 6.54,
+    "rec_0_4": 1.31,
+    "rec_10_19": 1.96,
+    "rec_20_29": 1.31,
     "rec_2pt": 0.05,
     "rec_30_39": 0.65,
     "rec_40p": 0.65,
-    "rec_5_9": 1.3,
-    "rec_fd": 9.54,
+    "rec_5_9": 1.31,
+    "rec_fd": 9.57,
     "rec_td": 0.88,
-    "rec_tgt": 9.23,
-    "rec_yd": 95.41,
+    "rec_tgt": 9.28,
+    "rec_yd": 95.66,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.27,
-    "rush_fd": 0.12,
+    "rush_fd": 0.11,
     "rush_td": 0.01,
-    "rush_yd": 1.15
+    "rush_yd": 1.14
    },
    "team": "CIN",
-   "updatedAt": 1795208463282,
+   "updatedAt": 1795231854477,
    "week": 11
   },
   {
@@ -13278,15 +13278,15 @@
    "playerId": "7716",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 0.94,
+    "bonus_rec_te": 0.95,
     "def_fum_td": 0.0,
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 1.62,
-    "pts_ppr": 2.09,
+    "pts_half_ppr": 1.63,
+    "pts_ppr": 2.1,
     "pts_std": 1.15,
-    "rec": 0.94,
+    "rec": 0.95,
     "rec_0_4": 0.19,
     "rec_10_19": 0.28,
     "rec_20_29": 0.19,
@@ -13296,11 +13296,11 @@
     "rec_5_9": 0.19,
     "rec_fd": 0.87,
     "rec_td": 0.05,
-    "rec_tgt": 1.18,
-    "rec_yd": 8.67
+    "rec_tgt": 1.19,
+    "rec_yd": 8.72
    },
    "team": "WAS",
-   "updatedAt": 1795208463387,
+   "updatedAt": 1795231854586,
    "week": 11
   },
   {
@@ -13317,28 +13317,28 @@
     "fum_lost": 0.18,
     "gp": 1.0,
     "pass_2pt": 0.09,
-    "pass_att": 31.79,
-    "pass_cmp": 20.69,
-    "pass_cmp_40p": 0.42,
-    "pass_fd": 23.5,
-    "pass_inc": 11.1,
-    "pass_int": 0.3,
+    "pass_att": 31.99,
+    "pass_cmp": 20.82,
+    "pass_cmp_40p": 0.43,
+    "pass_fd": 23.65,
+    "pass_inc": 11.17,
+    "pass_int": 0.31,
     "pass_int_td": 0.0,
-    "pass_sack": 2.6,
-    "pass_td": 1.49,
-    "pass_yd": 235.01,
-    "pts_half_ppr": 21.53,
-    "pts_ppr": 21.53,
-    "pts_std": 21.53,
+    "pass_sack": 2.62,
+    "pass_td": 1.5,
+    "pass_yd": 236.49,
+    "pts_half_ppr": 21.57,
+    "pts_ppr": 21.57,
+    "pts_std": 21.57,
     "rush_2pt": 0.02,
     "rush_40p": 0.07,
-    "rush_att": 6.42,
-    "rush_fd": 4.37,
+    "rush_att": 6.37,
+    "rush_fd": 4.34,
     "rush_td": 0.37,
-    "rush_yd": 43.75
+    "rush_yd": 43.41
    },
    "team": "WAS",
-   "updatedAt": 1795208463362,
+   "updatedAt": 1795231854562,
    "week": 11
   },
   {
@@ -13348,16 +13348,16 @@
    "playerId": "12533",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 0.99,
+    "bonus_rec_rb": 1.0,
     "def_fum_td": 0.0,
     "def_kr_yd": 2.49,
     "fum": 0.09,
     "fum_lost": 0.04,
     "gp": 1.0,
-    "pts_half_ppr": 7.15,
-    "pts_ppr": 7.65,
-    "pts_std": 6.66,
-    "rec": 0.99,
+    "pts_half_ppr": 7.12,
+    "pts_ppr": 7.62,
+    "pts_std": 6.62,
+    "rec": 1.0,
     "rec_0_4": 0.2,
     "rec_10_19": 0.3,
     "rec_20_29": 0.2,
@@ -13365,19 +13365,19 @@
     "rec_30_39": 0.1,
     "rec_40p": 0.1,
     "rec_5_9": 0.2,
-    "rec_fd": 0.84,
+    "rec_fd": 0.85,
     "rec_td": 0.04,
-    "rec_tgt": 1.27,
-    "rec_yd": 8.42,
+    "rec_tgt": 1.28,
+    "rec_yd": 8.47,
     "rush_2pt": 0.01,
     "rush_40p": 0.09,
-    "rush_att": 8.83,
-    "rush_fd": 3.81,
+    "rush_att": 8.76,
+    "rush_fd": 3.78,
     "rush_td": 0.3,
-    "rush_yd": 38.1
+    "rush_yd": 37.8
    },
    "team": "WAS",
-   "updatedAt": 1795208463364,
+   "updatedAt": 1795231854564,
    "week": 11
   },
   {
@@ -13394,8 +13394,8 @@
     "fum_lost": 0.0,
     "gp": 1.0,
     "pts_half_ppr": 0.58,
-    "pts_ppr": 0.63,
-    "pts_std": 0.54,
+    "pts_ppr": 0.62,
+    "pts_std": 0.53,
     "rec": 0.09,
     "rec_0_4": 0.02,
     "rec_10_19": 0.03,
@@ -13410,13 +13410,13 @@
     "rec_yd": 0.77,
     "rush_2pt": 0.0,
     "rush_40p": 0.01,
-    "rush_att": 0.83,
+    "rush_att": 0.82,
     "rush_fd": 0.29,
     "rush_td": 0.02,
-    "rush_yd": 2.94
+    "rush_yd": 2.9
    },
    "team": "CIN",
-   "updatedAt": 1795208463270,
+   "updatedAt": 1795231854464,
    "week": 11
   },
   {
@@ -13429,7 +13429,7 @@
     "bonus_rec_rb": 0.15,
     "gp": 1.0,
     "pts_half_ppr": 0.75,
-    "pts_ppr": 0.83,
+    "pts_ppr": 0.82,
     "pts_std": 0.68,
     "rec": 0.15,
     "rec_0_4": 0.03,
@@ -13441,14 +13441,14 @@
     "rec_fd": 0.13,
     "rec_td": 0.01,
     "rec_tgt": 0.19,
-    "rec_yd": 1.27,
-    "rush_att": 0.72,
-    "rush_fd": 0.34,
+    "rec_yd": 1.28,
+    "rush_att": 0.71,
+    "rush_fd": 0.33,
     "rush_td": 0.03,
-    "rush_yd": 3.37
+    "rush_yd": 3.34
    },
    "team": "WAS",
-   "updatedAt": 1795208463369,
+   "updatedAt": 1795231854569,
    "week": 11
   },
   {
@@ -13475,7 +13475,7 @@
     "xpmiss": 0.13
    },
    "team": "WAS",
-   "updatedAt": 1795208463395,
+   "updatedAt": 1795231854595,
    "week": 11
   },
   {
@@ -13507,7 +13507,7 @@
     "rec_yd": 0.53
    },
    "team": "CIN",
-   "updatedAt": 1795208463295,
+   "updatedAt": 1795231854492,
    "week": 11
   },
   {
@@ -13522,7 +13522,7 @@
     "fum": 0.0,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 0.11,
+    "pts_half_ppr": 0.12,
     "pts_ppr": 0.15,
     "pts_std": 0.08,
     "rec": 0.06,
@@ -13541,7 +13541,7 @@
     "rush_40p": 0.0
    },
    "team": "CIN",
-   "updatedAt": 1795208463286,
+   "updatedAt": 1795231854482,
    "week": 11
   },
   {
@@ -13551,29 +13551,29 @@
    "playerId": "4993",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 2.8,
+    "bonus_rec_te": 2.82,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 7.6,
-    "pts_ppr": 9.0,
-    "pts_std": 6.2,
-    "rec": 2.8,
+    "pts_half_ppr": 7.62,
+    "pts_ppr": 9.03,
+    "pts_std": 6.21,
+    "rec": 2.82,
     "rec_0_4": 0.56,
-    "rec_10_19": 0.84,
+    "rec_10_19": 0.85,
     "rec_20_29": 0.56,
     "rec_2pt": 0.03,
     "rec_30_39": 0.28,
     "rec_40p": 0.28,
     "rec_5_9": 0.56,
-    "rec_fd": 3.53,
+    "rec_fd": 3.54,
     "rec_td": 0.44,
-    "rec_tgt": 3.79,
-    "rec_yd": 35.31
+    "rec_tgt": 3.81,
+    "rec_yd": 35.4
    },
    "team": "CIN",
-   "updatedAt": 1795208463293,
+   "updatedAt": 1795231854490,
    "week": 11
   },
   {
@@ -13586,32 +13586,32 @@
     "bonus_rush_td_qb": 0.17,
     "cmp_pct": 74.01,
     "def_fum_td": 0.0,
-    "fum": 0.53,
-    "fum_lost": 0.23,
+    "fum": 0.54,
+    "fum_lost": 0.24,
     "gp": 1.0,
     "pass_2pt": 0.16,
-    "pass_att": 36.11,
-    "pass_cmp": 26.73,
+    "pass_att": 36.32,
+    "pass_cmp": 26.88,
     "pass_cmp_40p": 0.58,
-    "pass_fd": 31.17,
-    "pass_inc": 9.38,
+    "pass_fd": 31.25,
+    "pass_inc": 9.44,
     "pass_int": 0.33,
     "pass_int_td": 0.0,
-    "pass_sack": 3.26,
-    "pass_td": 2.83,
-    "pass_yd": 311.65,
-    "pts_half_ppr": 25.79,
-    "pts_ppr": 25.79,
-    "pts_std": 25.79,
+    "pass_sack": 3.28,
+    "pass_td": 2.84,
+    "pass_yd": 312.48,
+    "pts_half_ppr": 25.81,
+    "pts_ppr": 25.81,
+    "pts_std": 25.81,
     "rush_2pt": 0.01,
     "rush_40p": 0.04,
-    "rush_att": 3.21,
-    "rush_fd": 1.42,
+    "rush_att": 3.18,
+    "rush_fd": 1.4,
     "rush_td": 0.17,
-    "rush_yd": 14.16
+    "rush_yd": 13.99
    },
    "team": "CIN",
-   "updatedAt": 1795208463267,
+   "updatedAt": 1795231854462,
    "week": 11
   },
   {
@@ -13621,49 +13621,49 @@
    "playerId": "6853",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 0.88,
+    "bonus_rec_wr": 0.89,
     "def_fum_td": 0.0,
     "def_kr_yd": 0.45,
     "fum": 0.01,
     "fum_lost": 0.0,
     "gp": 1.0,
-    "pts_half_ppr": 2.12,
-    "pts_ppr": 2.56,
-    "pts_std": 1.68,
-    "rec": 0.88,
+    "pts_half_ppr": 2.13,
+    "pts_ppr": 2.57,
+    "pts_std": 1.69,
+    "rec": 0.89,
     "rec_0_4": 0.18,
-    "rec_10_19": 0.26,
+    "rec_10_19": 0.27,
     "rec_20_29": 0.18,
     "rec_2pt": 0.0,
     "rec_30_39": 0.09,
     "rec_40p": 0.09,
     "rec_5_9": 0.18,
-    "rec_fd": 1.25,
+    "rec_fd": 1.26,
     "rec_td": 0.07,
-    "rec_tgt": 1.59,
-    "rec_yd": 12.48
+    "rec_tgt": 1.6,
+    "rec_yd": 12.56
    },
    "team": "WAS",
-   "updatedAt": 1795208463382,
+   "updatedAt": 1795231854582,
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Treylon Burks",
    "opponent": "CIN",
    "playerId": "8135",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 2.0,
+    "bonus_rec_wr": 2.01,
     "def_fum_td": 0.0,
     "def_kr_yd": 5.69,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 5.9,
-    "pts_ppr": 6.9,
-    "pts_std": 4.9,
-    "rec": 2.0,
+    "pts_half_ppr": 5.94,
+    "pts_ppr": 6.94,
+    "pts_std": 4.93,
+    "rec": 2.01,
     "rec_0_4": 0.4,
     "rec_10_19": 0.6,
     "rec_20_29": 0.4,
@@ -13671,19 +13671,19 @@
     "rec_30_39": 0.2,
     "rec_40p": 0.2,
     "rec_5_9": 0.4,
-    "rec_fd": 3.43,
+    "rec_fd": 3.45,
     "rec_td": 0.22,
-    "rec_tgt": 3.82,
-    "rec_yd": 34.33,
+    "rec_tgt": 3.84,
+    "rec_yd": 34.54,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
-    "rush_att": 0.21,
+    "rush_att": 0.2,
     "rush_fd": 0.11,
     "rush_td": 0.01,
-    "rush_yd": 1.08
+    "rush_yd": 1.07
    },
    "team": "WAS",
-   "updatedAt": 1795208463384,
+   "updatedAt": 1795231854584,
    "week": 11
   },
   {
@@ -13693,15 +13693,15 @@
    "playerId": "9224",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 4.09,
+    "bonus_rec_rb": 4.12,
     "def_fum_td": 0.0,
     "fum": 0.19,
     "fum_lost": 0.08,
     "gp": 1.0,
-    "pts_half_ppr": 12.75,
-    "pts_ppr": 14.8,
-    "pts_std": 10.71,
-    "rec": 4.09,
+    "pts_half_ppr": 12.69,
+    "pts_ppr": 14.75,
+    "pts_std": 10.63,
+    "rec": 4.12,
     "rec_0_4": 0.82,
     "rec_10_19": 1.23,
     "rec_20_29": 0.82,
@@ -13709,19 +13709,19 @@
     "rec_30_39": 0.41,
     "rec_40p": 0.41,
     "rec_5_9": 0.82,
-    "rec_fd": 2.32,
+    "rec_fd": 2.33,
     "rec_td": 0.23,
-    "rec_tgt": 4.48,
-    "rec_yd": 23.23,
+    "rec_tgt": 4.5,
+    "rec_yd": 23.29,
     "rush_2pt": 0.02,
-    "rush_40p": 0.17,
-    "rush_att": 14.64,
-    "rush_fd": 6.13,
+    "rush_40p": 0.16,
+    "rush_att": 14.52,
+    "rush_fd": 6.06,
     "rush_td": 0.16,
-    "rush_yd": 61.3
+    "rush_yd": 60.58
    },
    "team": "CIN",
-   "updatedAt": 1795208463272,
+   "updatedAt": 1795231854466,
    "week": 11
   },
   {
@@ -13748,11 +13748,11 @@
     "pts_std": 6.49,
     "sack": 2.66,
     "tkl_loss": 4.92,
-    "yds_allow": 366.24,
+    "yds_allow": 366.7,
     "yds_allow_350_399": 1.0
    },
    "team": "CIN",
-   "updatedAt": 1795208463264,
+   "updatedAt": 1795231854460,
    "week": 11
   },
   {
@@ -13779,11 +13779,11 @@
     "pts_std": 4.14,
     "sack": 2.23,
     "tkl_loss": 4.0,
-    "yds_allow": 416.82,
+    "yds_allow": 416.42,
     "yds_allow_400_449": 1.0
    },
    "team": "WAS",
-   "updatedAt": 1795208463358,
+   "updatedAt": 1795231854559,
    "week": 11
   },
   {
@@ -13815,7 +13815,7 @@
     "rec_yd": 1.29
    },
    "team": "CIN",
-   "updatedAt": 1795208463289,
+   "updatedAt": 1795231854484,
    "week": 11
   },
   {
@@ -13831,7 +13831,7 @@
     "fum_lost": 0.0,
     "gp": 1.0,
     "pts_half_ppr": 0.56,
-    "pts_ppr": 0.7,
+    "pts_ppr": 0.71,
     "pts_std": 0.42,
     "rec": 0.29,
     "rec_0_4": 0.06,
@@ -13844,10 +13844,10 @@
     "rec_fd": 0.28,
     "rec_td": 0.02,
     "rec_tgt": 0.36,
-    "rec_yd": 2.82
+    "rec_yd": 2.83
    },
    "team": "CIN",
-   "updatedAt": 1795208463291,
+   "updatedAt": 1795231854486,
    "week": 11
   },
   {
@@ -13857,26 +13857,26 @@
    "playerId": "2449",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 4.37,
+    "bonus_rec_wr": 4.4,
     "def_fum_td": 0.0,
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 11.15,
-    "pts_ppr": 13.33,
-    "pts_std": 8.96,
-    "rec": 4.37,
-    "rec_0_4": 0.87,
-    "rec_10_19": 1.31,
-    "rec_20_29": 0.87,
+    "pts_half_ppr": 11.21,
+    "pts_ppr": 13.41,
+    "pts_std": 9.01,
+    "rec": 4.4,
+    "rec_0_4": 0.88,
+    "rec_10_19": 1.32,
+    "rec_20_29": 0.88,
     "rec_2pt": 0.03,
     "rec_30_39": 0.44,
     "rec_40p": 0.44,
-    "rec_5_9": 0.87,
-    "rec_fd": 5.52,
+    "rec_5_9": 0.88,
+    "rec_fd": 5.55,
     "rec_td": 0.56,
-    "rec_tgt": 6.9,
-    "rec_yd": 55.19,
+    "rec_tgt": 6.94,
+    "rec_yd": 55.54,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.08,
@@ -13885,7 +13885,7 @@
     "rush_yd": 0.39
    },
    "team": "WAS",
-   "updatedAt": 1795208463379,
+   "updatedAt": 1795231854579,
    "week": 11
   },
   {
@@ -13895,16 +13895,16 @@
    "playerId": "4147",
    "pos": "RB",
    "stats": {
-    "bonus_rec_rb": 1.73,
+    "bonus_rec_rb": 1.74,
     "def_fum_td": 0.0,
     "def_kr_yd": 19.59,
     "fum": 0.07,
     "fum_lost": 0.03,
     "gp": 1.0,
-    "pts_half_ppr": 6.61,
-    "pts_ppr": 7.47,
-    "pts_std": 5.75,
-    "rec": 1.73,
+    "pts_half_ppr": 6.58,
+    "pts_ppr": 7.45,
+    "pts_std": 5.71,
+    "rec": 1.74,
     "rec_0_4": 0.35,
     "rec_10_19": 0.52,
     "rec_20_29": 0.35,
@@ -13913,18 +13913,18 @@
     "rec_40p": 0.17,
     "rec_5_9": 0.35,
     "rec_fd": 1.41,
-    "rec_td": 0.13,
-    "rec_tgt": 1.99,
-    "rec_yd": 14.08,
+    "rec_td": 0.14,
+    "rec_tgt": 2.0,
+    "rec_yd": 14.11,
     "rush_2pt": 0.01,
     "rush_40p": 0.07,
-    "rush_att": 5.82,
-    "rush_fd": 2.42,
+    "rush_att": 5.77,
+    "rush_fd": 2.39,
     "rush_td": 0.19,
-    "rush_yd": 24.16
+    "rush_yd": 23.88
    },
    "team": "CIN",
-   "updatedAt": 1795208463275,
+   "updatedAt": 1795231854469,
    "week": 11
   },
   {
@@ -13934,15 +13934,15 @@
    "playerId": "10226",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 1.73,
+    "bonus_rec_wr": 1.74,
     "def_fum_td": 0.0,
     "fum": 0.02,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 4.43,
-    "pts_ppr": 5.29,
-    "pts_std": 3.56,
-    "rec": 1.73,
+    "pts_half_ppr": 4.44,
+    "pts_ppr": 5.31,
+    "pts_std": 3.57,
+    "rec": 1.74,
     "rec_0_4": 0.35,
     "rec_10_19": 0.52,
     "rec_20_29": 0.35,
@@ -13950,19 +13950,19 @@
     "rec_30_39": 0.17,
     "rec_40p": 0.17,
     "rec_5_9": 0.35,
-    "rec_fd": 2.32,
+    "rec_fd": 2.33,
     "rec_td": 0.19,
-    "rec_tgt": 2.89,
-    "rec_yd": 23.21,
+    "rec_tgt": 2.91,
+    "rec_yd": 23.27,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.2,
     "rush_fd": 0.09,
     "rush_td": 0.01,
-    "rush_yd": 0.94
+    "rush_yd": 0.93
    },
    "team": "CIN",
-   "updatedAt": 1795208463279,
+   "updatedAt": 1795231854475,
    "week": 11
   },
   {
@@ -13993,11 +13993,11 @@
     "rec_5_9": 0.03,
     "rec_fd": 0.22,
     "rec_td": 0.01,
-    "rec_tgt": 0.25,
-    "rec_yd": 2.2
+    "rec_tgt": 0.26,
+    "rec_yd": 2.22
    },
    "team": "WAS",
-   "updatedAt": 1795208463374,
+   "updatedAt": 1795231854575,
    "week": 11
   },
   {
@@ -14007,35 +14007,35 @@
    "playerId": "13301",
    "pos": "WR",
    "stats": {
-    "bonus_rec_wr": 2.97,
+    "bonus_rec_wr": 2.99,
     "def_fum_td": 0.0,
     "fum": 0.03,
     "fum_lost": 0.01,
     "gp": 1.0,
-    "pts_half_ppr": 6.65,
-    "pts_ppr": 8.14,
-    "pts_std": 5.17,
-    "rec": 2.97,
-    "rec_0_4": 0.59,
-    "rec_10_19": 0.89,
-    "rec_20_29": 0.59,
+    "pts_half_ppr": 6.69,
+    "pts_ppr": 8.19,
+    "pts_std": 5.2,
+    "rec": 2.99,
+    "rec_0_4": 0.6,
+    "rec_10_19": 0.9,
+    "rec_20_29": 0.6,
     "rec_2pt": 0.01,
     "rec_30_39": 0.3,
     "rec_40p": 0.3,
-    "rec_5_9": 0.59,
-    "rec_fd": 3.84,
-    "rec_td": 0.2,
-    "rec_tgt": 4.45,
-    "rec_yd": 38.39,
+    "rec_5_9": 0.6,
+    "rec_fd": 3.86,
+    "rec_td": 0.21,
+    "rec_tgt": 4.48,
+    "rec_yd": 38.63,
     "rush_2pt": 0.0,
     "rush_40p": 0.0,
     "rush_att": 0.13,
     "rush_fd": 0.07,
     "rush_td": 0.01,
-    "rush_yd": 0.66
+    "rush_yd": 0.65
    },
    "team": "WAS",
-   "updatedAt": 1795208463376,
+   "updatedAt": 1795231854577,
    "week": 11
   },
   {
@@ -14045,32 +14045,32 @@
    "playerId": "8210",
    "pos": "TE",
    "stats": {
-    "bonus_rec_te": 4.13,
+    "bonus_rec_te": 4.16,
     "def_fum_td": 0.0,
     "fum": 0.04,
     "fum_lost": 0.02,
     "gp": 1.0,
-    "pts_half_ppr": 8.26,
-    "pts_ppr": 10.32,
-    "pts_std": 6.19,
-    "rec": 4.13,
+    "pts_half_ppr": 8.31,
+    "pts_ppr": 10.39,
+    "pts_std": 6.23,
+    "rec": 4.16,
     "rec_0_4": 0.83,
-    "rec_10_19": 1.24,
+    "rec_10_19": 1.25,
     "rec_20_29": 0.83,
     "rec_2pt": 0.02,
-    "rec_30_39": 0.41,
-    "rec_40p": 0.41,
+    "rec_30_39": 0.42,
+    "rec_40p": 0.42,
     "rec_5_9": 0.83,
-    "rec_fd": 4.37,
-    "rec_td": 0.3,
-    "rec_tgt": 5.79,
-    "rec_yd": 43.69
+    "rec_fd": 4.4,
+    "rec_td": 0.31,
+    "rec_tgt": 5.82,
+    "rec_yd": 43.97
    },
    "team": "WAS",
-   "updatedAt": 1795208463391,
+   "updatedAt": 1795231854591,
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-20T21:10:12Z",
+ "fetchedAt": "2026-11-21T03:54:07Z",
  "source": "sleeper_projections"
 }

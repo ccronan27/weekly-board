@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T21:10:15Z",
+ "generatedAt": "2026-11-21T03:54:09Z",
  "ideas": [
   {
    "get": [
@@ -1170,7 +1170,7 @@
      "games": 4,
      "id": "11630",
      "name": "Roman Wilson",
-     "points": 4.5,
+     "points": 4.4,
      "pos": "WR",
      "ppg": 9.4,
      "rate": 0.0,
@@ -1420,10 +1420,10 @@
      "games": 9,
      "id": "9480",
      "name": "Brenton Strange",
-     "points": 8.5,
+     "points": 8.6,
      "pos": "TE",
      "ppg": 8.9,
-     "rate": 8.5,
+     "rate": 8.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "JAX",
@@ -1432,9 +1432,7 @@
     {
      "age": 30,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "5947",
      "name": "Jakobi Meyers",
@@ -1449,9 +1447,9 @@
     },
     {
      "age": 25,
-     "eligible": true,
+     "eligible": false,
      "flags": [
-      "QUESTIONABLE"
+      "OUT"
      ],
      "games": 6,
      "id": "9486",
@@ -1512,24 +1510,6 @@
      "slot": "BN",
      "team": "NO",
      "yearsExp": 2
-    },
-    {
-     "age": 25,
-     "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
-     "games": 6,
-     "id": "9486",
-     "name": "Dontayvion Wicks",
-     "points": 4.6,
-     "pos": "WR",
-     "ppg": 7.3,
-     "rate": 4.6,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "PHI",
-     "yearsExp": 3
     },
     {
      "age": 23,
@@ -1682,10 +1662,10 @@
      "games": 9,
      "id": "9224",
      "name": "Chase Brown",
-     "points": 13.0,
+     "points": 12.9,
      "pos": "RB",
      "ppg": 11.8,
-     "rate": 13.0,
+     "rate": 12.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "CIN",
@@ -1735,10 +1715,10 @@
      "games": 9,
      "id": "10236",
      "name": "Dalton Kincaid",
-     "points": 9.6,
+     "points": 9.5,
      "pos": "TE",
      "ppg": 10.3,
-     "rate": 9.6,
+     "rate": 9.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -2116,10 +2096,10 @@
      "games": 9,
      "id": "96",
      "name": "Aaron Rodgers",
-     "points": 16.5,
+     "points": 16.4,
      "pos": "QB",
      "ppg": 15.5,
-     "rate": 16.5,
+     "rate": 16.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PIT",
@@ -2128,9 +2108,7 @@
     {
      "age": 23,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "12490",
      "name": "Bhayshul Tuten",
@@ -2146,9 +2124,7 @@
     {
      "age": 26,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "8131",
      "name": "Isaiah Likely",
@@ -2326,9 +2302,7 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "10219",
      "name": "Chris Rodriguez Jr.",
@@ -3607,10 +3581,10 @@
      "games": 9,
      "id": "1479",
      "name": "Keenan Allen",
-     "points": 5.4,
+     "points": 5.3,
      "pos": "WR",
      "ppg": 7.7,
-     "rate": 5.4,
+     "rate": 5.3,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "SF",
@@ -3822,10 +3796,10 @@
      "games": 9,
      "id": "8183",
      "name": "Brock Purdy",
-     "points": 18.3,
+     "points": 18.2,
      "pos": "QB",
      "ppg": 23.6,
-     "rate": 18.3,
+     "rate": 18.2,
      "rateFrom": "projection",
      "slot": "START",
      "team": "SF",
@@ -3838,10 +3812,10 @@
      "games": 9,
      "id": "12545",
      "name": "Tyler Shough",
-     "points": 16.1,
+     "points": 16.0,
      "pos": "QB",
      "ppg": 18.2,
-     "rate": 16.1,
+     "rate": 16.0,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "NO",
@@ -3918,10 +3892,10 @@
      "games": 7,
      "id": "4866",
      "name": "Saquon Barkley",
-     "points": 11.5,
+     "points": 11.6,
      "pos": "RB",
      "ppg": 7.9,
-     "rate": 11.5,
+     "rate": 11.6,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -4380,10 +4354,10 @@
      "games": 8,
      "id": "2449",
      "name": "Stefon Diggs",
-     "points": 10.8,
+     "points": 10.9,
      "pos": "WR",
      "ppg": 11.6,
-     "rate": 10.8,
+     "rate": 10.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "WAS",
@@ -4648,10 +4622,10 @@
      "games": 9,
      "id": "8138",
      "name": "James Cook III",
-     "points": 19.3,
+     "points": 19.4,
      "pos": "RB",
      "ppg": 18.3,
-     "rate": 19.3,
+     "rate": 19.4,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -4890,7 +4864,9 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 8,
      "id": "8136",
      "name": "Rachaad White",
@@ -4906,7 +4882,9 @@
     {
      "age": 26,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 6,
      "id": "8135",
      "name": "Treylon Burks",
@@ -5192,9 +5170,7 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "7526",
      "name": "Jaylen Waddle",
@@ -5452,35 +5428,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:14Z",
+   "lastUpdated": "2026-11-21T03:54:08Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:14Z",
+   "lastUpdated": "2026-11-21T03:54:09Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:12Z",
+   "lastUpdated": "2026-11-21T03:54:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:12Z",
+   "lastUpdated": "2026-11-21T03:54:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:12Z",
+   "lastUpdated": "2026-11-21T03:54:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

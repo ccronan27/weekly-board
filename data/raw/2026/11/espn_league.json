@@ -880,7 +880,7 @@
     "wins": 5
    }
   ],
-  "syncedAt": "2026-11-20T21:10:14.000Z",
+  "syncedAt": "2026-11-21T03:54:09.000Z",
   "teams": [
    {
     "name": "Exempt List",
@@ -2545,6 +2545,6 @@
   ],
   "week": 11
  },
- "fetchedAt": "2026-11-20T21:10:14Z",
+ "fetchedAt": "2026-11-21T03:54:09Z",
  "source": "espn_league"
 }

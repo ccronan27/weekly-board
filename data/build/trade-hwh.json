@@ -21,7 +21,7 @@
    "WR"
   ]
  },
- "generatedAt": "2026-11-20T21:10:15Z",
+ "generatedAt": "2026-11-21T03:54:09Z",
  "ideas": [
   {
    "get": [
@@ -34,7 +34,7 @@
    "playoffGain": 13.5,
    "stretchGain": 17.6,
    "team": "Olav é Trois",
-   "theirGain": 27.5,
+   "theirGain": 28.0,
    "thisWeek": 1.5,
    "youthFlag": false
   },
@@ -49,7 +49,7 @@
    "playoffGain": 17.7,
    "stretchGain": 14.7,
    "team": "Olav é Trois",
-   "theirGain": 25.7,
+   "theirGain": 26.2,
    "thisWeek": -5.4,
    "youthFlag": false
   },
@@ -64,7 +64,7 @@
    "playoffGain": 7.2,
    "stretchGain": 18.5,
    "team": "Gay tier ball knowledge",
-   "theirGain": 21.8,
+   "theirGain": 21.9,
    "thisWeek": -7.5,
    "youthFlag": false
   },
@@ -79,7 +79,7 @@
    "playoffGain": 3.6,
    "stretchGain": 14.9,
    "team": "Gay tier ball knowledge",
-   "theirGain": 29.0,
+   "theirGain": 29.1,
    "thisWeek": -8.7,
    "youthFlag": false
   },
@@ -488,10 +488,10 @@
      "games": 9,
      "id": "10236",
      "name": "Dalton Kincaid",
-     "points": 9.6,
+     "points": 9.5,
      "pos": "TE",
      "ppg": 10.3,
-     "rate": 9.6,
+     "rate": 9.5,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "BUF",
@@ -618,7 +618,7 @@
      "games": 5,
      "id": "12533",
      "name": "Jacory Croskey-Merritt",
-     "points": 7.6,
+     "points": 7.5,
      "pos": "RB",
      "ppg": 9.0,
      "rate": 0.0,
@@ -744,10 +744,10 @@
      "games": 8,
      "id": "12495",
      "name": "Ollie Gordon II",
-     "points": 12.4,
+     "points": 12.5,
      "pos": "RB",
      "ppg": 11.9,
-     "rate": 12.4,
+     "rate": 12.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "MIA",
@@ -972,10 +972,10 @@
      "games": 4,
      "id": "7525",
      "name": "DeVonta Smith",
-     "points": 12.8,
+     "points": 12.9,
      "pos": "WR",
      "ppg": 17.2,
-     "rate": 12.8,
+     "rate": 12.9,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -1246,10 +1246,10 @@
      "games": 9,
      "id": "96",
      "name": "Aaron Rodgers",
-     "points": 16.4,
+     "points": 16.3,
      "pos": "QB",
      "ppg": 15.4,
-     "rate": 16.4,
+     "rate": 16.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PIT",
@@ -1323,22 +1323,6 @@
      "yearsExp": 3
     },
     {
-     "age": 23,
-     "eligible": true,
-     "flags": [],
-     "games": 6,
-     "id": "13296",
-     "name": "Caleb Douglas",
-     "points": 9.3,
-     "pos": "WR",
-     "ppg": 11.8,
-     "rate": 9.3,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "MIA",
-     "yearsExp": 0
-    },
-    {
      "age": 27,
      "eligible": true,
      "flags": [],
@@ -1353,6 +1337,22 @@
      "slot": "START",
      "team": "DET",
      "yearsExp": 3
+    },
+    {
+     "age": 23,
+     "eligible": true,
+     "flags": [],
+     "games": 6,
+     "id": "13296",
+     "name": "Caleb Douglas",
+     "points": 9.2,
+     "pos": "WR",
+     "ppg": 11.8,
+     "rate": 9.2,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "MIA",
+     "yearsExp": 0
     },
     {
      "age": null,
@@ -1499,9 +1499,7 @@
     {
      "age": 23,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "12490",
      "name": "Bhayshul Tuten",
@@ -1649,7 +1647,9 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [],
+     "flags": [
+      "QUESTIONABLE"
+     ],
      "games": 8,
      "id": "8136",
      "name": "Rachaad White",
@@ -1776,9 +1776,7 @@
     {
      "age": 26,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "8131",
      "name": "Isaiah Likely",
@@ -1912,22 +1910,6 @@
      "eligible": true,
      "flags": [],
      "games": 9,
-     "id": "11610",
-     "name": "Malik Washington",
-     "points": 8.3,
-     "pos": "WR",
-     "ppg": 9.9,
-     "rate": 8.3,
-     "rateFrom": "projection",
-     "slot": "BN",
-     "team": "MIA",
-     "yearsExp": 2
-    },
-    {
-     "age": 25,
-     "eligible": true,
-     "flags": [],
-     "games": 9,
      "id": "10213",
      "name": "Tre Tucker",
      "points": 8.3,
@@ -1938,6 +1920,22 @@
      "slot": "BN",
      "team": "LV",
      "yearsExp": 3
+    },
+    {
+     "age": 25,
+     "eligible": true,
+     "flags": [],
+     "games": 9,
+     "id": "11610",
+     "name": "Malik Washington",
+     "points": 8.2,
+     "pos": "WR",
+     "ppg": 9.9,
+     "rate": 8.2,
+     "rateFrom": "projection",
+     "slot": "BN",
+     "team": "MIA",
+     "yearsExp": 2
     },
     {
      "age": null,
@@ -1964,7 +1962,7 @@
      "games": 3,
      "id": "6819",
      "name": "Michael Pittman Jr.",
-     "points": 5.0,
+     "points": 4.9,
      "pos": "WR",
      "ppg": 5.3,
      "rate": 0.0,
@@ -2067,10 +2065,10 @@
      "games": 9,
      "id": "8144",
      "name": "Chris Olave",
-     "points": 14.8,
+     "points": 14.7,
      "pos": "WR",
      "ppg": 16.4,
-     "rate": 14.8,
+     "rate": 14.7,
      "rateFrom": "projection",
      "slot": "START",
      "team": "NO",
@@ -2115,10 +2113,10 @@
      "games": 9,
      "id": "8134",
      "name": "Khalil Shakir",
-     "points": 9.9,
+     "points": 9.8,
      "pos": "WR",
      "ppg": 9.3,
-     "rate": 9.9,
+     "rate": 9.8,
      "rateFrom": "projection",
      "slot": "BN",
      "team": "BUF",
@@ -2335,9 +2333,7 @@
     {
      "age": 30,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "5947",
      "name": "Jakobi Meyers",
@@ -2516,10 +2512,10 @@
      "games": 9,
      "id": "4984",
      "name": "Josh Allen",
-     "points": 24.2,
+     "points": 24.3,
      "pos": "QB",
      "ppg": 25.6,
-     "rate": 24.2,
+     "rate": 24.3,
      "rateFrom": "projection",
      "slot": "START",
      "team": "BUF",
@@ -2869,9 +2865,7 @@
     {
      "age": 27,
      "eligible": true,
-     "flags": [
-      "QUESTIONABLE"
-     ],
+     "flags": [],
      "games": 9,
      "id": "7526",
      "name": "Jaylen Waddle",
@@ -3198,10 +3192,10 @@
      "games": 7,
      "id": "4866",
      "name": "Saquon Barkley",
-     "points": 12.4,
+     "points": 12.5,
      "pos": "RB",
      "ppg": 8.4,
-     "rate": 12.4,
+     "rate": 12.5,
      "rateFrom": "projection",
      "slot": "START",
      "team": "PHI",
@@ -3592,35 +3586,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:14Z",
+   "lastUpdated": "2026-11-21T03:54:08Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:14Z",
+   "lastUpdated": "2026-11-21T03:54:09Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:12Z",
+   "lastUpdated": "2026-11-21T03:54:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:12Z",
+   "lastUpdated": "2026-11-21T03:54:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-20T21:10:12Z",
+   "lastUpdated": "2026-11-21T03:54:07Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

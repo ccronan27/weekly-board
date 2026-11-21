@@ -114,9 +114,9 @@
    "gameday": "2026-11-22",
    "gametime": "16:25",
    "home": "DEN",
-   "homeSpread": 10.0,
-   "impliedAway": 15.25,
-   "impliedHome": 25.25,
+   "homeSpread": 10.5,
+   "impliedAway": 15.0,
+   "impliedHome": 25.5,
    "total": 40.5,
    "week": 11
   },
@@ -157,6 +157,6 @@
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-20T21:10:14Z",
+ "fetchedAt": "2026-11-21T03:54:09Z",
  "source": "nflverse_lines"
 }
