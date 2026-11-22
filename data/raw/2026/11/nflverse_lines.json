@@ -19,9 +19,9 @@
    "gametime": "13:00",
    "home": "BUF",
    "homeSpread": 16.5,
-   "impliedAway": 14.0,
-   "impliedHome": 30.5,
-   "total": 44.5,
+   "impliedAway": 14.5,
+   "impliedHome": 31.0,
+   "total": 45.5,
    "week": 11
   },
   {
@@ -30,10 +30,10 @@
    "gameday": "2026-11-22",
    "gametime": "13:00",
    "home": "CAR",
-   "homeSpread": 3.0,
-   "impliedAway": 20.25,
-   "impliedHome": 23.25,
-   "total": 43.5,
+   "homeSpread": 2.5,
+   "impliedAway": 21.0,
+   "impliedHome": 23.5,
+   "total": 44.5,
    "week": 11
   },
   {
@@ -43,9 +43,9 @@
    "gametime": "13:00",
    "home": "CHI",
    "homeSpread": 11.5,
-   "impliedAway": 18.5,
-   "impliedHome": 30.0,
-   "total": 48.5,
+   "impliedAway": 18.0,
+   "impliedHome": 29.5,
+   "total": 47.5,
    "week": 11
   },
   {
@@ -54,10 +54,10 @@
    "gameday": "2026-11-22",
    "gametime": "13:00",
    "home": "DAL",
-   "homeSpread": 8.5,
-   "impliedAway": 23.0,
+   "homeSpread": 7.5,
+   "impliedAway": 24.0,
    "impliedHome": 31.5,
-   "total": 54.5,
+   "total": 55.5,
    "week": 11
   },
   {
@@ -66,10 +66,10 @@
    "gameday": "2026-11-22",
    "gametime": "13:00",
    "home": "DET",
-   "homeSpread": 5.5,
-   "impliedAway": 20.0,
-   "impliedHome": 25.5,
-   "total": 45.5,
+   "homeSpread": 3.5,
+   "impliedAway": 22.5,
+   "impliedHome": 26.0,
+   "total": 48.5,
    "week": 11
   },
   {
@@ -78,22 +78,22 @@
    "gameday": "2026-11-22",
    "gametime": "13:00",
    "home": "KC",
-   "homeSpread": 16.5,
-   "impliedAway": 12.0,
-   "impliedHome": 28.5,
+   "homeSpread": 15.5,
+   "impliedAway": 12.5,
+   "impliedHome": 28.0,
    "total": 40.5,
    "week": 11
   },
   {
-   "away": "JAX",
-   "gameId": "2026_11_JAX_NYG",
+   "away": "PIT",
+   "gameId": "2026_11_PIT_PHI",
    "gameday": "2026-11-22",
    "gametime": "13:00",
-   "home": "NYG",
-   "homeSpread": -6.0,
-   "impliedAway": 26.25,
-   "impliedHome": 20.25,
-   "total": 46.5,
+   "home": "PHI",
+   "homeSpread": -3.5,
+   "impliedAway": 20.5,
+   "impliedHome": 17.0,
+   "total": 37.5,
    "week": 11
   },
   {
@@ -103,9 +103,9 @@
    "gametime": "16:05",
    "home": "LAC",
    "homeSpread": 3.0,
-   "impliedAway": 19.25,
-   "impliedHome": 22.25,
-   "total": 41.5,
+   "impliedAway": 20.25,
+   "impliedHome": 23.25,
+   "total": 43.5,
    "week": 11
   },
   {
@@ -121,15 +121,15 @@
    "week": 11
   },
   {
-   "away": "PIT",
-   "gameId": "2026_11_PIT_PHI",
+   "away": "JAX",
+   "gameId": "2026_11_JAX_NYG",
    "gameday": "2026-11-22",
    "gametime": "16:25",
-   "home": "PHI",
-   "homeSpread": -3.5,
-   "impliedAway": 20.5,
-   "impliedHome": 17.0,
-   "total": 37.5,
+   "home": "NYG",
+   "homeSpread": -6.0,
+   "impliedAway": 25.75,
+   "impliedHome": 19.75,
+   "total": 45.5,
    "week": 11
   },
   {
@@ -138,9 +138,9 @@
    "gameday": "2026-11-22",
    "gametime": "20:20",
    "home": "SF",
-   "homeSpread": 3.0,
-   "impliedAway": 21.75,
-   "impliedHome": 24.75,
+   "homeSpread": 3.5,
+   "impliedAway": 21.5,
+   "impliedHome": 25.0,
    "total": 46.5,
    "week": 11
   },
@@ -151,12 +151,12 @@
    "gametime": "20:15",
    "home": "WAS",
    "homeSpread": -6.0,
-   "impliedAway": 29.75,
-   "impliedHome": 23.75,
-   "total": 53.5,
+   "impliedAway": 30.25,
+   "impliedHome": 24.25,
+   "total": 54.5,
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-21T03:54:09Z",
+ "fetchedAt": "2026-11-22T21:00:56Z",
  "source": "nflverse_lines"
 }

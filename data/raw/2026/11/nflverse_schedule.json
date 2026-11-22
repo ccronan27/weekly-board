@@ -786,8 +786,8 @@
    "week": 11
   },
   {
-   "away": "JAX",
-   "home": "NYG",
+   "away": "PIT",
+   "home": "PHI",
    "week": 11
   },
   {
@@ -801,8 +801,8 @@
    "week": 11
   },
   {
-   "away": "PIT",
-   "home": "PHI",
+   "away": "JAX",
+   "home": "NYG",
    "week": 11
   },
   {
@@ -1361,6 +1361,6 @@
    "week": 18
   }
  ],
- "fetchedAt": "2026-11-21T03:54:09Z",
+ "fetchedAt": "2026-11-22T21:00:56Z",
  "source": "nflverse_schedule"
 }

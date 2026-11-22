@@ -880,7 +880,7 @@
     "wins": 5
    }
   ],
-  "syncedAt": "2026-11-21T03:54:09.000Z",
+  "syncedAt": "2026-11-22T21:00:56.000Z",
   "teams": [
    {
     "name": "Exempt List",
@@ -899,7 +899,7 @@
       "name": "Brock Bowers",
       "pos": "TE",
       "proTeamId": 13,
-      "slot": "TE"
+      "slot": "BN"
      },
      {
       "espnId": 3953687,
@@ -915,7 +915,7 @@
       "name": "Jordan Addison",
       "pos": "WR",
       "proTeamId": 16,
-      "slot": "BN"
+      "slot": "IR"
      },
      {
       "espnId": -16023,
@@ -990,20 +990,20 @@
       "slot": "QB"
      },
      {
-      "espnId": 4575131,
-      "injuryStatus": "NORMAL",
-      "name": "Jacory Croskey-Merritt",
-      "pos": "RB",
-      "proTeamId": 28,
-      "slot": "IR"
-     },
-     {
       "espnId": 3117256,
       "injuryStatus": "NORMAL",
       "name": "Dalton Schultz",
       "pos": "TE",
       "proTeamId": 34,
       "slot": "FLEX"
+     },
+     {
+      "espnId": 3930086,
+      "injuryStatus": "NORMAL",
+      "name": "Dawson Knox",
+      "pos": "TE",
+      "proTeamId": 2,
+      "slot": "TE"
      }
     ],
     "teamId": 1
@@ -1057,7 +1057,7 @@
       "name": "Dalton Kincaid",
       "pos": "TE",
       "proTeamId": 2,
-      "slot": "TE"
+      "slot": "BN"
      },
      {
       "espnId": 4360689,
@@ -1092,14 +1092,6 @@
       "slot": "FLEX"
      },
      {
-      "espnId": 3046439,
-      "injuryStatus": "NORMAL",
-      "name": "Hunter Henry",
-      "pos": "TE",
-      "proTeamId": 17,
-      "slot": "BN"
-     },
-     {
       "espnId": -16002,
       "injuryStatus": "NORMAL",
       "name": "Bills D/ST",
@@ -1114,6 +1106,14 @@
       "pos": "K",
       "proTeamId": 27,
       "slot": "K"
+     },
+     {
+      "espnId": 4361411,
+      "injuryStatus": "NORMAL",
+      "name": "Pat Freiermuth",
+      "pos": "TE",
+      "proTeamId": 23,
+      "slot": "TE"
      }
     ],
     "teamId": 2
@@ -1245,7 +1245,7 @@
       "name": "Kenneth Walker III",
       "pos": "RB",
       "proTeamId": 12,
-      "slot": "RB"
+      "slot": "IR"
      },
      {
       "espnId": 4685702,
@@ -1293,7 +1293,7 @@
       "name": "Jonah Coleman",
       "pos": "RB",
       "proTeamId": 7,
-      "slot": "FLEX"
+      "slot": "RB"
      },
      {
       "espnId": 4431492,
@@ -1301,7 +1301,7 @@
       "name": "Roman Wilson",
       "pos": "WR",
       "proTeamId": 23,
-      "slot": "IR"
+      "slot": "FLEX"
      },
      {
       "espnId": 4427095,
@@ -1623,7 +1623,7 @@
       "name": "Jadarian Price",
       "pos": "RB",
       "proTeamId": 26,
-      "slot": "FLEX"
+      "slot": "BN"
      },
      {
       "espnId": 3916148,
@@ -1647,7 +1647,7 @@
       "name": "Kyle Monangai",
       "pos": "RB",
       "proTeamId": 3,
-      "slot": "BN"
+      "slot": "FLEX"
      },
      {
       "espnId": 12483,
@@ -1671,7 +1671,7 @@
       "name": "Wil Lutz",
       "pos": "K",
       "proTeamId": 7,
-      "slot": "BN"
+      "slot": "K"
      },
      {
       "espnId": 4608810,
@@ -1695,7 +1695,7 @@
       "name": "Jason Sanders",
       "pos": "K",
       "proTeamId": 20,
-      "slot": "K"
+      "slot": "BN"
      },
      {
       "espnId": -16015,
@@ -1808,11 +1808,11 @@
       "slot": "BN"
      },
      {
-      "espnId": -16019,
+      "espnId": -16024,
       "injuryStatus": "NORMAL",
-      "name": "Giants D/ST",
+      "name": "Chargers D/ST",
       "pos": "D/ST",
-      "proTeamId": 19,
+      "proTeamId": 24,
       "slot": "D/ST"
      }
     ],
@@ -1867,7 +1867,7 @@
       "name": "Dallas Goedert",
       "pos": "TE",
       "proTeamId": 21,
-      "slot": "TE"
+      "slot": "BN"
      },
      {
       "espnId": 4361741,
@@ -1876,14 +1876,6 @@
       "pos": "QB",
       "proTeamId": 25,
       "slot": "QB"
-     },
-     {
-      "espnId": 3916433,
-      "injuryStatus": "NORMAL",
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "proTeamId": 30,
-      "slot": "BN"
      },
      {
       "espnId": -16014,
@@ -1907,7 +1899,7 @@
       "name": "T.J. Hockenson",
       "pos": "TE",
       "proTeamId": 16,
-      "slot": "IR"
+      "slot": "TE"
      },
      {
       "espnId": 4360248,
@@ -1977,7 +1969,7 @@
       "name": "Drake Maye",
       "pos": "QB",
       "proTeamId": 17,
-      "slot": "BN"
+      "slot": "IR"
      },
      {
       "espnId": 4432620,
@@ -2050,6 +2042,14 @@
       "pos": "QB",
       "proTeamId": 23,
       "slot": "QB"
+     },
+     {
+      "espnId": 4870795,
+      "injuryStatus": "NORMAL",
+      "name": "Makai Lemon",
+      "pos": "WR",
+      "proTeamId": 21,
+      "slot": "BN"
      }
     ],
     "teamId": 10
@@ -2545,6 +2545,6 @@
   ],
   "week": 11
  },
- "fetchedAt": "2026-11-21T03:54:09.000Z",
+ "fetchedAt": "2026-11-22T21:00:56.000Z",
  "source": "espn_rosters"
 }

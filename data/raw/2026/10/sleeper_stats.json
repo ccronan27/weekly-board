@@ -127,7 +127,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Treylon Burks",
    "opponent": "NYG",
    "playerId": "8135",
@@ -1008,7 +1008,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Luke Schoonmaker",
    "opponent": "SF",
    "playerId": "10871",
@@ -1115,7 +1115,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Out",
    "name": "Audric Estime",
    "opponent": "CAR",
    "playerId": "11579",
@@ -2623,7 +2623,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Kyren Williams",
    "opponent": "ARI",
    "playerId": "8150",
@@ -2812,7 +2812,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "IR",
    "name": "Tyjae Spears",
    "opponent": "JAX",
    "playerId": "9508",
@@ -3724,7 +3724,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Darren Waller",
    "opponent": "NO",
    "playerId": "2505",
@@ -6072,7 +6072,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Tommy Tremble",
    "opponent": "NO",
    "playerId": "7694",
@@ -6112,7 +6112,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Noah Gray",
    "opponent": "ATL",
    "playerId": "7828",
@@ -6653,7 +6653,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Doubtful",
+   "injuryStatus": "Out",
    "name": "Dalton Kincaid",
    "opponent": "NYJ",
    "playerId": "10236",
@@ -6813,7 +6813,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Sione Vaki",
    "opponent": "NE",
    "playerId": "11729",
@@ -7888,7 +7888,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Matt Gay",
    "opponent": "SEA",
    "playerId": "6083",
@@ -7962,7 +7962,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Juwan Johnson",
    "opponent": "CAR",
    "playerId": "7002",
@@ -10532,7 +10532,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Brock Bowers",
    "opponent": "SEA",
    "playerId": "11604",
@@ -11039,7 +11039,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Carson Beck",
    "opponent": "LAR",
    "playerId": "13272",
@@ -11271,7 +11271,7 @@
    "week": 10
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "DJ Moore",
    "opponent": "NYJ",
    "playerId": "4983",
@@ -12310,7 +12310,7 @@
    "week": 10
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Charlie Kolar",
    "opponent": "BAL",
    "playerId": "8127",
@@ -13162,6 +13162,6 @@
    "week": 10
   }
  ],
- "fetchedAt": "2026-11-21T03:54:07Z",
+ "fetchedAt": "2026-11-22T21:00:54Z",
  "source": "sleeper_stats"
 }
