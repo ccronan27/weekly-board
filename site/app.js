@@ -467,16 +467,31 @@ function columns(sideSecs, mainSecs) {
 // Sidebar card for this week's game. Hidden when there is no game this week.
 function matchupCard(league, g) {
   if (!g) return null;
+  const opp = String(g.opp || "").trim();
   const card = el("div", "card matchup");
-  card.appendChild(el("div", "mhead", "Week " + league.week + " vs " + String(g.opp || "").trim()));
+  card.appendChild(el("div", "mhead", "Week " + league.week + " vs " + opp));
+  // Scoreboard: both expected scores side by side, the higher one at full brightness
+  if (isNum(g.myMean) && isNum(g.oppMean)) {
+    const sb = el("div", "sb");
+    [["You", g.myMean, g.myMean >= g.oppMean, ""], [opp || "Them", g.oppMean, g.oppMean > g.myMean, " them"]].forEach(function (x) {
+      const side = el("div", "sb-side" + x[3] + (x[2] ? " ahead" : ""));
+      side.appendChild(el("span", "sb-who", x[0]));
+      side.appendChild(el("b", "sb-pts", x[1].toFixed(1)));
+      sb.appendChild(side);
+    });
+    card.appendChild(sb);
+  }
   if (isNum(g.winPct)) {
     const box = el("div", "wpbox");
-    box.appendChild(el("div", "label", "Win chance"));
-    box.appendChild(el("div", "wp " + winClass(g.winPct), pctText(g.winPct)));
+    box.appendChild(el("span", null, "Win chance"));
+    box.appendChild(el("span", "wp " + winClass(g.winPct), pctText(g.winPct)));
     card.appendChild(box);
-  }
-  if (isNum(g.myMean) && isNum(g.oppMean)) {
-    card.appendChild(el("div", "muted", "You " + g.myMean.toFixed(1) + " · them " + g.oppMean.toFixed(1)));
+    const bar = el("div", "wpbar");
+    bar.setAttribute("aria-hidden", "true");
+    const fill = el("span");
+    fill.style.width = Math.max(0, Math.min(100, g.winPct)) + "%";
+    bar.appendChild(fill);
+    card.appendChild(bar);
   }
   const odds = oddsText(g);
   if (odds) card.appendChild(el("div", "muted", odds));
@@ -564,7 +579,7 @@ function renderLeague(league, meta) {
   });
 
   secMoves.appendChild(el("h2", null, "Moves"));
-  const moves = el("div", "card");
+  const moves = el("div", "card moves" + (lu.moves.length ? " has-moves" : ""));
   if (!lu.moves.length) moves.appendChild(el("div", null, "No changes. Your lineup is already the best one."));
   lu.moves.forEach(function (m) {
     let t;

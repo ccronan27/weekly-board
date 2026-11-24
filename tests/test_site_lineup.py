@@ -20,10 +20,12 @@ def _node(js: str):
     return json.loads(out.stdout)
 
 
-def test_s2_block_is_one_block_at_the_end_of_the_css():
+def test_css_is_one_block_per_section_with_layout_last():
     css = (ROOT / "site" / "style.css").read_text(encoding="utf-8")
-    assert css.count("/* S2 Lineup view */") == 1
-    assert css.index("/* S2 Lineup view */") > css.index("S1 site shell")
+    sections = ["Band: title", "Scoreboard: this week", "Player rows", "Trades", "Standings and Shotguns", "Waivers:", "All view", "Layout\n", "Sticky bar"]
+    for s in sections:
+        assert css.count("-- " + s) == 1, s
+    assert css.index("-- Layout\n") > css.index("-- All view")   # layout overrides come after the pieces they arrange
 
 
 @needs_node
