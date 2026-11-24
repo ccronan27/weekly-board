@@ -1,0 +1,42 @@
+{
+ "generatedAt": "2026-11-24T08:03:18Z",
+ "slots": [
+  {
+   "playerId": "3163",
+   "slot": "QB"
+  },
+  {
+   "playerId": "4034",
+   "slot": "RB"
+  },
+  {
+   "playerId": "10229",
+   "slot": "WR"
+  },
+  {
+   "playerId": "8167",
+   "slot": "WR"
+  },
+  {
+   "playerId": "12506",
+   "slot": "TE"
+  },
+  {
+   "playerId": "8146",
+   "slot": "FLEX"
+  },
+  {
+   "playerId": "4199",
+   "slot": "FLEX"
+  },
+  {
+   "playerId": "2020",
+   "slot": "K"
+  },
+  {
+   "playerId": "NYJ",
+   "slot": "DEF"
+  }
+ ],
+ "week": 12
+}

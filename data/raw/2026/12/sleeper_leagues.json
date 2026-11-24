@@ -1,0 +1,3377 @@
+{
+ "data": {
+  "chicago-dynasty": {
+   "divisions": 0,
+   "draftRounds": 4,
+   "leagueId": "1335703355086893056",
+   "matchups": {
+    "1": [
+     {
+      "matchupId": 6,
+      "points": 75.16,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 127.82,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 170.66,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 138.9,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 116.92,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 106.36,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 3,
+      "points": 130.86,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 125.06,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 5,
+      "points": 152.8,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 86.84,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 4,
+      "points": 132.56,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 1,
+      "points": 112.06,
+      "rosterId": 12
+     }
+    ],
+    "10": [
+     {
+      "matchupId": 5,
+      "points": 110.36,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 3,
+      "points": 86.52,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 125.32,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 127.52,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 126.12,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 155.96,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 5,
+      "points": 185.28,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 91.54,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 127.34,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 1,
+      "points": 138.6,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 98.24,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 42.1,
+      "rosterId": 12
+     }
+    ],
+    "11": [
+     {
+      "matchupId": 6,
+      "points": 66.76,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 93.7,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 1,
+      "points": 108.14,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 113.3,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 90.54,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 3,
+      "points": 84.3,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 4,
+      "points": 103.14,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 99.16,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 156.6,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 2,
+      "points": 134.74,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 118.26,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 103.16,
+      "rosterId": 12
+     }
+    ],
+    "12": [
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "13": [
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "14": [
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "2": [
+     {
+      "matchupId": 5,
+      "points": 91.24,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 94.96,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 128.72,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 118.76,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 105.92,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 1,
+      "points": 90.68,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 2,
+      "points": 156.7,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 100.62,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 4,
+      "points": 164.28,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 114.78,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 102.18,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 104.18,
+      "rosterId": 12
+     }
+    ],
+    "3": [
+     {
+      "matchupId": 4,
+      "points": 121.38,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 126.72,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 4,
+      "points": 134.98,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 80.04,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 79.26,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 96.98,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 183.74,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 77.96,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 136.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 98.78,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 6,
+      "points": 137.34,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 84.54,
+      "rosterId": 12
+     }
+    ],
+    "4": [
+     {
+      "matchupId": 3,
+      "points": 81.82,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 130.86,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 5,
+      "points": 119.48,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 105.9,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 111.86,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 3,
+      "points": 134.32,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 2,
+      "points": 103.68,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 1,
+      "points": 109.62,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 156.04,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 6,
+      "points": 158.32,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 6,
+      "points": 135.16,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 139.9,
+      "rosterId": 12
+     }
+    ],
+    "5": [
+     {
+      "matchupId": 2,
+      "points": 75.96,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 123.42,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 6,
+      "points": 141.16,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 3,
+      "points": 59.54,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 144.86,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 96.68,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 3,
+      "points": 175.64,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 126.1,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 1,
+      "points": 102.74,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 6,
+      "points": 89.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 143.04,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 144.1,
+      "rosterId": 12
+     }
+    ],
+    "6": [
+     {
+      "matchupId": 1,
+      "points": 78.76,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 3,
+      "points": 75.78,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 6,
+      "points": 172.7,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 2,
+      "points": 102.02,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 125.2,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 72.92,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 4,
+      "points": 94.98,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 80.3,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 98.06,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 117.02,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 4,
+      "points": 99.58,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 6,
+      "points": 102.34,
+      "rosterId": 12
+     }
+    ],
+    "7": [
+     {
+      "matchupId": 2,
+      "points": 76.32,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 2,
+      "points": 126.48,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 5,
+      "points": 125.62,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 1,
+      "points": 97.78,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 93.74,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 119.78,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 5,
+      "points": 91.1,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 104.42,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 135.52,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 117.46,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 121.02,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 6,
+      "points": 133.86,
+      "rosterId": 12
+     }
+    ],
+    "8": [
+     {
+      "matchupId": 3,
+      "points": 102.08,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 1,
+      "points": 80.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 4,
+      "points": 136.38,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 2,
+      "points": 78.2,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 131.36,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 129.88,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 6,
+      "points": 87.9,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 91.26,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 4,
+      "points": 92.86,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 94.5,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 117.08,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 196.12,
+      "rosterId": 12
+     }
+    ],
+    "9": [
+     {
+      "matchupId": 4,
+      "points": 99.46,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 2,
+      "points": 96.78,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 160.16,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 3,
+      "points": 93.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 131.66,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 99.84,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 6,
+      "points": 118.38,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 78.46,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 5,
+      "points": 132.3,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 2,
+      "points": 97.92,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 1,
+      "points": 82.42,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 172.78,
+      "rosterId": 12
+     }
+    ]
+   },
+   "name": "Chicago Dynasty",
+   "playoffRoundType": 0,
+   "playoffTeams": 6,
+   "playoffWeekStart": 15,
+   "rosterPositions": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "WR",
+    "TE",
+    "FLEX",
+    "FLEX",
+    "FLEX",
+    "K",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN"
+   ],
+   "scoring": {
+    "blk_kick": 2.0,
+    "bonus_pass_yd_400": 1.0,
+    "bonus_rec_te": 0.5,
+    "bonus_rec_yd_200": 1.0,
+    "bonus_rush_yd_200": 1.0,
+    "def_st_ff": 1.0,
+    "def_st_fum_rec": 1.0,
+    "def_st_td": 6.0,
+    "def_td": 6.0,
+    "ff": 1.0,
+    "fgm_0_19": 3.0,
+    "fgm_20_29": 3.0,
+    "fgm_30_39": 3.0,
+    "fgm_40_49": 4.0,
+    "fgm_50_59": 6.0,
+    "fgm_60p": 8.0,
+    "fgmiss": 0.0,
+    "fgmiss_0_19": -3.0,
+    "fgmiss_20_29": -3.0,
+    "fgmiss_30_39": -2.0,
+    "fgmiss_40_49": -1.0,
+    "fum": 0.0,
+    "fum_lost": -2.0,
+    "fum_rec": 2.0,
+    "fum_rec_td": 6.0,
+    "int": 2.0,
+    "pass_2pt": 2.0,
+    "pass_int": -1.0,
+    "pass_td": 4.0,
+    "pass_td_50p": 1.0,
+    "pass_yd": 0.04,
+    "pts_allow_0": 10.0,
+    "pts_allow_14_20": 1.0,
+    "pts_allow_1_6": 7.0,
+    "pts_allow_21_27": 0.0,
+    "pts_allow_28_34": -1.0,
+    "pts_allow_35p": -4.0,
+    "pts_allow_7_13": 4.0,
+    "rec": 0.5,
+    "rec_2pt": 2.0,
+    "rec_td": 6.0,
+    "rec_td_50p": 1.0,
+    "rec_yd": 0.1,
+    "rush_2pt": 2.0,
+    "rush_td": 6.0,
+    "rush_td_50p": 1.0,
+    "rush_yd": 0.1,
+    "sack": 1.0,
+    "safe": 2.0,
+    "st_ff": 1.0,
+    "st_fum_rec": 1.0,
+    "st_td": 6.0,
+    "xpm": 1.0,
+    "xpmiss": -3.0
+   },
+   "season": 2026,
+   "status": "in_season",
+   "teamCount": 12,
+   "teams": [
+    {
+     "faabUsed": 40,
+     "isMine": false,
+     "players": [
+      "10222",
+      "11566",
+      "11603",
+      "11610",
+      "11647",
+      "12467",
+      "12474",
+      "12497",
+      "12504",
+      "13293",
+      "13296",
+      "13298",
+      "13320",
+      "13337",
+      "5001",
+      "6083",
+      "6783",
+      "8146",
+      "8676",
+      "9228",
+      "9501",
+      "9508"
+     ],
+     "record": {
+      "division": null,
+      "losses": 10,
+      "pointsAgainst": 1497.32,
+      "pointsFor": 979.3,
+      "ties": 0,
+      "wins": 1
+     },
+     "reserve": [],
+     "rosterId": 1,
+     "starters": [
+      "11566",
+      "13337",
+      "11647",
+      "11610",
+      "13293",
+      "11603",
+      "9501",
+      "8146",
+      "13296",
+      "6083"
+     ],
+     "taxi": [],
+     "teamName": "The Texans RB Room"
+    },
+    {
+     "faabUsed": 1,
+     "isMine": true,
+     "players": [
+      "11563",
+      "11576",
+      "11630",
+      "12185",
+      "12489",
+      "12495",
+      "13269",
+      "13286",
+      "13353",
+      "13394",
+      "2216",
+      "2505",
+      "4039",
+      "4177",
+      "4993",
+      "5859",
+      "6904",
+      "8142",
+      "9500",
+      "9509",
+      "9754",
+      "9997"
+     ],
+     "record": {
+      "division": null,
+      "losses": 7,
+      "pointsAgainst": 1156.2,
+      "pointsFor": 1163.04,
+      "ties": 0,
+      "wins": 4
+     },
+     "reserve": [],
+     "rosterId": 2,
+     "starters": [
+      "11563",
+      "11576",
+      "12495",
+      "9997",
+      "9754",
+      "4993",
+      "9500",
+      "2216",
+      "2505",
+      "12185"
+     ],
+     "taxi": [],
+     "teamName": "Zay My Name"
+    },
+    {
+     "faabUsed": 38,
+     "isMine": false,
+     "players": [
+      "11560",
+      "11565",
+      "11579",
+      "11632",
+      "11729",
+      "11834",
+      "12501",
+      "12517",
+      "13287",
+      "4037",
+      "5947",
+      "5967",
+      "6650",
+      "6801",
+      "7567",
+      "8151",
+      "8155",
+      "8167",
+      "8210",
+      "9480",
+      "9486",
+      "9488"
+     ],
+     "record": {
+      "division": null,
+      "losses": 1,
+      "pointsAgainst": 1116.3,
+      "pointsFor": 1523.32,
+      "ties": 0,
+      "wins": 10
+     },
+     "reserve": [],
+     "rosterId": 3,
+     "starters": [
+      "11560",
+      "8151",
+      "8155",
+      "6801",
+      "9488",
+      "12517",
+      "11632",
+      "8167",
+      "12501",
+      "6650"
+     ],
+     "taxi": [],
+     "teamName": "God, Country, Caleb 💅"
+    },
+    {
+     "faabUsed": 30,
+     "isMine": false,
+     "players": [
+      "10236",
+      "11597",
+      "11624",
+      "11631",
+      "11637",
+      "11643",
+      "11646",
+      "12484",
+      "13264",
+      "13268",
+      "13294",
+      "13307",
+      "13421",
+      "13545",
+      "13833",
+      "3257",
+      "3294",
+      "6813",
+      "8112",
+      "8408",
+      "9504"
+     ],
+     "record": {
+      "division": null,
+      "losses": 6,
+      "pointsAgainst": 1308.6,
+      "pointsFor": 1114.96,
+      "ties": 0,
+      "wins": 5
+     },
+     "reserve": [],
+     "rosterId": 4,
+     "starters": [
+      "3294",
+      "0",
+      "0",
+      "11637",
+      "11646",
+      "10236",
+      "9504",
+      "11624",
+      "8408",
+      "13833"
+     ],
+     "taxi": [],
+     "teamName": "Dak FC"
+    },
+    {
+     "faabUsed": 96,
+     "isMine": false,
+     "players": [
+      "10219",
+      "11557",
+      "11564",
+      "11575",
+      "11577",
+      "11583",
+      "11638",
+      "12483",
+      "12490",
+      "12540",
+      "13301",
+      "13424",
+      "5995",
+      "6806",
+      "7564",
+      "7569",
+      "7839",
+      "8122",
+      "8131",
+      "8144",
+      "9226",
+      "9484"
+     ],
+     "record": {
+      "division": null,
+      "losses": 4,
+      "pointsAgainst": 1184.54,
+      "pointsFor": 1257.44,
+      "ties": 0,
+      "wins": 7
+     },
+     "reserve": [],
+     "rosterId": 5,
+     "starters": [
+      "11557",
+      "12490",
+      "13424",
+      "7564",
+      "13301",
+      "8131",
+      "8144",
+      "7569",
+      "12540",
+      "7839"
+     ],
+     "taxi": [],
+     "teamName": "Team 5 (no name set)"
+    },
+    {
+     "faabUsed": 10,
+     "isMine": false,
+     "players": [
+      "10232",
+      "11586",
+      "11620",
+      "1166",
+      "12481",
+      "12492",
+      "12507",
+      "12508",
+      "12512",
+      "12536",
+      "13281",
+      "13349",
+      "13402",
+      "3321",
+      "5012",
+      "5119",
+      "5844",
+      "6770",
+      "6794",
+      "8154",
+      "8205",
+      "9479"
+     ],
+     "record": {
+      "division": null,
+      "losses": 7,
+      "pointsAgainst": 1276.64,
+      "pointsFor": 1187.7,
+      "ties": 0,
+      "wins": 4
+     },
+     "reserve": [],
+     "rosterId": 6,
+     "starters": [
+      "6770",
+      "12481",
+      "12507",
+      "13281",
+      "6794",
+      "5012",
+      "9479",
+      "11620",
+      "5844",
+      "5119"
+     ],
+     "taxi": [],
+     "teamName": "When in Rome"
+    },
+    {
+     "faabUsed": 58,
+     "isMine": false,
+     "players": [
+      "10229",
+      "11625",
+      "11792",
+      "12469",
+      "12491",
+      "12506",
+      "12518",
+      "12522",
+      "12534",
+      "13274",
+      "13317",
+      "13346",
+      "2133",
+      "4034",
+      "421",
+      "4881",
+      "7523",
+      "7543",
+      "8134",
+      "9221",
+      "9487",
+      "9756"
+     ],
+     "record": {
+      "division": null,
+      "losses": 4,
+      "pointsAgainst": 1123.46,
+      "pointsFor": 1431.4,
+      "ties": 0,
+      "wins": 7
+     },
+     "reserve": [],
+     "rosterId": 7,
+     "starters": [
+      "7523",
+      "9221",
+      "4034",
+      "10229",
+      "9487",
+      "12518",
+      "12534",
+      "8134",
+      "11625",
+      "11792"
+     ],
+     "taxi": [],
+     "teamName": "All Gas No Brakes"
+    },
+    {
+     "faabUsed": 23,
+     "isMine": false,
+     "players": [
+      "10859",
+      "11539",
+      "11581",
+      "12514",
+      "12529",
+      "13305",
+      "13330",
+      "13414",
+      "1479",
+      "3163",
+      "3634",
+      "4663",
+      "4984",
+      "5022",
+      "5892",
+      "6130",
+      "6819",
+      "7571",
+      "7611",
+      "8126",
+      "8137",
+      "8148"
+     ],
+     "record": {
+      "division": null,
+      "losses": 9,
+      "pointsAgainst": 1294.46,
+      "pointsFor": 1084.5,
+      "ties": 0,
+      "wins": 2
+     },
+     "reserve": [],
+     "rosterId": 8,
+     "starters": [
+      "4984",
+      "5892",
+      "13305",
+      "8137",
+      "8148",
+      "10859",
+      "6130",
+      "12514",
+      "5022",
+      "11539"
+     ],
+     "taxi": [],
+     "teamName": "Jared Goff Glazer"
+    },
+    {
+     "faabUsed": 82,
+     "isMine": false,
+     "players": [
+      "10218",
+      "11533",
+      "11628",
+      "11783",
+      "12499",
+      "12509",
+      "12535",
+      "12545",
+      "12718",
+      "13413",
+      "1466",
+      "3198",
+      "4199",
+      "4866",
+      "5927",
+      "6786",
+      "7547",
+      "7553",
+      "7588",
+      "7594",
+      "8132",
+      "8183",
+      "9224"
+     ],
+     "record": {
+      "division": null,
+      "losses": 3,
+      "pointsAgainst": 1193.24,
+      "pointsFor": 1454.54,
+      "ties": 0,
+      "wins": 8
+     },
+     "reserve": [],
+     "rosterId": 9,
+     "starters": [
+      "8183",
+      "0",
+      "7588",
+      "6786",
+      "7547",
+      "1466",
+      "4866",
+      "3198",
+      "12499",
+      "11533"
+     ],
+     "taxi": [],
+     "teamName": "Brandon Aubrey Supremacy"
+    },
+    {
+     "faabUsed": 0,
+     "isMine": false,
+     "players": [
+      "11435",
+      "11655",
+      "11786",
+      "12526",
+      "12530",
+      "13311",
+      "13345",
+      "1373",
+      "2449",
+      "4035",
+      "4147",
+      "4217",
+      "4892",
+      "4943",
+      "5045",
+      "5846",
+      "5850",
+      "5854",
+      "5872",
+      "8130",
+      "8138",
+      "8208"
+     ],
+     "record": {
+      "division": null,
+      "losses": 4,
+      "pointsAgainst": 1256.98,
+      "pointsFor": 1247.96,
+      "ties": 0,
+      "wins": 7
+     },
+     "reserve": [],
+     "rosterId": 10,
+     "starters": [
+      "1373",
+      "13345",
+      "4035",
+      "2449",
+      "12526",
+      "8130",
+      "4217",
+      "5872",
+      "5846",
+      "11786"
+     ],
+     "taxi": [],
+     "teamName": "Tinman0506"
+    },
+    {
+     "faabUsed": 12,
+     "isMine": false,
+     "players": [
+      "10213",
+      "11635",
+      "12498",
+      "12527",
+      "13276",
+      "13285",
+      "13417",
+      "4983",
+      "6797",
+      "7002",
+      "7042",
+      "7525",
+      "7562",
+      "7600",
+      "8121",
+      "8135",
+      "8136",
+      "8150",
+      "8228",
+      "9482",
+      "9502",
+      "9758"
+     ],
+     "record": {
+      "division": null,
+      "losses": 5,
+      "pointsAgainst": 1295.42,
+      "pointsFor": 1286.88,
+      "ties": 0,
+      "wins": 6
+     },
+     "reserve": [],
+     "rosterId": 11,
+     "starters": [
+      "9758",
+      "8228",
+      "12527",
+      "4983",
+      "9502",
+      "9482",
+      "7525",
+      "8136",
+      "0",
+      "7042"
+     ],
+     "taxi": [],
+     "teamName": "Ladd’s McConcubines"
+    },
+    {
+     "faabUsed": 0,
+     "isMine": false,
+     "players": [
+      "11584",
+      "11604",
+      "12487",
+      "12493",
+      "12519",
+      "12533",
+      "13279",
+      "13288",
+      "13405",
+      "3214",
+      "3451",
+      "4046",
+      "6790",
+      "6803",
+      "6804",
+      "7021",
+      "7049",
+      "7526",
+      "8110",
+      "8161",
+      "9493",
+      "9753"
+     ],
+     "record": {
+      "division": null,
+      "losses": 6,
+      "pointsAgainst": 1363.02,
+      "pointsFor": 1335.14,
+      "ties": 0,
+      "wins": 5
+     },
+     "reserve": [],
+     "rosterId": 12,
+     "starters": [
+      "4046",
+      "6790",
+      "11584",
+      "12519",
+      "7526",
+      "11604",
+      "12533",
+      "13279",
+      "7021",
+      "3451"
+     ],
+     "taxi": [],
+     "teamName": "Team 12 (no name set)"
+    }
+   ],
+   "tradedPicks": [
+    {
+     "ownerId": 1,
+     "rosterId": 1,
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "ownerId": 8,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 10,
+     "rosterId": 3,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 8,
+     "rosterId": 3,
+     "round": 4,
+     "season": "2026"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "ownerId": 6,
+     "rosterId": 3,
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2028"
+    },
+    {
+     "ownerId": 12,
+     "rosterId": 3,
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 1,
+     "season": "2029"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 3,
+     "round": 2,
+     "season": "2029"
+    },
+    {
+     "ownerId": 5,
+     "rosterId": 5,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 5,
+     "rosterId": 8,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 3,
+     "rosterId": 8,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 9,
+     "round": 1,
+     "season": "2026"
+    },
+    {
+     "ownerId": 1,
+     "rosterId": 9,
+     "round": 2,
+     "season": "2026"
+    },
+    {
+     "ownerId": 11,
+     "rosterId": 9,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 5,
+     "rosterId": 9,
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "ownerId": 2,
+     "rosterId": 9,
+     "round": 4,
+     "season": "2027"
+    },
+    {
+     "ownerId": 4,
+     "rosterId": 9,
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "ownerId": 3,
+     "rosterId": 10,
+     "round": 3,
+     "season": "2026"
+    },
+    {
+     "ownerId": 9,
+     "rosterId": 10,
+     "round": 4,
+     "season": "2026"
+    },
+    {
+     "ownerId": 11,
+     "rosterId": 10,
+     "round": 1,
+     "season": "2027"
+    },
+    {
+     "ownerId": 11,
+     "rosterId": 10,
+     "round": 1,
+     "season": "2028"
+    },
+    {
+     "ownerId": 10,
+     "rosterId": 11,
+     "round": 2,
+     "season": "2027"
+    },
+    {
+     "ownerId": 2,
+     "rosterId": 11,
+     "round": 3,
+     "season": "2027"
+    },
+    {
+     "ownerId": 10,
+     "rosterId": 11,
+     "round": 3,
+     "season": "2028"
+    },
+    {
+     "ownerId": 11,
+     "rosterId": 12,
+     "round": 2,
+     "season": "2026"
+    }
+   ],
+   "waiverBudget": 100,
+   "waiverType": 2
+  },
+  "hwh": {
+   "divisions": 2,
+   "leagueId": "1389389185361653760",
+   "matchups": {
+    "1": [
+     {
+      "matchupId": 1,
+      "points": 126.62,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 106.9,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 112.7,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 150.7,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 2,
+      "points": 178.46,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 167.9,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 113.96,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 137.56,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 147.76,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 85.76,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 173.92,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 119.26,
+      "rosterId": 12
+     }
+    ],
+    "10": [
+     {
+      "matchupId": 2,
+      "points": 94.62,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 150.82,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 102.86,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 164.42,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 131.58,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 2,
+      "points": 164.52,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 140.46,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 1,
+      "points": 98.72,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 122.84,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 3,
+      "points": 111.06,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 178.08,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 112.16,
+      "rosterId": 12
+     }
+    ],
+    "11": [
+     {
+      "matchupId": 2,
+      "points": 98.56,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 117.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 96.2,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 140.42,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 152.74,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 1,
+      "points": 108.16,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 157.16,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 2,
+      "points": 118.24,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 87.16,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 81.96,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 114.94,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 3,
+      "points": 86.34,
+      "rosterId": 12
+     }
+    ],
+    "12": [
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "13": [
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "14": [
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 0.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 0.0,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 0.0,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 0.0,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 0.0,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 0.0,
+      "rosterId": 12
+     }
+    ],
+    "2": [
+     {
+      "matchupId": 2,
+      "points": 100.22,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 127.06,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 1,
+      "points": 147.88,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 121.5,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 3,
+      "points": 108.22,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 108.46,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 169.78,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 82.5,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 104.62,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 125.74,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 2,
+      "points": 150.98,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 104.08,
+      "rosterId": 12
+     }
+    ],
+    "3": [
+     {
+      "matchupId": 2,
+      "points": 74.36,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 120.74,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 153.68,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 151.38,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 1,
+      "points": 129.82,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 124.46,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 131.74,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 104.44,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 2,
+      "points": 103.36,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 101.12,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 160.1,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 161.7,
+      "rosterId": 12
+     }
+    ],
+    "4": [
+     {
+      "matchupId": 2,
+      "points": 134.88,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 6,
+      "points": 125.5,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 92.52,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 5,
+      "points": 138.12,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 2,
+      "points": 161.58,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 82.38,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 157.0,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 123.98,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 3,
+      "points": 176.92,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 106.4,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 1,
+      "points": 134.04,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 149.98,
+      "rosterId": 12
+     }
+    ],
+    "5": [
+     {
+      "matchupId": 2,
+      "points": 146.26,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 5,
+      "points": 73.34,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 2,
+      "points": 120.16,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 6,
+      "points": 152.48,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 3,
+      "points": 145.76,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 187.94,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 152.3,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 137.5,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 1,
+      "points": 166.68,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 4,
+      "points": 77.52,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 3,
+      "points": 119.34,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 165.12,
+      "rosterId": 12
+     }
+    ],
+    "6": [
+     {
+      "matchupId": 2,
+      "points": 84.4,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 3,
+      "points": 86.54,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 62.66,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 4,
+      "points": 101.72,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 138.7,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 6,
+      "points": 133.66,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 144.48,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 5,
+      "points": 133.9,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 123.4,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 1,
+      "points": 144.2,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 135.14,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 2,
+      "points": 75.38,
+      "rosterId": 12
+     }
+    ],
+    "7": [
+     {
+      "matchupId": 2,
+      "points": 115.94,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 4,
+      "points": 114.46,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 71.92,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 3,
+      "points": 146.9,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 140.72,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 5,
+      "points": 112.62,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 143.48,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 6,
+      "points": 148.02,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 137.6,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 2,
+      "points": 50.2,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 95.42,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 1,
+      "points": 119.5,
+      "rosterId": 12
+     }
+    ],
+    "8": [
+     {
+      "matchupId": 2,
+      "points": 169.86,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 1,
+      "points": 115.4,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 78.38,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 2,
+      "points": 154.18,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 131.98,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 4,
+      "points": 109.14,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 158.78,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 3,
+      "points": 103.2,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 130.86,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 5,
+      "points": 84.48,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 96.36,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 6,
+      "points": 105.08,
+      "rosterId": 12
+     }
+    ],
+    "9": [
+     {
+      "matchupId": 2,
+      "points": 118.86,
+      "rosterId": 1
+     },
+     {
+      "matchupId": 2,
+      "points": 79.7,
+      "rosterId": 2
+     },
+     {
+      "matchupId": 3,
+      "points": 79.66,
+      "rosterId": 3
+     },
+     {
+      "matchupId": 1,
+      "points": 155.34,
+      "rosterId": 4
+     },
+     {
+      "matchupId": 4,
+      "points": 122.36,
+      "rosterId": 5
+     },
+     {
+      "matchupId": 3,
+      "points": 102.6,
+      "rosterId": 6
+     },
+     {
+      "matchupId": 1,
+      "points": 156.24,
+      "rosterId": 7
+     },
+     {
+      "matchupId": 4,
+      "points": 105.4,
+      "rosterId": 8
+     },
+     {
+      "matchupId": 6,
+      "points": 103.66,
+      "rosterId": 9
+     },
+     {
+      "matchupId": 6,
+      "points": 91.76,
+      "rosterId": 10
+     },
+     {
+      "matchupId": 5,
+      "points": 135.68,
+      "rosterId": 11
+     },
+     {
+      "matchupId": 5,
+      "points": 134.92,
+      "rosterId": 12
+     }
+    ]
+   },
+   "name": "HWH: The League",
+   "playoffRoundType": 0,
+   "playoffTeams": 6,
+   "playoffWeekStart": 15,
+   "rosterPositions": [
+    "QB",
+    "RB",
+    "RB",
+    "WR",
+    "WR",
+    "TE",
+    "FLEX",
+    "FLEX",
+    "K",
+    "DEF",
+    "BN",
+    "BN",
+    "BN",
+    "BN",
+    "BN"
+   ],
+   "scoring": {
+    "blk_kick": 2.0,
+    "blk_kick_ret_yd": 0.0,
+    "bonus_def_fum_td_50p": 0.0,
+    "bonus_def_int_td_50p": 0.0,
+    "bonus_fd_qb": 0.0,
+    "bonus_fd_rb": 0.0,
+    "bonus_fd_te": 0.0,
+    "bonus_fd_wr": 0.0,
+    "bonus_pass_cmp_25": 0.0,
+    "bonus_pass_yd_300": 0.0,
+    "bonus_pass_yd_400": 0.0,
+    "bonus_rec_rb": 0.0,
+    "bonus_rec_te": 0.0,
+    "bonus_rec_wr": 0.0,
+    "bonus_rec_yd_100": 0.0,
+    "bonus_rec_yd_200": 0.0,
+    "bonus_rush_att_20": 0.0,
+    "bonus_rush_rec_yd_100": 0.0,
+    "bonus_rush_rec_yd_200": 0.0,
+    "bonus_rush_yd_100": 0.0,
+    "bonus_rush_yd_200": 0.0,
+    "bonus_sack_2p": 0.0,
+    "bonus_tkl_10p": 0.0,
+    "def_2pt": 0.0,
+    "def_3_and_out": 0.0,
+    "def_4_and_stop": 0.0,
+    "def_forced_punts": 0.0,
+    "def_kr_yd": 0.0,
+    "def_pass_def": 0.0,
+    "def_pr_yd": 0.0,
+    "def_st_ff": 1.0,
+    "def_st_fum_rec": 1.0,
+    "def_st_td": 6.0,
+    "def_st_tkl_solo": 0.0,
+    "def_td": 6.0,
+    "ff": 1.0,
+    "fg_ret_yd": 0.0,
+    "fgm": 0.0,
+    "fgm_0_19": 3.0,
+    "fgm_20_29": 3.0,
+    "fgm_30_39": 3.0,
+    "fgm_40_49": 4.0,
+    "fgm_50_59": 5.0,
+    "fgm_50p": 0.0,
+    "fgm_60p": 6.0,
+    "fgm_yds": 0.0,
+    "fgm_yds_over_30": 0.0,
+    "fgmiss": -1.0,
+    "fgmiss_0_19": 0.0,
+    "fgmiss_20_29": 0.0,
+    "fgmiss_30_39": 0.0,
+    "fgmiss_40_49": 0.0,
+    "fgmiss_50_59": 0.0,
+    "fgmiss_50p": 0.0,
+    "fgmiss_60p": 0.0,
+    "fum": 0.0,
+    "fum_lost": -2.0,
+    "fum_rec": 2.0,
+    "fum_rec_td": 6.0,
+    "fum_ret_yd": 0.0,
+    "idp_pass_def_3p": 0.0,
+    "idp_sack_yd": 0.0,
+    "int": 2.0,
+    "int_ret_yd": 0.0,
+    "kr_yd": 0.0,
+    "pass_2pt": 2.0,
+    "pass_att": 0.0,
+    "pass_cmp": 0.0,
+    "pass_cmp_40p": 0.0,
+    "pass_fd": 0.0,
+    "pass_inc": 0.0,
+    "pass_int": -1.0,
+    "pass_int_td": 0.0,
+    "pass_sack": 0.0,
+    "pass_td": 4.0,
+    "pass_td_40p": 0.0,
+    "pass_td_50p": 0.0,
+    "pass_yd": 0.04,
+    "pr_yd": 0.0,
+    "pts_allow": 0.0,
+    "pts_allow_0": 10.0,
+    "pts_allow_14_20": 1.0,
+    "pts_allow_1_6": 7.0,
+    "pts_allow_21_27": 0.0,
+    "pts_allow_28_34": -1.0,
+    "pts_allow_35p": -4.0,
+    "pts_allow_7_13": 4.0,
+    "qb_hit": 0.0,
+    "rec": 1.0,
+    "rec_0_4": 0.0,
+    "rec_10_19": 0.0,
+    "rec_20_29": 0.0,
+    "rec_2pt": 2.0,
+    "rec_30_39": 0.0,
+    "rec_40p": 0.0,
+    "rec_5_9": 0.0,
+    "rec_fd": 0.0,
+    "rec_td": 6.0,
+    "rec_td_40p": 0.0,
+    "rec_td_50p": 0.0,
+    "rec_yd": 0.1,
+    "rush_2pt": 2.0,
+    "rush_40p": 0.0,
+    "rush_att": 0.0,
+    "rush_fd": 0.0,
+    "rush_td": 6.0,
+    "rush_td_40p": 0.0,
+    "rush_td_50p": 0.0,
+    "rush_yd": 0.1,
+    "sack": 1.0,
+    "sack_yd": 0.0,
+    "safe": 2.0,
+    "st_ff": 1.0,
+    "st_fum_rec": 1.0,
+    "st_td": 6.0,
+    "st_tkl_solo": 0.0,
+    "tkl": 0.0,
+    "tkl_ast": 0.0,
+    "tkl_loss": 0.0,
+    "tkl_solo": 0.0,
+    "xpm": 1.0,
+    "xpmiss": -1.0,
+    "yds_allow": 0.0,
+    "yds_allow_0_100": 0.0,
+    "yds_allow_100_199": 0.0,
+    "yds_allow_200_299": 0.0,
+    "yds_allow_300_349": 0.0,
+    "yds_allow_350_399": 0.0,
+    "yds_allow_400_449": 0.0,
+    "yds_allow_450_499": 0.0,
+    "yds_allow_500_549": 0.0,
+    "yds_allow_550p": 0.0
+   },
+   "season": 2026,
+   "status": "in_season",
+   "teamCount": 12,
+   "teams": [
+    {
+     "faabUsed": 100,
+     "isMine": false,
+     "players": [
+      "10236",
+      "11199",
+      "11564",
+      "12492",
+      "12533",
+      "13298",
+      "5022",
+      "5045",
+      "5892",
+      "6794",
+      "7564",
+      "7839",
+      "8132",
+      "8150",
+      "9758",
+      "DEN"
+     ],
+     "record": {
+      "division": 1,
+      "losses": 5,
+      "pointsAgainst": 1292.26,
+      "pointsFor": 1264.58,
+      "ties": 0,
+      "wins": 6
+     },
+     "reserve": [
+      "12533"
+     ],
+     "rosterId": 1,
+     "starters": [
+      "9758",
+      "5892",
+      "11199",
+      "6794",
+      "7564",
+      "5022",
+      "12492",
+      "5045",
+      "7839",
+      "DEN"
+     ],
+     "taxi": [],
+     "teamName": "Kirkboi Charlies"
+    },
+    {
+     "faabUsed": 0,
+     "isMine": false,
+     "players": [
+      "11533",
+      "12474",
+      "12495",
+      "12512",
+      "13279",
+      "13424",
+      "2449",
+      "2505",
+      "3294",
+      "4983",
+      "5844",
+      "6804",
+      "8146",
+      "9226",
+      "9480",
+      "DET"
+     ],
+     "record": {
+      "division": 2,
+      "losses": 6,
+      "pointsAgainst": 1374.64,
+      "pointsFor": 1217.46,
+      "ties": 0,
+      "wins": 5
+     },
+     "reserve": [
+      "9226"
+     ],
+     "rosterId": 2,
+     "starters": [
+      "3294",
+      "13424",
+      "12495",
+      "8146",
+      "4983",
+      "9480",
+      "2505",
+      "13279",
+      "11533",
+      "DET"
+     ],
+     "taxi": [],
+     "teamName": "Cigarettes& Alcohol AK26"
+    },
+    {
+     "faabUsed": 0,
+     "isMine": false,
+     "players": [
+      "10235",
+      "11563",
+      "11581",
+      "11603",
+      "11620",
+      "11637",
+      "11646",
+      "13414",
+      "2747",
+      "3198",
+      "4066",
+      "4217",
+      "7525",
+      "8183",
+      "WAS"
+     ],
+     "record": {
+      "division": 1,
+      "losses": 10,
+      "pointsAgainst": 1468.16,
+      "pointsFor": 1118.62,
+      "ties": 0,
+      "wins": 1
+     },
+     "reserve": [],
+     "rosterId": 3,
+     "starters": [
+      "8183",
+      "13414",
+      "3198",
+      "11646",
+      "11637",
+      "4217",
+      "11620",
+      "7525",
+      "2747",
+      "WAS"
+     ],
+     "taxi": [],
+     "teamName": "Team 3 (no name set)"
+    },
+    {
+     "faabUsed": 0,
+     "isMine": false,
+     "players": [
+      "10859",
+      "11539",
+      "11584",
+      "12481",
+      "12519",
+      "12522",
+      "13296",
+      "13345",
+      "1479",
+      "4993",
+      "7594",
+      "8112",
+      "9488",
+      "PIT",
+      "SEA"
+     ],
+     "record": {
+      "division": 2,
+      "losses": 4,
+      "pointsAgainst": 1378.46,
+      "pointsFor": 1577.16,
+      "ties": 0,
+      "wins": 7
+     },
+     "reserve": [],
+     "rosterId": 4,
+     "starters": [
+      "12522",
+      "12481",
+      "7594",
+      "13296",
+      "12519",
+      "10859",
+      "11584",
+      "13345",
+      "11539",
+      "PIT"
+     ],
+     "taxi": [],
+     "teamName": "Scatt Pack"
+    },
+    {
+     "faabUsed": 12,
+     "isMine": false,
+     "players": [
+      "11560",
+      "11624",
+      "1166",
+      "12490",
+      "12526",
+      "13301",
+      "2020",
+      "7588",
+      "8121",
+      "8130",
+      "8136",
+      "8148",
+      "9221",
+      "9501",
+      "9756",
+      "CHI"
+     ],
+     "record": {
+      "division": 1,
+      "losses": 1,
+      "pointsAgainst": 1228.12,
+      "pointsFor": 1541.92,
+      "ties": 0,
+      "wins": 10
+     },
+     "reserve": [
+      "8121"
+     ],
+     "rosterId": 5,
+     "starters": [
+      "11560",
+      "9221",
+      "7588",
+      "8148",
+      "12526",
+      "8130",
+      "8136",
+      "12490",
+      "2020",
+      "CHI"
+     ],
+     "taxi": [],
+     "teamName": "sign STEELERS"
+    },
+    {
+     "faabUsed": 77,
+     "isMine": true,
+     "players": [
+      "10213",
+      "11576",
+      "11610",
+      "11635",
+      "11783",
+      "12185",
+      "12506",
+      "13281",
+      "3163",
+      "6813",
+      "6819",
+      "8131",
+      "8137",
+      "8155",
+      "8167",
+      "BUF"
+     ],
+     "record": {
+      "division": 2,
+      "losses": 5,
+      "pointsAgainst": 1306.02,
+      "pointsFor": 1401.84,
+      "ties": 0,
+      "wins": 6
+     },
+     "reserve": [
+      "6819"
+     ],
+     "rosterId": 6,
+     "starters": [
+      "3163",
+      "6813",
+      "8155",
+      "13281",
+      "8137",
+      "8131",
+      "11635",
+      "11783",
+      "12185",
+      "BUF"
+     ],
+     "taxi": [],
+     "teamName": "Likely Suckin"
+    },
+    {
+     "faabUsed": 11,
+     "isMine": false,
+     "players": [
+      "12517",
+      "13833",
+      "1466",
+      "4034",
+      "4046",
+      "4199",
+      "6130",
+      "6770",
+      "6786",
+      "7021",
+      "8134",
+      "8144",
+      "8228",
+      "9753",
+      "JAX"
+     ],
+     "record": {
+      "division": 1,
+      "losses": 2,
+      "pointsAgainst": 1446.36,
+      "pointsFor": 1625.38,
+      "ties": 0,
+      "wins": 9
+     },
+     "reserve": [],
+     "rosterId": 7,
+     "starters": [
+      "4046",
+      "4034",
+      "7021",
+      "6786",
+      "8144",
+      "1466",
+      "8228",
+      "12517",
+      "13833",
+      "JAX"
+     ],
+     "taxi": [],
+     "teamName": "Olav é Trois"
+    },
+    {
+     "faabUsed": 10,
+     "isMine": false,
+     "players": [
+      "11586",
+      "12499",
+      "12514",
+      "12518",
+      "12527",
+      "1373",
+      "13968",
+      "1945",
+      "4881",
+      "5012",
+      "5947",
+      "5967",
+      "8122",
+      "8408",
+      "9493",
+      "HOU"
+     ],
+     "record": {
+      "division": 2,
+      "losses": 7,
+      "pointsAgainst": 1364.1,
+      "pointsFor": 1293.46,
+      "ties": 0,
+      "wins": 4
+     },
+     "reserve": [
+      "9493"
+     ],
+     "rosterId": 8,
+     "starters": [
+      "1373",
+      "12527",
+      "11586",
+      "5947",
+      "12499",
+      "12518",
+      "5967",
+      "8122",
+      "13968",
+      "HOU"
+     ],
+     "taxi": [],
+     "teamName": "Adam4Arbutus"
+    },
+    {
+     "faabUsed": 62,
+     "isMine": false,
+     "players": [
+      "10218",
+      "11579",
+      "11632",
+      "11786",
+      "12534",
+      "12700",
+      "13286",
+      "13294",
+      "13346",
+      "4984",
+      "6650",
+      "8138",
+      "9484",
+      "9997",
+      "MIN"
+     ],
+     "record": {
+      "division": 1,
+      "losses": 6,
+      "pointsAgainst": 1361.26,
+      "pointsFor": 1404.86,
+      "ties": 0,
+      "wins": 5
+     },
+     "reserve": [],
+     "rosterId": 9,
+     "starters": [
+      "4984",
+      "8138",
+      "12534",
+      "11632",
+      "9997",
+      "12700",
+      "10218",
+      "13294",
+      "11786",
+      "MIN"
+     ],
+     "taxi": [],
+     "teamName": "The Zoo"
+    },
+    {
+     "faabUsed": 0,
+     "isMine": false,
+     "players": [
+      "10229",
+      "11566",
+      "12501",
+      "12507",
+      "3214",
+      "4035",
+      "5846",
+      "5850",
+      "7042",
+      "7526",
+      "8129",
+      "8142",
+      "9487",
+      "9500",
+      "BAL"
+     ],
+     "record": {
+      "division": 2,
+      "losses": 10,
+      "pointsAgainst": 1425.66,
+      "pointsFor": 1060.2,
+      "ties": 0,
+      "wins": 1
+     },
+     "reserve": [
+      "8142"
+     ],
+     "rosterId": 10,
+     "starters": [
+      "11566",
+      "8129",
+      "12507",
+      "5846",
+      "7526",
+      "3214",
+      "9487",
+      "12501",
+      "7042",
+      "BAL"
+     ],
+     "taxi": [],
+     "teamName": "Jamflowmen"
+    },
+    {
+     "faabUsed": 85,
+     "isMine": false,
+     "players": [
+      "11792",
+      "13274",
+      "13276",
+      "13337",
+      "4866",
+      "5859",
+      "6790",
+      "7523",
+      "7547",
+      "7553",
+      "7569",
+      "8151",
+      "9224",
+      "9228",
+      "9482",
+      "KC"
+     ],
+     "record": {
+      "division": 1,
+      "losses": 4,
+      "pointsAgainst": 1461.58,
+      "pointsFor": 1493.99,
+      "ties": 0,
+      "wins": 7
+     },
+     "reserve": [
+      "5859"
+     ],
+     "rosterId": 11,
+     "starters": [
+      "7523",
+      "9224",
+      "13337",
+      "7547",
+      "7569",
+      "9482",
+      "6790",
+      "4866",
+      "11792",
+      "KC"
+     ],
+     "taxi": [],
+     "teamName": "Gay tier ball knowledge"
+    },
+    {
+     "faabUsed": 0,
+     "isMine": false,
+     "players": [
+      "11604",
+      "12540",
+      "2133",
+      "2216",
+      "3451",
+      "421",
+      "5872",
+      "6797",
+      "6801",
+      "6806",
+      "7543",
+      "7600",
+      "7611",
+      "8110",
+      "9509",
+      "NYG"
+     ],
+     "record": {
+      "division": 2,
+      "losses": 6,
+      "pointsAgainst": 1226.38,
+      "pointsFor": 1333.52,
+      "ties": 0,
+      "wins": 5
+     },
+     "reserve": [
+      "8110"
+     ],
+     "rosterId": 12,
+     "starters": [
+      "6797",
+      "7543",
+      "6806",
+      "6801",
+      "5872",
+      "11604",
+      "12540",
+      "7600",
+      "3451",
+      "NYG"
+     ],
+     "taxi": [],
+     "teamName": "Green room special "
+    }
+   ],
+   "waiverBudget": 100,
+   "waiverType": 2
+  }
+ },
+ "fetchedAt": "2026-11-24T08:03:15Z",
+ "source": "sleeper_leagues"
+}

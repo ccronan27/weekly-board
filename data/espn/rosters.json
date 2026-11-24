@@ -494,37 +494,51 @@
    "week": 10
   },
   {
+   "awayPoints": 87.12,
    "awayTeamId": 1,
+   "homePoints": 115.5,
    "homeTeamId": 9,
    "week": 11
   },
   {
+   "awayPoints": 62.36,
    "awayTeamId": 7,
+   "homePoints": 114.56,
    "homeTeamId": 4,
    "week": 11
   },
   {
+   "awayPoints": 117.34,
    "awayTeamId": 6,
+   "homePoints": 103.06,
    "homeTeamId": 5,
    "week": 11
   },
   {
+   "awayPoints": 107.0,
    "awayTeamId": 11,
+   "homePoints": 126.76,
    "homeTeamId": 13,
    "week": 11
   },
   {
+   "awayPoints": 109.02,
    "awayTeamId": 3,
+   "homePoints": 111.34,
    "homeTeamId": 2,
    "week": 11
   },
   {
+   "awayPoints": 99.76,
    "awayTeamId": 14,
+   "homePoints": 102.08,
    "homeTeamId": 10,
    "week": 11
   },
   {
+   "awayPoints": 103.9,
    "awayTeamId": 12,
+   "homePoints": 98.9,
    "homeTeamId": 8,
    "week": 11
   },
@@ -767,119 +781,119 @@
  "source": "espn_public_api",
  "standings": [
   {
-   "losses": 6,
-   "pointsAgainst": 1186.74,
-   "pointsFor": 1182.64,
+   "losses": 7,
+   "pointsAgainst": 1302.24,
+   "pointsFor": 1269.7600000000002,
    "teamId": 1,
    "ties": 0,
    "wins": 4
   },
   {
    "losses": 4,
-   "pointsAgainst": 1105.58,
-   "pointsFor": 1110.8999999999999,
+   "pointsAgainst": 1214.6,
+   "pointsFor": 1222.2399999999998,
    "teamId": 2,
    "ties": 0,
-   "wins": 6
+   "wins": 7
   },
   {
-   "losses": 5,
-   "pointsAgainst": 1142.2,
-   "pointsFor": 1035.58,
+   "losses": 6,
+   "pointsAgainst": 1253.54,
+   "pointsFor": 1144.6,
    "teamId": 3,
    "ties": 0,
    "wins": 5
   },
   {
    "losses": 2,
-   "pointsAgainst": 1051.76,
-   "pointsFor": 1172.7399999999998,
+   "pointsAgainst": 1114.12,
+   "pointsFor": 1287.2999999999997,
    "teamId": 4,
    "ties": 0,
-   "wins": 8
+   "wins": 9
   },
   {
-   "losses": 4,
-   "pointsAgainst": 987.6399999999999,
-   "pointsFor": 1088.68,
+   "losses": 5,
+   "pointsAgainst": 1104.9799999999998,
+   "pointsFor": 1191.74,
    "teamId": 5,
    "ties": 0,
    "wins": 6
   },
   {
    "losses": 5,
-   "pointsAgainst": 1089.1,
-   "pointsFor": 1245.16,
+   "pointsAgainst": 1192.1599999999999,
+   "pointsFor": 1362.5,
    "teamId": 6,
    "ties": 0,
-   "wins": 5
+   "wins": 6
   },
   {
-   "losses": 4,
-   "pointsAgainst": 1057.2800000000002,
-   "pointsFor": 1075.3200000000002,
+   "losses": 5,
+   "pointsAgainst": 1171.8400000000001,
+   "pointsFor": 1137.68,
    "teamId": 7,
    "ties": 0,
    "wins": 6
   },
   {
-   "losses": 6,
-   "pointsAgainst": 1170.0800000000002,
-   "pointsFor": 1066.48,
+   "losses": 7,
+   "pointsAgainst": 1273.9800000000002,
+   "pointsFor": 1165.38,
    "teamId": 8,
    "ties": 0,
    "wins": 4
   },
   {
    "losses": 4,
-   "pointsAgainst": 1053.72,
-   "pointsFor": 1123.46,
+   "pointsAgainst": 1140.8400000000001,
+   "pointsFor": 1238.96,
    "teamId": 9,
    "ties": 0,
-   "wins": 6
+   "wins": 7
   },
   {
    "losses": 6,
-   "pointsAgainst": 1103.1,
-   "pointsFor": 1077.88,
+   "pointsAgainst": 1202.86,
+   "pointsFor": 1179.96,
    "teamId": 10,
    "ties": 0,
-   "wins": 4
+   "wins": 5
   },
   {
-   "losses": 5,
-   "pointsAgainst": 1155.02,
-   "pointsFor": 1178.0600000000002,
+   "losses": 6,
+   "pointsAgainst": 1281.78,
+   "pointsFor": 1285.0600000000002,
    "teamId": 11,
    "ties": 0,
    "wins": 5
   },
   {
    "losses": 7,
-   "pointsAgainst": 1262.56,
-   "pointsFor": 1128.0600000000002,
+   "pointsAgainst": 1361.46,
+   "pointsFor": 1231.9600000000003,
    "teamId": 12,
    "ties": 0,
-   "wins": 3
+   "wins": 4
   },
   {
    "losses": 7,
-   "pointsAgainst": 1160.92,
-   "pointsFor": 1076.2,
+   "pointsAgainst": 1267.92,
+   "pointsFor": 1202.96,
    "teamId": 13,
    "ties": 0,
-   "wins": 3
+   "wins": 4
   },
   {
-   "losses": 5,
-   "pointsAgainst": 1205.1399999999999,
-   "pointsFor": 1169.68,
+   "losses": 6,
+   "pointsAgainst": 1307.2199999999998,
+   "pointsFor": 1269.44,
    "teamId": 14,
    "ties": 0,
    "wins": 5
   }
  ],
- "syncedAt": "2026-11-22T21:00:56.000Z",
+ "syncedAt": "2026-11-24T08:03:18.000Z",
  "teams": [
   {
    "name": "Exempt List",
@@ -890,7 +904,7 @@
      "name": "Jaxon Smith-Njigba",
      "pos": "WR",
      "proTeamId": 26,
-     "slot": "BN"
+     "slot": "WR"
     },
     {
      "espnId": 4432665,
@@ -898,7 +912,7 @@
      "name": "Brock Bowers",
      "pos": "TE",
      "proTeamId": 13,
-     "slot": "BN"
+     "slot": "TE"
     },
     {
      "espnId": 3953687,
@@ -946,7 +960,7 @@
      "name": "Kirk Cousins",
      "pos": "QB",
      "proTeamId": 16,
-     "slot": "BN"
+     "slot": "QB"
     },
     {
      "espnId": 5081432,
@@ -954,7 +968,7 @@
      "name": "Antonio Williams",
      "pos": "WR",
      "proTeamId": 28,
-     "slot": "WR"
+     "slot": "BN"
     },
     {
      "espnId": 4696981,
@@ -970,7 +984,7 @@
      "name": "Zach Charbonnet",
      "pos": "RB",
      "proTeamId": 26,
-     "slot": "BN"
+     "slot": "FLEX"
     },
     {
      "espnId": 4869645,
@@ -986,7 +1000,7 @@
      "name": "Cam Ward",
      "pos": "QB",
      "proTeamId": 10,
-     "slot": "QB"
+     "slot": "BN"
     },
     {
      "espnId": 3117256,
@@ -994,7 +1008,7 @@
      "name": "Dalton Schultz",
      "pos": "TE",
      "proTeamId": 34,
-     "slot": "FLEX"
+     "slot": "BN"
     },
     {
      "espnId": 3930086,
@@ -1002,7 +1016,7 @@
      "name": "Dawson Knox",
      "pos": "TE",
      "proTeamId": 2,
-     "slot": "TE"
+     "slot": "BN"
     }
    ],
    "teamId": 1
@@ -1386,7 +1400,7 @@
      "name": "Blake Corum",
      "pos": "RB",
      "proTeamId": 14,
-     "slot": "BN"
+     "slot": "RB"
     },
     {
      "espnId": 2971573,
@@ -1410,7 +1424,7 @@
      "name": "Denzel Boston",
      "pos": "WR",
      "proTeamId": 5,
-     "slot": "BN"
+     "slot": "WR"
     },
     {
      "espnId": 4685247,
@@ -1418,7 +1432,7 @@
      "name": "Braelon Allen",
      "pos": "RB",
      "proTeamId": 20,
-     "slot": "FLEX"
+     "slot": "BN"
     },
     {
      "espnId": 4047365,
@@ -1434,7 +1448,7 @@
      "name": "Omar Cooper Jr.",
      "pos": "WR",
      "proTeamId": 20,
-     "slot": "BN"
+     "slot": "FLEX"
     },
     {
      "espnId": -16034,
@@ -1450,7 +1464,7 @@
      "name": "Emmett Johnson",
      "pos": "RB",
      "proTeamId": 12,
-     "slot": "RB"
+     "slot": "BN"
     },
     {
      "espnId": 4431431,
@@ -1466,7 +1480,7 @@
      "name": "Elic Ayomanor",
      "pos": "WR",
      "proTeamId": 10,
-     "slot": "WR"
+     "slot": "BN"
     }
    ],
    "teamId": 5
@@ -2448,7 +2462,7 @@
      "name": "Harold Fannin Jr.",
      "pos": "TE",
      "proTeamId": 5,
-     "slot": "BN"
+     "slot": "TE"
     },
     {
      "espnId": 4035687,
@@ -2480,7 +2494,7 @@
      "name": "Christian Watson",
      "pos": "WR",
      "proTeamId": 9,
-     "slot": "BN"
+     "slot": "WR"
     },
     {
      "espnId": -16016,
@@ -2488,7 +2502,7 @@
      "name": "Vikings D/ST",
      "pos": "D/ST",
      "proTeamId": 16,
-     "slot": "BN"
+     "slot": "D/ST"
     },
     {
      "espnId": 4428718,
@@ -2496,7 +2510,7 @@
      "name": "Tre Tucker",
      "pos": "WR",
      "proTeamId": 13,
-     "slot": "WR"
+     "slot": "BN"
     },
     {
      "espnId": 3042519,
@@ -2512,7 +2526,7 @@
      "name": "Mike Gesicki",
      "pos": "TE",
      "proTeamId": 4,
-     "slot": "TE"
+     "slot": "BN"
     },
     {
      "espnId": 4568490,
@@ -2528,7 +2542,7 @@
      "name": "Jets D/ST",
      "pos": "D/ST",
      "proTeamId": 20,
-     "slot": "D/ST"
+     "slot": "BN"
     },
     {
      "espnId": 17427,
@@ -2542,5 +2556,5 @@
    "teamId": 14
   }
  ],
- "week": 11
+ "week": 12
 }

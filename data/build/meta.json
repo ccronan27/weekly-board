@@ -5,111 +5,111 @@
   "stale": false,
   "staleAfterDays": 4,
   "state": "fresh",
-  "syncedAt": "2026-11-22T21:00:56.000Z",
-  "week": 11,
+  "syncedAt": "2026-11-24T08:03:18.000Z",
+  "week": 12,
   "weekMismatch": false
  },
- "gapFills": 25,
- "generatedAt": "2026-11-22T21:00:56Z",
+ "gapFills": 32,
+ "generatedAt": "2026-11-24T08:03:18Z",
  "idmap": {
-  "matched": 1041,
+  "matched": 1042,
   "unmatchedEspnPlayers": 21
  },
  "leagues": [
   {
    "file": "fantasizing.json",
-   "gain": 0.0,
+   "gain": 0.7,
    "key": "fantasizing",
    "name": "Fantasizing 2026"
   },
   {
    "file": "hwh.json",
-   "gain": 0.0,
+   "gain": 6.6,
    "key": "hwh",
    "name": "HWH: The League"
   },
   {
    "file": "chicago-dynasty.json",
-   "gain": 0.0,
+   "gain": 11.2,
    "key": "chicago-dynasty",
    "name": "Chicago Dynasty"
   }
  ],
  "model": "Equal average of ESPN and Rotowire projections, each re-scored with the league's scoring. Floor and ceiling are one weekly SD below and above.",
- "nextRefresh": "2026-11-22T23:47:00Z",
+ "nextRefresh": "2026-11-25T03:07:00Z",
  "season": 2026,
  "skippedLeagues": [],
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:56Z",
+   "lastUpdated": "2026-11-24T08:03:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_league": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:56Z",
+   "lastUpdated": "2026-11-24T08:03:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
-  "espn_lineups_w10": {
+  "espn_lineups_w11": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:56Z",
+   "lastUpdated": "2026-11-24T08:03:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:56.000Z",
+   "lastUpdated": "2026-11-24T08:03:18.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:56Z",
+   "lastUpdated": "2026-11-24T08:03:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_schedule": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:56Z",
+   "lastUpdated": "2026-11-24T08:03:17Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:54Z",
+   "lastUpdated": "2026-11-24T08:03:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:54Z",
+   "lastUpdated": "2026-11-24T08:03:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:54Z",
+   "lastUpdated": "2026-11-24T08:03:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
-  "sleeper_stats_w10": {
+  "sleeper_stats_w11": {
    "error": null,
-   "lastUpdated": "2026-11-22T21:00:54Z",
+   "lastUpdated": "2026-11-24T08:03:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   }
  },
- "week": 11
+ "week": 12
 }
