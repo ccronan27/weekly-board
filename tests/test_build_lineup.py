@@ -58,10 +58,9 @@ def test_lineup_slots_carry_next_best_and_flagged_players_carry_backups(built):
 
 
 @needs_raw
-def test_hwh_questionable_flex_has_a_backup_and_meta_has_next_refresh(built):
+def test_meta_has_next_refresh(built):
+    # Backup values are unit tested in tests/test_lineup.py and their shape on every flagged starter above.
+    # This used to also assert one named player was questionable, which broke whenever the week's injuries changed.
     out, res = built
-    hwh = res["leagues"]["hwh"]["lineup"]
-    watch = [w for w in hwh["watch"] if w["player"] == "Ladd McConkey"]
-    assert watch and watch[0]["backup"] is not None, "Ladd McConkey is questionable in HWH"
     meta = res["meta"]
     assert ISO_Z.match(meta["nextRefresh"]) and meta["nextRefresh"] > meta["generatedAt"]
