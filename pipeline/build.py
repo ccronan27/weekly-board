@@ -432,23 +432,8 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
                                       "eligible", "game", "injuryNotes", "locked", "ppg", "games", "newsUpdated", "recent")}
 
         # ---- lineup context: next best per slot, backups for flagged starters, late risk
-        cur_ids = [c for c in cur if c]
-        view = [{"id": p["id"], "name": p["name"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"],
-                 "locked": p["locked"], "kickoff": (p["game"] or {}).get("kickoff")} for p in my_players]
-        alerts, watch = [], []
-        for i, (s, pid) in enumerate(zip(slots, cur)):
-            if not pid:
-                continue
-            p = by_id[pid]
-            cands = lineup.backup_candidates(slots, i, view, cur_ids)
-            if any(f in ("BYE", *OUT_STATUSES) for f in p["flags"]):
-                alerts.append({"player": p["name"], "slot": s, "flags": p["flags"],
-                               "backup": lineup.backup_for(cands, p["points"], flagged=False)})
-            if p["status"] in ("QUESTIONABLE", "DOUBTFUL"):
-                kick = (p["game"] or {}).get("kickoff")
-                watch.append({"player": p["name"], "slot": s, "flags": p["flags"], "kickoff": kick,
-                              "injuryNotes": p["injuryNotes"], "backup": lineup.backup_for(cands, p["points"]),
-                              "lateRisk": lineup.late_risk(kick, cands)})
+        view = lineup_view(my_players)
+        alerts, watch = flagged_starters(slots, cur, my_players)
 
         cur_total = round(sum(pts.get(c, 0.0) for c in cur if c), 1)
         rec_total = round(sum(pts.get(r, 0.0) for r in rec_slots if r), 1)
@@ -665,6 +650,35 @@ def build(season: int, week: int, raw_root=RAW, out_dir=BUILD, rosters_path=None
         if not any(s["recommended"] for s in o["lineup"]["slots"]) or o["lineup"]["recommendedPoints"] <= 0 or o["lineup"]["gain"] < 0:
             raise BuildError(f"{k}: recommended lineup is empty, refusing to publish")
     return {"meta": meta, "leagues": outputs}
+
+
+def lineup_view(my_players: list[dict]) -> list[dict]:
+    """The fields pipeline.lineup needs from each player record (next best, backups, late risk)."""
+    return [{"id": p["id"], "name": p["name"], "pos": p["pos"], "points": p["points"], "eligible": p["eligible"],
+             "locked": p["locked"], "kickoff": (p["game"] or {}).get("kickoff")} for p in my_players]
+
+
+def flagged_starters(slots: list[str], cur: list, my_players: list[dict]) -> tuple[list[dict], list[dict]]:
+    """lineup.alerts (out or bye starters) and lineup.watch (questionable or doubtful starters), each with
+    the best backup for its slot. Watch entries also carry lateRisk. See docs/UX_PLAN.md P1."""
+    by_id = {p["id"]: p for p in my_players}
+    view = lineup_view(my_players)
+    cur_ids = [c for c in cur if c]
+    alerts, watch = [], []
+    for i, (s, pid) in enumerate(zip(slots, cur)):
+        if not pid:
+            continue
+        p = by_id[pid]
+        cands = lineup.backup_candidates(slots, i, view, cur_ids)
+        if any(f in ("BYE", *OUT_STATUSES) for f in p["flags"]):
+            alerts.append({"player": p["name"], "slot": s, "flags": p["flags"],
+                           "backup": lineup.backup_for(cands, p["points"], flagged=False)})
+        if p["status"] in ("QUESTIONABLE", "DOUBTFUL"):
+            kick = (p["game"] or {}).get("kickoff")
+            watch.append({"player": p["name"], "slot": s, "flags": p["flags"], "kickoff": kick,
+                          "injuryNotes": p["injuryNotes"], "backup": lineup.backup_for(cands, p["points"]),
+                          "lateRisk": lineup.late_risk(kick, cands)})
+    return alerts, watch
 
 
 def _espn_current(slots: list[str], recs: list[dict]) -> list:
