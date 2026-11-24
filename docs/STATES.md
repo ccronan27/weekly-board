@@ -112,9 +112,10 @@ Per slot, `changed` is true when the recommended player differs from the current
 
 ## 10. Publish gate
 
-`refresh.yml` runs tests, ingest, build, summary, commit, assemble, deploy. The gates that stop a bad board from going live:
+`refresh.yml` runs code tests, ingest, build, summary, commit, assemble, deploy. Data tests (pytest marker `data`, the ones that read `data/raw` or `data/build`) run in their own job after build, against the data that run committed. The gates that stop a bad board from going live:
 
-- Tests fail: nothing runs.
+- Code tests fail: nothing runs.
+- Data tests fail: the run shows red, but deploy still goes. They never block publishing, so a test that leans on one week's injuries cannot freeze the board.
 - Ingest exits non-zero when every essential source is `missing`.
 - Build raises `BuildError` on an empty or worse-than-current lineup, or a missing Sleeper league. It refuses only when no league at all can be built. With no usable ESPN roster file the ESPN league is skipped (machine 2) and the other leagues still publish. When build refuses, nothing is committed or deployed, and the last good site stays live.
 - `scripts/make_site.py` refuses an empty `data/build`.

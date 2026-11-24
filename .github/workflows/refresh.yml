@@ -48,8 +48,10 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Tests
-        run: python -m pytest -q
+      # Code tests gate the run. Tests that read the saved data run in data-tests, after the build,
+      # so a test that leans on last week's injuries can never stop fresh data from publishing.
+      - name: Code tests
+        run: python -m pytest -q -m "not live and not data"
       - name: Fetch sources
         run: python -m pipeline.ingest
       - name: Build board
@@ -79,6 +81,24 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+  # Data tests check the board this run just built and committed. A failure turns the run red
+  # but does not block deploy, which needs only build.
+  data-tests:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}   # the branch head, so it includes the data commit build just pushed
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Data tests
+        run: python -m pytest -q -m "data and not live"
 
   deploy:
     needs: build

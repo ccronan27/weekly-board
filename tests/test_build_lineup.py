@@ -9,7 +9,9 @@ from pipeline.common import RAW
 
 SEASON, WEEK = 2026, 11
 HAVE_RAW = (RAW / str(SEASON) / str(WEEK) / "status.json").exists()
-needs_raw = pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
+def needs_raw(test):
+    """Reads the saved raw pull, so it is a data test (pytest.ini) and skips when the cache is missing."""
+    return pytest.mark.data(pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")(test))
 ISO_Z = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
 
 

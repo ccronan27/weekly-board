@@ -116,6 +116,7 @@ def test_ingest_caches_a_good_roster_file(tmp_path, monkeypatch):
 LOCK_NOW = datetime(2026, 11, 20, 12, 0, tzinfo=timezone.utc)
 
 
+@pytest.mark.data
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 def test_build_publishes_with_last_good_rosters_when_the_sync_fails(tmp_path):
     raw = tmp_path / "raw"
@@ -129,6 +130,7 @@ def test_build_publishes_with_last_good_rosters_when_the_sync_fails(tmp_path):
     assert res["leagues"]["fantasizing"]["sources"]["espn_rosters"]["state"] == "stale"
 
 
+@pytest.mark.data
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 def test_build_publishes_sleeper_leagues_with_no_usable_rosters(tmp_path):
     raw = tmp_path / "raw"
@@ -144,6 +146,7 @@ def test_build_publishes_sleeper_leagues_with_no_usable_rosters(tmp_path):
     assert not (out / "fantasizing.json").exists()
 
 
+@pytest.mark.data
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 def test_build_sources_all_carry_state(tmp_path):
     res = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW)

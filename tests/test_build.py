@@ -10,7 +10,9 @@ from pipeline.common import DATA, RAW, read_json
 
 SEASON, WEEK = 2026, 11
 HAVE_RAW = (RAW / str(SEASON) / str(WEEK) / "status.json").exists()
-needs_raw = pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
+def needs_raw(test):
+    """Reads the saved raw pull, so it is a data test (pytest.ini) and skips when the cache is missing."""
+    return pytest.mark.data(pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")(test))
 
 from pipeline.adapters.espn_rosters import PATH as ROSTERS_FILE  # noqa: E402
 
