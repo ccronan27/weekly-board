@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T08:03:18Z",
+ "generatedAt": "2026-11-24T08:07:20Z",
  "league": "chicago-dynasty",
  "players": [
   {
@@ -24961,35 +24961,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:03:17Z",
+   "lastUpdated": "2026-11-24T08:07:19Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:03:17Z",
+   "lastUpdated": "2026-11-24T08:07:20Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:03:15Z",
+   "lastUpdated": "2026-11-24T08:07:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:03:15Z",
+   "lastUpdated": "2026-11-24T08:07:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:03:15Z",
+   "lastUpdated": "2026-11-24T08:07:18Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
