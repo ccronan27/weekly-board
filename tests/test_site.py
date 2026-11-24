@@ -106,14 +106,14 @@ def test_add_to_home_screen_files():
     assert (m["name"], m["short_name"], m["display"], m["start_url"]) == ("Weekly Board", "Board", "standalone", ".")
     assert m["icons"] == [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
     css = (SITE / "style.css").read_text(encoding="utf-8")
-    assert "--bg:#f6f7f9" in css and "--bg:#0f1318" in css   # manifest and theme colors come from these tokens
-    assert m["theme_color"] == m["background_color"] == "#f6f7f9"
+    assert "--bg:#e9edf1" in css and "--band:#14233b" in css and "--band:#15243a" in css   # manifest and theme colors come from these tokens
+    assert (m["theme_color"], m["background_color"]) == ("#14233b", "#e9edf1")   # browser chrome matches the band, splash matches the page
     assert (SITE / "icon.svg").read_text(encoding="utf-8").startswith("<svg ")
     html = (SITE / "index.html").read_text(encoding="utf-8")
     for needle in ('rel="manifest" href="manifest.webmanifest"', 'rel="icon" type="image/svg+xml" href="icon.svg"',
                    'rel="apple-touch-icon" href="icon.svg"',
-                   'name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)"',
-                   'name="theme-color" content="#0f1318" media="(prefers-color-scheme: dark)"'):
+                   'name="theme-color" content="#14233b" media="(prefers-color-scheme: light)"',
+                   'name="theme-color" content="#15243a" media="(prefers-color-scheme: dark)"'):
         assert needle in html, needle
 
 

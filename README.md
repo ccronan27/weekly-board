@@ -42,7 +42,7 @@ python scripts/make_site.py
 python -m http.server -d _site 8000
 ```
 
-Then open http://localhost:8000. Live checks against the real endpoints: `python -m pytest -m live`.
+Then open http://localhost:8000. Live checks against the real endpoints: `python -m pytest -m live`. Code tests only, as CI runs them before fetching: `python -m pytest -m "not live and not data"`. Data tests, which read the saved data: `python -m pytest -m data`.
 
 Useful scripts:
 

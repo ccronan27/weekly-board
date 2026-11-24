@@ -10,7 +10,9 @@ from pipeline.common import DATA, RAW, read_json
 
 SEASON, WEEK = 2026, 11
 HAVE_RAW = (RAW / str(SEASON) / str(WEEK) / "status.json").exists()
-needs_raw = pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
+def needs_raw(test):
+    """Reads the saved raw pull, so it is a data test (pytest.ini) and skips when the cache is missing."""
+    return pytest.mark.data(pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")(test))
 
 from pipeline.adapters.espn_rosters import PATH as ROSTERS_FILE  # noqa: E402
 
@@ -233,9 +235,12 @@ def test_watch_lists_questionable_starter(tmp_path):
 
 @needs_raw
 def test_week_mismatch_flag(tmp_path):
-    ok = bd.build(SEASON, WEEK, out_dir=tmp_path / "ok", save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW)
+    # The roster file as it was for WEEK. The live data/espn/rosters.json moves to the next week every Tuesday.
+    rosters = read_json(RAW / str(SEASON) / str(WEEK) / "espn_rosters.json")["data"]
+    good = tmp_path / "good.json"
+    good.write_text(json.dumps(rosters))
+    ok = bd.build(SEASON, WEEK, out_dir=tmp_path / "ok", save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW, rosters_path=good)
     assert ok["meta"]["espnRosters"]["weekMismatch"] is False
-    rosters = read_json(DATA / "espn" / "rosters.json")
     rosters["week"] = WEEK - 1
     f = tmp_path / "rosters.json"
     f.write_text(json.dumps(rosters))

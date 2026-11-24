@@ -45,16 +45,16 @@ def test_run_source_writes_state(tmp_path):
 
 # ---------------------------------------------------------------- ESPN roster fallback
 
-def _bad_rosters(tmp_path):
-    d = read_json(ROSTERS)
+def _bad_rosters(tmp_path, d=None):
+    d = dict(d or read_json(ROSTERS))
     d["ok"] = False    # what the sync skill writes when it fails
     f = tmp_path / "bad.json"
     f.write_text(json.dumps(d))
     return f
 
 
-def _cache(root, week=WEEK - 1):
-    d = read_json(ROSTERS)
+def _cache(root, week=WEEK - 1, d=None):
+    d = d or read_json(ROSTERS)
     p = root / str(SEASON) / str(week) / "espn_rosters.json"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps({"source": "espn_rosters", "fetchedAt": d["syncedAt"], "data": d}))
@@ -116,19 +116,27 @@ def test_ingest_caches_a_good_roster_file(tmp_path, monkeypatch):
 LOCK_NOW = datetime(2026, 11, 20, 12, 0, tzinfo=timezone.utc)
 
 
+def _week_rosters():
+    """The roster file as it was for WEEK, from the saved raw pull. Builds of WEEK use this, not the live
+    data/espn/rosters.json, which moves to the next week every Tuesday."""
+    return read_json(RAW / str(SEASON) / str(WEEK) / "espn_rosters.json")["data"]
+
+
+@pytest.mark.data
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 def test_build_publishes_with_last_good_rosters_when_the_sync_fails(tmp_path):
     raw = tmp_path / "raw"
     shutil.copytree(RAW / str(SEASON), raw / str(SEASON))
-    good = _cache(raw)
+    good = _cache(raw, d=_week_rosters())
     res = bd.build(SEASON, WEEK, raw_root=raw, out_dir=tmp_path / "out", save_idmap=False, now=LOCK_NOW,
-                   rosters_path=_bad_rosters(tmp_path))
+                   rosters_path=_bad_rosters(tmp_path, _week_rosters()))
     assert set(res["leagues"]) == {"fantasizing", "hwh", "chicago-dynasty"}
     er = res["meta"]["espnRosters"]
     assert er["fromCache"] is True and er["state"] == "stale" and er["syncedAt"] == good["syncedAt"]
     assert res["leagues"]["fantasizing"]["sources"]["espn_rosters"]["state"] == "stale"
 
 
+@pytest.mark.data
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 def test_build_publishes_sleeper_leagues_with_no_usable_rosters(tmp_path):
     raw = tmp_path / "raw"
@@ -144,6 +152,7 @@ def test_build_publishes_sleeper_leagues_with_no_usable_rosters(tmp_path):
     assert not (out / "fantasizing.json").exists()
 
 
+@pytest.mark.data
 @pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
 def test_build_sources_all_carry_state(tmp_path):
     res = bd.build(SEASON, WEEK, out_dir=tmp_path, save_idmap=False, recommended_root=tmp_path / "rec", now=LOCK_NOW)

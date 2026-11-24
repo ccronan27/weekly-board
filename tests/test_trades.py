@@ -124,6 +124,7 @@ NODE = shutil.which("node")
 HAVE_BUILD = all((BUILD / f"trade-{k}.json").exists() for k in ("fantasizing", "hwh", "chicago-dynasty"))
 
 
+@pytest.mark.data
 @pytest.mark.skipif(not NODE or not HAVE_BUILD, reason="needs node and a built data/build")
 @pytest.mark.parametrize("key", ["fantasizing", "hwh", "chicago-dynasty"])
 def test_site_optimizer_matches_python(key, tmp_path):

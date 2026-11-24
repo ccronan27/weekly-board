@@ -9,7 +9,9 @@ from pipeline.common import RAW
 
 SEASON, WEEK = 2026, 11
 HAVE_RAW = (RAW / str(SEASON) / str(WEEK) / "status.json").exists()
-needs_raw = pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")
+def needs_raw(test):
+    """Reads the saved raw pull, so it is a data test (pytest.ini) and skips when the cache is missing."""
+    return pytest.mark.data(pytest.mark.skipif(not HAVE_RAW, reason="no cached raw data")(test))
 ISO_Z = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
 
 
@@ -58,10 +60,9 @@ def test_lineup_slots_carry_next_best_and_flagged_players_carry_backups(built):
 
 
 @needs_raw
-def test_hwh_questionable_flex_has_a_backup_and_meta_has_next_refresh(built):
+def test_meta_has_next_refresh(built):
+    # Backup values are unit tested in tests/test_lineup.py and their shape on every flagged starter above.
+    # This used to also assert one named player was questionable, which broke whenever the week's injuries changed.
     out, res = built
-    hwh = res["leagues"]["hwh"]["lineup"]
-    watch = [w for w in hwh["watch"] if w["player"] == "Ladd McConkey"]
-    assert watch and watch[0]["backup"] is not None, "Ladd McConkey is questionable in HWH"
     meta = res["meta"]
     assert ISO_Z.match(meta["nextRefresh"]) and meta["nextRefresh"] > meta["generatedAt"]
