@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T08:09:01Z",
+ "generatedAt": "2026-11-25T12:32:27Z",
  "league": {
   "appName": "Sleeper",
   "appUrl": "https://sleeper.com/leagues/1335703355086893056/team",
@@ -10,209 +10,70 @@
  },
  "lineup": {
   "alerts": [],
-  "currentPoints": 97.6,
-  "gain": 11.2,
+  "currentPoints": 108.4,
+  "gain": 0.4,
   "moves": [
    {
-    "gain": 10.0,
+    "gain": 0.4,
     "in": {
-     "ceiling": 26.1,
-     "eligible": true,
-     "espn": 16.1,
-     "flags": [],
-     "floor": 6.8,
-     "game": {
-      "home": false,
-      "implied": 17.8,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "MIN",
-      "oppImplied": 24.8,
-      "spread": 7.0,
-      "total": 42.5
-     },
-     "games": 10,
-     "id": "9509",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Bijan Robinson",
-     "newsUpdated": "2026-11-16T00:20:32Z",
-     "points": 16.5,
-     "pos": "RB",
-     "ppg": 18.1,
-     "recent": [
-      {
-       "pts": 14.7,
-       "week": 7
-      },
-      {
-       "pts": 7.6,
-       "week": 8
-      },
-      {
-       "pts": 23.7,
-       "week": 9
-      },
-      {
-       "pts": 15.7,
-       "week": 10
-      }
-     ],
-     "rotowire": 16.9,
-     "team": "ATL"
-    },
-    "out": {
      "ceiling": 10.0,
      "eligible": true,
-     "espn": 6.6,
+     "espn": 6.8,
      "flags": [],
-     "floor": 3.0,
+     "floor": 3.5,
      "game": {
       "home": false,
-      "implied": 22.2,
-      "kickoff": "2026-11-27T01:20Z",
-      "opp": "BUF",
-      "oppImplied": 25.2,
-      "spread": 3.0,
-      "total": 47.5
+      "implied": 17.0,
+      "kickoff": "2026-11-29T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 18.5,
+      "spread": 1.5,
+      "total": 35.5
      },
-     "games": 11,
-     "id": "9500",
+     "games": 6,
+     "id": "4177",
      "injuryNotes": null,
      "locked": false,
-     "name": "Josh Downs",
-     "newsUpdated": "2026-11-22T23:25:09Z",
-     "points": 6.5,
+     "name": "Mack Hollins",
+     "newsUpdated": "2026-11-16T02:40:33Z",
+     "points": 6.7,
      "pos": "WR",
-     "ppg": 7.3,
+     "ppg": 7.8,
      "recent": [
       {
-       "pts": 10.3,
-       "week": 8
+       "pts": 11.7,
+       "week": 3
       },
       {
-       "pts": 3.9,
+       "pts": 6.8,
+       "week": 4
+      },
+      {
+       "pts": 11.1,
        "week": 9
       },
       {
-       "pts": 13.3,
+       "pts": 7.3,
        "week": 10
-      },
-      {
-       "pts": 7.9,
-       "week": 11
       }
      ],
-     "rotowire": 6.4,
-     "team": "KC"
-    },
-    "slot": "FLEX"
-   },
-   {
-    "gain": 0.5,
-    "in": {
-     "ceiling": 27.0,
-     "eligible": true,
-     "espn": 16.9,
-     "flags": [],
-     "floor": 4.3,
-     "game": {
-      "home": false,
-      "implied": 18.5,
-      "kickoff": "2026-11-30T01:20Z",
-      "opp": "CLE",
-      "oppImplied": 23.0,
-      "spread": 4.5,
-      "total": 41.5
-     },
-     "games": 3,
-     "id": "13269",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Fernando Mendoza",
-     "newsUpdated": "2026-11-24T02:30:22Z",
-     "points": 15.6,
-     "pos": "QB",
-     "ppg": 13.7,
-     "recent": [
-      {
-       "pts": 2.2,
-       "week": 5
-      },
-      {
-       "pts": 13.9,
-       "week": 10
-      },
-      {
-       "pts": 24.9,
-       "week": 11
-      }
-     ],
-     "rotowire": 14.4,
-     "team": "LV"
+     "rotowire": 6.7,
+     "team": "NE"
     },
     "out": {
-     "ceiling": 22.8,
-     "eligible": true,
-     "espn": 14.8,
-     "flags": [],
-     "floor": 7.3,
-     "game": {
-      "home": false,
-      "implied": 20.8,
-      "kickoff": "2026-11-27T20:00Z",
-      "opp": "PIT",
-      "oppImplied": 17.8,
-      "spread": -3.0,
-      "total": 38.5
-     },
-     "games": 10,
-     "id": "11563",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Bo Nix",
-     "newsUpdated": "2026-11-24T02:10:21Z",
-     "points": 15.1,
-     "pos": "QB",
-     "ppg": 14.9,
-     "recent": [
-      {
-       "pts": 28.2,
-       "week": 7
-      },
-      {
-       "pts": 19.3,
-       "week": 8
-      },
-      {
-       "pts": 16.7,
-       "week": 9
-      },
-      {
-       "pts": 12.5,
-       "week": 11
-      }
-     ],
-     "rotowire": 15.4,
-     "team": "DEN"
-    },
-    "slot": "QB"
-   },
-   {
-    "gain": 0.7,
-    "in": {
-     "ceiling": 10.3,
+     "ceiling": 10.1,
      "eligible": true,
      "espn": 7.0,
      "flags": [],
-     "floor": 2.7,
+     "floor": 2.6,
      "game": {
       "home": false,
-      "implied": 21.8,
+      "implied": 21.2,
       "kickoff": "2026-11-29T21:25Z",
       "opp": "SF",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "games": 6,
      "id": "13286",
@@ -220,7 +81,7 @@
      "locked": false,
      "name": "Jadarian Price",
      "newsUpdated": "2026-11-16T07:35:35Z",
-     "points": 6.5,
+     "points": 6.3,
      "pos": "RB",
      "ppg": 6.2,
      "recent": [
@@ -241,53 +102,8 @@
        "week": 10
       }
      ],
-     "rotowire": 6.1,
+     "rotowire": 5.7,
      "team": "SEA"
-    },
-    "out": {
-     "ceiling": 9.7,
-     "eligible": true,
-     "espn": 5.4,
-     "flags": [],
-     "floor": 1.9,
-     "game": {
-      "home": true,
-      "implied": 18.5,
-      "kickoff": "2026-11-29T21:05Z",
-      "opp": "NE",
-      "oppImplied": 17.0,
-      "spread": -1.5,
-      "total": 35.5
-     },
-     "games": 9,
-     "id": "9754",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Quentin Johnston",
-     "newsUpdated": "2026-11-23T11:10:15Z",
-     "points": 5.8,
-     "pos": "WR",
-     "ppg": 4.8,
-     "recent": [
-      {
-       "pts": 5.7,
-       "week": 8
-      },
-      {
-       "pts": 13.8,
-       "week": 9
-      },
-      {
-       "pts": 1.1,
-       "week": 10
-      },
-      {
-       "pts": 1.5,
-       "week": 11
-      }
-     ],
-     "rotowire": 6.2,
-     "team": "LAC"
     },
     "slot": "FLEX"
    }
@@ -295,80 +111,29 @@
   "recommendedPoints": 108.8,
   "slots": [
    {
-    "changed": true,
+    "changed": false,
     "current": {
-     "ceiling": 22.8,
-     "eligible": true,
-     "espn": 14.8,
-     "flags": [],
-     "floor": 7.3,
-     "game": {
-      "home": false,
-      "implied": 20.8,
-      "kickoff": "2026-11-27T20:00Z",
-      "opp": "PIT",
-      "oppImplied": 17.8,
-      "spread": -3.0,
-      "total": 38.5
-     },
-     "games": 10,
-     "id": "11563",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Bo Nix",
-     "newsUpdated": "2026-11-24T02:10:21Z",
-     "points": 15.1,
-     "pos": "QB",
-     "ppg": 14.9,
-     "recent": [
-      {
-       "pts": 28.2,
-       "week": 7
-      },
-      {
-       "pts": 19.3,
-       "week": 8
-      },
-      {
-       "pts": 16.7,
-       "week": 9
-      },
-      {
-       "pts": 12.5,
-       "week": 11
-      }
-     ],
-     "rotowire": 15.4,
-     "team": "DEN"
-    },
-    "nextBest": {
-     "id": "11563",
-     "name": "Bo Nix",
-     "points": 15.1,
-     "pos": "QB"
-    },
-    "recommended": {
-     "ceiling": 27.0,
+     "ceiling": 26.8,
      "eligible": true,
      "espn": 16.9,
      "flags": [],
-     "floor": 4.3,
+     "floor": 4.1,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 18.0,
       "kickoff": "2026-11-30T01:20Z",
       "opp": "CLE",
-      "oppImplied": 23.0,
+      "oppImplied": 22.5,
       "spread": 4.5,
-      "total": 41.5
+      "total": 40.5
      },
      "games": 3,
      "id": "13269",
      "injuryNotes": null,
      "locked": false,
      "name": "Fernando Mendoza",
-     "newsUpdated": "2026-11-24T02:30:22Z",
-     "points": 15.6,
+     "newsUpdated": "2026-11-25T02:35:03Z",
+     "points": 15.4,
      "pos": "QB",
      "ppg": 13.7,
      "recent": [
@@ -385,7 +150,54 @@
        "week": 11
       }
      ],
-     "rotowire": 14.4,
+     "rotowire": 14.0,
+     "team": "LV"
+    },
+    "nextBest": {
+     "id": "11563",
+     "name": "Bo Nix",
+     "points": 14.9,
+     "pos": "QB"
+    },
+    "recommended": {
+     "ceiling": 26.8,
+     "eligible": true,
+     "espn": 16.9,
+     "flags": [],
+     "floor": 4.1,
+     "game": {
+      "home": false,
+      "implied": 18.0,
+      "kickoff": "2026-11-30T01:20Z",
+      "opp": "CLE",
+      "oppImplied": 22.5,
+      "spread": 4.5,
+      "total": 40.5
+     },
+     "games": 3,
+     "id": "13269",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Fernando Mendoza",
+     "newsUpdated": "2026-11-25T02:35:03Z",
+     "points": 15.4,
+     "pos": "QB",
+     "ppg": 13.7,
+     "recent": [
+      {
+       "pts": 2.2,
+       "week": 5
+      },
+      {
+       "pts": 13.9,
+       "week": 10
+      },
+      {
+       "pts": 24.9,
+       "week": 11
+      }
+     ],
+     "rotowire": 14.0,
      "team": "LV"
     },
     "slot": "QB"
@@ -393,555 +205,19 @@
    {
     "changed": false,
     "current": {
-     "ceiling": 14.3,
-     "eligible": true,
-     "espn": 7.6,
-     "flags": [],
-     "floor": 1.5,
-     "game": {
-      "home": false,
-      "implied": 22.0,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "MIA",
-      "oppImplied": 18.5,
-      "spread": -3.5,
-      "total": 40.5
-     },
-     "games": 11,
-     "id": "11576",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Braelon Allen",
-     "newsUpdated": "2026-11-23T10:30:16Z",
-     "points": 7.9,
-     "pos": "RB",
-     "ppg": 10.0,
-     "recent": [
-      {
-       "pts": 22.3,
-       "week": 8
-      },
-      {
-       "pts": 4.4,
-       "week": 9
-      },
-      {
-       "pts": 5.1,
-       "week": 10
-      },
-      {
-       "pts": 8.9,
-       "week": 11
-      }
-     ],
-     "rotowire": 8.1,
-     "team": "NYJ"
-    },
-    "nextBest": null,
-    "recommended": {
-     "ceiling": 14.3,
-     "eligible": true,
-     "espn": 7.6,
-     "flags": [],
-     "floor": 1.5,
-     "game": {
-      "home": false,
-      "implied": 22.0,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "MIA",
-      "oppImplied": 18.5,
-      "spread": -3.5,
-      "total": 40.5
-     },
-     "games": 11,
-     "id": "11576",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Braelon Allen",
-     "newsUpdated": "2026-11-23T10:30:16Z",
-     "points": 7.9,
-     "pos": "RB",
-     "ppg": 10.0,
-     "recent": [
-      {
-       "pts": 22.3,
-       "week": 8
-      },
-      {
-       "pts": 4.4,
-       "week": 9
-      },
-      {
-       "pts": 5.1,
-       "week": 10
-      },
-      {
-       "pts": 8.9,
-       "week": 11
-      }
-     ],
-     "rotowire": 8.1,
-     "team": "NYJ"
-    },
-    "slot": "RB"
-   },
-   {
-    "changed": false,
-    "current": {
-     "ceiling": 18.1,
-     "eligible": true,
-     "espn": 13.0,
-     "flags": [],
-     "floor": 7.0,
-     "game": {
-      "home": true,
-      "implied": 18.5,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "NYJ",
-      "oppImplied": 22.0,
-      "spread": 3.5,
-      "total": 40.5
-     },
-     "games": 9,
-     "id": "12495",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Ollie Gordon II",
-     "newsUpdated": "2026-11-23T05:25:13Z",
-     "points": 12.5,
-     "pos": "RB",
-     "ppg": 10.8,
-     "recent": [
-      {
-       "pts": 6.9,
-       "week": 8
-      },
-      {
-       "pts": 6.9,
-       "week": 9
-      },
-      {
-       "pts": 13.5,
-       "week": 10
-      },
-      {
-       "pts": 7.7,
-       "week": 11
-      }
-     ],
-     "rotowire": 12.1,
-     "team": "MIA"
-    },
-    "nextBest": null,
-    "recommended": {
-     "ceiling": 18.1,
-     "eligible": true,
-     "espn": 13.0,
-     "flags": [],
-     "floor": 7.0,
-     "game": {
-      "home": true,
-      "implied": 18.5,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "NYJ",
-      "oppImplied": 22.0,
-      "spread": 3.5,
-      "total": 40.5
-     },
-     "games": 9,
-     "id": "12495",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Ollie Gordon II",
-     "newsUpdated": "2026-11-23T05:25:13Z",
-     "points": 12.5,
-     "pos": "RB",
-     "ppg": 10.8,
-     "recent": [
-      {
-       "pts": 6.9,
-       "week": 8
-      },
-      {
-       "pts": 6.9,
-       "week": 9
-      },
-      {
-       "pts": 13.5,
-       "week": 10
-      },
-      {
-       "pts": 7.7,
-       "week": 11
-      }
-     ],
-     "rotowire": 12.1,
-     "team": "MIA"
-    },
-    "slot": "RB"
-   },
-   {
-    "changed": false,
-    "current": {
-     "ceiling": 19.9,
-     "eligible": true,
-     "espn": 11.6,
-     "flags": [],
-     "floor": 5.1,
-     "game": {
-      "home": false,
-      "implied": 20.0,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "HOU",
-      "oppImplied": 26.5,
-      "spread": 6.5,
-      "total": 46.5
-     },
-     "games": 9,
-     "id": "9997",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Zay Flowers",
-     "newsUpdated": "2026-11-23T04:00:11Z",
-     "points": 12.5,
-     "pos": "WR",
-     "ppg": 14.2,
-     "recent": [
-      {
-       "pts": 23.7,
-       "week": 7
-      },
-      {
-       "pts": 3.8,
-       "week": 9
-      },
-      {
-       "pts": 8.4,
-       "week": 10
-      },
-      {
-       "pts": 12.4,
-       "week": 11
-      }
-     ],
-     "rotowire": 13.4,
-     "team": "BAL"
-    },
-    "nextBest": {
-     "id": "9500",
-     "name": "Josh Downs",
-     "points": 6.5,
-     "pos": "WR"
-    },
-    "recommended": {
-     "ceiling": 19.9,
-     "eligible": true,
-     "espn": 11.6,
-     "flags": [],
-     "floor": 5.1,
-     "game": {
-      "home": false,
-      "implied": 20.0,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "HOU",
-      "oppImplied": 26.5,
-      "spread": 6.5,
-      "total": 46.5
-     },
-     "games": 9,
-     "id": "9997",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Zay Flowers",
-     "newsUpdated": "2026-11-23T04:00:11Z",
-     "points": 12.5,
-     "pos": "WR",
-     "ppg": 14.2,
-     "recent": [
-      {
-       "pts": 23.7,
-       "week": 7
-      },
-      {
-       "pts": 3.8,
-       "week": 9
-      },
-      {
-       "pts": 8.4,
-       "week": 10
-      },
-      {
-       "pts": 12.4,
-       "week": 11
-      }
-     ],
-     "rotowire": 13.4,
-     "team": "BAL"
-    },
-    "slot": "WR"
-   },
-   {
-    "changed": true,
-    "current": {
-     "ceiling": 9.7,
-     "eligible": true,
-     "espn": 5.4,
-     "flags": [],
-     "floor": 1.9,
-     "game": {
-      "home": true,
-      "implied": 18.5,
-      "kickoff": "2026-11-29T21:05Z",
-      "opp": "NE",
-      "oppImplied": 17.0,
-      "spread": -1.5,
-      "total": 35.5
-     },
-     "games": 9,
-     "id": "9754",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Quentin Johnston",
-     "newsUpdated": "2026-11-23T11:10:15Z",
-     "points": 5.8,
-     "pos": "WR",
-     "ppg": 4.8,
-     "recent": [
-      {
-       "pts": 5.7,
-       "week": 8
-      },
-      {
-       "pts": 13.8,
-       "week": 9
-      },
-      {
-       "pts": 1.1,
-       "week": 10
-      },
-      {
-       "pts": 1.5,
-       "week": 11
-      }
-     ],
-     "rotowire": 6.2,
-     "team": "LAC"
-    },
-    "nextBest": {
-     "id": "9500",
-     "name": "Josh Downs",
-     "points": 6.5,
-     "pos": "WR"
-    },
-    "recommended": {
-     "ceiling": 17.8,
-     "eligible": true,
-     "espn": 12.4,
-     "flags": [],
-     "floor": 6.3,
-     "game": {
-      "home": true,
-      "implied": 24.8,
-      "kickoff": "2026-11-29T21:25Z",
-      "opp": "SEA",
-      "oppImplied": 21.8,
-      "spread": -3.0,
-      "total": 46.5
-     },
-     "games": 7,
-     "id": "2216",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Mike Evans",
-     "newsUpdated": "2026-11-23T15:45:17Z",
-     "points": 12.1,
-     "pos": "WR",
-     "ppg": 13.6,
-     "recent": [
-      {
-       "pts": 10.1,
-       "week": 4
-      },
-      {
-       "pts": 22.8,
-       "week": 5
-      },
-      {
-       "pts": 10.9,
-       "week": 6
-      },
-      {
-       "pts": 19.9,
-       "week": 11
-      }
-     ],
-     "rotowire": 11.7,
-     "team": "SF"
-    },
-    "slot": "WR"
-   },
-   {
-    "changed": false,
-    "current": {
-     "ceiling": 13.9,
-     "eligible": true,
-     "espn": 7.6,
-     "flags": [],
-     "floor": 2.0,
-     "game": {
-      "home": true,
-      "implied": 30.2,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "NO",
-      "oppImplied": 20.2,
-      "spread": -10.0,
-      "total": 50.5
-     },
-     "games": 9,
-     "id": "4993",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Mike Gesicki",
-     "newsUpdated": "2026-11-24T05:05:22Z",
-     "points": 8.0,
-     "pos": "TE",
-     "ppg": 10.5,
-     "recent": [
-      {
-       "pts": 17.6,
-       "week": 8
-      },
-      {
-       "pts": 3.1,
-       "week": 9
-      },
-      {
-       "pts": 1.9,
-       "week": 10
-      },
-      {
-       "pts": 12.7,
-       "week": 11
-      }
-     ],
-     "rotowire": 8.4,
-     "team": "CIN"
-    },
-    "nextBest": null,
-    "recommended": {
-     "ceiling": 13.9,
-     "eligible": true,
-     "espn": 7.6,
-     "flags": [],
-     "floor": 2.0,
-     "game": {
-      "home": true,
-      "implied": 30.2,
-      "kickoff": "2026-11-29T18:00Z",
-      "opp": "NO",
-      "oppImplied": 20.2,
-      "spread": -10.0,
-      "total": 50.5
-     },
-     "games": 9,
-     "id": "4993",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Mike Gesicki",
-     "newsUpdated": "2026-11-24T05:05:22Z",
-     "points": 8.0,
-     "pos": "TE",
-     "ppg": 10.5,
-     "recent": [
-      {
-       "pts": 17.6,
-       "week": 8
-      },
-      {
-       "pts": 3.1,
-       "week": 9
-      },
-      {
-       "pts": 1.9,
-       "week": 10
-      },
-      {
-       "pts": 12.7,
-       "week": 11
-      }
-     ],
-     "rotowire": 8.4,
-     "team": "CIN"
-    },
-    "slot": "TE"
-   },
-   {
-    "changed": true,
-    "current": {
-     "ceiling": 10.0,
-     "eligible": true,
-     "espn": 6.6,
-     "flags": [],
-     "floor": 3.0,
-     "game": {
-      "home": false,
-      "implied": 22.2,
-      "kickoff": "2026-11-27T01:20Z",
-      "opp": "BUF",
-      "oppImplied": 25.2,
-      "spread": 3.0,
-      "total": 47.5
-     },
-     "games": 11,
-     "id": "9500",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Josh Downs",
-     "newsUpdated": "2026-11-22T23:25:09Z",
-     "points": 6.5,
-     "pos": "WR",
-     "ppg": 7.3,
-     "recent": [
-      {
-       "pts": 10.3,
-       "week": 8
-      },
-      {
-       "pts": 3.9,
-       "week": 9
-      },
-      {
-       "pts": 13.3,
-       "week": 10
-      },
-      {
-       "pts": 7.9,
-       "week": 11
-      }
-     ],
-     "rotowire": 6.4,
-     "team": "KC"
-    },
-    "nextBest": {
-     "id": "9500",
-     "name": "Josh Downs",
-     "points": 6.5,
-     "pos": "WR"
-    },
-    "recommended": {
-     "ceiling": 26.1,
+     "ceiling": 26.0,
      "eligible": true,
      "espn": 16.1,
      "flags": [],
-     "floor": 6.8,
+     "floor": 6.7,
      "game": {
       "home": false,
-      "implied": 17.8,
+      "implied": 17.2,
       "kickoff": "2026-11-29T18:00Z",
       "opp": "MIN",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 7.0,
-      "total": 42.5
+      "total": 41.5
      },
      "games": 10,
      "id": "9509",
@@ -949,7 +225,7 @@
      "locked": false,
      "name": "Bijan Robinson",
      "newsUpdated": "2026-11-16T00:20:32Z",
-     "points": 16.5,
+     "points": 16.3,
      "pos": "RB",
      "ppg": 18.1,
      "recent": [
@@ -970,27 +246,278 @@
        "week": 10
       }
      ],
-     "rotowire": 16.9,
+     "rotowire": 16.5,
      "team": "ATL"
     },
-    "slot": "FLEX"
+    "nextBest": {
+     "id": "13286",
+     "name": "Jadarian Price",
+     "points": 6.3,
+     "pos": "RB"
+    },
+    "recommended": {
+     "ceiling": 26.0,
+     "eligible": true,
+     "espn": 16.1,
+     "flags": [],
+     "floor": 6.7,
+     "game": {
+      "home": false,
+      "implied": 17.2,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "MIN",
+      "oppImplied": 24.2,
+      "spread": 7.0,
+      "total": 41.5
+     },
+     "games": 10,
+     "id": "9509",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Bijan Robinson",
+     "newsUpdated": "2026-11-16T00:20:32Z",
+     "points": 16.3,
+     "pos": "RB",
+     "ppg": 18.1,
+     "recent": [
+      {
+       "pts": 14.7,
+       "week": 7
+      },
+      {
+       "pts": 7.6,
+       "week": 8
+      },
+      {
+       "pts": 23.7,
+       "week": 9
+      },
+      {
+       "pts": 15.7,
+       "week": 10
+      }
+     ],
+     "rotowire": 16.5,
+     "team": "ATL"
+    },
+    "slot": "RB"
    },
    {
-    "changed": true,
+    "changed": false,
     "current": {
-     "ceiling": 17.8,
+     "ceiling": 18.3,
+     "eligible": true,
+     "espn": 13.0,
+     "flags": [],
+     "floor": 7.2,
+     "game": {
+      "home": true,
+      "implied": 18.5,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "NYJ",
+      "oppImplied": 22.0,
+      "spread": 3.5,
+      "total": 40.5
+     },
+     "games": 9,
+     "id": "12495",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Ollie Gordon II",
+     "newsUpdated": "2026-11-23T05:25:13Z",
+     "points": 12.8,
+     "pos": "RB",
+     "ppg": 10.8,
+     "recent": [
+      {
+       "pts": 6.9,
+       "week": 8
+      },
+      {
+       "pts": 6.9,
+       "week": 9
+      },
+      {
+       "pts": 13.5,
+       "week": 10
+      },
+      {
+       "pts": 7.7,
+       "week": 11
+      }
+     ],
+     "rotowire": 12.5,
+     "team": "MIA"
+    },
+    "nextBest": {
+     "id": "13286",
+     "name": "Jadarian Price",
+     "points": 6.3,
+     "pos": "RB"
+    },
+    "recommended": {
+     "ceiling": 18.3,
+     "eligible": true,
+     "espn": 13.0,
+     "flags": [],
+     "floor": 7.2,
+     "game": {
+      "home": true,
+      "implied": 18.5,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "NYJ",
+      "oppImplied": 22.0,
+      "spread": 3.5,
+      "total": 40.5
+     },
+     "games": 9,
+     "id": "12495",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Ollie Gordon II",
+     "newsUpdated": "2026-11-23T05:25:13Z",
+     "points": 12.8,
+     "pos": "RB",
+     "ppg": 10.8,
+     "recent": [
+      {
+       "pts": 6.9,
+       "week": 8
+      },
+      {
+       "pts": 6.9,
+       "week": 9
+      },
+      {
+       "pts": 13.5,
+       "week": 10
+      },
+      {
+       "pts": 7.7,
+       "week": 11
+      }
+     ],
+     "rotowire": 12.5,
+     "team": "MIA"
+    },
+    "slot": "RB"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 19.9,
+     "eligible": true,
+     "espn": 11.6,
+     "flags": [],
+     "floor": 5.2,
+     "game": {
+      "home": false,
+      "implied": 20.2,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "HOU",
+      "oppImplied": 27.2,
+      "spread": 7.0,
+      "total": 47.5
+     },
+     "games": 9,
+     "id": "9997",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Zay Flowers",
+     "newsUpdated": "2026-11-23T04:00:11Z",
+     "points": 12.5,
+     "pos": "WR",
+     "ppg": 14.2,
+     "recent": [
+      {
+       "pts": 23.7,
+       "week": 7
+      },
+      {
+       "pts": 3.8,
+       "week": 9
+      },
+      {
+       "pts": 8.4,
+       "week": 10
+      },
+      {
+       "pts": 12.4,
+       "week": 11
+      }
+     ],
+     "rotowire": 13.5,
+     "team": "BAL"
+    },
+    "nextBest": {
+     "id": "9500",
+     "name": "Josh Downs",
+     "points": 6.0,
+     "pos": "WR"
+    },
+    "recommended": {
+     "ceiling": 19.9,
+     "eligible": true,
+     "espn": 11.6,
+     "flags": [],
+     "floor": 5.2,
+     "game": {
+      "home": false,
+      "implied": 20.2,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "HOU",
+      "oppImplied": 27.2,
+      "spread": 7.0,
+      "total": 47.5
+     },
+     "games": 9,
+     "id": "9997",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Zay Flowers",
+     "newsUpdated": "2026-11-23T04:00:11Z",
+     "points": 12.5,
+     "pos": "WR",
+     "ppg": 14.2,
+     "recent": [
+      {
+       "pts": 23.7,
+       "week": 7
+      },
+      {
+       "pts": 3.8,
+       "week": 9
+      },
+      {
+       "pts": 8.4,
+       "week": 10
+      },
+      {
+       "pts": 12.4,
+       "week": 11
+      }
+     ],
+     "rotowire": 13.5,
+     "team": "BAL"
+    },
+    "slot": "WR"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 17.7,
      "eligible": true,
      "espn": 12.4,
      "flags": [],
-     "floor": 6.3,
+     "floor": 6.2,
      "game": {
       "home": true,
-      "implied": 24.8,
+      "implied": 24.2,
       "kickoff": "2026-11-29T21:25Z",
       "opp": "SEA",
-      "oppImplied": 21.8,
+      "oppImplied": 21.2,
       "spread": -3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "games": 7,
      "id": "2216",
@@ -998,7 +525,7 @@
      "locked": false,
      "name": "Mike Evans",
      "newsUpdated": "2026-11-23T15:45:17Z",
-     "points": 12.1,
+     "points": 12.0,
      "pos": "WR",
      "ppg": 13.6,
      "recent": [
@@ -1019,29 +546,273 @@
        "week": 11
       }
      ],
-     "rotowire": 11.7,
+     "rotowire": 11.5,
      "team": "SF"
     },
     "nextBest": {
      "id": "9500",
      "name": "Josh Downs",
-     "points": 6.5,
+     "points": 6.0,
      "pos": "WR"
     },
     "recommended": {
-     "ceiling": 10.3,
+     "ceiling": 17.7,
+     "eligible": true,
+     "espn": 12.4,
+     "flags": [],
+     "floor": 6.2,
+     "game": {
+      "home": true,
+      "implied": 24.2,
+      "kickoff": "2026-11-29T21:25Z",
+      "opp": "SEA",
+      "oppImplied": 21.2,
+      "spread": -3.0,
+      "total": 45.5
+     },
+     "games": 7,
+     "id": "2216",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Mike Evans",
+     "newsUpdated": "2026-11-23T15:45:17Z",
+     "points": 12.0,
+     "pos": "WR",
+     "ppg": 13.6,
+     "recent": [
+      {
+       "pts": 10.1,
+       "week": 4
+      },
+      {
+       "pts": 22.8,
+       "week": 5
+      },
+      {
+       "pts": 10.9,
+       "week": 6
+      },
+      {
+       "pts": 19.9,
+       "week": 11
+      }
+     ],
+     "rotowire": 11.5,
+     "team": "SF"
+    },
+    "slot": "WR"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 13.9,
+     "eligible": true,
+     "espn": 7.6,
+     "flags": [],
+     "floor": 2.0,
+     "game": {
+      "home": true,
+      "implied": 30.2,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "NO",
+      "oppImplied": 20.2,
+      "spread": -10.0,
+      "total": 50.5
+     },
+     "games": 9,
+     "id": "4993",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Mike Gesicki",
+     "newsUpdated": "2026-11-24T15:20:47Z",
+     "points": 8.0,
+     "pos": "TE",
+     "ppg": 10.5,
+     "recent": [
+      {
+       "pts": 17.6,
+       "week": 8
+      },
+      {
+       "pts": 3.1,
+       "week": 9
+      },
+      {
+       "pts": 1.9,
+       "week": 10
+      },
+      {
+       "pts": 12.7,
+       "week": 11
+      }
+     ],
+     "rotowire": 8.3,
+     "team": "CIN"
+    },
+    "nextBest": null,
+    "recommended": {
+     "ceiling": 13.9,
+     "eligible": true,
+     "espn": 7.6,
+     "flags": [],
+     "floor": 2.0,
+     "game": {
+      "home": true,
+      "implied": 30.2,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "NO",
+      "oppImplied": 20.2,
+      "spread": -10.0,
+      "total": 50.5
+     },
+     "games": 9,
+     "id": "4993",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Mike Gesicki",
+     "newsUpdated": "2026-11-24T15:20:47Z",
+     "points": 8.0,
+     "pos": "TE",
+     "ppg": 10.5,
+     "recent": [
+      {
+       "pts": 17.6,
+       "week": 8
+      },
+      {
+       "pts": 3.1,
+       "week": 9
+      },
+      {
+       "pts": 1.9,
+       "week": 10
+      },
+      {
+       "pts": 12.7,
+       "week": 11
+      }
+     ],
+     "rotowire": 8.3,
+     "team": "CIN"
+    },
+    "slot": "TE"
+   },
+   {
+    "changed": false,
+    "current": {
+     "ceiling": 14.3,
+     "eligible": true,
+     "espn": 7.6,
+     "flags": [],
+     "floor": 1.5,
+     "game": {
+      "home": false,
+      "implied": 22.0,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "MIA",
+      "oppImplied": 18.5,
+      "spread": -3.5,
+      "total": 40.5
+     },
+     "games": 11,
+     "id": "11576",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Braelon Allen",
+     "newsUpdated": "2026-11-23T10:30:16Z",
+     "points": 7.9,
+     "pos": "RB",
+     "ppg": 10.0,
+     "recent": [
+      {
+       "pts": 22.3,
+       "week": 8
+      },
+      {
+       "pts": 4.4,
+       "week": 9
+      },
+      {
+       "pts": 5.1,
+       "week": 10
+      },
+      {
+       "pts": 8.9,
+       "week": 11
+      }
+     ],
+     "rotowire": 8.1,
+     "team": "NYJ"
+    },
+    "nextBest": {
+     "id": "13286",
+     "name": "Jadarian Price",
+     "points": 6.3,
+     "pos": "RB"
+    },
+    "recommended": {
+     "ceiling": 14.3,
+     "eligible": true,
+     "espn": 7.6,
+     "flags": [],
+     "floor": 1.5,
+     "game": {
+      "home": false,
+      "implied": 22.0,
+      "kickoff": "2026-11-29T18:00Z",
+      "opp": "MIA",
+      "oppImplied": 18.5,
+      "spread": -3.5,
+      "total": 40.5
+     },
+     "games": 11,
+     "id": "11576",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Braelon Allen",
+     "newsUpdated": "2026-11-23T10:30:16Z",
+     "points": 7.9,
+     "pos": "RB",
+     "ppg": 10.0,
+     "recent": [
+      {
+       "pts": 22.3,
+       "week": 8
+      },
+      {
+       "pts": 4.4,
+       "week": 9
+      },
+      {
+       "pts": 5.1,
+       "week": 10
+      },
+      {
+       "pts": 8.9,
+       "week": 11
+      }
+     ],
+     "rotowire": 8.1,
+     "team": "NYJ"
+    },
+    "slot": "FLEX"
+   },
+   {
+    "changed": true,
+    "current": {
+     "ceiling": 10.1,
      "eligible": true,
      "espn": 7.0,
      "flags": [],
-     "floor": 2.7,
+     "floor": 2.6,
      "game": {
       "home": false,
-      "implied": 21.8,
+      "implied": 21.2,
       "kickoff": "2026-11-29T21:25Z",
       "opp": "SF",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 3.0,
-      "total": 46.5
+      "total": 45.5
      },
      "games": 6,
      "id": "13286",
@@ -1049,7 +820,7 @@
      "locked": false,
      "name": "Jadarian Price",
      "newsUpdated": "2026-11-16T07:35:35Z",
-     "points": 6.5,
+     "points": 6.3,
      "pos": "RB",
      "ppg": 6.2,
      "recent": [
@@ -1070,15 +841,66 @@
        "week": 10
       }
      ],
-     "rotowire": 6.1,
+     "rotowire": 5.7,
      "team": "SEA"
+    },
+    "nextBest": {
+     "id": "13286",
+     "name": "Jadarian Price",
+     "points": 6.3,
+     "pos": "RB"
+    },
+    "recommended": {
+     "ceiling": 10.0,
+     "eligible": true,
+     "espn": 6.8,
+     "flags": [],
+     "floor": 3.5,
+     "game": {
+      "home": false,
+      "implied": 17.0,
+      "kickoff": "2026-11-29T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 18.5,
+      "spread": 1.5,
+      "total": 35.5
+     },
+     "games": 6,
+     "id": "4177",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Mack Hollins",
+     "newsUpdated": "2026-11-16T02:40:33Z",
+     "points": 6.7,
+     "pos": "WR",
+     "ppg": 7.8,
+     "recent": [
+      {
+       "pts": 11.7,
+       "week": 3
+      },
+      {
+       "pts": 6.8,
+       "week": 4
+      },
+      {
+       "pts": 11.1,
+       "week": 9
+      },
+      {
+       "pts": 7.3,
+       "week": 10
+      }
+     ],
+     "rotowire": 6.7,
+     "team": "NE"
     },
     "slot": "FLEX"
    },
    {
     "changed": false,
     "current": {
-     "ceiling": 14.7,
+     "ceiling": 14.8,
      "eligible": true,
      "espn": 7.2,
      "flags": [],
@@ -1119,17 +941,17 @@
        "week": 11
       }
      ],
-     "rotowire": 8.3,
+     "rotowire": 8.4,
      "team": "CAR"
     },
     "nextBest": {
-     "id": "9500",
-     "name": "Josh Downs",
-     "points": 6.5,
-     "pos": "WR"
+     "id": "13286",
+     "name": "Jadarian Price",
+     "points": 6.3,
+     "pos": "RB"
     },
     "recommended": {
-     "ceiling": 14.7,
+     "ceiling": 14.8,
      "eligible": true,
      "espn": 7.2,
      "flags": [],
@@ -1170,7 +992,7 @@
        "week": 11
       }
      ],
-     "rotowire": 8.3,
+     "rotowire": 8.4,
      "team": "CAR"
     },
     "slot": "FLEX"
@@ -1282,19 +1104,19 @@
  },
  "roster": [
   {
-   "ceiling": 26.1,
+   "ceiling": 26.0,
    "eligible": true,
    "espn": 16.1,
    "flags": [],
-   "floor": 6.8,
+   "floor": 6.7,
    "game": {
     "home": false,
-    "implied": 17.8,
+    "implied": 17.2,
     "kickoff": "2026-11-29T18:00Z",
     "opp": "MIN",
-    "oppImplied": 24.8,
+    "oppImplied": 24.2,
     "spread": 7.0,
-    "total": 42.5
+    "total": 41.5
    },
    "games": 10,
    "id": "9509",
@@ -1302,7 +1124,7 @@
    "locked": false,
    "name": "Bijan Robinson",
    "newsUpdated": "2026-11-16T00:20:32Z",
-   "points": 16.5,
+   "points": 16.3,
    "pos": "RB",
    "ppg": 18.1,
    "recent": [
@@ -1323,9 +1145,9 @@
      "week": 10
     }
    ],
-   "rotowire": 16.9,
+   "rotowire": 16.5,
    "sd": 9.65,
-   "slot": "BN",
+   "slot": "START",
    "sources": [
     "espn",
     "rotowire"
@@ -1334,27 +1156,27 @@
    "team": "ATL"
   },
   {
-   "ceiling": 27.0,
+   "ceiling": 26.8,
    "eligible": true,
    "espn": 16.9,
    "flags": [],
-   "floor": 4.3,
+   "floor": 4.1,
    "game": {
     "home": false,
-    "implied": 18.5,
+    "implied": 18.0,
     "kickoff": "2026-11-30T01:20Z",
     "opp": "CLE",
-    "oppImplied": 23.0,
+    "oppImplied": 22.5,
     "spread": 4.5,
-    "total": 41.5
+    "total": 40.5
    },
    "games": 3,
    "id": "13269",
    "injuryNotes": null,
    "locked": false,
    "name": "Fernando Mendoza",
-   "newsUpdated": "2026-11-24T02:30:22Z",
-   "points": 15.6,
+   "newsUpdated": "2026-11-25T02:35:03Z",
+   "points": 15.4,
    "pos": "QB",
    "ppg": 13.7,
    "recent": [
@@ -1371,9 +1193,9 @@
      "week": 11
     }
    ],
-   "rotowire": 14.4,
+   "rotowire": 14.0,
    "sd": 11.33,
-   "slot": "BN",
+   "slot": "START",
    "sources": [
     "espn",
     "rotowire"
@@ -1382,19 +1204,19 @@
    "team": "LV"
   },
   {
-   "ceiling": 22.8,
+   "ceiling": 22.6,
    "eligible": true,
    "espn": 14.8,
    "flags": [],
-   "floor": 7.3,
+   "floor": 7.1,
    "game": {
     "home": false,
-    "implied": 20.8,
+    "implied": 20.0,
     "kickoff": "2026-11-27T20:00Z",
     "opp": "PIT",
-    "oppImplied": 17.8,
-    "spread": -3.0,
-    "total": 38.5
+    "oppImplied": 16.5,
+    "spread": -3.5,
+    "total": 36.5
    },
    "games": 10,
    "id": "11563",
@@ -1402,7 +1224,7 @@
    "locked": false,
    "name": "Bo Nix",
    "newsUpdated": "2026-11-24T02:10:21Z",
-   "points": 15.1,
+   "points": 14.9,
    "pos": "QB",
    "ppg": 14.9,
    "recent": [
@@ -1423,9 +1245,9 @@
      "week": 11
     }
    ],
-   "rotowire": 15.4,
+   "rotowire": 14.9,
    "sd": 7.75,
-   "slot": "START",
+   "slot": "BN",
    "sources": [
     "espn",
     "rotowire"
@@ -1434,11 +1256,11 @@
    "team": "DEN"
   },
   {
-   "ceiling": 18.1,
+   "ceiling": 18.3,
    "eligible": true,
    "espn": 13.0,
    "flags": [],
-   "floor": 7.0,
+   "floor": 7.2,
    "game": {
     "home": true,
     "implied": 18.5,
@@ -1454,7 +1276,7 @@
    "locked": false,
    "name": "Ollie Gordon II",
    "newsUpdated": "2026-11-23T05:25:13Z",
-   "points": 12.5,
+   "points": 12.8,
    "pos": "RB",
    "ppg": 10.8,
    "recent": [
@@ -1475,7 +1297,7 @@
      "week": 11
     }
    ],
-   "rotowire": 12.1,
+   "rotowire": 12.5,
    "sd": 5.53,
    "slot": "START",
    "sources": [
@@ -1490,15 +1312,15 @@
    "eligible": true,
    "espn": 11.6,
    "flags": [],
-   "floor": 5.1,
+   "floor": 5.2,
    "game": {
     "home": false,
-    "implied": 20.0,
+    "implied": 20.2,
     "kickoff": "2026-11-29T18:00Z",
     "opp": "HOU",
-    "oppImplied": 26.5,
-    "spread": 6.5,
-    "total": 46.5
+    "oppImplied": 27.2,
+    "spread": 7.0,
+    "total": 47.5
    },
    "games": 9,
    "id": "9997",
@@ -1527,7 +1349,7 @@
      "week": 11
     }
    ],
-   "rotowire": 13.4,
+   "rotowire": 13.5,
    "sd": 7.37,
    "slot": "START",
    "sources": [
@@ -1538,19 +1360,19 @@
    "team": "BAL"
   },
   {
-   "ceiling": 17.8,
+   "ceiling": 17.7,
    "eligible": true,
    "espn": 12.4,
    "flags": [],
-   "floor": 6.3,
+   "floor": 6.2,
    "game": {
     "home": true,
-    "implied": 24.8,
+    "implied": 24.2,
     "kickoff": "2026-11-29T21:25Z",
     "opp": "SEA",
-    "oppImplied": 21.8,
+    "oppImplied": 21.2,
     "spread": -3.0,
-    "total": 46.5
+    "total": 45.5
    },
    "games": 7,
    "id": "2216",
@@ -1558,7 +1380,7 @@
    "locked": false,
    "name": "Mike Evans",
    "newsUpdated": "2026-11-23T15:45:17Z",
-   "points": 12.1,
+   "points": 12.0,
    "pos": "WR",
    "ppg": 13.6,
    "recent": [
@@ -1579,7 +1401,7 @@
      "week": 11
     }
    ],
-   "rotowire": 11.7,
+   "rotowire": 11.5,
    "sd": 5.72,
    "slot": "START",
    "sources": [
@@ -1661,7 +1483,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "Mike Gesicki",
-   "newsUpdated": "2026-11-24T05:05:22Z",
+   "newsUpdated": "2026-11-24T15:20:47Z",
    "points": 8.0,
    "pos": "TE",
    "ppg": 10.5,
@@ -1683,7 +1505,7 @@
      "week": 11
     }
    ],
-   "rotowire": 8.4,
+   "rotowire": 8.3,
    "sd": 5.94,
    "slot": "START",
    "sources": [
@@ -1746,7 +1568,7 @@
    "team": "NYJ"
   },
   {
-   "ceiling": 14.7,
+   "ceiling": 14.8,
    "eligible": true,
    "espn": 7.2,
    "flags": [],
@@ -1787,7 +1609,7 @@
      "week": 11
     }
    ],
-   "rotowire": 8.3,
+   "rotowire": 8.4,
    "sd": 6.96,
    "slot": "START",
    "sources": [
@@ -1798,19 +1620,71 @@
    "team": "CAR"
   },
   {
-   "ceiling": 10.3,
+   "ceiling": 10.0,
+   "eligible": true,
+   "espn": 6.8,
+   "flags": [],
+   "floor": 3.5,
+   "game": {
+    "home": false,
+    "implied": 17.0,
+    "kickoff": "2026-11-29T21:05Z",
+    "opp": "LAC",
+    "oppImplied": 18.5,
+    "spread": 1.5,
+    "total": 35.5
+   },
+   "games": 6,
+   "id": "4177",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Mack Hollins",
+   "newsUpdated": "2026-11-16T02:40:33Z",
+   "points": 6.7,
+   "pos": "WR",
+   "ppg": 7.8,
+   "recent": [
+    {
+     "pts": 11.7,
+     "week": 3
+    },
+    {
+     "pts": 6.8,
+     "week": 4
+    },
+    {
+     "pts": 11.1,
+     "week": 9
+    },
+    {
+     "pts": 7.3,
+     "week": 10
+    }
+   ],
+   "rotowire": 6.7,
+   "sd": 3.25,
+   "slot": "BN",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "NE"
+  },
+  {
+   "ceiling": 10.1,
    "eligible": true,
    "espn": 7.0,
    "flags": [],
-   "floor": 2.7,
+   "floor": 2.6,
    "game": {
     "home": false,
-    "implied": 21.8,
+    "implied": 21.2,
     "kickoff": "2026-11-29T21:25Z",
     "opp": "SF",
-    "oppImplied": 24.8,
+    "oppImplied": 24.2,
     "spread": 3.0,
-    "total": 46.5
+    "total": 45.5
    },
    "games": 6,
    "id": "13286",
@@ -1818,7 +1692,7 @@
    "locked": false,
    "name": "Jadarian Price",
    "newsUpdated": "2026-11-16T07:35:35Z",
-   "points": 6.5,
+   "points": 6.3,
    "pos": "RB",
    "ppg": 6.2,
    "recent": [
@@ -1839,9 +1713,9 @@
      "week": 10
     }
    ],
-   "rotowire": 6.1,
+   "rotowire": 5.7,
    "sd": 3.76,
-   "slot": "BN",
+   "slot": "START",
    "sources": [
     "espn",
     "rotowire"
@@ -1850,19 +1724,19 @@
    "team": "SEA"
   },
   {
-   "ceiling": 10.0,
+   "ceiling": 9.5,
    "eligible": true,
-   "espn": 6.6,
+   "espn": 6.2,
    "flags": [],
-   "floor": 3.0,
+   "floor": 2.5,
    "game": {
     "home": false,
-    "implied": 22.2,
+    "implied": 21.8,
     "kickoff": "2026-11-27T01:20Z",
     "opp": "BUF",
-    "oppImplied": 25.2,
+    "oppImplied": 24.8,
     "spread": 3.0,
-    "total": 47.5
+    "total": 46.5
    },
    "games": 11,
    "id": "9500",
@@ -1870,7 +1744,7 @@
    "locked": false,
    "name": "Josh Downs",
    "newsUpdated": "2026-11-22T23:25:09Z",
-   "points": 6.5,
+   "points": 6.0,
    "pos": "WR",
    "ppg": 7.3,
    "recent": [
@@ -1891,9 +1765,9 @@
      "week": 11
     }
    ],
-   "rotowire": 6.4,
+   "rotowire": 5.7,
    "sd": 3.51,
-   "slot": "START",
+   "slot": "BN",
    "sources": [
     "espn",
     "rotowire"
@@ -1945,7 +1819,7 @@
    ],
    "rotowire": 6.2,
    "sd": 3.9,
-   "slot": "START",
+   "slot": "BN",
    "sources": [
     "espn",
     "rotowire"
@@ -1954,123 +1828,19 @@
    "team": "LAC"
   },
   {
-   "ceiling": 8.3,
-   "eligible": true,
-   "espn": 6.8,
-   "flags": [],
-   "floor": 1.8,
-   "game": {
-    "home": false,
-    "implied": 17.0,
-    "kickoff": "2026-11-29T21:05Z",
-    "opp": "LAC",
-    "oppImplied": 18.5,
-    "spread": 1.5,
-    "total": 35.5
-   },
-   "games": 6,
-   "id": "4177",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Mack Hollins",
-   "newsUpdated": "2026-11-16T02:40:33Z",
-   "points": 5.0,
-   "pos": "WR",
-   "ppg": 7.8,
-   "recent": [
-    {
-     "pts": 11.7,
-     "week": 3
-    },
-    {
-     "pts": 6.8,
-     "week": 4
-    },
-    {
-     "pts": 11.1,
-     "week": 9
-    },
-    {
-     "pts": 7.3,
-     "week": 10
-    }
-   ],
-   "rotowire": 3.3,
-   "sd": 3.25,
-   "slot": "BN",
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "NE"
-  },
-  {
-   "ceiling": 9.8,
-   "eligible": true,
-   "espn": 5.3,
-   "flags": [],
-   "floor": 0.0,
-   "game": {
-    "home": true,
-    "implied": 17.8,
-    "kickoff": "2026-11-27T20:00Z",
-    "opp": "DEN",
-    "oppImplied": 20.8,
-    "spread": 3.0,
-    "total": 38.5
-   },
-   "games": 5,
-   "id": "11630",
-   "injuryNotes": null,
-   "locked": false,
-   "name": "Roman Wilson",
-   "newsUpdated": "2026-11-24T02:30:21Z",
-   "points": 4.7,
-   "pos": "WR",
-   "ppg": 8.7,
-   "recent": [
-    {
-     "pts": 5.3,
-     "week": 2
-    },
-    {
-     "pts": 13.5,
-     "week": 3
-    },
-    {
-     "pts": 14.9,
-     "week": 4
-    },
-    {
-     "pts": 5.8,
-     "week": 11
-    }
-   ],
-   "rotowire": 4.1,
-   "sd": 5.06,
-   "slot": "BN",
-   "sources": [
-    "espn",
-    "rotowire"
-   ],
-   "status": null,
-   "team": "PIT"
-  },
-  {
-   "ceiling": 8.0,
+   "ceiling": 8.2,
    "eligible": true,
    "espn": 4.2,
    "flags": [],
-   "floor": 0.9,
+   "floor": 1.1,
    "game": {
     "home": false,
-    "implied": 21.8,
+    "implied": 21.2,
     "kickoff": "2026-11-29T21:25Z",
     "opp": "SF",
-    "oppImplied": 24.8,
+    "oppImplied": 24.2,
     "spread": 3.0,
-    "total": 46.5
+    "total": 45.5
    },
    "games": 10,
    "id": "4039",
@@ -2078,7 +1848,7 @@
    "locked": false,
    "name": "Cooper Kupp",
    "newsUpdated": "2026-11-17T03:05:40Z",
-   "points": 4.4,
+   "points": 4.7,
    "pos": "WR",
    "ppg": 5.7,
    "recent": [
@@ -2099,7 +1869,7 @@
      "week": 10
     }
    ],
-   "rotowire": 4.7,
+   "rotowire": 5.1,
    "sd": 3.55,
    "slot": "BN",
    "sources": [
@@ -2117,12 +1887,12 @@
    "floor": 0.4,
    "game": {
     "home": true,
-    "implied": 31.0,
+    "implied": 31.5,
     "kickoff": "2026-11-29T18:00Z",
     "opp": "TEN",
-    "oppImplied": 16.5,
+    "oppImplied": 17.0,
     "spread": -14.5,
-    "total": 47.5
+    "total": 48.5
    },
    "games": 7,
    "id": "13394",
@@ -2130,7 +1900,7 @@
    "locked": false,
    "name": "Josh Cameron",
    "newsUpdated": "2026-11-24T02:25:21Z",
-   "points": 4.4,
+   "points": 4.5,
    "pos": "WR",
    "ppg": 7.0,
    "recent": [
@@ -2151,7 +1921,7 @@
      "week": 11
     }
    ],
-   "rotowire": 3.7,
+   "rotowire": 3.8,
    "sd": 4.02,
    "slot": "BN",
    "sources": [
@@ -2162,11 +1932,63 @@
    "team": "JAX"
   },
   {
+   "ceiling": 9.3,
+   "eligible": true,
+   "espn": 5.3,
+   "flags": [],
+   "floor": 0.0,
+   "game": {
+    "home": true,
+    "implied": 16.5,
+    "kickoff": "2026-11-27T20:00Z",
+    "opp": "DEN",
+    "oppImplied": 20.0,
+    "spread": 3.5,
+    "total": 36.5
+   },
+   "games": 5,
+   "id": "11630",
+   "injuryNotes": null,
+   "locked": false,
+   "name": "Roman Wilson",
+   "newsUpdated": "2026-11-24T02:30:21Z",
+   "points": 4.2,
+   "pos": "WR",
+   "ppg": 8.7,
+   "recent": [
+    {
+     "pts": 5.3,
+     "week": 2
+    },
+    {
+     "pts": 13.5,
+     "week": 3
+    },
+    {
+     "pts": 14.9,
+     "week": 4
+    },
+    {
+     "pts": 5.8,
+     "week": 11
+    }
+   ],
+   "rotowire": 3.0,
+   "sd": 5.06,
+   "slot": "BN",
+   "sources": [
+    "espn",
+    "rotowire"
+   ],
+   "status": null,
+   "team": "PIT"
+  },
+  {
    "ceiling": null,
-   "eligible": false,
+   "eligible": true,
    "espn": null,
    "flags": [
-    "OUT"
+    "DOUBTFUL"
    ],
    "floor": null,
    "game": {
@@ -2183,7 +2005,7 @@
    "injuryNotes": null,
    "locked": false,
    "name": "A.J. Brown",
-   "newsUpdated": "2026-11-23T22:05:18Z",
+   "newsUpdated": "2026-11-24T19:50:48Z",
    "points": null,
    "pos": "WR",
    "ppg": 4.6,
@@ -2209,7 +2031,7 @@
    "sd": null,
    "slot": "BN",
    "sources": [],
-   "status": "OUT",
+   "status": "DOUBTFUL",
    "team": "NE"
   },
   {
@@ -2299,12 +2121,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 19.5,
+    "implied": 20.0,
     "kickoff": "2026-11-26T21:30Z",
     "opp": "DAL",
-    "oppImplied": 28.0,
+    "oppImplied": 28.5,
     "spread": 8.5,
-    "total": 47.5
+    "total": 48.5
    },
    "games": 5,
    "id": "6904",
@@ -2350,12 +2172,12 @@
    "floor": null,
    "game": {
     "home": false,
-    "implied": 20.8,
+    "implied": 20.0,
     "kickoff": "2026-11-27T20:00Z",
     "opp": "PIT",
-    "oppImplied": 17.8,
-    "spread": -3.0,
-    "total": 38.5
+    "oppImplied": 16.5,
+    "spread": -3.5,
+    "total": 36.5
    },
    "games": 6,
    "id": "12489",
@@ -2398,35 +2220,35 @@
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:09:00Z",
+   "lastUpdated": "2026-11-25T12:32:26Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:09:00Z",
+   "lastUpdated": "2026-11-25T12:32:26Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:08:58Z",
+   "lastUpdated": "2026-11-25T12:32:24Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:08:58Z",
+   "lastUpdated": "2026-11-25T12:32:24Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-24T08:08:58Z",
+   "lastUpdated": "2026-11-25T12:32:24Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
@@ -2438,26 +2260,26 @@
   "myGames": [
    {
     "ifLose": 0.0,
-    "ifWin": 1.1,
+    "ifWin": 1.5,
     "myMean": 108.8,
     "opp": "Brandon Aubrey Supremacy",
-    "oppMean": 144.3,
+    "oppMean": 143.4,
     "week": 12,
-    "winPct": 15.2
+    "winPct": 15.8
    },
    {
     "myMean": 90.8,
     "opp": "Dak FC",
-    "oppMean": 93.2,
+    "oppMean": 90.2,
     "week": 13,
-    "winPct": 47.2
+    "winPct": 50.7
    },
    {
     "myMean": 110.5,
     "opp": "Ladd’s McConcubines",
-    "oppMean": 125.7,
+    "oppMean": 119.6,
     "week": 14,
-    "winPct": 33.0
+    "winPct": 39.6
    }
   ],
   "playoffTeams": 6,
@@ -2481,7 +2303,7 @@
    },
    {
     "avgSeed": 2.5,
-    "byePct": 62.4,
+    "byePct": 63.2,
     "division": null,
     "isMine": false,
     "losses": 3,
@@ -2489,19 +2311,19 @@
     "playoffPct": 100.0,
     "pointsAgainst": 1193.24,
     "pointsFor": 1454.54,
-    "projWins": 9.8,
+    "projWins": 9.9,
     "seed": 2,
     "ties": 0,
     "wins": 8
    },
    {
     "avgSeed": 3.2,
-    "byePct": 28.3,
+    "byePct": 27.0,
     "division": null,
     "isMine": false,
     "losses": 4,
     "name": "All Gas No Brakes",
-    "playoffPct": 99.4,
+    "playoffPct": 99.3,
     "pointsAgainst": 1123.46,
     "pointsFor": 1431.4,
     "projWins": 9.1,
@@ -2511,12 +2333,12 @@
    },
    {
     "avgSeed": 4.7,
-    "byePct": 3.5,
+    "byePct": 3.3,
     "division": null,
     "isMine": false,
     "losses": 4,
     "name": "Team 5 (no name set)",
-    "playoffPct": 91.0,
+    "playoffPct": 90.7,
     "pointsAgainst": 1184.54,
     "pointsFor": 1257.44,
     "projWins": 8.5,
@@ -2525,31 +2347,31 @@
     "wins": 7
    },
    {
-    "avgSeed": 4.8,
-    "byePct": 5.8,
+    "avgSeed": 4.6,
+    "byePct": 6.5,
     "division": null,
     "isMine": false,
     "losses": 4,
     "name": "Tinman0506",
-    "playoffPct": 93.8,
+    "playoffPct": 95.5,
     "pointsAgainst": 1256.98,
     "pointsFor": 1247.96,
-    "projWins": 8.5,
+    "projWins": 8.6,
     "seed": 5,
     "ties": 0,
     "wins": 7
    },
    {
-    "avgSeed": 5.2,
+    "avgSeed": 5.4,
     "byePct": 0.0,
     "division": null,
     "isMine": false,
     "losses": 5,
     "name": "Ladd’s McConcubines",
-    "playoffPct": 89.3,
+    "playoffPct": 86.1,
     "pointsAgainst": 1295.42,
     "pointsFor": 1286.88,
-    "projWins": 8.1,
+    "projWins": 8.0,
     "seed": 6,
     "ties": 0,
     "wins": 6
@@ -2561,7 +2383,7 @@
     "isMine": false,
     "losses": 6,
     "name": "Team 12 (no name set)",
-    "playoffPct": 19.8,
+    "playoffPct": 22.5,
     "pointsAgainst": 1363.02,
     "pointsFor": 1335.14,
     "projWins": 6.3,
@@ -2570,13 +2392,13 @@
     "wins": 5
    },
    {
-    "avgSeed": 8.4,
+    "avgSeed": 8.5,
     "byePct": 0.0,
     "division": null,
     "isMine": false,
     "losses": 6,
     "name": "Dak FC",
-    "playoffPct": 3.6,
+    "playoffPct": 2.9,
     "pointsAgainst": 1308.6,
     "pointsFor": 1114.96,
     "projWins": 6.2,
@@ -2585,22 +2407,22 @@
     "wins": 5
    },
    {
-    "avgSeed": 8.4,
+    "avgSeed": 8.5,
     "byePct": 0.0,
     "division": null,
     "isMine": false,
     "losses": 7,
     "name": "When in Rome",
-    "playoffPct": 2.9,
+    "playoffPct": 2.8,
     "pointsAgainst": 1276.64,
     "pointsFor": 1187.7,
-    "projWins": 5.7,
+    "projWins": 5.6,
     "seed": 9,
     "ties": 0,
     "wins": 4
    },
    {
-    "avgSeed": 9.5,
+    "avgSeed": 9.4,
     "byePct": 0.0,
     "division": null,
     "isMine": true,
@@ -2609,7 +2431,7 @@
     "playoffPct": 0.2,
     "pointsAgainst": 1156.2,
     "pointsFor": 1163.04,
-    "projWins": 5.0,
+    "projWins": 5.1,
     "seed": 10,
     "ties": 0,
     "wins": 4
@@ -2624,7 +2446,7 @@
     "playoffPct": 0.0,
     "pointsAgainst": 1294.46,
     "pointsFor": 1084.5,
-    "projWins": 2.7,
+    "projWins": 2.8,
     "seed": 11,
     "ties": 0,
     "wins": 2
@@ -2653,7 +2475,7 @@
  },
  "trade": {
   "file": "trade-chicago-dynasty.json",
-  "ideas": 2
+  "ideas": 4
  },
  "waivers": {
   "byPosition": {
@@ -2666,12 +2488,12 @@
      "floor": 5.6,
      "game": {
       "home": true,
-      "implied": 23.0,
+      "implied": 22.5,
       "kickoff": "2026-11-30T01:20Z",
       "opp": "LV",
-      "oppImplied": 18.5,
+      "oppImplied": 18.0,
       "spread": -4.5,
-      "total": 41.5
+      "total": 40.5
      },
      "games": 10,
      "id": "11261",
@@ -2704,72 +2526,27 @@
      "team": "CLE"
     },
     {
-     "ceiling": 13.8,
+     "ceiling": 14.0,
      "eligible": true,
-     "espn": 10.8,
+     "espn": 10.6,
      "flags": [],
-     "floor": 4.1,
-     "game": {
-      "home": true,
-      "implied": 17.8,
-      "kickoff": "2026-11-27T20:00Z",
-      "opp": "DEN",
-      "oppImplied": 20.8,
-      "spread": 3.0,
-      "total": 38.5
-     },
-     "games": 10,
-     "id": "1945",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Chris Boswell",
-     "newsUpdated": "2026-11-23T20:40:19Z",
-     "points": 9.0,
-     "pos": "K",
-     "ppg": 10.3,
-     "recent": [
-      {
-       "pts": 11.0,
-       "week": 7
-      },
-      {
-       "pts": 9.0,
-       "week": 8
-      },
-      {
-       "pts": 5.0,
-       "week": 10
-      },
-      {
-       "pts": 14.0,
-       "week": 11
-      }
-     ],
-     "rotowire": 7.1,
-     "team": "PIT"
-    },
-    {
-     "ceiling": 13.4,
-     "eligible": true,
-     "espn": 9.4,
-     "flags": [],
-     "floor": 4.1,
+     "floor": 4.7,
      "game": {
       "home": false,
-      "implied": 24.0,
+      "implied": 24.2,
       "kickoff": "2026-11-29T21:25Z",
       "opp": "ARI",
-      "oppImplied": 16.5,
-      "spread": -7.5,
-      "total": 40.5
+      "oppImplied": 17.2,
+      "spread": -7.0,
+      "total": 41.5
      },
      "games": 10,
      "id": "13968",
      "injuryNotes": null,
      "locked": false,
      "name": "Drew Stevens",
-     "newsUpdated": "2026-11-21T11:20:54Z",
-     "points": 8.7,
+     "newsUpdated": "2026-11-25T01:15:04Z",
+     "points": 9.3,
      "pos": "K",
      "ppg": 9.2,
      "recent": [
@@ -2792,31 +2569,76 @@
      ],
      "rotowire": 8.1,
      "team": "WAS"
+    },
+    {
+     "ceiling": 13.7,
+     "eligible": true,
+     "espn": 10.8,
+     "flags": [],
+     "floor": 4.0,
+     "game": {
+      "home": true,
+      "implied": 16.5,
+      "kickoff": "2026-11-27T20:00Z",
+      "opp": "DEN",
+      "oppImplied": 20.0,
+      "spread": 3.5,
+      "total": 36.5
+     },
+     "games": 10,
+     "id": "1945",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Chris Boswell",
+     "newsUpdated": "2026-11-23T20:40:19Z",
+     "points": 8.8,
+     "pos": "K",
+     "ppg": 10.3,
+     "recent": [
+      {
+       "pts": 11.0,
+       "week": 7
+      },
+      {
+       "pts": 9.0,
+       "week": 8
+      },
+      {
+       "pts": 5.0,
+       "week": 10
+      },
+      {
+       "pts": 14.0,
+       "week": 11
+      }
+     ],
+     "rotowire": 6.9,
+     "team": "PIT"
     }
    ],
    "QB": [
     {
-     "ceiling": 23.3,
+     "ceiling": 23.4,
      "eligible": true,
      "espn": 20.5,
      "flags": [],
-     "floor": 13.9,
+     "floor": 14.0,
      "game": {
       "home": true,
-      "implied": 23.0,
+      "implied": 22.5,
       "kickoff": "2026-11-30T01:20Z",
       "opp": "LV",
-      "oppImplied": 18.5,
+      "oppImplied": 18.0,
       "spread": -4.5,
-      "total": 41.5
+      "total": 40.5
      },
      "games": 9,
      "id": "4017",
      "injuryNotes": null,
      "locked": false,
      "name": "Deshaun Watson",
-     "newsUpdated": "2026-11-16T22:35:39Z",
-     "points": 18.6,
+     "newsUpdated": "2026-11-25T04:00:04Z",
+     "points": 18.7,
      "pos": "QB",
      "ppg": 16.0,
      "recent": [
@@ -2837,31 +2659,72 @@
        "week": 10
       }
      ],
-     "rotowire": 16.7,
+     "rotowire": 16.9,
      "team": "CLE"
     },
     {
-     "ceiling": 21.4,
+     "ceiling": 18.3,
+     "eligible": true,
+     "espn": 15.1,
+     "flags": [],
+     "floor": 10.2,
+     "game": {
+      "home": false,
+      "implied": 17.0,
+      "kickoff": "2026-11-29T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 18.5,
+      "spread": 1.5,
+      "total": 35.5
+     },
+     "games": 3,
+     "id": "11292",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Tommy DeVito",
+     "newsUpdated": "2026-11-25T06:00:05Z",
+     "points": 14.3,
+     "pos": "QB",
+     "ppg": 3.5,
+     "recent": [
+      {
+       "pts": 1.4,
+       "week": 3
+      },
+      {
+       "pts": 0.8,
+       "week": 9
+      },
+      {
+       "pts": 8.1,
+       "week": 10
+      }
+     ],
+     "rotowire": 13.4,
+     "team": "NE"
+    },
+    {
+     "ceiling": 21.1,
      "eligible": true,
      "espn": 15.0,
      "flags": [],
-     "floor": 7.9,
+     "floor": 7.5,
      "game": {
       "home": true,
-      "implied": 17.8,
+      "implied": 16.5,
       "kickoff": "2026-11-27T20:00Z",
       "opp": "DEN",
-      "oppImplied": 20.8,
-      "spread": 3.0,
-      "total": 38.5
+      "oppImplied": 20.0,
+      "spread": 3.5,
+      "total": 36.5
      },
      "games": 10,
      "id": "96",
      "injuryNotes": null,
      "locked": false,
      "name": "Aaron Rodgers",
-     "newsUpdated": "2026-11-23T21:25:18Z",
-     "points": 14.6,
+     "newsUpdated": "2026-11-25T04:35:05Z",
+     "points": 14.3,
      "pos": "QB",
      "ppg": 15.6,
      "recent": [
@@ -2882,60 +2745,64 @@
        "week": 11
       }
      ],
-     "rotowire": 14.3,
+     "rotowire": 13.6,
      "team": "PIT"
-    },
-    {
-     "ceiling": 18.2,
-     "eligible": true,
-     "espn": 15.1,
-     "flags": [],
-     "floor": 10.1,
-     "game": {
-      "home": false,
-      "implied": 17.0,
-      "kickoff": "2026-11-29T21:05Z",
-      "opp": "LAC",
-      "oppImplied": 18.5,
-      "spread": 1.5,
-      "total": 35.5
-     },
-     "games": 3,
-     "id": "11292",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Tommy DeVito",
-     "newsUpdated": "2026-11-24T01:55:20Z",
-     "points": 14.1,
-     "pos": "QB",
-     "ppg": 3.5,
-     "recent": [
-      {
-       "pts": 1.4,
-       "week": 3
-      },
-      {
-       "pts": 0.8,
-       "week": 9
-      },
-      {
-       "pts": 8.1,
-       "week": 10
-      }
-     ],
-     "rotowire": 13.2,
-     "team": "NE"
     }
    ],
    "RB": [
     {
-     "ceiling": 9.1,
+     "ceiling": 11.6,
+     "eligible": true,
+     "espn": null,
+     "flags": [],
+     "floor": 3.8,
+     "game": {
+      "home": true,
+      "implied": 17.2,
+      "kickoff": "2026-11-29T21:25Z",
+      "opp": "WAS",
+      "oppImplied": 24.2,
+      "spread": 7.0,
+      "total": 41.5
+     },
+     "games": 7,
+     "id": "8122",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Zonovan Knight",
+     "newsUpdated": "2026-11-23T04:10:11Z",
+     "points": 7.7,
+     "pos": "RB",
+     "ppg": 4.1,
+     "recent": [
+      {
+       "pts": 7.8,
+       "week": 7
+      },
+      {
+       "pts": 0.3,
+       "week": 8
+      },
+      {
+       "pts": 1.9,
+       "week": 10
+      },
+      {
+       "pts": 5.0,
+       "week": 11
+      }
+     ],
+     "rotowire": 7.7,
+     "team": "ARI"
+    },
+    {
+     "ceiling": 8.8,
      "eligible": true,
      "espn": 5.3,
      "flags": [
       "QUESTIONABLE"
      ],
-     "floor": 1.2,
+     "floor": 0.9,
      "game": {
       "home": true,
       "implied": 18.5,
@@ -2951,7 +2818,7 @@
      "locked": false,
      "name": "Keaton Mitchell",
      "newsUpdated": "2026-11-23T11:00:15Z",
-     "points": 5.1,
+     "points": 4.8,
      "pos": "RB",
      "ppg": 4.3,
      "recent": [
@@ -2972,68 +2839,23 @@
        "week": 11
       }
      ],
-     "rotowire": 5.0,
+     "rotowire": 4.4,
      "team": "LAC"
     },
     {
-     "ceiling": 7.3,
-     "eligible": true,
-     "espn": 4.1,
-     "flags": [],
-     "floor": 1.1,
-     "game": {
-      "home": true,
-      "implied": 25.2,
-      "kickoff": "2026-11-27T01:20Z",
-      "opp": "KC",
-      "oppImplied": 22.2,
-      "spread": -3.0,
-      "total": 47.5
-     },
-     "games": 8,
-     "id": "6039",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Ty Johnson",
-     "newsUpdated": "2026-11-24T03:05:20Z",
-     "points": 4.2,
-     "pos": "RB",
-     "ppg": 5.1,
-     "recent": [
-      {
-       "pts": 3.8,
-       "week": 8
-      },
-      {
-       "pts": 4.7,
-       "week": 9
-      },
-      {
-       "pts": 0.9,
-       "week": 10
-      },
-      {
-       "pts": 9.2,
-       "week": 11
-      }
-     ],
-     "rotowire": 4.3,
-     "team": "BUF"
-    },
-    {
-     "ceiling": 5.3,
+     "ceiling": 5.2,
      "eligible": true,
      "espn": 3.8,
      "flags": [],
-     "floor": 2.4,
+     "floor": 2.3,
      "game": {
       "home": false,
-      "implied": 20.5,
+      "implied": 21.0,
       "kickoff": "2026-11-26T01:00Z",
       "opp": "LAR",
-      "oppImplied": 23.0,
+      "oppImplied": 23.5,
       "spread": 2.5,
-      "total": 43.5
+      "total": 44.5
      },
      "games": 5,
      "id": "11370",
@@ -3041,7 +2863,7 @@
      "locked": false,
      "name": "Chris Brooks",
      "newsUpdated": "2026-11-17T04:30:41Z",
-     "points": 3.8,
+     "points": 3.7,
      "pos": "RB",
      "ppg": 2.3,
      "recent": [
@@ -3062,7 +2884,7 @@
        "week": 10
       }
      ],
-     "rotowire": 3.9,
+     "rotowire": 3.7,
      "team": "GB"
     }
    ],
@@ -3075,19 +2897,19 @@
      "floor": 1.3,
      "game": {
       "home": true,
-      "implied": 23.0,
+      "implied": 23.5,
       "kickoff": "2026-11-26T01:00Z",
       "opp": "GB",
-      "oppImplied": 20.5,
+      "oppImplied": 21.0,
       "spread": -2.5,
-      "total": 43.5
+      "total": 44.5
      },
      "games": 9,
      "id": "3271",
      "injuryNotes": null,
      "locked": false,
      "name": "Tyler Higbee",
-     "newsUpdated": "2026-11-23T16:35:16Z",
+     "newsUpdated": "2026-11-25T10:55:06Z",
      "points": 7.8,
      "pos": "TE",
      "ppg": 7.7,
@@ -3165,20 +2987,20 @@
      "floor": 2.3,
      "game": {
       "home": true,
-      "implied": 23.0,
+      "implied": 23.5,
       "kickoff": "2026-11-26T01:00Z",
       "opp": "GB",
-      "oppImplied": 20.5,
+      "oppImplied": 21.0,
       "spread": -2.5,
-      "total": 43.5
+      "total": 44.5
      },
      "games": 7,
      "id": "6865",
      "injuryNotes": null,
      "locked": false,
      "name": "Colby Parkinson",
-     "newsUpdated": "2026-11-17T02:30:40Z",
-     "points": 7.1,
+     "newsUpdated": "2026-11-25T11:00:06Z",
+     "points": 7.0,
      "pos": "TE",
      "ppg": 5.5,
      "recent": [
@@ -3199,7 +3021,7 @@
        "week": 10
       }
      ],
-     "rotowire": 7.2,
+     "rotowire": 7.1,
      "team": "LAR"
     }
    ],
@@ -3212,19 +3034,19 @@
      "floor": 3.8,
      "game": {
       "home": true,
-      "implied": 24.8,
+      "implied": 24.2,
       "kickoff": "2026-11-29T18:00Z",
       "opp": "ATL",
-      "oppImplied": 17.8,
+      "oppImplied": 17.2,
       "spread": -7.0,
-      "total": 42.5
+      "total": 41.5
      },
      "games": 4,
      "id": "12496",
      "injuryNotes": null,
      "locked": false,
      "name": "Tai Felton",
-     "newsUpdated": "2026-11-23T14:15:17Z",
+     "newsUpdated": "2026-11-24T17:15:47Z",
      "points": 6.0,
      "pos": "WR",
      "ppg": 4.4,
@@ -3250,19 +3072,64 @@
      "team": "MIN"
     },
     {
+     "ceiling": 9.2,
+     "eligible": true,
+     "espn": 6.5,
+     "flags": [],
+     "floor": 2.8,
+     "game": {
+      "home": false,
+      "implied": 24.2,
+      "kickoff": "2026-11-29T21:25Z",
+      "opp": "ARI",
+      "oppImplied": 17.2,
+      "spread": -7.0,
+      "total": 41.5
+     },
+     "games": 7,
+     "id": "8135",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Treylon Burks",
+     "newsUpdated": "2026-11-25T00:30:04Z",
+     "points": 6.0,
+     "pos": "WR",
+     "ppg": 7.0,
+     "recent": [
+      {
+       "pts": 8.6,
+       "week": 6
+      },
+      {
+       "pts": 9.6,
+       "week": 8
+      },
+      {
+       "pts": 3.7,
+       "week": 10
+      },
+      {
+       "pts": 4.0,
+       "week": 11
+      }
+     ],
+     "rotowire": 5.5,
+     "team": "WAS"
+    },
+    {
      "ceiling": 11.2,
      "eligible": true,
      "espn": 6.3,
      "flags": [],
-     "floor": 0.7,
+     "floor": 0.6,
      "game": {
       "home": false,
-      "implied": 17.8,
+      "implied": 17.2,
       "kickoff": "2026-11-29T18:00Z",
       "opp": "MIN",
-      "oppImplied": 24.8,
+      "oppImplied": 24.2,
       "spread": 7.0,
-      "total": 42.5
+      "total": 41.5
      },
      "games": 10,
      "id": "8119",
@@ -3291,53 +3158,8 @@
        "week": 10
       }
      ],
-     "rotowire": 5.6,
+     "rotowire": 5.5,
      "team": "ATL"
-    },
-    {
-     "ceiling": 8.1,
-     "eligible": true,
-     "espn": 6.8,
-     "flags": [],
-     "floor": 2.8,
-     "game": {
-      "home": true,
-      "implied": 16.5,
-      "kickoff": "2026-11-29T21:25Z",
-      "opp": "WAS",
-      "oppImplied": 24.0,
-      "spread": 7.5,
-      "total": 40.5
-     },
-     "games": 5,
-     "id": "7812",
-     "injuryNotes": null,
-     "locked": false,
-     "name": "Simi Fehoko",
-     "newsUpdated": "2026-11-24T02:15:21Z",
-     "points": 5.4,
-     "pos": "WR",
-     "ppg": 2.8,
-     "recent": [
-      {
-       "pts": 1.0,
-       "week": 5
-      },
-      {
-       "pts": 2.2,
-       "week": 8
-      },
-      {
-       "pts": 2.6,
-       "week": 10
-      },
-      {
-       "pts": 7.4,
-       "week": 11
-      }
-     ],
-     "rotowire": 4.1,
-     "team": "ARI"
     }
    ]
   },
@@ -3365,7 +3187,7 @@
      "name": "When in Rome"
     },
     {
-     "left": 88,
+     "left": 83,
      "name": "Ladd’s McConcubines"
     },
     {
@@ -3393,12 +3215,12 @@
      "name": "Brandon Aubrey Supremacy"
     },
     {
-     "left": 4,
+     "left": 1,
      "name": "Team 5 (no name set)"
     }
    ]
   },
-  "freeAgents": 270,
+  "freeAgents": 264,
   "longTerm": {
    "playoffWeeks": [
     15,
@@ -3407,30 +3229,30 @@
    ],
    "targets": [
     {
-     "bid": 28,
-     "gain": 9.0,
+     "bid": 30,
+     "gain": 9.9,
      "player": {
-      "ceiling": 23.3,
+      "ceiling": 23.4,
       "eligible": true,
       "espn": 20.5,
       "flags": [],
-      "floor": 13.9,
+      "floor": 14.0,
       "game": {
        "home": true,
-       "implied": 23.0,
+       "implied": 22.5,
        "kickoff": "2026-11-30T01:20Z",
        "opp": "LV",
-       "oppImplied": 18.5,
+       "oppImplied": 18.0,
        "spread": -4.5,
-       "total": 41.5
+       "total": 40.5
       },
       "games": 9,
       "id": "4017",
       "injuryNotes": null,
       "locked": false,
       "name": "Deshaun Watson",
-      "newsUpdated": "2026-11-16T22:35:39Z",
-      "points": 18.6,
+      "newsUpdated": "2026-11-25T04:00:04Z",
+      "points": 18.7,
       "pos": "QB",
       "ppg": 16.0,
       "recent": [
@@ -3451,29 +3273,29 @@
         "week": 10
        }
       ],
-      "rotowire": 16.7,
+      "rotowire": 16.9,
       "team": "CLE"
      },
-     "rate": 18.6,
+     "rate": 18.7,
      "rateFrom": "projection",
-     "rosGain": 15.5,
+     "rosGain": 17.0,
      "weeks": [
       {
-       "gain": 3.0,
+       "gain": 3.3,
        "home": false,
        "opp": "NYG",
        "rank": 7,
        "week": 15
       },
       {
-       "gain": 3.0,
+       "gain": 3.3,
        "home": false,
        "opp": "BAL",
        "rank": 15,
        "week": 16
       },
       {
-       "gain": 3.0,
+       "gain": 3.3,
        "home": true,
        "opp": "IND",
        "rank": 14,
@@ -3482,8 +3304,8 @@
      ]
     },
     {
-     "bid": 15,
-     "gain": 3.9,
+     "bid": 13,
+     "gain": 3.3,
      "player": {
       "ceiling": 14.4,
       "eligible": true,
@@ -3492,19 +3314,19 @@
       "floor": 1.3,
       "game": {
        "home": true,
-       "implied": 23.0,
+       "implied": 23.5,
        "kickoff": "2026-11-26T01:00Z",
        "opp": "GB",
-       "oppImplied": 20.5,
+       "oppImplied": 21.0,
        "spread": -2.5,
-       "total": 43.5
+       "total": 44.5
       },
       "games": 9,
       "id": "3271",
       "injuryNotes": null,
       "locked": false,
       "name": "Tyler Higbee",
-      "newsUpdated": "2026-11-23T16:35:16Z",
+      "newsUpdated": "2026-11-25T10:55:06Z",
       "points": 7.8,
       "pos": "TE",
       "ppg": 7.7,
@@ -3531,24 +3353,24 @@
      },
      "rate": 7.8,
      "rateFrom": "projection",
-     "rosGain": 7.2,
+     "rosGain": 6.2,
      "weeks": [
       {
-       "gain": 1.3,
+       "gain": 1.1,
        "home": true,
        "opp": "DAL",
        "rank": 20,
        "week": 15
       },
       {
-       "gain": 1.3,
+       "gain": 1.1,
        "home": false,
        "opp": "SEA",
        "rank": 24,
        "week": 16
       },
       {
-       "gain": 1.3,
+       "gain": 1.1,
        "home": false,
        "opp": "TB",
        "rank": 10,
@@ -3557,8 +3379,83 @@
      ]
     },
     {
-     "bid": 9,
-     "gain": 2.1,
+     "bid": 10,
+     "gain": 3.0,
+     "player": {
+      "ceiling": 11.6,
+      "eligible": true,
+      "espn": null,
+      "flags": [],
+      "floor": 3.8,
+      "game": {
+       "home": true,
+       "implied": 17.2,
+       "kickoff": "2026-11-29T21:25Z",
+       "opp": "WAS",
+       "oppImplied": 24.2,
+       "spread": 7.0,
+       "total": 41.5
+      },
+      "games": 7,
+      "id": "8122",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Zonovan Knight",
+      "newsUpdated": "2026-11-23T04:10:11Z",
+      "points": 7.7,
+      "pos": "RB",
+      "ppg": 4.1,
+      "recent": [
+       {
+        "pts": 7.8,
+        "week": 7
+       },
+       {
+        "pts": 0.3,
+        "week": 8
+       },
+       {
+        "pts": 1.9,
+        "week": 10
+       },
+       {
+        "pts": 5.0,
+        "week": 11
+       }
+      ],
+      "rotowire": 7.7,
+      "team": "ARI"
+     },
+     "rate": 7.7,
+     "rateFrom": "projection",
+     "rosGain": 4.7,
+     "weeks": [
+      {
+       "gain": 1.0,
+       "home": true,
+       "opp": "NYJ",
+       "rank": 8,
+       "week": 15
+      },
+      {
+       "gain": 1.0,
+       "home": false,
+       "opp": "NO",
+       "rank": 3,
+       "week": 16
+      },
+      {
+       "gain": 1.0,
+       "home": true,
+       "opp": "LV",
+       "rank": 4,
+       "week": 17
+      }
+     ]
+    },
+    {
+     "bid": 7,
+     "gain": 1.5,
      "player": {
       "ceiling": 11.2,
       "eligible": true,
@@ -3606,24 +3503,24 @@
      },
      "rate": 7.2,
      "rateFrom": "projection",
-     "rosGain": 4.2,
+     "rosGain": 3.2,
      "weeks": [
       {
-       "gain": 0.7,
+       "gain": 0.5,
        "home": false,
        "opp": "GB",
        "rank": 30,
        "week": 15
       },
       {
-       "gain": 0.7,
+       "gain": 0.5,
        "home": true,
        "opp": "LAC",
        "rank": 23,
        "week": 16
       },
       {
-       "gain": 0.7,
+       "gain": 0.5,
        "home": true,
        "opp": "BUF",
        "rank": 19,
@@ -3647,7 +3544,7 @@
      "player": {
       "ceiling": 9.6,
       "eligible": true,
-      "espn": 8.1,
+      "espn": 8.2,
       "flags": [],
       "floor": 5.0,
       "game": {
@@ -3709,19 +3606,19 @@
      "bid": 20,
      "gain": 10.3,
      "player": {
-      "ceiling": 13.8,
+      "ceiling": 13.7,
       "eligible": true,
       "espn": 10.8,
       "flags": [],
-      "floor": 4.1,
+      "floor": 4.0,
       "game": {
        "home": true,
-       "implied": 17.8,
+       "implied": 16.5,
        "kickoff": "2026-11-27T20:00Z",
        "opp": "DEN",
-       "oppImplied": 20.8,
-       "spread": 3.0,
-       "total": 38.5
+       "oppImplied": 20.0,
+       "spread": 3.5,
+       "total": 36.5
       },
       "games": 10,
       "id": "1945",
@@ -3729,7 +3626,7 @@
       "locked": false,
       "name": "Chris Boswell",
       "newsUpdated": "2026-11-23T20:40:19Z",
-      "points": 9.0,
+      "points": 8.8,
       "pos": "K",
       "ppg": 10.3,
       "recent": [
@@ -3750,7 +3647,7 @@
         "week": 11
        }
       ],
-      "rotowire": 7.1,
+      "rotowire": 6.9,
       "team": "PIT"
      },
      "rate": 10.3,
@@ -3774,30 +3671,30 @@
      ]
     },
     {
-     "bid": 28,
-     "gain": 6.5,
+     "bid": 30,
+     "gain": 7.1,
      "player": {
-      "ceiling": 23.3,
+      "ceiling": 23.4,
       "eligible": true,
       "espn": 20.5,
       "flags": [],
-      "floor": 13.9,
+      "floor": 14.0,
       "game": {
        "home": true,
-       "implied": 23.0,
+       "implied": 22.5,
        "kickoff": "2026-11-30T01:20Z",
        "opp": "LV",
-       "oppImplied": 18.5,
+       "oppImplied": 18.0,
        "spread": -4.5,
-       "total": 41.5
+       "total": 40.5
       },
       "games": 9,
       "id": "4017",
       "injuryNotes": null,
       "locked": false,
       "name": "Deshaun Watson",
-      "newsUpdated": "2026-11-16T22:35:39Z",
-      "points": 18.6,
+      "newsUpdated": "2026-11-25T04:00:04Z",
+      "points": 18.7,
       "pos": "QB",
       "ppg": 16.0,
       "recent": [
@@ -3818,22 +3715,22 @@
         "week": 10
        }
       ],
-      "rotowire": 16.7,
+      "rotowire": 16.9,
       "team": "CLE"
      },
-     "rate": 18.6,
+     "rate": 18.7,
      "rateFrom": "projection",
-     "rosGain": 15.5,
+     "rosGain": 17.0,
      "weeks": [
       {
-       "gain": 3.5,
+       "gain": 3.8,
        "home": true,
        "opp": "CIN",
        "rank": 16,
        "week": 13
       },
       {
-       "gain": 3.0,
+       "gain": 3.3,
        "home": true,
        "opp": "ATL",
        "rank": 8,
@@ -3842,8 +3739,8 @@
      ]
     },
     {
-     "bid": 15,
-     "gain": 3.3,
+     "bid": 13,
+     "gain": 2.9,
      "player": {
       "ceiling": 14.4,
       "eligible": true,
@@ -3852,19 +3749,19 @@
       "floor": 1.3,
       "game": {
        "home": true,
-       "implied": 23.0,
+       "implied": 23.5,
        "kickoff": "2026-11-26T01:00Z",
        "opp": "GB",
-       "oppImplied": 20.5,
+       "oppImplied": 21.0,
        "spread": -2.5,
-       "total": 43.5
+       "total": 44.5
       },
       "games": 9,
       "id": "3271",
       "injuryNotes": null,
       "locked": false,
       "name": "Tyler Higbee",
-      "newsUpdated": "2026-11-23T16:35:16Z",
+      "newsUpdated": "2026-11-25T10:55:06Z",
       "points": 7.8,
       "pos": "TE",
       "ppg": 7.7,
@@ -3891,17 +3788,17 @@
      },
      "rate": 7.8,
      "rateFrom": "projection",
-     "rosGain": 7.2,
+     "rosGain": 6.2,
      "weeks": [
       {
-       "gain": 2.0,
+       "gain": 1.8,
        "home": true,
        "opp": "KC",
        "rank": 6,
        "week": 13
       },
       {
-       "gain": 1.3,
+       "gain": 1.1,
        "home": false,
        "opp": "SF",
        "rank": 17,
@@ -3910,8 +3807,76 @@
      ]
     },
     {
-     "bid": 9,
-     "gain": 2.1,
+     "bid": 10,
+     "gain": 1.7,
+     "player": {
+      "ceiling": 11.6,
+      "eligible": true,
+      "espn": null,
+      "flags": [],
+      "floor": 3.8,
+      "game": {
+       "home": true,
+       "implied": 17.2,
+       "kickoff": "2026-11-29T21:25Z",
+       "opp": "WAS",
+       "oppImplied": 24.2,
+       "spread": 7.0,
+       "total": 41.5
+      },
+      "games": 7,
+      "id": "8122",
+      "injuryNotes": null,
+      "locked": false,
+      "name": "Zonovan Knight",
+      "newsUpdated": "2026-11-23T04:10:11Z",
+      "points": 7.7,
+      "pos": "RB",
+      "ppg": 4.1,
+      "recent": [
+       {
+        "pts": 7.8,
+        "week": 7
+       },
+       {
+        "pts": 0.3,
+        "week": 8
+       },
+       {
+        "pts": 1.9,
+        "week": 10
+       },
+       {
+        "pts": 5.0,
+        "week": 11
+       }
+      ],
+      "rotowire": 7.7,
+      "team": "ARI"
+     },
+     "rate": 7.7,
+     "rateFrom": "projection",
+     "rosGain": 4.7,
+     "weeks": [
+      {
+       "gain": 1.7,
+       "home": true,
+       "opp": "PHI",
+       "rank": 24,
+       "week": 13
+      },
+      {
+       "gain": 0.0,
+       "home": null,
+       "opp": null,
+       "rank": null,
+       "week": 14
+      }
+     ]
+    },
+    {
+     "bid": 7,
+     "gain": 1.7,
      "player": {
       "ceiling": 11.2,
       "eligible": true,
@@ -3959,17 +3924,17 @@
      },
      "rate": 7.2,
      "rateFrom": "projection",
-     "rosGain": 4.2,
+     "rosGain": 3.2,
      "weeks": [
       {
-       "gain": 1.4,
+       "gain": 1.2,
        "home": false,
        "opp": "DEN",
        "rank": 3,
        "week": 13
       },
       {
-       "gain": 0.7,
+       "gain": 0.5,
        "home": true,
        "opp": "CHI",
        "rank": 25,
@@ -3979,136 +3944,70 @@
     },
     {
      "bid": 1,
-     "gain": 0.2,
+     "gain": 0.4,
      "player": {
-      "ceiling": 8.2,
-      "eligible": true,
-      "espn": 6.1,
-      "flags": [],
-      "floor": 3.8,
-      "game": {
-       "home": true,
-       "implied": 24.8,
-       "kickoff": "2026-11-29T18:00Z",
-       "opp": "ATL",
-       "oppImplied": 17.8,
-       "spread": -7.0,
-       "total": 42.5
-      },
-      "games": 4,
-      "id": "12496",
-      "injuryNotes": null,
-      "locked": false,
-      "name": "Tai Felton",
-      "newsUpdated": "2026-11-23T14:15:17Z",
-      "points": 6.0,
-      "pos": "WR",
-      "ppg": 4.4,
-      "recent": [
-       {
-        "pts": 1.9,
-        "week": 4
-       },
-       {
-        "pts": 3.7,
-        "week": 5
-       },
-       {
-        "pts": 4.8,
-        "week": 10
-       },
-       {
-        "pts": 7.2,
-        "week": 11
-       }
+      "ceiling": 7.5,
+      "eligible": false,
+      "espn": 3.0,
+      "flags": [
+       "OUT"
       ],
-      "rotowire": 5.9,
-      "team": "MIN"
-     },
-     "rate": 6.0,
-     "rateFrom": "projection",
-     "rosGain": 0.2,
-     "weeks": [
-      {
-       "gain": 0.2,
-       "home": true,
-       "opp": "CAR",
-       "rank": 19,
-       "week": 13
-      },
-      {
-       "gain": 0.0,
-       "home": false,
-       "opp": "NE",
-       "rank": 2,
-       "week": 14
-      }
-     ]
-    },
-    {
-     "bid": 1,
-     "gain": 0.1,
-     "player": {
-      "ceiling": 11.2,
-      "eligible": true,
-      "espn": 6.3,
-      "flags": [],
-      "floor": 0.7,
+      "floor": 0.0,
       "game": {
        "home": false,
-       "implied": 17.8,
-       "kickoff": "2026-11-29T18:00Z",
-       "opp": "MIN",
-       "oppImplied": 24.8,
-       "spread": 7.0,
-       "total": 42.5
+       "implied": 20.0,
+       "kickoff": "2026-11-27T20:00Z",
+       "opp": "PIT",
+       "oppImplied": 16.5,
+       "spread": -3.5,
+       "total": 36.5
       },
-      "games": 10,
-      "id": "8119",
+      "games": 9,
+      "id": "6806",
       "injuryNotes": null,
       "locked": false,
-      "name": "Jahan Dotson",
-      "newsUpdated": "2026-11-17T05:10:41Z",
-      "points": 5.9,
-      "pos": "WR",
-      "ppg": 6.3,
+      "name": "J.K. Dobbins",
+      "newsUpdated": "2026-11-25T03:55:05Z",
+      "points": 3.0,
+      "pos": "RB",
+      "ppg": 6.4,
       "recent": [
        {
-        "pts": 1.1,
+        "pts": 12.1,
+        "week": 6
+       },
+       {
+        "pts": 8.3,
         "week": 7
        },
        {
-        "pts": 10.5,
+        "pts": 1.3,
         "week": 8
        },
        {
-        "pts": 2.6,
+        "pts": 2.7,
         "week": 9
-       },
-       {
-        "pts": 7.8,
-        "week": 10
        }
       ],
-      "rotowire": 5.6,
-      "team": "ATL"
+      "rotowire": null,
+      "team": "DEN"
      },
-     "rate": 5.9,
-     "rateFrom": "projection",
-     "rosGain": 0.1,
+     "rate": 6.4,
+     "rateFrom": "season",
+     "rosGain": 0.4,
      "weeks": [
       {
-       "gain": 0.1,
+       "gain": 0.4,
        "home": true,
-       "opp": "DET",
-       "rank": 12,
+       "opp": "MIA",
+       "rank": 7,
        "week": 13
       },
       {
        "gain": 0.0,
        "home": false,
-       "opp": "CLE",
-       "rank": 21,
+       "opp": "NYJ",
+       "rank": 8,
        "week": 14
       }
      ]
@@ -4122,30 +4021,30 @@
   },
   "targets": [
    {
-    "bid": 28,
-    "gain": 3.0,
+    "bid": 30,
+    "gain": 3.3,
     "player": {
-     "ceiling": 23.3,
+     "ceiling": 23.4,
      "eligible": true,
      "espn": 20.5,
      "flags": [],
-     "floor": 13.9,
+     "floor": 14.0,
      "game": {
       "home": true,
-      "implied": 23.0,
+      "implied": 22.5,
       "kickoff": "2026-11-30T01:20Z",
       "opp": "LV",
-      "oppImplied": 18.5,
+      "oppImplied": 18.0,
       "spread": -4.5,
-      "total": 41.5
+      "total": 40.5
      },
      "games": 9,
      "id": "4017",
      "injuryNotes": null,
      "locked": false,
      "name": "Deshaun Watson",
-     "newsUpdated": "2026-11-16T22:35:39Z",
-     "points": 18.6,
+     "newsUpdated": "2026-11-25T04:00:04Z",
+     "points": 18.7,
      "pos": "QB",
      "ppg": 16.0,
      "recent": [
@@ -4166,31 +4065,31 @@
        "week": 10
       }
      ],
-     "rotowire": 16.7,
+     "rotowire": 16.9,
      "team": "CLE"
     },
     "replaces": {
-     "ceiling": 27.0,
+     "ceiling": 26.8,
      "eligible": true,
      "espn": 16.9,
      "flags": [],
-     "floor": 4.3,
+     "floor": 4.1,
      "game": {
       "home": false,
-      "implied": 18.5,
+      "implied": 18.0,
       "kickoff": "2026-11-30T01:20Z",
       "opp": "CLE",
-      "oppImplied": 23.0,
+      "oppImplied": 22.5,
       "spread": 4.5,
-      "total": 41.5
+      "total": 40.5
      },
      "games": 3,
      "id": "13269",
      "injuryNotes": null,
      "locked": false,
      "name": "Fernando Mendoza",
-     "newsUpdated": "2026-11-24T02:30:22Z",
-     "points": 15.6,
+     "newsUpdated": "2026-11-25T02:35:03Z",
+     "points": 15.4,
      "pos": "QB",
      "ppg": 13.7,
      "recent": [
@@ -4207,15 +4106,15 @@
        "week": 11
       }
      ],
-     "rotowire": 14.4,
+     "rotowire": 14.0,
      "team": "LV"
     },
-    "rosGain": 15.5,
+    "rosGain": 17.0,
     "slot": "QB"
    },
    {
-    "bid": 15,
-    "gain": 1.3,
+    "bid": 13,
+    "gain": 1.1,
     "player": {
      "ceiling": 14.4,
      "eligible": true,
@@ -4224,19 +4123,19 @@
      "floor": 1.3,
      "game": {
       "home": true,
-      "implied": 23.0,
+      "implied": 23.5,
       "kickoff": "2026-11-26T01:00Z",
       "opp": "GB",
-      "oppImplied": 20.5,
+      "oppImplied": 21.0,
       "spread": -2.5,
-      "total": 43.5
+      "total": 44.5
      },
      "games": 9,
      "id": "3271",
      "injuryNotes": null,
      "locked": false,
      "name": "Tyler Higbee",
-     "newsUpdated": "2026-11-23T16:35:16Z",
+     "newsUpdated": "2026-11-25T10:55:06Z",
      "points": 7.8,
      "pos": "TE",
      "ppg": 7.7,
@@ -4262,56 +4161,152 @@
      "team": "LAR"
     },
     "replaces": {
-     "ceiling": 10.3,
+     "ceiling": 10.0,
      "eligible": true,
-     "espn": 7.0,
+     "espn": 6.8,
      "flags": [],
-     "floor": 2.7,
+     "floor": 3.5,
      "game": {
       "home": false,
-      "implied": 21.8,
-      "kickoff": "2026-11-29T21:25Z",
-      "opp": "SF",
-      "oppImplied": 24.8,
-      "spread": 3.0,
-      "total": 46.5
+      "implied": 17.0,
+      "kickoff": "2026-11-29T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 18.5,
+      "spread": 1.5,
+      "total": 35.5
      },
      "games": 6,
-     "id": "13286",
+     "id": "4177",
      "injuryNotes": null,
      "locked": false,
-     "name": "Jadarian Price",
-     "newsUpdated": "2026-11-16T07:35:35Z",
-     "points": 6.5,
-     "pos": "RB",
-     "ppg": 6.2,
+     "name": "Mack Hollins",
+     "newsUpdated": "2026-11-16T02:40:33Z",
+     "points": 6.7,
+     "pos": "WR",
+     "ppg": 7.8,
      "recent": [
       {
-       "pts": 0.7,
+       "pts": 11.7,
        "week": 3
       },
       {
-       "pts": 4.7,
-       "week": 8
+       "pts": 6.8,
+       "week": 4
       },
       {
-       "pts": 9.8,
+       "pts": 11.1,
        "week": 9
       },
       {
-       "pts": 10.9,
+       "pts": 7.3,
        "week": 10
       }
      ],
-     "rotowire": 6.1,
-     "team": "SEA"
+     "rotowire": 6.7,
+     "team": "NE"
     },
-    "rosGain": 7.2,
+    "rosGain": 6.2,
     "slot": "FLEX"
    },
    {
-    "bid": 9,
-    "gain": 0.7,
+    "bid": 10,
+    "gain": 1.0,
+    "player": {
+     "ceiling": 11.6,
+     "eligible": true,
+     "espn": null,
+     "flags": [],
+     "floor": 3.8,
+     "game": {
+      "home": true,
+      "implied": 17.2,
+      "kickoff": "2026-11-29T21:25Z",
+      "opp": "WAS",
+      "oppImplied": 24.2,
+      "spread": 7.0,
+      "total": 41.5
+     },
+     "games": 7,
+     "id": "8122",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Zonovan Knight",
+     "newsUpdated": "2026-11-23T04:10:11Z",
+     "points": 7.7,
+     "pos": "RB",
+     "ppg": 4.1,
+     "recent": [
+      {
+       "pts": 7.8,
+       "week": 7
+      },
+      {
+       "pts": 0.3,
+       "week": 8
+      },
+      {
+       "pts": 1.9,
+       "week": 10
+      },
+      {
+       "pts": 5.0,
+       "week": 11
+      }
+     ],
+     "rotowire": 7.7,
+     "team": "ARI"
+    },
+    "replaces": {
+     "ceiling": 10.0,
+     "eligible": true,
+     "espn": 6.8,
+     "flags": [],
+     "floor": 3.5,
+     "game": {
+      "home": false,
+      "implied": 17.0,
+      "kickoff": "2026-11-29T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 18.5,
+      "spread": 1.5,
+      "total": 35.5
+     },
+     "games": 6,
+     "id": "4177",
+     "injuryNotes": null,
+     "locked": false,
+     "name": "Mack Hollins",
+     "newsUpdated": "2026-11-16T02:40:33Z",
+     "points": 6.7,
+     "pos": "WR",
+     "ppg": 7.8,
+     "recent": [
+      {
+       "pts": 11.7,
+       "week": 3
+      },
+      {
+       "pts": 6.8,
+       "week": 4
+      },
+      {
+       "pts": 11.1,
+       "week": 9
+      },
+      {
+       "pts": 7.3,
+       "week": 10
+      }
+     ],
+     "rotowire": 6.7,
+     "team": "NE"
+    },
+    "rosGain": 4.7,
+    "slot": "FLEX"
+   },
+   {
+    "bid": 7,
+    "gain": 0.5,
     "player": {
      "ceiling": 11.2,
      "eligible": true,
@@ -4358,51 +4353,51 @@
      "team": "MIA"
     },
     "replaces": {
-     "ceiling": 10.3,
+     "ceiling": 10.0,
      "eligible": true,
-     "espn": 7.0,
+     "espn": 6.8,
      "flags": [],
-     "floor": 2.7,
+     "floor": 3.5,
      "game": {
       "home": false,
-      "implied": 21.8,
-      "kickoff": "2026-11-29T21:25Z",
-      "opp": "SF",
-      "oppImplied": 24.8,
-      "spread": 3.0,
-      "total": 46.5
+      "implied": 17.0,
+      "kickoff": "2026-11-29T21:05Z",
+      "opp": "LAC",
+      "oppImplied": 18.5,
+      "spread": 1.5,
+      "total": 35.5
      },
      "games": 6,
-     "id": "13286",
+     "id": "4177",
      "injuryNotes": null,
      "locked": false,
-     "name": "Jadarian Price",
-     "newsUpdated": "2026-11-16T07:35:35Z",
-     "points": 6.5,
-     "pos": "RB",
-     "ppg": 6.2,
+     "name": "Mack Hollins",
+     "newsUpdated": "2026-11-16T02:40:33Z",
+     "points": 6.7,
+     "pos": "WR",
+     "ppg": 7.8,
      "recent": [
       {
-       "pts": 0.7,
+       "pts": 11.7,
        "week": 3
       },
       {
-       "pts": 4.7,
-       "week": 8
+       "pts": 6.8,
+       "week": 4
       },
       {
-       "pts": 9.8,
+       "pts": 11.1,
        "week": 9
       },
       {
-       "pts": 10.9,
+       "pts": 7.3,
        "week": 10
       }
      ],
-     "rotowire": 6.1,
-     "team": "SEA"
+     "rotowire": 6.7,
+     "team": "NE"
     },
-    "rosGain": 4.2,
+    "rosGain": 3.2,
     "slot": "FLEX"
    }
   ]

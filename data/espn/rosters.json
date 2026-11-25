@@ -893,7 +893,7 @@
    "wins": 5
   }
  ],
- "syncedAt": "2026-11-24T08:09:00.000Z",
+ "syncedAt": "2026-11-25T12:32:27.000Z",
  "teams": [
   {
    "name": "Exempt List",
@@ -952,7 +952,7 @@
      "name": "Ollie Gordon II",
      "pos": "RB",
      "proTeamId": 15,
-     "slot": "RB"
+     "slot": "FLEX"
     },
     {
      "espnId": 14880,
@@ -976,7 +976,7 @@
      "name": "Cam Skattebo",
      "pos": "RB",
      "proTeamId": 19,
-     "slot": "FLEX"
+     "slot": "RB"
     },
     {
      "espnId": 4426385,
@@ -995,14 +995,6 @@
      "slot": "WR"
     },
     {
-     "espnId": 4688380,
-     "injuryStatus": "NORMAL",
-     "name": "Cam Ward",
-     "pos": "QB",
-     "proTeamId": 10,
-     "slot": "BN"
-    },
-    {
      "espnId": 3117256,
      "injuryStatus": "NORMAL",
      "name": "Dalton Schultz",
@@ -1016,6 +1008,14 @@
      "name": "Dawson Knox",
      "pos": "TE",
      "proTeamId": 2,
+     "slot": "BN"
+    },
+    {
+     "espnId": 5081397,
+     "injuryStatus": "NORMAL",
+     "name": "Dylan Sampson",
+     "pos": "RB",
+     "proTeamId": 5,
      "slot": "BN"
     }
    ],
@@ -1258,7 +1258,7 @@
      "name": "Kenneth Walker III",
      "pos": "RB",
      "proTeamId": 12,
-     "slot": "IR"
+     "slot": "RB"
     },
     {
      "espnId": 4685702,
@@ -1266,7 +1266,7 @@
      "name": "Quinshon Judkins",
      "pos": "RB",
      "proTeamId": 5,
-     "slot": "BN"
+     "slot": "FLEX"
     },
     {
      "espnId": 4239993,
@@ -1282,7 +1282,7 @@
      "name": "Tucker Kraft",
      "pos": "TE",
      "proTeamId": 9,
-     "slot": "BN"
+     "slot": "TE"
     },
     {
      "espnId": 3139477,
@@ -1306,15 +1306,7 @@
      "name": "Jonah Coleman",
      "pos": "RB",
      "proTeamId": 7,
-     "slot": "RB"
-    },
-    {
-     "espnId": 4431492,
-     "injuryStatus": "NORMAL",
-     "name": "Roman Wilson",
-     "pos": "WR",
-     "proTeamId": 23,
-     "slot": "FLEX"
+     "slot": "BN"
     },
     {
      "espnId": 4427095,
@@ -1330,7 +1322,7 @@
      "name": "KC Concepcion",
      "pos": "WR",
      "proTeamId": 5,
-     "slot": "BN"
+     "slot": "FLEX"
     },
     {
      "espnId": -16030,
@@ -1346,7 +1338,7 @@
      "name": "Darren Waller",
      "pos": "TE",
      "proTeamId": 29,
-     "slot": "TE"
+     "slot": "BN"
     },
     {
      "espnId": 4600981,
@@ -1354,7 +1346,7 @@
      "name": "Pat Bryant",
      "pos": "WR",
      "proTeamId": 7,
-     "slot": "FLEX"
+     "slot": "BN"
     }
    ],
    "teamId": 4
@@ -1465,22 +1457,6 @@
      "pos": "RB",
      "proTeamId": 12,
      "slot": "BN"
-    },
-    {
-     "espnId": 4431431,
-     "injuryStatus": "NORMAL",
-     "name": "Corey Kiner",
-     "pos": "RB",
-     "proTeamId": 17,
-     "slot": "BN"
-    },
-    {
-     "espnId": 4883647,
-     "injuryStatus": "NORMAL",
-     "name": "Elic Ayomanor",
-     "pos": "WR",
-     "proTeamId": 10,
-     "slot": "BN"
     }
    ],
    "teamId": 5
@@ -1494,7 +1470,7 @@
      "name": "Ja'Marr Chase",
      "pos": "WR",
      "proTeamId": 4,
-     "slot": "WR"
+     "slot": "FLEX"
     },
     {
      "espnId": 4426354,
@@ -1518,7 +1494,7 @@
      "name": "Rome Odunze",
      "pos": "WR",
      "proTeamId": 3,
-     "slot": "BN"
+     "slot": "WR"
     },
     {
      "espnId": 4596448,
@@ -1558,7 +1534,7 @@
      "name": "Jordyn Tyson",
      "pos": "WR",
      "proTeamId": 18,
-     "slot": "FLEX"
+     "slot": "BN"
     },
     {
      "espnId": 4685720,
@@ -1593,11 +1569,11 @@
      "slot": "D/ST"
     },
     {
-     "espnId": 4373626,
+     "espnId": 4603186,
      "injuryStatus": "NORMAL",
-     "name": "Tyler Allgeier",
-     "pos": "RB",
-     "proTeamId": 22,
+     "name": "Jack Bech",
+     "pos": "WR",
+     "proTeamId": 13,
      "slot": "BN"
     }
    ],
@@ -1966,7 +1942,7 @@
      "name": "Drake London",
      "pos": "WR",
      "proTeamId": 1,
-     "slot": "BN"
+     "slot": "WR"
     },
     {
      "espnId": 4723086,
@@ -1998,7 +1974,7 @@
      "name": "Khalil Shakir",
      "pos": "WR",
      "proTeamId": 2,
-     "slot": "WR"
+     "slot": "FLEX"
     },
     {
      "espnId": 3929645,
@@ -2014,7 +1990,7 @@
      "name": "J.K. Dobbins",
      "pos": "RB",
      "proTeamId": 7,
-     "slot": "FLEX"
+     "slot": "IR"
     },
     {
      "espnId": 4038815,
@@ -2046,7 +2022,7 @@
      "name": "Jordan Love",
      "pos": "QB",
      "proTeamId": 9,
-     "slot": "BN"
+     "slot": "QB"
     },
     {
      "espnId": 8439,
@@ -2054,7 +2030,7 @@
      "name": "Aaron Rodgers",
      "pos": "QB",
      "proTeamId": 23,
-     "slot": "QB"
+     "slot": "BN"
     },
     {
      "espnId": 4870795,
@@ -2062,6 +2038,14 @@
      "name": "Makai Lemon",
      "pos": "WR",
      "proTeamId": 21,
+     "slot": "BN"
+    },
+    {
+     "espnId": 3916433,
+     "injuryStatus": "NORMAL",
+     "name": "Jakobi Meyers",
+     "pos": "WR",
+     "proTeamId": 30,
      "slot": "BN"
     }
    ],
@@ -2092,7 +2076,7 @@
      "name": "Travis Etienne Jr.",
      "pos": "RB",
      "proTeamId": 18,
-     "slot": "RB"
+     "slot": "FLEX"
     },
     {
      "espnId": 16800,
@@ -2132,7 +2116,7 @@
      "name": "Keenan Allen",
      "pos": "WR",
      "proTeamId": 25,
-     "slot": "FLEX"
+     "slot": "BN"
     },
     {
      "espnId": 4569603,
@@ -2180,7 +2164,7 @@
      "name": "Rhamondre Stevenson",
      "pos": "RB",
      "proTeamId": 17,
-     "slot": "BN"
+     "slot": "RB"
     },
     {
      "espnId": 4038441,
@@ -2218,7 +2202,7 @@
      "name": "Ladd McConkey",
      "pos": "WR",
      "proTeamId": 24,
-     "slot": "IR"
+     "slot": "WR"
     },
     {
      "espnId": 4882093,
@@ -2250,15 +2234,7 @@
      "name": "Matthew Golden",
      "pos": "WR",
      "proTeamId": 9,
-     "slot": "BN"
-    },
-    {
-     "espnId": 4697815,
-     "injuryStatus": "NORMAL",
-     "name": "Rachaad White",
-     "pos": "RB",
-     "proTeamId": 28,
-     "slot": "BN"
+     "slot": "WR"
     },
     {
      "espnId": 4682648,
@@ -2266,7 +2242,7 @@
      "name": "Malachi Fields",
      "pos": "WR",
      "proTeamId": 19,
-     "slot": "WR"
+     "slot": "BN"
     },
     {
      "espnId": 4710855,
@@ -2285,14 +2261,6 @@
      "slot": "K"
     },
     {
-     "espnId": -16008,
-     "injuryStatus": "NORMAL",
-     "name": "Lions D/ST",
-     "pos": "D/ST",
-     "proTeamId": 8,
-     "slot": "D/ST"
-    },
-    {
      "espnId": 3116365,
      "injuryStatus": "NORMAL",
      "name": "Mark Andrews",
@@ -2301,12 +2269,20 @@
      "slot": "BN"
     },
     {
-     "espnId": 2973405,
+     "espnId": 4575131,
      "injuryStatus": "NORMAL",
-     "name": "Kalif Raymond",
-     "pos": "WR",
-     "proTeamId": 3,
-     "slot": "WR"
+     "name": "Jacory Croskey-Merritt",
+     "pos": "RB",
+     "proTeamId": 28,
+     "slot": "BN"
+    },
+    {
+     "espnId": -16028,
+     "injuryStatus": "NORMAL",
+     "name": "Commanders D/ST",
+     "pos": "D/ST",
+     "proTeamId": 28,
+     "slot": "D/ST"
     }
    ],
    "teamId": 12
@@ -2336,7 +2312,7 @@
      "name": "Emeka Egbuka",
      "pos": "WR",
      "proTeamId": 27,
-     "slot": "WR"
+     "slot": "BN"
     },
     {
      "espnId": 4372016,
@@ -2360,7 +2336,7 @@
      "name": "Mike Evans",
      "pos": "WR",
      "proTeamId": 25,
-     "slot": "BN"
+     "slot": "WR"
     },
     {
      "espnId": 4241416,
@@ -2534,14 +2510,6 @@
      "name": "RJ Harvey",
      "pos": "RB",
      "proTeamId": 7,
-     "slot": "BN"
-    },
-    {
-     "espnId": -16020,
-     "injuryStatus": "NORMAL",
-     "name": "Jets D/ST",
-     "pos": "D/ST",
-     "proTeamId": 20,
      "slot": "BN"
     },
     {

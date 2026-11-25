@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-24T08:09:01Z",
+ "generatedAt": "2026-11-25T12:32:27Z",
  "slots": [
   {
    "playerId": "13269",
    "slot": "QB"
   },
   {
-   "playerId": "11576",
+   "playerId": "9509",
    "slot": "RB"
   },
   {
@@ -26,11 +26,11 @@
    "slot": "TE"
   },
   {
-   "playerId": "9509",
+   "playerId": "11576",
    "slot": "FLEX"
   },
   {
-   "playerId": "13286",
+   "playerId": "4177",
    "slot": "FLEX"
   },
   {
