@@ -124,7 +124,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Dalton Schultz",
    "opponent": "IND",
    "playerId": "5001",
@@ -1005,7 +1005,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Will Shipley",
    "opponent": "PIT",
    "playerId": "11577",
@@ -1537,7 +1537,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Myles Price",
    "opponent": "SF",
    "playerId": "13075",
@@ -1824,7 +1824,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Mike Evans",
    "opponent": "MIN",
    "playerId": "2216",
@@ -1870,7 +1870,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Derrick Henry",
    "opponent": "CAR",
    "playerId": "3198",
@@ -2474,7 +2474,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Isaiah Likely",
    "opponent": "JAX",
    "playerId": "8131",
@@ -3731,7 +3731,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Jakobi Meyers",
    "opponent": "NYG",
    "playerId": "5947",
@@ -4558,7 +4558,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Out",
    "name": "Colston Loveland",
    "opponent": "NO",
    "playerId": "12517",
@@ -4645,7 +4645,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Tetairoa McMillan",
    "opponent": "BAL",
    "playerId": "12526",
@@ -5661,7 +5661,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Brock Purdy",
    "opponent": "MIN",
    "playerId": "8183",
@@ -5765,7 +5765,6 @@
     "gs": 1.0,
     "h1_pass_yd": 95.0,
     "h1_rush_yd": 12.0,
-    "off_snp": 71.0,
     "pass_air_yd": 79.0,
     "pass_att": 44.0,
     "pass_cmp": 30.0,
@@ -5793,13 +5792,10 @@
     "rush_rec_yd": 29.0,
     "rush_yac": 3.0,
     "rush_yd": 29.0,
-    "rush_ypa": 5.8,
-    "tm_def_snp": 53.0,
-    "tm_off_snp": 71.0,
-    "tm_st_snp": 30.0
+    "rush_ypa": 5.8
    },
    "team": "PIT",
-   "updatedAt": 1795478914394,
+   "updatedAt": 1795640905967,
    "week": 11
   },
   {
@@ -6079,7 +6075,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Caleb Williams",
    "opponent": "NO",
    "playerId": "11560",
@@ -6285,7 +6281,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Mitchell Evans",
    "opponent": "BAL",
    "playerId": "12473",
@@ -6705,7 +6701,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "David Njoku",
    "opponent": "NYJ",
    "playerId": "4033",
@@ -7176,7 +7172,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Tommy Tremble",
    "opponent": "BAL",
    "playerId": "7694",
@@ -7352,7 +7348,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Parker Washington",
    "opponent": "NYG",
    "playerId": "9487",
@@ -8742,7 +8738,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "DeVonta Smith",
    "opponent": "PIT",
    "playerId": "7525",
@@ -9621,7 +9617,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Jordan Watkins",
    "opponent": "MIN",
    "playerId": "12634",
@@ -10085,7 +10081,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Darren Waller",
    "opponent": "BAL",
    "playerId": "2505",
@@ -10275,7 +10271,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Saquon Barkley",
    "opponent": "PIT",
    "playerId": "4866",
@@ -10370,7 +10366,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Out",
    "name": "Dallas Goedert",
    "opponent": "PIT",
    "playerId": "5022",
@@ -10683,7 +10679,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Hunter Long",
    "opponent": "KC",
    "playerId": "7535",
@@ -11895,7 +11891,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Treylon Burks",
    "opponent": "CIN",
    "playerId": "8135",
@@ -12251,6 +12247,6 @@
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-25T12:32:24Z",
+ "fetchedAt": "2026-11-27T02:45:54Z",
  "source": "sleeper_stats"
 }
