@@ -124,7 +124,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Dalton Schultz",
    "opponent": "IND",
    "playerId": "5001",
@@ -378,7 +378,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Kayshon Boutte",
    "opponent": "IND",
    "playerId": "9504",
@@ -1537,7 +1537,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Myles Price",
    "opponent": "SF",
    "playerId": "13075",
@@ -1870,7 +1870,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Derrick Henry",
    "opponent": "CAR",
    "playerId": "3198",
@@ -2474,7 +2474,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Isaiah Likely",
    "opponent": "JAX",
    "playerId": "8131",
@@ -3731,7 +3731,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Jakobi Meyers",
    "opponent": "NYG",
    "playerId": "5947",
@@ -4482,7 +4482,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Tez Johnson",
    "opponent": "DET",
    "playerId": "12485",
@@ -5661,7 +5661,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Brock Purdy",
    "opponent": "MIN",
    "playerId": "8183",
@@ -7017,7 +7017,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Noah Fant",
    "opponent": "CHI",
    "playerId": "5857",
@@ -7348,7 +7348,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Parker Washington",
    "opponent": "NYG",
    "playerId": "9487",
@@ -8107,7 +8107,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Bhayshul Tuten",
    "opponent": "NYG",
    "playerId": "12490",
@@ -9012,7 +9012,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Keaton Mitchell",
    "opponent": "NYJ",
    "playerId": "9511",
@@ -9617,7 +9617,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Jordan Watkins",
    "opponent": "MIN",
    "playerId": "12634",
@@ -10563,7 +10563,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": "Out",
    "name": "Justin Herbert",
    "opponent": "NYJ",
    "playerId": "6797",
@@ -11436,7 +11436,7 @@
    "week": 11
   },
   {
-   "injuryStatus": null,
+   "injuryStatus": "Questionable",
    "name": "Tee Higgins",
    "opponent": "WAS",
    "playerId": "6801",
@@ -11891,7 +11891,7 @@
    "week": 11
   },
   {
-   "injuryStatus": "Questionable",
+   "injuryStatus": null,
    "name": "Treylon Burks",
    "opponent": "CIN",
    "playerId": "8135",
@@ -12247,6 +12247,6 @@
    "week": 11
   }
  ],
- "fetchedAt": "2026-11-27T02:45:54Z",
+ "fetchedAt": "2026-11-28T04:39:13Z",
  "source": "sleeper_stats"
 }

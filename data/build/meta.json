@@ -5,12 +5,12 @@
   "stale": false,
   "staleAfterDays": 4,
   "state": "fresh",
-  "syncedAt": "2026-11-27T02:45:57.000Z",
+  "syncedAt": "2026-11-28T04:39:15.000Z",
   "week": 12,
   "weekMismatch": false
  },
  "gapFills": 31,
- "generatedAt": "2026-11-27T02:45:57Z",
+ "generatedAt": "2026-11-28T04:39:15Z",
  "idmap": {
   "matched": 1042,
   "unmatchedEspnPlayers": 21
@@ -24,88 +24,88 @@
   },
   {
    "file": "hwh.json",
-   "gain": 0.3,
+   "gain": 0.4,
    "key": "hwh",
    "name": "HWH: The League"
   },
   {
    "file": "chicago-dynasty.json",
-   "gain": 0.5,
+   "gain": 0.0,
    "key": "chicago-dynasty",
    "name": "Chicago Dynasty"
   }
  ],
  "model": "Equal average of ESPN and Rotowire projections, each re-scored with the league's scoring. Floor and ceiling are one weekly SD below and above.",
- "nextRefresh": "2026-11-27T23:07:00Z",
+ "nextRefresh": "2026-11-29T15:07:00Z",
  "season": 2026,
  "skippedLeagues": [],
  "sources": {
   "espn_defaults": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:56Z",
+   "lastUpdated": "2026-11-28T04:39:14Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_league": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:57Z",
+   "lastUpdated": "2026-11-28T04:39:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_lineups_w11": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:57Z",
+   "lastUpdated": "2026-11-28T04:39:15Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "espn_rosters": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:57.000Z",
+   "lastUpdated": "2026-11-28T04:39:15.000Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_lines": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:56Z",
+   "lastUpdated": "2026-11-28T04:39:14Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "nflverse_schedule": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:56Z",
+   "lastUpdated": "2026-11-28T04:39:14Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_leagues": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:54Z",
+   "lastUpdated": "2026-11-28T04:39:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_players": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:54Z",
+   "lastUpdated": "2026-11-28T04:39:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_projections": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:54Z",
+   "lastUpdated": "2026-11-28T04:39:12Z",
    "ok": true,
    "stale": false,
    "state": "fresh"
   },
   "sleeper_stats_w11": {
    "error": null,
-   "lastUpdated": "2026-11-27T02:45:54Z",
+   "lastUpdated": "2026-11-28T04:39:13Z",
    "ok": true,
    "stale": false,
    "state": "fresh"

@@ -194,12 +194,12 @@
     "12": [
      {
       "matchupId": 6,
-      "points": 3.8,
+      "points": 17.6,
       "rosterId": 1
      },
      {
       "matchupId": 5,
-      "points": 2.4,
+      "points": 5.86,
       "rosterId": 2
      },
      {
@@ -209,7 +209,7 @@
      },
      {
       "matchupId": 6,
-      "points": 26.54,
+      "points": 29.84,
       "rosterId": 4
      },
      {
@@ -224,32 +224,32 @@
      },
      {
       "matchupId": 3,
-      "points": 66.7,
+      "points": 70.8,
       "rosterId": 7
      },
      {
       "matchupId": 4,
-      "points": 48.64,
+      "points": 52.54,
       "rosterId": 8
      },
      {
       "matchupId": 5,
-      "points": 88.7,
+      "points": 88.6,
       "rosterId": 9
      },
      {
       "matchupId": 3,
-      "points": 14.4,
+      "points": 41.3,
       "rosterId": 10
      },
      {
       "matchupId": 4,
-      "points": 55.9,
+      "points": 75.7,
       "rosterId": 11
      },
      {
       "matchupId": 1,
-      "points": 35.62,
+      "points": 52.56,
       "rosterId": 12
      }
     ],
@@ -1072,13 +1072,13 @@
      "players": [
       "11560",
       "11565",
-      "11579",
       "11632",
       "11729",
       "11834",
       "12501",
       "12517",
       "13287",
+      "13394",
       "4037",
       "5947",
       "5967",
@@ -1315,11 +1315,11 @@
       "9221",
       "4034",
       "10229",
-      "9487",
+      "13346",
       "12518",
       "12534",
       "8134",
-      "11625",
+      "7543",
       "11792"
      ],
      "taxi": [],
@@ -1964,12 +1964,12 @@
     "12": [
      {
       "matchupId": 1,
-      "points": 1.9,
+      "points": 17.1,
       "rosterId": 1
      },
      {
       "matchupId": 5,
-      "points": 42.94,
+      "points": 45.04,
       "rosterId": 2
      },
      {
@@ -1979,7 +1979,7 @@
      },
      {
       "matchupId": 5,
-      "points": 30.9,
+      "points": 46.1,
       "rosterId": 4
      },
      {
@@ -1994,7 +1994,7 @@
      },
      {
       "matchupId": 1,
-      "points": 31.1,
+      "points": 36.6,
       "rosterId": 7
      },
      {
@@ -2004,17 +2004,17 @@
      },
      {
       "matchupId": 3,
-      "points": 51.94,
+      "points": 60.44,
       "rosterId": 9
      },
      {
       "matchupId": 4,
-      "points": 5.9,
+      "points": 38.8,
       "rosterId": 10
      },
      {
       "matchupId": 3,
-      "points": 60.3,
+      "points": 75.1,
       "rosterId": 11
      },
      {
@@ -2992,6 +2992,7 @@
      "players": [
       "11560",
       "11624",
+      "11631",
       "1166",
       "12490",
       "12526",
@@ -3000,7 +3001,6 @@
       "7588",
       "8121",
       "8130",
-      "8136",
       "8148",
       "9221",
       "9501",
@@ -3026,8 +3026,8 @@
       "8148",
       "12526",
       "8130",
-      "8136",
-      "12490",
+      "13301",
+      "11631",
       "2020",
       "CHI"
      ],
@@ -3368,6 +3368,6 @@
    "waiverType": 2
   }
  },
- "fetchedAt": "2026-11-27T02:45:54Z",
+ "fetchedAt": "2026-11-28T04:39:12Z",
  "source": "sleeper_leagues"
 }

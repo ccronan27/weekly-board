@@ -894,7 +894,7 @@
     "wins": 5
    }
   ],
-  "syncedAt": "2026-11-27T02:45:57.000Z",
+  "syncedAt": "2026-11-28T04:39:15.000Z",
   "teams": [
    {
     "name": "Exempt List",
@@ -1983,7 +1983,7 @@
       "name": "Parker Washington",
       "pos": "WR",
       "proTeamId": 30,
-      "slot": "WR"
+      "slot": "BN"
      },
      {
       "espnId": 4373678,
@@ -1999,7 +1999,7 @@
       "name": "Juwan Johnson",
       "pos": "TE",
       "proTeamId": 18,
-      "slot": "BN"
+      "slot": "IR"
      },
      {
       "espnId": 4038815,
@@ -2039,7 +2039,7 @@
       "name": "Jakobi Meyers",
       "pos": "WR",
       "proTeamId": 30,
-      "slot": "FLEX"
+      "slot": "WR"
      },
      {
       "espnId": -16005,
@@ -2056,6 +2056,14 @@
       "pos": "QB",
       "proTeamId": 13,
       "slot": "BN"
+     },
+     {
+      "espnId": 4432773,
+      "injuryStatus": "NORMAL",
+      "name": "Brian Thomas Jr.",
+      "pos": "WR",
+      "proTeamId": 30,
+      "slot": "FLEX"
      }
     ],
     "teamId": 10
@@ -2219,7 +2227,7 @@
       "name": "Bhayshul Tuten",
       "pos": "RB",
       "proTeamId": 30,
-      "slot": "FLEX"
+      "slot": "IR"
      },
      {
       "espnId": 4035538,
@@ -2270,20 +2278,12 @@
       "slot": "K"
      },
      {
-      "espnId": 3116365,
-      "injuryStatus": "NORMAL",
-      "name": "Mark Andrews",
-      "pos": "TE",
-      "proTeamId": 33,
-      "slot": "BN"
-     },
-     {
       "espnId": 4575131,
       "injuryStatus": "NORMAL",
       "name": "Jacory Croskey-Merritt",
       "pos": "RB",
       "proTeamId": 28,
-      "slot": "BN"
+      "slot": "FLEX"
      },
      {
       "espnId": -16028,
@@ -2292,6 +2292,22 @@
       "pos": "D/ST",
       "proTeamId": 28,
       "slot": "D/ST"
+     },
+     {
+      "espnId": 4879194,
+      "injuryStatus": "NORMAL",
+      "name": "Josh Cameron",
+      "pos": "WR",
+      "proTeamId": 30,
+      "slot": "BN"
+     },
+     {
+      "espnId": 3116389,
+      "injuryStatus": "NORMAL",
+      "name": "Samaje Perine",
+      "pos": "RB",
+      "proTeamId": 4,
+      "slot": "BN"
      }
     ],
     "teamId": 12
@@ -2535,6 +2551,6 @@
   ],
   "week": 12
  },
- "fetchedAt": "2026-11-27T02:45:57Z",
+ "fetchedAt": "2026-11-28T04:39:15Z",
  "source": "espn_league"
 }

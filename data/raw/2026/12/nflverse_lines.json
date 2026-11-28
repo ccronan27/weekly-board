@@ -66,10 +66,10 @@
    "gameday": "2026-11-29",
    "gametime": "13:00",
    "home": "CIN",
-   "homeSpread": 10.0,
-   "impliedAway": 19.75,
-   "impliedHome": 29.75,
-   "total": 49.5,
+   "homeSpread": 9.5,
+   "impliedAway": 19.5,
+   "impliedHome": 29.0,
+   "total": 48.5,
    "week": 12
   },
   {
@@ -90,9 +90,9 @@
    "gameday": "2026-11-29",
    "gametime": "13:00",
    "home": "IND",
-   "homeSpread": -6.0,
-   "impliedAway": 23.75,
-   "impliedHome": 17.75,
+   "homeSpread": -5.5,
+   "impliedAway": 23.5,
+   "impliedHome": 18.0,
    "total": 41.5,
    "week": 12
   },
@@ -102,10 +102,10 @@
    "gameday": "2026-11-29",
    "gametime": "13:00",
    "home": "JAX",
-   "homeSpread": 14.5,
-   "impliedAway": 17.5,
-   "impliedHome": 32.0,
-   "total": 49.5,
+   "homeSpread": 14.0,
+   "impliedAway": 17.25,
+   "impliedHome": 31.25,
+   "total": 48.5,
    "week": 12
   },
   {
@@ -114,9 +114,9 @@
    "gameday": "2026-11-29",
    "gametime": "13:00",
    "home": "MIA",
-   "homeSpread": -4.5,
-   "impliedAway": 22.0,
-   "impliedHome": 17.5,
+   "homeSpread": -5.5,
+   "impliedAway": 22.5,
+   "impliedHome": 17.0,
    "total": 39.5,
    "week": 12
   },
@@ -138,10 +138,10 @@
    "gameday": "2026-11-29",
    "gametime": "16:05",
    "home": "LAC",
-   "homeSpread": -2.5,
-   "impliedAway": 19.0,
-   "impliedHome": 16.5,
-   "total": 35.5,
+   "homeSpread": -3.0,
+   "impliedAway": 18.75,
+   "impliedHome": 15.75,
+   "total": 34.5,
    "week": 12
   },
   {
@@ -162,10 +162,10 @@
    "gameday": "2026-11-29",
    "gametime": "16:25",
    "home": "SF",
-   "homeSpread": 3.0,
-   "impliedAway": 20.25,
-   "impliedHome": 23.25,
-   "total": 43.5,
+   "homeSpread": -1.5,
+   "impliedAway": 22.0,
+   "impliedHome": 20.5,
+   "total": 42.5,
    "week": 12
   },
   {
@@ -175,9 +175,9 @@
    "gametime": "20:20",
    "home": "CLE",
    "homeSpread": 4.5,
-   "impliedAway": 18.0,
-   "impliedHome": 22.5,
-   "total": 40.5,
+   "impliedAway": 17.5,
+   "impliedHome": 22.0,
+   "total": 39.5,
    "week": 12
   },
   {
@@ -193,6 +193,6 @@
    "week": 12
   }
  ],
- "fetchedAt": "2026-11-27T02:45:56Z",
+ "fetchedAt": "2026-11-28T04:39:14Z",
  "source": "nflverse_lines"
 }
